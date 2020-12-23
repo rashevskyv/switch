@@ -60,10 +60,10 @@ author_profile: true
 * Умение [запускать пейлоады через Fusée Gelée](fusee-gelee){:target="_blank"} и [{% include abbr/cfw.txt abbr="кастомную прошивку" %}](cfw){:target="_blank"}
 * Свежая версия {% include abbr/kefir_addr.txt %}
 * Прошивка {% include /vars/update_version.txt %} (скачайте по любой из ссылок):
-	* [magnet](magnet:?xt=urn:btih:F88BD58A654A766142339A6E5B24ABF3FE475DC7&dn=10.2.0-daybreak.zip&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce){:target="_blank"}
-	* [ЯД](https://yadi.sk/d/Gxe4Aa-TTg-w3A){:target="_blank"}
-	* [GD](https://drive.google.com/file/d/1TMU4m3rCqI6I-zeIlfm6ZQ27cdtVEZ4B/view?usp=sharing){:target="_blank"}
-	* [MEGA](https://mega.nz/file/El1kgQKI#WlT4eigPHlDJF0FLci4ikLuRdVESjBny92Ce2P7Y4dE){:target="_blank"}
+	* [magnet](magnet:?xt=urn:btih:32E00202048CE3A0A77F63F0DBB6C239C15471D2&dn=11.0.1.zip&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce){:target="_blank"}
+	* [ЯД](https://yadi.sk/d/Y2bbzSSb1MJxPA){:target="_blank"}
+	* [GD](https://drive.google.com/file/d/1oFx4OMiZud26vC_w9fVwXQ_068jR3K43){:target="_blank"}
+	* [MEGA](https://mega.nz/file/hSAz3Aab#MWQSedBrhcYkt5XsXRvg1AuWENUC2-7b1UREB3HxJcQ){:target="_blank"}
 * Карта памяти 
 
 ## Инструкция
@@ -104,7 +104,7 @@ author_profile: true
 
 <!-- Caffeine -->
 {% capture notice-3 %}
-**Обязательно убедитесь, что находитесь в EmuNAND**, если поднимаете версию вашего системного ПО. Для этого перейдите в **Системные настройки** -> **Система**. В строке ниже **Обновления системы** будет написана версия вашего системного ПО, версия Atmosphere и буква **S** или **E**, где S будет означать SysNAND, а E - EmuNAND. 
+**Обязательно убедитесь, что находитесь в EmuNAND**, если поднимаете версию вашего системного ПО. Для этого перейдите в **Системные настройки** -> **Система**. В строке ниже **Обновления системы** будет написана версия вашего системного ПО, версия Atmosphere и буква **S** или **E**, где **S** будет означать *SysNAND*, а **E** - *EmuNAND*. 
 * На SX OS вы не сможете проверить этим способом запущен ли EmuNAND, поскольку в SX OS там будет написана только версия системного ПО. Просто запустите **Альбомы**, чтобы попасть в меню SXOS. Если вы находитесь в EmuNAND, то в верхнем правом углу, под номером версии системы будет соответствующая пометка.
 
 ![](/images/screenshots/sx_emu.png)
