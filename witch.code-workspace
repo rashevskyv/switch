@@ -14,6 +14,15 @@
 		}
 	],
 	"settings": {
-		"cSpell.language": ",ru"
+		"cSpell.language": ",ru",
+		"spellright.language": [
+			"en",
+			"ru"
+		],
+		"spellright.documentTypes": [
+			"markdown",
+			"latex",
+			"plaintext"
+		]
 	}
 }
