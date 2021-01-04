@@ -156,8 +156,5 @@ ____
 
 ____
 
-
-___
-
 [Закрыть страницу](javascript:window.close();)
 {: .notice--success}
