@@ -4,31 +4,24 @@ main:
     url: http://customfw.xyz
   - title: "<i>Купить<br>прошитую</i>"
     url: https://nincfw.olx.ua/
-  - title: "Взлом"
-    url: /exploits
+  - title: "Методы<br>взлома"
+    url: /get-started
+  - title: "Kefir"
+    url: /kefir
+  - title: "Резервное<br>копирование"
+    url: /backup-nand
   - title: "EmuNAND"
     url: /emunand
-  - title: "Полезные<br>
-  инструкции"
-    url: /addons
+  - title: "Использование<br>прошитой Switch"
+    url: /usage
   - title: "FAQ"
     url: /faq
   - title: "Проблемы и<br>их решение"
     url: /troubleshooting
-  - title: "Использование<br>прошитой Switch"
-    url: /usage
   - title: "Установка<br>игр"
     url: /games
-  - title: "Kefir"
-    url: /kefir
-  - title: "Запуск<br>HBL"
-    url: /hbl
-  - title: "Методы<br>взлома"
-    url: /exploits
   - title: "Безопасное<br>обновление"
     url: /update-to-latest
-  - title: "Резервное<br>копирование"
-    url: /backup-nand
   - title: "Навигация по сайту"
     url: /site-navigation
   - title: "Пожертвования"
@@ -39,6 +32,8 @@ main:
 addons:
   - title: "Инструкция по использованию уже прошитой приставкой"
     url: /usage
+  - title: "Переход с SX OS в Atmosphere"
+    url: /migrate
   - title: "FAQ"
     url: /faq
   - title: "Блокировка серверов Nintendo, защита от бана"
@@ -67,12 +62,6 @@ addons:
     url: /launch-hbl
   - title: "Кастомные прошивки"
     url: /cfw
-  - title: "Активация AutoRCM"
-    url: /autorcm
-  - title: "Использование FTP"
-    url: /ftp
-  - title: "Особенности использования чипованной приставки"
-    url: /hardmoded
   - title: "Эмуляция Amiibo с помощью модуля emuiibo"
     url: /emuiibo
             

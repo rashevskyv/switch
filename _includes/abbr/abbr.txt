@@ -13,5 +13,7 @@
 {% include abbr/kefir_addr.txt %}
 {% include abbr/exfat.txt %}
 {% include abbr/sdhc.txt %}
+{% include abbr/mariko.md %}
+{% include abbr/erista.md %}
 
 {% include inc/launch-hekate.txt %}

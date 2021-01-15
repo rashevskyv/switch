@@ -22,7 +22,7 @@ AutoRCM - на консоли специальным образом изменя
 {% include inc/launch-hekate.txt %}
 1. Перейдите в раздел "**Tools**" -> "**Archive bit - AutoRCM**" (внизу экрана) и установите "**AutoRCM**" в положение "**ON**"
 1. Нажмите "**Home**" вверху экрана
-1. [Запустите {% include abbr/cfw.txt abbr="кастомную прошивку" %}](cfw) 
+1. [Запустите](cfw){:target="_blank"} {% include abbr/cfw.txt abbr="кастомную прошивку" %}
 
 ___
 
@@ -30,12 +30,11 @@ ___
 {: .notice--success}
 
 ## Отключение AutoRCM 
-Не рекомендуется удалять AutoRCM, если вы делали [безопасное обновление системы](update-to-latest){:target="_blank"} - [сожжёте предохранители](update-to-latest#%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%87%D0%B0%D1%81%D1%82%D1%8C){:target="_blank"}
 
 {% include inc/launch-hekate.txt %}
 1. Перейдите в раздел "**Tools**" -> "**Archive bit - AutoRCM**" (внизу экрана) и установите "**AutoRCM**" в положение "**OFF**"
 1. Нажмите "**Home**" вверху экрана
-1. [Запустите {% include abbr/cfw.txt abbr="кастомную прошивку" %}](cfw) 
+1. [Запустите](cfw){:target="_blank"} {% include abbr/cfw.txt abbr="кастомную прошивку" %}
 
 ___
 

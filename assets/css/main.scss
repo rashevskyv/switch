@@ -307,7 +307,7 @@ li > p:first-child {
     flex-direction: row;
     justify-content: space-between;
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
       flex-direction: column;
     }
 }
@@ -325,16 +325,18 @@ li > p:first-child {
 	background-color: #e4e4e4;
   border-radius: 4px 4px 4px 4px;
 	color: rgba(0, 0, 0, 0.6);
-	font-size: 22px;
+	font-size: 17px;
 	line-height: 1;
 	text-align: center;
-	margin: 8px 40px;
-	padding: 16px 32px;
+	margin: 8px 10px;
+	padding: 16px 15px;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
   transition: all 0.1s ease-in-out;
-  min-width: 220px;
+  min-width: 187px;
   max-width: 220px;
+
+
 }
 
 .select_fw > label:hover {
