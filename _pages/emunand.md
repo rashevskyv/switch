@@ -126,17 +126,6 @@ author_profile: true
 1. Нажмите **Save as...**, чтобы выбрать место сохранения EmuNAND
 1. Нажмите **Save**, чтобы сохранить EmuNAND с выбранным размером 
 
-### Установка Incognito 
-
-Установив Incognito, вы уберёте личную информацию, необходимую для авторизации консоли на серверах Nintendo, из памяти вашей приставки, тем самым вы сможете выходить на консоли в интернет наверняка зная, что это не приведёт к бану.
-{: .notice--info}
-
-1. Перейдите в **File** -> **Open File** и выберите файл `RAWNAND.resized` - ваш уменьшенный EmuNAND, сохранённый в прошлом пункте
-1. Перейдите в **Options** -> **Incognito (PRODINFO)**
-1. Нажмите **Yes**, нажмите **OK**
-
-Теперь в `RAWNAND.resized` установлен Incognito
-
 ### Разбиение EmuNAND на части менее 4х Гб
 
 1. Скачайте [File Splitter](https://sourceforge.net/projects/fsplit/files/latest/download){:target="_blank"} и распакуйте программу в удобное место 
