@@ -21,6 +21,14 @@ permalink: migrate
 
 ## Переход из SX на Atmosphere
 
+{% spoiler Видеоинструкция %}
+
+{% include youtube.html id="iHkkzY44IiA" %}
+{: .text-center}
+{: .notice--info}
+
+{% endspoiler %}
+
 Выберите вариант, который вам подходит и следуйте инструкции. 
 
 {% spoiler Прошиваемая приставка с уязвимостью Fusée Gelée или прошитая с помощью Caffeine  %}
