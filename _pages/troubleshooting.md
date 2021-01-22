@@ -158,9 +158,9 @@ author_profile: true
 
 {% spoiler Проблемы после копирования файлов на карту на маке/В Homebrew Menu/Tinfoil пусто, хотя на карте всё есть %}
 
-{% include /inc/fixatributes.txt %}
-
-Если вы пользователь MacOS и вам не помог способ выше, выполните следующую команду: `sudo chflags -R arch /Volumes/<name of SD card>`
+* Убедитесь, что имя вашей карты отлично от `Switch` в любой комбинации строчных или заглавных букв
+* {% include /inc/fixatributes.txt %}
+* Если вы пользователь MacOS и вам не помог способ выше, выполните следующую команду: `sudo chflags -R arch /Volumes/<name of SD card>`
 
 {% endspoiler %}
 
