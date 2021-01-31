@@ -111,7 +111,7 @@ author_profile: true
 1. Скопируйте на ПК папку `emuMMC/SD00/eMMC` (вместо `SD00` может быть другое название). **Далее мы будем работать именно с этой папкой!**
 1. Скачайте и распакуйте на ваш ПК программу [NxNandManager](https://github.com/eliboa/NxNandManager/releases/latest){:target="_blank"}
 1. Запустите программу [NxNandManager](https://github.com/eliboa/NxNandManager/releases/latest){:target="_blank"}
-1. Перейдите в **File** -> **Open File** и выберите файл `emuMMC/SD00/eMMC/00` (вместо `SD00` может быть другое название) из папки, которую вы скопировали на свой ПК
+1. Перейдите в **File** -> **Open File** и выберите файл `emuMMC/SD00/eMMC/00` (вместо `SD00` может быть другое название) из вашей карты памяти
 1. Перейдите в **Options** -> **Configure keyset**, нажмите **Import keys from file** и выберите файл `switch/prod.keys`, расположенный на карте памяти вашей приставки 
 1. Нажмите **Save** 
 	* Если в поле **Device ID** написано **BAD CRYPTO**, то вы выбрали ключи не от своей приставки! Сделайте дамп ключей заново!
