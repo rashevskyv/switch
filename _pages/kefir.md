@@ -34,7 +34,7 @@ author_profile: true
   * [FreshHay](https://github.com/devgru/FreshHay/releases){:target="_blank"} - программа для скачивания и распаковки рекомендуемой версии системного ПО прямо на приставке
   * [NX-Shell](https://github.com/joel16/NX-Shell/releases/latest){:target="_blank"} - файловый менеджер
   * [NX-Activity-Log](https://github.com/tallbl0nde/NX-Activity-Log/releases/latest){:target="_blank"} - программа, позволяющая отслеживать время, проведённое в играх
-  * [nx-ntpc](https://github.com/thedax/NX-ntpc){:target="_blank"} - NTP-клиент для Nintendo Switch. Позволяет подтянуть корректное время и дату с серверов синхронизации времени в интернете
+  * **nx-ntpc** - NTP-клиент для Nintendo Switch. Позволяет подтянуть корректное время и дату с серверов синхронизации времени в интернете
   * [JKSV](https://github.com/J-D-K/JKSV/releases){:target="_blank"} - программа для резервного копирования и восстановления сейвов
   * [Kefir Updater](https://github.com/rashevskyv/kefir-updater/releases){:target="_blank"} - программа для обновления kefir через интернет
   * [pplay](https://github.com/Cpasjuste/pplay/releases/latest){:target="_blank"} - видеоплеер 
@@ -45,8 +45,9 @@ author_profile: true
 6. **Установленные модули**. Модули - это дополнительные компоненты, работающие внутри Atmosphere и позволяющие делать разные крутые штуки, как-то использование xbox-сoвместимых контроллеров, эмуляцию amiibo, разгон и прочее. К сожалению, SX OS модули не поддерживает
   * [sys-con](https://github.com/cathery/sys-con/releases/latest){:target="_blank"} - модуль, позволяющий подключать к консоли по USB практически любые геймпады
   * [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} - модуль, позволяющий подключать к консоли по bluetooth практически любые геймпады
-  * [Tesla Overlay Menu](https://gbatemp.net/threads/tesla-the-nintendo-switch-overlay-menu.557362/){:target="_blank"} - специальное оверлей-меню для взаимодействия с системой
-    - [ovlEdiZon.ovl](https://gbatemp.net/threads/tesla-the-nintendo-switch-overlay-menu.557362/){:target="_blank"} - Модуль для [использования читов](cheats){:target="_blank"}
+  * [Tesla Overlay Menu](https://github.com/WerWolv/Tesla-Menu/releases){:target="_blank"} - специальное оверлей-меню для взаимодействия с системой
+    - [nx-ovlloader](https://github.com/WerWolv/nx-ovlloader/releases/){:target="_blank"} - процесс для работы с nro через Tesla Menu
+    - [ovlEdiZon.ovl](https://werwolv.net/downloads/EdiZonOverlay.zip){:target="_blank"} - Модуль для [использования читов](cheats){:target="_blank"}
     - [ovlSysmodules.ovl](https://github.com/WerWolv/ovl-sysmodules/releases){:target="_blank"} - Модуль для включения и отключения установленных системных модулей (как-то разгон, emuuibo и прочее)
 
 {% endspoiler %}
@@ -107,26 +108,11 @@ author_profile: true
 
 {% endspoiler %}
 
-{% spoiler Обновление кефира прямо на приставке (не рекомендуется!) %}
+{% spoiler Обновление кефира прямо на приставке %}
 
-1. Запустите **NX Shell** через [HBL](hbl){:target="_blank"}
-1. Перейдите в папку `atmosphere/contents` 
-    * Если такой папки нет, перейдите в папку `atmosphere/titles` 
-1. Удалите папки со следующими названиями (если они там есть): 
-  * `010000000000100D`
-  * `0100000000000032`
-  * `0100000000000034`
-  * `0100000000000036`
-  * `010000000000000D`
-  * `420000000000000E`
-  * `0100000000001000`
-  * `0100000000000352`
-  * `4200000000000010`
-  * `010000000007E51A`
-1. Нажмите (Start), чтобы закрыть **NX Shell**
 1. Выберите **Kefir Updater**
     * Требуется подключение к интернету!
-1. Выберите ОС, которую используете
+1. Нажмите "**Update Kefir**"
 1. По окончанию установки, перезагрузите приставку
 
 {% endspoiler %}
