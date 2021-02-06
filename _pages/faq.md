@@ -164,7 +164,7 @@ author_profile: true
 {% endspoiler %}
 
 {% spoiler Как мне перенести данные на новую SD-карту? %}
-**О:** Отформатируйте новую карту в [FAT32](http://format.customfw.xyz){:target="_blank"}, в котором была старая и перенесите все данные на неё со старой карты
+**О:** Отформатируйте новую карту в [FAT32](http://format.customfw.xyz){:target="_blank"}, и перенесите все данные на неё со старой карты. 
 
 {% endspoiler %}
 

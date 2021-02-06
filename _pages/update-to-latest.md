@@ -88,7 +88,7 @@ author_profile: true
 		* `atmosphere/contents/0100000000001000`
 		* `atmosphere/contents/0100000000001013`
 		* `atmosphere/contents/0100000000000352`
-1. Установите `.7z`-архив {% include abbr/kefir_addr.txt %}, если ещё не делали этого
+1. Установите `.zip`-архив {% include abbr/kefir_addr.txt %}, если ещё не делали этого
 	* Если версия вашего системного ПО 1.0.0, удалите папки `\atmosphere\exefs_patches` и `\atmosphere\kip_patches\fs_patches`:
 		* После того, как вы удачно обновите системное ПО, обязательно **ещё раз установите {% include abbr/kefir_addr.txt %}**
 1. Скопируйте **содержимое** архива `{% include /vars/update_version.txt %}.zip` с прошивкой в корень карты памяти

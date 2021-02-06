@@ -1,1 +1,1 @@
-`payload.bin` из `.7z`-архива {% include abbr/kefir_addr.txt %}
+`payload.bin` из `.zip`-архива {% include abbr/kefir_addr.txt %}

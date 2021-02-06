@@ -51,8 +51,8 @@ Atmosphere - open source проект. Она состоит из пяти ос�
 
 #### Подготовительные работы 
 
-1. Установите `.7z`-архив {% include abbr/kefir_addr.txt %}, если ещё не делали этого
-1. `payload.bin` из `.7z`-архива {% include abbr/kefir_addr.txt %} - это {% include abbr/hekate.txt abbr="hekate" %}
+1. Установите `.zip`-архив {% include abbr/kefir_addr.txt %}, если ещё не делали этого
+1. `payload.bin` из `.zip`-архива {% include abbr/kefir_addr.txt %} - это {% include abbr/hekate.txt abbr="hekate" %}
 
 #### Запуск Atmosphere 
 {% include inc/launch-cfw.txt %}
