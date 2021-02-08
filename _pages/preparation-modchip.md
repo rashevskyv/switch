@@ -42,7 +42,7 @@ author_profile: true
 
 {% spoiler Возможные ошибки %}
 
-{% spoiler Скрипт завит, ничего не происходит %}
+{% spoiler Скрипт завис, ничего не происходит %}
 
 ![](/images/modchips/freeze.png)
 {: .text-center}

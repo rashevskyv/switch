@@ -75,9 +75,17 @@ author_profile: true
 
 {% endspoiler %}
 
+{% spoiler Джойконы в эмунанде не работают отдельно от консоли, хотя в стоке сиснанда работают %}
+
+1. Синхронизируй joy-con'ы с sysnand
+1. Скинь папки из [архива](/files/emunandjoy-confix.zip){:target="_blank"} в корень карты памяти
+1. Вставь карту в switch и зайди в hekate
+1. Запусти `TegraExplorer.bin` из вкладки "**payloads**"
+1. Перейди по пути `[SD:/] SD CARD -> tegraeplorer -> syncfix -> Syncfix.te -> Launch Script`
+
+{% endspoiler %}
+
 {% spoiler В Tinfoil пропали все игры %}
-
-
 
 * Не меняйте в tinfoil тему! Тема в программе должна начинаться с префикса `hbg_`
 * Убедитесь, что на приставке стоит верная дата и время. Можете синхронизировать её через приложение **NX-ntpc** в HBL
