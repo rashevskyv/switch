@@ -31,8 +31,7 @@ ___
 
 {% endspoiler %}
 
-![](/images/switch.png)
-{: .text-center}
+{% include /inc/final_message.md %}
 
 <script>
 	localStorage.setItem('caffeine', 1);
