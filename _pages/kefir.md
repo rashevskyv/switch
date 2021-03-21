@@ -27,7 +27,7 @@ author_profile: true
 3. **Загрузчик [hekate](https://github.com/CTCaer/hekate/releases/latest){:target="_blank"}**. Благодаря загрузчику вы можете запускать прошивку и другие {% include abbr/payload.txt abbr="пейлоады" %} через удобное меню, создавать и восстанавливать резервную копию NAND, делать EmuNAND, получать информацию о состоянии системы, монтировать карту памяти к ПК без вытаскивания её из свитча, делать переразметку карты памяти для установки других ОС и многое другое
 4. **Установленные {% include abbr/payload.txt abbr="пейлоады" %}**:
   * [Lockpick_RCM](https://github.com/rashevskyv/Lockpick_RCM){:target="_blank"} - программа для [дампа ключей приставки](backup-nand#часть-iii---дампим-ключи){:target="_blank"}
-  * [Incognoto_RCM](https://github.com/jimzrt/Incognito_RCM){:target="_blank"} - программа, стирающая серийный номер приставки, чтобы [заблокировать обновления и спрятать консоль от Nintendo](https://switch.customfw.xyz/block-update){:target="_blank"}
+  * [Incognoto_RCM](https://github.com/Scandal-UK/Incognito_RCM){:target="_blank"} - программа, стирающая серийный номер приставки, чтобы [заблокировать обновления и спрятать консоль от Nintendo](https://switch.customfw.xyz/block-update){:target="_blank"}
 5. **Установленное Homebrew**
   * [DBI](https://github.com/rashevskyv/dbi){:target="_blank"} - программа для [установки игр](games){:target="_blank"} по USB или с карты памяти
   * [{% include /inc/tinfoil.txt %}](http://tinfoil.io){:target="_blank"} - программа, позволяющая [качать игры](tinfoil){:target="_blank"} для приставки прямо из сети 
@@ -104,7 +104,7 @@ author_profile: true
 ## Запуск Atmosphere 
 {% include inc/launch-cfw.txt %}
 
-Если после входа в прошивку приставка не видит карту и требует обновить прошивку для её работы, либо просто зависает в чёрном экране после логотипа Nintendo, то на вашей приставке не установлены драйвера exFAT! Отформатируйте карту памяти в [FAT32](http://customfw.xyz/format_sd){: target="blank_"}
+Если после входа в прошивку приставка не видит карту и требует обновить прошивку для её работы, либо просто зависает в чёрном экране после логотипа Nintendo, то на вашей приставке не установлены драйвера exFAT! Отформатируйте карту памяти в [FAT32](https://format.customfw.xyz){: target="blank_"}
 {: .notice--warning}
 
 В {% include abbr/hekate.txt abbr="hekate" %} по-умолчанию настроен автозапуск. То есть при запуске приставки меню {% include abbr/hekate.txt abbr="hekate" %} не будет отображаться, а запустится сразу прошивка. Для перехода в меню {% include abbr/hekate.txt abbr="hekate" %} зажмите (VOL-) во время появления сплеш-скрина.

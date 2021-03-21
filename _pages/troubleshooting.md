@@ -7,7 +7,7 @@ author_profile: true
 
 {% spoiler После проброса плейлоада и появления сплешскринов, консоль висит в черном экране. %}
 
-Отформатируйте вашу карту памяти в [FAT32](format.customfw.xyz){:target="_blank"}. 
+Отформатируйте вашу карту памяти в [FAT32](https://format.customfw.xyz){:target="_blank"}. 
 
 Если не помогает, переустановите {% include abbr/kefir_addr.txt %} начисто. Для этого удалите с карты памяти всё, кроме папки Nintendo и emummc (или sxos/emunand) и ставьте кефир заново
 
@@ -19,7 +19,7 @@ author_profile: true
 {: .text-center}
 {: .notice--info}
 
-Отформатируйте вашу карту памяти в [FAT32](format.customfw.xyz){:target="_blank"}. 
+Отформатируйте вашу карту памяти в [FAT32](https://format.customfw.xyz){:target="_blank"}. 
 
 Если не помогает, переустановите {% include abbr/kefir_addr.txt %} начисто. Для этого удалите с карты памяти всё, кроме папки Nintendo и emummc (или sxos/emunand) и ставьте кефир заново
 
@@ -96,6 +96,12 @@ author_profile: true
 {% spoiler Некоторые игры не запускаются с ошибкой "Приложение закрыто, потому что произошла ошибка" %}
 
 Возможно, установлен ReverseNX. Удалите его. Так же попробуйте выключить приставку, запустить {% include abbr/hekate.txt abbr="hekate" %}, перейдите в **Payloads** и выберите `fuse-primary.bin`, после чего сразу зажмите одновременно обе кнопки громкости до тех пор, пока не попадёте в рекавери. После выключите приставку удерживая кнопку питания. Затем включите как обычно. 
+
+{% endspoiler %}
+
+{% spoiler Батарея отображает неверный заряд \ Калибровка батареи %}
+
+**О:** [Исчерпывающая статья](https://4pda.ru/forum/index.php?showtopic=900987&st=14900#entry87254644){:target="_blank"}
 
 {% endspoiler %}
 

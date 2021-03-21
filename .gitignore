@@ -14,3 +14,8 @@ Gemfile.lock
 node_modules
 npm-debug.log*
 witch.code-workspace
+/.jekyll-cache
+/_site
+/.vscode
+/*.code-workspace
+/witch.code-workspace
