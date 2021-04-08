@@ -17,9 +17,9 @@ author_profile: true
 
 * Свежая версия {% include abbr/kefir_addr.txt %}
 * Свежая версия [ldn_mitm](https://github.com/spacemeowx2/ldn_mitm/releases/latest){:target="_blank"} (ldn_mitm_vx.x.x.zip)
-	* Рекомендуется качать из [hb appstore](https://www.switchbru.com/appstore/#/app/ldm_mitm){:target="_blank"} (раздел tools, написано с ошибкой - ldm mitm)
+	* Рекомендуется качать из [hb appstore](https://apps.fortheusers.org/switch/ldn_mitm){:target="_blank"} (раздел tools)
 * Свежая версия программы [Lan-Play-Server-Manager](https://github.com/Urferu/Lan-Play-Server-Manager/releases/latest){:target="_blank"}
-	* Пользователи MacOS и Linux могут воспользоваться программой [lan-play-GUI](https://gbatemp.net/threads/lan-play-gui-a-graphical-interface-for-lan-play-updated-v1-0-0.525900/){:target="_blank"}
+	* Пользователи MacOS и Linux могут воспользоваться программой [switch-lan-play](https://github.com/spacemeowx2/switch-lan-play){:target="_blank"}
 * Драйвера [WinPCap](https://www.winpcap.org/install/bin/WinPcap_4_1_3.exe){:target="_blank"}
 
 ## Предварительные настройки
@@ -32,8 +32,14 @@ author_profile: true
 1. Скачайте свежую версию [Lan-Play-Server-Manager](https://github.com/Urferu/Lan-Play-Server-Manager/releases/latest){:target="_blank"} и распакуйте её на ПК
 1. Распакуйте архив `Lan-Play-Server-Manager.zip` в удобную папку 
 1. Запустите `Lan-Play-Server-Manager.exe` от имени Администратора 
+1. В поле **Lan-Play Version** пропишите "**0.2.3**"
+1. В поле **MTU** напишите "**500**"
 1. Снимите галочку с пункта "**Fake Internet**" 
+	![](/images/screenshots/lanplay.png)
+	{: .text-center}
+	{: .notice--info}
 1. Выберите нужный сервер из представленных в списке и нажмите "**Подключиться**"
+	* Только зелёные сервера будут работать
 	* Договоритесь с другими игроками в [Discord](https://discordapp.com/invite/By4JA4C){:target="_blank"} на каком сервере вы будете играть
 	* Если подключение установлено, кнопка станет зелёной и сменит название
 
@@ -47,10 +53,8 @@ author_profile: true
 1. Значение поля "**Маска подсети**" установите в `255.255.0.0`
 1. Значение поля "**Шлюз**" установите в `10.13.37.001`
 1. Выберите "**Настройки DNS**" -> "**Ручной ввод**"
-1. В поле "**Первичный DNS**" введите `163.172.141.219`
-1. В поле "**Вторичный DNS**" введите `45.248.48.62` и нажмите "**Сохранить**", а затем OK
-1. Если вы используете [SX OS](cfw#sx-os){:target="_blank"}, откройте меню SX OS (альбомы) и во вкладке "**Options**" активируйте "**Internet Local Wireless Play**"
-	* Необходимо активировать заново после каждой перезагрузки приставки
+1. В поле "**Первичный DNS**" введите `8.8.8.8`
+1. В поле "**Вторичный DNS**" введите `8.8.8.4` и нажмите "**Сохранить**", а затем OK
 	
 ## Подключение к LAN-play
 
