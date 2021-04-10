@@ -58,7 +58,7 @@ permalink: migrate
 
 1. Выполните резервное копирование сохранений по [этой инструкции](backup-saves.html){:target="_blank"}
 
-#### Обновление EmuNAND до последней версии системного ПО 
+#### Обновление EmuNAND до {% include /vars/update_version.txt %}
 
 1. Обновите EmuNAND до {% include /vars/update_version.txt %} по [этой инструкции](http://sx.customfw.xyz/update-to-latest){:target="_blank"}
 
