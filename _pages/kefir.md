@@ -36,7 +36,7 @@ author_profile: true
   * [NX-Activity-Log](https://github.com/tallbl0nde/NX-Activity-Log/releases/latest){:target="_blank"} - программа, позволяющая отслеживать время, проведённое в играх
   * **nx-ntpc** - NTP-клиент для Nintendo Switch. Позволяет подтянуть корректное время и дату с серверов синхронизации времени в интернете
   * [JKSV](https://github.com/J-D-K/JKSV/releases){:target="_blank"} - программа для резервного копирования и восстановления сейвов
-  * [Kefir Updater](https://github.com/rashevskyv/kefir-updater/releases){:target="_blank"} - программа для обновления kefir через интернет
+  <!-- * [Kefir Updater](https://github.com/rashevskyv/kefir-updater/releases){:target="_blank"} - программа для обновления kefir через интернет -->
   * [pplay](https://github.com/Cpasjuste/pplay/releases/latest){:target="_blank"} - видеоплеер 
   * [Daybreak](https://github.com/Atmosphere-NX/Atmosphere/tree/0.14.1/troposphere/daybreak){:target="_blank"} - программа для [безопасного обновления](update-to-latest){:target="_blank"} версии системного ПО приставки
   * [NXThemes Installer](https://github.com/exelix11/SwitchThemeInjector/releases/latest){:target="_blank"} - менеджер кастомных тем 
@@ -65,14 +65,14 @@ author_profile: true
 1. Продолжайте следовать руководству
 {% endspoiler %}
 
-{% spoiler Обновление кефира прямо на приставке %}
+<!-- {% spoiler Обновление кефира прямо на приставке %}
 
 1. Выберите **Kefir Updater**
     * Требуется подключение к интернету!
 1. Нажмите "**Update Kefir**"
 1. По окончанию установки, перезагрузите приставку
 
-{% endspoiler %}
+{% endspoiler %} -->
 
 {% spoiler Инструкция по установке вручную (все ОС) %}
 
