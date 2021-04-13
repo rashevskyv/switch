@@ -22,7 +22,7 @@ author_profile: true
 
 {% spoiler Состав кефира %}
 
-1. **[Atmosphere](https://github.com/Atmosphere-NX/Atmosphere/releases/){:target="_blank"}**
+1. **[Kefirosphere](https://github.com/rashevskyv/Kefirosphere)**, форк [Atmosphere](https://github.com/Atmosphere-NX/Atmosphere)
 2. **[Сигпатчи](https://github.com/ITotalJustice/patches/releases){:target="_blank"}**. Благодаря сигпатчам на Atmosphere можно запускать неподписанные (читай: *пиратские*) приложения и игры. 
 3. **Загрузчик [hekate](https://github.com/CTCaer/hekate/releases/latest){:target="_blank"}**. Благодаря загрузчику вы можете запускать прошивку и другие {% include abbr/payload.txt abbr="пейлоады" %} через удобное меню, создавать и восстанавливать резервную копию NAND, делать EmuNAND, получать информацию о состоянии системы, монтировать карту памяти к ПК без вытаскивания её из свитча, делать переразметку карты памяти для установки других ОС и многое другое
 4. **Установленные {% include abbr/payload.txt abbr="пейлоады" %}**:
