@@ -34,7 +34,6 @@ author_profile: true
   * [FreshHay](https://github.com/devgru/FreshHay/releases){:target="_blank"} - программа для скачивания и распаковки рекомендуемой версии системного ПО прямо на приставке
   * [NX-Shell](https://github.com/joel16/NX-Shell/releases/latest){:target="_blank"} - файловый менеджер
   * [NX-Activity-Log](https://github.com/tallbl0nde/NX-Activity-Log/releases/latest){:target="_blank"} - программа, позволяющая отслеживать время, проведённое в играх
-  * **nx-ntpc** - NTP-клиент для Nintendo Switch. Позволяет подтянуть корректное время и дату с серверов синхронизации времени в интернете
   * [JKSV](https://github.com/J-D-K/JKSV/releases){:target="_blank"} - программа для резервного копирования и восстановления сейвов
   <!-- * [Kefir Updater](https://github.com/rashevskyv/kefir-updater/releases){:target="_blank"} - программа для обновления kefir через интернет -->
   * [pplay](https://github.com/Cpasjuste/pplay/releases/latest){:target="_blank"} - видеоплеер 
