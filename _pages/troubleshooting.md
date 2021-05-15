@@ -91,7 +91,7 @@ author_profile: true
 {% spoiler Джойконы в эмунанде не работают отдельно от консоли, хотя в стоке сиснанда работают %}
 
 1. Синхронизируй joy-con'ы с sysnand
-1. Скинь папки из [архива](/files/emunandjoy-confix.zip){:target="_blank"} в корень карты памяти
+1. Скиньте [Syncfixv2.te](/files/Syncfixv2.te){:target="_blank"} в корень карты памяти
 1. Скачайте пейлоад [TegraExplorer](https://github.com/suchmememanyskill/TegraExplorer/releases/){:target="_blank"} и поместите его в папку `bootloader/payloads`
 1. Вставь карту в switch и зайди в hekate
 1. Запусти `TegraExplorer.bin` из вкладки "**payloads**"
