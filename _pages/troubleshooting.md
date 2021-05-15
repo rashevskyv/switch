@@ -94,7 +94,7 @@ author_profile: true
 1. Скинь папки из [архива](/files/emunandjoy-confix.zip){:target="_blank"} в корень карты памяти
 1. Вставь карту в switch и зайди в hekate
 1. Запусти `TegraExplorer.bin` из вкладки "**payloads**"
-1. Перейди по пути `[SD:/] SD CARD -> tegraeplorer -> syncfix -> Syncfix.te -> Launch Script`
+1. Перейди по пути `[SD:/] SD CARD -> Syncfix.te -> Launch Script`
 
 {% endspoiler %}
 
