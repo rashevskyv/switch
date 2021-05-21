@@ -96,6 +96,7 @@ permalink: migrate
 1. Нажмите "**ОК**"
 1. Вставьте карту памяти приставки в ПК 
 1. Скачайте архив [`erista.zip`](files/erista.zip){:target="_blank"} или [`mariko.zip`](files/mariko.zip){:target="_blank"} в зависимости от ревизии вашей приставки
+	* НЕ используйте эти буты, если ваша прошивка не {% include /vars/update_version.txt %}! Буты для другой версии прошивки можно поискать на [4PDA](https://4pda.to/forum/index.php?forums%5B%5D=856&topics%5B%5D=900987&act=search&source=pst&query=boot){:target="_blank"}
 	* Если ваш серийник начинается на **XK**, то у вас **Mariko**. В остальных случаях - **Erista** (**XAW, XAJ, XAK итп.**)
 		* Серийный номер приставки находится в **Системных настройках =- Система =- Серийные номера**, самый первый серийник. Он же находится рядом с разъемом для зарядки на нижней грани планшета. 
 	* Switch Lite всегда Mariko 
@@ -167,6 +168,7 @@ permalink: migrate
 1. Запустите SXOS 
 1. Обновите EmuNAND до {% include /vars/update_version.txt %} по [этой инструкции](http://sx.customfw.xyz/update-to-latest){:target="_blank"}
 1. Скачайте архив [`erista.zip`](files/erista.zip){:target="_blank"} или [`mariko.zip`](files/mariko.zip){:target="_blank"} в зависимости от ревизии вашей приставки
+	* НЕ используйте эти буты, если ваша прошивка не {% include /vars/update_version.txt %}! Буты для другой версии прошивки можно поискать на [4PDA](https://4pda.to/forum/index.php?forums%5B%5D=856&topics%5B%5D=900987&act=search&source=pst&query=boot){:target="_blank"}
 	* Если ваш серийник начинается на **XK**, то у вас **Mariko**. В остальных случаях - **Erista** (**XAW, XAJ, XAK итп.**)
 		* Серийный номер приставки находится в **Системных настройках =- Система =- Серийные номера**, самый первый серийник. Он же находится рядом с разъемом для зарядки на нижней грани планшета. 
 	* Switch Lite всегда Mariko 
