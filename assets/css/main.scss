@@ -10,6 +10,12 @@
   color: #494e52!important;
 }
 
+#main {
+  @include breakpoint($x-large) {
+    max-width: 1920px;
+  }
+}
+
 html {
  /* Убирает прокрутку по горизонтале, для мобильной версии */
  overflow-x: hidden;
