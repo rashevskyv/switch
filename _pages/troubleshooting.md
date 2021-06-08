@@ -94,8 +94,9 @@ author_profile: true
 1. Скиньте [Syncfixv2.te](/files/Syncfixv2.te){:target="_blank"} в корень карты памяти
 1. Скачайте пейлоад [TegraExplorer](https://github.com/suchmememanyskill/TegraExplorer/releases/){:target="_blank"} и поместите его в папку `bootloader/payloads`
 1. Вставь карту в switch и зайди в hekate
-1. Запусти `TegraExplorer.bin` из вкладки "**payloads**"
+1. Запусти `TegraExplorer.bin` из вкладки "**payloads**", если увидите "**Grabbing keys from prod.keys... Done***"? нажмите любую кнопку
 1. Перейди по пути `[SD:/] SD CARD -> Syncfix.te -> Launch Script`
+1. После окончания работы скрипта, перезагрузите приставку 
 
 {% endspoiler %}
 
