@@ -322,7 +322,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 <h3 id="работа-с-caffeine">Работа с Caffeine</h3>
 
-<details class="spoiler"><summary class="spoiler-title">Часть I - Установка и настройка Caffeine</summary><div class="spoiler-body">
+<details class="spoiler"><summary class="spoiler-title">Установка и настройка Caffeine</summary><div class="spoiler-body">
 <h4 id="i---установка-caffeine-на-карту-памяти">I - Установка Caffeine на карту памяти</h4>
 
 <ol>
@@ -391,7 +391,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
       </li>
     </ul>
   </li>
-  <li>Откроется окно браузера, в котором будет загружена страница PegaSwitch. Дождитесь её полной загрузки</li>
+  <li>Откроется окно браузера, в котором будет загружена страница <strong>PegaSwitch</strong>. Дождитесь её полной загрузки</li>
 </ol>
 
 <h4 id="iii---запуск-кастомной-прошивки">III - Запуск кастомной прошивки</h4>
@@ -409,72 +409,12 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   <li>Если все сделано правильно, приставка перезагрузится в кастомную прошивку</li>
 </ol>
 
-<h4 id="iv---установка-fakenews">IV - Установка FakeNews</h4>
-
-<ol>
-  <li>Перейдите в Альбомы <img src="/images/screenshots/album.png" alt="" />, удерживая кнопку (R), чтобы запустить <a href="hbl" target="_blank">Homebrew Launcher</a></li>
-  <li>Запустите “<strong>Fake News Injector</strong>”</li>
-  <li>Подождите пару секунд и нажмите (+) на правом джойконе, чтобы перезагрузить приставку</li>
-</ol>
-
 </div></details>
-
-<details class="spoiler"><summary class="spoiler-title">Часть II - Настройка точки доступа для запуска Caffeine</summary><div class="spoiler-body">
-<p class="notice--info">Эту настройку нужно выполнять каждый раз, когда вы меняете или добавляете точку доступа к себе на консоль. То есть, для запуска эксплойта у активной точки доступа должен быть прописано указанный ниже DNS</p>
-
-<h3 id="настройка-fakenews">Настройка FakeNews</h3>
-
-<ol>
-  <li>Включите приставку и перейдите в “<strong>Системные настройки</strong>” -&gt; “<strong>Интернет</strong>” -&gt; “<strong>Интернет-настройки</strong>”</li>
-  <li>Нажмите на каждую точку доступа в разделе “<strong>Зарегистрированные сети</strong>” и выберите “<strong>Удалить настройки</strong>” -&gt; “<strong>Удалить</strong>”
-    <ul>
-      <li>Либо пропишите DNS для каждой из имеющихся. Удалять точки доступа нужно для того, чтобы приставка случайно не вышла в интернет</li>
-    </ul>
-  </li>
-  <li>Перейдите в “<strong>Системные настройки</strong>” -&gt; “<strong>Интернет</strong>” -&gt; “<strong>Интернет-настройки</strong>”</li>
-  <li>Подключитесь к вашей WiFi-сети, но введите длинный (не менее 8-ми символов) <strong>неправильный</strong> пароль
-    <ul>
-      <li><strong>Да, вводить нужно именно неправильный пароль</strong></li>
-    </ul>
-  </li>
-  <li>После того, как подключение не пройдёт проверку, нажмите “<strong>ОК</strong>”, “<strong>Закрыть</strong>”</li>
-  <li>Выберите “<strong>Смотреть настройки сети</strong>”</li>
-  <li>Выберите “<strong>Изменить настройки</strong>” -&gt; “<strong>Настройки DNS</strong>” -&gt; “<strong>Ручной ввод</strong>”</li>
-  <li>В поле “<strong>Первичный DNS</strong>” введите <code class="language-plaintext highlighter-rouge">163.172.181.170</code></li>
-  <li>В поле “<strong>Ввести пароль</strong>” введите уже <strong>правильный</strong> пароль</li>
-  <li>Нажмите “<strong>Сохранить</strong>”, а затем OK</li>
-  <li>Выберите “<strong>Подключиться к этой сети</strong>”</li>
-  <li>Подключение должно пройти нормально, без регистрации в сети</li>
-  <li>Нажмите (HOME)</li>
-</ol>
-
-<p class="notice--info">Сейчас ваша приставка уже находится в кастомной прошивке. Если вам нужно попасть в <span class="tooltip_container">
-	hekate
-	<span class="tooltip"><i class="fas fa-caret-down"></i>
-		<span class="bottom">
-			Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
-		</span>
-	</span>
-</span>, перезагрузите приставку через меню питания и зажмите кнопку понижения громкости на сплешскрине кефира.</p>
-
-<p class="notice--warning">Если вы выключили приставку, либо у вас села батарея, запускайте кастом по инструкции из спойлера <strong>Запуск настроенного Caffeine</strong></p>
-
-</div></details>
-
-<hr />
 
 <details class="spoiler"><summary class="spoiler-title">Запуск настроенного Caffeine</summary><div class="spoiler-body">
-<h4 id="i---запуск-pegascape">I - Запуск PegaScape</h4>
-
 <ol>
-  <li>Нажмите на иконку Новости <img src="/images/screenshots/news.png" alt="" /></li>
-  <li>Выберите тайл “<strong>Launch PegaSwitch</strong>”</li>
-  <li>Нажмите на видео с логотипом “<strong>ReSwitched</strong>” для запуска PegaScape</li>
-</ol>
-
-<h4 id="ii---запуск-hekate-с-помощью-caffeine">II - Запуск hekate с помощью Caffeine</h4>
-
-<ol>
+  <li>Запустите <strong>eShop</strong>. Приставка потребует подключения к сети, нажмите “<strong>Далее</strong>”</li>
+  <li>Откроется окно браузера, в котором будет загружена страница <strong>PegaSwitch</strong>. Дождитесь её полной загрузки</li>
   <li>На странице PegaScape выберите иконку <strong>Caffeine</strong>
     <ul>
       <li>Спиннер на экране зависнет, однако тот, что в левом нижнем углу, будет вращаться. Наберитесь терпения! В среднем от момента нажатия на иконку,  до срабатывания эксплойта проходит около 45 секунд</li>
