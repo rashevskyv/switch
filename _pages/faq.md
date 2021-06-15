@@ -30,7 +30,7 @@ author_profile: true
 
 {% spoiler Почему необходимо держать ПО всегда обновленным %}
 
-**О:** [Исчерпывающий ответ](https://4pda.ru/forum/index.php?showtopic=900987&st=24480#entry102270146)
+**О:** [Исчерпывающий ответ](https://4pda.to/forum/index.php?showtopic=900987&st=24480#entry102270146)
 
 {% endspoiler %}
 
@@ -41,7 +41,7 @@ author_profile: true
 
 {% spoiler Что такое hbgshop? %}
 
-**О:** [Исчерпывающий ответ](https://4pda.ru/forum/index.php?showtopic=939714&st=1480#entry87313387)
+**О:** [Исчерпывающий ответ](https://4pda.to/forum/index.php?showtopic=939714&st=1480#entry87313387)
 
 {% endspoiler %}
 
@@ -166,7 +166,7 @@ author_profile: true
 {% spoiler Не могу включить приставку %}
 **О:** Отключите приставку от источника питания\вытащите из неё USB, 30 секунд удерживайте кнопку (POWER), после этого нажмите на кнопку (POWER) единожды и запускайте прошивку. Если не помогает, снова 30 секунд удерживайте кнопку (POWER), ставьте консоль на зарядку не менее, чем на 3 часа в оригинальный док или ЗУ, после чего отключите приставку от источника питания\вытащите из неё USB, 30 секунд удерживайте кнопку (POWER), после этого нажмите на кнопку (POWER) единожды и запускайте прошивку.
 
-[Подробнее](https://4pda.ru/forum/index.php?showtopic=900987&st=16340#entry89527321){:target="_blank"}
+[Подробнее](https://4pda.to/forum/index.php?showtopic=900987&st=16340#entry89527321){:target="_blank"}
 
 {% endspoiler %}
 

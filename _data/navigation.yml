@@ -65,11 +65,11 @@ addons:
   - title: "Эмуляция Amiibo с помощью модуля emuiibo"
     url: /emuiibo
   - title: "Tesla Overlay Menu"
-    url: "https://4pda.ru/forum/index.php?showtopic=900987&st=18280#entry93523431"
+    url: "https://4pda.to/forum/index.php?showtopic=900987&st=18280#entry93523431"
   - title: "Chiaki - Remote Play для PS4"
-    url: "https://4pda.ru/forum/index.php?showtopic=900987&st=19800#entry96367163"
+    url: "https://4pda.to/forum/index.php?showtopic=900987&st=19800#entry96367163"
   - title: "Эмуляторы для Switch"
-    url: "https://4pda.ru/forum/index.php?showtopic=939714&st=0#Spoil-81825647-4"
+    url: "https://4pda.to/forum/index.php?showtopic=939714&st=0#Spoil-81825647-4"
             
 bottom:
   - title: <div class="notice--warning">Если вы попали в это руководство впервые и не знаете как прошивается Switch, рекомендуем начать знакомство с ним с <a href="/" target="_blank">первой страницы</a></div>

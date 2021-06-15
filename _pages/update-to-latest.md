@@ -51,17 +51,10 @@ author_profile: true
 
 По этой инструкции можно менять версию своего ПО на любую, а не только на {% include /vars/update_version.txt %}. 
 
-Другие версии ПО Switch можно найти [здесь](https://darthsternie.net/switch-firmwares/){:target="_blank"}
-{: .notice--info}
-
 ## Что понадобится
 
 * Свежая версия {% include abbr/kefir_addr.txt %}
-* Прошивка {% include /vars/update_version.txt %} (скачайте по любой из ссылок):
-	* [magnet](magnet:?xt=urn:btih:AED6927F84C7B6CA2D1ABC3C5D999BBBC2D412A1&dn=12.0.2.zip&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce){:target="_blank"}
-	* [ЯД](https://disk.yandex.ua/d/_sQKmDWLS4z7XQ){:target="_blank"}
-	* [GD](https://drive.google.com/file/d/1tYFqYN9a2y5Q-t5m5Jf61BzcvrapdgFa){:target="_blank"}
-	* [MEGA](https://mega.nz/file/oWhlWKCT#zB6Ak80IuD0716RqOakPIZsfiylOd-JGsVdn4eHiTsA){:target="_blank"}
+* [Прошивка **{% include /vars/update_version.txt %}**](https://darthsternie.net/switch-firmwares/){:target="_blank"}
 * Карта памяти 
 
 ## Инструкция
@@ -84,10 +77,10 @@ author_profile: true
 		* `atmosphere/contents/0100000000001000`
 		* `atmosphere/contents/0100000000001013`
 		* `atmosphere/contents/0100000000000352`
-1. Установите `.zip`-архив {% include abbr/kefir_addr.txt %}, если ещё не делали этого
+1. Установите {% include abbr/kefir_addr.txt %}, если ещё не делали этого
 	* Если версия вашего системного ПО 1.0.0, удалите папки `\atmosphere\exefs_patches` и `\atmosphere\kip_patches\fs_patches`:
 		* После того, как вы удачно обновите системное ПО, обязательно **ещё раз установите {% include abbr/kefir_addr.txt %}**
-1. Распакуйте архив `{% include /vars/update_version.txt %}.zip` в любую удобную папку на карте памяти вашей приставки (например, папку `update`)
+1. Распакуйте архив `{% include /vars/update_version.txt %}.zip` в папку `firmware`на карте памяти вашей приставки (если её нет, создайте)
 	* Ещё раз - архив **с прошивкой**. Не архив с кефиром! Архив с прошивкой расположен в части [Что понадобится](#что-понадобится). Нужно скопировать не сам архив, а именно его **содержимое**
 	* Вместо этого вы можете скачать архив со свежей версией системного ПО через приложение **Kefir Updater** прямо на вашей приставке. Для этого запустите [HBL](hbl){:target="_blank"} через игру, выберите приложение **Kefir Updater**, перейдите в меню "**Скачать прошивку**" и выбекрите необходимую версию. Нажмите (A), нажмите "**Продолжить**", чтобы начать закачку прошивки. Программа сама скачает выбранную версию системного ПО и распакует её в папку `firmware`. 
 1. Вставьте карту памяти обратно в приставку
@@ -116,7 +109,7 @@ author_profile: true
 	* Если после логотипа Nintendo вы наблюдаете чёрный экран с ошибкой, значит у вас не установлены драйвера exFAT и вы проигнорировали [форматирование карты памяти в FAT32](https://format.customfw.xyz){:target="_blank"}, которое нужно было сделать выше
 1. Откройте [Homebrew Launcher](hbl){:target="_blank"}
 1. Запустите **Daybreak** и выберите **Install**
-1. Перейдите в папку, в которой находится прошивка {% include /vars/update_version.txt %}, скопированная ранее, и нажмите (A)
+1. Перейдите в папку `firmware`, в ней находится прошивка {% include /vars/update_version.txt %}, скопированная ранее, и нажмите (A)
 	* Если вы не можете перейти в папку (папка отображается как файл), значит ваша папка имеет неверные атрибуты (чаще всего архивный). Как их исправить описано в [FAQ](faq){:target="_blank"} или разделе [проблемы и их решения](troubleshooting){:target="_blank"}
 1. Дождитесь окончания обработки прошивки и нажмите "**Continue**"
 1. Нажмите "**Preserve settings**".

@@ -5,4 +5,4 @@
 * [Онлайн для прошитых и забаненных](lanplay){: target="blank_"}
 * [Запуск Homebrew Launcher](hbl){: target="blank_"}
 * [Эмуляция Amiibo с помощью модуля emuiibo](emuiibo){: target="blank_"}
-* [Инструкции на сайте 4pda](https://4pda.ru/forum/index.php?act=findpost&pid=73214535&anchor=Spoil-73214535-3){: target="blank_"}
+* [Инструкции на сайте 4pda](https://4pda.to/forum/index.php?act=findpost&pid=73214535&anchor=Spoil-73214535-3){: target="blank_"}

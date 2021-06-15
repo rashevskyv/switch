@@ -88,7 +88,7 @@ author_profile: true
 1. По окончанию установки, нажмите (X), чтобы остановить MTP-сервер и отмонтировать MTP-устройство
 1. Нажмите (+), чтобы закрыть DBI
 
-Как альтернатива, в MacOS можно использовать DBIbackend.py для установки по USB. Обратитесь к [этой инструкции](https://4pda.ru/forum/index.php?showtopic=939714&st=5160#entry98421804){:target="_blank"} для подробностей
+Как альтернатива, в MacOS можно использовать DBIbackend.py для установки по USB. Обратитесь к [этой инструкции](https://4pda.to/forum/index.php?showtopic=939714&st=5160#entry98421804){:target="_blank"} для подробностей
 {: .notice--info}
 
 {% endspoiler %}
@@ -166,7 +166,7 @@ author_profile: true
 
 ## Полезные ссылки 
 
-* [Cписок игр на русском](https://4pda.ru/forum/index.php?showtopic=937297){:target="_blank"}
+* [Cписок игр на русском](https://4pda.to/forum/index.php?showtopic=937297){:target="_blank"}
 * [Эмуляция Amiibo с помощью модуля emuiibo](emuiibo){:target="_blank"}
 * [Связывание учётной записи консоли с аккаунтом Nintendo](link-account){:target="_blank"}
 

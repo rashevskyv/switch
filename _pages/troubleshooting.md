@@ -115,7 +115,7 @@ author_profile: true
 
 {% spoiler Батарея отображает неверный заряд \ Калибровка батареи %}
 
-**О:** [Исчерпывающая статья](https://4pda.ru/forum/index.php?showtopic=900987&st=14900#entry87254644){:target="_blank"}
+**О:** [Исчерпывающая статья](https://4pda.to/forum/index.php?showtopic=900987&st=14900#entry87254644){:target="_blank"}
 
 {% endspoiler %}
 
@@ -165,7 +165,7 @@ author_profile: true
 {% endspoiler %}
 
 {% spoiler Не могу включить приставку %}
-[Наиболее обширная инструкция](https://4pda.ru/forum/index.php?showtopic=900987&st=16340#entry89527321){:target="_blank"}
+[Наиболее обширная инструкция](https://4pda.to/forum/index.php?showtopic=900987&st=16340#entry89527321){:target="_blank"}
 
 {% endspoiler %}
 
