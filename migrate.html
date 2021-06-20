@@ -388,45 +388,10 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   <li>Выключите приставку, удерживая 30 секунд кнопку питания</li>
   <li>Вставьте карту памяти приставки в ПК</li>
   <li>Скачайте <a href="https://drive.google.com/file/d/1PZ7w1J5PAQf4CrUWfzfA1mVnCNeD13RP" target="_blank">SX_OS 3.1.0</a></li>
-  <li>Поместите скачанный <code class="language-plaintext highlighter-rouge">boot.dat</code> в корень карты памяти с заменой</li>
+  <li>Поместите скачанный <code class="language-plaintext highlighter-rouge">boot.dat</code> в корень карты памяти с заменой, вставьте КП в консоль</li>
   <li>Включите консоль, удерживая кнопку повышения громкости, чтобы попасть в меню загрузчика SX OS</li>
   <li>Перейдите в “<strong>Options</strong>” -&gt; “<strong>SX Core</strong> / <strong>SX Lite</strong>”, затем выберите “<strong>Cleanup</strong>” -&gt; “<strong>Continue</strong>”</li>
   <li>Перейдите в “<strong>Payloads</strong>” -&gt; <code class="language-plaintext highlighter-rouge">payload.bin</code>”`, затем выберите “<strong>Launch</strong>”. Должен загрузиться SysNAND.</li>
-</ol>
-
-<p class="notice--info">Теперь установите <span class="tooltip_container">
-	<a href="kefir" target="_blank">kefir</a>
-	<span class="tooltip"><i class="fas fa-caret-down"></i>
-		<span class="bottom">
-			Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
-		</span>
-	</span>
-</span> ещё раз. Последующие запуски kefir будет запускаться автоматически сразу при включении приставки.</p>
-
-<p>Если не помогло:</p>
-<ol>
-  <li>Вставьте карту памяти приставки в ПК</li>
-  <li>Скачайте <a href="https://drive.google.com/file/d/1PZ7w1J5PAQf4CrUWfzfA1mVnCNeD13RP" target="_blank">SX_OS 3.1.0</a></li>
-  <li>Запустите SXOS</li>
-  <li>Обновите EmuNAND до 12.0.3 по <a href="http://sx.customfw.xyz/update-to-latest" target="_blank">этой инструкции</a></li>
-  <li>Скачайте архив <a href="files/erista.zip" target="_blank"><code class="language-plaintext highlighter-rouge">erista.zip</code></a> или <a href="files/mariko.zip" target="_blank"><code class="language-plaintext highlighter-rouge">mariko.zip</code></a> в зависимости от ревизии вашей приставки
-    <ul>
-      <li>НЕ используйте эти буты, если ваша прошивка не 12.0.3! Буты для другой версии прошивки можно поискать на <a href="https://4pda.to/forum/index.php?forums%5B%5D=856&amp;topics%5B%5D=900987&amp;act=search&amp;source=pst&amp;query=boot" target="_blank">4PDA</a></li>
-      <li>Если ваш серийник начинается на <strong>XK</strong>, то у вас <strong>Mariko</strong>. В остальных случаях - <strong>Erista</strong> (<strong>XAW, XAJ, XAK итп.</strong>)
-        <ul>
-          <li>Серийный номер приставки находится в <strong>Системных настройках =- Система =- Серийные номера</strong>, самый первый серийник. Он же находится рядом с разъемом для зарядки на нижней грани планшета.</li>
-        </ul>
-      </li>
-      <li>Switch Lite всегда Mariko</li>
-    </ul>
-  </li>
-  <li>Скопируйте <code class="language-plaintext highlighter-rouge">BOOT0</code> и <code class="language-plaintext highlighter-rouge">BOO1</code> из архива <a href="files/erista.zip" target="_blank"><code class="language-plaintext highlighter-rouge">erista.zip</code></a> или <a href="files/mariko.zip" target="_blank"><code class="language-plaintext highlighter-rouge">mariko.zip</code></a> в папку <code class="language-plaintext highlighter-rouge">emuMMC\ED00\eMMC</code> с заменой
-    <ul>
-      <li>Вместо <code class="language-plaintext highlighter-rouge">ED00</code> в пути может быть как <code class="language-plaintext highlighter-rouge">SD01</code> так и любые другие сочетания из двух букв и двух чисел</li>
-      <li>Теперь при запуске приставки она автоматически будет запускать emuMMC.</li>
-      <li>Чтобы попасть в официальную прошивку, запустите <strong>hekate</strong> -&gt; “<strong>Launch</strong>” -&gt; “<strong>Stock</strong>”</li>
-    </ul>
-  </li>
 </ol>
 
 <p class="notice--info">Теперь установите <span class="tooltip_container">
@@ -446,13 +411,55 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 <ol>
   <li>Включите консоль</li>
   <li>На заставке кефира <strong>нажмите кнопку понижения громкости</strong>, чтобы попасть в hekate</li>
-  <li>Перейдите в “<strong>Tools</strong>”	 -&gt; “<strong>Backup eMMC</strong>” -&gt; “<strong>eMMC BOOT0 &amp; BOOT1</strong>”</li>
+  <li>Перейдите в “<strong>Tools</strong>” -&gt; “<strong>Backup eMMC</strong>” -&gt; “<strong>eMMC BOOT0 &amp; BOOT1</strong>”</li>
   <li>Нажмите “<strong>Close</strong>”, “<strong>Close</strong>”, перейдите в “<strong>Home</strong>” и нажмите “<strong>Power Off</strong>”, подтвердите выключение</li>
   <li>Вставьте карту памяти приставки в ПК</li>
   <li>Перейдите в папку <code class="language-plaintext highlighter-rouge">sd:\backup\%emmc_id%</code>, где <strong>%emmc_id%</strong> - уникальный номер для каждой отдельной приставки.</li>
   <li>Скопируйте <code class="language-plaintext highlighter-rouge">BOOT0</code> и <code class="language-plaintext highlighter-rouge">BOO1</code> из этой папки в папку <code class="language-plaintext highlighter-rouge">emuMMC\ED00\eMMC</code> с заменой</li>
   <li>Пробуйте запустить эмунанд. Если не вышло, вам придется создавать новый.</li>
 </ol>
+
+<p>Если не помогло:</p>
+<ol>
+  <li><a href="backup-nand#часть-ii---дампим-ключи" target="_blank">Снимите копию ключей вашей приставки</a></li>
+  <li>Вставьте карту памяти приставки в ПК</li>
+  <li>Скачайте <a href="files/reBoot_20210418.zip" target="_blank">reBoot_20210418.zip</a></li>
+  <li><a href="https://darthsternie.net/switch-firmwares/" target="_blank">Скачайте прошивку</a>, соответствующую текущей версии прошивки вашего emunand
+    <ul>
+      <li>Важно точно знать какая прошивка на вашем emunand! Попробуйте запустить SXOS и посмотреть какая версия прошивки в вашем EmuNAND. Для этого скачайте <a href="https://drive.google.com/file/d/1PZ7w1J5PAQf4CrUWfzfA1mVnCNeD13RP" target="_blank">SX_OS 3.1.0</a> и поместите скачанный <code class="language-plaintext highlighter-rouge">boot.dat</code> в корень карты памяти с заменой, затем вставьте КП в консоль и включите приставку</li>
+    </ul>
+  </li>
+  <li>Распакуйте архив с прошивкой в папку <code class="language-plaintext highlighter-rouge">firmware</code> на вашем ПК</li>
+  <li>Поместите файлы из архива <a href="files/reBoot_20210418.zip" target="_blank">reBoot_20210418.zip</a> в папку <code class="language-plaintext highlighter-rouge">firmware</code></li>
+  <li>Поместите в папку <code class="language-plaintext highlighter-rouge">firmware</code> ваш файл с ключами (<code class="language-plaintext highlighter-rouge">prod.keys</code>)</li>
+  <li>Запустите <code class="language-plaintext highlighter-rouge">recreate_boot_by_yoti.bat</code>. После окончания работы программы вы получите файлы <code class="language-plaintext highlighter-rouge">BOOT0_ERISTA</code>, <code class="language-plaintext highlighter-rouge">BOOT0_MARIKO</code>, <code class="language-plaintext highlighter-rouge">BOOT1_ERISTA</code>, <code class="language-plaintext highlighter-rouge">BOOT1_MARIKO</code></li>
+  <li>Определите какой ревизии ваша приставка (<strong>Erista</strong> или <strong>Mariko</strong>) и переименуйте файлы, соответствующие вашей ревизии в <code class="language-plaintext highlighter-rouge">BOOT0</code> и <code class="language-plaintext highlighter-rouge">BOOT1</code>
+    <ul>
+      <li>Если серийник вашей консоли начинается на <strong>XK</strong>, то у вас <strong>Mariko</strong>. В остальных случаях - <strong>Erista</strong> (<strong>XAW, XAJ, XAK итп.</strong>)
+        <ul>
+          <li>Серийный номер приставки находится в <strong>Системных настройках =- Система =- Серийные номера</strong>, самый первый серийник. Он же находится рядом с разъемом для зарядки на нижней грани планшета.</li>
+        </ul>
+      </li>
+      <li>Switch Lite всегда Mariko</li>
+    </ul>
+  </li>
+  <li>Скопируйте <code class="language-plaintext highlighter-rouge">BOOT0</code> и <code class="language-plaintext highlighter-rouge">BOO1</code> для вашей ревизии в папку <code class="language-plaintext highlighter-rouge">emuMMC\ED00\eMMC</code> с заменой
+    <ul>
+      <li>Вместо <code class="language-plaintext highlighter-rouge">ED00</code> в пути может быть как <code class="language-plaintext highlighter-rouge">SD01</code> так и любые другие сочетания из двух букв и двух чисел</li>
+      <li>Теперь при запуске приставки она автоматически будет запускать emuMMC.</li>
+      <li>Чтобы попасть в официальную прошивку, запустите <strong>hekate</strong> -&gt; “<strong>Launch</strong>” -&gt; “<strong>Stock</strong>”</li>
+    </ul>
+  </li>
+</ol>
+
+<p class="notice--info">Теперь установите <span class="tooltip_container">
+	<a href="kefir" target="_blank">kefir</a>
+	<span class="tooltip"><i class="fas fa-caret-down"></i>
+		<span class="bottom">
+			Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+		</span>
+	</span>
+</span> ещё раз. Последующие запуски kefir будет запускаться автоматически сразу при включении приставки.</p>
 
 </div></details>
 
