@@ -1,6 +1,7 @@
 ---
 title: "Переход с SXOS на Atmosphere"
 permalink: migrate
+author_profile: true
 ---
 
 {% include toc title="Разделы" %}
