@@ -7,8 +7,8 @@ author_profile: true
 
 С помощью приложения tinfoil игры можно устанавливать напрямую с удалённого сервера в интернете, который постоянно пополняется силами сообщества. По-сути программа является аналогом freeshop для 3DS
 
-[Как работает tinfoil](https://4pda.to/forum/index.php?showtopic=939714&st=6140#entry100779475){:target="_blank"}
-[Почему не стоит использовать tinfoil](https://4pda.to/forum/index.php?showtopic=939714&st=7440#entry103769233){:target="_blank"}
+* [Как работает tinfoil](https://4pda.to/forum/index.php?showtopic=939714&st=6140#entry100779475){:target="_blank"}
+* [Почему не стоит использовать tinfoil](https://4pda.to/forum/index.php?showtopic=939714&st=7440#entry103769233){:target="_blank"}
 
 С помощью этой программы не рекомендуется устанавливать игры с ПК. Используйте её исключительно для установки игр через интернет. 
 
