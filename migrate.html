@@ -196,7 +196,37 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
       
 	  
 	  	
-        <details class="spoiler"><summary class="spoiler-title">Зачем переходить на Atmosphere?</summary><div class="spoiler-body">
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Разделы</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#переход-из-sx-на-atmosphere" id="markdown-toc-переход-из-sx-на-atmosphere">Переход из SX на Atmosphere</a>    <ul>
+      <li><a href="#часть-i---подготовительные-работы" id="markdown-toc-часть-i---подготовительные-работы">Часть I - Подготовительные работы</a></li>
+      <li><a href="#часть-ii---миграция-emunand" id="markdown-toc-часть-ii---миграция-emunand">Часть II - Миграция Emunand</a></li>
+      <li><a href="#часть-iii---бекап-прошивки-и-ключей" id="markdown-toc-часть-iii---бекап-прошивки-и-ключей">Часть III - Бекап прошивки и ключей</a></li>
+      <li><a href="#часть-iv---завершение-миграции" id="markdown-toc-часть-iv---завершение-миграции">Часть IV - Завершение миграции</a></li>
+    </ul>
+  </li>
+  <li><a href="#проблемы-и-их-решения" id="markdown-toc-проблемы-и-их-решения">Проблемы и их решения</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<hr />
+
+<div class="notice--warning">Если вы попали в это руководство впервые и не знаете как прошивается Switch, рекомендуем начать знакомство с ним с <a href="/" target="_blank">первой страницы</a></div>
+
+<div class="notice--warning">Не вставляйте вашу карту памяти в ПК под управлением Mac OS! Mac OS испортит атрибуты файлов и папок на вашей карте памяти!  Используйте Windows или Linux!</div>
+
+<div class="notice">Делайте <a href="/backup-saves" target="_blank">бекапы сохранений</a> как можно чаще!</div>
+
+<div class="notice--warning"><strong>Если приставка зависла или не подаёт признаков жизни, выключите её удерживанием кнопки (POWER) 30 секунд, затем включите и пробросьте пейлоад!</strong></div>
+
+<hr />
+
+<details class="spoiler"><summary class="spoiler-title">Зачем переходить на Atmosphere?</summary><div class="spoiler-body">
 <p>В октябре 2020 года <a href="https://www.theverge.com/2020/10/2/21499297/team-xecuter-selling-nintendo-hacks-arrested-charged-fraud" target="_blank">были арестованы два лидера Xecuter Team</a> - кампании, занимавшейся разработкой и поддержкой SXOS, а так же производством чипов для модификации приставок с закрытой уязвимостью.</p>
 
 <p>1-го декабря 2020 года в свет выходит обновление системного ПО Switch под версией 11.0.0 и уже спустя 5 дней команда SXOS выпустила прошивку с поддержкой этого обновления. Казалось бы, всё идёт хорошо и несмотря на аресты, TX всё ещё работают.</p>
@@ -213,23 +243,23 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 <h2 id="переход-из-sx-на-atmosphere">Переход из SX на Atmosphere</h2>
 
-<details class="spoiler"><summary class="spoiler-title">Видеоинструкция</summary><div class="spoiler-body">
-<p class="notice--warning">ВНИМАНИЕ!!! Мы не рекомендуем слепо следовать видео-инструкции! Используйте её только в качестве вспомогательной! Дело в том, что текстовый гайд постоянно обновляется. Невозможно следить за всеми обновлениями в гайде и каждый раз менять видео-инструкцию вслед за ним! Поэтому текстовый гайд всегда будет более точным и более актуальным, чем видео!</p>
+<h3 id="часть-i---подготовительные-работы">Часть I - Подготовительные работы</h3>
 
-<div style="margin:0 auto;" class="text-center notice--info">
-  <div class="ytcontainer">
-    <iframe width="1667" height="946" class="yt" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/iHkkzY44IiA?start="></iframe>
-  </div>
-</div>
+<p class="notice--warning">Если ваша приставка не запускается, например, после обновления sysnand через настройки, то сразу переходите к <strong>части II</strong></p>
 
-</div></details>
-
-<p>Выберите вариант, который вам подходит и следуйте инструкции.</p>
-
-<details class="spoiler"><summary class="spoiler-title">Прошиваемая приставка с уязвимостью Fusée Gelée или прошитая с помощью Caffeine</summary><div class="spoiler-body">
 <ol>
+  <li>Выполните резервное копирование сохранений по <a href="backup-saves.html" target="_blank">этой инструкции</a>
+    <ul>
+      <li>Если вам не нужны сохранения, можете пропустить. Если нужны, делать <strong>обязательно</strong></li>
+    </ul>
+  </li>
+  <li>Запустите ваш текущий эмунанд и запомните какая там версия системного ПО (<strong>Системные настройки</strong> -&gt; <strong>Система</strong> -&gt; <strong>Текущая версия системы</strong>)
+    <ul>
+      <li>Эта информация пригодится вам, если эмунанд нормально не заработает на Atmosphere. В таком случае, вам придётся генерировать чистые буты.</li>
+    </ul>
+  </li>
   <li>Вставьте карту памяти приставки в ПК</li>
-  <li>Установите <span class="tooltip_container">
+  <li>Установите свежий <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip"><i class="fas fa-caret-down"></i>
      <span class="bottom">
@@ -238,6 +268,11 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
  </span>
 </span></li>
   <li>Дождитесь окончания установки, затем верните карту памяти в консоль</li>
+</ol>
+
+<h3 id="часть-ii---миграция-emunand">Часть II - Миграция Emunand</h3>
+
+<ol>
   <li>Включите консоль</li>
   <li><strong>Если у вас был EmuNAND</strong> (если не было, то достаточно просто установки кефира), на заставке кефира <strong>нажмите кнопку понижения громкости</strong>, чтобы попасть в hekate
     <ol>
@@ -249,137 +284,37 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
         <ul>
           <li>Теперь при запуске приставки она автоматически будет запускать emuMMC.</li>
           <li>Чтобы попасть в официальную прошивку, запустите <strong>hekate -&gt; Launch -&gt; Stock</strong></li>
+          <li>Чтобы попасть в пиратскую прошивку, запустите <strong>hekate -&gt; Launch -&gt; Atmosphere</strong>. Будет запущен Emunand. Если Emunand запускается с ошибкой, либо долго висит на черном экране, обратитесь к разделу <a href="#проблемы-и-их-решения" target="_blank">проблемы и их решения</a> внизу страницы</li>
         </ul>
       </li>
     </ol>
   </li>
 </ol>
 
-</div></details>
+<h3 id="часть-iii---бекап-прошивки-и-ключей">Часть III - Бекап прошивки и ключей</h3>
 
-<details class="spoiler"><summary class="spoiler-title">Непрошиваемая приставка с чипом от Team Xecuter (SX Core или SX Lite)</summary><div class="spoiler-body">
-<details class="spoiler"><summary class="spoiler-title">Часть I - Подготовительные работы</summary><div class="spoiler-body">
-<p class="notice--warning">Если ваша приставка не запускается, например, после обновления sysnand через настройки, то сразу переходите к <strong>части II</strong></p>
-
-<h4 id="резервное-копирование-сохранений">Резервное копирование сохранений</h4>
-
-<ol>
-  <li>Выполните резервное копирование сохранений по <a href="backup-saves.html" target="_blank">этой инструкции</a></li>
-</ol>
-
-<h4 id="обновление-emunand-до-1203">Обновление EmuNAND до 12.0.3</h4>
-
-<ol>
-  <li>Обновите EmuNAND до 12.0.3 по <a href="http://sx.customfw.xyz/update-to-latest" target="_blank">этой инструкции</a></li>
-</ol>
-
-</div></details>
-
-<details class="spoiler"><summary class="spoiler-title">Часть II - Запуск прошивки</summary><div class="spoiler-body">
-<ol>
-  <li>Вставьте карту памяти приставки в ПК</li>
-  <li>Установите <span class="tooltip_container">
- <a href="kefir" target="_blank">kefir</a>
- <span class="tooltip"><i class="fas fa-caret-down"></i>
-     <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
-     </span>
- </span>
-</span>
-    <ul>
-      <li>Да, еще раз. KEFIR4 нужно было ставить только для обновления прошивки через ChoiDojour и он не подходит для повседневной работы. Поэтому для работы мы ставим KEFIR5</li>
-    </ul>
-  </li>
-  <li>Дождитесь окончания установки, затем верните карту памяти в консоль</li>
-  <li>Включите консоль
-    <ul>
-      <li>Должен загрузиться SysNAND.</li>
-      <li>Если возникают какие-либо ошибки, обратитесь к разделу “<a href="migrate#проблемы-и-их-решения"><strong>Проблемы и их решения</strong></a>” внизу этой страницы</li>
-    </ul>
-  </li>
-</ol>
-
-</div></details>
-
-<p class="notice--info">Чтобы проверить есть EmuNAND или нет, достаточно перейти на карту памяти и посмотреть есть ли в папке <code class="language-plaintext highlighter-rouge">sxos/emunand</code> файлы. Если они есть, то EmuNAND в наличии, если файлов нет, то EmuNAND нет.</p>
-
-<details class="spoiler"><summary class="spoiler-title">Если EmuNAND есть</summary><div class="spoiler-body">
-<details class="spoiler"><summary class="spoiler-title">Часть III - Перенос EmuNAND с SX OS в Atmosphere</summary><div class="spoiler-body">
-<p class="notice--warning">Если EmuNAND нет, то переходите под следующий спойлер и делайте его.</p>
-
-<ol>
-  <li>Выключите консоль</li>
-  <li>Включите консоль, удерживая кнопку понижения громкости, чтобы загрузиться в hekate</li>
-  <li>Перейдите в “<strong>emuMMC</strong>”</li>
-  <li>Нажмите “<strong>Migrate emuMMC</strong>”</li>
-  <li>Выберите “<strong>Emunand</strong> -&gt; “<strong>Continue</strong>”</li>
-  <li>После окончания миграции, нажмите “<strong>Change emuMMC</strong>” и в правой части экрана выберите “<strong>emuMMC/EF00</strong>” (вместо EF могут быть другие буквы)</li>
-  <li>Нажмите “<strong>ОК</strong>”</li>
-  <li>Вставьте карту памяти приставки в ПК</li>
-  <li>Скачайте архив <a href="files/erista.zip" target="_blank"><code class="language-plaintext highlighter-rouge">erista.zip</code></a> или <a href="files/mariko.zip" target="_blank"><code class="language-plaintext highlighter-rouge">mariko.zip</code></a> в зависимости от ревизии вашей приставки
-    <ul>
-      <li>НЕ используйте эти буты, если ваша прошивка не 12.0.3! Буты для другой версии прошивки можно поискать на <a href="https://4pda.to/forum/index.php?forums%5B%5D=856&amp;topics%5B%5D=900987&amp;act=search&amp;source=pst&amp;query=boot" target="_blank">4PDA</a></li>
-      <li>Если ваш серийник начинается на <strong>XK</strong>, то у вас <strong>Mariko</strong>. В остальных случаях - <strong>Erista</strong> (<strong>XAW, XAJ, XAK итп.</strong>)
-        <ul>
-          <li>Серийный номер приставки находится в <strong>Системных настройках =- Система =- Серийные номера</strong>, самый первый серийник. Он же находится рядом с разъемом для зарядки на нижней грани планшета.</li>
-        </ul>
-      </li>
-      <li>Switch Lite всегда Mariko</li>
-    </ul>
-  </li>
-  <li>Скопируйте <code class="language-plaintext highlighter-rouge">BOOT0</code> и <code class="language-plaintext highlighter-rouge">BOO1</code> из архива <a href="files/erista.zip" target="_blank"><code class="language-plaintext highlighter-rouge">erista.zip</code></a> или <a href="files/mariko.zip" target="_blank"><code class="language-plaintext highlighter-rouge">mariko.zip</code></a> в папку <code class="language-plaintext highlighter-rouge">emuMMC\ED00\eMMC</code> с заменой
-    <ul>
-      <li>Вместо <code class="language-plaintext highlighter-rouge">ED00</code> в пути может быть как <code class="language-plaintext highlighter-rouge">SD01</code> так и любые другие сочетания из двух букв и двух чисел</li>
-      <li>Теперь при запуске приставки она автоматически будет запускать emuMMC.</li>
-      <li>Чтобы попасть в официальную прошивку, запустите <strong>hekate</strong> -&gt; “<strong>Launch</strong>” -&gt; “<strong>Stock</strong>”</li>
-    </ul>
-  </li>
-</ol>
-
-</div></details>
-</div></details>
-
-<details class="spoiler"><summary class="spoiler-title">Если EmuNAND отсутствует</summary><div class="spoiler-body">
-<details class="spoiler"><summary class="spoiler-title">Часть III - Создание EmuNAND через hekate</summary><div class="spoiler-body">
-<p class="notice--warning">Если у вас не было EmuNAND, крайне рекомендуется его создать. Это делается в первую очередь для того, чтобы избежать неприятных последствий для SysNAND в случае каких-либо косяков, так что сделайте EmuNAND даже если вы не планируете пользоваться лицензией или онлайном!</p>
-
-<ol>
-  <li>Выключите консоль</li>
-  <li>Включите консоль, удерживая кнопку понижения громкости, чтобы загрузиться в hekate</li>
-  <li>Перейдите в “<strong>emuMMC</strong>”</li>
-  <li>Нажмите “<strong>Create emuMMC</strong>” -&gt; “<strong>SD File</strong>”
-    <ul>
-      <li>Для создания emuMMC нужно иметь не менее 32Гб свободного места на карте! Если у вас нет столько, возьмите другую карту, либо временно перенесите папку Nintendo на ваш ПК</li>
-      <li>После того, как эмунанд создан и работает, вы можете его уменьшить, следуя <a href="emunand#уменьшение-emunand-в-программе-nxnandmanager" target="_blank">этой инструкции</a></li>
-    </ul>
-  </li>
-  <li>После окончания создания emuMMC, нажмите “<strong>ОК</strong>”
-    <ul>
-      <li>Теперь при запуске приставки она автоматически будет запускать emuMMC.</li>
-      <li>Чтобы попасть в официальную прошивку, запустите <strong>hekate</strong> -&gt; “<strong>Launch</strong>” -&gt; “<strong>Stock</strong>”</li>
-    </ul>
-  </li>
-</ol>
-
-</div></details>
-
-<details class="spoiler"><summary class="spoiler-title">Часть IV - Бекап прошивки и ключей</summary><div class="spoiler-body">
 <p class="notice--warning">Пропустите, если у вас уже есть бекап прошивки и ключей.</p>
 
 <ol>
   <li>Выключите консоль</li>
   <li>Вставьте карту памяти приставки в ПК</li>
-  <li>Скопируйте папку <code class="language-plaintext highlighter-rouge">emuMMC/eMMC</code> из корня вашей карты памяти на ПК. Это ваш эмунанд. Он идентичен бекапу, поэтому нет никакого смысла создавать бекап отдельно</li>
+  <li>Скопируйте папку <code class="language-plaintext highlighter-rouge">emuMMC/eMMC</code> из корня вашей карты памяти на ПК. Это ваш эмунанд. Он идентичен бекапу, поэтому нет никакого смысла создавать бекап отдельно
+    <ul>
+      <li>Если такой папки нет, то у вас нет EmuNAND, тогда сделайте бекап согласно это <a href="backup-nand" target="_blank">инструкции</a></li>
+    </ul>
+  </li>
   <li>Сделайте бекап ключей, согласно <a href="backup-nand#часть-ii---дампим-ключи" target="_blank">этой инструкции</a></li>
-  <li>Перейдите в папку <code class="language-plaintext highlighter-rouge">sd:/switch</code> и скопируйте файлы <code class="language-plaintext highlighter-rouge">prod.keys</code> и <code class="language-plaintext highlighter-rouge">partialaes.keys</code> в ту же папку, в которую вы скопировали ваш бекап</li>
+  <li>Перейдите в папку <code class="language-plaintext highlighter-rouge">sd:/switch</code> и скопируйте файлы <code class="language-plaintext highlighter-rouge">prod.keys</code> и <code class="language-plaintext highlighter-rouge">partialaes.keys</code> (если есть) в ту же папку, в которую вы скопировали ваш бекап</li>
 </ol>
 
-<p class="notice--danger">Поместите бекап в надежное место, желательно в несколько разных. И в облако. И на флешку какую-либо. Не потеряйте его!</p>
+<p class="notice--danger">Поместите бекап в надёжное место, желательно в несколько разных. И в облако. И на флешку какую-либо. Не потеряйте его!</p>
 
-</div></details>
-</div></details>
+<h3 id="часть-iv---завершение-миграции">Часть IV - Завершение миграции</h3>
 
-</div></details>
+<ol>
+  <li>Попробуйте запустить SysNAND (<strong>hekate -&gt; Launch -&gt; Stock</strong>). Если он не запускается, обратитесь к разделу <a href="#проблемы-и-их-решения" target="_blank">проблемы и их решения</a> внизу страницы</li>
+  <li><a href="update-to-latest" target="_blank">Обновите Emunand</a> до системного ПО версии <strong>12.0.3</strong></li>
+</ol>
 
 <h2 id="проблемы-и-их-решения">Проблемы и их решения</h2>
 
