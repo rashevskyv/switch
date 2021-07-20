@@ -73,6 +73,6 @@ addons:
             
 bottom:
   - title: <div class="notice--warning">Если вы попали в это руководство впервые и не знаете как прошивается Switch, рекомендуем начать знакомство с ним с <a href="/" target="_blank">первой страницы</a></div>
-  - title: <div class="notice--warning">Не вставляйте вашу карту памяти в ПК под управлением Mac OS! Mac OS испортит атрибуты файлов и папок на вашей карте памяти!  Используйте Windows или Linux!</div>
+  - title: <div class="notice--warning">Если вы пользователь MacOS, воспользуйтесь <a href="/sd-macos.html" target="_blank">этими рекомендациями</a>, чтобы избежать проблем с картой памяти</div>
   - title: <div class="notice">Делайте <a href="/backup-saves" target="_blank">бекапы сохранений</a> как можно чаще!</div>
   - title: <div class="notice--warning"><strong>Если приставка зависла или не подаёт признаков жизни, выключите её удерживанием кнопки (POWER) 30 секунд, затем включите и пробросьте пейлоад!</strong></div>
