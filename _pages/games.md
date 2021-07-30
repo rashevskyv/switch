@@ -74,9 +74,6 @@ author_profile: true
 
 {% endspoiler %}
 
-Установка по USB через указанный способ поддерживает только форматы `NSP` и `NSZ`!
-{: .notice--info}
-
 1. Подключите консоль к ПК 
 1. **На приставке** запустите **DBI** через [Homebrew Launcher](hbl){:target="_blank"}
 1. Нажмите "**Run MTP Responder**"
