@@ -65,9 +65,11 @@ addons:
   - title: "Эмуляция Amiibo с помощью модуля emuiibo"
     url: /emuiibo
   - title: "Tesla Overlay Menu"
-    url: "https://4pda.to/forum/index.php?showtopic=900987&st=18280#entry93523431"
+    url: "https://4pda.to/forum/index.php?showtopic=900987&st=18260#entry93523431"
   - title: "Chiaki - Remote Play для PS4"
-    url: "https://4pda.to/forum/index.php?showtopic=900987&st=19800#entry96367163"
+    url: "https://4pda.to/forum/index.php?showtopic=900987&st=19780#entry96367163"
+  - title: "Разгон (SYS-CLK, Freebird)"
+    url: "https://4pda.to/forum/index.php?showtopic=900987&st=9620#entry81429122"
   - title: "Эмуляторы для Switch"
     url: "https://4pda.to/forum/index.php?showtopic=939714&st=0#Spoil-81825647-4"
             

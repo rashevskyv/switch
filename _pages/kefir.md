@@ -115,6 +115,10 @@ author_profile: true
   * Вы можете получить доступ к своей карте памяти не вынимая её из приставки по MTP (**DBI** -> **Run MTP Responder**), либо через hekate ({% include inc/sd_hekate.md %}) (не у всех работает корректно, невозможно обновить приставку таким образом)
   * Установка и обновление kefir проводятся одинаково!
 
+## Дополнительная информация 
+* Для работы с модулями ([sys-con](https://github.com/cathery/sys-con/releases/latest){:target="_blank"}, [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} и др.) в кефире установлен [Tesla Overlay Menu](https://github.com/WerWolv/Tesla-Menu/releases){:target="_blank"} - специальное оверлей-меню для взаимодействия с системой. Для его активации нажмите (L) + **крестовина вниз** + (R3)
+* Обновить кефир можно с помощью утилиты **Kefir Updater**
+
 ____
 
 ### Изменения от прошлой версии

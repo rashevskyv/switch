@@ -30,7 +30,26 @@ author_profile: true
 
 {% spoiler Почему необходимо держать ПО всегда обновленным %}
 
-**О:** [Исчерпывающий ответ](https://4pda.to/forum/index.php?showtopic=900987&st=24480#entry102270146)
+**О:** [Исчерпывающий ответ](https://4pda.to/forum/index.php?showtopic=900987&st=24420#entry102270146)
+
+{% endspoiler %}
+
+{% spoiler Что такое Tesla Menu Overlay и как этим пользоваться? %}
+
+[Что такое Tesla Menu Overlay и как этим пользоваться?](https://4pda.to/forum/index.php?showtopic=900987&st=18260#entry93523431){:target="_blank"}
+
+{% endspoiler %}
+
+{% spoiler Можно ли добится лучшей производительности / разогнать Switch? %}
+
+[Разгон (SYS-CLK, Freebird)](https://4pda.to/forum/index.php?showtopic=900987&st=9620#entry81429122){:target="_blank"}
+
+{% endspoiler %}
+
+
+{% spoiler Использования Chiaki и Remote Play для стриминга игр с PS4 на Switch %}
+
+[Использования Chiaki и Remote Play для стриминга игр с PS4 на Switch](https://4pda.to/forum/index.php?showtopic=900987&st=19780#entry96367163){:target="_blank"}
 
 {% endspoiler %}
 
