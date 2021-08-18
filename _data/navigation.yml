@@ -72,6 +72,8 @@ addons:
     url: "https://4pda.to/forum/index.php?showtopic=900987&st=9620#entry81429122"
   - title: "Эмуляторы для Switch"
     url: "https://4pda.to/forum/index.php?showtopic=939714&st=0#Spoil-81825647-4"
+  - title: "Полная инструкция по использованию DBI"
+    url: "https://github.com/rashevskyv/dbi"
             
 bottom:
   - title: <div class="notice--warning">Если вы попали в это руководство впервые и не знаете как прошивается Switch, рекомендуем начать знакомство с ним с <a href="/" target="_blank">первой страницы</a></div>
