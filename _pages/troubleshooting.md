@@ -14,8 +14,7 @@ author_profile: true
 Возможные пути решения проблемы:
 
 1. Убедитесь. что можете загрузиться в сток. Если это так, возможно вы установили какие-то системные модули, которые мешают загрузке. Для этого: 
-	1. Запустите {% include abbr/hekate.txt abbr="hekate" %} -> **Payloads** -> `CommonProblemResolver.bin`
-	1. Выберите **Disable automatic sysmodule startup** -> **Reboot to atmosphere/reboot_payload.bin**
+	1. Запустите {% include abbr/hekate.txt abbr="hekate" %} -> **Payloads** -> `kefir-helper.bin`
 	1. Если после этого приставка заработала, ищите проблему в установленных модулях 
 1. Переустановите {% include abbr/kefir_addr.txt %} начисто. Для этого удалите с карты памяти всё, кроме папки `Nintendo` и `emummc` и ставьте кефир заново
 1. Отформатируйте вашу карту памяти в [FAT32](https://format.customfw.xyz){:target="_blank"}. 
@@ -43,8 +42,7 @@ author_profile: true
 
 Возможные пути решения проблемы:
 1. Убедитесь. что можете загрузиться в сток. Если это так, возможно вы установили какие-то системные модули, которые мешают загрузке. Для этого: 
-	1. Запустите {% include abbr/hekate.txt abbr="hekate" %} -> **Payloads** -> `CommonProblemResolver.bin`
-	1. Выберите **Disable automatic sysmodule startup** -> **Reboot to atmosphere/reboot_payload.bin**
+	1. Запустите {% include abbr/hekate.txt abbr="hekate" %} -> **Payloads** -> `kefir-helper.bin`
 	1. Если после этого приставка заработала, ищите проблему в установленных модулях 
 1. Если ваша карта в exFAT, отформатируйте её в [FAT32](https://format.customfw.xyz){:target="_blank"}. 
 1. Проверьте монтируется ли раздел `SYSTEM`. Для этого: 
@@ -229,10 +227,10 @@ author_profile: true
 {% spoiler Джойконы в эмунанде не работают отдельно от консоли, хотя в стоке сиснанда работают %}
 
 1. Синхронизируй joy-con'ы с sysnand
-1. Скиньте [Syncfixv2.te](/files/Syncfixv2.te){:target="_blank"} в корень карты памяти
+1. Скиньте [Syncfixv2.te](/files/Syncfix.te){:target="_blank"} в корень карты памяти
 1. Скачайте пейлоад [TegraExplorer](https://github.com/suchmememanyskill/TegraExplorer/releases/){:target="_blank"} и поместите его в папку `bootloader/payloads`
 1. Вставь карту в switch и зайди в hekate
-1. Запусти `TegraExplorer.bin` из вкладки "**payloads**", если увидите "**Grabbing keys from prod.keys... Done***"? нажмите любую кнопку
+1. Запусти `TegraExplorer.bin` из вкладки "**payloads**", если увидите "**Grabbing keys from prod.keys... Done***", нажмите любую кнопку
 1. Перейди по пути `[SD:/] SD CARD -> Syncfix.te -> Launch Script`
 1. После окончания работы скрипта, перезагрузите приставку 
 
