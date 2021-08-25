@@ -107,6 +107,17 @@ author_profile: true
 1. Пробуйте запустить эмунанд. 
 
 #### Если не помогло или версии SysNAND и EmuNAND разные: 
+
+
+{% spoiler Как узнать версию своего emunand:  %}
+
+1. Запустите {% include abbr/hekate.txt abbr="hekate" %}
+1. Запустите **TegraExplorer** (**Payloads** -> `TegraExplorer.bin`)
+1. Перейдите в папку `config/kefir-helper` и запустите `FW_version.te` (**Launch script**)
+1. Дождитесь появления версии Sys и EmuNAND на экране
+
+{% endspoiler %}
+
 1. [Снимите копию ключей вашей приставки](backup-nand#часть-ii---дампим-ключи){:target="_blank"}
 1. Вставьте карту памяти приставки в ПК 
 1. Скачайте [reBoot.zip](files/reBoot.zip){:target="_blank"}
@@ -125,8 +136,7 @@ author_profile: true
 	* Теперь при запуске приставки она автоматически будет запускать emuMMC. 
 	* Чтобы попасть в официальную прошивку, запустите **hekate** -> "**Launch**" -> "**Stock**"
 
-#### Если не помогло и вы не знаете версию EmuNAND: 
-Вам придётся [создавать новый EmuNAND](emunand){:target="_blank"}
+Если не помогло, вам придётся [создавать новый EmuNAND](emunand){:target="_blank"}
 {: .notice--info}
 
 Теперь установите {% include abbr/kefir_addr.txt %} ещё раз. Последующие запуски kefir будет запускаться автоматически сразу при включении приставки.
