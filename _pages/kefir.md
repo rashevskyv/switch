@@ -5,7 +5,7 @@ author_profile: true
 ---
 {% include toc title="Разделы" %}
 
-## [KEFIR {% include /inc/kefir/version %}](https://github.com/rashevskyv/kefir){:target="_blank"}
+## [KEFIR {% include /inc/kefir/version %}](https://github.com/rashevskyv/kefir/releases){:target="_blank"}
 
 ![kefir](/images/kefir.png){: width="70%"}
 {: .text-center}
@@ -59,6 +59,7 @@ author_profile: true
 Если вы пользователь MacOS, воспользуйтесь [этими рекомендациями](sd-macos){:target="_blank"}, чтобы избежать проблем с картой памяти
 {: .notice--warning}
 
+Если приставка выключена, вставьте карту памяти в ПК, если включена, то: 
 1. Перезагрузите приставку через меню, вызываемое удерживанием кнопки (POWER) 
 1. На сплеш-скрине кефира нажмите кнопку понижения громкости, чтобы попасть в hekate 
 1. Теперь вы можете извлечь карту памяти из свитча и вставить её в ПК. 

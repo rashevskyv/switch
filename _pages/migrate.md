@@ -108,7 +108,6 @@ author_profile: true
 
 #### Если не помогло или версии SysNAND и EmuNAND разные: 
 
-
 {% spoiler Как узнать версию своего emunand:  %}
 
 1. Запустите {% include abbr/hekate.txt abbr="hekate" %}
@@ -147,8 +146,7 @@ author_profile: true
 
 {% spoiler Ошибка "Pkg1 decryption failed! Is BEK Missing?" %}
 
-Обновите {% include abbr/kefir_addr.txt %}!
-
+Перезагрузите приставку
 {% endspoiler %}
 
 {% spoiler У меня другая ошибка %}
