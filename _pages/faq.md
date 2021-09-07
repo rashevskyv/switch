@@ -207,20 +207,7 @@ author_profile: true
 {% spoiler Как перенести EmuNAND на другую карту %}
 Если EmuNAND создан в виде файлов, то он переносится простым копированием
 
-Если на разделе, проделайте следующее: 
-
-1. Вставьте в ПК карту памяти приставки 
-1. Создайте папку `EmuMMC`, а в ней текстовый файл `emummc.ini`
-1. Сохраните в этом текстовом файле следующие строки: 
-
-```[emummc]
-enabled=1
-sector=0x2
-path=emuMMC/ER00
-id=0x0000
-nintendo_path=Emutendo```
-
-1. Запустите EmuMMC через "**Launch**" -> "**CFW EmuMMC**" в hekate 
+Если на разделе, воспользуйтесь [этой утилитой](https://gbatemp.net/threads/emutool-move-partition-emu-on-another-sd-switch-emu-type-on-sxos-and-more.550756/){:target="_blank"}
 {% endspoiler %}
 
 {% spoiler Я включил в hekate автозагрузку прошивки, как мне теперь зайти в саму hekate? %}
