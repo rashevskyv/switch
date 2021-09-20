@@ -24,6 +24,14 @@ author_profile: true
 
 ## Переход из SX на Atmosphere
 
+{% spoiler Видеоинструкция %}
+
+{% include youtube.html id="LQK_U6LSLIo" %}
+{: .text-center}
+{: .notice--info}
+
+{% endspoiler %}
+
 ### Часть I - Подготовительные работы
 
 Если ваша приставка не запускается, например, после обновления sysnand через настройки, то сразу переходите к **части II**
