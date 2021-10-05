@@ -123,6 +123,7 @@ author_profile: true
 * [Полезные инструкции по использованию приставки](usage){:target="_blank"}
 * [FAQ](faq){:target="_blank"}
 * [Проблемы и их решения](troubleshooting){:target="_blank"}
+
 ____
 
 ### Изменения от прошлой версии
