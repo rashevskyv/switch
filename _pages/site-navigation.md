@@ -22,7 +22,7 @@ author_profile: true
 
 ### Чипованные приставки
 
-* [Взлом с помощью SX Core / SX Lite](modchip){:target="_blank"}
+* [Взлом с помощью SX Core / SX Lite или их аналогах](modchip){:target="_blank"}
 * [Чиповка Nintendo Switch](preparation-modchip){:target="_blank"}
 * [Kefir](kefir){:target="_blank"}
 * [Резервное копирование NAND](backup-nand){:target="_blank"}

@@ -1,6 +1,6 @@
 ---
 permalink: /modchip.html
-title: Взлом с помощью SX Core / SX Lite
+title: Взлом с помощью SX Core / SX Lite или их аналогов
 author_profile: true
 ---
 {% include toc title="Разделы" %}

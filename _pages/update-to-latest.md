@@ -19,7 +19,7 @@ author_profile: true
 	    <input type="radio" id="button1" name="exploit" value="button1" checked />
 	    <label for="button1">Fusée Gelée</label>
 	    <input type="radio" id="button0" name="exploit" value="button0" />
-	    <label for="button0">SX Core / SX Lite</label>
+	    <label for="button0">SX Core / SX Lite или их аналоги</label>
 	    <input type="radio" id="button2" name="exploit" value="button2" />
 	    <label for="button2">Caffeine</label>
 	</div>
