@@ -148,6 +148,14 @@ AutoRCM - на консоли специальным образом изменя
 	* Если не помогло, прочтите внимательно разделы [Проблемы и их решения](troubleshooting){:target="_blank"} и [FAQ](faq){:target="_blank"}
 * Если приставка не загружается после прошивки (падает с ошибкой, например), [восстановите бекап](backup-nand#%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%D0%BD%D0%BE%D0%B9-%D0%BA%D0%BE%D0%BF%D0%B8%D0%B8){:target="_blank"} или [восстанавливайте прошивку вручную](downgrade_fw){:target="_blank"}
 
+## Возможные ошибки
+
+{% spoiler При запуске Emunand ошибка "Failed to match warmboot with fuses" %}
+
+Нажмите кнопку (POWER), чтобы запустить прошивку и [обновите](update-to-latest){:target="_blank"} {% include abbr/emunand.txt abbr="EmuNAND" %} до актуальной версии системного ПО
+
+{% endspoiler %}
+
 ___
 
 [Закрыть страницу](javascript:window.close();)

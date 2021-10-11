@@ -54,6 +54,12 @@ author_profile: true
 
 {% endspoiler %}
 
+{% spoiler При запуске Emunand ошибка "Failed to match warmboot with fuses" %}
+
+Нажмите кнопку (POWER), чтобы запустить прошивку и [обновите](update-to-latest){:target="_blank"} {% include abbr/emunand.txt abbr="EmuNAND" %} до актуальной версии системного ПО
+
+{% endspoiler %}
+
 {% spoiler Страшная ошибка с белыми буквами на черном экране после обновления прошивки через интернет %}
 
 ![](/images/screenshots/exfat_failed.png)
