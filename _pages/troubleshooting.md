@@ -119,7 +119,9 @@ author_profile: true
 {% spoiler В Tinfoil пропали все игры %}
 
 * Убедитесь, что на приставке стоит верная дата и время. 
+* Обновите {% include abbr/kefir_addr.txt %} до актуальной версии 
 * Удалите tinfoil, обновите {% include abbr/kefir_addr.txt %}, установите tinfoil из папки `games` на карте памяти 
+* [Еще советы](https://vk.com/nincfw?w=wall-178659422_196584%2Fall){:target="_blank"}
 
 {% endspoiler %}
 

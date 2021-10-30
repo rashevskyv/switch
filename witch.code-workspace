@@ -20,6 +20,10 @@
 			"markdown",
 			"latex",
 			"plaintext"
-		]
+		],
+		"files.associations": {
+			"*.json": "json",
+			"*.te": "c"
+		}
 	}
 }
