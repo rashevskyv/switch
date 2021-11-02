@@ -104,6 +104,14 @@ author_profile: true
 
 {% endspoiler %}
 
+{% spoiler Чистая установка кефира (рекомендуется при возникновении ошибок) %}
+
+1. Скопируйте папки `Nintendo` и `emummc`, если таковые есть на ПК
+1. [Отформатируйте вашу карту](format.customfw.xyz) памяти в FAT32 и верните папки обратно
+1. Установите кефир удобным способом
+
+{% endspoiler %}
+
 
 ## Запуск Atmosphere 
 {% include inc/launch-cfw.txt %}
