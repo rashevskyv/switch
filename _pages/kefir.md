@@ -45,7 +45,7 @@ author_profile: true
   * [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} - модуль, позволяющий подключать к консоли по bluetooth практически любые геймпады
   * [Tesla Overlay Menu](https://github.com/WerWolv/Tesla-Menu/){:target="_blank"} - специальное оверлей-меню для взаимодействия с системой
     - [nx-ovlloader](https://github.com/WerWolv/nx-ovlloader//){:target="_blank"} - процесс для работы с nro через Tesla Menu
-    - [ovlEdiZon.ovl](https://werwolv.net/downloads/EdiZonOverlay.zip){:target="_blank"} - Модуль для [использования читов](cheats){:target="_blank"}
+    - [ovlEdiZon.ovl](https://github.com/proferabg/EdiZon-Overlay/releases){:target="_blank"} - Модуль для [использования читов](cheats){:target="_blank"}
     - [ovlSysmodules.ovl](https://github.com/WerWolv/ovl-sysmodules/){:target="_blank"} - Модуль для включения и отключения установленных системных модулей (как-то разгон, emuuibo и прочее)
 
 {% endspoiler %}
