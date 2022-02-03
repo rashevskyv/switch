@@ -124,7 +124,7 @@ author_profile: true
 
 1. Запустите {% include abbr/hekate.txt abbr="hekate" %}
 1. Запустите **TegraExplorer** (**Payloads** -> `TegraExplorer.bin`)
-1. Перейдите в папку `config/kefir-helper` и запустите `FW_version.te` (**Launch script**)
+1. Запустите `FW_version.te` (**Launch script**)
 1. Дождитесь появления версии Sys и EmuNAND на экране
 
 {% endspoiler %}
