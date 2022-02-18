@@ -36,7 +36,7 @@ author_profile: true
   * [NX-Activity-Log](https://github.com/tallbl0nde/NX-Activity-Log){:target="_blank"} - программа, позволяющая отслеживать время, проведённое в играх
   * [JKSV](https://github.com/J-D-K/JKSV/){:target="_blank"} - программа для резервного копирования и восстановления сейвов
   * [Kefir Updater](https://github.com/rashevskyv/kefir-updater){:target="_blank"} - программа для обновления kefir через интернет
-  * [pplay](https://github.com/Cpasjuste/pplay){:target="_blank"} - видеоплеер 
+  * [NXMPforMe](https://github.com/darkxex/NXMPforMe/releases/){:target="_blank"} - видеоплеер с поддержкой апскейлинга на базе нейронных сетей 
   * [Daybreak](https://github.com/Atmosphere-NX/Atmosphere/tree/0.14.1/troposphere/daybreak){:target="_blank"} - программа для [безопасного обновления](update-to-latest){:target="_blank"} версии системного ПО приставки
   * [NXThemes Installer](https://github.com/exelix11/SwitchThemeInjector){:target="_blank"} - менеджер кастомных тем 
   * [Linkhlo](https://github.com/rdmrocha/linkalho){:target="_blank"} - программа [привязки аккаунта](link-account){:target="_blank"}
