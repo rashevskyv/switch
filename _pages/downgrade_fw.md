@@ -12,7 +12,7 @@ author_profile: true
 ОБЯЗАТЕЛЬНО [сделайте бекап](backup-nand){:target="_blank"} своей текущей прошивки до того, как начнёте выполнение инструкции, даже если ваша приставка не включается!
 {: .notice--danger}
 
-* [Ключи](backup-nand#часть-ii---дампим-ключи){:target="_blank"}, одинаковые для всех консолей
+* [Ключи](backup-nand#часть-ii---дампим-ключи){:target="_blank"}, уникальны для каждой консоли
 * [Прошивка](https://darthsternie.net/switch-firmwares/) той версии, на которую вы собираетесь восстанавливаться (но не выше той, с которой вы сняли ключи)
 * [SystemRestoreV3.te](files/SystemRestoreV3.te){:target="_blank"} - скрипт для восстановления прошивки
 * Свежая версия [EmmcHaccGen](https://github.com/suchmememanyskill/EmmcHaccGen){:target="_blank"}
