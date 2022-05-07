@@ -32,7 +32,8 @@ author_profile: true
 1. В открывшемся окне наберите:
 	* Для powershell: `.\EmmcHaccGen.exe --keys prod.keys --fw X.X.X`
 	* Для командной строки: `EmmcHaccGen.exe --keys prod.keys --fw X.X.X`
-	* **X.X.X** - название папки с вашей прошивкой. Например, `EmmcHaccGen --keys prod.keys --fw 9.1.0`
+	* **X.X.X** - название папки с вашей прошивкой. Например, `EmmcHaccGen --keys prod.keys --fw 14.1.0`
+	* Если у вас {% include abbr/mariko.md %}, то добавьте ключ `--mariko` после версии прошивки (например, `EmmcHaccGen --keys prod.keys --fw 14.1.0 --mariko`)
 1. Дождитесь окончания перепаковки. В результате вы получите папку `NX-X.X.X-exfat`
 
 ### Часть II - Загрузка прошивки на устройство 
