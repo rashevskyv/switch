@@ -8,3 +8,10 @@
   <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Группа вконтакте
 </a></li>
 {% endif %}
+{% if author.tg %}
+<li>
+  <a href="https://t.me/{{ author.tg }}" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Telegram
+  </a>
+</li>
+{% endif %}

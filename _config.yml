@@ -44,8 +44,6 @@ atom_feed:
 
 # SEO Related
 google_site_verification : bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE
-alexa_site_verification  :
-yandex_site_verification :
 
 # Social Sharing
 twitter:
@@ -74,7 +72,7 @@ author:
   name             : "nincfw team"
   avatar           : "/images/bio-photo.png"
   location         : 
-  email            : "rashevsky.v@gmail.com"
+  email            : 
   uri              :
   bitbucket        :
   codepen          :
@@ -99,7 +97,8 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          :
+  youtube          : UC49jZqLn59t9qyHfK2HyvQQ
+  tg               : kefir_cfw
 
 
 # Reading Files
