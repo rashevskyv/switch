@@ -9,7 +9,7 @@
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-    <div id="preloader" class="preloader"></div>
+    {% include custom.html %}
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
