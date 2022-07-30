@@ -18,6 +18,7 @@ author_profile: true
 	1. Если после этого приставка заработала, ищите проблему в установленных модулях 
 1. Переустановите {% include abbr/kefir_addr.txt %} начисто. Для этого удалите с карты памяти всё, кроме папки `Nintendo` и `emummc` и ставьте кефир заново
 1. Отформатируйте вашу карту памяти в [FAT32](https://format.customfw.xyz){:target="_blank"}. 
+1. Переустановите {% include abbr/kefir_addr.txt %} начисто. Для этого удалите с карты памяти всё, кроме папки `Nintendo` и `emummc` (или `sxos/emunand`) и ставьте кефир заново
 1. Проверьте монтируется ли раздел `USER`. Для этого: 
 	1. Запустите {% include abbr/hekate.txt abbr="hekate" %} -> **Payloads** -> `TegraExplorer.bin`
 	1. Выберите **Browse EMUMMC** если не запускается {% include abbr/emunand.txt abbr="EmuNAND" %} или **Browse EMMC**, если не запускается {% include abbr/sysnand.txt abbr="SysNAND" %}
@@ -40,11 +41,11 @@ author_profile: true
 
 {% spoiler После проброса пейлоада и появления сплешскринов, консоль висит в черном экране / на логотипе Atmosphere / на логотипе Nintendo. %}
 
-Возможные пути решения проблемы:
 1. Убедитесь. что можете загрузиться в сток. Если это так, возможно вы установили какие-то системные модули, которые мешают загрузке. Для этого: 
 	1. Запустите {% include abbr/hekate.txt abbr="hekate" %} -> **Payloads** -> `kefir-helper.bin`
 	1. Если после этого приставка заработала, ищите проблему в установленных модулях 
 1. Если ваша карта в exFAT, отформатируйте её в [FAT32](https://format.customfw.xyz){:target="_blank"}. 
+1. Переустановите {% include abbr/kefir_addr.txt %} начисто. Для этого удалите с карты памяти всё, кроме папки `Nintendo` и `emummc` (или `sxos/emunand`) и ставьте кефир заново
 1. Проверьте монтируется ли раздел `SYSTEM`. Для этого: 
 	1. Запустите {% include abbr/hekate.txt abbr="hekate" %} -> **Payloads** -> `TegraExplorer.bin`
 	1. Выберите **Browse EMUMMC** если не запускается {% include abbr/emunand.txt abbr="EmuNAND" %} или **Browse EMMC**, если не запускается {% include abbr/sysnand.txt abbr="SysNAND" %}
@@ -87,6 +88,12 @@ author_profile: true
 {% endspoiler %}
 
 ### Проблемы с запуском игр
+
+{% spoiler При запуске игр в emunand вылезает назойливое окно про облачные сохранения %}
+
+Сделайте "**Unlink all accounts**" с помощью [Linkalho](link-account){:target="_blank"}, перезагрузите приставку, затем сделайте "**Link all accounts**" и снова перезагрузите приставку. Должно помочь
+
+{% endspoiler %}
 
 {% spoiler Не могу использовать картриджи в EmuNAND, хотя в SysNAND все работает %}
 
@@ -260,6 +267,12 @@ author_profile: true
 {% spoiler У меня последняя прошивка, но при запуске некоторых игр я вижу, что "*доступно обновление системы*". Почему так происходит? %}
 
 Имеется ввиду обновление игры. Скачайте его и установите как обычную игру. Так же сбросить проверку версии можно через DBI. Запустите программу, выберите **Browse installed applications**, нажмите (Y), чтобы выделить все пункты, нажмите (A), а затем выберите **Reset required version**. DBI должен быть [запущен из режима апплета](hbl){:target="_blank"}, кефир должен быть свежим. Иначе магия не сработает. 
+
+{% endspoiler %}
+
+{% spoiler Не могу удалить пользователя %}
+
+Сделайте "**Unlink all accounts**" с помощью [Linkalho](link-account){:target="_blank"}, перезагрузите приставку, затем пробуйте удалить пользователя
 
 {% endspoiler %}
 
