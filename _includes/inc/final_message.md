@@ -31,7 +31,7 @@ ___
 {: .text-center}
 {: .notice--info}
 
-[![Custom Nintendo]({{ "https://customfw.xyz/images/donate/3ds_cfw.png" | absolute_url }}){:target="_blank"}{:height="64px" width="256px"}{: style="padding-bottom: .35em"}](http://vk.com/nincfw){: .align-center}
+[![Custom Nintendo]({{ "https://customfw.xyz/images/donate/3ds_cfw.png" | absolute_url }}){:target="_blank"}{:height="64px" width="256px"}{: style="padding-bottom: .35em"}](http://vk.com/switchopen){: .align-center}
 {: .text-center}
 {: .notice--info}
 
