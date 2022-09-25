@@ -43,7 +43,7 @@ author_profile: true
 1. Выберите **Browse SD**, перейдите в папку `FW`, выберите ` systemRestore.te` -> **Launch Script**
 1. Следуйте информации на экране и восстановите BIS и SYSTEM (restore both)
 1. Пробуйте загрузиться в систему 
-	* Имейте ввиду, что [AutoRMC](autorcm){:target="_blank"} будет включен
+	* Имейте ввиду, что [AutoRCM](autorcm){:target="_blank"} будет включен
 	* Если приставка всё ещё не грузится, сделайте [восстановление к заводским настройкам](system-wipe)
 
 ___
