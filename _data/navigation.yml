@@ -81,4 +81,3 @@ bottom:
   - title: <div class="notice--warning">Если вы пользователь MacOS, воспользуйтесь <a href="/sd-macos.html" target="_blank">этими рекомендациями</a>, чтобы избежать проблем с картой памяти</div>
   - title: <div class="notice">Делайте <a href="/backup-saves" target="_blank">бекапы сохранений</a> как можно чаще!</div>
   - title: <div class="notice--warning"><strong>Если приставка зависла или не подаёт признаков жизни, выключите её удерживанием кнопки (POWER) 30 секунд, затем включите и пробросьте пейлоад!</strong></div>
-  - title: <div class="notice--danger"><strong>Не обновляйте вагу консоль до прошивки 15.0.0! В данный момент она не поддерживается!</strong></div>

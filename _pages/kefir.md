@@ -23,7 +23,7 @@ author_profile: true
 {% spoiler Состав кефира %}
 
 1. **[Kefirosphere](https://github.com/rashevskyv/Kefirosphere)**, форк [Atmosphere](https://github.com/Atmosphere-NX/Atmosphere)
-2. **[Сигпатчи](https://github.com/ITotalJustice/patches/releases){:target="_blank"}**. Благодаря сигпатчам на Atmosphere можно запускать неподписанные (читай: *пиратские*) приложения и игры. 
+2. **[Сигпатчи](https://jits.cc/patches){:target="_blank"}**. Благодаря сигпатчам на Atmosphere можно запускать неподписанные (читай: *пиратские*) приложения и игры. 
 3. **Загрузчик [hekate](https://github.com/CTCaer/hekate){:target="_blank"}**. Благодаря загрузчику вы можете запускать прошивку и другие {% include abbr/payload.txt abbr="пейлоады" %} через удобное меню, создавать и восстанавливать резервную копию NAND, делать EmuNAND, получать информацию о состоянии системы, монтировать карту памяти к ПК без вытаскивания её из свитча, делать переразметку карты памяти для установки других ОС и многое другое
 4. **Установленные {% include abbr/payload.txt abbr="пейлоады" %}**:
   * [Lockpick_RCM](https://github.com/shchmue/Lockpick_RCM){:target="_blank"} - программа для [дампа ключей приставки](backup-nand#часть-iii---дампим-ключи){:target="_blank"}
