@@ -57,7 +57,7 @@ author_profile: true
 
 {% spoiler При запуске Emunand ошибка "Failed to match warmboot with fuses" %}
 
-Нажмите кнопку (POWER), чтобы запустить прошивку и [обновите](update-to-latest){:target="_blank"} {% include abbr/emunand.txt abbr="EmuNAND" %} до актуальной версии системного ПО
+Просто загрузитесь в Full Stock (**hekate** -> "**More Configs**" -> "**Full Stock**"), перезагрузитесь и ошибка пропадет. 
 
 {% endspoiler %}
 
