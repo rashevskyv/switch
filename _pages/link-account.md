@@ -19,7 +19,7 @@ author_profile: true
 1. Сделайте [резервные копии сохранений](backup-saves){:target="_blank"} со всех ваших аккаунтов
 1. Запустите [Homebrew Launcher](hbl){:target="_blank"}
 1. Запустите **Linkalho**
-1. Выберите пункт **"Link all accounts"**
+1. Выберите пункт **"Link selected accounts"**
 1. Выберите **"Continue"**
 1. Выберите **"Reboot"** для перезагрузки
 
