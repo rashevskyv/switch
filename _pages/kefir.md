@@ -32,7 +32,6 @@ author_profile: true
 5. **Установленное Homebrew**
   * [DBI](https://github.com/rashevskyv/dbi){:target="_blank"} - программа для [установки игр](games){:target="_blank"} по USB или с карты памяти
   * [{% include /inc/tinfoil.txt %}](http://tinfoil.io){:target="_blank"} - программа, позволяющая [качать игры](tinfoil){:target="_blank"} для приставки прямо из сети 
-  * [NX-Shell](https://github.com/joel16/NX-Shell){:target="_blank"} - файловый менеджер
   * [NX-Activity-Log](https://github.com/tallbl0nde/NX-Activity-Log){:target="_blank"} - программа, позволяющая отслеживать время, проведённое в играх
   * [JKSV](https://github.com/J-D-K/JKSV/){:target="_blank"} - программа для резервного копирования и восстановления сейвов
   * [Kefir Updater](https://github.com/rashevskyv/kefir-updater){:target="_blank"} - программа для обновления kefir через интернет
