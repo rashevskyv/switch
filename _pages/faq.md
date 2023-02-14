@@ -46,7 +46,6 @@ author_profile: true
 
 {% endspoiler %}
 
-
 {% spoiler Использования Chiaki и Remote Play для стриминга игр с PS4 на Switch %}
 
 [Использования Chiaki и Remote Play для стриминга игр с PS4 на Switch](https://4pda.to/forum/index.php?showtopic=900987&st=19780#entry96367163){:target="_blank"}

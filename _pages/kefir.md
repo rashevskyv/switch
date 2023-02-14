@@ -12,6 +12,16 @@ author_profile: true
 
 ### Что такое кефир
 
+Это сборник, состоящий из модифицированной Atmosphere, необходимых программ и скриптов, которые все это устанавливают правильно. Она была придумана для облегчения установки и обслуживания программного обеспечения на взломанной Nintendo Switch. Изменения, внесенные в Atmosphere, направлены на повышение качества опыта пользования самой системой.
+
+Основные отличия от ванильной Atmosphere: 
+  * Версии кефира возле версии системы
+  * Установка exFAT-драйвера карты памяти по умолчанию при обновлении системы
+  * Удаление проверки ACID-подписи для использования хомбрю без патчей
+  * Удаление логирования системы для предотвращения засорения карты памяти и чрезмерного ее использования
+  * Перенаправление сейвов из внутренней памяти на карту памяти при использовании эмунанд, чтобы уменьшить вероятность их потери при выходе из строя эмунанду (опционально)
+
+
 **Кефир** - **не прошивка**! Это сборник, состоящий из прошивки Atmosphere и необходимого минимума рекомендуемых программ, плагинов, модулей и другого софта. Подробнее о составе кефира ниже. Работает на прошивке **{% include /vars/update_version.txt %}** и ниже 
 
 {% spoiler Зачем нужен кефир? %}
@@ -27,16 +37,14 @@ author_profile: true
 3. **Загрузчик [hekate](https://github.com/CTCaer/hekate){:target="_blank"}**. Благодаря загрузчику вы можете запускать прошивку и другие {% include abbr/payload.txt abbr="пейлоады" %} через удобное меню, создавать и восстанавливать резервную копию NAND, делать EmuNAND, получать информацию о состоянии системы, монтировать карту памяти к ПК без вытаскивания её из свитча, делать переразметку карты памяти для установки других ОС и многое другое
 4. **Установленные {% include abbr/payload.txt abbr="пейлоады" %}**:
   * [Lockpick_RCM](https://github.com/shchmue/Lockpick_RCM){:target="_blank"} - программа для [дампа ключей приставки](backup-nand#часть-iii---дампим-ключи){:target="_blank"}
-  * [Incognoto_RCM](https://github.com/arch-box/Incognito_RCM){:target="_blank"} - программа, стирающая серийный номер приставки, чтобы [заблокировать обновления и спрятать консоль от Nintendo](https://switch.customfw.xyz/block-update){:target="_blank"}
+  * [Incognoto_RCM](https://github.com/arch-box/Incognito_RCM){:target="_blank"} - программа, стирающая серийный номер приставки, чтобы [заблокировать обновления и спрятать консоль от Nintendo](https://switch.customfw.xyz/block-update){:target="_blank"} (актуально только для консолей, которые взламываются через Caffeine)
   * [TegraExplorer](https://github.com/rashevskyv/TegraExplorer/){:target="_blank"} - файловый менеджер для Switch в виде пейлоада. Аналог GodMode9 для 3DS
 5. **Установленное Homebrew**
   * [DBI](https://github.com/rashevskyv/dbi){:target="_blank"} - программа для [установки игр](games){:target="_blank"} по USB или с карты памяти
   * [{% include /inc/tinfoil.txt %}](http://tinfoil.io){:target="_blank"} - программа, позволяющая [качать игры](tinfoil){:target="_blank"} для приставки прямо из сети 
-  * [NX-Activity-Log](https://github.com/tallbl0nde/NX-Activity-Log){:target="_blank"} - программа, позволяющая отслеживать время, проведённое в играх
-  * [JKSV](https://github.com/J-D-K/JKSV/){:target="_blank"} - программа для резервного копирования и восстановления сейвов
   * [Kefir Updater](https://github.com/rashevskyv/kefir-updater){:target="_blank"} - программа для обновления kefir через интернет
-  * [pplay](https://github.com/Cpasjuste/pplay){:target="_blank"} - видеоплеер
-  * [NXMPforMe](https://github.com/darkxex/NXMPforMe/releases/){:target="_blank"} - видеоплеер с поддержкой апскейлинга аниме на базе нейронных сетей 
+  * [Homebrew App Store 2.2](https://github.com/fortheusers/hb-appstore/releases){:target="_blank"} - интернет-магазин приложений
+  * [NX-Activity-Log](https://github.com/tallbl0nde/NX-Activity-Log){:target="_blank"} - программа, позволяющая отслеживать время, проведённое в играх
   * [Daybreak](https://github.com/Atmosphere-NX/Atmosphere/tree/0.14.1/troposphere/daybreak){:target="_blank"} - программа для [безопасного обновления](update-to-latest){:target="_blank"} версии системного ПО приставки
   * [NXThemes Installer](https://github.com/exelix11/SwitchThemeInjector){:target="_blank"} - менеджер кастомных тем 
   * [Linkhlo](https://github.com/rdmrocha/linkalho){:target="_blank"} - программа [привязки аккаунта](link-account){:target="_blank"}
@@ -47,6 +55,7 @@ author_profile: true
     - [nx-ovlloader](https://github.com/WerWolv/nx-ovlloader//){:target="_blank"} - процесс для работы с nro через Tesla Menu
     - [ovlEdiZon.ovl](https://github.com/proferabg/EdiZon-Overlay/releases){:target="_blank"} - Модуль для [использования читов](cheats){:target="_blank"}
     - [ovlSysmodules.ovl](https://github.com/WerWolv/ovl-sysmodules/){:target="_blank"} - Модуль для включения и отключения установленных системных модулей (как-то разгон, emuuibo и прочее)
+    - [QuickNTP](https://github.com/nedex/QuickNTP){:target="_blank"} - модуль, позволяющий настроить точное время на консоли через интернет
 
 {% endspoiler %}
 
