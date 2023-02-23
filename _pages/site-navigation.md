@@ -14,7 +14,7 @@ author_profile: true
 * [Подготовка к запуску кастомной прошивки через Fusée Gelée](preparation-fuse){:target="_blank"}
 * [Kefir](kefir){:target="_blank"}
 * [Резервное копирование NAND](backup-nand){:target="_blank"}
-* [Безопасное обновление прошивки](update-to-latest){:target="_blank"}
+* [Безопасное обновление прошивки](update-fw){:target="_blank"}
 * [Установка EmuNAND](emunand){:target="_blank"}
 * [Связывание учётной записи консоли с аккаунтом Nintendo](link-account){:target="_blank"}
 * [Установка игр, DLC, обновлений](games){:target="_blank"}
@@ -57,7 +57,7 @@ author_profile: true
 ## Работа с системой
 
 * [Резервное копирование NAND](backup-nand){:target="_blank"}
-* [Безопасное обновление прошивки](update-to-latest){:target="_blank"}
+* [Безопасное обновление прошивки](update-fw){:target="_blank"}
 * [Переход с SXOS на Atmosphere](migrate){:target="_blank"}
 * [Переход на EmuNAND для уже прошитых](preparation-white){:target="_blank"}
 * [Установка EmuNAND](emunand){:target="_blank"}

@@ -1,5 +1,5 @@
 ---
-permalink: /update-to-latest.html
+permalink: /update-fw.html
 title: Безопасное обновление прошивки 
 author_profile: true
 ---
@@ -155,7 +155,7 @@ AutoRCM - на консоли специальным образом изменя
 
 {% spoiler При запуске Emunand ошибка "Failed to match warmboot with fuses" %}
 
-Нажмите кнопку (POWER), чтобы запустить прошивку и [обновите](update-to-latest){:target="_blank"} {% include abbr/emunand.txt abbr="EmuNAND" %} до актуальной версии системного ПО
+Нажмите кнопку (POWER), чтобы запустить прошивку и [обновите](update-fw){:target="_blank"} {% include abbr/emunand.txt abbr="EmuNAND" %} до актуальной версии системного ПО
 
 {% endspoiler %}
 

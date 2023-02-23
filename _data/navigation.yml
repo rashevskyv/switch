@@ -21,7 +21,7 @@ main:
   - title: "Установка<br>игр"
     url: /games
   - title: "Безопасное<br>обновление"
-    url: /update-to-latest
+    url: /update-fw
   - title: "Навигация по сайту"
     url: /site-navigation
   - title: "Пожертвования"
@@ -53,7 +53,7 @@ addons:
   - title: "Онлайн для прошитых и забаненных"
     url: /lanplay
   - title: "Безопасное обновление прошивки"
-    url: /update-to-latest
+    url: /update-fw
   - title: "Резервное копирование NAND"
     url: /backup-nand
   - title: "Запуск пейлоадера через Fusée Gelée"
@@ -77,6 +77,7 @@ addons:
             
 bottom:
   - title: <div class="notice--danger"><h2>НЕ ИДИТЕ ВОЕВАТЬ В УКРАИНУ! ВЫ ТАМ УМРЁТЕ!</h2><ul><li><a href="https://www.youtube.com/watch?v=X39ZkynPjpQ" target="_blank">Как избежать мобилизации</a></li><li><a href="https://t.me/hochu_zhyt/4" target="_blank">Как сдаться в плен</a></li><li><a href="https://www.youtube.com/watch?v=teB8NVagI7c" target="_blank">Условия проживания пленных в Украине</a> и <a href="https://www.youtube.com/c/VolodymyrZolkin/videos" target="_blank">интервью с ними</a></li></ul></div>
+  - title: <div class="notice--danger"><strong>Прошивка 16.0.0 только вышла и поддерживается плохо!</strong> Воспользуйтесь пре-релизом кефира чтобы откатиться на прошивку 15.0.1 по [этой инструкции](update-fw)</div>
   - title: <div class="notice--warning">Если вы попали в это руководство впервые и не знаете как прошивается Switch, рекомендуем начать знакомство с ним с <a href="/" target="_blank">первой страницы</a></div>
   - title: <div class="notice--warning">Если вы пользователь MacOS, воспользуйтесь <a href="/sd-macos.html" target="_blank">этими рекомендациями</a>, чтобы избежать проблем с картой памяти</div>
   - title: <div class="notice">Делайте <a href="/backup-saves" target="_blank">бекапы сохранений</a> как можно чаще!</div>

@@ -84,7 +84,7 @@ author_profile: true
 ### Часть IV - Завершение миграции
 
 1. Попробуйте запустить SysNAND (**hekate** -> "**More Configs**" -> "**Full Stock**"). Если он не запускается, обратитесь к разделу [проблемы и их решения](#проблемы-и-их-решения){:target="_blank"} внизу страницы
-1. [Обновите Emunand](update-to-latest){:target="_blank"} до системного ПО версии **{% include /vars/update_version.txt %}**
+1. [Обновите Emunand](update-fw){:target="_blank"} до системного ПО версии **{% include /vars/update_version.txt %}**
 
 ## Проблемы и их решения
 

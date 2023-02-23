@@ -45,7 +45,7 @@ author_profile: true
   * [Kefir Updater](https://github.com/rashevskyv/kefir-updater){:target="_blank"} - программа для обновления kefir через интернет
   * [Homebrew App Store 2.2](https://github.com/fortheusers/hb-appstore/releases){:target="_blank"} - интернет-магазин приложений
   * [NX-Activity-Log](https://github.com/tallbl0nde/NX-Activity-Log){:target="_blank"} - программа, позволяющая отслеживать время, проведённое в играх
-  * [Daybreak](https://github.com/Atmosphere-NX/Atmosphere/tree/0.14.1/troposphere/daybreak){:target="_blank"} - программа для [безопасного обновления](update-to-latest){:target="_blank"} версии системного ПО приставки
+  * [Daybreak](https://github.com/Atmosphere-NX/Atmosphere/tree/0.14.1/troposphere/daybreak){:target="_blank"} - программа для [безопасного обновления](update-fw){:target="_blank"} версии системного ПО приставки
   * [NXThemes Installer](https://github.com/exelix11/SwitchThemeInjector){:target="_blank"} - менеджер кастомных тем 
   * [Linkhlo](https://github.com/rdmrocha/linkalho){:target="_blank"} - программа [привязки аккаунта](link-account){:target="_blank"}
 6. **Установленные модули**. Модули - это дополнительные компоненты, работающие внутри Atmosphere и позволяющие делать разные крутые штуки, как-то использование xbox-сoвместимых контроллеров, эмуляцию amiibo, разгон и прочее. К сожалению, SX OS модули не поддерживает

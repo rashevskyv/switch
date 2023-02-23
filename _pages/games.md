@@ -53,7 +53,7 @@ author_profile: true
 ### Что понадобится
 
 * Настроенная и работающая [кастомная прошивка](cfw){:target="_blank"}
-* Свежая версия [системного ПО приставки](update-to-latest){:target="_blank"}
+* Свежая версия [системного ПО приставки](update-fw){:target="_blank"}
 * Свежая версия {% include abbr/kefir_addr.txt %}
 * Игры 
 
