@@ -47,6 +47,7 @@ author_profile: true
 ### Где брать игры и обновления
 
 * [Исчерпывающее количество источников](https://4pda.to/forum/index.php?showtopic=939714&st=0#games_sources_cfw){: target="blank_"}
+* Телеграм-бот [Switch_library_bot](https://t.me/Switch_library_bot){: target="blank_"} (пароль `kefir`)
 
 ## Установка игр
 
