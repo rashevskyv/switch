@@ -21,7 +21,7 @@ author_profile: true
 1. Переустановите {% include abbr/kefir_addr.txt %} начисто. Для этого удалите с карты памяти всё, кроме папки `Nintendo` и `emummc` (или `sxos/emunand`) и ставьте кефир заново
 1. Проверьте монтируется ли раздел `USER`. Для этого: 
 	1. Запустите {% include abbr/hekate.txt abbr="hekate" %} -> **Payloads** -> `TegraExplorer.bin`
-	1. Выберите **Browse EMUMMC** если не запускается {% include abbr/emunand.txt abbr="EmuNAND" %} или **Browse EMMC**, если не запускается {% include abbr/sysnand.txt abbr="SysNAND" %}
+	1. Выберите **Browse EMUMMC** если не запускается {% include abbr/emunand.md abbr="EmuNAND" %} или **Browse EMMC**, если не запускается {% include abbr/sysnand.md abbr="SysNAND" %}
 	1. Перейдите в раздел **USER**. Если ошибок нет, то раздел USER монтируется и проблема не в нём
 1. [Восстановите бекап](backup-nand#восстановление-резервной-копии){:target="_blank"}, если таковой имеется
 1. Сделайте [сброс к заводским настройкам](system-wipe){:target="_blank"}
@@ -48,7 +48,7 @@ author_profile: true
 1. Переустановите {% include abbr/kefir_addr.txt %} начисто. Для этого удалите с карты памяти всё, кроме папки `Nintendo` и `emummc` (или `sxos/emunand`) и ставьте кефир заново
 1. Проверьте монтируется ли раздел `SYSTEM`. Для этого: 
 	1. Запустите {% include abbr/hekate.txt abbr="hekate" %} -> **Payloads** -> `TegraExplorer.bin`
-	1. Выберите **Browse EMUMMC** если не запускается {% include abbr/emunand.txt abbr="EmuNAND" %} или **Browse EMMC**, если не запускается {% include abbr/sysnand.txt abbr="SysNAND" %}
+	1. Выберите **Browse EMUMMC** если не запускается {% include abbr/emunand.md abbr="EmuNAND" %} или **Browse EMMC**, если не запускается {% include abbr/sysnand.md abbr="SysNAND" %}
 	1. Перейдите в раздел **SYSTEM**. Если ошибок нет, то раздел SYSTEM монтируется и проблема не в нём
 1. [Восстановите бекап](backup-nand#восстановление-резервной-копии){:target="_blank"}, если таковой имеется
 1. Сделайте [восстановление прошивки](downgrade_fw){:target="_blank"}

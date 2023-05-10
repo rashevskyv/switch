@@ -15,3 +15,10 @@
   </a>
 </li>
 {% endif %}
+{% if author.tg_group %}
+<li>
+  <a href="https://t.me/{{ author.tg_group }}" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Группа в Telegram
+  </a>
+</li>
+{% endif %}

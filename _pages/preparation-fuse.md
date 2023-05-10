@@ -10,8 +10,8 @@ author_profile: true
 
 1. [Установка и запуск Kefir](kefir){:target="blank_"}
 1. [Резервное копирование NAND](backup-nand){:target="_blank"}
-1. [Обновление SysNAND до рекомендуемой версии системного ПО](update-fw){:target="blank_"}
 1. [Создание EmuNAND](emunand){:target="blank_"}
+1. [Обновление SysNAND до рекомендуемой версии системного ПО](update-fw){:target="blank_"}
 1. [Привязка аккаунта](link-account){:target="blank_"} - последний штрих. Привязки аккаунта для работы требуют некоторые игры
 1. [Запуск игр](games){:target="blank_"} - финальная часть, ради которой всё и делалось
 1. [Использование уже прошитой приставки](usage)
@@ -19,7 +19,7 @@ author_profile: true
 Теперь вы можете использовать EmuNAND для игры в пиратку, а SysNAND для игры в лицензию.
 {% spoiler Запуск прошивки без использования EmuNAND (не рекомендуется) %}
 
-Вы не сможете пользоваться онлайном даже в купленных играх, до тех пор, пока не перенесёте SysNAND в {% include abbr/emunand.txt abbr="EmuNAND" %} [по этой инструкции](preparation-white){:target="blank_"}, а в SysNAND не восстановите чистый бекап.
+Вы не сможете пользоваться онлайном даже в купленных играх, до тех пор, пока не перенесёте SysNAND в {% include abbr/emunand.md abbr="EmuNAND" %} [по этой инструкции](preparation-white){:target="blank_"}, а в SysNAND не восстановите чистый бекап.
 {: .notice--danger}
 
 1. [Запуск кастомной прошивки](cfw){:target="blank_"}

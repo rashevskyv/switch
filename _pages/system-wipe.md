@@ -12,5 +12,5 @@ author_profile: true
 
 1. Запустите {% include abbr/hekate.txt abbr="hekate" %} -> **Payloads** -> `TegraExplorer.bin`
 1. Выберите `SystemWipe.te`
-1. Выберите **Wipe sysmmc**, чтобы сбросить к заводским {% include abbr/sysnand.txt abbr="SysNAND" %} и **Wipe emummc**, чтобы сбросить {% include abbr/emunand.txt abbr="EmuNAND" %}
+1. Выберите **Wipe sysmmc**, чтобы сбросить к заводским {% include abbr/sysnand.md abbr="SysNAND" %} и **Wipe emummc**, чтобы сбросить {% include abbr/emunand.md abbr="EmuNAND" %}
 1. Нажмите кнопку (POWER) для подтверждения сброса 

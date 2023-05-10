@@ -8,8 +8,8 @@
 {% include abbr/rcm.txt abbr="RCM" %}
 {% include abbr/payload.txt abbr="пейлоад" %}
 {% include abbr/homebrew.txt abbr="homebrew" %}
-{% include abbr/emunand.txt abbr="EmuNAND" %}
-{% include abbr/sysnand.txt abbr="SysNAND" %}
+{% include abbr/emunand.md abbr="EmuNAND" %}
+{% include abbr/sysnand.md abbr="SysNAND" %}
 {% include abbr/kefir_addr.txt %}
 {% include abbr/exfat.txt %}
 {% include abbr/sdhc.txt %}
