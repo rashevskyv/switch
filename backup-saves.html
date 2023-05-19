@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Резервное копирование и восстановление сохранений - Взлом Switch</title>
+
+
+
+
+<meta name="description" content="Полное руководство по прошивке Nintendo Switch">
+
+
+
+
+<meta name="author" content="nincfw team">
+
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Взлом Switch">
+<meta property="og:title" content="Резервное копирование и восстановление сохранений">
+
+
+  <link rel="canonical" href="https://switch.customfw.xyz/backup-saves.html">
+  <meta property="og:url" content="https://switch.customfw.xyz/backup-saves.html">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "nincfw team",
+      "url" : "https://switch.customfw.xyz",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://switch.customfw.xyz/feed.xml" type="application/atom+xml" rel="alternate" title="Взлом Switch Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://switch.customfw.xyz/assets/css/main.css">
+<link rel="stylesheet" href="https://customfw.xyz/stay-for-ukraine/css/stay_for_ukraine.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://customfw.xyz/stay-for-ukraine/js/stand_for_ukraine.js"></script>
+  </head>
+
+  <body class="layout--single">
+    <div id="preloader" class="preloader"></div>
+<div id="stay-for-ukraine-popup"></div>
+<div id="ukranian-flag"></div>
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://switch.customfw.xyz/">Взлом Switch</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz"><b>Прошить другую<br>приставку</b></a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://nincfw.olx.ua/"><i>Купить<br>прошитую</i></a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/get-started">Методы<br>взлома</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/kefir">Kefir</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/backup-nand">Резервное<br>копирование</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/emunand">EmuNAND</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/usage">Использование<br>прошитой Switch</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/faq">FAQ</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/troubleshooting">Проблемы и<br>их решение</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/games">Установка<br>игр</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/update-fw">Безопасное<br>обновление</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/site-navigation">Навигация по сайту</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz/donations">Пожертвования</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz/contacts">Связаться с нами</a></li>
+          
+        </ul>
+        <button type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <center><img src="https://switch.customfw.xyz/images/bio-photo.png" class="author__avatar" alt="nincfw team" itemprop="image"></center>
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">nincfw team</h3><br>
+    
+  </div>
+  
+  
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+	<hr class="style-two">
+
+      
+
+<li><a href="https://vk.com/nincfw" itemprop="sameAs">
+  <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Группа вконтакте
+</a></li>
+
+
+<li>
+  <a href="https://t.me/kefir_switch" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Telegram
+  </a>
+</li>
+
+
+<li>
+  <a href="https://t.me/xhrxhrxhr" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Группа в Telegram
+  </a>
+</li>
+
+	
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/rashevskyv" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        
+          <li>
+            <a href="https://www.youtube.com/channel/UC49jZqLn59t9qyHfK2HyvQQ" itemprop="sameAs">
+              <i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i> YouTube
+            </a>
+          </li>
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <li>
+        <a href="https://customfw.xyz/donations" itemprop="sameAs">
+          <i class="fa fa-fw fa-vine" aria-hidden="true"></i><strong>Пожертвования</strong>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+
+  
+   
+  </div>
+ 
+  
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Резервное копирование и восстановление сохранений">
+    
+    
+    
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Резервное копирование и восстановление сохранений
+</h1>
+          
+        </header>
+      
+	  
+	  	
+        <h2 id="создание-и-восстановление-резервных-копий-через-mtp">Создание и восстановление резервных копий через MTP</h2>
+
+<h3 id="подключение-консоли-к-пк">Подключение консоли к ПК</h3>
+
+<ol>
+  <li>Подключите консоль к ПК USB-кабелем (type-c)</li>
+  <li><strong>На приставке</strong> запустите <strong>DBI</strong> через <a href="hbl" target="_blank">Homebrew Launcher</a></li>
+  <li>Нажмите “<strong>Run MTP Responder</strong>”
+    <ul>
+      <li>К вашему ПК примонтируется новое MTP-устройство</li>
+    </ul>
+  </li>
+  <li>Откройте появившееся в компьютере устройство “<strong>Switch</strong>” (в “этом компьютере” на Windows)</li>
+</ol>
+
+<h3 id="создание-резервных-копий-сохранений">Создание резервных копий сохранений</h3>
+
+<ol>
+  <li>Перейдите в диск “<strong>Saves</strong>” и скопируйте папки <code class="language-plaintext highlighter-rouge">Installed games</code> и <code class="language-plaintext highlighter-rouge">Uninstalled games</code> на ПК
+    <ul>
+      <li>Для того, чтобы сделать резервную копию какой-то <strong>определенной установленной игры</strong>. зайдите в папку <code class="language-plaintext highlighter-rouge">Installed games</code> и скопируйте папку с этой игрой на ПК. Сохранение не установленной игры ищите в папке <code class="language-plaintext highlighter-rouge">Uninstalled games</code></li>
+      <li>Если вы ищите бекап для определенного пользователя, перейдите в папку с названием игры и вы увидите бекапы для всех имеющихся пользователей на консоли</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="восстановление-резервных-копий-сохранений">Восстановление резервных копий сохранений</h3>
+
+<p class="notice--info">Для восстановления сохранения этим способом, игра должна быть хотя бы один раз запущена на вашей консоли</p>
+
+<ol>
+  <li>Перейдите в диск “<strong>Saves</strong>” -&gt; <code class="language-plaintext highlighter-rouge">Installed games</code> -&gt; <code class="language-plaintext highlighter-rouge">%название игры%</code> -&gt; <code class="language-plaintext highlighter-rouge">%имя_пользователя%</code> и скопируйте в эту папку данные, которые находятся в соответствующей папке вашей резервной копии.
+    <ul>
+      <li>Таким образом можно скопировать резервные копии сохранений, созданных и другими программами, или восстановить чужие сохранения</li>
+    </ul>
+  </li>
+</ol>
+
+				
+        
+      </section>
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+		
+    
+  </article>
+
+  
+  
+</div>
+
+    <a href="#" class="scrollup">Наверх</a>
+
+    <div class="page__footer-container">
+      <footer class="page__footer">
+        <script src="/assets/js/main.min.js"></script>
+
+<!-- // to top button -->
+<a href="#" class="scrollup">Наверх</a>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $(".scrollup").fadeIn();
+      } else {
+        $(".scrollup").fadeOut();
+      }
+    });
+
+    $(".scrollup").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+  });
+</script>
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a href="http://github.com/rashevskyv"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+	  <li><a href="https://t.me/" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Kefir / 4ifir - switch jailbroken
+	  </a></li>	
+    
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 nincfw team. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+  </body>
+</html>

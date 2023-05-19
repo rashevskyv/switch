@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Установка EmuNAND - Взлом Switch</title>
+
+
+
+
+<meta name="description" content="Полное руководство по прошивке Nintendo Switch">
+
+
+
+
+<meta name="author" content="nincfw team">
+
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Взлом Switch">
+<meta property="og:title" content="Установка EmuNAND">
+
+
+  <link rel="canonical" href="https://switch.customfw.xyz/emunand.html">
+  <meta property="og:url" content="https://switch.customfw.xyz/emunand.html">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "nincfw team",
+      "url" : "https://switch.customfw.xyz",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://switch.customfw.xyz/feed.xml" type="application/atom+xml" rel="alternate" title="Взлом Switch Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://switch.customfw.xyz/assets/css/main.css">
+<link rel="stylesheet" href="https://customfw.xyz/stay-for-ukraine/css/stay_for_ukraine.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://customfw.xyz/stay-for-ukraine/js/stand_for_ukraine.js"></script>
+  </head>
+
+  <body class="layout--single">
+    <div id="preloader" class="preloader"></div>
+<div id="stay-for-ukraine-popup"></div>
+<div id="ukranian-flag"></div>
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://switch.customfw.xyz/">Взлом Switch</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz"><b>Прошить другую<br>приставку</b></a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://nincfw.olx.ua/"><i>Купить<br>прошитую</i></a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/get-started">Методы<br>взлома</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/kefir">Kefir</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/backup-nand">Резервное<br>копирование</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/emunand">EmuNAND</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/usage">Использование<br>прошитой Switch</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/faq">FAQ</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/troubleshooting">Проблемы и<br>их решение</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/games">Установка<br>игр</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/update-fw">Безопасное<br>обновление</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/site-navigation">Навигация по сайту</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz/donations">Пожертвования</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz/contacts">Связаться с нами</a></li>
+          
+        </ul>
+        <button type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <center><img src="https://switch.customfw.xyz/images/bio-photo.png" class="author__avatar" alt="nincfw team" itemprop="image"></center>
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">nincfw team</h3><br>
+    
+  </div>
+  
+  
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+	<hr class="style-two">
+
+      
+
+<li><a href="https://vk.com/nincfw" itemprop="sameAs">
+  <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Группа вконтакте
+</a></li>
+
+
+<li>
+  <a href="https://t.me/kefir_switch" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Telegram
+  </a>
+</li>
+
+
+<li>
+  <a href="https://t.me/xhrxhrxhr" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Группа в Telegram
+  </a>
+</li>
+
+	
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/rashevskyv" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        
+          <li>
+            <a href="https://www.youtube.com/channel/UC49jZqLn59t9qyHfK2HyvQQ" itemprop="sameAs">
+              <i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i> YouTube
+            </a>
+          </li>
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <li>
+        <a href="https://customfw.xyz/donations" itemprop="sameAs">
+          <i class="fa fa-fw fa-vine" aria-hidden="true"></i><strong>Пожертвования</strong>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+
+  
+   
+  </div>
+ 
+  
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Установка EmuNAND">
+    
+    
+    
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Установка EmuNAND
+</h1>
+          
+        </header>
+      
+	  
+	  	
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Разделы</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#что-нужно-знать-про-emunand" id="markdown-toc-что-нужно-знать-про-emunand">Что нужно знать про EmuNAND</a>    <ul>
+      <li><a href="#emunand-вам-может-понадобиться-если" id="markdown-toc-emunand-вам-может-понадобиться-если">EmuNAND вам может понадобиться если…</a></li>
+      <li><a href="#можно-ли-работать-без-emunand" id="markdown-toc-можно-ли-работать-без-emunand">Можно ли работать без EmuNAND</a></li>
+      <li><a href="#сколько-emunand-занимает-места" id="markdown-toc-сколько-emunand-занимает-места">Сколько EmuNAND занимает места</a></li>
+      <li><a href="#плюсы-и-минусы-использования-emunand" id="markdown-toc-плюсы-и-минусы-использования-emunand">Плюсы и минусы использования EmuNAND</a></li>
+      <li><a href="#как-перенести-emunand-на-другую-карту" id="markdown-toc-как-перенести-emunand-на-другую-карту">Как перенести EmuNAND на другую карту</a></li>
+      <li><a href="#как-сделать-резервную-копию-emunand-на-пк" id="markdown-toc-как-сделать-резервную-копию-emunand-на-пк">Как сделать резервную копию EmuNAND на ПК</a></li>
+    </ul>
+  </li>
+  <li><a href="#создание-emunand" id="markdown-toc-создание-emunand">Создание EmuNAND</a>    <ul>
+      <li><a href="#запуск-прошивки" id="markdown-toc-запуск-прошивки">Запуск прошивки</a></li>
+      <li><a href="#важно-знать" id="markdown-toc-важно-знать">Важно знать</a></li>
+    </ul>
+  </li>
+</ul>
+
+  </nav>
+</aside>
+
+<hr />
+
+<div class="notice--danger"><h2>НЕ ИДИТЕ ВОЕВАТЬ В УКРАИНУ! ВЫ ТАМ УМРЁТЕ!</h2><ul><li><a href="https://www.youtube.com/watch?v=8aJ282tD9us" target="_blank">ВЫ НЕ СМОЖЕТЕ ИЗБЕЖАТЬ МОБИЛИЗАЦИИ! Подробности новой системы призыва</a></li><li><a href="https://t.me/hochu_zhyt/4" target="_blank">Как сдаться в плен</a></li><li><a href="https://www.youtube.com/watch?v=teB8NVagI7c" target="_blank">Условия проживания пленных в Украине</a> и <a href="https://www.youtube.com/c/VolodymyrZolkin/videos" target="_blank">интервью с ними</a></li></ul></div>
+
+<div class="notice--warning">Если вы попали в это руководство впервые и не знаете как прошивается Switch, рекомендуем начать знакомство с ним с <a href="/" target="_blank">первой страницы</a></div>
+
+<div class="notice--warning">Если вы пользователь MacOS, воспользуйтесь <a href="/sd-macos.html" target="_blank">этими рекомендациями</a>, чтобы избежать проблем с картой памяти</div>
+
+<div class="notice">Делайте <a href="/backup-saves" target="_blank">бекапы сохранений</a> как можно чаще!</div>
+
+<div class="notice--warning"><strong>Если приставка зависла или не подаёт признаков жизни, выключите её удерживанием кнопки (POWER) 30 секунд, затем включите и пробросьте пейлоад!</strong></div>
+
+<hr />
+
+<p class="notice--info">Для уже прошитых пользователей, которые хотят восстановить возможность играть онлайн на уже прошитой приставке, а пиратить исключительно в EmuNAND есть отдельная инструкция - <a href="preparation-white" target="blank_">Переход на EmuNAND для уже прошитых</a></p>
+
+<h2 id="что-нужно-знать-про-emunand">Что нужно знать про EmuNAND</h2>
+
+<p><strong>EmuNAND</strong> - это копия системной прошивки, расположенная на карте памяти, из которой загружается система. Как правило, EmuNAND используется не один, а в связке с SysNAND. Обычно SysNAND используют для игры онлайн в купленные или официально скачанные из eShop игры. Если не запускать на SysNAND пиратку, то шанс, что его забанят крайне невысок. EmuNAND же наоборот, используют как раз для запуска пиратки. В нём специальным образом удаляют серийный номер приставки, так что даже при работающем интернет-подключении, Nintendo не может отследить что на приставке было запущено неавторизированное ПО.</p>
+
+<h3 id="emunand-вам-может-понадобиться-если">EmuNAND вам может понадобиться если…</h3>
+
+<ul>
+  <li>вы хотите играть онлайн в купленные\бесплатные игры.  В таком случае вы будете загружаться в EmuNAND для игры в пиратку, а <span class="tooltip_container">
+  SysNAND
+  <span class="tooltip"><i class="fas fa-caret-down"></i>
+      <span class="bottom">
+      В этом гайде под этим термином подразумевается прошивка, запущенная из внутренней памяти приставки (не из EmuNAND). Приставка из магазина будет идти именно с такой прошивкой. 
+Часто является антонимом к EmuNAND. Сток может быть пропатченный атмосферой, может использоваться для лицензии, может использоваться для пиратки, однако говоря сток чаще всего  мы имеем ввиду, что прошивка консоли запущена из внутренней карты памяти для использования консоли для игры в лицензию.
+      </span>
+  </span>
+</span> использовать исключительно для игры в лицензию. В этом случае шанс бана существенно ниже.</li>
+  <li>вы используете <span class="tooltip_container">
+  Caffeine
+  <span class="tooltip"><i class="fas fa-caret-down"></i>
+      <span class="bottom">
+          Это эксплойт, позволяющая запустить hekate из браузера на приставке с прошивкой 4.1.0. В данный момент это единственный способ запустить прошивку на патченных юнитах. Работает ТОЛЬКО при запуске из официальной прошивки, поэтому сильно важно, чтобы официальная прошивка всегда оставалась с версией системного ПО 4.1.0
+      </span>
+  </span>
+</span>. В таком случае у вас нет выбора и единственный способ прошить приставку - использовать EmuNAND</li>
+  <li>ваша приставка второй ревизии. В таком случае EmuNAND используется исключительно для того, чтобы не поломать себе консоль. Используйте EmuNAND для вашей же безопасности!</li>
+</ul>
+
+<p>В иных случаях EmuNAND не обязателен. То есть, если вы собираетесь просто играть в пиратку и вам не интересен онлайн, то от EmuNAND пользы не будет.</p>
+
+<p class="notice--danger">Помните, что без EmuNAND запуск Full Stock или Semi-Stock после установки пиратки на консоль вы <strong>неминуемо</strong> получите бан!</p>
+
+<p class="notice--info">Если вы очень хотите играть онлайн, но вас уже забанили, то EmuNAND вам не поможет.</p>
+
+<h3 id="можно-ли-работать-без-emunand">Можно ли работать без EmuNAND</h3>
+<p>Да, вполне. Если вам не нужен онлайн на приставке, взламываемой через Fusée Gelée, EmuNAND вам не понадобится.</p>
+
+<h3 id="сколько-emunand-занимает-места">Сколько EmuNAND занимает места</h3>
+<p>Как правило, размер EmuNAND равен размеру внутренней памяти приставки, то есть 32Гб. Имейте ввиду, что вы не сможете использовать <strong>внутреннюю память вашей приставки</strong> (те самые встроенные 32Гб) для установки игр, поскольку в качестве внутренней памяти будет выступать сам EmuNAND, который полностью расположен на карте памяти. То есть, запустив EmuNAND, вы увидите “внутреннюю память”, которую можно использовать для установки игр, но это внутренняя память эмунанда, которая расположена на карте памяти, а не самой приставки. Важно это понимать.</p>
+
+<h3 id="плюсы-и-минусы-использования-emunand">Плюсы и минусы использования EmuNAND</h3>
+
+<ul>
+  <li>Плюсы
+    <ul>
+      <li><strong>Полная изоляция от основной системы</strong> - эмунанд находится в полностью изолированной среде, потому действия в нём никак не влияют на основную систему. У него отдельные игры, отдельные сохранения, отдельные логи. Если вы испортите EmuNAND это никак не повлияет на основную систему и приставка продолжит работать.</li>
+      <li><strong>Безопасный онлайн</strong> - следствие предыдущего пункта. Благодаря тому, что эмунанд изолирован, вы можете смело пользоваться стоковой прошивкой (и внутренней памятью приставки) с минимальными рисками быть забаненным.</li>
+      <li><strong>Простота резервного копирования</strong> - так как эмунанд находится на карте, его можно просто периодически копировать на ПК для резервного копирования.</li>
+    </ul>
+  </li>
+  <li>Минусы
+    <ul>
+      <li><strong>Невозможно использовать внутренние 32Гб консоли</strong> - Для установки игр и приложений будет доступен только объём вашей карты памяти. Встроенные в приставку 32Гб будут доступны только для официальной прошивки.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="как-перенести-emunand-на-другую-карту">Как перенести EmuNAND на другую карту</h3>
+<p>Если EmuNAND сделан на отдельном разделе, то следует воспользоваться программой <a href="https://gbatemp.net/threads/emutool-move-partition-emu-on-another-sd-switch-emu-type-on-sxos-and-more.550756/" target="blank_">EmuTool</a>. Если же EmuNAND создан в виде файлов (именно такой создаётся в процессе выполнения этого руководства), то он переносится простым копированием</p>
+
+<h3 id="как-сделать-резервную-копию-emunand-на-пк">Как сделать резервную копию EmuNAND на ПК</h3>
+<p>Для создания резервной копии EmuNAND достаточно просто скопировать на ПК папку <code class="language-plaintext highlighter-rouge">emuMMC/SD00/eMMC</code> (вместо <code class="language-plaintext highlighter-rouge">SD00</code> может быть другое название)</p>
+
+<p>При выборе <strong>Semi-stock</strong>, будет запущен сток, с патчами атмосферы, кроме тех, что отвечают а запуск нелицензионного ПО. Это значит, что вы сможете пользоваться переводами и модами для игр даже в лицензии. Помните, что использование модов или читов в онлайн-играх неминуемо приведет вас к бану. Использование модов в оффлайн играх допускается. Если у вас установлена тема в EmuNAND, тог она так же будет отображаться в стоке. За это тоже не банят. Находясь в семи-стоке вы можете перезагружать приставку через меню прямо в гекату, а так же обновлять системное ПО стока через настройки приставки не теряя при этом AutoRCM. Так же в стоке будет работать homebrew, например менеджеры сохранений, что позволить делать бекап сохранений своих лицензионных игр, а так же переносить их в эмунанд и обратно (на свой страх и риск). Помните, что некоторые игры могут отслеживать такие манипуляции (например, Animal Crossing), потому делайте всё это на свой страх и риск. Для просто игры семи-сток полностью безопасен.</p>
+
+<p>Если вы хотите использовать чистый сток без модификаций, тогда на первой странице hekate выберите <strong>More Configs</strong> -&gt; <strong>Full Stock</strong>. Если при этом на вашей приставке стоит AutoRCM, то вам придется вставить донгл для загрузки в сток, либо отключить AutoRCM.</p>
+
+<p class="notice--warning">Если вы используете <span class="tooltip_container">
+	Caffeine
+	<span class="tooltip"><i class="fas fa-caret-down"></i>
+		<span class="bottom">
+			Это эксплойт, позволяющая запустить hekate из браузера на приставке с прошивкой 4.1.0. В данный момент это единственный способ запустить прошивку на патченных юнитах. Работает ТОЛЬКО при запуске из официальной прошивки, поэтому сильно важно, чтобы официальная прошивка всегда оставалась с версией системного ПО 4.1.0
+		</span>
+	</span>
+</span>, то для игры в лицензию вы запускаете не SysNAND, а EmuNAND, который специально для этого подготовили! Приставки с установленным Caffein используют SysNAND исключительно для запуска эксплойта!</p>
+
+<h2 id="создание-emunand">Создание EmuNAND</h2>
+
+<details class="spoiler"><summary class="spoiler-title">Подготовительные работы</summary><div class="spoiler-body">
+<ol>
+  <li>Запустите приставку и <strong>выберите светлую тему</strong> в настройка Switch, а так же <strong>переименуйте ваш аккаунт в “SysNAND”</strong>
+    <ul>
+      <li>Это необходимо сделать для того, чтобы вы всегда могли визуально отличить EmuNAND от SysNAND.</li>
+      <li>Вы можете наоборот поставить тёмную тему в SYSNAND, а светлую в EmuNAND - это не имеет значения. Главное, чтобы вы могли отличить оба раздела визуально.</li>
+    </ul>
+  </li>
+  <li>Загрузитесь в официальную прошивку и отключите в настройках приставки облачные сохранения (настройки -&gt; управление данными -&gt; облачное хранилище -&gt; настройки), если они включены. Если не включены, то пропустите этот пункт
+    <ul>
+      <li>Если вы пропустили этот пункт и у вас были включены облачные сохранения, то в эмунанде при запуске игр будет вылетать ошибка, чтобы её устранить, в <strong>эмунанде</strong> делайте “<strong>Unlink all accounts</strong>” с помощью <a href="link-account" target="_blank">Linkalho</a>, перезагрузите приставку, затем сделайте “<strong>Link all accounts</strong>” и снова перезагрузите приставку. Еще раз - <strong>в эмунанде.</strong></li>
+    </ul>
+  </li>
+  <li>Вставьте карту памяти в ПК и скопируйте всё её содержимое на ПК
+    <ul>
+      <li>Следующий шаг уничтожит все данные на вашей карте памяти, поэтому перенесите их на ПК</li>
+      <li>Все установленные на карту памяти игры находятся в папке <code class="language-plaintext highlighter-rouge">Nintendo</code></li>
+      <li>Все сохранения находятся во внутренней памяти приставки и <strong>не</strong> будут удалены, даже в том случае, если вы проигнорируете этот шаг</li>
+    </ul>
+  </li>
+  <li><a href="https://format.customfw.xyz" target="_blank">Отформатируйте вашу карту памяти в FAT32</a>
+    <ul>
+      <li>Да, именно в FAT32. Нет, проблем с играми больше 4Гб не будет</li>
+      <li>Делайте это даже в том случае, если ваша карта памяти не содержит данных</li>
+      <li>Делайте именно по этой инструкции</li>
+    </ul>
+  </li>
+  <li>Убедитесь, что включили <a href="https://customfw.xyz/file-extensions-windows" target="_blank">отображение расширений файлов</a>, если у вас Windows</li>
+</ol>
+
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Создание EmuNAND</summary><div class="spoiler-body">
+<ol>
+  <li>Выключите консоль</li>
+  <li>Вставьте карту памяти в ПК и установите <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip"><i class="fas fa-caret-down"></i>
+     <span class="bottom">
+         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+     </span>
+ </span>
+</span>, если ещё не делали этого, после чего верните карту памяти в консоль</li>
+  <li>Включите консоль, удерживая кнопку понижения громкости, чтобы загрузиться в <strong>hekate</strong></li>
+  <li>Перейдите в “<strong>emuMMC</strong>”</li>
+  <li>Нажмите “<strong>Create emuMMC</strong>” -&gt; “<strong>SD File</strong>”
+    <ul>
+      <li>Для создания emuMMC нужно иметь не менее 32Гб свободного места на карте! Если у вас нет столько, возьмите другую карту, либо временно перенесите папку Nintendo на ваш ПК</li>
+    </ul>
+  </li>
+  <li>После окончания создания emuMMC, нажмите “<strong>ОК</strong>”
+    <ul>
+      <li>Теперь при запуске приставки она автоматически будет запускать emuMMC.</li>
+      <li>Чтобы попасть в официальную прошивку, запустите <strong>hekate</strong> -&gt; “<strong>Launch</strong>” -&gt; “<strong>Semi-Stock</strong>”</li>
+    </ul>
+  </li>
+</ol>
+
+</div></details>
+
+<h3 id="запуск-прошивки">Запуск прошивки</h3>
+
+<details class="spoiler"><summary class="spoiler-title">Запуск EmuNAND</summary><div class="spoiler-body">
+<p>По-умолчанию кефир настроен таким образом, что при пробросе <code class="language-plaintext highlighter-rouge">payload.bin</code> из состава <span class="tooltip_container">
+	<a href="kefir" target="_blank">kefir</a>
+	<span class="tooltip"><i class="fas fa-caret-down"></i>
+		<span class="bottom">
+			Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+		</span>
+	</span>
+</span>, Atmosphere будет загружать EmuNAND, если он есть и активирован. Если его нет, либо он не активирован, будет загружаться SysNAND со всеми патчами. То есть без EmuNAND запуск Full Stock или Semi-Stock после установки пиратки на консоль вы <strong>неминуемо</strong> получите бан!</p>
+
+<p>Если же вы находитесь в <span class="tooltip_container">
+	hekate
+	<span class="tooltip"><i class="fas fa-caret-down"></i>
+		<span class="bottom">
+			Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+		</span>
+	</span>
+</span>, то просто перейдите в “<strong>Launch</strong>” -&gt; “<strong>Atmosphere</strong>”</p>
+
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Работа со стоковой прошивки</summary><div class="spoiler-body">
+<h3 id="запуск-стока">Запуск стока</h3>
+
+<p>При выборе <strong>Semi-stock</strong>, будет запущен сток, с патчами атмосферы, кроме тех, что отвечают а запуск нелицензионного ПО. Это значит, что вы сможете пользоваться переводами и модами для игр даже в лицензии. Помните, что использование модов или читов в онлайн-играх неминуемо приведет вас к бану. Использование модов в оффлайн играх допускается. Если у вас установлена тема в EmuNAND, тог она так же будет отображаться в стоке. За это тоже не банят. Находясь в семи-стоке вы можете перезагружать приставку через меню прямо в гекату, а так же обновлять системное ПО стока через настройки приставки не теряя при этом AutoRCM. Так же в стоке будет работать homebrew, например менеджеры сохранений, что позволить делать бекап сохранений своих лицензионных игр, а так же переносить их в эмунанд и обратно (на свой страх и риск). Помните, что некоторые игры могут отслеживать такие манипуляции (например, Animal Crossing), потому делайте всё это на свой страх и риск. Для просто игры семи-сток полностью безопасен.</p>
+
+<p>Если вы хотите использовать чистый сток без модификаций, тогда на первой странице hekate выберите <strong>More Configs</strong> -&gt; <strong>Full Stock</strong>. Если при этом на вашей приставке стоит AutoRCM, то вам придется вставить донгл для загрузки в сток, либо отключить AutoRCM.</p>
+
+<p class="notice--warning">Если вы используете <span class="tooltip_container">
+	Caffeine
+	<span class="tooltip"><i class="fas fa-caret-down"></i>
+		<span class="bottom">
+			Это эксплойт, позволяющая запустить hekate из браузера на приставке с прошивкой 4.1.0. В данный момент это единственный способ запустить прошивку на патченных юнитах. Работает ТОЛЬКО при запуске из официальной прошивки, поэтому сильно важно, чтобы официальная прошивка всегда оставалась с версией системного ПО 4.1.0
+		</span>
+	</span>
+</span>, то для игры в лицензию вы запускаете не SysNAND, а EmuNAND, который специально для этого подготовили! Приставки с установленным Caffein используют SysNAND исключительно для запуска эксплойта!</p>
+
+<ol>
+  <li>Войдите в <span class="tooltip_container">
+ hekate
+ <span class="tooltip"><i class="fas fa-caret-down"></i>
+     <span class="bottom">
+         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+     </span>
+ </span>
+</span> с помощью поддерживаемого на вашей приставке эксплойта, запуститив пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip"><i class="fas fa-caret-down"></i>
+     <span class="bottom">
+         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+     </span>
+ </span>
+</span>
+    <ol>
+      <li>Удерживайте (VOL-) на приставке во время появления логотипа kefir, чтобы попасть в hekate
+        <ul>
+          <li>Пропустите этот шаг, если вы уже в hekate</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>Перейдите в “<strong>Launch</strong>”</li>
+  <li>Запустите “<strong>Semi-Stock</strong>” для запуска <span class="tooltip_container">
+ стока
+ <span class="tooltip"><i class="fas fa-caret-down"></i>
+     <span class="bottom">
+     В этом гайде под этим термином подразумевается прошивка, запущенная из внутренней памяти приставки (не из EmuNAND). Приставка из магазина будет идти именно с такой прошивкой. 
+Часто является антонимом к EmuNAND. Сток может быть пропатченный атмосферой, может использоваться для лицензии, может использоваться для пиратки, однако говоря сток чаще всего  мы имеем ввиду, что прошивка консоли запущена из внутренней карты памяти для использования консоли для игры в лицензию.
+     </span>
+ </span>
+</span></li>
+</ol>
+
+<h3 id="запуск-emunand-из-стока">Запуск EmuNAND из стока</h3>
+
+<ul>
+  <li>Если вы находитесь в semi-stock, просто перезагрузите приставку</li>
+  <li>Если вы находитесь в Full Stock и ваша приставка чипована, просто перезагрузите приставку</li>
+  <li>Если увы находитесь в Full Stock в приставке, без чипа:
+    <ol>
+      <li>Выключите приставку</li>
+      <li>Запустите <span class="tooltip_container">
+  кастом
+  <span class="tooltip"><i class="fas fa-caret-down"></i>
+ <span class="bottom">
+     Модифицированное программное обеспечение консоли, написанное энтузиастами, позволяет делать вещи, недоступные пользователям официальных прошивок, например, запускать неподписанные приложения. В контексте прошивки свитча мы будем называть имеющееся программное обеспечение кастомной прошивкой, хотя, чисто технически, это не так
+ </span>
+  </span>
+</span> с помощью поддерживаемого на вашей приставке эксплойта:
+        <ul>
+          <li>Запустите пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
+  <a href="kefir" target="_blank">kefir</a>
+  <span class="tooltip"><i class="fas fa-caret-down"></i>
+ <span class="bottom">
+ Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+ </span>
+  </span>
+</span> с помощью <a href="fusee-gelee" target="_blank">Fusée Gelée</a> или воспользуйтесь <a href="caffeine" target="_blank">Caffeine</a> для загрузки кастома</li>
+          <li>Чипованую приставку достаточно просто включить</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+</div></details>
+
+<hr />
+
+<h3 id="важно-знать">Важно знать</h3>
+<ul>
+  <li>Без EmuNAND запуск Full Stock или Semi-Stock после установки пиратки на консоль вы <strong>неминуемо</strong> получите бан!</li>
+  <li>Действия которые вы выполняете в EmuNAND не влияют на состояние SysNAND и наоборот</li>
+  <li>Если вы переносили в EmuNAND SysNAND, в котором уже были установлены игры, то в EmuNAND они работать не будут, до тех пор, пока вы не переместите папку <code class="language-plaintext highlighter-rouge">Nintendo</code> в папку <code class="language-plaintext highlighter-rouge">emuMMC/SD00</code></li>
+  <li>Форматирование (восстановление до заводских) SysNAND не влияет на EmuNAND и наоборот</li>
+  <li>Если вы используете <a href="fusee-gelee" target="_blank"><span class="tooltip_container">
+  Fusée Gelée
+  <span class="tooltip"><i class="fas fa-caret-down"></i>
+      <span class="bottom">
+          Этот не привязной эксплойт использует уязвимость в штатном режиме восстановления Nintendo Switch. Для его работы требуется внешнее устройство, хост, с помощью которого на приставке и будет запускаться кастомная прошивка. Делать это будет необходимо при каждой перезагрузке консоли. В качестве хоста может использоваться ПК, мобильный телефон на Android или iOS или специальное устройство, донгл. 
+      </span>
+  </span>
+</span></a> для взлома, то вы можете обновить SysNAND, а не создавать для игры в лицензию отдельный emuMMC-раздел, до последней прошивки и использовать его для игры в лицензию, в том числе и онлайн. Это безопасно!</li>
+  <li><strong>НИКОГДА не обновляйте SysNAND, если вы используете <a href="caffeine" target="_blank">Caffeine</a></strong> для запуска прошивки! Обновив SysNAND вы не сможете запустить взлом! В дальнейшем мы установим защиту на SysNAND, чтобы избежать случайного обновления!</li>
+</ul>
+
+<hr />
+
+<p class="notice--success"><a href="javascript:window.close();">Закрыть страницу</a></p>
+
+				
+        
+      </section>
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+		
+    
+  </article>
+
+  
+  
+</div>
+
+    <a href="#" class="scrollup">Наверх</a>
+
+    <div class="page__footer-container">
+      <footer class="page__footer">
+        <script src="/assets/js/main.min.js"></script>
+
+<!-- // to top button -->
+<a href="#" class="scrollup">Наверх</a>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $(".scrollup").fadeIn();
+      } else {
+        $(".scrollup").fadeOut();
+      }
+    });
+
+    $(".scrollup").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+  });
+</script>
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a href="http://github.com/rashevskyv"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+	  <li><a href="https://t.me/" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Kefir / 4ifir - switch jailbroken
+	  </a></li>	
+    
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 nincfw team. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+  </body>
+</html>

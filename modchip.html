@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Взлом с помощью SX Core / SX Lite или их аналогов - Взлом Switch</title>
+
+
+
+
+<meta name="description" content="Полное руководство по прошивке Nintendo Switch">
+
+
+
+
+<meta name="author" content="nincfw team">
+
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Взлом Switch">
+<meta property="og:title" content="Взлом с помощью SX Core / SX Lite или их аналогов">
+
+
+  <link rel="canonical" href="https://switch.customfw.xyz/modchip.html">
+  <meta property="og:url" content="https://switch.customfw.xyz/modchip.html">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "nincfw team",
+      "url" : "https://switch.customfw.xyz",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://switch.customfw.xyz/feed.xml" type="application/atom+xml" rel="alternate" title="Взлом Switch Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://switch.customfw.xyz/assets/css/main.css">
+<link rel="stylesheet" href="https://customfw.xyz/stay-for-ukraine/css/stay_for_ukraine.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://customfw.xyz/stay-for-ukraine/js/stand_for_ukraine.js"></script>
+  </head>
+
+  <body class="layout--single">
+    <div id="preloader" class="preloader"></div>
+<div id="stay-for-ukraine-popup"></div>
+<div id="ukranian-flag"></div>
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://switch.customfw.xyz/">Взлом Switch</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz"><b>Прошить другую<br>приставку</b></a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://nincfw.olx.ua/"><i>Купить<br>прошитую</i></a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/get-started">Методы<br>взлома</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/kefir">Kefir</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/backup-nand">Резервное<br>копирование</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/emunand">EmuNAND</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/usage">Использование<br>прошитой Switch</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/faq">FAQ</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/troubleshooting">Проблемы и<br>их решение</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/games">Установка<br>игр</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/update-fw">Безопасное<br>обновление</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/site-navigation">Навигация по сайту</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz/donations">Пожертвования</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz/contacts">Связаться с нами</a></li>
+          
+        </ul>
+        <button type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <center><img src="https://switch.customfw.xyz/images/bio-photo.png" class="author__avatar" alt="nincfw team" itemprop="image"></center>
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">nincfw team</h3><br>
+    
+  </div>
+  
+  
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+	<hr class="style-two">
+
+      
+
+<li><a href="https://vk.com/nincfw" itemprop="sameAs">
+  <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Группа вконтакте
+</a></li>
+
+
+<li>
+  <a href="https://t.me/kefir_switch" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Telegram
+  </a>
+</li>
+
+
+<li>
+  <a href="https://t.me/xhrxhrxhr" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Группа в Telegram
+  </a>
+</li>
+
+	
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/rashevskyv" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        
+          <li>
+            <a href="https://www.youtube.com/channel/UC49jZqLn59t9qyHfK2HyvQQ" itemprop="sameAs">
+              <i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i> YouTube
+            </a>
+          </li>
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <li>
+        <a href="https://customfw.xyz/donations" itemprop="sameAs">
+          <i class="fa fa-fw fa-vine" aria-hidden="true"></i><strong>Пожертвования</strong>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+
+  
+   
+  </div>
+ 
+  
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Взлом с помощью SX Core / SX Lite или их аналогов">
+    
+    
+    
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Взлом с помощью SX Core / SX Lite или их аналогов
+</h1>
+          
+        </header>
+      
+	  
+	  	
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Разделы</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#общая-информация" id="markdown-toc-общая-информация">Общая информация</a></li>
+  <li><a href="#как-поставить-чип-в-свою-приставку" id="markdown-toc-как-поставить-чип-в-свою-приставку">Как поставить чип в свою приставку?</a></li>
+  <li><a href="#будет-ли-работать-онлайн" id="markdown-toc-будет-ли-работать-онлайн">Будет ли работать онлайн?</a></li>
+  <li><a href="#какую-карту-памяти-выбрать-для-прошитой-приставки" id="markdown-toc-какую-карту-памяти-выбрать-для-прошитой-приставки">Какую карту памяти выбрать для прошитой приставки?</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<hr />
+
+<div class="notice--danger"><h2>НЕ ИДИТЕ ВОЕВАТЬ В УКРАИНУ! ВЫ ТАМ УМРЁТЕ!</h2><ul><li><a href="https://www.youtube.com/watch?v=8aJ282tD9us" target="_blank">ВЫ НЕ СМОЖЕТЕ ИЗБЕЖАТЬ МОБИЛИЗАЦИИ! Подробности новой системы призыва</a></li><li><a href="https://t.me/hochu_zhyt/4" target="_blank">Как сдаться в плен</a></li><li><a href="https://www.youtube.com/watch?v=teB8NVagI7c" target="_blank">Условия проживания пленных в Украине</a> и <a href="https://www.youtube.com/c/VolodymyrZolkin/videos" target="_blank">интервью с ними</a></li></ul></div>
+
+<div class="notice--warning">Если вы попали в это руководство впервые и не знаете как прошивается Switch, рекомендуем начать знакомство с ним с <a href="/" target="_blank">первой страницы</a></div>
+
+<div class="notice--warning">Если вы пользователь MacOS, воспользуйтесь <a href="/sd-macos.html" target="_blank">этими рекомендациями</a>, чтобы избежать проблем с картой памяти</div>
+
+<div class="notice">Делайте <a href="/backup-saves" target="_blank">бекапы сохранений</a> как можно чаще!</div>
+
+<div class="notice--warning"><strong>Если приставка зависла или не подаёт признаков жизни, выключите её удерживанием кнопки (POWER) 30 секунд, затем включите и пробросьте пейлоад!</strong></div>
+
+<hr />
+
+<ul>
+  <li>Если вы уже прочипованы и хотите узнать как использовать приставку, то вам сюда - <a href="usage">Инструкция по использованию уже прошитой приставки</a></li>
+  <li>Если вы уже прочипованы и хотите перейти с SXOS на Atmosphere, то вам сюда - <a href="migrate">Переход с SXOS на Atmosphere</a></li>
+  <li>Если ваша приставка ещё не прочипована, следуйте инструкции ниже</li>
+</ul>
+
+<h2 id="общая-информация">Общая информация</h2>
+
+<details class="spoiler"><summary class="spoiler-title">Почему чипы стоят так дорого?</summary><div class="spoiler-body">
+<p>В октябре 2020 года <a href="https://www.theverge.com/2020/10/2/21499297/team-xecuter-selling-nintendo-hacks-arrested-charged-fraud" target="_blank">были арестованы два лидера Xecuter Team</a> - кампании, занимавшейся разработкой и поддержкой SXOS, а так же производством чипов для модификации приставок с закрытой уязвимостью.</p>
+
+<p>1-го декабря 2020 года в свет выходит обновление системного ПО Switch под версией 11.0.0 и уже спустя 5 дней команда SXOS выпустила прошивку с поддержкой этого обновления. Казалось бы, всё идёт хорошо и несмотря на аресты, XT всё ещё работают.</p>
+
+<p>Однако, примерно в это же время, все китайские площадки, продававшие чипы в один голос начали говорить о том, что чипы у них закончились и перспективы производства новых партий весьма призрачны. Так же начали распространяться слухи о том, что все производственные фабрики чипов закрыты, а продукция конфискована. Штат сотрудников разогнан, а запрет на продажу чипов пущен чуть ли не из верхушки Коммунистической партии Китая. Во что не так уж и сложно поверить, если вспомнить, что мощнейшая корпорация Tencent является официальным дистрибутором продукции Nintendo в Китае.</p>
+
+<p>Последней же каплей, подтверждающей, что злые языки, вероятно, правы, стал выход прошивки 11.0.1, которая на момент написания этой заметки до сих пор не работает на SXOS.</p>
+
+<p>Поэтому все чипы, которые сейчас остались на рынке стоят каких-то космических денег. В данный момент ничего не указывает на то, что кто-то работает над аналогичным, менее дорогим, решением. Поэтому, если думаете всё-таки успеть на уходящий поезд, не медлите.</p>
+
+</div></details>
+
+<p>В данный момент чиповка - единственный способ, с помощью которого можно прошить Switch на базе <span class="tooltip_container">
+	Mariko
+	<span class="tooltip"><i class="fas fa-caret-down"></i>
+		<span class="bottom">
+			Кодовым словом <strong>Mariko</strong> обозначаются приставки второй ревизии (вторая буква в серийнике согласная, например XK* или XJ*), а так же Switch Lite и OLED. Собраны на новом техпроцессе, благодаря чему имеют лучшую автономность (большие свитчи). Прошиваются <strong>только</strong> методом чиповки.
+		</span>
+	</span>
+</span> или патченные Erista, то есть все приставки, не подверженные взлому через Fusée Gelée, а так же Switch Lite.</p>
+
+<p>Чиповка - хардварный взлом. То есть, установка чипа производится путём припаивания оного к материнской плате приставки. Следовательно, если ваша приставка имеет ещё официальную гарантию, то установив чип вы её лишитесь.</p>
+
+<p>Версия системного ПО вашей приставки значения не имеет.</p>
+
+<h2 id="как-поставить-чип-в-свою-приставку">Как поставить чип в свою приставку?</h2>
+
+<div class="notice--warning">
+<p>Чиповка требует от вас навыков уверенного владения паяльником. Не рискуйте и отдайте вашу приставку на чиповку профессионалу, либо купите уже чипованную!</p>
+
+<ul>
+  <li><a href="https://docs.google.com/document/d/1CDo48LguVDxGO_IAnmeX0V2wnQ5aLG-6Me2JBp2FHvA/edit" target="_blank">Список мастеров, которые могут помочь с установкой чипов на приставку</a></li>
+</ul>
+
+<p>Если вы все-таки решили действовать самостоятельно, следуйте этой инструкции</p>
+
+</div>
+
+<h2 id="будет-ли-работать-онлайн">Будет ли работать онлайн?</h2>
+
+<p>Прошитая приставка может содержать как кастомную, так и официальную прошивку. В кастомной прошивке вам доступен только локальный онлайн, между двумя приставками, либо пиратский онлайн. Однако, переключившись на официальную прошивку, вы сможете воспользоваться и обычным онлайном. Не забывайте, что онлайн будет работать только для официально скачанных, или купленных игр.</p>
+
+<h2 id="какую-карту-памяти-выбрать-для-прошитой-приставки">Какую карту памяти выбрать для прошитой приставки?</h2>
+
+<p>Сложный вопрос. Ряд карт на чипованных приставках работают плохо. Например, проблемы были с Samsung, Transcend, Kingston. Хорошо себя показали Team и Sandisk. Но это мой опыт. Ваш может разительно отличаться.</p>
+
+<center class="notice--success"><a href="preparation-modchip" style="margin:20px auto; text-align:center; display:block; min-width:330px;" class="btn btn--short">Установка модчипа</a></center>
+
+				
+        
+      </section>
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+		
+    
+  </article>
+
+  
+  
+</div>
+
+    <a href="#" class="scrollup">Наверх</a>
+
+    <div class="page__footer-container">
+      <footer class="page__footer">
+        <script src="/assets/js/main.min.js"></script>
+
+<!-- // to top button -->
+<a href="#" class="scrollup">Наверх</a>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $(".scrollup").fadeIn();
+      } else {
+        $(".scrollup").fadeOut();
+      }
+    });
+
+    $(".scrollup").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+  });
+</script>
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a href="http://github.com/rashevskyv"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+	  <li><a href="https://t.me/" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Kefir / 4ifir - switch jailbroken
+	  </a></li>	
+    
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 nincfw team. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+  </body>
+</html>

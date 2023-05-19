@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Даунгрейд и восстановление прошивки в случае, если приставка вышла из строя - Взлом Switch</title>
+
+
+
+
+<meta name="description" content="Полное руководство по прошивке Nintendo Switch">
+
+
+
+
+<meta name="author" content="nincfw team">
+
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Взлом Switch">
+<meta property="og:title" content="Даунгрейд и восстановление прошивки в случае, если приставка вышла из строя">
+
+
+  <link rel="canonical" href="https://switch.customfw.xyz/downgrade_fw.html">
+  <meta property="og:url" content="https://switch.customfw.xyz/downgrade_fw.html">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "nincfw team",
+      "url" : "https://switch.customfw.xyz",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://switch.customfw.xyz/feed.xml" type="application/atom+xml" rel="alternate" title="Взлом Switch Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://switch.customfw.xyz/assets/css/main.css">
+<link rel="stylesheet" href="https://customfw.xyz/stay-for-ukraine/css/stay_for_ukraine.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://customfw.xyz/stay-for-ukraine/js/stand_for_ukraine.js"></script>
+  </head>
+
+  <body class="layout--single">
+    <div id="preloader" class="preloader"></div>
+<div id="stay-for-ukraine-popup"></div>
+<div id="ukranian-flag"></div>
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://switch.customfw.xyz/">Взлом Switch</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz"><b>Прошить другую<br>приставку</b></a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://nincfw.olx.ua/"><i>Купить<br>прошитую</i></a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/get-started">Методы<br>взлома</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/kefir">Kefir</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/backup-nand">Резервное<br>копирование</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/emunand">EmuNAND</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/usage">Использование<br>прошитой Switch</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/faq">FAQ</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/troubleshooting">Проблемы и<br>их решение</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/games">Установка<br>игр</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/update-fw">Безопасное<br>обновление</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/site-navigation">Навигация по сайту</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz/donations">Пожертвования</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz/contacts">Связаться с нами</a></li>
+          
+        </ul>
+        <button type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <center><img src="https://switch.customfw.xyz/images/bio-photo.png" class="author__avatar" alt="nincfw team" itemprop="image"></center>
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">nincfw team</h3><br>
+    
+  </div>
+  
+  
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+	<hr class="style-two">
+
+      
+
+<li><a href="https://vk.com/nincfw" itemprop="sameAs">
+  <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Группа вконтакте
+</a></li>
+
+
+<li>
+  <a href="https://t.me/kefir_switch" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Telegram
+  </a>
+</li>
+
+
+<li>
+  <a href="https://t.me/xhrxhrxhr" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Группа в Telegram
+  </a>
+</li>
+
+	
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/rashevskyv" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        
+          <li>
+            <a href="https://www.youtube.com/channel/UC49jZqLn59t9qyHfK2HyvQQ" itemprop="sameAs">
+              <i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i> YouTube
+            </a>
+          </li>
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <li>
+        <a href="https://customfw.xyz/donations" itemprop="sameAs">
+          <i class="fa fa-fw fa-vine" aria-hidden="true"></i><strong>Пожертвования</strong>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+
+  
+   
+  </div>
+ 
+  
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Даунгрейд и восстановление прошивки в случае, если приставка вышла из строя">
+    
+    
+    
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Даунгрейд и восстановление прошивки в случае, если приставка вышла из строя
+</h1>
+          
+        </header>
+      
+	  
+	  	
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Разделы</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#что-понадобится" id="markdown-toc-что-понадобится">Что понадобится</a></li>
+  <li><a href="#инструкция" id="markdown-toc-инструкция">Инструкция</a>    <ul>
+      <li><a href="#часть-i---перепаковка-прошивки-под-вашу-систему" id="markdown-toc-часть-i---перепаковка-прошивки-под-вашу-систему">Часть I - Перепаковка прошивки под вашу систему</a></li>
+      <li><a href="#часть-ii---загрузка-прошивки-на-устройство" id="markdown-toc-часть-ii---загрузка-прошивки-на-устройство">Часть II - Загрузка прошивки на устройство</a></li>
+    </ul>
+  </li>
+  <li><a href="#следующий-шаг-безопасное-обновление-прошивки" id="markdown-toc-следующий-шаг-безопасное-обновление-прошивки">Следующий шаг: Безопасное обновление прошивки</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<hr />
+
+<div class="notice--danger"><h2>НЕ ИДИТЕ ВОЕВАТЬ В УКРАИНУ! ВЫ ТАМ УМРЁТЕ!</h2><ul><li><a href="https://www.youtube.com/watch?v=8aJ282tD9us" target="_blank">ВЫ НЕ СМОЖЕТЕ ИЗБЕЖАТЬ МОБИЛИЗАЦИИ! Подробности новой системы призыва</a></li><li><a href="https://t.me/hochu_zhyt/4" target="_blank">Как сдаться в плен</a></li><li><a href="https://www.youtube.com/watch?v=teB8NVagI7c" target="_blank">Условия проживания пленных в Украине</a> и <a href="https://www.youtube.com/c/VolodymyrZolkin/videos" target="_blank">интервью с ними</a></li></ul></div>
+
+<div class="notice--warning">Если вы попали в это руководство впервые и не знаете как прошивается Switch, рекомендуем начать знакомство с ним с <a href="/" target="_blank">первой страницы</a></div>
+
+<div class="notice--warning">Если вы пользователь MacOS, воспользуйтесь <a href="/sd-macos.html" target="_blank">этими рекомендациями</a>, чтобы избежать проблем с картой памяти</div>
+
+<div class="notice">Делайте <a href="/backup-saves" target="_blank">бекапы сохранений</a> как можно чаще!</div>
+
+<div class="notice--warning"><strong>Если приставка зависла или не подаёт признаков жизни, выключите её удерживанием кнопки (POWER) 30 секунд, затем включите и пробросьте пейлоад!</strong></div>
+
+<hr />
+
+<p>Этот гайд для даунгрейда прошивки и для тех, у кого приставка не включается, но цел раздел PRODINFO, либо есть его бекап (атмосфера 0.8.1 и выше бекапит PRODINFO на карту автоматически). Для обновления прошивки воспользуйтесь <a href="update-fw">этой</a> инструкцией!</p>
+
+<h2 id="что-понадобится">Что понадобится</h2>
+
+<p class="notice--danger">ОБЯЗАТЕЛЬНО <a href="backup-nand" target="_blank">сделайте бекап</a> своей текущей прошивки до того, как начнёте выполнение инструкции, даже если ваша приставка не включается!</p>
+
+<ul>
+  <li><a href="backup-nand#часть-ii---дампим-ключи" target="_blank">Ключи</a>, уникальны для каждой консоли</li>
+  <li><a href="https://darthsternie.net/switch-firmwares/">Прошивка</a> той версии, на которую вы собираетесь восстанавливаться (но не выше той, с которой вы сняли ключи)</li>
+  <li><a href="files/SystemRestoreV3.te" target="_blank">SystemRestoreV3.te</a> - скрипт для восстановления прошивки</li>
+  <li>Свежая версия <a href="https://github.com/suchmememanyskill/EmmcHaccGen" target="_blank">EmmcHaccGen</a>
+    <ul>
+      <li>Требует для работы <a href="https://dotnet.microsoft.com/download/dotnet-core/3.1" target="_blank">.NET SDK 3.1</a></li>
+    </ul>
+  </li>
+  <li>Создайте <a href="backup-nand" target="_blank">резервную копию NAND</a> консоли и поместите её в надёжное место</li>
+  <li>Установите <span class="tooltip_container">
+  <a href="kefir" target="_blank">kefir</a>
+  <span class="tooltip"><i class="fas fa-caret-down"></i>
+      <span class="bottom">
+          Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+      </span>
+  </span>
+</span>, если ещё не делали этого</li>
+</ul>
+
+<h2 id="инструкция">Инструкция</h2>
+
+<h3 id="часть-i---перепаковка-прошивки-под-вашу-систему">Часть I - Перепаковка прошивки под вашу систему</h3>
+
+<ol>
+  <li>Установите <a href="https://dotnet.microsoft.com/download/dotnet-core/3.1" target="_blank">.NET SDK 3.1</a></li>
+  <li>Распакуйте <code class="language-plaintext highlighter-rouge">.zip-архив</code> с <a href="https://github.com/suchmememanyskill/EmmcHaccGen" target="_blank">EmmcHaccGen</a> в удобную папку</li>
+  <li>Положите в папку с <code class="language-plaintext highlighter-rouge">EmmcHaccGen</code> ваш файл с <a href="/backup-nand#часть-ii---дампим-ключи" target="_blank">ключами</a></li>
+  <li>Распакуйте <code class="language-plaintext highlighter-rouge">.zip-архив</code> с прошивкой в папку <code class="language-plaintext highlighter-rouge">EmmcHaccGen</code> таким образом, чтобы папка с прошивкой лежала в той же директории, что и <code class="language-plaintext highlighter-rouge">EmmcHaccGen.exe</code></li>
+  <li>Запустите командную строку в папке <code class="language-plaintext highlighter-rouge">EmmcHaccGen</code> (вызовите контекстное меню с зажатой клавишей Shift, нажав на свободное место в папке, и выберите “<strong>Открыть Командную строку здесь</strong>” или “<strong>Открыть окно PowerShell здесь</strong>”)</li>
+  <li>В открывшемся окне наберите:
+    <ul>
+      <li>Для powershell: <code class="language-plaintext highlighter-rouge">.\EmmcHaccGen.exe --keys prod.keys --fw X.X.X</code></li>
+      <li>Для командной строки: <code class="language-plaintext highlighter-rouge">EmmcHaccGen.exe --keys prod.keys --fw X.X.X</code></li>
+      <li><strong>X.X.X</strong> - название папки с вашей прошивкой. Например, <code class="language-plaintext highlighter-rouge">EmmcHaccGen --keys prod.keys --fw 14.1.0</code></li>
+      <li>Если у вас <span class="tooltip_container">
+ Mariko
+ <span class="tooltip"><i class="fas fa-caret-down"></i>
+  <span class="bottom">
+      Кодовым словом <strong>Mariko</strong> обозначаются приставки второй ревизии (вторая буква в серийнике согласная, например XK* или XJ*), а так же Switch Lite и OLED. Собраны на новом техпроцессе, благодаря чему имеют лучшую автономность (большие свитчи). Прошиваются <strong>только</strong> методом чиповки.
+  </span>
+ </span>
+</span>, то добавьте ключ <code class="language-plaintext highlighter-rouge">--mariko</code> после версии прошивки (например, <code class="language-plaintext highlighter-rouge">EmmcHaccGen --keys prod.keys --fw 14.1.0 --mariko</code>)</li>
+    </ul>
+  </li>
+  <li>Дождитесь окончания перепаковки. В результате вы получите папку <code class="language-plaintext highlighter-rouge">Y-X.X.X-exfat</code>, где <code class="language-plaintext highlighter-rouge">Y</code> принимает значение <code class="language-plaintext highlighter-rouge">NX</code> или <code class="language-plaintext highlighter-rouge">a</code>, в зависимости от ревизии консоли</li>
+</ol>
+
+<h3 id="часть-ii---загрузка-прошивки-на-устройство">Часть II - Загрузка прошивки на устройство</h3>
+
+<ol>
+  <li>На карте памяти приставки создайте папку <code class="language-plaintext highlighter-rouge">FW</code> и поместите туда <a href="files/SystemRestoreV3.te" target="_blank">SystemRestoreV3.te</a>, а так же <code class="language-plaintext highlighter-rouge">boot.bis</code> и папку <code class="language-plaintext highlighter-rouge">SYSTEM</code>, которые находятся в папке <code class="language-plaintext highlighter-rouge">Y-X.X.X-exfat</code></li>
+  <li>Запустите <span class="tooltip_container">
+ hekate
+ <span class="tooltip"><i class="fas fa-caret-down"></i>
+     <span class="bottom">
+         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+     </span>
+ </span>
+</span> -&gt; <strong>Payloads</strong> -&gt; <code class="language-plaintext highlighter-rouge">TegraExplorer.bin</code></li>
+  <li>Выберите <strong>Browse SD</strong>, перейдите в папку <code class="language-plaintext highlighter-rouge">FW</code>, выберите <code class="language-plaintext highlighter-rouge">systemRestore.te</code> -&gt; <strong>Launch Script</strong></li>
+  <li>Следуйте информации на экране и восстановите BIS и SYSTEM (restore both)</li>
+  <li>Пробуйте загрузиться в систему
+    <ul>
+      <li>Имейте ввиду, что если ваша консоль прошивается Fusée Gelée, то <a href="autorcm" target="_blank">AutoRCM</a> будет включен</li>
+      <li>Если приставка всё ещё не грузится, сделайте <a href="system-wipe">восстановление к заводским настройкам</a></li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h1 class="notice--success" id="следующий-шаг-безопасное-обновление-прошивки">Следующий шаг: <a href="update-fw">Безопасное обновление прошивки</a></h1>
+
+				
+        
+      </section>
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+		
+    
+  </article>
+
+  
+  
+</div>
+
+    <a href="#" class="scrollup">Наверх</a>
+
+    <div class="page__footer-container">
+      <footer class="page__footer">
+        <script src="/assets/js/main.min.js"></script>
+
+<!-- // to top button -->
+<a href="#" class="scrollup">Наверх</a>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $(".scrollup").fadeIn();
+      } else {
+        $(".scrollup").fadeOut();
+      }
+    });
+
+    $(".scrollup").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+  });
+</script>
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a href="http://github.com/rashevskyv"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+	  <li><a href="https://t.me/" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Kefir / 4ifir - switch jailbroken
+	  </a></li>	
+    
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 nincfw team. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+  </body>
+</html>

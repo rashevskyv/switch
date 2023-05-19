@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Чиповка Nintendo Switch - Взлом Switch</title>
+
+
+
+
+<meta name="description" content="Полное руководство по прошивке Nintendo Switch">
+
+
+
+
+<meta name="author" content="nincfw team">
+
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Взлом Switch">
+<meta property="og:title" content="Чиповка Nintendo Switch">
+
+
+  <link rel="canonical" href="https://switch.customfw.xyz/preparation-modchip.html">
+  <meta property="og:url" content="https://switch.customfw.xyz/preparation-modchip.html">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "nincfw team",
+      "url" : "https://switch.customfw.xyz",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://switch.customfw.xyz/feed.xml" type="application/atom+xml" rel="alternate" title="Взлом Switch Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://switch.customfw.xyz/assets/css/main.css">
+<link rel="stylesheet" href="https://customfw.xyz/stay-for-ukraine/css/stay_for_ukraine.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://customfw.xyz/stay-for-ukraine/js/stand_for_ukraine.js"></script>
+  </head>
+
+  <body class="layout--single">
+    <div id="preloader" class="preloader"></div>
+<div id="stay-for-ukraine-popup"></div>
+<div id="ukranian-flag"></div>
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://switch.customfw.xyz/">Взлом Switch</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz"><b>Прошить другую<br>приставку</b></a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://nincfw.olx.ua/"><i>Купить<br>прошитую</i></a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/get-started">Методы<br>взлома</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/kefir">Kefir</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/backup-nand">Резервное<br>копирование</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/emunand">EmuNAND</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/usage">Использование<br>прошитой Switch</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/faq">FAQ</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/troubleshooting">Проблемы и<br>их решение</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/games">Установка<br>игр</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/update-fw">Безопасное<br>обновление</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/site-navigation">Навигация по сайту</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz/donations">Пожертвования</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://customfw.xyz/contacts">Связаться с нами</a></li>
+          
+        </ul>
+        <button type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <center><img src="https://switch.customfw.xyz/images/bio-photo.png" class="author__avatar" alt="nincfw team" itemprop="image"></center>
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">nincfw team</h3><br>
+    
+  </div>
+  
+  
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+	<hr class="style-two">
+
+      
+
+<li><a href="https://vk.com/nincfw" itemprop="sameAs">
+  <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Группа вконтакте
+</a></li>
+
+
+<li>
+  <a href="https://t.me/kefir_switch" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Telegram
+  </a>
+</li>
+
+
+<li>
+  <a href="https://t.me/xhrxhrxhr" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Группа в Telegram
+  </a>
+</li>
+
+	
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/rashevskyv" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        
+          <li>
+            <a href="https://www.youtube.com/channel/UC49jZqLn59t9qyHfK2HyvQQ" itemprop="sameAs">
+              <i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i> YouTube
+            </a>
+          </li>
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <li>
+        <a href="https://customfw.xyz/donations" itemprop="sameAs">
+          <i class="fa fa-fw fa-vine" aria-hidden="true"></i><strong>Пожертвования</strong>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+
+  
+   
+  </div>
+ 
+  
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Чиповка Nintendo Switch">
+    
+    
+    
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Чиповка Nintendo Switch
+</h1>
+          
+        </header>
+      
+	  
+	  	
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Разделы</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#установка-чипа-в-приставку" id="markdown-toc-установка-чипа-в-приставку">Установка чипа в приставку</a></li>
+  <li><a href="#установка-прошивки-в-emunand" id="markdown-toc-установка-прошивки-в-emunand">Установка прошивки в EmuNAND</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<hr />
+
+<div class="notice--danger"><h2>НЕ ИДИТЕ ВОЕВАТЬ В УКРАИНУ! ВЫ ТАМ УМРЁТЕ!</h2><ul><li><a href="https://www.youtube.com/watch?v=8aJ282tD9us" target="_blank">ВЫ НЕ СМОЖЕТЕ ИЗБЕЖАТЬ МОБИЛИЗАЦИИ! Подробности новой системы призыва</a></li><li><a href="https://t.me/hochu_zhyt/4" target="_blank">Как сдаться в плен</a></li><li><a href="https://www.youtube.com/watch?v=teB8NVagI7c" target="_blank">Условия проживания пленных в Украине</a> и <a href="https://www.youtube.com/c/VolodymyrZolkin/videos" target="_blank">интервью с ними</a></li></ul></div>
+
+<div class="notice--warning">Если вы попали в это руководство впервые и не знаете как прошивается Switch, рекомендуем начать знакомство с ним с <a href="/" target="_blank">первой страницы</a></div>
+
+<div class="notice--warning">Если вы пользователь MacOS, воспользуйтесь <a href="/sd-macos.html" target="_blank">этими рекомендациями</a>, чтобы избежать проблем с картой памяти</div>
+
+<div class="notice">Делайте <a href="/backup-saves" target="_blank">бекапы сохранений</a> как можно чаще!</div>
+
+<div class="notice--warning"><strong>Если приставка зависла или не подаёт признаков жизни, выключите её удерживанием кнопки (POWER) 30 секунд, затем включите и пробросьте пейлоад!</strong></div>
+
+<hr />
+
+<p>В этой части мы уделим время настройке свитча до и после чиповки. Про саму же чиповку хорошо рассказано в официальных мануалах. Впрочем, всему своё время.</p>
+
+<p>Как правило в чипе прошивка старой версии, которая может не работать, или работать плохо на приставках со свежей версией системного ПО, потому его следует обновить на свежую версию прошивки - <a href="https://github.com/hwfly-nx/firmware" target="_blank">HWFLY</a>, который будет загружать любой пейлоад, находящийся на карте памяти под именем <code class="language-plaintext highlighter-rouge">payload.bin</code>. При большом желании, через HWFLY-NX можно загрузить и SX OS.</p>
+
+<!-- ## Прошивка чипа на HWFLY-NX
+Если у вас приставка ревизии <span class="tooltip_container">
+	Mariko
+	<span class="tooltip"><i class="fas fa-caret-down"></i>
+		<span class="bottom">
+			Кодовым словом **Mariko** обозначаются приставки второй ревизии (вторая буква в серийнике согласная, например XK* или XJ*), а так же Switch Lite и OLED. Собраны на новом техпроцессе, благодаря чему имеют лучшую автономность (большие свитчи). Прошиваются **только** методом чиповки.
+		</span>
+	</span>
+</span>, пропустите часть с прошивкой чипа. 
+<details class="spoiler"><summary class="spoiler-title">Открыть</summary><div class="spoiler-body">
+<ol>
+  <li>Вставьте USB-кабель из комплекта чипа в сам чип
+    <ul>
+      <li>Не перепутайте и не поставьте случайно вверх ногами. На ленте кабеля есть отметка, где у него верх, а где них.</li>
+      <li>
+        <p>Для SX Core верхом считается металлическое основание, на SX Light верх совпадает с направлением крышки процессора. То есть, после монтажа чипа в приставку, та сторона, которая будет смотреть вверх и есть верхняя.</p>
+
+        <p class="text-center notice--info"><img src="/images/modchips/core_up.png" alt="SX Core ribbon" /><img src="/images/modchips/light_up.png" alt="SX Light ribbon" /></p>
+      </li>
+    </ul>
+  </li>
+  <li>Подключите чип к ПК кабелем. Если лента вставлена правильно, светодиод на чипе засветится зелёным.</li>
+  <li>
+    <p>Откройте <strong>диспетчер устройств</strong> Windows и дождитесь установки драйверов. Если драйвера установлены верно, чип будет виден как “<strong>USB Serial Device</strong>”</p>
+
+    <p class="text-center notice--info"><img src="/images/modchips/device_manager.png" alt="" /></p>
+  </li>
+  <li>Скачайте <a href="/files/HWFLY031.zip/firmware" target="_blank">свежую версию прошивки</a> из репозитория HWFLY-NX и распакуйте в корень диска <code class="language-plaintext highlighter-rouge">C</code> вашего ПК.
+    <ul>
+      <li>По пути к файлу <code class="language-plaintext highlighter-rouge">flash.bat</code>, находящемуся в распакованном архиве не должно быть пробелов или других символов не латиницы!</li>
+    </ul>
+  </li>
+  <li>Запустите <code class="language-plaintext highlighter-rouge">flash.bat</code>
+    <ul>
+      <li>Не отключайте USB-кабель в процессе заливки загрузчика! Иначе рискуете получить брик!</li>
+    </ul>
+  </li>
+  <li>Дождитесь окончания прошивки и нажмите любую кнопку, чтобы закрыть окно
+    <ul>
+      <li>После успешного окончания прошивки, светодиод сменит цвет на желто-зелёный.</li>
+    </ul>
+
+    <p class="text-center notice--info"><img src="/images/modchips/done.png" alt="" /></p>
+  </li>
+</ol>
+
+<details class="spoiler"><summary class="spoiler-title">Возможные ошибки</summary><div class="spoiler-body">
+<details class="spoiler"><summary class="spoiler-title">Скрипт завис, ничего не происходит</summary><div class="spoiler-body">
+<p class="text-center notice--info"><img src="/images/modchips/freeze.png" alt="" /></p>
+
+<p>Происходит. Наберитесь терпения</p>
+
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">DFU not found!</summary><div class="spoiler-body">
+<p class="text-center notice--info"><img src="/images/modchips/DFU.png" alt="" /></p>
+
+<p>Windows не успела установить драйвера. Попробуйте ещё раз. Если не помогло, перезагрузите ПК, попробуйте другой порт, попробуйте другой кабель</p>
+
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Failed to read! 6</summary><div class="spoiler-body">
+<p class="text-center notice--info"><img src="/images/modchips/error6.png" alt="" /></p>
+
+<p>Попробуйте перезапустить скрипт. Пробуйте столько раз, сколько необходимо, до тех пор, пока не получится. Если не помогло, перезагрузите ПК, попробуйте другой порт, попробуйте другой кабель</p>
+</div></details>
+
+</div></details>
+
+</div></details>-->
+
+<h2 id="установка-чипа-в-приставку">Установка чипа в приставку</h2>
+
+<ol>
+  <li>Обновите приставку до последней версии системного ПО чрез настройки, прежде чем устанавливать чип</li>
+  <li>Воспользуйтесь инструкцией для установки чипа в приставку для <a href="https://www.sthetix.info/installing-the-sx-core-mod-kit-full-guide/" target="_blank">полноразмерного Switch</a>, <a href="https://www.sthetix.info/installing-the-sx-lite-mod-kit/" target="_blank">Switch Lite</a> или <a href="https://www.sthetix.info/hacking-the-switch-oled/" target="_blank">Switch OLED</a>.
+    <ul>
+      <li>Не забудьте смонтировать NAND на чип, если у вас <strong>Core</strong>!</li>
+    </ul>
+  </li>
+  <li>После установки чипа убедитесь, что в приставке нет карты памяти и включите её. Чип замигает жёлтым цветом (ближе к зелёному на самом деле, если чип не прошивался HWFLY-NX, то зелёным)
+    <ul>
+      <li>Терпеливо ожидайте. Чип обучается! Обучение может длиться до получаса.</li>
+    </ul>
+  </li>
+  <li>Как только мигание прекратится, обратите внимание на экран консоли, на нем должно отображаться сообщение, что в приставку не вставлена карта памяти</li>
+  <li>Выключите консоль, удерживая кнопку питания до тех пор, пока экран не потухнет</li>
+</ol>
+
+<h2 id="установка-прошивки-в-emunand">Установка прошивки в EmuNAND</h2>
+
+<ol>
+  <li><a href="kefir" target="blank_">Установка и запуск Kefir</a></li>
+  <li><a href="backup-nand" target="_blank">Резервное копирование NAND</a></li>
+  <li><a href="emunand" target="blank_">Создание EmuNAND</a></li>
+  <li><a href="link-account" target="blank_">Привязка аккаунта</a> - последний штрих. Привязки аккаунта для работы требуют некоторые игры</li>
+  <li><a href="games" target="blank_">Запуск игр</a> - финальная часть, ради которой всё и делалось</li>
+  <li><a href="usage">Использование уже прошитой приставки</a></li>
+</ol>
+
+<p>Теперь вы можете использовать EmuNAND для игры в пиратку, а SysNAND для игры в лицензию.</p>
+
+<p class="notice--warning">Категорически не рекомендуется использовать приставки ревизии <span class="tooltip_container">
+	Mariko
+	<span class="tooltip"><i class="fas fa-caret-down"></i>
+		<span class="bottom">
+			Кодовым словом <strong>Mariko</strong> обозначаются приставки второй ревизии (вторая буква в серийнике согласная, например XK* или XJ*), а так же Switch Lite и OLED. Собраны на новом техпроцессе, благодаря чему имеют лучшую автономность (большие свитчи). Прошиваются <strong>только</strong> методом чиповки.
+		</span>
+	</span>
+</span> без эмунанда. На Mariko эмунанд не опция, а необходимость, поскольку для этой ревизии нет инструментов, которые помогут воскресить вашу консоль буквально из любого состояния в случае поломки. Поэтому запуск приставки без EmuNAND мы рассматривать в руководстве не будем!</p>
+
+<hr />
+
+<details class="spoiler"><summary class="spoiler-title">Материалы для самостоятельного изучения</summary><div class="spoiler-body">
+<ul>
+  <li><a href="faq" target="blank_">Часто задаваемые вопросы</a></li>
+  <li><a href="troubleshooting">Проблемы и их решения</a></li>
+  <li><a href="cheats" target="blank_">Использование читов в EdiZon</a></li>
+  <li><a href="backup-saves" target="blank_">Резервное копирование и восстановление сохранений </a></li>
+  <li><a href="lanplay" target="blank_">Онлайн для прошитых и забаненных</a></li>
+  <li><a href="hbl" target="blank_">Запуск Homebrew Launcher</a></li>
+  <li><a href="emuiibo" target="blank_">Эмуляция Amiibo с помощью модуля emuiibo</a></li>
+  <li><a href="https://4pda.to/forum/index.php?act=findpost&amp;pid=73214535&amp;anchor=Spoil-73214535-3" target="blank_">Инструкции на сайте 4pda</a></li>
+</ul>
+
+</div></details>
+
+<hr />
+
+<p class="notice--info">Всё  получилось? Вы большой молодец!</p>
+
+<p class="text-center"><img src="/images/switch.png" alt="" /></p>
+
+<p class="notice--warning">Не забудьте поблагодарить авторов руководства по реквизитам, указанным ниже:</p>
+
+<details class="spoiler"><summary class="spoiler-title">Реквизиты для сбора пожертвований:</summary><div class="spoiler-body">
+<p class="text-center notice--info"><a href="" class="align-center"><img src="https://customfw.xyz/images/donate/visa.png" alt="Visa" height="64px" width="256px" style="padding-bottom: .35em" /></a>
+<strong>4731 1856 0013 8488</strong><br /></p>
+
+<p class="text-center notice--info"><a href="" class="align-center"><img src="https://customfw.xyz/images/donate/yandex.png" alt="Яндекс Деньги" height="64px" width="256px" style="padding-bottom: .35em" /></a>
+<strong>410 011 700 178 195</strong><br /></p>
+
+<p class="text-center notice--info"><a href="" class="align-center"><img src="https://customfw.xyz/images/donate/qiwi.png" alt="QIWI" height="64px" width="256px" style="padding-bottom: .35em" /></a>
+<strong>+380977359431</strong><br /></p>
+
+<p class="text-center notice--info"><a href="bitcoin:124TLA8uE1Xu2R5rs1eeVDxvpzzDHucr88" class="align-center"><img src="https://customfw.xyz/images/donate/bitcoin.png" alt="Bitcoin" target="_blank" height="73px" width="256px" style="padding-bottom: .35em" /></a>
+124TLA8uE1Xu2R5rs1eeVDxvpzzDHucr88</p>
+
+<p class="text-center notice--info"><a href="http://vk.com/switchopen" class="align-center"><img src="https://customfw.xyz/images/donate/3ds_cfw.png" alt="Custom Nintendo" target="_blank" height="64px" width="256px" style="padding-bottom: .35em" /></a></p>
+
+</div></details>
+
+<script>
+	localStorage.setItem('fuse', 1);
+</script>
+
+
+				
+        
+      </section>
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+		
+    
+  </article>
+
+  
+  
+</div>
+
+    <a href="#" class="scrollup">Наверх</a>
+
+    <div class="page__footer-container">
+      <footer class="page__footer">
+        <script src="/assets/js/main.min.js"></script>
+
+<!-- // to top button -->
+<a href="#" class="scrollup">Наверх</a>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $(".scrollup").fadeIn();
+      } else {
+        $(".scrollup").fadeOut();
+      }
+    });
+
+    $(".scrollup").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+  });
+</script>
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a href="http://github.com/rashevskyv"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+	  <li><a href="https://t.me/" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Kefir / 4ifir - switch jailbroken
+	  </a></li>	
+    
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 nincfw team. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+  </body>
+</html>

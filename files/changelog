@@ -1,20 +1,19 @@
 #### **UKR**:
 **16.0.3 повністю підтримується**
 
-**704**:
-* [**Оновлено**] [Atmosphere 1.5.3](https://github.com/rashevskyv/Kefirosphere) - повна підтримка 16.0.3
-    * [**Детальніше про зміни в Atmosphere**](https://github.com/Atmosphere-NX/Atmosphere/releases)
-* [**Оновлено**] [hekate 6.0.4](https://github.com/CTCaer/hekate) - повна підтримка 16.0.3
-* [**Оновлено**] [DBI 563](https://github.com/rashevskyv/dbi/releases) - потенційно виправлено встановлення нових ігор
-* [**Оновлено**] Tesla Modules - перезібрані з новим libtesla
+**705:**
+* [**Оновлено**] [Atmosphere 1.5.4-pre](https://github.com/rashevskyv/Kefirosphere) - підтримка Layered FS для ігор з величезною кількістю файлів 
+* [**Оновлено**] [DBI 569](https://github.com/rashevskyv/dbi/releases) - виправлення багів, додано текстовий редактор
+* [**Видалено**] [QuickNTP] - налаштування NTP проводяться через DBI > Tools > NTP time sync
+* [**Видалено**] [NX Activity Log] - заброшено автором. Замість використовуйте DBI > Activity Log
+
 ____
 
 #### **ENG**:
 **16.0.3 is fully supported**
 
-**704**:
-* [**Updated**] [Atmosphere 1.5.3](https://github.com/rashevskyv/Kefirosphere) - full support for 16.0.3
-    * [**Read more about Atmosphere changes**](https://github.com/Atmosphere-NX/Atmosphere/releases)
-* [**Updated**] [hekate 6.0.3](https://github.com/CTCaer/hekate) - full support for 16.0.3
-* [**Updated**] [DBI 563](https://github.com/rashevskyv/dbi/releases) - potentially fixed the installation of new games
-* [**Updated**] Tesla Modules - rebuild with updated libtesla
+**705:**
+* [**Updated**] [Atmosphere 1.5.4-pre](https://github.com/rashevskyv/Kefirosphere) - Layered FS support for games with a large number of files
+* [**Updated**] [DBI 569](https://github.com/rashevskyv/dbi/releases) - bugfixes, added text editor
+* [**Removed**] [QuickNTP] - NTP settings are done via DBI > Tools > NTP time sync
+* [**Removed**] [NX Activity Log] - abandoned by the author. Instead, use DBI > Activity Log
