@@ -44,10 +44,9 @@ author_profile: true
   * [{% include /inc/tinfoil.txt %}](http://tinfoil.io){:target="_blank"} - программа, позволяющая [качать игры](tinfoil){:target="_blank"} для приставки прямо из сети 
   * [Kefir Updater](https://github.com/rashevskyv/kefir-updater){:target="_blank"} - программа для обновления kefir через интернет
   * [Homebrew App Store 2.2](https://github.com/fortheusers/hb-appstore/releases){:target="_blank"} - интернет-магазин приложений
-  * [NX-Activity-Log](https://github.com/tallbl0nde/NX-Activity-Log){:target="_blank"} - программа, позволяющая отслеживать время, проведённое в играх
   * [Daybreak](https://github.com/Atmosphere-NX/Atmosphere/tree/0.14.1/troposphere/daybreak){:target="_blank"} - программа для [безопасного обновления](update-fw){:target="_blank"} версии системного ПО приставки
   * [NXThemes Installer](https://github.com/exelix11/SwitchThemeInjector){:target="_blank"} - менеджер кастомных тем 
-  * [Linkhlo](https://github.com/rdmrocha/linkalho){:target="_blank"} - программа [привязки аккаунта](link-account){:target="_blank"}
+  * [Linkalho](https://github.com/rdmrocha/linkalho){:target="_blank"} - программа [привязки аккаунта](link-account){:target="_blank"}
 6. **Установленные модули**. Модули - это дополнительные компоненты, работающие внутри Atmosphere и позволяющие делать разные крутые штуки, как-то использование xbox-сoвместимых контроллеров, эмуляцию amiibo, разгон и прочее. К сожалению, SX OS модули не поддерживает
   * [sys-con](https://github.com/cathery/sys-con){:target="_blank"} - модуль, позволяющий подключать к консоли по USB практически любые геймпады
   * [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} - модуль, позволяющий подключать к консоли по bluetooth практически любые геймпады
@@ -55,7 +54,6 @@ author_profile: true
     - [nx-ovlloader](https://github.com/WerWolv/nx-ovlloader//){:target="_blank"} - процесс для работы с nro через Tesla Menu
     - [ovlEdiZon.ovl](https://github.com/proferabg/EdiZon-Overlay/releases){:target="_blank"} - Модуль для [использования читов](cheats){:target="_blank"}
     - [ovlSysmodules.ovl](https://github.com/WerWolv/ovl-sysmodules/){:target="_blank"} - Модуль для включения и отключения установленных системных модулей (как-то разгон, emuuibo и прочее)
-    - [QuickNTP](https://github.com/nedex/QuickNTP){:target="_blank"} - модуль, позволяющий настроить точное время на консоли через интернет
 
 {% endspoiler %}
 
