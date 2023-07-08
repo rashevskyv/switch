@@ -1,19 +1,26 @@
 #### **UKR**:
 **16.0.3 повністю підтримується**
 
-**705:**
-* [**Оновлено**] [Atmosphere 1.5.4-pre](https://github.com/rashevskyv/Kefirosphere) - підтримка Layered FS для ігор з величезною кількістю файлів 
-* [**Оновлено**] [DBI 569](https://github.com/rashevskyv/dbi/releases) - виправлення багів, додано текстовий редактор
-* [**Видалено**] [QuickNTP] - налаштування NTP проводяться через DBI > Tools > NTP time sync
-* [**Видалено**] [NX Activity Log] - заброшено автором. Замість використовуйте DBI > Activity Log
+**707:**
+* [**Оновлено**] [Atmosphere 1.5.4](https://github.com/rashevskyv/Kefirosphere) - підтримка Layered FS для ігор з величезною кількістю файлів 
+    * [**Детальніше про зміни в Atmosphere**](https://github.com/Atmosphere-NX/Atmosphere/releases)
+* [**Оновлено**] [hekate 6.0.5](https://github.com/CTCaer/hekate) - зміни для L4T
+* [**Оновлено**] [DBI 598](https://github.com/rashevskyv/dbi/releases) - виправлення багів
+* [**Оновлено**] [Kefir Updater](https://github.com/rashevskyv/kefir-updater) - додано оновлення DBI
+* [**Оновлено**] [Всі оверлеї] - перезібрано з найсвіжішім libtesla
+* [**Видалено**] [tinfoil] - для нових користувачів в ньому більше немає сенсу (бо наразі немає жодного публічного джерела). У старих він і так є. 
 
 ____
 
 #### **ENG**:
 **16.0.3 is fully supported**
 
-**705:**
-* [**Updated**] [Atmosphere 1.5.4-pre](https://github.com/rashevskyv/Kefirosphere) - Layered FS support for games with a large number of files
-* [**Updated**] [DBI 569](https://github.com/rashevskyv/dbi/releases) - bugfixes, added text editor
-* [**Removed**] [QuickNTP] - NTP settings are done via DBI > Tools > NTP time sync
-* [**Removed**] [NX Activity Log] - abandoned by the author. Instead, use DBI > Activity Log
+**707:**
+* [**Updated**] [Atmosphere 1.5.4](https://github.com/rashevskyv/Kefirosphere) - Support for Layered FS for games with a large number of files
+    * [**More about changes in Atmosphere**](https://github.com/Atmosphere-NX/Atmosphere/releases)
+* [**Updated**] [hekate 6.0.5](https://github.com/CTCaer/hekate) - L4T related changers
+* [**Updated**] [DBI 598](https://github.com/rashevskyv/dbi/releases) - Bug fixes
+* [**Updated**] [Kefir Updater](https://github.com/rashevskyv/kefir-updater) - Added DBI update function
+* [**Updated**] [All overlays] - Rebuilt with the latest libtesla
+* [**Removed**] [tinfoil] - It no longer makes sense for new users (as there are currently no public sources). For older users, it's still available.
+
