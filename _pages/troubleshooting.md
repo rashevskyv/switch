@@ -14,7 +14,7 @@ author_profile: true
 Возможные пути решения проблемы:
 
 1. Убедитесь. что можете загрузиться в сток. Если это так, возможно вы установили какие-то системные модули, которые мешают загрузке. Для этого: 
-	1. Запустите {% include abbr/hekate.txt abbr="hekate" %} -> **Payloads** -> `kefir-helper.bin`
+	1. Запустите {% include abbr/hekate.txt abbr="hekate" %} -> **Payloads** -> `TegraExplorer` -> `kefir-helper.te`
 	1. Если после этого приставка заработала, ищите проблему в установленных модулях 
 1. Переустановите {% include abbr/kefir_addr.txt %} начисто. Для этого удалите с карты памяти всё, кроме папки `Nintendo` и `emummc` и ставьте кефир заново
 1. Отформатируйте вашу карту памяти в [FAT32](https://format.customfw.xyz){:target="_blank"}. 
@@ -42,7 +42,7 @@ author_profile: true
 {% spoiler После проброса пейлоада и появления сплешскринов, консоль висит в черном экране / на логотипе Atmosphere / на логотипе Nintendo. %}
 
 1. Убедитесь. что можете загрузиться в сток. Если это так, возможно вы установили какие-то системные модули, которые мешают загрузке. Для этого: 
-	1. Запустите {% include abbr/hekate.txt abbr="hekate" %} -> **Payloads** -> `kefir-helper.bin`
+	1. Запустите {% include abbr/hekate.txt abbr="hekate" %} -> **Payloads** -> `TegraExplorer` -> `kefir-helper.te`
 	1. Если после этого приставка заработала, ищите проблему в установленных модулях 
 1. Если ваша карта в exFAT, отформатируйте её в [FAT32](https://format.customfw.xyz){:target="_blank"}. 
 1. Переустановите {% include abbr/kefir_addr.txt %} начисто. Для этого удалите с карты памяти всё, кроме папки `Nintendo` и `emummc` (или `sxos/emunand`) и ставьте кефир заново
