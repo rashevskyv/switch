@@ -1,12 +1,12 @@
 #### **UKR**:
 **Повна підтримка 17.0.1**
 
-**717:**
+**718:**
 * [**Оновлено**] [Atmosphere 1.6.2](https://github.com/rashevskyv/Kefirosphere) - перезібрано з останнім коммітом
     * [**Детальніше про зміни в Atmosphere**](https://github.com/Atmosphere-NX/Atmosphere/releases)
 * [**Додано**] [Uberhand](https://github.com/efosamark/Uberhand-Overlay) - замість ванільного лоадера Tesla Menu, що дозволило використовувати корисні скріпти:
     * **DBI** - заміна мови та оновлення програми на літу
-    * **Translate Interface** - додаткові мови інтерфейсу на вибір
+    * **Translate Interface** - додаткові мови інтерфейсу на вибір (у тому числі українська)
     * **Semi-stock** - загрузка в семісток из меню
     * **Reboot та Shutdown** - перезагрузка та виключення консолі із меню 
 * [**Оновлено**] [DBI 653](https://github.com/rashevskyv/dbi/releases) - виправлені баги, поліпшано Activity Log
@@ -16,7 +16,7 @@ ____
 #### **RUS**:
 **Полная поддержка 17.0.1**
 
-**717:**
+**718:**
 * [**Обновлено**] [Atmosphere 1.6.2](https://github.com/rashevskyv/Kefirosphere) - перезібрано з останнім коммітом
     * [**Детальніше про зміни в Atmosphere**](https://github.com/Atmosphere-NX/Atmosphere/releases)
 * [**Добавлено**] [Uberhand](https://github.com/efosamark/Uberhand-Overlay) - вместо ванильного загрузчика Tesla Menu, что позволило использовать скрипты:
@@ -31,7 +31,7 @@ ____
 #### **ENG**:
 **Full support 17.0.1**
 
-**717**:
+**718**:
 * [**Updated**] [Atmosphere 1.6.2](https://github.com/rashevskyv/Kefirosphere) - rebuilt with the latest commit
     * [**More about changes in Atmosphere**](https://github.com/Atmosphere-NX/Atmosphere/releases)
 * [**Added**] [Uberhand](https://github.com/efosamark/Uberhand-Overlay) - instead of the vanilla Tesla Menu loader, which allowed the use of useful scripts:
