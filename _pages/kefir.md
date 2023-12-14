@@ -50,10 +50,16 @@ author_profile: true
 6. **Установленные модули**. Модули - это дополнительные компоненты, работающие внутри Atmosphere и позволяющие делать разные крутые штуки, как-то использование xbox-сoвместимых контроллеров, эмуляцию amiibo, разгон и прочее. К сожалению, SX OS модули не поддерживает
   * [sys-con](https://github.com/cathery/sys-con){:target="_blank"} - модуль, позволяющий подключать к консоли по USB практически любые геймпады
   * [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} - модуль, позволяющий подключать к консоли по bluetooth практически любые геймпады
-  * [Tesla Overlay Menu](https://github.com/WerWolv/Tesla-Menu/){:target="_blank"} - специальное оверлей-меню для взаимодействия с системой
-    - [nx-ovlloader](https://github.com/WerWolv/nx-ovlloader//){:target="_blank"} - процесс для работы с nro через Tesla Menu
-    - [ovlEdiZon.ovl](https://github.com/proferabg/EdiZon-Overlay/releases){:target="_blank"} - Модуль для [использования читов](cheats){:target="_blank"}
-    - [ovlSysmodules.ovl](https://github.com/WerWolv/ovl-sysmodules/){:target="_blank"} - Модуль для включения и отключения установленных системных модулей (как-то разгон, emuuibo и прочее)
+  * [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} - специальное оверлей-меню для взаимодействия с системой p поддержко пользовательских скриптов и модулей
+    - Скрипты:
+      * **DBI** - изменение локализации и обновление программы
+      * **Translate Interface** - дополнительные переводы инитерфейса на выбор
+      * **Semi-stock** - загрузка в семисток из меню
+      * **Reboot и Shutdown** - перезагрузка и виключение консоли из меню 
+    - Модули: 
+      - [nx-ovlloader](https://github.com/WerWolv/nx-ovlloader//){:target="_blank"} - процесс для работы с nro через Tesla Menu
+      - [ovlEdiZon.ovl](https://github.com/proferabg/EdiZon-Overlay/releases){:target="_blank"} - Модуль для [использования читов](cheats){:target="_blank"}
+      - [ovlSysmodules.ovl](https://github.com/WerWolv/ovl-sysmodules/){:target="_blank"} - Модуль для включения и отключения установленных системных модулей (как-то разгон, emuuibo и прочее)
 
 {% endspoiler %}
 
@@ -132,8 +138,6 @@ author_profile: true
 
 {% endspoiler %}
 
-
-
 ## Запуск Atmosphere 
 {% include inc/launch-cfw.txt %}
 
@@ -151,7 +155,7 @@ author_profile: true
   * При возникновении ошибки "**Is BEK missing**" выключите приставку и включите заново.
 
 ## Дополнительная информация 
-* Для работы с модулями ([sys-con](https://github.com/cathery/sys-con/releases/latest){:target="_blank"}, [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} и др.) в кефире установлен [Tesla Overlay Menu](https://github.com/WerWolv/Tesla-Menu/releases){:target="_blank"} - специальное оверлей-меню для взаимодействия с системой. Для его активации нажмите (L) + **крестовина вниз** + (R3)
+* Для работы с модулями ([sys-con](https://github.com/cathery/sys-con/releases/latest){:target="_blank"}, [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} и др.) в кефире установлен [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} - специальное оверлей-меню для взаимодействия с системой. Для его активации нажмите (L) + **крестовина вниз** + (R3)
 * Обновить кефир можно с помощью утилиты **Kefir Updater**
 * [Полезные инструкции по использованию приставки](usage){:target="_blank"}
 * [FAQ](faq){:target="_blank"}
