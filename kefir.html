@@ -329,7 +329,7 @@
 <nav class="toc">
     <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Разделы</h4></header>
 <ul class="toc__menu" id="markdown-toc">
-  <li><a href="#kefir-722" id="markdown-toc-kefir-722">KEFIR 722</a>    <ul>
+  <li><a href="#kefir-723" id="markdown-toc-kefir-723">KEFIR 723</a>    <ul>
       <li><a href="#что-такое-кефир" id="markdown-toc-что-такое-кефир">Что такое кефир</a></li>
       <li><a href="#инструкция-по-установкеобновлению-kefir" id="markdown-toc-инструкция-по-установкеобновлению-kefir">Инструкция по установке/обновлению kefir</a></li>
     </ul>
@@ -366,7 +366,7 @@
 
 <hr />
 
-<h2 id="kefir-722"><a href="https://codeberg.org/rashevskyv/kefir/releases" target="_blank">KEFIR 722</a></h2>
+<h2 id="kefir-723"><a href="https://codeberg.org/rashevskyv/kefir/releases" target="_blank">KEFIR 723</a></h2>
 
 <p class="text-center"><img src="/images/kefir.png" alt="kefir" width="70%" /></p>
 
@@ -620,8 +620,15 @@
 <h3 id="изменения-от-прошлой-версии">Изменения от прошлой версии</h3>
 
 <h4 id="ukr"><strong>UKR</strong>:</h4>
-<p><strong>Повна підтримка 17.0.1</strong>
-<strong>722:</strong></p>
+<p><strong>Повна підтримка 17.0.1</strong></p>
+
+<p><strong>723:</strong></p>
+<ul>
+  <li>[<strong>Виправлено</strong>] Помилку, яка приводила до непрацюючого sys-clk при оновленні через апдейтер</li>
+  <li>[<strong>Оновлено</strong>] <a href="https://github.com/efosamark/Uberhand-Overlay">Uberhand 2.1.3</a></li>
+</ul>
+
+<p><strong>722:</strong></p>
 <ul>
   <li>[<strong>Оновлено</strong>] <a href="https://github.com/rashevskyv/Kefirosphere">Atmosphere 1.6.2</a> - перезібрано з останнім коммітом
     <ul>
@@ -630,9 +637,10 @@
   </li>
   <li>[<strong>Виправлено</strong>] Прибрані патчі з семістоку. Тепер як і раніше неможливо в ньому встановити ігри через DBI</li>
   <li>[Повернуто] tinfoil. Поки працює.</li>
-  <li>[<strong>Оновлено</strong>] <a href="https://github.com/efosamark/Uberhand-Overlay">Uberhand</a>
+  <li>[<strong>Оновлено</strong>] <a href="https://github.com/efosamark/Uberhand-Overlay">Uberhand 2.1.2</a>
     <ul>
       <li>Додано меню Settings де можна загрузити loader без модифікацій від 4IFIR, що дає можливість використовувати Kefir зі звичайним sys-clk та OC-suite</li>
+      <li>Додана можливість загрузити мою фірмову тему для встановлення через NXThemeInjector</li>
     </ul>
   </li>
   <li>[<strong>Оновлено</strong>] <a href="https://github.com/rashevskyv/dbi/releases">DBI 658</a> - виправлення в Activity Log</li>
@@ -664,19 +672,27 @@
 <hr />
 
 <h4 id="rus"><strong>RUS</strong>:</h4>
-<p><strong>Полная поддержка 17.0.1</strong>
-<strong>722:</strong></p>
+<p><strong>Полная поддержка 17.0.1</strong></p>
+
+<p><strong>723:</strong></p>
+<ul>
+  <li>[<strong>Исправлено</strong>] Ошибку, которая приводила к неработающему sys-clk при обновлении через апдейтер</li>
+  <li>[<strong>Обновлено</strong>] <a href="https://github.com/efosamark/Uberhand-Overlay">Uberhand 2.1.3</a></li>
+</ul>
+
+<p><strong>722:</strong></p>
 <ul>
   <li>[<strong>Обновлено</strong>] <a href="https://github.com/rashevskyv/Kefirosphere">Atmosphere 1.6.2</a> - Пересобрано с последним коммитом
     <ul>
       <li><a href="https://github.com/Atmosphere-NX/Atmosphere/releases"><strong>Подробнее о изменениях в Atmosphere</strong></a></li>
     </ul>
   </li>
-  <li>[<strong>Исправлено</strong>] Убраны патчи из стоковой прошивки. Теперь, как и раньше, невозможно установить игры через DBI в ней</li>
-  <li>[Возвращено] tinfoil. Пока работает.</li>
-  <li>[<strong>Обновлено</strong>] <a href="https://github.com/efosamark/Uberhand-Overlay">Uberhand</a>
+  <li>[<strong>Исправлено</strong>] Убраны патчи из Semi Stock прошивки. Теперь, как и раньше, невозможно установить игры через DBI в ней</li>
+  <li>[<strong>Возвращено</strong>] tinfoil. Пока работает.</li>
+  <li>[<strong>Обновлено</strong>] <a href="https://github.com/efosamark/Uberhand-Overlay">Uberhand 2.1.2</a>
     <ul>
       <li>Добавлено меню <code class="language-plaintext highlighter-rouge">Settings</code>, где можно загрузить загрузчик без модификаций от 4IFIR, что позволяет использовать Kefir с обычным sys-clk и OC-suite</li>
+      <li>Добавлена возможность загрузить мою фирменную тему для установки через NXThemeInjector</li>
     </ul>
   </li>
   <li>[<strong>Обновлено</strong>] <a href="https://github.com/rashevskyv/dbi/releases">DBI 658</a> - Исправления в Журнале активности</li>
@@ -708,19 +724,27 @@
 <hr />
 
 <h4 id="eng"><strong>ENG</strong>:</h4>
-<p><strong>Full Support for 17.0.1</strong>
-<strong>722:</strong></p>
+<p><strong>Full Support for 17.0.1</strong></p>
+
+<p><strong>723:</strong></p>
+<ul>
+  <li>[<strong>Fixed</strong>] A bug that resulted in a non-functional sys-clk after updating via the updater</li>
+  <li>[<strong>Updated</strong>] <a href="https://github.com/efosamark/Uberhand-Overlay">Uberhand 2.1.3</a></li>
+</ul>
+
+<p><strong>722:</strong></p>
 <ul>
   <li>[<strong>Updated</strong>] <a href="https://github.com/rashevskyv/Kefirosphere">Atmosphere 1.6.2</a> - Rebuilt with the latest commit
     <ul>
       <li><a href="https://github.com/Atmosphere-NX/Atmosphere/releases"><strong>More on Atmosphere changes</strong></a></li>
     </ul>
   </li>
-  <li>[<strong>Fixed</strong>] Removed patches from the firmware. Now, as before, it is not possible to install games through DBI</li>
-  <li>[Restored] tinfoil. Works for now.</li>
-  <li>[<strong>Updated</strong>] <a href="https://github.com/efosamark/Uberhand-Overlay">Uberhand</a>
+  <li>[<strong>Fixed</strong>] Removed patches from the Semi Stock. Now, as before, it is not possible to install games through DBI</li>
+  <li>[<strong>Restored</strong>] tinfoil. Works for now.</li>
+  <li>[<strong>Updated</strong>] <a href="https://github.com/efosamark/Uberhand-Overlay">Uberhand 2.1.2</a>
     <ul>
       <li>Added a <code class="language-plaintext highlighter-rouge">Settings</code> menu where you can load a loader without modifications from 4IFIR, allowing the use of Kefir with the regular sys-clk and OC-suite</li>
+      <li>Added ability to download my branded theme for installation via NXThemeInjector</li>
     </ul>
   </li>
   <li>[<strong>Updated</strong>] <a href="https://github.com/rashevskyv/dbi/releases">DBI 658</a> - Fixes in Activity Log</li>
