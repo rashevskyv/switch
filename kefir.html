@@ -329,7 +329,7 @@
 <nav class="toc">
     <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Разделы</h4></header>
 <ul class="toc__menu" id="markdown-toc">
-  <li><a href="#kefir-725" id="markdown-toc-kefir-725">KEFIR 725</a>    <ul>
+  <li><a href="#kefir-726" id="markdown-toc-kefir-726">KEFIR 726</a>    <ul>
       <li><a href="#что-такое-кефир" id="markdown-toc-что-такое-кефир">Что такое кефир</a></li>
       <li><a href="#инструкция-по-установкеобновлению-kefir" id="markdown-toc-инструкция-по-установкеобновлению-kefir">Инструкция по установке/обновлению kefir</a></li>
     </ul>
@@ -366,7 +366,7 @@
 
 <hr />
 
-<h2 id="kefir-725"><a href="https://codeberg.org/rashevskyv/kefir/releases" target="_blank">KEFIR 725</a></h2>
+<h2 id="kefir-726"><a href="https://codeberg.org/rashevskyv/kefir/releases" target="_blank">KEFIR 726</a></h2>
 
 <p class="text-center"><img src="/images/kefir.png" alt="kefir" width="70%" /></p>
 
@@ -620,171 +620,67 @@
 <h3 id="изменения-от-прошлой-версии">Изменения от прошлой версии</h3>
 
 <h4 id="ukr"><strong>UKR</strong>:</h4>
-<p><strong>Повна підтримка 17.0.1</strong>
-<strong>725:</strong></p>
-<ul>
-  <li>[<strong>Виправлено</strong>] Помилку, через яку не запускався Semi-Stock</li>
-</ul>
+<p><strong>Базова підтримка 18.0.0. Рекомендується тримати emuNAND на 17.0.1</strong></p>
 
-<p><strong>724:</strong></p>
+<p><strong>726:</strong></p>
 <ul>
-  <li>[<strong>Виправлено</strong>] Помилку, яка приводила до непрацюючого sys-clk при оновленні через апдейтер</li>
-  <li>[<strong>Оновлено</strong>] <a href="https://github.com/efosamark/Uberhand-Overlay">Uberhand 2.1.3</a></li>
-</ul>
-
-<p><strong>722:</strong></p>
-<ul>
-  <li>[<strong>Оновлено</strong>] <a href="https://github.com/rashevskyv/Kefirosphere">Atmosphere 1.6.2</a> - перезібрано з останнім коммітом
+  <li>[<strong>Оновлено</strong>] <a href="https://github.com/rashevskyv/Kefirosphere">Atmosphere 1.7.0 pre-release</a> - базова підтримка 18.0.0. Рекомендується тримати emuNAND на 17.0.1, поки підтрика не буде повною. Також сігпатчі вшиті в саму атмосферу (дякую db)
     <ul>
       <li><a href="https://github.com/Atmosphere-NX/Atmosphere/releases"><strong>Детальніше про зміни в Atmosphere</strong></a></li>
     </ul>
   </li>
-  <li>[<strong>Виправлено</strong>] Прибрані патчі з семістоку. Тепер як і раніше неможливо в ньому встановити ігри через DBI</li>
-  <li>[Повернуто] tinfoil. Поки працює.</li>
-  <li>[<strong>Оновлено</strong>] <a href="https://github.com/efosamark/Uberhand-Overlay">Uberhand 2.1.2</a>
+  <li>[<strong>Оновлено</strong>] <a href="https://github.com/CTCaer/hekate/releases">hekate 6.1.1</a>
     <ul>
-      <li>Додано меню Settings де можна загрузити loader без модифікацій від 4IFIR, що дає можливість використовувати Kefir зі звичайним sys-clk та OC-suite. Зауважу, що при такому переключенні комплектний sys-clk буде прибрано, тобто вам доведеться ставити софт для розгону самостійно</li>
-      <li>Додана можливість загрузити мою фірмову тему для встановлення через <strong>NXThemeInjector</strong></li>
+      <li>Підтримка 18.0.0</li>
+      <li>Замість помилки pkg1 тепер консоль буде грузитися в офіційну прошивку</li>
     </ul>
   </li>
-  <li>[<strong>Оновлено</strong>] <a href="https://github.com/rashevskyv/dbi/releases">DBI 658</a> - виправлення в Activity Log</li>
-</ul>
-
-<p><strong>719:</strong></p>
-<ul>
-  <li>[<strong>Виправлено</strong>] Помилку оновлення через kefir updater усунено</li>
-</ul>
-
-<p><strong>718:</strong></p>
-<ul>
-  <li>[<strong>Оновлено</strong>] <a href="https://github.com/rashevskyv/Kefirosphere">Atmosphere 1.6.2</a> - перезібрано з останнім коммітом
-    <ul>
-      <li><a href="https://github.com/Atmosphere-NX/Atmosphere/releases"><strong>Детальніше про зміни в Atmosphere</strong></a></li>
-    </ul>
-  </li>
-  <li>[<strong>Додано</strong>] <a href="https://github.com/efosamark/Uberhand-Overlay">Uberhand</a> - замість ванільного лоадера Tesla Menu, що дозволило використовувати корисні скріпти:
-    <ul>
-      <li><strong>DBI</strong> - заміна мови та оновлення програми на літу</li>
-      <li><strong>Translate Interface</strong> - додаткові мови інтерфейсу на вибір (у тому числі українська)</li>
-      <li><strong>Semi-stock</strong> - загрузка в семісток из меню</li>
-      <li><strong>Reboot та Shutdown</strong> - перезагрузка та виключення консолі із меню</li>
-    </ul>
-  </li>
-  <li>[<strong>Оновлено</strong>] <a href="https://github.com/rashevskyv/dbi/releases">DBI 653</a> - виправлені баги, поліпшано Activity Log</li>
+  <li>[<strong>Оновлено</strong>] [lockpick_RCM] - підтримка 18.0.0</li>
+  <li>[<strong>Змінено</strong>] Замість <code class="language-plaintext highlighter-rouge">tinfoil.nsp</code> тепер інсталлер tinfoil в HBMenu</li>
 </ul>
 
 <hr />
 
 <h4 id="rus"><strong>RUS</strong>:</h4>
-<p><strong>Полная поддержка 17.0.1</strong></p>
+<p><strong>Базовая поддержка 18.0.0. Рекомендуется держать emuNAND на 17.0.1</strong></p>
 
-<p><strong>725:</strong></p>
+<p><strong>726:</strong></p>
 <ul>
-  <li>[<strong>Исправлено</strong>] Ошибку, из-за которой не запускался Semi-Stock</li>
-</ul>
-
-<p><strong>724:</strong></p>
-<ul>
-  <li>[<strong>Исправлено</strong>] Ошибку, которая приводила к неработающему sys-clk при обновлении через апдейтер</li>
-  <li>[<strong>Обновлено</strong>] <a href="https://github.com/efosamark/Uberhand-Overlay">Uberhand 2.1.3</a></li>
-</ul>
-
-<p><strong>722:</strong></p>
-<ul>
-  <li>[<strong>Обновлено</strong>] <a href="https://github.com/rashevskyv/Kefirosphere">Atmosphere 1.6.2</a> - Пересобрано с последним коммитом
+  <li>[<strong>Обновлено</strong>] <a href="https://github.com/rashevskyv/Kefirosphere">Atmosphere 1.7.0 предварительная версия</a> - базовая поддержка 18.0.0. Рекомендуется держать emuNAND на 17.0.1, пока поддержка не будет полной. Также sigpatches интегрированы непосредственно в атмосферу (спасибо db)
     <ul>
-      <li><a href="https://github.com/Atmosphere-NX/Atmosphere/releases"><strong>Подробнее о изменениях в Atmosphere</strong></a></li>
+      <li><a href="https://github.com/Atmosphere-NX/Atmosphere/releases"><strong>Подробнее об изменениях в Atmosphere</strong></a></li>
     </ul>
   </li>
-  <li>[<strong>Исправлено</strong>] Убраны патчи из Semi Stock прошивки. Теперь, как и раньше, невозможно установить игры через DBI в ней</li>
-  <li>[<strong>Возвращено</strong>] tinfoil. Пока работает.</li>
-  <li>[<strong>Обновлено</strong>] <a href="https://github.com/efosamark/Uberhand-Overlay">Uberhand 2.1.2</a>
+  <li>[<strong>Обновлено</strong>] <a href="https://github.com/CTCaer/hekate/releases">hekate 6.1.1</a>
     <ul>
-      <li>Добавлено меню <code class="language-plaintext highlighter-rouge">Settings</code>, где можно загрузить загрузчик без модификаций от 4IFIR, что позволяет использовать Kefir с обычным sys-clk и OC-suite. Отмечу, что при таком переключении комплектный sys-clk будет удален, то есть вам придется устанавливать ПО для разгона самостоятельно.</li>
-      <li>Добавлена возможность загрузить мою фирменную тему для установки через <strong>NXThemeInjector</strong></li>
+      <li>Поддержка 18.0.0</li>
+      <li>Вместо ошибки pkg1 теперь консоль будет загружаться в официальную прошивку</li>
     </ul>
   </li>
-  <li>[<strong>Обновлено</strong>] <a href="https://github.com/rashevskyv/dbi/releases">DBI 658</a> - Исправления в Журнале активности</li>
-</ul>
-
-<p><strong>719:</strong></p>
-<ul>
-  <li>[<strong>Исправлено</strong>] Исправлена ошибка обновления через kefir updater</li>
-</ul>
-
-<p><strong>718:</strong></p>
-<ul>
-  <li>[<strong>Обновлено</strong>] <a href="https://github.com/rashevskyv/Kefirosphere">Atmosphere 1.6.2</a> - перезібрано з останнім коммітом
-    <ul>
-      <li><a href="https://github.com/Atmosphere-NX/Atmosphere/releases"><strong>Детальніше про зміни в Atmosphere</strong></a></li>
-    </ul>
-  </li>
-  <li>[<strong>Добавлено</strong>] <a href="https://github.com/efosamark/Uberhand-Overlay">Uberhand</a> - вместо ванильного загрузчика Tesla Menu, что позволило использовать скрипты:
-    <ul>
-      <li><strong>DBI</strong> - изменение локализации и обновление программы</li>
-      <li><strong>Translate Interface</strong> - дополнительные переводы инитерфейса на выбор</li>
-      <li><strong>Semi-stock</strong> - загрузка в семисток из меню</li>
-      <li><strong>Reboot и Shutdown</strong> - перезагрузка и виключение консоли из меню</li>
-    </ul>
-  </li>
-  <li>[<strong>Обновлено</strong>] <a href="https://github.com/rashevskyv/dbi/releases">DBI 653</a> - исправление багов, улучшения Activity Log</li>
+  <li>[<strong>Обновлено</strong>] [lockpick_RCM] - поддержка 18.0.0</li>
+  <li>[<strong>Изменено</strong>] Вместо <code class="language-plaintext highlighter-rouge">tinfoil.nsp</code> теперь инсталлятор tinfoil в HBMenu</li>
 </ul>
 
 <hr />
 
 <h4 id="eng"><strong>ENG</strong>:</h4>
-<p><strong>Full Support for 17.0.1</strong></p>
+<p><strong>Basic Support 18.0.0. Recommended to keep emuNAND on 17.0.1</strong></p>
 
-<p><strong>725:</strong></p>
+<p><strong>726:</strong></p>
 <ul>
-  <li>[<strong>Fixed</strong>] An error that prevented Semi-Stock from launching</li>
-</ul>
-
-<p><strong>724:</strong></p>
-<ul>
-  <li>[<strong>Fixed</strong>] A bug that resulted in a non-functional sys-clk after updating via the updater</li>
-  <li>[<strong>Updated</strong>] <a href="https://github.com/efosamark/Uberhand-Overlay">Uberhand 2.1.3</a></li>
-</ul>
-
-<p><strong>722:</strong></p>
-<ul>
-  <li>[<strong>Updated</strong>] <a href="https://github.com/rashevskyv/Kefirosphere">Atmosphere 1.6.2</a> - Rebuilt with the latest commit
-    <ul>
-      <li><a href="https://github.com/Atmosphere-NX/Atmosphere/releases"><strong>More on Atmosphere changes</strong></a></li>
-    </ul>
-  </li>
-  <li>[<strong>Fixed</strong>] Removed patches from the Semi Stock. Now, as before, it is not possible to install games through DBI</li>
-  <li>[<strong>Restored</strong>] tinfoil. Works for now.</li>
-  <li>[<strong>Updated</strong>] <a href="https://github.com/efosamark/Uberhand-Overlay">Uberhand 2.1.2</a>
-    <ul>
-      <li>Added a <code class="language-plaintext highlighter-rouge">Settings</code> menu where you can load a loader without modifications from 4IFIR, allowing the use of Kefir with regular sys-clk and OC-suite. Note that with this switch, the bundled sys-clk will be removed, meaning you will need to install overclocking software on your own.</li>
-      <li>Added ability to download my branded theme for installation via <strong>NXThemeInjector</strong></li>
-    </ul>
-  </li>
-  <li>[<strong>Updated</strong>] <a href="https://github.com/rashevskyv/dbi/releases">DBI 658</a> - Fixes in Activity Log</li>
-</ul>
-
-<p><strong>719:</strong></p>
-<ul>
-  <li>[<strong>Fixed</strong>] Fixed kefir updater error</li>
-</ul>
-
-<p><strong>718</strong>:</p>
-<ul>
-  <li>[<strong>Updated</strong>] <a href="https://github.com/rashevskyv/Kefirosphere">Atmosphere 1.6.2</a> - rebuilt with the latest commit
+  <li>[<strong>Updated</strong>] <a href="https://github.com/rashevskyv/Kefirosphere">Atmosphere 1.7.0 pre-release</a> - base support for 18.0.0. It is recommended to keep emuNAND on 17.0.1 until full support is available. Also, sigpatches are integrated into the atmosphere itself (thanks db)
     <ul>
       <li><a href="https://github.com/Atmosphere-NX/Atmosphere/releases"><strong>More about changes in Atmosphere</strong></a></li>
     </ul>
   </li>
-  <li>[<strong>Added</strong>] <a href="https://github.com/efosamark/Uberhand-Overlay">Uberhand</a> - instead of the vanilla Tesla Menu loader, which allowed the use of useful scripts:
+  <li>[<strong>Updated</strong>] <a href="https://github.com/CTCaer/hekate/releases">hekate 6.1.1</a>
     <ul>
-      <li><strong>DBI</strong> - language replacement and program update on the fly</li>
-      <li><strong>Translate Interface</strong> - additional interface languages to choose from</li>
-      <li><strong>Semi-stock</strong> - loading into semi-stock from the menu</li>
-      <li><strong>Reboot and Shutdown</strong> - rebooting and shutting down the console from the menu</li>
+      <li>Support for 18.0.0</li>
+      <li>Instead of a pkg1 error, the console will now boot into the official firmware</li>
     </ul>
   </li>
-  <li>[<strong>Updated</strong>] <a href="https://github.com/rashevskyv/dbi/releases">DBI 653</a> - fixed bugs, improved Activity Log</li>
+  <li>[<strong>Updated</strong>] [lockpick_RCM] - support for 18.0.0</li>
+  <li>[<strong>Changed</strong>] Instead of <code class="language-plaintext highlighter-rouge">tinfoil.nsp</code>, there is now a tinfoil installer in HBMenu</li>
 </ul>
 
 <hr />
