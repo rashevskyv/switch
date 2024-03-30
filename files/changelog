@@ -1,6 +1,9 @@
 #### **UKR**:
 **Базова підтримка 18.0.0. Рекомендується тримати emuNAND на 17.0.1**
 
+**727:** 
+ [**Оновлено**] [MissionControl](https://github.com/ndeadly/MissionControl) - перезібрано з підтримкою 18.0.0
+
 **726:**
 * [**Оновлено**] [Atmosphere 1.7.0 pre-release](https://github.com/rashevskyv/Kefirosphere) - базова підтримка 18.0.0. Рекомендується тримати emuNAND на 17.0.1, поки підтрика не буде повною. Також сігпатчі вшиті в саму атмосферу (дякую db)
     * [**Детальніше про зміни в Atmosphere**](https://github.com/Atmosphere-NX/Atmosphere/releases)
@@ -15,6 +18,9 @@ ____
 #### **RUS**:
 **Базовая поддержка 18.0.0. Рекомендуется держать emuNAND на 17.0.1**
 
+**727:** 
+ [**Оновлено**] [MissionControl](https://github.com/ndeadly/MissionControl) - пересобрано для поддержки 18.0.0
+
 **726:**
 * [**Обновлено**] [Atmosphere 1.7.0 предварительная версия](https://github.com/rashevskyv/Kefirosphere) - базовая поддержка 18.0.0. Рекомендуется держать emuNAND на 17.0.1, пока поддержка не будет полной. Также sigpatches интегрированы непосредственно в атмосферу (спасибо db)
     * [**Подробнее об изменениях в Atmosphere**](https://github.com/Atmosphere-NX/Atmosphere/releases)
@@ -28,6 +34,9 @@ ____
 
 #### **ENG**:
 **Basic Support 18.0.0. Recommended to keep emuNAND on 17.0.1**
+
+**727:** 
+ [**Updated**] [MissionControl](https://github.com/ndeadly/MissionControl) - built with 18.0.0 support
 
 **726:**
 * [**Updated**] [Atmosphere 1.7.0 pre-release](https://github.com/rashevskyv/Kefirosphere) - base support for 18.0.0. It is recommended to keep emuNAND on 17.0.1 until full support is available. Also, sigpatches are integrated into the atmosphere itself (thanks db)
