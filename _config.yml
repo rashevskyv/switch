@@ -69,7 +69,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "nincfw team"
+  name             : "kefir team"
   avatar           : "/images/bio-photo.png"
   location         : 
   email            : 
@@ -78,7 +78,7 @@ author:
   codepen          :
   dribbble         :
   vk               : 
-  vk_group         : "nincfw"
+  # vk_group         : "nincfw"
   flickr           :
   facebook         :
   foursquare       :
@@ -97,9 +97,9 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : UC49jZqLn59t9qyHfK2HyvQQ
-  tg               : kefir_switch
-  tg_group         : xhrxhrxhr
+  # youtube          : UC49jZqLn59t9qyHfK2HyvQQ
+  tg_group         : kefir_switch
+  tg               : xhrxhrxhr
 
 
 # Reading Files

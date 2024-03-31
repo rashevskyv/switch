@@ -37,7 +37,6 @@ author_profile: true
 3. **Загрузчик [hekate](https://github.com/CTCaer/hekate){:target="_blank"}**. Благодаря загрузчику вы можете запускать прошивку и другие {% include abbr/payload.txt abbr="пейлоады" %} через удобное меню, создавать и восстанавливать резервную копию NAND, делать EmuNAND, получать информацию о состоянии системы, монтировать карту памяти к ПК без вытаскивания её из свитча, делать переразметку карты памяти для установки других ОС и многое другое
 4. **Установленные {% include abbr/payload.txt abbr="пейлоады" %}**:
   * [Lockpick_RCM](https://codeberg.org/rashevskyv/Locktrick/){:target="_blank"} - программа для [дампа ключей приставки](backup-nand#часть-iii---дампим-ключи){:target="_blank"}
-  * [Incognoto_RCM](https://github.com/arch-box/Incognito_RCM){:target="_blank"} - программа, стирающая серийный номер приставки, чтобы [заблокировать обновления и спрятать консоль от Nintendo](https://switch.customfw.xyz/block-update){:target="_blank"} (актуально только для консолей, которые взламываются через Caffeine)
   * [TegraExplorer](https://github.com/rashevskyv/TegraExplorer/){:target="_blank"} - файловый менеджер для Switch в виде пейлоада. Аналог GodMode9 для 3DS
 5. **Установленное Homebrew**
   * [DBI](https://github.com/rashevskyv/dbi){:target="_blank"} - программа для [установки игр](games){:target="_blank"} по USB или с карты памяти
