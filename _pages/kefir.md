@@ -5,7 +5,7 @@ author_profile: true
 ---
 {% include toc title="Разделы" %}
 
-## [KEFIR {% include /inc/kefir/version %}](https://codeberg.org/rashevskyv/kefir/releases){:target="_blank"}
+## [KEFIR {% include /inc/kefir/version %}](https://github.com/rashevskyv/kefir/releases){:target="_blank"}
 
 ![kefir](/images/kefir.png){: width="70%"}
 {: .text-center}
