@@ -67,18 +67,16 @@ analytics:
     tracking_id          : "UA-92824803-5"
 
 
-# Site Author
 author:
-  name             : "kefir team"
+  name             : "xHR"
   avatar           : "/images/bio-photo.png"
-  location         : 
-  email            : 
+  avatar_right     : "/images/bio-photo_right.png"
+  location         : "Івано-Франківськ"
+  email            : "rashevsky.v@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
-  vk               : 
-  # vk_group         : "nincfw"
   flickr           :
   facebook         :
   foursquare       :
@@ -93,13 +91,15 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          : 
   vine             :
   weibo            :
   xing             :
-  # youtube          : UC49jZqLn59t9qyHfK2HyvQQ
-  tg_group         : kefir_switch
+  youtube          :
   tg               : xhrxhrxhr
+  tg_group         : kefir_ukr
+  phone            : 0997763996
+  viber            : 0977359431
+  instagram        : rashevsky.v
 
 
 # Reading Files

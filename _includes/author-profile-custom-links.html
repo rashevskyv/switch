@@ -1,24 +1,29 @@
-{% if site.author.vk %}
-<li><a href="https://vk.com/{{ author.vk }}" itemprop="sameAs">
-  <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Вконтакте
-</a></li>
-{% endif %}
-{% if site.author.vk_group %}
-<li><a href="https://vk.com/{{ author.vk_group }}" itemprop="sameAs">
-  <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Группа вконтакте
-</a></li>
-{% endif %}
+
 {% if author.tg %}
 <li>
-  <a href="https://t.me/{{ author.tg }}" itemprop="sameAs">
+  <a href="https://t.me/{{ author.tg }}" target="_blank" itemprop="sameAs">
     <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Telegram (чипування)
   </a>
 </li>
 {% endif %}
 {% if author.tg_group %}
 <li>
-  <a href="https://t.me/{{ author.tg_group }}" itemprop="sameAs">
+  <a href="https://t.me/{{ author.tg_group }} target="_blank" itemprop="sameAs">
     <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Группа в Telegram
+  </a>
+</li>
+{% endif %}
+{% if author.phone %}
+<li>
+  <a href="tel:{{ author.phone }}" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-phone" aria-hidden="true"></i> Телефон
+  </a>
+</li>
+{% endif %}
+{% if author.viber %}
+<li>
+  <a href="viber://{{ author.viber }}" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-whatsapp" aria-hidden="true"></i> Viber
   </a>
 </li>
 {% endif %}
