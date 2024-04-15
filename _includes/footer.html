@@ -4,13 +4,13 @@
       <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
     {% endif %}
     {% if site.author.github %}
-      <li><a href="http://github.com/{{ site.author.github }}"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+      <li><a href="http://github.com/{{ site.author.github }}" target="_blank" class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
     {% endif %}
     {% if site.author.tg %}
-	  <li><a href="https://t.me/{{ author.tg }}" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> TG</a></li>
+	  <li><a href="https://t.me/{{ site.author.tg }}" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> TG</a></li>
     {% endif %}
     {% if site.author.tg_group %}
-	  <li><a href="https://t.me/{{ author.tg_group }}" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Kefir / 4ifir - switch jailbroken
+	  <li><a href="https://t.me/{{ site.author.tg_group }}" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Kefir / 4ifir - switch jailbroken
 	  </a></li>	
     {% endif %}
 </div>
