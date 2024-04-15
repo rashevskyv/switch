@@ -1,11 +1,11 @@
 # main links links
 main:
-  - title: "<b>Пожертвования</b>"
-    url: /donations
   - title: "<b>Купить<br>прошитую</b>"
     url: https://shop.customfw.xyz/
   - title: "<i>Другие гайды</i>"
     url: http://customfw.xyz
+  - title: "<b>Пожертвования</b>"
+    url: /donations
   - title: "Методы<br>взлома"
     url: /get-started
   - title: "Kefir"

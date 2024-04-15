@@ -6,10 +6,6 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-.masthead a:visited, .sidebar a:visited {
-  color: #494e52!important;
-}
-
 #main {
   @include breakpoint($x-large) {
     max-width: 1920px;
