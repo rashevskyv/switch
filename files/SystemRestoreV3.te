@@ -182,12 +182,10 @@ writeSys = {
 
 actionRestoreBis = {
 	extractBis()
-	backupBis()
 	writeBis()
 }
 
 actionRestoreSys = {
-	backupSys()
 	writeSys()
 	signSave()
 }
