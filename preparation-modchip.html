@@ -375,6 +375,73 @@
 
 <p>В этой части мы уделим время настройке свитча до и после чиповки. Про саму же чиповку хорошо рассказано в официальных мануалах. Впрочем, всему своё время.</p>
 
+<p>В данный момент существуют чипы двух типов - HWFLY, являющийся клоном чипа SX, и чипы на базе процессора rp2040 в различных вариациях. Последние могут носить разные названия (rp2040, picofly, часто можно встретить и HWFLY rp2040, которые не имеют ничего общего с HWFLY). Обращайте внимание на маркировку процессора, если не знаете какой у вас чип. На момент написания єтого материала большинство чипов будут именно RP2040. Вам так же может попасться чип под маркировкой InstinctNX: по-сути єто тот же HWFLY.</p>
+
+<details class="spoiler"><summary class="spoiler-title">Внешний вид чипов HWFLY</summary><div class="spoiler-body">
+<ul>
+  <li>OLED:</li>
+</ul>
+
+<p class="text-center notice--info"><img src="/images/modchips/hwfly/hw_oled.jpg" alt="" /></p>
+
+<ul>
+  <li>Lite:</li>
+</ul>
+
+<p class="text-center notice--info"><img src="/images/modchips/hwfly/hw_lite.jpg" alt="" /></p>
+
+<ul>
+  <li>Core:</li>
+</ul>
+
+<p class="text-center notice--info"><img src="/images/modchips/hwfly/hw_core.png" alt="" /></p>
+
+<p class="notice--warning">Обратите внимание на количество элементов на чипе. Их значительно больше, чем на чипах на базе RP2040</p>
+
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Внешний вид чипов RP2040</summary><div class="spoiler-body">
+<ul>
+  <li>Сам процессор:</li>
+</ul>
+
+<p class="text-center notice--info"><img src="/images/modchips/rp2040/chip.png" alt="" /></p>
+
+<ul>
+  <li>Универсальный классический:</li>
+</ul>
+
+<p class="text-center notice--info"><img src="/images/modchips/rp2040/rp2040.png" alt="" /></p>
+
+<ul>
+  <li>OLED:</li>
+</ul>
+
+<p class="text-center notice--info"><img src="/images/modchips/rp2040/rp_oled.png" alt="" /></p>
+
+<ul>
+  <li>Lite:</li>
+</ul>
+
+<p class="text-center notice--info"><img src="/images/modchips/rp2040/rp_lite.png" alt="" /></p>
+
+<ul>
+  <li>Core:</li>
+</ul>
+
+<p class="text-center notice--info"><img src="/images/modchips/rp2040/rp_core.png" alt="" /></p>
+
+<ul>
+  <li>Другие варианты:</li>
+</ul>
+
+<p class="text-center notice--info"><img src="/images/modchips/rp2040/other_1.png" alt="" />
+<img src="/images/modchips/rp2040/other_2.png" alt="" /></p>
+
+<p class="notice--warning">Обратите внимание на количество элементов на чипе. Их значительно меньше, чем на чипах HWFLY. Так же зачастую присутствуют большие золотистые кнопки.</p>
+
+</div></details>
+
 <p>Как правило в чипе прошивка старой версии, которая может не работать, или работать плохо на приставках со свежей версией системного ПО, потому его следует обновить на свежую версию прошивки - <a href="https://github.com/hwfly-nx/firmware" target="_blank">HWFLY</a>, который будет загружать любой пейлоад, находящийся на карте памяти под именем <code class="language-plaintext highlighter-rouge">payload.bin</code>. При большом желании, через HWFLY-NX можно загрузить и SX OS.</p>
 
 <!-- ## Прошивка чипа на HWFLY-NX
@@ -452,14 +519,26 @@
 
 <ol>
   <li>Обновите приставку до последней версии системного ПО чрез настройки, прежде чем устанавливать чип</li>
-  <li>Воспользуйтесь инструкцией для установки чипа в приставку для <a href="https://www.sthetix.info/installing-the-sx-core-mod-kit-full-guide/" target="_blank">полноразмерного Switch</a>, <a href="https://www.sthetix.info/installing-the-sx-lite-mod-kit/" target="_blank">Switch Lite</a> или <a href="https://www.sthetix.info/hacking-the-switch-oled/" target="_blank">Switch OLED</a>.
+  <li>Для установки чипа воспользуйтесь следующими инструкциями
     <ul>
-      <li>Не забудьте смонтировать NAND на чип, если у вас <strong>Core</strong>!</li>
+      <li><a href="https://gbatemp.net/download/a-definitive-picofly-install-guide.37968/" target="_blank">Универсальный гайд для PicoFLY</a> универсального типа</li>
+      <li>Гайд для HWFLY, а так же чипов RP2040 с набором шлейфов от HWFLY:
+        <ul>
+          <li><a href="https://www.sthetix.info/installing-the-sx-core-mod-kit-full-guide/" target="_blank">Обычный Switch первой или второй ревизии</a>
+            <ul>
+              <li><strong>Не забудьте смонтировать на чип вашу NAND-память!</strong></li>
+            </ul>
+          </li>
+          <li><a href="https://www.sthetix.info/installing-the-sx-lite-mod-kit/" target="_blank">Switch Lite</a></li>
+          <li><a href="https://www.sthetix.info/hacking-the-switch-oled/" target="_blank">Switch OLED</a>.</li>
+        </ul>
+      </li>
     </ul>
   </li>
-  <li>После установки чипа убедитесь, что в приставке нет карты памяти и включите её. Чип замигает жёлтым цветом (ближе к зелёному на самом деле, если чип не прошивался HWFLY-NX, то зелёным)
+  <li>После установки чипа убедитесь, что в приставке нет карты памяти и включите её. Чип замигает светодиодом (цвет зависит от типа чипа и его прошивки)
     <ul>
       <li>Терпеливо ожидайте. Чип обучается! Обучение может длиться до получаса.</li>
+      <li>Если у вас rp2040 и при включении он не мигает светодиодом, убедитесь что вы залили прошивку в чип, как єто сказано в <a href="https://gbatemp.net/download/a-definitive-picofly-install-guide.37968/" target="_blank">универсальной инструкции</a> (при подключении чипа к ПК должен отобразится диск, куда и следует скопировать прошивку; если диск не появился, зажмите на чипе кнопку BOOT и, не отпуская её, нажмите RESET)</li>
     </ul>
   </li>
   <li>Как только мигание прекратится, обратите внимание на экран консоли, на нем должно отображаться сообщение, что в приставку не вставлена карта памяти</li>
