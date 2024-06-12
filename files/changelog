@@ -1,6 +1,11 @@
 #### **UKR**:
 **Повна підтримка 18.1.0**
 
+**739**:
+* [**Повернуто**] [sys-patch](https://github.com/rashevskyv/Kefirosphere) - повернув, поки не вирішив проблему з деякими вбудовааними патчами
+* [**Оновлено**] [Kefirosphere](https://github.com/rashevskyv/Kefirosphere) - зібрано з останніми коммітами
+ [**Оновлено**] [hekate 6.2.0 v3](https://github.com/CTCaer/hekate/) - виправлена проблема з синім екраном на деяких пристроях
+
 **737**:
 * [**Оновлено**] [Atmosphere 1.7.1](https://github.com/rashevskyv/Kefirosphere) - підтримка 18.1.0
     * [**Детальніше про зміни в Atmosphere**](https://github.com/Atmosphere-NX/Atmosphere/releases)
@@ -12,6 +17,11 @@ ____
 #### **RUS**:
 **Полная поддержка 18.1.0**
 
+**739**:
+* [**Возвращено**] [sys-patch](https://github.com/rashevskyv/Kefirosphere) - возвращено, пока не решена проблема с некоторыми встроенными патчами
+* [**Обновлено**] [Kefirosphere](https://github.com/rashevskyv/Kefirosphere) - собрано с последними коммитами
+ [**Обновлено**] [hekate 6.2.0 v3](https://github.com/CTCaer/hekate/) - исправлена проблема с синим экраном на некоторых устройствах
+
 **737**:
 * [**Обновлено**] [Atmosphere 1.7.1](https://github.com/rashevskyv/Kefirosphere) - поддержка 18.1.0
     * [**Подробнее об изменениях в Atmosphere**](https://github.com/Atmosphere-NX/Atmosphere/releases)
@@ -22,6 +32,11 @@ ____
 
 #### **ENG**:
 **Full Support 18.1.0**
+
+**739**:
+* [**Reverted**] [sys-patch](https://github.com/rashevskyv/Kefirosphere) - reverted until the issue with some built-in patches is resolved
+* [**Updated**] [Kefirosphere](https://github.com/rashevskyv/Kefirosphere) - built with the latest commits
+ [**Updated**] [hekate 6.2.0 v3](https://github.com/CTCaer/hekate/) - fixed the blue screen issue on some devices
 
 **737**:
 * [**Updated**] [Atmosphere 1.7.1](https://github.com/rashevskyv/Kefirosphere) - support for 18.1.0
