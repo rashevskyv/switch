@@ -1,45 +1,62 @@
 #### **UKR**:
-**Повна підтримка 18.1.0**
+**Тепер точно повна підтримка 18.1.0**
+
+**740**:
+* [**Оновлено**] [Kefirosphere](https://github.com/rashevskyv/Kefirosphere) - наче нарешті немає прорблем з сігпатчамі. Дякую DB!
+* [**Видалено**] [sys-patch] - наче більше не треба 
+* [**Оновлено**] [hekate 6.2.0 v4](https://github.com/CTCaer/hekate/) - фікси
+* [**Оновлено**] [tinfoil 18](http://tinfoil.io/)
 
 **739**:
-* [**Повернуто**] [sys-patch](https://github.com/rashevskyv/Kefirosphere) - повернув, поки не вирішив проблему з деякими вбудовааними патчами
+* [**Повернуто**] [sys-patch] - повернув, поки не вирішив проблему з деякими вбудовааними патчами
 * [**Оновлено**] [Kefirosphere](https://github.com/rashevskyv/Kefirosphere) - зібрано з останніми коммітами
- [**Оновлено**] [hekate 6.2.0 v3](https://github.com/CTCaer/hekate/) - виправлена проблема з синім екраном на деяких пристроях
 
 **737**:
 * [**Оновлено**] [Atmosphere 1.7.1](https://github.com/rashevskyv/Kefirosphere) - підтримка 18.1.0
     * [**Детальніше про зміни в Atmosphere**](https://github.com/Atmosphere-NX/Atmosphere/releases)
- [**Оновлено**] [MissionControl 0.11.1](https://github.com/ndeadly/MissionControl) - підтримка 18.1.0
- [**Оновлено**] [hekate 6.2.0](https://github.com/CTCaer/hekate/) - підтримка 18.1.0
+* [**Оновлено**] [MissionControl 0.11.1](https://github.com/ndeadly/MissionControl) - підтримка 18.1.0
+* [**Оновлено**] [hekate 6.2.0](https://github.com/CTCaer/hekate/) - підтримка 18.1.0
 
 ____
 
 #### **RUS**:
-**Полная поддержка 18.1.0**
+**Теперь точно полная поддержка 18.1.0**
+
+**740**:
+* [**Обновлено**] [Kefirosphere](https://github.com/rashevskyv/Kefirosphere) - похоже, наконец-то нет проблем с сигпатчами. Спасибо DB!
+* [**Удалено**] [sys-patch] - похоже больше не нужен
+* [**Обновлено**] [hekate 6.2.0 v4](https://github.com/CTCaer/hekate/) - исправления
+* [**Обновлено**] [tinfoil 18](http://tinfoil.io/)
 
 **739**:
-* [**Возвращено**] [sys-patch](https://github.com/rashevskyv/Kefirosphere) - возвращено, пока не решена проблема с некоторыми встроенными патчами
+* [**Возвращено**] [sys-patch] - возвращено, пока не решена проблема с некоторыми встроенными патчами
 * [**Обновлено**] [Kefirosphere](https://github.com/rashevskyv/Kefirosphere) - собрано с последними коммитами
- [**Обновлено**] [hekate 6.2.0 v3](https://github.com/CTCaer/hekate/) - исправлена проблема с синим экраном на некоторых устройствах
+* [**Обновлено**] [hekate 6.2.0 v3](https://github.com/CTCaer/hekate/) - исправлена проблема с синим экраном на некоторых устройствах
 
 **737**:
 * [**Обновлено**] [Atmosphere 1.7.1](https://github.com/rashevskyv/Kefirosphere) - поддержка 18.1.0
     * [**Подробнее об изменениях в Atmosphere**](https://github.com/Atmosphere-NX/Atmosphere/releases)
- [**Обновлено**] [MissionControl 0.11.1](https://github.com/ndeadly/MissionControl) - поддержка 18.1.0
- [**Обновлено**] [hekate 6.2.0](https://github.com/CTCaer/hekate/) - поддержка 18.1.0
+* [**Обновлено**] [MissionControl 0.11.1](https://github.com/ndeadly/MissionControl) - поддержка 18.1.0
+* [**Обновлено**] [hekate 6.2.0](https://github.com/CTCaer/hekate/) - поддержка 18.1.0
 
 ____
 
 #### **ENG**:
-**Full Support 18.1.0**
+**Now definitely full support for 18.1.0**
+
+**740**:
+* [**Updated**] [Kefirosphere](https://github.com/rashevskyv/Kefirosphere) - seems there are finally no issues with sigpatches. Thanks DB!
+* [**Removed**] [sys-patch] - seems no longer needed
+* [**Updated**] [hekate 6.2.0 v4](https://github.com/CTCaer/hekate/) - fixes
+* [**Updated**] [tinfoil 18](http://tinfoil.io/)
 
 **739**:
-* [**Reverted**] [sys-patch](https://github.com/rashevskyv/Kefirosphere) - reverted until the issue with some built-in patches is resolved
+* [**Reverted**] [sys-patch] - reverted until the issue with some built-in patches is resolved
 * [**Updated**] [Kefirosphere](https://github.com/rashevskyv/Kefirosphere) - built with the latest commits
- [**Updated**] [hekate 6.2.0 v3](https://github.com/CTCaer/hekate/) - fixed the blue screen issue on some devices
+* [**Updated**] [hekate 6.2.0 v3](https://github.com/CTCaer/hekate/) - fixed the blue screen issue on some devices
 
 **737**:
 * [**Updated**] [Atmosphere 1.7.1](https://github.com/rashevskyv/Kefirosphere) - support for 18.1.0
     * [**More details about changes in Atmosphere**](https://github.com/Atmosphere-NX/Atmosphere/releases)
- [**Updated**] [MissionControl 0.11.1](https://github.com/ndeadly/MissionControl) - support for 18.1.0
-  [**Updated**] [hekate 6.2.0](https://github.com/CTCaer/hekate/) - support for 18.1.0
+* [**Updated**] [MissionControl 0.11.1](https://github.com/ndeadly/MissionControl) - support for 18.1.0
+* [**Updated**] [hekate 6.2.0](https://github.com/CTCaer/hekate/) - support for 18.1.0
