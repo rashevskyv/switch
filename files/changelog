@@ -1,6 +1,9 @@
 #### **UKR**:
 **Тепер точно повна підтримка 18.1.0**
 
+**741**:
+* [**Оновлено**] [kefir] - виправлено розгін, який випадково вимкнув
+
 **740**:
 * [**Оновлено**] [Kefirosphere](https://github.com/rashevskyv/Kefirosphere) - наче нарешті немає прорблем з сігпатчамі. Дякую DB!
 * [**Видалено**] [sys-patch] - наче більше не треба 
@@ -21,6 +24,9 @@ ____
 
 #### **RUS**:
 **Теперь точно полная поддержка 18.1.0**
+
+**741**:
+* [**Обновлено**] [kefir] - исправлена проблема разгона, которая случайно отключилась
 
 **740**:
 * [**Обновлено**] [Kefirosphere](https://github.com/rashevskyv/Kefirosphere) - похоже, наконец-то нет проблем с сигпатчами. Спасибо DB!
@@ -43,6 +49,9 @@ ____
 
 #### **ENG**:
 **Now definitely full support for 18.1.0**
+
+**741**:
+* [**Updated**] [kefir] - fixed an overclocking issue that accidentally disabled
 
 **740**:
 * [**Updated**] [Kefirosphere](https://github.com/rashevskyv/Kefirosphere) - seems there are finally no issues with sigpatches. Thanks DB!
