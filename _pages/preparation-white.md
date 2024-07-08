@@ -20,7 +20,9 @@ author_profile: true
 	* Пользователям {% include abbr/caffeine.txt abbr="Caffeine" %} придётся создать ещё один EmuNAND для запуска официальной прошивки
 1. [Восстановление резервной копии оригинальной прошивки](backup-nand#восстановление-резервной-копии){:target="blank_"}
 	* Пользователям {% include abbr/caffeine.txt abbr="Caffeine" %} для игры в лицензию нужно будет запускать не {% include abbr/sysnand.md abbr="SysNAND" %}, а {% include abbr/emunand.md abbr="EmuNAND" %}, созданный специально для лицензии
-    * В случае, если у вас нет оригинального бекапа, вы можете отформатировать свой SysNAND с помощью программы [Haku33](https://github.com/StarDustCFW/Haku33/releases/latest){:target="blank_"}
+    * В случае, если у вас нет оригинального бекапа, вы можете отформатировать свой SysNAND с помощью TegraExplorer: 
+	 	* {% include abbr/hekate.txt abbr="hekate" %} > `payloads` > `TegraExplorer.bin` > `SystemWipe.te`
+			* **Будьте готовы к тому, что на лайте это безвозвратно пожрёт 15% аккумулятора.** Для остальных приставок такой проблемы не замечено
 	 * В случае, если у вас был установлен **incognito** и серийный номер не вернулся даже после восстановления оригинального бекапа, восстановите его вручную [по этой инструкции](block-update#%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B0-%D0%BA-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B0%D0%BC-nintendo){:target="_blank"}
 1. [Запуск кастомной прошивки](cfw){:target="blank_"} - теперь запуск кастома делается через {% include abbr/emunand.md abbr="EmuNAND" %}, а запуск лицензии - через {% include abbr/sysnand.md abbr="SysNAND" %} или {% include abbr/emunand.md abbr="EmuNAND" %}, созданный специально для лицензии. Забыли как запускать первое и второе? Вернитесь к [инструкции по созданию эмунанда](emunand){:target="blank_"} и освежите себе память. 
 1. [Обновление официальной прошивки до рекомендуемой версии системного ПО](update-fw){:target="blank_"}

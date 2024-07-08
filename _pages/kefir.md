@@ -149,12 +149,19 @@ author_profile: true
 ### **Важная информация!**
 
   * Перезагрузка в hekate происходит прямо из прошивки, через обычное меню перезагрузки. Просто зажмите (VOL-) во время сплешскрина кефира
-  * Вы можете получить доступ к своей карте памяти не вынимая её из приставки по MTP (**DBI** -> **Run MTP Responder**), либо через hekate ({% include inc/sd_hekate.md %}) (не у всех работает корректно, **невозможно обновить приставку по MTP**)
+  * Вы можете получить доступ к своей карте памяти не вынимая её из приставки по MTP (**DBI** -> **Run MTP Responder**), либо через hekate ({% include inc/sd_hekate.md %}) (не у всех работает корректно, **невозможно обновить kefir по MTP**)
   * Установка и обновление kefir проводятся одинаково!
   * При возникновении ошибки "**Is BEK missing**" выключите приставку и включите заново.
 
 ## Дополнительная информация 
 * Для работы с модулями ([sys-con](https://github.com/cathery/sys-con/releases/latest){:target="_blank"}, [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} и др.) в кефире установлен [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} - специальное оверлей-меню для взаимодействия с системой. Для его активации нажмите (L) + **крестовина вниз** + (R3)
+* Для активации разгона перейдите в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ((L) + **крестовина вниз** + (R3)), нажмите вправо > `Settings` > `Use overclock`
+* Для перехода в semi-stock
+  * **Из самой прошивки**: перейдите в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ((L) + **крестовина вниз** + (R3)), нажмите вправо > `Semi-stock`
+  * **При запуске консоли**: 
+    {% include inc/launch-hekate.txt %}
+    1. Виберите `More-configs` > `Semi-stock (blackscreen fix)`
+  * Обратите внимание, что при запуске из прошивки, установленная тема будет отключена
 * Обновить кефир можно с помощью утилиты **Kefir Updater**
 * [Полезные инструкции по использованию приставки](usage){:target="_blank"}
 * [FAQ](faq){:target="_blank"}
