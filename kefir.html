@@ -349,7 +349,7 @@
 <nav class="toc">
     <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Разделы</h4></header>
 <ul class="toc__menu" id="markdown-toc">
-  <li><a href="#kefir-741" id="markdown-toc-kefir-741">KEFIR 741</a>    <ul>
+  <li><a href="#kefir-743" id="markdown-toc-kefir-743">KEFIR 743</a>    <ul>
       <li><a href="#что-такое-кефир" id="markdown-toc-что-такое-кефир">Что такое кефир</a></li>
       <li><a href="#инструкция-по-установкеобновлению-kefir" id="markdown-toc-инструкция-по-установкеобновлению-kefir">Инструкция по установке/обновлению kefir</a></li>
     </ul>
@@ -389,7 +389,7 @@
 
 <hr />
 
-<h2 id="kefir-741"><a href="https://github.com/rashevskyv/kefir/releases" target="_blank">KEFIR 741</a></h2>
+<h2 id="kefir-743"><a href="https://github.com/rashevskyv/kefir/releases" target="_blank">KEFIR 743</a></h2>
 
 <p class="text-center"><img src="/images/kefir.png" alt="kefir" width="70%" /></p>
 
@@ -623,7 +623,7 @@
 
 <ul>
   <li>Перезагрузка в hekate происходит прямо из прошивки, через обычное меню перезагрузки. Просто зажмите (VOL-) во время сплешскрина кефира</li>
-  <li>Вы можете получить доступ к своей карте памяти не вынимая её из приставки по MTP (<strong>DBI</strong> -&gt; <strong>Run MTP Responder</strong>), либо через hekate (<strong>Tools</strong> -&gt; <strong>USB Tools</strong> -&gt; <strong>SD Card</strong>) (не у всех работает корректно, <strong>невозможно обновить приставку по MTP</strong>)</li>
+  <li>Вы можете получить доступ к своей карте памяти не вынимая её из приставки по MTP (<strong>DBI</strong> -&gt; <strong>Run MTP Responder</strong>), либо через hekate (<strong>Tools</strong> -&gt; <strong>USB Tools</strong> -&gt; <strong>SD Card</strong>) (не у всех работает корректно, <strong>невозможно обновить kefir по MTP</strong>)</li>
   <li>Установка и обновление kefir проводятся одинаково!</li>
   <li>При возникновении ошибки “<strong>Is BEK missing</strong>” выключите приставку и включите заново.</li>
 </ul>
@@ -631,6 +631,38 @@
 <h2 id="дополнительная-информация">Дополнительная информация</h2>
 <ul>
   <li>Для работы с модулями (<a href="https://github.com/cathery/sys-con/releases/latest" target="_blank">sys-con</a>, <a href="https://github.com/ndeadly/MissionControl" target="_blank">Mission Control</a> и др.) в кефире установлен <a href="https://github.com/efosamark/Uberhand-Overlay" target="_blank">Uberhand</a> - специальное оверлей-меню для взаимодействия с системой. Для его активации нажмите (L) + <strong>крестовина вниз</strong> + (R3)</li>
+  <li>Для активации разгона перейдите в <a href="https://github.com/efosamark/Uberhand-Overlay" target="_blank">Uberhand</a> ((L) + <strong>крестовина вниз</strong> + (R3)), нажмите вправо &gt; <code class="language-plaintext highlighter-rouge">Settings</code> &gt; <code class="language-plaintext highlighter-rouge">Use overclock</code></li>
+  <li>Для перехода в semi-stock
+    <ul>
+      <li><strong>Из самой прошивки</strong>: перейдите в <a href="https://github.com/efosamark/Uberhand-Overlay" target="_blank">Uberhand</a> ((L) + <strong>крестовина вниз</strong> + (R3)), нажмите вправо &gt; <code class="language-plaintext highlighter-rouge">Semi-stock</code></li>
+      <li><strong>При запуске консоли</strong>:
+        <ol>
+          <li>Войдите в <span class="tooltip_container">
+hekate
+<span class="tooltip"><i class="fas fa-caret-down"></i>
+ <span class="bottom">
+     Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+ </span>
+</span>
+</span> с помощью поддерживаемого на вашей приставке эксплойта, запуститив пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
+<a href="kefir" target="_blank">kefir</a>
+<span class="tooltip"><i class="fas fa-caret-down"></i>
+ <span class="bottom">
+     Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+ </span>
+</span>
+</span></li>
+          <li>Удерживайте (VOL-) на приставке во время появления логотипа kefir, чтобы попасть в hekate
+            <ul>
+              <li>Пропустите этот шаг, если вы уже в hekate</li>
+            </ul>
+          </li>
+          <li>Виберите <code class="language-plaintext highlighter-rouge">More-configs</code> &gt; <code class="language-plaintext highlighter-rouge">Semi-stock (blackscreen fix)</code></li>
+        </ol>
+      </li>
+      <li>Обратите внимание, что при запуске из прошивки, установленная тема будет отключена</li>
+    </ul>
+  </li>
   <li>Обновить кефир можно с помощью утилиты <strong>Kefir Updater</strong></li>
   <li><a href="usage" target="_blank">Полезные инструкции по использованию приставки</a></li>
   <li><a href="faq" target="_blank">FAQ</a></li>
@@ -643,6 +675,19 @@
 
 <h4 id="ukr"><strong>UKR</strong>:</h4>
 <p><strong>Тепер точно повна підтримка 18.1.0</strong></p>
+
+<p><strong>743</strong>:</p>
+<ul>
+  <li>[<strong>Оновлено</strong>] <a href="https://github.com/CTCaer/hekate/">hekate 6.2.1</a> - фікси</li>
+  <li>[<strong>Оновлено</strong>] <a href="https://github.com/suchmememanyskill/TegraExplorer/releases/tag/4.2.0">TegraExplorer 4.2.0pre</a> - виправлено скрипт вайпа, що має вирішити чорний екран після сбросу на прошивках 17 і вище</li>
+  <li>[<strong>Додано</strong>] [kefir] Додана підтримка консолей з 8GB DRAM (hekate &gt; more configs &gt; Kefir with 8GB DRAM)</li>
+  <li>[<strong>Додано</strong>] [Semi-stock в hekate] Вимолили. Це звичайний звичний семі-сток. Також використовується для лікування чорного екрану після сбросу на прошивках 17 і вище</li>
+</ul>
+
+<p><strong>742</strong>:</p>
+<ul>
+  <li>[<strong>Оновлено</strong>] [kefir] - поєднав blackscreen fix та семісток. Але все одно раджуу запускеати семі-сток через оверлей.</li>
+</ul>
 
 <p><strong>741</strong>:</p>
 <ul>
@@ -679,6 +724,14 @@
 <h4 id="rus"><strong>RUS</strong>:</h4>
 <p><strong>Теперь точно полная поддержка 18.1.0</strong></p>
 
+<p><strong>743</strong>:</p>
+<ul>
+  <li>[<strong>Обновлено</strong>] <a href="https://github.com/CTCaer/hekate/">hekate 6.2.1</a> - исправления</li>
+  <li>[<strong>Обновлено</strong>] <a href="https://github.com/suchmememanyskill/TegraExplorer/releases/tag/4.2.0">TegraExplorer 4.2.0pre</a> - исправлен скрипт вайпа, который должен решить проблему черного экрана после сброса на прошивках 17 и выше</li>
+  <li>[<strong>Добавлено</strong>] [kefir] Добавлена поддержка консолей с 8GB DRAM (hekate &gt; more configs &gt; Kefir with 8GB DRAM)</li>
+  <li>[<strong>Добавлено</strong>] [Semi-stock в hekate] Запрошено. Это обычный полусток. Также используется для лечения черного экрана после сброса на прошивках 17 и выше</li>
+</ul>
+
 <p><strong>741</strong>:</p>
 <ul>
   <li>[<strong>Обновлено</strong>] [kefir] - исправлена проблема разгона, которая случайно отключилась</li>
@@ -714,6 +767,14 @@
 
 <h4 id="eng"><strong>ENG</strong>:</h4>
 <p><strong>Now definitely full support for 18.1.0</strong></p>
+
+<p><strong>743</strong>:</p>
+<ul>
+  <li>[<strong>Updated</strong>] <a href="https://github.com/CTCaer/hekate/">hekate 6.2.1</a> - fixes</li>
+  <li>[<strong>Updated</strong>] <a href="https://github.com/suchmememanyskill/TegraExplorer/releases/tag/4.2.0">TegraExplorer 4.2.0pre</a> - fixed wipe script, which should resolve the black screen after reset on firmware 17 and above</li>
+  <li>[<strong>Added</strong>] [kefir] Added support for consoles with 8GB DRAM (hekate &gt; more configs &gt; Kefir with 8GB DRAM)</li>
+  <li>[<strong>Added</strong>] [Semi-stock in hekate] Requested. This is the usual semi-stock. Also used to treat black screen after reset on firmware 17 and above</li>
+</ul>
 
 <p><strong>741</strong>:</p>
 <ul>
