@@ -68,7 +68,7 @@ author_profile: true
 
 {% spoiler Подготовительные работы в MacOS %}
 
-1. Установите [Android File Transfer](https://www.android.com/filetransfer/){:target="_blank"}, если версия вашей MacOS 10.13 или новее
+1. Установите [OpenMTP](https://openmtp.ganeshrvel.com/){:target="_blank"}, если версия вашей MacOS 10.13 или новее
 
 Существует такая особенность, что мак распознает nintendo switch как девайс, который должен заряжать мак, а не наоборот. Из-за этого MTP сервер не стартует, и вы ничего сделать не можете.
 Как же обойти?
