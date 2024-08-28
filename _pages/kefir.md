@@ -47,7 +47,7 @@ author_profile: true
   * [NXThemes Installer](https://github.com/exelix11/SwitchThemeInjector){:target="_blank"} - менеджер кастомных тем 
   * [Linkalho](https://github.com/rdmrocha/linkalho){:target="_blank"} - программа [привязки аккаунта](link-account){:target="_blank"}
 6. **Установленные модули**. Модули - это дополнительные компоненты, работающие внутри Atmosphere и позволяющие делать разные крутые штуки, как-то использование xbox-сoвместимых контроллеров, эмуляцию amiibo, разгон и прочее. К сожалению, SX OS модули не поддерживает
-  * [sys-con](https://github.com/cathery/sys-con){:target="_blank"} - модуль, позволяющий подключать к консоли по USB практически любые геймпады
+  * [sys-con](https://github.com/o0Zz/sys-con){:target="_blank"} - модуль, позволяющий подключать к консоли по USB практически любые геймпады
   * [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} - модуль, позволяющий подключать к консоли по bluetooth практически любые геймпады
   * [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} - специальное оверлей-меню для взаимодействия с системой p поддержко пользовательских скриптов и модулей
     - Скрипты:
