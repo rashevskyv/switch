@@ -129,6 +129,13 @@ author_profile: true
 
 {% spoiler Чистая установка кефира (рекомендуется при возникновении ошибок) %}
 
+1. Удалите с карты всё, кроме папок `Nintendo` и `emummc`, если таковые есть
+1. Установите кефир удобным способом, рассказанным выше
+
+{% endspoiler %}
+
+{% spoiler Отладочная установка кефира (рекомендуется, если просто чистая не помогла) %}
+
 1. Скопируйте папки `Nintendo` и `emummc`, если таковые есть на ПК
 1. [Отформатируйте вашу карту](https://format.customfw.xyz) памяти в FAT32 и верните папки обратно
 1. Установите кефир удобным способом
@@ -155,7 +162,6 @@ author_profile: true
 
 ## Дополнительная информация 
 * Для работы с модулями ([sys-con](https://github.com/cathery/sys-con/releases/latest){:target="_blank"}, [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} и др.) в кефире установлен [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} - специальное оверлей-меню для взаимодействия с системой. Для его активации нажмите (L) + **крестовина вниз** + (R3)
-* Для активации разгона перейдите в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ((L) + **крестовина вниз** + (R3)), нажмите вправо > `Settings` > `Use overclock`
 * Для перехода в semi-stock
   * **Из самой прошивки**: перейдите в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ((L) + **крестовина вниз** + (R3)), нажмите вправо > `Semi-stock`
   * **При запуске консоли**: 
@@ -166,6 +172,18 @@ author_profile: true
 * [Полезные инструкции по использованию приставки](usage){:target="_blank"}
 * [FAQ](faq){:target="_blank"}
 * [Проблемы и их решения](troubleshooting){:target="_blank"}
+
+### Разгон 
+* **Включение**
+  Для активации разгона перейдите в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ((L) + **крестовина вниз** + (R3)), нажмите вправо > `Settings` > `Use overclock`
+* **Отключение**
+  Для активации разгона перейдите в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ((L) + **крестовина вниз** + (R3)), нажмите вправо > `Settings` > `Disable overclock`
+
+### Режим поддержки 8Гб памяти
+* **Включение**
+  * Для включения перейдите в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ((L) + **крестовина вниз** + (R3)), нажмите вправо > `Settings` > `Enable 8GB support`
+* **Отключение**
+  * Для отключения переустановите кефир удобными способом 
 
 ____
 
