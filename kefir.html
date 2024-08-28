@@ -359,6 +359,8 @@
     </ul>
   </li>
   <li><a href="#дополнительная-информация" id="markdown-toc-дополнительная-информация">Дополнительная информация</a>    <ul>
+      <li><a href="#разгон" id="markdown-toc-разгон">Разгон</a></li>
+      <li><a href="#режим-поддержки-8гб-памяти" id="markdown-toc-режим-поддержки-8гб-памяти">Режим поддержки 8Гб памяти</a></li>
       <li><a href="#изменения-от-прошлой-версии" id="markdown-toc-изменения-от-прошлой-версии">Изменения от прошлой версии</a>        <ul>
           <li><a href="#ukr" id="markdown-toc-ukr"><strong>UKR</strong>:</a></li>
           <li><a href="#rus" id="markdown-toc-rus"><strong>RUS</strong>:</a></li>
@@ -561,6 +563,14 @@
 
 <details class="spoiler"><summary class="spoiler-title">Чистая установка кефира (рекомендуется при возникновении ошибок)</summary><div class="spoiler-body">
 <ol>
+  <li>Удалите с карты всё, кроме папок <code class="language-plaintext highlighter-rouge">Nintendo</code> и <code class="language-plaintext highlighter-rouge">emummc</code>, если таковые есть</li>
+  <li>Установите кефир удобным способом, рассказанным выше</li>
+</ol>
+
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Отладочная установка кефира (рекомендуется, если просто чистая не помогла)</summary><div class="spoiler-body">
+<ol>
   <li>Скопируйте папки <code class="language-plaintext highlighter-rouge">Nintendo</code> и <code class="language-plaintext highlighter-rouge">emummc</code>, если таковые есть на ПК</li>
   <li><a href="https://format.customfw.xyz">Отформатируйте вашу карту</a> памяти в FAT32 и верните папки обратно</li>
   <li>Установите кефир удобным способом</li>
@@ -631,7 +641,6 @@
 <h2 id="дополнительная-информация">Дополнительная информация</h2>
 <ul>
   <li>Для работы с модулями (<a href="https://github.com/cathery/sys-con/releases/latest" target="_blank">sys-con</a>, <a href="https://github.com/ndeadly/MissionControl" target="_blank">Mission Control</a> и др.) в кефире установлен <a href="https://github.com/efosamark/Uberhand-Overlay" target="_blank">Uberhand</a> - специальное оверлей-меню для взаимодействия с системой. Для его активации нажмите (L) + <strong>крестовина вниз</strong> + (R3)</li>
-  <li>Для активации разгона перейдите в <a href="https://github.com/efosamark/Uberhand-Overlay" target="_blank">Uberhand</a> ((L) + <strong>крестовина вниз</strong> + (R3)), нажмите вправо &gt; <code class="language-plaintext highlighter-rouge">Settings</code> &gt; <code class="language-plaintext highlighter-rouge">Use overclock</code></li>
   <li>Для перехода в semi-stock
     <ul>
       <li><strong>Из самой прошивки</strong>: перейдите в <a href="https://github.com/efosamark/Uberhand-Overlay" target="_blank">Uberhand</a> ((L) + <strong>крестовина вниз</strong> + (R3)), нажмите вправо &gt; <code class="language-plaintext highlighter-rouge">Semi-stock</code></li>
@@ -667,6 +676,28 @@ hekate
   <li><a href="usage" target="_blank">Полезные инструкции по использованию приставки</a></li>
   <li><a href="faq" target="_blank">FAQ</a></li>
   <li><a href="troubleshooting" target="_blank">Проблемы и их решения</a></li>
+</ul>
+
+<h3 id="разгон">Разгон</h3>
+<ul>
+  <li><strong>Включение</strong>
+Для активации разгона перейдите в <a href="https://github.com/efosamark/Uberhand-Overlay" target="_blank">Uberhand</a> ((L) + <strong>крестовина вниз</strong> + (R3)), нажмите вправо &gt; <code class="language-plaintext highlighter-rouge">Settings</code> &gt; <code class="language-plaintext highlighter-rouge">Use overclock</code></li>
+  <li><strong>Отключение</strong>
+Для активации разгона перейдите в <a href="https://github.com/efosamark/Uberhand-Overlay" target="_blank">Uberhand</a> ((L) + <strong>крестовина вниз</strong> + (R3)), нажмите вправо &gt; <code class="language-plaintext highlighter-rouge">Settings</code> &gt; <code class="language-plaintext highlighter-rouge">Disable overclock</code></li>
+</ul>
+
+<h3 id="режим-поддержки-8гб-памяти">Режим поддержки 8Гб памяти</h3>
+<ul>
+  <li><strong>Включение</strong>
+    <ul>
+      <li>Для включения перейдите в <a href="https://github.com/efosamark/Uberhand-Overlay" target="_blank">Uberhand</a> ((L) + <strong>крестовина вниз</strong> + (R3)), нажмите вправо &gt; <code class="language-plaintext highlighter-rouge">Settings</code> &gt; <code class="language-plaintext highlighter-rouge">Enable 8GB support</code></li>
+    </ul>
+  </li>
+  <li><strong>Отключение</strong>
+    <ul>
+      <li>Для отключения переустановите кефир удобными способом</li>
+    </ul>
+  </li>
 </ul>
 
 <hr />
