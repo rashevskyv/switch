@@ -1,14 +1,8 @@
 #### **UKR**
-**Повна підтримка 19.0.1, хоча я все ще раджу тримати емунанд на 18.1.0**
-
-**755**:
-* [MissionControl 0.12.0](https://github.com/ndeadly/MissionControl/releases/tag/v0.12.0) - прибрана великотка  
+**Повна підтримка 19.0.0, хоча я все ще раджу тримати емунанд на 18.1.0**
 
 **754**:
-* [**Оновлено**] [EdiZon-Overlay 1.0.9](https://github.com/proferabg/EdiZon-Overlay/releases) - оновлено систему з підтримкою користувацьких тем та шпалер, додано швидше визначення ігор та виправлено локальні мережеві виклики.
-
-**754**:
-* [**Оновлено**] [sys-con 1.4.3](https://github.com/o0Zz/sys-con/releases/tag/1.4.3) - виправлено регресію кнопки guide на xbox one, додано підтримку 8bitdo ultimate 2c та вирішено проблему з пріоритетністю профілів hid контролерів
+* [**Оновлено**] [sys-con 1.4.2](https://github.com/o0Zz/sys-con/releases/tag/1.4.2) - виправлено регресію кнопки guide на xbox one, додано підтримку 8bitdo ultimate 2c та вирішено проблему з пріоритетністю профілів hid контролерів
 * [**Додано**] [Кефір] - додан файл `warmboot_mariko/wb_14.bin` для запобігання помилки warmboot
 
 **753**:
@@ -28,13 +22,10 @@
 ____
 
 #### **ENG**
-**Full support for 19.0.1, although I still recommend keeping emunand on 18.1.0**
-
-**755**:
-* [MissionControl 0.12.0](https://github.com/ndeadly/MissionControl/releases/tag/v0.12.0) - removed easter egg
+**Full support for 19.0.0, although I still recommend keeping emunand on 18.1.0**
 
 **754**:
-* [**Updated**] [sys-con 1.4.3](https://github.com/o0Zz/sys-con/releases/tag/1.4.3) - fixed xbox one guide button regression, added 8bitdo ultimate 2c support and resolved hid controller profile priority issue
+* [**Updated**] [sys-con 1.4.2](https://github.com/o0Zz/sys-con/releases/tag/1.4.2) - fixed xbox one guide button regression, added 8bitdo ultimate 2c support and resolved hid controller profile priority issue
 [**Added**] [Kefir] - added `warmboot_mariko/wb_14.bin` file to prevent warmboot error
 
 **753**:
@@ -54,13 +45,10 @@ ____
 ____
 
 #### **RUS**
-**Полная поддержка 19.0.1, хотя я все еще советую держать эмунанд на 18.1.0**
-
-**755**:
-* [MissionControl 0.12.0](https://github.com/ndeadly/MissionControl/releases/tag/v0.12.0) - убрана пасхалка  
+**Полная поддержка 19.0.0, хотя я все еще советую держать эмунанд на 18.1.0**
 
 **754**:
-* [**Обновлено**] [sys-con 1.4.3](https://github.com/o0Zz/sys-con/releases/tag/1.4.3) - исправлена регрессия кнопки guide на xbox one, добавлена поддержка 8bitdo ultimate 2c и решена проблема с приоритетностью профилей hid контроллеров
+* [**Обновлено**] [sys-con 1.4.2](https://github.com/o0Zz/sys-con/releases/tag/1.4.2) - исправлена регрессия кнопки guide на xbox one, добавлена поддержка 8bitdo ultimate 2c и решена проблема с приоритетностью профилей hid контроллеров
 [**Добавлено**] [Кефир] - добавлен файл `warmboot_mariko/wb_14.bin` для предотвращения ошибки warmboot
 
 **753**:
