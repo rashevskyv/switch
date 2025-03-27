@@ -2,5 +2,5 @@
 layout: redirect
 title: "Перенаправлення"
 permalink: emuiibo.html
-redirect_to: /uk/emuiibo/
+redirect_to: /uk/emuiibo
 ---

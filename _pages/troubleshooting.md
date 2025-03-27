@@ -2,5 +2,5 @@
 layout: redirect
 title: "Перенаправлення"
 permalink: troubleshooting.html
-redirect_to: /uk/troubleshooting/
+redirect_to: /uk/troubleshooting
 ---
