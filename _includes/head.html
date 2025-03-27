@@ -15,7 +15,9 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}">
-<link rel="stylesheet" href="https://customfw.xyz/stay-for-ukraine/css/stay_for_ukraine.css">
+{% if page.lang == "ru" %}
+  <link rel="stylesheet" href="https://customfw.xyz/stay-for-ukraine/css/stay_for_ukraine.css">
+{% endif %}
 
 <!--[if lte IE 9]>
   <style>

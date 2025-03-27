@@ -1,0 +1,11 @@
+<hr>
+{% if page.lang %}
+  {% assign notices = site.data.notices[page.lang] %}
+{% else %}
+  {% assign notices = site.data.notices.uk %}
+{% endif %}
+
+{% for notice in notices %}
+  {{ notice.content }}
+{% endfor %}
+<hr>

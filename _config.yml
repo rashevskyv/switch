@@ -1,17 +1,23 @@
 minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
 
 # Site Settings
-locale                   : "ru-RU"
+locale                   : "uk-UA"  # Змінено на українську як основну мову
 title                    : "Взлом Switch"
 title_separator          : "-"
 name                     : "nincfw team"
-description              : "Полное руководство по прошивке Nintendo Switch"
-url                      : "https://switch.customfw.xyz" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Повне керівництво з прошивки Nintendo Switch"  # Перекладено на українську
+url                      : "" # змінено на відносний URL
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "rashevskyv/switch" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
+
+# Підтримувані мови
+languages:
+  - uk
+  - ru
+
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -227,10 +233,40 @@ compress_html:
 
 # Defaults
 defaults:
-  # _pages
+  # Загальні налаштування для всіх сторінок
   - scope:
       path: ""
       type: pages
     values:
       layout: single
       author_profile: false
+      
+  # Налаштування для українських сторінок
+  - scope:
+      path: "_pages/uk"
+    values:
+      lang: uk
+      permalink: /uk/:basename/
+      
+  # Налаштування для російських сторінок
+  - scope:
+      path: "_pages/ru"
+    values:
+      lang: ru
+      permalink: /ru/:basename/
+      
+  # Налаштування для українських постів
+  - scope:
+      path: "_posts/uk"
+      type: posts
+    values:
+      lang: uk
+      permalink: /uk/:year/:month/:day/:title/
+      
+  # Налаштування для російських постів
+  - scope:
+      path: "_posts/ru"
+      type: posts
+    values:
+      lang: ru
+      permalink: /ru/:year/:month/:day/:title/

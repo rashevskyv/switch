@@ -10,17 +10,3 @@
 </aside>
 
 
-<hr>
-
-{% assign split_path = page.path | split: "/" %}
-
-{% for link in site.data.navigation.bottom %}
-  {% if link.url contains 'http' %}
-	{% assign domain = '' %}
-  {% else %}
-	{% assign domain = site.url | append: site.baseurl %}
-  {% endif %}
-  {{ link.title }}
-{% endfor %}
-
-<hr>
