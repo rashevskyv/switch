@@ -79,5 +79,5 @@ header:
 
 ___
 
-<center><a href="get-started" style="margin:20px auto; text-align:center; display:block; width:200px;" class="btn btn--short">Почнемо!!</a></center>
+<center><a href="/uk/get-started" style="margin:20px auto; text-align:center; display:block; width:200px;" class="btn btn--short">Почнемо!!</a></center>
 {: .notice--success}

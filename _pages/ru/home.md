@@ -172,5 +172,5 @@ header:
 
 ___
 
-<center><a href="get-started" style="margin:20px auto; text-align:center; display:block; width:200px;" class="btn btn--short">Начнем!!</a></center>
+<center><a href="/ru/get-started" style="margin:20px auto; text-align:center; display:block; width:200px;" class="btn btn--short">Начнем!!</a></center>
 {: .notice--success}
