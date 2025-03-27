@@ -1,6 +1,10 @@
 ---
-layout: redirect
-title: "Перенаправлення"
-permalink: kefir.html
-redirect_to: /uk/kefir/
+lang: ru
+title: Kefir
+permalink: /ru/kefir.html
+author_profile: true
 ---
+
+<script>
+location.href = '/uk/kefir';
+</script>
