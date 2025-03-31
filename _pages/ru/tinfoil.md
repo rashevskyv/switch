@@ -19,8 +19,8 @@ author_profile: true
 
 1. Выключите консоль
 1. Вставьте карту памяти в ПК
-1. Установите {% include abbr/kefir_addr.txt %}, если ещё не делали этого
-1. Вставьте карту памяти в консоль и запустите [{% include abbr/cfw.txt abbr="CFW" %}](cfw){:target="_blank"}
+1. Установите {% include abbr/ru/kefir_addr.txt %}, если ещё не делали этого
+1. Вставьте карту памяти в консоль и запустите [{% include abbr/ru/cfw.txt abbr="CFW" %}](cfw){:target="_blank"}
 1. Запустите DBI через [HBL](hbl){:target="_blank"}
 1. Установите `Tinfoil [050000BADDAD0000]` из папки `games`
 
@@ -55,7 +55,7 @@ author_profile: true
 **О:** 
 * Не меняйте в tinfoil тему! Тема в программе должна начинаться с префикса `hbg_`
 * Убедитесь, что на приставке стоит верная дата и время
-* Удалите tinfoil, обновите {% include abbr/kefir_addr.txt %}, установите tinfoil из папки games на карте памяти 
+* Удалите tinfoil, обновите {% include abbr/ru/kefir_addr.txt %}, установите tinfoil из папки games на карте памяти 
 
 {% endspoiler %}
 

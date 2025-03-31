@@ -42,7 +42,7 @@ author_profile: true
 Например `FINAL FANTASY X X-2 HD Remaster [0100BC300CB48000][v0].nsp`
 
 `FINAL FANTASY X X-2 HD Remaster` - название игры
-`0100BC300CB48000` - Title ID (нужно знать для [использования модификаций через {% include abbr/lfs.txt abbr="LayeredFS" %}](#использование-переводов-и-модификаций){:target="_blank"})
+`0100BC300CB48000` - Title ID (нужно знать для [использования модификаций через {% include abbr/ru/lfs.txt abbr="LayeredFS" %}](#использование-переводов-и-модификаций){:target="_blank"})
 `v0` - версия игры. `v0` всегда означает саму игру. `vXXXXXX` всегда патч. Чем выше число версии, тем новее патч.
 
 Так же встречаются конструкции вида `Touhou Kobuto V Burst Battle [010010F004022000] + (v196608 UPD) + (2 DLC).xci`. Вы можете устанавливать такие игры с помощью DBI (смотрите ниже)
@@ -58,7 +58,7 @@ author_profile: true
 
 * Настроенная и работающая [кастомная прошивка](cfw){:target="_blank"}
 * Свежая версия [системного ПО приставки](update-fw){:target="_blank"}
-* Свежая версия {% include abbr/kefir_addr.txt %}
+* Свежая версия {% include abbr/ru/kefir_addr.txt %}
 * Игры 
 
 ### Выберите один из методов установки
@@ -152,7 +152,7 @@ author_profile: true
 
 ### Использование переводов и модификаций 
 
-Для корректной работы переводов нужен активный модуль {% include abbr/lfs.txt abbr="LayeredFS" %}. Как правило, модуль активирован по-умолчанию. В Atmosphere файлы для LFS нужно класть в папку `atmosphere/contents/`. 
+Для корректной работы переводов нужен активный модуль {% include abbr/ru/lfs.txt abbr="LayeredFS" %}. Как правило, модуль активирован по-умолчанию. В Atmosphere файлы для LFS нужно класть в папку `atmosphere/contents/`. 
 
 Так же вы можете использовать DBI для установки модификаций:
 1. Подключите приставку в режиме MTP по DBI 
@@ -166,7 +166,7 @@ author_profile: true
 
 После установки перевода **обязательно** исправьте атрибуты в скопированных файлах: 
 
-{% include /inc/fixatributes.txt %}
+{% include /inc/ru/fixatributes.txt %}
 
 ## Полезные ссылки 
 

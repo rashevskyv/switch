@@ -18,7 +18,7 @@ author_profile: true
 
 ## Что понадобится
 
-* Свежая версия {% include abbr/kefir_addr.txt %}
+* Свежая версия {% include abbr/ru/kefir_addr.txt %}
 * Свежая версия [ldn_mitm](https://github.com/spacemeowx2/ldn_mitm/releases/latest){:target="_blank"} (ldn_mitm_vx.x.x.zip)
 	* Рекомендуется качать из [hb appstore](https://apps.fortheusers.org/switch/ldn_mitm){:target="_blank"} (раздел tools)
 * Свежая версия программы [Lan-Play-Server-Manager](https://github.com/Urferu/Lan-Play-Server-Manager/releases/latest){:target="_blank"}
@@ -48,7 +48,7 @@ author_profile: true
 
 ### Часть II - Настраиваем Switch
 
-1. Обновите {% include abbr/kefir_addr.txt %} по инструкции из репозитория, если не делали этого ранее
+1. Обновите {% include abbr/ru/kefir_addr.txt %} по инструкции из репозитория, если не делали этого ранее
 1. Включите приставку и перейдите в "**Системные настройки**" -> "**Интернет**" -> "**Интернет-настройки**"
 1. Выберите ваше текущее подключение, нажмите на нём (A) и выберите "**Изменить настройки**"
 1. Выберите пункт "**Настройки IP-адреса**" -> "**Ручной ввод**"

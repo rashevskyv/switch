@@ -6,11 +6,11 @@ author_profile: true
 ---
 {% include toc title="Разделы" %}
 
-Эта программа нужна для того, чтобы закидывать в приставку файлы не вынимая карты памяти. Скорость закачки в таком случае будет сильно меньше, но не придется перезапускать консоль и, как следствие, {% include abbr/cfw.txt abbr="прошивку" %}
+Эта программа нужна для того, чтобы закидывать в приставку файлы не вынимая карты памяти. Скорость закачки в таком случае будет сильно меньше, но не придется перезапускать консоль и, как следствие, {% include abbr/ua/cfw.txt abbr="прошивку" %}
 
 ## Что понадобится
 
-* Запущенная [{% include abbr/cfw.txt abbr="CFW" %}](cfw){:target="_blank"}
+* Запущенная [{% include abbr/ua/cfw.txt abbr="CFW" %}](cfw){:target="_blank"}
 * Настроенный и работающий [Homebrew Launcher](hbl){:target="_blank"}
 * Свежая версия [ftpd](https://github.com/mtheall/ftpd/releases/latest){:target="_blank"} (**NRO**)
 
@@ -20,7 +20,7 @@ author_profile: true
 
 1. Выключите Switch и вставьте его карту памяти в ПК 
 1. Скопируйте `.nro`-файл ftpd в папку `switch` в корне карты памяти приставки
-1. Вставьте карту памяти в приставку и запустите [{% include abbr/cfw.txt abbr="CFW" %}](cfw){:target="_blank"} 
+1. Вставьте карту памяти в приставку и запустите [{% include abbr/ua/cfw.txt abbr="CFW" %}](cfw){:target="_blank"} 
 
 ### Часть II - подключение к FTP-серверу 
 

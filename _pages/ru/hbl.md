@@ -19,13 +19,13 @@ Homebrew Launcher (hbl) - среда для запуска самописных 
 ## Что понадобится
 
 * [Запущенная CFW](cfw){:target="_blank"}
-* Свежая версия {% include abbr/kefir_addr.txt %}
+* Свежая версия {% include abbr/ru/kefir_addr.txt %}
 
 ## Подготовительные работы
 
 1. Выключите Switch и вставьте его карту памяти в ПК 
-1. Установите {% include abbr/kefir_addr.txt %}, если ещё не делали этого
-1. Вставьте карту памяти в консоль и запустите [выбранный {% include abbr/cfw.txt abbr="кастом" %}](cfw){:target="_blank"}
+1. Установите {% include abbr/ru/kefir_addr.txt %}, если ещё не делали этого
+1. Вставьте карту памяти в консоль и запустите [выбранный {% include abbr/ru/cfw.txt abbr="кастом" %}](cfw){:target="_blank"}
 
 ##  Работа с HBL
 
@@ -46,7 +46,7 @@ Homebrew Launcher (hbl) - среда для запуска самописных 
 Если в списке приложений пусто, снимите с файлов архивные атрибуты: 
 
 * Убедитесь, что имя вашей карты отлично от `Switch` в любой комбинации строчных или заглавных букв
-* {% include /inc/fixatributes.txt %}
+* {% include /inc/ru/fixatributes.txt %}
 
 {% endcapture %}
 

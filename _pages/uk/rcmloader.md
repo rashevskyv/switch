@@ -14,7 +14,7 @@ author_profile: true
 
 {% endspoiler %}
 
-Инструкция предназначена владельцам {% include abbr/dongle.txt abbr="донгла" %} RCMLoader и создавалась в поддержку купивших устройство у меня. 
+Инструкция предназначена владельцам {% include abbr/ua/dongle.txt abbr="донгла" %} RCMLoader и создавалась в поддержку купивших устройство у меня. 
 
 ![](/images/dongle/rcmloader.jpg)
 {: .text-center}
@@ -32,14 +32,14 @@ author_profile: true
 	{: .text-center}
 	{: .notice--info}
 
-1. Отсоедините {% include abbr/dongle.txt abbr="донгл" %} от ПК
-1. Длинным нажатием кнопки {% include inc/btn.txt btn="+" %} переключите {% include abbr/dongle.txt abbr="донгл" %} в нужный режим, согласно цвету диода и соответствию его таблице
+1. Отсоедините {% include abbr/ua/dongle.txt abbr="донгл" %} от ПК
+1. Длинным нажатием кнопки {% include inc/ua/btn.txt btn="+" %} переключите {% include abbr/ua/dongle.txt abbr="донгл" %} в нужный режим, согласно цвету диода и соответствию его таблице
 
 ## Использование донгла
 
 1. Выключите консоль
 1. Вставьте карту памяти в ПК
-1. Обновите {% include abbr/kefir_addr.txt %} по инструкции из репозитория, если не делали этого ранее
+1. Обновите {% include abbr/ua/kefir_addr.txt %} по инструкции из репозитория, если не делали этого ранее
 1. Верните карту памяти в приставку
 1. Вставьте замыкатель вместо правого джойкона
 
@@ -47,11 +47,11 @@ author_profile: true
     {: .text-center}
     {: .notice--info}
 
-1. Переключите {% include abbr/dongle.txt abbr="донгл" %} на голубой свет диода, с помощью длинного нажатия на кнопку {% include inc/btn.txt btn="+" %}
+1. Переключите {% include abbr/ua/dongle.txt abbr="донгл" %} на голубой свет диода, с помощью длинного нажатия на кнопку {% include inc/ua/btn.txt btn="+" %}
 	* Достаточно выставить единожды
-1. Вставьте {% include abbr/dongle.txt abbr="донгл" %} в USBtype-C порт свитча
+1. Вставьте {% include abbr/ua/dongle.txt abbr="донгл" %} в USBtype-C порт свитча
 1. Удерживая (VOL+) включите приставку
-1. Приставка загрузится в {% include abbr/cfw.txt abbr="CFW" %}
+1. Приставка загрузится в {% include abbr/ua/cfw.txt abbr="CFW" %}
 
 ___
 

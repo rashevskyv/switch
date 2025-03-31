@@ -22,7 +22,7 @@ author_profile: true
 Теперь вы можете использовать EmuNAND для игры в пиратку, а SysNAND для игры в лицензию.
 {% spoiler Запуск прошивки без использования EmuNAND (не рекомендуется) %}
 
-Вы не сможете пользоваться онлайном даже в купленных играх, до тех пор, пока не перенесёте SysNAND в {% include abbr/emunand.md abbr="EmuNAND" %} [по этой инструкции](preparation-white){:target="blank_"}, а в SysNAND не восстановите чистый бекап.
+Вы не сможете пользоваться онлайном даже в купленных играх, до тех пор, пока не перенесёте SysNAND в {% include abbr/ru/emunand.md abbr="EmuNAND" %} [по этой инструкции](preparation-white){:target="blank_"}, а в SysNAND не восстановите чистый бекап.
 {: .notice--danger}
 
 1. [Запуск кастомной прошивки](cfw){:target="blank_"}
@@ -36,11 +36,11 @@ ___
 
 {% spoiler Материалы для самостоятельного изучения %}
 
-{% include inc/additional.txt %}
+{% include inc/ru/additional.txt %}
 
 {% endspoiler %}
 
-{% include /inc/final_message.md %}
+{% include /inc/ru/final_message.md %}
 
 <script>
 	localStorage.setItem('fuse', 1);

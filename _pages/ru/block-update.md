@@ -33,8 +33,8 @@ author_profile: true
 ### Блокировка доступа к серверам Nintendo  
 
 1. Создайте [резервную копию NAND](backup-nand){:target="_blank"} консоли и поместите её в надёжное место, если ещё не делали этого
-{% include inc/launch-hekate.txt %}
-1. Установите {% include abbr/kefir_addr.txt %} по инструкции, находящейся в его репозитории
+{% include inc/ru/launch-hekate.txt %}
+1. Установите {% include abbr/ru/kefir_addr.txt %} по инструкции, находящейся в его репозитории
     * Если уже делали, не нужно делать повторно
 1. Перейдите в меню "**Payloads**"
 1. Выберите "**Incognito_RCM.bin**"
@@ -52,8 +52,8 @@ author_profile: true
 ### Восстановление доступа к серверам Nintendo  
 
 1. Скопируйте `prodinfo_sysnand.bin` в корень вашей карты 
-{% include inc/launch-hekate.txt %}
-1. Установите {% include abbr/kefir_addr.txt %} по инструкции, находящейся в его репозитории
+{% include inc/ru/launch-hekate.txt %}
+1. Установите {% include abbr/ru/kefir_addr.txt %} по инструкции, находящейся в его репозитории
     * Если уже делали, не нужно делать повторно
 1. Перейдите в меню "**Payloads**"
 1. Выберите "**Incognito_RCM.bin**"

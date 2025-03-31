@@ -47,12 +47,12 @@ author_profile: true
 	1. Включите приставку, удерживая кнопку повышения громкости, пока не появится меню SXOS 
 	1. Перейдите в "**Options**" -> "**SX Core**" -> "**Cleanup**", затем выберите **Power Off** и **не включайте** приставку, пока не установите кефир!
 1. Вставьте карту памяти приставки в ПК 
-1. Установите свежий {% include abbr/kefir_addr.txt %}
+1. Установите свежий {% include abbr/ua/kefir_addr.txt %}
 1. Дождитесь окончания установки, затем верните карту памяти в консоль
 
 ### Часть II - Миграция Emunand 
 
-Если вы не знаете есть ли у вас {% include abbr/emunand.md abbr="EmuNAND" %}, вставьте карту памяти в ПК и посмотрите есть ли в папке `sxos` папка `emunand`. Если пака есть - у вас есть эмунанд 
+Если вы не знаете есть ли у вас {% include abbr/ua/emunand.md abbr="EmuNAND" %}, вставьте карту памяти в ПК и посмотрите есть ли в папке `sxos` папка `emunand`. Если пака есть - у вас есть эмунанд 
 {: .notice--info}
 
 1. Включите консоль 
@@ -100,7 +100,7 @@ lang: ukдампим-ключи){:target="_blank"}
 1. Перейдите в "**Options**" -> "**SX Core** / **SX Lite**", затем выберите "**Cleanup**" -> "**Continue**"
 7. Перейдите в "**Payloads**" -> `payload.bin`"`, затем выберите "**Launch**". Должен загрузиться SysNAND.
 
-Теперь установите {% include abbr/kefir_addr.txt %} ещё раз. Последующие запуски kefir будет запускаться автоматически сразу при включении приставки.
+Теперь установите {% include abbr/ua/kefir_addr.txt %} ещё раз. Последующие запуски kefir будет запускаться автоматически сразу при включении приставки.
 {: .notice--info}
 
 {% endspoiler %}
@@ -124,7 +124,7 @@ lang: ukдампим-ключи){:target="_blank"}
 
 {% spoiler Как узнать версию своего emunand:  %}
 
-1. Запустите {% include abbr/hekate.txt abbr="hekate" %}
+1. Запустите {% include abbr/ua/hekate.txt abbr="hekate" %}
 1. Запустите **TegraExplorer** (**Payloads** -> `TegraExplorer.bin`)
 1. Запустите `FW_version.te` (**Launch script**)
 1. Дождитесь появления версии Sys и EmuNAND на экране
@@ -152,7 +152,7 @@ lang: ukдампим-ключи){:target="_blank"}
 Если не помогло, вам придётся [создавать новый EmuNAND](emunand){:target="_blank"}
 {: .notice--info}
 
-Теперь установите {% include abbr/kefir_addr.txt %} ещё раз. Последующие запуски kefir будет запускаться автоматически сразу при включении приставки.
+Теперь установите {% include abbr/ua/kefir_addr.txt %} ещё раз. Последующие запуски kefir будет запускаться автоматически сразу при включении приставки.
 {: .notice--info}
 
 
@@ -172,6 +172,6 @@ lang: ukдампим-ключи){:target="_blank"}
 
 {% spoiler Не могу запустить HBL %}
 
-В Atmosphere HBL запускается, удерживая {% include inc/btn.txt btn="R" %} при запуске альбомов. Подробнее - [Homebrew Launcher](hbl){:target="_blank"}
+В Atmosphere HBL запускается, удерживая {% include inc/ua/btn.txt btn="R" %} при запуске альбомов. Подробнее - [Homebrew Launcher](hbl){:target="_blank"}
 
 {% endspoiler %}

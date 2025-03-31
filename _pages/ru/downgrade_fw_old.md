@@ -18,7 +18,7 @@ author_profile: true
 * Включите [отображение расширений файлов](https://customfw.xyz/file-extensions-windows){:target="_blank"}, если у вас Windows
 * Умение [запускать пейлоады через Fusée Gelée](fusee-gelee){:target="_blank"}
 * Приставка должна быть полностью заряжена!
-* Свежая версия пейлоада {% include inc/hekate.txt %}
+* Свежая версия пейлоада {% include inc/ru/hekate.txt %}
 * [Ключи](/files/keys.zip){:target="_blank"}, одинаковые для всех консолей
 * Прошивка **6.1.0**:
 	* [ЯД](https://yadi.sk/d/Qaaj2QznA1wc_g){:target="_blank"}
@@ -38,7 +38,7 @@ author_profile: true
 {: .notice--danger}
 
 1. Создайте [резервную копию NAND](backup-nand){:target="_blank"} консоли и поместите её в надёжное место 
-1. Установите {% include abbr/kefir_addr.txt %}, если ещё не делали этого
+1. Установите {% include abbr/ru/kefir_addr.txt %}, если ещё не делали этого
 
 ### Часть II - Перепаковка прошивки под вашу систему
 
@@ -75,7 +75,7 @@ lang: ru%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8){:ta
 1. Скопируйте **содержимое** `.zip`-архива с [memloader](/files/memloader.zip){:target="_blank"} в **корень** вашей карты памяти, соглашаясь на замену (объединение в macOS)
 1. Скопируйте пейлоад `memloader.bin` в папку `bootloader/payloads`
 1. Верните карту памяти обратно в Switch
-{% include inc/launch-hekate.txt %}
+{% include inc/ru/launch-hekate.txt %}
 1. Перейдите в меню "**Payloads**"
 1. Выберите "**memloader.bin**"
 
@@ -83,7 +83,7 @@ lang: ru%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8){:ta
 
 {% spoiler Монтирование BOOT0 в "LINUX UMS DISK 0" %}
 
-{% include inc/mount_boot.txt
+{% include inc/ru/mount_boot.txt
 
 	boot="BOOT0" 
 
@@ -112,7 +112,7 @@ lang: ru%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8){:ta
 
 {% spoiler Монтирование eMMC RAW в "LINUX UMS DISK 0" %}
 
-{% include inc/mount_boot.txt 
+{% include inc/ru/mount_boot.txt 
 
 	boot="eMMC RAW" 
 
@@ -171,7 +171,7 @@ lang: ru%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8){:ta
 
 {% spoiler Работа с разделом SAFE  %}
 
-{% include inc/mount.txt 
+{% include inc/ru/mount.txt 
 
 	mount="SAFE" 
 
@@ -183,7 +183,7 @@ lang: ru%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8){:ta
 
 {% spoiler Работа с разделом SYSTEM %}
 
-{% include inc/mount.txt 
+{% include inc/ru/mount.txt 
 
 	mount="SYSTEM" 
 
@@ -214,7 +214,7 @@ lang: ru%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8){:ta
 
 {% spoiler Работа с разделом USER %}
 
-{% include inc/mount.txt 
+{% include inc/ru/mount.txt 
 
 	mount="USER" 
 
@@ -244,7 +244,7 @@ lang: ru%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8){:ta
 
 ### Часть V - AutoRCM
 
-{% include inc/launch-hekate.txt %}
+{% include inc/ru/launch-hekate.txt %}
 1. Перейдите в раздел "**Tools**" -> "**autoRCM**" и выберите "**Enable AutoRCM**", затем нажмите любую кнопку и выберите "**Back**" для возвращения в главное меню
 
 ___

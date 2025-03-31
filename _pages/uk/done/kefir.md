@@ -36,14 +36,14 @@ author_profile: true
 
 1. **[Kefirosphere](https://github.com/rashevskyv/Kefirosphere)**, форк [Atmosphere](https://github.com/Atmosphere-NX/Atmosphere)
 2. **Сігпатчі**. Завдяки ним на Atmosphere можна запускати непідписані (читай: *піратські*) програми та ігри.
-3. **Завантажувач [hekate](https://github.com/CTCaer/hekate){:target="_blank"}**. Завдяки завантажувачу ви можете запускати прошивку та інші {% include abbr/payload.txt abbr="пейлоади" %} через зручне меню, створювати та відновлювати резервну копію NAND, робити EmuNAND, отримувати інформацію про стан системи, монтувати карту пам'яті до ПК без витягування її зі свічу, робити перерозмітку карти пам'яті для встановлення інших ОС і багато іншого
-4. **Встановлені {% include abbr/payload.txt abbr="пейлоади" %}**:
+3. **Завантажувач [hekate](https://github.com/CTCaer/hekate){:target="_blank"}**. Завдяки завантажувачу ви можете запускати прошивку та інші {% include abbr/ua/payload.txt abbr="пейлоади" %} через зручне меню, створювати та відновлювати резервну копію NAND, робити EmuNAND, отримувати інформацію про стан системи, монтувати карту пам'яті до ПК без витягування її зі свічу, робити перерозмітку карти пам'яті для встановлення інших ОС і багато іншого
+4. **Встановлені {% include abbr/ua/payload.txt abbr="пейлоади" %}**:
   * [Lockpick_RCM](https://codeberg.org/rashevskyv/Locktrick/){:target="_blank"} - програма для [дампу ключів приставки](backup-nand#частина-iii---
 lang: ukдампимо-ключі){:target="_blank"}
   * [TegraExplorer](https://github.com/rashevskyv/TegraExplorer/){:target="_blank"} - файловий менеджер для Switch у вигляді пейлоада. Аналог GodMode9 для 3DS
 5. **Встановлене Homebrew**
   * [DBI](https://github.com/rashevskyv/dbi){:target="_blank"} - програма для [встановлення ігор](games){:target="_blank"} по USB або з карти пам'яті
-  * [{% include /inc/tinfoil.txt %}](http://tinfoil.io){:target="_blank"} - програма, що дозволяє [качати ігри](tinfoil){:target="_blank"} для приставки прямо з мережі
+  * [{% include /inc/ua/tinfoil.txt %}](http://tinfoil.io){:target="_blank"} - програма, що дозволяє [качати ігри](tinfoil){:target="_blank"} для приставки прямо з мережі
   * [Kefir Updater](https://github.com/rashevskyv/kefir-updater){:target="_blank"} - програма для оновлення kefir через інтернет
   * [Sphaira](https://github.com/ITotalJustice/sphaira/releases/){:target="_blank"} - середовище для запуску homebrew, скачування тем та додатків на switch, файловий менеджер 
   * [Daybreak](https://github.com/Atmosphere-NX/Atmosphere/tree/0.14.1/troposphere/daybreak){:target="_blank"} - програма для [безпечного оновлення](update-fw){:target="_blank"} версії системного ПЗ приставки
@@ -69,7 +69,7 @@ lang: ukдампимо-ключі){:target="_blank"}
 
 {% spoiler Перше встановлення або встановлення на чисту карту пам'яті %}
 
-1. Скопіюйте в корінь карти пам'яті приставки **вміст** архіву `kefir.zip` з репозиторію {% include /abbr/kefir_git.txt %}
+1. Скопіюйте в корінь карти пам'яті приставки **вміст** архіву `kefir.zip` з репозиторію {% include /abbr/ua/kefir_git.txt %}
 1. Вставте карту пам'яті в Switch
 1. [Запустіть приставку у прошивку](get-started){:target="_blank"}, відповідно до типу вашого зламу. `payload.bin` - пейлоад, який потрібно пробрасувати при запуску приставки через Fusée Gelée, знаходиться в архіві зі збіркою
 
@@ -86,7 +86,7 @@ lang: ukдампимо-ключі){:target="_blank"}
 {: .notice--warning}
 
 Якщо приставка вимкнена, вставте карту пам'яті в ПК, якщо увімкнена, то:
-1. Перезавантажте приставку через меню, що викликається утриманням кнопки {% include inc/btn.txt btn="POWER" %}
+1. Перезавантажте приставку через меню, що викликається утриманням кнопки {% include inc/ua/btn.txt btn="POWER" %}
 1. На сплеш-скріні кефіру натисніть кнопку зниження гучності, щоб потрапити в hekate
 1. Тепер ви можете вийняти карту пам'яті зі свіча і вставити її в ПК.
 
@@ -95,7 +95,7 @@ lang: ukдампимо-ключі){:target="_blank"}
 
 ### Встановлення kefir (всі ОС)
 
-1. Скопіюйте в корінь карти пам'яті приставки **вміст** архіву `kefir.zip` з репозиторію {% include /abbr/kefir_git.txt %}
+1. Скопіюйте в корінь карти пам'яті приставки **вміст** архіву `kefir.zip` з репозиторію {% include /abbr/ua/kefir_git.txt %}
 1. Вставте карту пам'яті назад у Switch
 1. В **hekate** виберіть **More configs** -> **Update Kefir**
 1. Після закінчення встановлення приставка запуститься в прошивку
@@ -149,27 +149,27 @@ lang: ukдампимо-ключі){:target="_blank"}
 {% endspoiler %}
 
 ## Запуск Atmosphere
-{% include inc/launch-cfw.txt %}
+{% include inc/ua/launch-cfw.txt %}
 
 Якщо після входу в прошивку приставка не бачить карту і вимагає оновити прошивку для її роботи, або просто зависає в чорному екрані після логотипу Nintendo, то на вашій приставці не встановлені драйвери exFAT! Відформатуйте карту пам'яті в [FAT32](https://format.customfw.xyz){: target="blank_"}
 {: .notice--warning}
 
-В {% include abbr/hekate.txt abbr="hekate" %} за замовчуванням налаштований автозапуск. Тобто при запуску приставки меню {% include abbr/hekate.txt abbr="hekate" %} не відображатиметься, а запуститься одразу прошивка. Для переходу в меню {% include abbr/hekate.txt abbr="hekate" %} затисніть (VOL-) під час появи сплеш-скріна.
+В {% include abbr/ua/hekate.txt abbr="hekate" %} за замовчуванням налаштований автозапуск. Тобто при запуску приставки меню {% include abbr/ua/hekate.txt abbr="hekate" %} не відображатиметься, а запуститься одразу прошивка. Для переходу в меню {% include abbr/ua/hekate.txt abbr="hekate" %} затисніть (VOL-) під час появи сплеш-скріна.
 {: .notice--info}
 
 ### **Важлива інформація!**
 
   * Перезавантаження в hekate відбувається прямо з прошивки, через звичайне меню перезавантаження. Просто затисніть (VOL-) під час сплешскріна кефіру
-  * Ви можете отримати доступ до своєї карти пам'яті, не виймаючи її з приставки по MTP (**DBI** -> **Run MTP Responder**), або через hekate ({% include inc/sd_hekate.md %}) (не у всіх працює коректно, **неможливо оновити kefir по MTP**)
+  * Ви можете отримати доступ до своєї карти пам'яті, не виймаючи її з приставки по MTP (**DBI** -> **Run MTP Responder**), або через hekate ({% include inc/ua/sd_hekate.md %}) (не у всіх працює коректно, **неможливо оновити kefir по MTP**)
   * Встановлення та оновлення kefir проводяться однаково!
   * При виникненні помилки "**Is BEK missing**" вимкніть приставку й увімкніть заново.
 
 ## Додаткова інформація
-* Для роботи з модулями ([sys-con](https://github.com/cathery/sys-con/releases/latest){:target="_blank"}, [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} та ін.) у кефірі встановлений [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} - спеціальне оверлей-меню для взаємодії з системою. Для його активації натисніть {% include inc/btn.txt btn="L" %} + {% include inc/btn.txt btn="DOWN" %} + {% include inc/btn.txt btn="R3" %}
+* Для роботи з модулями ([sys-con](https://github.com/cathery/sys-con/releases/latest){:target="_blank"}, [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} та ін.) у кефірі встановлений [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} - спеціальне оверлей-меню для взаємодії з системою. Для його активації натисніть {% include inc/ua/btn.txt btn="L" %} + {% include inc/ua/btn.txt btn="DOWN" %} + {% include inc/ua/btn.txt btn="R3" %}
 * Для переходу в semi-stock
-  * **З самої прошивки**: перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/btn.txt btn="L" %} + {% include inc/btn.txt btn="DOWN" %} + {% include inc/btn.txt btn="R3" %}), натисніть вправо > `Semi-stock`
+  * **З самої прошивки**: перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/ua/btn.txt btn="L" %} + {% include inc/ua/btn.txt btn="DOWN" %} + {% include inc/ua/btn.txt btn="R3" %}), натисніть вправо > `Semi-stock`
   * **При запуску консолі**:
-    {% include inc/launch-hekate.txt %}
+    {% include inc/ua/launch-hekate.txt %}
     1. Виберіть `More-configs` > `Semi-stock (blackscreen fix)`
   * Зверніть увагу, що при запуску з прошивки, встановлена тема буде вимкнена, що дозволить уникнути помилок, якщо на консолі різні версії системного ПЗ та емунанду
 * Оновити кефір можна за допомогою утиліти **Kefir Updater**
@@ -179,13 +179,13 @@ lang: ukдампимо-ключі){:target="_blank"}
 
 ### Розгін
 * **Увімкнення**
-  Для активації розгону перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/btn.txt btn="L" %} + {% include inc/btn.txt btn="DOWN" %} + {% include inc/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Use overclock`
+  Для активації розгону перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/ua/btn.txt btn="L" %} + {% include inc/ua/btn.txt btn="DOWN" %} + {% include inc/ua/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Use overclock`
 * **Вимкнення**
-  Для активації розгону перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/btn.txt btn="L" %} + {% include inc/btn.txt btn="DOWN" %} + {% include inc/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Disable overclock`
+  Для активації розгону перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/ua/btn.txt btn="L" %} + {% include inc/ua/btn.txt btn="DOWN" %} + {% include inc/ua/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Disable overclock`
 
 ### Режим підтримки 8Гб пам'яті
 * **Увімкнення**
-  * Для вмикання перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/btn.txt btn="L" %} + {% include inc/btn.txt btn="DOWN" %} + {% include inc/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Enable 8GB support`
+  * Для вмикання перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/ua/btn.txt btn="L" %} + {% include inc/ua/btn.txt btn="DOWN" %} + {% include inc/ua/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Enable 8GB support`
 * **Вимкнення**
   * Для вимкнення перевстановіть кефір зручними способом
 

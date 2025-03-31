@@ -16,7 +16,7 @@ author_profile: true
 
 {% endspoiler %}
 
-Инструкция предназначена владельцам {% include abbr/dongle.txt abbr="донгла" %} RCMLoader и создавалась в поддержку купивших устройство у меня. 
+Инструкция предназначена владельцам {% include abbr/ru/dongle.txt abbr="донгла" %} RCMLoader и создавалась в поддержку купивших устройство у меня. 
 
 ![](/images/dongle/rcmloader.jpg)
 {: .text-center}
@@ -34,14 +34,14 @@ author_profile: true
 	{: .text-center}
 	{: .notice--info}
 
-1. Отсоедините {% include abbr/dongle.txt abbr="донгл" %} от ПК
-1. Длинным нажатием кнопки (+) переключите {% include abbr/dongle.txt abbr="донгл" %} в нужный режим, согласно цвету диода и соответствию его таблице
+1. Отсоедините {% include abbr/ru/dongle.txt abbr="донгл" %} от ПК
+1. Длинным нажатием кнопки (+) переключите {% include abbr/ru/dongle.txt abbr="донгл" %} в нужный режим, согласно цвету диода и соответствию его таблице
 
 ## Использование донгла
 
 1. Выключите консоль
 1. Вставьте карту памяти в ПК
-1. Обновите {% include abbr/kefir_addr.txt %} по инструкции из репозитория, если не делали этого ранее
+1. Обновите {% include abbr/ru/kefir_addr.txt %} по инструкции из репозитория, если не делали этого ранее
 1. Верните карту памяти в приставку
 1. Вставьте замыкатель вместо правого джойкона
 
@@ -49,11 +49,11 @@ author_profile: true
     {: .text-center}
     {: .notice--info}
 
-1. Переключите {% include abbr/dongle.txt abbr="донгл" %} на голубой свет диода, с помощью длинного нажатия на кнопку (+)
+1. Переключите {% include abbr/ru/dongle.txt abbr="донгл" %} на голубой свет диода, с помощью длинного нажатия на кнопку (+)
 	* Достаточно выставить единожды
-1. Вставьте {% include abbr/dongle.txt abbr="донгл" %} в USBtype-C порт свитча
+1. Вставьте {% include abbr/ru/dongle.txt abbr="донгл" %} в USBtype-C порт свитча
 1. Удерживая (VOL+) включите приставку
-1. Приставка загрузится в {% include abbr/cfw.txt abbr="CFW" %}
+1. Приставка загрузится в {% include abbr/ru/cfw.txt abbr="CFW" %}
 
 ___
 
