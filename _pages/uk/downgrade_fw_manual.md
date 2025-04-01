@@ -6,17 +6,17 @@ author_profile: true
 ---
 {% include toc title="Разделы" %}
 
-Этот гайд для даунгрейда прошивки и для тех, у кого приставка не включается, но цел раздел PRODINFO, либо есть его бекап (атмосфера 0.8.1 и выше бекапит PRODINFO на карту автоматически). Для обновления прошивки воспользуйтесь [этой](update-fw) инструкцией!
+Этот гайд для даунгрейда прошивки и для тех, у кого приставка не включается, но цел раздел PRODINFO, либо есть его бекап (атмосфера 0.8.1 и выше бекапит PRODINFO на карту автоматически). Для обновления прошивки воспользуйтесь [этой](/uk/update-fw) инструкцией!
 
-Это ОЧЕНЬ сложный и комплексный метод. ОБЯЗАТЕЛЬНО [сделайте бекап](backup-nand){:target="_blank"} своей текущей прошивки до того, как начнёте выполнение этого метода. ОБЯЗАТЕЛЬНО. 
+Это ОЧЕНЬ сложный и комплексный метод. ОБЯЗАТЕЛЬНО [сделайте бекап](/uk/backup-nand){:target="_blank"} своей текущей прошивки до того, как начнёте выполнение этого метода. ОБЯЗАТЕЛЬНО. 
 {: .notice--danger}
 
 ## Что понадобится
 
 * Включите [отображение расширений файлов](https://customfw.xyz/file-extensions-windows){:target="_blank"}, если у вас Windows
-* Умение [запускать пейлоады через Fusée Gelée](fusee-gelee){:target="_blank"}
+* Умение [запускать пейлоады через Fusée Gelée](/uk/fusee-gelee){:target="_blank"}
 * Приставка должна быть полностью заряжена!
-* Свежая версия пейлоада {% include inc/ua/hekate.txt %}
+* Свежая версия пейлоада {% include inc/uk/hekate.txt %}
 * [Ключи](/files/keys.zip){:target="_blank"}, одинаковые для всех консолей
 * Прошивка **6.1.0**:
 	* [ЯД](https://yadi.sk/d/Qaaj2QznA1wc_g){:target="_blank"}
@@ -35,8 +35,8 @@ author_profile: true
 Этот пункт нужно делать **обязательно**! Для продолжения работы нам понадобятся уникальные ключи именно вашей приставки! Без шуток! Вероятность, что что-то пойдёт не так много выше нуля, без бекапа вы ничего не сможете исправить. Ну и обязательно нужен дамп ключей. 
 {: .notice--danger}
 
-1. Создайте [резервную копию NAND](backup-nand){:target="_blank"} консоли и поместите её в надёжное место 
-1. Установите {% include abbr/ua/kefir_addr.txt %}, если ещё не делали этого
+1. Создайте [резервную копию NAND](/uk/backup-nand){:target="_blank"} консоли и поместите её в надёжное место 
+1. Установите {% include abbr/uk/kefir_addr.txt %}, если ещё не делали этого
 
 ### Часть II - Перепаковка прошивки под вашу систему
 
@@ -73,7 +73,7 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8){:ta
 1. Скопируйте **содержимое** `.zip`-архива с [memloader](/files/memloader.zip){:target="_blank"} в **корень** вашей карты памяти, соглашаясь на замену (объединение в macOS)
 1. Скопируйте пейлоад `memloader.bin` в папку `bootloader/payloads`
 1. Верните карту памяти обратно в Switch
-{% include inc/ua/launch-hekate.txt %}
+{% include inc/uk/launch-hekate.txt %}
 1. Перейдите в меню "**Payloads**"
 1. Выберите "**memloader.bin**"
 
@@ -81,7 +81,7 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8){:ta
 
 {% spoiler Монтирование BOOT0 в "LINUX UMS DISK 0" %}
 
-{% include inc/ua/mount_boot.txt
+{% include inc/uk/mount_boot.txt
 
 	boot="BOOT0" 
 
@@ -103,14 +103,14 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8){:ta
 
 1. Нажмите "**Flash!**" и ожидайте окончания закачки
 1. Закройте программу
-1. Удерживайте кнопку {% include inc/ua/btn.txt btn="POWER" %} 15 секунд, пока не погаснет подсветка экрана Switch
+1. Удерживайте кнопку {% include inc/uk/btn.txt btn="POWER" %} 15 секунд, пока не погаснет подсветка экрана Switch
 1. **Повторите для BOOT1**
 
 {% endspoiler %}
 
 {% spoiler Монтирование eMMC RAW в "LINUX UMS DISK 0" %}
 
-{% include inc/ua/mount_boot.txt 
+{% include inc/uk/mount_boot.txt 
 
 	boot="eMMC RAW" 
 
@@ -169,7 +169,7 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8){:ta
 
 {% spoiler Работа с разделом SAFE  %}
 
-{% include inc/ua/mount.txt 
+{% include inc/uk/mount.txt 
 
 	mount="SAFE" 
 
@@ -181,7 +181,7 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8){:ta
 
 {% spoiler Работа с разделом SYSTEM %}
 
-{% include inc/ua/mount.txt 
+{% include inc/uk/mount.txt 
 
 	mount="SYSTEM" 
 
@@ -212,7 +212,7 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8){:ta
 
 {% spoiler Работа с разделом USER %}
 
-{% include inc/ua/mount.txt 
+{% include inc/uk/mount.txt 
 
 	mount="USER" 
 
@@ -235,17 +235,17 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8){:ta
 1. Перейдите в папку `NX-6.1.0-exfat`, которую мы сгенерировали в Части III и скопируйте всё **содержимое** папки `USER` на смонтированный диск с заменой (**объединить** на macOS)
 1. После окончания копирования отмонтируйте диск, нажав на кнопку "**Unmount**" в окне HacDiskMount
 1. Закройте HacDiskMount
-1. Выключите Switch, зажав кнопку {% include inc/ua/btn.txt btn="POWER" %} на 15 секунд, пока подсветка экрана не отключится
+1. Выключите Switch, зажав кнопку {% include inc/uk/btn.txt btn="POWER" %} на 15 секунд, пока подсветка экрана не отключится
 
 {% endspoiler %}
 
 
 ### Часть V - AutoRCM
 
-{% include inc/ua/launch-hekate.txt %}
+{% include inc/uk/launch-hekate.txt %}
 1. Перейдите в раздел "**Tools**" -> "**autoRCM**" и выберите "**Enable AutoRCM**", затем нажмите любую кнопку и выберите "**Back**" для возвращения в главное меню
 
 ___
 
-# Следующий шаг: [Безопасное обновление прошивки](update-fw) 
+# Следующий шаг: [Безопасное обновление прошивки](/uk/update-fw) 
 {: .notice--success}

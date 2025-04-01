@@ -13,8 +13,8 @@ author_profile: true
 
 ## Что понадобится
 
-* Запущенная [{% include abbr/ru/cfw.txt abbr="CFW" %}](cfw){:target="_blank"}
-* Настроенный и работающий [Homebrew Launcher](hbl){:target="_blank"}
+* Запущенная [{% include abbr/ru/cfw.txt abbr="CFW" %}](/ru/cfw){:target="_blank"}
+* Настроенный и работающий [Homebrew Launcher](/ru/hbl){:target="_blank"}
 * Свежая версия [ftpd](https://github.com/mtheall/ftpd/releases/latest){:target="_blank"} (**NRO**)
 
 ## Инструкция
@@ -23,7 +23,7 @@ author_profile: true
 
 1. Выключите Switch и вставьте его карту памяти в ПК 
 1. Скопируйте `.nro`-файл ftpd в папку `switch` в корне карты памяти приставки
-1. Вставьте карту памяти в приставку и запустите [{% include abbr/ru/cfw.txt abbr="CFW" %}](cfw){:target="_blank"} 
+1. Вставьте карту памяти в приставку и запустите [{% include abbr/ru/cfw.txt abbr="CFW" %}](/ru/cfw){:target="_blank"} 
 
 ### Часть II - подключение к FTP-серверу 
 

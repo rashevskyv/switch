@@ -87,7 +87,7 @@ author_profile: true
 1. Скопируйте **содержимое** папки `sample` из `.zip`-архива с [memloader](https://switchtools.sshnuke.net/){:target="_blank"} в **корень** вашей карты памяти
 1. Верните карту памяти обратно в Switch
 1. Скопируйте пейлоад [`memloader.bin`](https://switchtools.sshnuke.net/){:target="_blank"} в папку из которой передаёте их на Switch (или в папку `\bootloader\payloads` для запуска через hekate)
-1. Запустите пейлоад [`memloader.bin`](https://switchtools.sshnuke.net/){:target="_blank"} с помощью [Fusée Gelée](fusee-gelee){:target="_blank"}
+1. Запустите пейлоад [`memloader.bin`](https://switchtools.sshnuke.net/){:target="_blank"} с помощью [Fusée Gelée](/ru/fusee-gelee){:target="_blank"}
 1. На экране приставки выберите `ums_eMMC.ini` и запустите
 	* Для перемещения по меню используйте клавиши (VOL-) и (VOL+), для выбора - (POWER)
 	* Обратите внимание, что выбрали именно "ums_**eMMC**.ini"
@@ -132,7 +132,7 @@ author_profile: true
 		* удалите все устройства с восклицательным знаком (так же ставьте галочку на удалении драйверов)
 		* удалите все устройства с меткой "**USB Download Gadget**".
 		* После удаления устройств выберите "**Действия**" -> "**Обновить конфигурацию оборудования**" в диспетчере устройств
-	* Если после всех манипуляций диск так и не появился, выключите Switch, перезагрузите ПК, переустановите драйвера и по новой запустите пейлоад `memloader.bin` с помощью [Fusée Gelée](fusee-gelee){:target="_blank"}
+	* Если после всех манипуляций диск так и не появился, выключите Switch, перезагрузите ПК, переустановите драйвера и по новой запустите пейлоад `memloader.bin` с помощью [Fusée Gelée](/ru/fusee-gelee){:target="_blank"}
 1. Запустите [HDD Raw Copy Tool](http://hddguru.com/software/HDD-Raw-Copy-Tool/HDDRawCopy1.10Portable.exe){:target="_blank"} от имени администратора
 1. Выберите "**LINUX UMS DISK 0**" и нажмите "**Continue**"
 1. Два раза кликните на надписи "**Double-click to open file**" и сохраните бекап с именем `rawnand`
@@ -145,7 +145,7 @@ author_profile: true
 {% spoiler macOS %}
 
 1. Запустите программу Дисковая утилита, убедитесь, что там появился внешний диск с названием "Linux UMS disk 0 Media"
-	* Если такового нет, то выключите Switch и по новой запустите пейлоад `memloader.bin` с помощью [Fusée Gelée](fusee-gelee){:target="_blank"}
+	* Если такового нет, то выключите Switch и по новой запустите пейлоад `memloader.bin` с помощью [Fusée Gelée](/ru/fusee-gelee){:target="_blank"}
 1. В Дисковой утилите нажмите правой кнопкой мыши на пункте "Linux UMS disk 0 Media"
 1. Выберите опцию "Образ из Linux UMS disk 0 Media" и укажите путь куда сохранить полученный файл
 	* Процесс займёт какое-то время. 
@@ -217,7 +217,7 @@ author_profile: true
 
 Восстановление проводится ровно через те же самые программы, что и делалась резервная копия, за исключением того, что вы сперва выбираете файл резервной копии, а потом диск, на который она будет восстанавливаться. Обратите внимание, что восстанавливать нужно и RAWNAND и BOOT0, BOOT1!
 
-При проблемах с восстановлением или отсутствии бекапа можете попробовать [эту инструкцию](downgrade_fw){:target="_blank"}
+При проблемах с восстановлением или отсутствии бекапа можете попробовать [эту инструкцию](/ru/downgrade_fw){:target="_blank"}
 
 {% endspoiler %}
 

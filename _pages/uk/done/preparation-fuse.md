@@ -13,13 +13,13 @@ author_profile: true
 
 ## Встановлення прошивки в EmuNAND
 
-1. [Встановлення та запуск Kefir](kefir){:target="blank_"}
-1. [Резервне копіювання NAND](backup-nand){:target="_blank"}
-1. [Створення EmuNAND](emunand){:target="blank_"}
-1. [Оновлення SysNAND до рекомендованої версії системного ПЗ](update-fw){:target="blank_"}
-1. [Прив'язка облікового запису](link-account){:target="blank_"} - останній штрих. Прив'язки облікового запису для роботи потребують деякі ігри
-1. [Запуск ігор](games){:target="blank_"} - фінальна частина, заради якої все й робилося
-1. [Використання вже прошитої приставки](usage)
+1. [Встановлення та запуск Kefir](/uk/kefir){:target="blank_"}
+1. [Резервне копіювання NAND](/uk/backup-nand){:target="_blank"}
+1. [Створення EmuNAND](/uk/emunand){:target="blank_"}
+1. [Оновлення SysNAND до рекомендованої версії системного ПЗ](/uk/update-fw){:target="blank_"}
+1. [Прив'язка облікового запису](/uk/link-account){:target="blank_"} - останній штрих. Прив'язки облікового запису для роботи потребують деякі ігри
+1. [Запуск ігор](/uk/games){:target="blank_"} - фінальна частина, заради якої все й робилося
+1. [Використання вже прошитої приставки](/uk/usage)
 
 Тепер ви можете використовувати EmuNAND для гри в піратку, а SysNAND для гри в ліцензію.
 
@@ -27,13 +27,13 @@ author_profile: true
 
 {% spoiler %}
 
-Ви не зможете користуватися онлайном навіть у куплених іграх, доти, доки не перенесете SysNAND в {% include abbr/ua/emunand.md abbr="EmuNAND" %} [за цією інструкцією](preparation-white){:target="blank_"}, а в SysNAND не відновите чистий бекап.
+Ви не зможете користуватися онлайном навіть у куплених іграх, доти, доки не перенесете SysNAND в {% include abbr/uk/emunand.md abbr="EmuNAND" %} [за цією інструкцією](/uk/preparation-white){:target="blank_"}, а в SysNAND не відновите чистий бекап.
 {: .notice--danger}
 
-1. [Запуск кастомної прошивки](cfw){:target="blank_"}
-1. [Оновлення SysNAND до рекомендованої версії системного ПЗ](update-fw){:target="blank_"}
-1. [Прив'язка облікового запису](link-account){:target="blank_"} - останній штрих. Прив'язки облікового запису для роботи потребують деякі ігри
-1. [Запуск ігор](games){:target="blank_"} - фінальна частина, заради якої все й робилося
+1. [Запуск кастомної прошивки](/uk/cfw){:target="blank_"}
+1. [Оновлення SysNAND до рекомендованої версії системного ПЗ](/uk/update-fw){:target="blank_"}
+1. [Прив'язка облікового запису](/uk/link-account){:target="blank_"} - останній штрих. Прив'язки облікового запису для роботи потребують деякі ігри
+1. [Запуск ігор](/uk/games){:target="blank_"} - фінальна частина, заради якої все й робилося
 
 {% endspoiler %}
 
@@ -43,11 +43,11 @@ ___
 
 {% spoiler %}
 
-{% include inc/ua/additional.txt %}
+{% include inc/uk/additional.txt %}
 
 {% endspoiler %}
 
-{% include /inc/ua/final_message.md %}
+{% include /inc/uk/final_message.md %}
 
 <script>
     // Встановлюємо значення

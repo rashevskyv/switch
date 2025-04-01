@@ -16,7 +16,7 @@ author_profile: true
 
 ## Что понадобится
 
-* Свежая версия {% include abbr/ua/kefir_addr.txt %}
+* Свежая версия {% include abbr/uk/kefir_addr.txt %}
 * Свежая версия [ldn_mitm](https://github.com/spacemeowx2/ldn_mitm/releases/latest){:target="_blank"} (ldn_mitm_vx.x.x.zip)
 	* Рекомендуется качать из [hb appstore](https://apps.fortheusers.org/switch/ldn_mitm){:target="_blank"} (раздел tools)
 * Свежая версия программы [Lan-Play-Server-Manager](https://github.com/Urferu/Lan-Play-Server-Manager/releases/latest){:target="_blank"}
@@ -46,9 +46,9 @@ author_profile: true
 
 ### Часть II - Настраиваем Switch
 
-1. Обновите {% include abbr/ua/kefir_addr.txt %} по инструкции из репозитория, если не делали этого ранее
+1. Обновите {% include abbr/uk/kefir_addr.txt %} по инструкции из репозитория, если не делали этого ранее
 1. Включите приставку и перейдите в "**Системные настройки**" -> "**Интернет**" -> "**Интернет-настройки**"
-1. Выберите ваше текущее подключение, нажмите на нём {% include inc/ua/btn.txt btn="A" %} и выберите "**Изменить настройки**"
+1. Выберите ваше текущее подключение, нажмите на нём {% include inc/uk/btn.txt btn="A" %} и выберите "**Изменить настройки**"
 1. Выберите пункт "**Настройки IP-адреса**" -> "**Ручной ввод**"
 1. Введите статический IP-адрес в диапазоне от `10.13.0.1` до `10.13.255.254` (кроме `10.13.37.1`)
 1. Значение поля "**Маска подсети**" установите в `255.255.0.0`
@@ -66,7 +66,7 @@ author_profile: true
 Настроим игру на примере Mario Kart 8
 
 1. Запустите игру
-1. Нажмите одновременно {% include inc/ua/btn.txt btn="L" %}+{% include inc/ua/btn.txt btn="R" %}+(Left_Analog)
+1. Нажмите одновременно {% include inc/uk/btn.txt btn="L" %}+{% include inc/uk/btn.txt btn="R" %}+(Left_Analog)
 	* Вы увидите, как название последнего пункта изменилось на "**Игра по LAN**"
 1. Зайдите в "**Игра по LAN**" и выберите "**1и**", если собираетесь играть самостоятельно на своей приставке и "**2и**", если на одной консоли будут играть два игрока
 1. Создайте комнату, или подключите к уже имеющейся 

@@ -14,7 +14,7 @@ author_profile: true
 Рекомендуется сделать бекап перед сбросом!
 {: .notice--warning}
 
-1. Запустите {% include abbr/ua/hekate.txt abbr="hekate" %} -> **Payloads** -> `TegraExplorer.bin`
+1. Запустите {% include abbr/uk/hekate.txt abbr="hekate" %} -> **Payloads** -> `TegraExplorer.bin`
 1. Выберите `SystemWipe.te`
-1. Выберите **Wipe sysmmc**, чтобы сбросить к заводским {% include abbr/ua/sysnand.md abbr="SysNAND" %} и **Wipe emummc**, чтобы сбросить {% include abbr/ua/emunand.md abbr="EmuNAND" %}
-1. Нажмите кнопку {% include inc/ua/btn.txt btn="POWER" %} для подтверждения сброса 
+1. Выберите **Wipe sysmmc**, чтобы сбросить к заводским {% include abbr/uk/sysnand.md abbr="SysNAND" %} и **Wipe emummc**, чтобы сбросить {% include abbr/uk/emunand.md abbr="EmuNAND" %}
+1. Нажмите кнопку {% include inc/uk/btn.txt btn="POWER" %} для подтверждения сброса 

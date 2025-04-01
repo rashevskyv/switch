@@ -21,19 +21,19 @@ author_profile: true
 После выполнения каждой инструкции из нижеследующего списка, возвращайтесь на эту страницу и переходите к следующему пункту. Если какие-то из действий вы уже выполняли, повторно их делать не нужно. 
 {: .notice--warning}
 
-1. [Создание EmuNAND](emunand){:target="blank_"}
+1. [Создание EmuNAND](/ru/emunand){:target="blank_"}
 	* Пользователям {% include abbr/ru/caffeine.txt abbr="Caffeine" %} придётся создать ещё один EmuNAND для запуска официальной прошивки
-1. [Восстановление резервной копии оригинальной прошивки](backup-nand#восстановление-резервной-копии){:target="blank_"}
+1. [Восстановление резервной копии оригинальной прошивки](/ru/backup-nand#восстановление-резервной-копии){:target="blank_"}
 	* Пользователям {% include abbr/ru/caffeine.txt abbr="Caffeine" %} для игры в лицензию нужно будет запускать не {% include abbr/ru/sysnand.md abbr="SysNAND" %}, а {% include abbr/ru/emunand.md abbr="EmuNAND" %}, созданный специально для лицензии
 		* В случае, если у вас нет оригинального бекапа, вы можете отформатировать свой SysNAND с помощью TegraExplorer: 
 			* {% include abbr/ru/hekate.txt abbr="hekate" %} > `payloads` > `TegraExplorer.bin` > `SystemWipe.te`
-		* В случае, если у вас был установлен **incognito** и серийный номер не вернулся даже после восстановления оригинального бекапа, восстановите его вручную [по этой инструкции](block-update#%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B0-%D0%BA-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B0%D0%BC-nintendo){:target="_blank"}
-1. [Запуск кастомной прошивки](cfw){:target="blank_"} - теперь запуск кастома делается через {% include abbr/ru/emunand.md abbr="EmuNAND" %}, а запуск лицензии - через {% include abbr/ru/sysnand.md abbr="SysNAND" %} или {% include abbr/ru/emunand.md abbr="EmuNAND" %}, созданный специально для лицензии. Забыли как запускать первое и второе? Вернитесь к [инструкции по созданию эмунанда](emunand){:target="blank_"} и освежите себе память. 
-1. [Обновление официальной прошивки до рекомендуемой версии системного ПО](update-fw){:target="blank_"}
+		* В случае, если у вас был установлен **incognito** и серийный номер не вернулся даже после восстановления оригинального бекапа, восстановите его вручную [по этой инструкции](/ru/block-update#%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B0-%D0%BA-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B0%D0%BC-nintendo){:target="_blank"}
+1. [Запуск кастомной прошивки](/ru/cfw){:target="blank_"} - теперь запуск кастома делается через {% include abbr/ru/emunand.md abbr="EmuNAND" %}, а запуск лицензии - через {% include abbr/ru/sysnand.md abbr="SysNAND" %} или {% include abbr/ru/emunand.md abbr="EmuNAND" %}, созданный специально для лицензии. Забыли как запускать первое и второе? Вернитесь к [инструкции по созданию эмунанда](/ru/emunand){:target="blank_"} и освежите себе память. 
+1. [Обновление официальной прошивки до рекомендуемой версии системного ПО](/ru/update-fw){:target="blank_"}
 	* **ВНИМАНИЕ!!! НИКОГДА НЕ ОБНОВЛЯЙТЕ ПРОШИВКУ в {% include abbr/ru/sysnand.md abbr="SysNAND" %}, если используете {% include abbr/ru/caffeine.txt abbr="Caffeine" %}**. Сделайте себе копию SysNAND в отдельном emuMMC и обновляйте его там, его же используйте для запуска официальной прошивки!
 	* Всегда загружайте прошивку через hekate!
 	* Это может быть обычный {% include abbr/ru/sysnand.md abbr="SysNAND" %}, в случае работы с {% include abbr/ru/fusegele.txt abbr="Fusée Gelée" %}, или ещё один EmuNAND, в случае работы с {% include abbr/ru/caffeine.txt abbr="Caffeine" %}.
-1. [Использование уже прошитой приставки](usage)
+1. [Использование уже прошитой приставки](/ru/usage)
 	
 Если ваша оригинальная прошивка имела версию ниже, чем 4.0.1, то, вероятнее всего, у вас включен NoGC-патч, из-за которого на прошивке может не работать слот для картриджей. Отключите NoGC через настройки hekate 
 
