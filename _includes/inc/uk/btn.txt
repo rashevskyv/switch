@@ -1,1 +1,1 @@
-<img src="/images/buttons/{{ include.btn }}.png" alt="({{ include.btn }})">
+<img src="/assets/images/switch/buttons/{{ include.btn }}.png" alt="({{ include.btn }})">
