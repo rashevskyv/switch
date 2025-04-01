@@ -90,11 +90,11 @@ author_profile: true
 	**УВАГА!!!** Якщо ви в процесі виконання посібника побачите діалогове вікно з пропозицією відформатувати диск - **натисніть скасувати**!!
 	{: .notice--danger}
 	
-	![]({{ base_path }}/images/screenshots/format.png) 
+	![]((/assets/images/switch/screenshots/format.png) 
 	{: .text-center}
 	{: .notice--danger}
 	
-	![]({{ base_path }}/images/screenshots/format_mac.png)
+	![]((/assets/images/switch/screenshots/format_mac.png)
 	{: .text-center}
 	{: .notice--danger}
 	
@@ -145,7 +145,7 @@ author_profile: true
 
 В загальному випадку, бекап повинен виглядати приблизно так: <br><br>
 
-![]({{ base_path }}/images/screenshots/backup.png) 
+![]((/assets/images/switch/screenshots/backup.png) 
 {: .text-center}
 
 Бекап, зроблений на Switch OLED, містить вдвічі більше файлів, оскільки має вдвічі більше внутрішньої пам'яті - 64Гб
@@ -169,7 +169,7 @@ author_profile: true
 	* Якщо папок немає, наприклад через те, що резервну копію робили через ПК, просто зробіть бекап чогось невеликого (BOOT1, наприклад) в гекаті і папка з'явиться
 	* В підсумку все повинно виглядати приблизно так: `/backup/ID/restore` <br><br>
 	
-	![]({{ base_path }}/images/screenshots/restore.png) 
+	![]((/assets/images/switch/screenshots/restore.png) 
 	{: .text-center}
 	{: .notice--info}	
 1. Перемістіть папку `backup` в корінь карти пам'яті вашої консолі

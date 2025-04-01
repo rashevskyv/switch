@@ -36,7 +36,7 @@ author_profile: true
 1. В поле **Lan-Play Version** пропишите "**0.2.3**"
 1. В поле **MTU** напишите "**500**"
 1. Снимите галочку с пункта "**Fake Internet**" 
-	![](/images/screenshots/lanplay.png)
+	![](/assets/images/switch/screenshots/lanplay.png)
 	{: .text-center}
 	{: .notice--info}
 1. Выберите нужный сервер из представленных в списке и нажмите "**Подключиться**"

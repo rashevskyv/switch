@@ -32,7 +32,7 @@ Homebrew Launcher (hbl) - середовище для запуску самор�
 
 * Для запуску в режимі апплету, запустіть "**Альбоми**" кнопкою {% include inc/uk/btn.txt btn="A" %}, утримуючи клавішу {% include inc/uk/btn.txt btn="R" %}, до тих пір, поки меню не запуститься
 
-   ![]({{ base_path }}/images/screenshots/gallery.jpg) 
+   ![]((/assets/images/switch/screenshots/gallery.jpg) 
    {: .text-center}
    {: .notice--info}
 

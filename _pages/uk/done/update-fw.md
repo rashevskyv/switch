@@ -90,7 +90,7 @@ author_profile: true
 {% capture notice-3 %}
 **Обов'язково переконайтеся, що знаходитесь в EmuNAND!** Для цього перейдіть в "**Системні налаштування**" -> "**Система**". У рядку нижче "**Оновлення системи**" буде написана версія вашого системного ПЗ, версія Atmosphere і буква **S** або **E**, де **S** буде означати *SysNAND*, а **E** - *EmuNAND*.
 
-![](/images/screenshots/atmo_emu.png)
+![](/assets/images/switch/screenshots/atmo_emu.png)
 {: .text-center}
 {: .notice--info}
 
@@ -147,7 +147,7 @@ author_profile: true
 {% capture notice-3 %}
 **Обов'язково переконайтеся, що знаходитесь в EmuNAND!** Для цього перейдіть в "**Системні налаштування**" -> "**Система**". У рядку нижче "**Оновлення системи**" буде написана версія вашого системного ПЗ, версія Atmosphere і буква **S** або **E**, де **S** буде означати *SysNAND*, а **E** - *EmuNAND*.
 
-![](/images/screenshots/atmo_emu.png)
+![](/assets/images/switch/screenshots/atmo_emu.png)
 {: .text-center}
 {: .notice--info}
 

@@ -23,7 +23,7 @@ author_profile: true
 
 1. Включите приставку
     * Интернет должен быть включен и прописан DNS! 
-1. Нажмите на иконку Новости ![]({{ base_path }}/images/screenshots/news.png) 
+1. Нажмите на иконку Новости ![]((/assets/images/switch/screenshots/news.png) 
 1. Выберите тайл "**Launch PegaSwitch**"
 1. Нажмите на видео с логотипом "**ReSwitched**" для запуска PegaScape
 

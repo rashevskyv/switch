@@ -51,7 +51,7 @@ lang: ru%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8){:ta
 1. Скопируйте значение строки "**secure_boot_key**" из файла `prod.keys` вместо `XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX` в поле "**secure_boot_key**" в файле `keys.txt`
 1. Скопируйте значение строки "**tsec_key**" из файла `prod.keys` вместо `XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX` в поле "**tsec_key**" в файле `keys.txt`
 
-	![]({{ base_path }}/images/screenshots/keys.png) 
+	![]((/assets/images/switch/screenshots/keys.png) 
 	{: .text-center}
 	{: .notice--info}
 1. Запустите командную строку в папке `EmmcHaccGen` (вызовите контекстное меню с зажатой клавишей Shift, нажав на свободное место в папке, и выберите "**Открыть Командную строку здесь**" или "**Открыть окно PowerShell здесь**")
@@ -65,7 +65,7 @@ lang: ru%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8){:ta
 {% capture notice-6 %}   
 **ВНИМАНИЕ!!!** Если вы в процессе выполнения руководства увидите диалоговое окно, с предложением отформатировать диск - **нажмите отмена**!!
 
-![]({{ base_path }}/images/screenshots/format.png) 
+![]((/assets/images/switch/screenshots/format.png) 
 {: .text-center}
 {% endcapture %}
 <div class="notice--danger">{{ notice-6 | markdownify }}</div>
@@ -99,7 +99,7 @@ lang: ru%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8){:ta
 1. Программа автоматически выберет "**LINUX UMS DISK 0**" во втором пункте
 	* Если это не так, нажмите "**Change и выберите его вручную**"
 
-	![]({{ base_path }}/images/screenshots/etcher_boot0.png) 
+	![]((/assets/images/switch/screenshots/etcher_boot0.png) 
 	{: .text-center}
 	{: .notice--info}
 
@@ -128,7 +128,7 @@ lang: ru%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8){:ta
 1. Выберите `UMS Linux Disk 0 (29.121GiB)`
 1. Вы увидите полный список разделов, содержащихся в этом диске
 
-	![]({{ base_path }}/images/screenshots/hdm_disk.png) 
+	![]((/assets/images/switch/screenshots/hdm_disk.png) 
 	{: .text-center}
 	{: .notice--info}
 	
@@ -136,7 +136,7 @@ lang: ru%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8){:ta
 1. Откройте файл `prod.keys`, который мы получили при создании дампа ключей в Части I
 1. В разделе "**bis_key_00**" есть длинная 64-х символьная последовательность, первые 32 символа - это - "**Crypto**", последние - "**Tweak**". В файле с ключами ключи делятся попарно. В каждой паре есть так же ключ с меткой "**Crypto**" (crypt) и "**Tweak**" (tweak). 
 
-	![]({{ base_path }}/images/screenshots/hdm_key_test.png) 
+	![]((/assets/images/switch/screenshots/hdm_key_test.png) 
 	{: .text-center}
 	{: .notice--info}
 	
@@ -156,7 +156,7 @@ lang: ru%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8){:ta
 1. Убедитесь, что поля для ключей пустые. Если это не так, отчистите их
 1. В секции "**Restore from file**" нажмите "**Browse**"
 
-	![]({{ base_path }}/images/screenshots/hdm_bcpkg21-nm.png) 
+	![]((/assets/images/switch/screenshots/hdm_bcpkg21-nm.png) 
 	{: .text-center}
 	{: .notice--info}
 

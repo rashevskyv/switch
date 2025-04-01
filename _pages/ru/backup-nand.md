@@ -96,11 +96,11 @@ author_profile: true
 	**ВНИМАНИЕ!!!** Если вы в процессе выполнения руководства увидите диалоговое окно, с предложением отформатировать диск - **нажмите отмена**!!
 	{: .notice--danger}
 	
-	![]({{ base_path }}/images/screenshots/format.png) 
+	![]((/assets/images/switch/screenshots/format.png) 
 	{: .text-center}
 	{: .notice--danger}
 	
-	![]({{ base_path }}/images/screenshots/format_mac.png)
+	![]((/assets/images/switch/screenshots/format_mac.png)
 	{: .text-center}
 	{: .notice--danger}
 
@@ -174,7 +174,7 @@ author_profile: true
 1. Если вы не собираетесь делать EmuNAND, удалите папку `backup` с карты памяти
 
 В общем случае, бекап должен выглядить примерно так: <br><br>
-![]({{ base_path }}/images/screenshots/backup.png) 
+![]((/assets/images/switch/screenshots/backup.png) 
 {: .text-center}
 Бекап, сделанный на Switch OLED, будет содержать вдвое больше файлов, поскольку имеет вдвое больше внутренней памяти - 64Гб
 {: .notice--info}
@@ -197,7 +197,7 @@ author_profile: true
 	* Если папок нет, например из-за того, что резервную копию делали через ПК, просто сделайте бекап чего-либо не большого (BOOT1, например) в гекате и папка появятся
 	* В итоге все должно выглядеть примерно так: `/backup/ID/restore` <br><br>
 	
-	![]({{ base_path }}/images/screenshots/restore.png) 
+	![]((/assets/images/switch/screenshots/restore.png) 
 	{: .text-center}
 	{: .notice--info}	
 1. Переместите папку `backup` в корень карты памяти вашей консоли

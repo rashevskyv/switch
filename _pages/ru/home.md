@@ -5,7 +5,7 @@ title: "Switch Hack Guide"
 author_profile: true
 header:	
   overlay_color: "#5e616c"
-  overlay_image: images/home-page-feature.jpg
+  overlay_image: assets/images/switch/home-page-feature.jpg
   overlay_filter: 0.5
   caption:
 ---

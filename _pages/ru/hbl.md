@@ -10,7 +10,7 @@ author_profile: true
 
 Homebrew Launcher (hbl) - среда для запуска самописных приложений для Switch. Запуск производится через изменённое приложение Альбомы или через программу-форвардер.
 
-![]({{ base_path }}/images/screenshots/gallery.jpg) 
+![]((/assets/images/switch/screenshots/gallery.jpg) 
 {: .text-center}
 {: .notice--info}
 
@@ -31,7 +31,7 @@ Homebrew Launcher (hbl) - среда для запуска самописных 
 
 * Для запуска в режиме апплета, запустите Альбомы кнопкой (A), удерживая клавишу (R), до тех пор, пока меню не запстится
 
-    ![]({{ base_path }}/images/screenshots/gallery.jpg) 
+    ![]((/assets/images/switch/screenshots/gallery.jpg) 
     {: .text-center}
     {: .notice--info}
 

@@ -61,7 +61,7 @@ author_profile: true
 
 Для того щоб переконатися, що ви знаходитесь саме в емунанді, для цього перейдіть в "**Системні налаштування**" -> "**Система**". У рядку нижче "**Оновлення системи**" буде написана версія вашого системного ПЗ, версія Atmosphere і буква **S** або **E**, де **S** буде означати *SysNAND*, а **E** - *EmuNAND*.
 
-![](/images/screenshots/atmo_emu.png)
+![](/assets/images/switch/screenshots/atmo_emu.png)
 {: .text-center}
 
 {% endcapture %}

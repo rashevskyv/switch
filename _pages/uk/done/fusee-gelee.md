@@ -74,7 +74,7 @@ author_profile: true
 1. Вимкніть консоль
 1. Від'єднайте правий joy-con і ставте **замикач** в направляючу **правого** джойкона до упору
 
-	![](/images/screenshots/jig.jpg) 
+	![](/assets/images/switch/screenshots/jig.jpg) 
 	{: .text-center}
 	{: .notice--info}
 
@@ -166,16 +166,16 @@ lang: ukвхід-в-rcm){:target="_blank"}
 lang: ukвхід-в-rcm){:target="_blank"} до ПК
 1. Запустіть [`TegraRcmGUI.exe`](https://github.com/eliboa/TegraRcmGUI/releases/latest){:target="_blank"} від імені Адміністратора
 
-![]({{ base_path }}/images/screenshots/tegrarcmgui.png) 
+![]((/assets/images/switch/screenshots/tegrarcmgui.png) 
 {: .text-center}
 {: .notice--info}
 
-1. Натисніть на кнопку ![](/images/screenshots/search.png) і виберіть пейлоад, який збираєтеся запустити
+1. Натисніть на кнопку ![](/assets/images/switch/screenshots/search.png) і виберіть пейлоад, який збираєтеся запустити
 1. Натисніть на кнопку "**Inject Payload**", щоб відправити пейлоад на консоль
 1. Пейлоад запуститься на консолі
 	* Якщо пейлоад не запускається, перевірте правильно чи встановлені драйвери. Правильно встановлений драйвер пристрою відображатиметься в диспетчері пристроїв як `libusbK USB Devices`
 	* Спробуйте передати пейлоад ще раз
-	* Кнопкою ![](/images/screenshots/add_to_fav.png) можна додати пейлоад у вибране
+	* Кнопкою ![](/assets/images/switch/screenshots/add_to_fav.png) можна додати пейлоад у вибране
 
 {% endspoiler %}
 

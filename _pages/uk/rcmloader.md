@@ -16,7 +16,7 @@ author_profile: true
 
 Инструкция предназначена владельцам {% include abbr/uk/dongle.txt abbr="донгла" %} RCMLoader и создавалась в поддержку купивших устройство у меня. 
 
-![](/images/dongle/rcmloader.jpg)
+![](/assets/images/switch/dongle/rcmloader.jpg)
 {: .text-center}
 {: .notice--info}
 
@@ -28,7 +28,7 @@ author_profile: true
 1. Донгл смонтируется как новый диск
 1. Положите пейлоад `payload.bin` из архива с кефиром в папку, соответствующую его функции, согласно таблице
 
-	![](/images/dongle/rcmloader_table.png)
+	![](/assets/images/switch/dongle/rcmloader_table.png)
 	{: .text-center}
 	{: .notice--info}
 
@@ -43,7 +43,7 @@ author_profile: true
 1. Верните карту памяти в приставку
 1. Вставьте замыкатель вместо правого джойкона
 
-    ![](/images/dongle/rcmloader_jig.png)
+    ![](/assets/images/switch/dongle/rcmloader_jig.png)
     {: .text-center}
     {: .notice--info}
 

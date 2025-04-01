@@ -10,7 +10,7 @@ author_profile: true
 
 ## [KEFIR {% include /inc/kefir/version %}](https://github.com/rashevskyv/kefir/releases){:target="_blank"}
 
-![kefir](/images/kefir.png){: width="70%"}
+![kefir](/assets/images/switch/kefir.png){: width="70%"}
 {: .text-center}
 
 ### Що таке кефір

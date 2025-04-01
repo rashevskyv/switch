@@ -105,7 +105,7 @@ author_profile: true
 {% capture notice-3 %}
 **Обязательно убедитесь, что находитесь в EmuNAND**, если поднимаете версию вашего системного ПО. Для этого перейдите в **Системные настройки** -> **Система**. В строке ниже **Обновления системы** будет написана версия вашего системного ПО, версия Atmosphere и буква **S** или **E**, где **S** будет означать *SysNAND*, а **E** - *EmuNAND*. 
 
-![](/images/screenshots/atmo_emu.png)
+![](/assets/images/switch/screenshots/atmo_emu.png)
 {: .text-center}
 {: .notice--info}
 

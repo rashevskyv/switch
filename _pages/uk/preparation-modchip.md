@@ -15,19 +15,19 @@ author_profile: true
 
 * OLED: 
 
-![](/images/modchips/hwfly/hw_oled.jpg)
+![](/assets/images/switch/modchips/hwfly/hw_oled.jpg)
 {: .text-center}
 {: .notice--info}
 
 * Lite: 
 
-![](/images/modchips/hwfly/hw_lite.jpg)
+![](/assets/images/switch/modchips/hwfly/hw_lite.jpg)
 {: .text-center}
 {: .notice--info}
 
 * Core: 
 
-![](/images/modchips/hwfly/hw_core.png)
+![](/assets/images/switch/modchips/hwfly/hw_core.png)
 {: .text-center}
 {: .notice--info}
 
@@ -40,38 +40,38 @@ author_profile: true
 
 * Сам процессор: 
 
-![](/images/modchips/rp2040/chip.png)
+![](/assets/images/switch/modchips/rp2040/chip.png)
 {: .text-center}
 {: .notice--info}
 
 * Универсальный классический: 
 
-![](/images/modchips/rp2040/rp2040.png)
+![](/assets/images/switch/modchips/rp2040/rp2040.png)
 {: .text-center}
 {: .notice--info}
 
 * OLED: 
 
-![](/images/modchips/rp2040/rp_oled.png)
+![](/assets/images/switch/modchips/rp2040/rp_oled.png)
 {: .text-center}
 {: .notice--info}
 
 * Lite: 
 
-![](/images/modchips/rp2040/rp_lite.png)
+![](/assets/images/switch/modchips/rp2040/rp_lite.png)
 {: .text-center}
 {: .notice--info}
 
 * Core: 
 
-![](/images/modchips/rp2040/rp_core.png)
+![](/assets/images/switch/modchips/rp2040/rp_core.png)
 {: .text-center}
 {: .notice--info}
 
 * Другие варианты: 
 
-![](/images/modchips/rp2040/other_1.png)
-![](/images/modchips/rp2040/other_2.png)
+![](/assets/images/switch/modchips/rp2040/other_1.png)
+![](/assets/images/switch/modchips/rp2040/other_2.png)
 {: .text-center}
 {: .notice--info}
 
@@ -90,14 +90,14 @@ author_profile: true
 	 * Не перепутайте и не поставьте случайно вверх ногами. На ленте кабеля есть отметка, где у него верх, а где них. 
 	 * Для SX Core верхом считается металлическое основание, на SX Light верх совпадает с направлением крышки процессора. То есть, после монтажа чипа в приставку, та сторона, которая будет смотреть вверх и есть верхняя. 
 
-		![SX Core ribbon](/images/modchips/core_up.png)![SX Light ribbon](/images/modchips/light_up.png)
+		![SX Core ribbon](/assets/images/switch/modchips/core_up.png)![SX Light ribbon](/assets/images/switch/modchips/light_up.png)
 		{: .text-center}
 		{: .notice--info}
 
 1. Подключите чип к ПК кабелем. Если лента вставлена правильно, светодиод на чипе засветится зелёным. 
 1. Откройте **диспетчер устройств** Windows и дождитесь установки драйверов. Если драйвера установлены верно, чип будет виден как "**USB Serial Device**"
 
-	![](/images/modchips/device_manager.png)
+	![](/assets/images/switch/modchips/device_manager.png)
 	{: .text-center}
 	{: .notice--info}
 
@@ -108,7 +108,7 @@ author_profile: true
 1. Дождитесь окончания прошивки и нажмите любую кнопку, чтобы закрыть окно 
 	* После успешного окончания прошивки, светодиод сменит цвет на желто-зелёный.
 
-	![](/images/modchips/done.png)
+	![](/assets/images/switch/modchips/done.png)
 	{: .text-center}
 	{: .notice--info}
 
@@ -116,7 +116,7 @@ author_profile: true
 
 {% spoiler Скрипт завис, ничего не происходит %}
 
-![](/images/modchips/freeze.png)
+![](/assets/images/switch/modchips/freeze.png)
 {: .text-center}
 {: .notice--info}
 
@@ -126,7 +126,7 @@ author_profile: true
 
 {% spoiler DFU not found! %}
 
-![](/images/modchips/DFU.png)
+![](/assets/images/switch/modchips/DFU.png)
 {: .text-center}
 {: .notice--info}
 
@@ -136,7 +136,7 @@ Windows не успела установить драйвера. Попробу�
 
 {% spoiler Failed to read! 6 %}
 
-![](/images/modchips/error6.png)
+![](/assets/images/switch/modchips/error6.png)
 {: .text-center}
 {: .notice--info}
 

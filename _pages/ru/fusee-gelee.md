@@ -169,16 +169,16 @@ lang: ruвход-в-rcm){:target="_blank"}
 lang: ruвход-в-rcm){:target="_blank"} к ПК
 1. Запустите [`TegraRcmGUI.exe`](https://github.com/eliboa/TegraRcmGUI/releases/latest){:target="_blank"} от имени Администратора 
 
-![]({{ base_path }}/images/screenshots/tegrarcmgui.png) 
+![]((/assets/images/switch/screenshots/tegrarcmgui.png) 
 {: .text-center}
 {: .notice--info}
 
-1. Нажмите на кнопку ![](/images/screenshots/search.png) и выберите пейлоад, который собираетесь запустить
+1. Нажмите на кнопку ![](/assets/images/switch/screenshots/search.png) и выберите пейлоад, который собираетесь запустить
 1. Нажмите на кнопку "**Inject Payload**", чтобы отправить пейлоад на консоль
 1. Пейлоад запустится на консоли
 	* Если пейлоад не запускается, проверьте правильно ли установлены драйвера. Правильно установленный драйвер устройства будет отображаться в диспетчере устройств как `libusbK USB Devices`
 	* Попробуйте передать пейлоад ещё раз
-	* Кнопкой ![](/images/screenshots/add_to_fav.png) можно добавить пейлоад в избранное 
+	* Кнопкой ![](/assets/images/switch/screenshots/add_to_fav.png) можно добавить пейлоад в избранное 
 
 {% endspoiler %}
 

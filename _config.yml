@@ -75,8 +75,8 @@ analytics:
 
 author:
   name             : "xHR"
-  avatar           : "/images/bio-photo.png"
-  avatar_right     : "/images/bio-photo_right.png"
+  avatar           : "/assets/images/bio-photo.png"
+  avatar_right     : "/assets/images/bio-photo_right.png"
   location         : "Івано-Франківськ"
   email            : "rashevsky.v@gmail.com"
   uri              :
