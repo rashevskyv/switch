@@ -330,7 +330,7 @@
   
     <div class="author__avatar">
       
-        <center><img src="/images/bio-photo.png" class="author__avatar" alt="xHR" itemprop="image"></center>
+        <center><img src="/assets/images/bio-photo.png" class="author__avatar" alt="xHR" itemprop="image"></center>
       
     </div>
   
@@ -514,7 +514,7 @@
 
 <div class="notice">Делайте <a href="/ru/backup-saves" target="_blank">бэкапы сохранений</a> как можно чаще!</div>
 
-<div class="notice--warning"><strong>Если приставка зависла или не подаёт признаков жизни, выключите её удержанием кнопки {% include inc/btn.txt btn="POWER" %} 30 секунд, затем включите и пробросьте пейлоад!</strong></div>
+<div class="notice--warning"><strong>Если приставка зависла или не подаёт признаков жизни, выключите её удержанием кнопки (POWER) 30 секунд, затем включите и пробросьте пейлоад!</strong></div>
 
 <hr />
 
@@ -551,7 +551,7 @@
 <p class="notice--warning">Если ваша приставка не запускается, например, после обновления sysnand через настройки, то сразу переходите к <strong>части II</strong></p>
 
 <ol>
-  <li>Выполните резервное копирование сохранений по <a href="backup-saves.html" target="_blank">этой инструкции</a>
+  <li>Выполните резервное копирование сохранений по <a href="/ru/backup-saves.html" target="_blank">этой инструкции</a>
     <ul>
       <li>Если вам не нужны сохранения, можете пропустить. Если нужны, делать <strong>обязательно</strong></li>
     </ul>
@@ -607,7 +607,7 @@
           <li>Теперь при запуске приставки она автоматически будет запускать emuMMC.</li>
           <li>Чтобы попасть в официальную прошивку, запустите <strong>hekate -&gt; Launch -&gt; Full Stock</strong></li>
           <li>Чтобы попасть в пиратскую прошивку, запустите <strong>hekate -&gt; Launch -&gt; Atmosphere</strong>. Будет запущен Emunand.</li>
-          <li>Если Emunand запускается с ошибкой, либо долго висит на черном экране, обратитесь к разделу <a href="#проблемы-и-их-решения" target="_blank">проблемы и их решения</a> внизу страницы</li>
+          <li>Если Emunand запускается с ошибкой, либо долго висит на черном экране, обратитесь к разделу <a href="/ru/#проблемы-и-их-решения" target="_blank">проблемы и их решения</a> внизу страницы</li>
         </ul>
       </li>
     </ol>
@@ -623,7 +623,7 @@
   <li>Вставьте карту памяти приставки в ПК</li>
   <li>Скопируйте папку <code class="language-plaintext highlighter-rouge">emuMMC/eMMC</code> из корня вашей карты памяти на ПК. Это ваш эмунанд. Он идентичен бекапу, поэтому нет никакого смысла создавать бекап отдельно
     <ul>
-      <li>Если такой папки нет, то у вас нет EmuNAND, тогда сделайте бекап согласно это <a href="backup-nand" target="_blank">инструкции</a></li>
+      <li>Если такой папки нет, то у вас нет EmuNAND, тогда сделайте бекап согласно это <a href="/ru/backup-nand" target="_blank">инструкции</a></li>
     </ul>
   </li>
   <li>Сделайте бекап ключей, согласно <a href="backup-nand#часть-ii---
@@ -636,8 +636,8 @@ lang: ruдампим-ключи" target="_blank">этой инструкции</
 <h3 id="часть-iv---завершение-миграции">Часть IV - Завершение миграции</h3>
 
 <ol>
-  <li>Попробуйте запустить SysNAND (<strong>hekate</strong> -&gt; “<strong>More Configs</strong>” -&gt; “<strong>Full Stock</strong>”). Если он не запускается, обратитесь к разделу <a href="#проблемы-и-их-решения" target="_blank">проблемы и их решения</a> внизу страницы</li>
-  <li><a href="update-fw" target="_blank">Обновите Emunand</a> до системного ПО версии <strong>19.0.1</strong></li>
+  <li>Попробуйте запустить SysNAND (<strong>hekate</strong> -&gt; “<strong>More Configs</strong>” -&gt; “<strong>Full Stock</strong>”). Если он не запускается, обратитесь к разделу <a href="/ru/#проблемы-и-их-решения" target="_blank">проблемы и их решения</a> внизу страницы</li>
+  <li><a href="/ru/update-fw" target="_blank">Обновите Emunand</a> до системного ПО версии <strong>19.0.1</strong></li>
 </ol>
 
 <h2 id="проблемы-и-их-решения">Проблемы и их решения</h2>
@@ -702,10 +702,10 @@ lang: ruдампим-ключи" target="_blank">этой инструкции</
   <li><a href="backup-nand#часть-ii---
 lang: ruдампим-ключи" target="_blank">Снимите копию ключей вашей приставки</a></li>
   <li>Вставьте карту памяти приставки в ПК</li>
-  <li>Скачайте <a href="files/reBoot.zip" target="_blank">reBoot.zip</a></li>
+  <li>Скачайте <a href="/ru/files/reBoot.zip" target="_blank">reBoot.zip</a></li>
   <li><a href="https://darthsternie.net/switch-firmwares/" target="_blank">Скачайте прошивку</a>, соответствующую <strong>текущей версии прошивки вашего emunand</strong></li>
   <li>Распакуйте архив с прошивкой в папку <code class="language-plaintext highlighter-rouge">firmware</code> на вашем ПК</li>
-  <li>Поместите файлы из архива <a href="files/reBoot.zip" target="_blank">reBoot.zip</a> в папку <code class="language-plaintext highlighter-rouge">firmware</code></li>
+  <li>Поместите файлы из архива <a href="/ru/files/reBoot.zip" target="_blank">reBoot.zip</a> в папку <code class="language-plaintext highlighter-rouge">firmware</code></li>
   <li>Поместите в папку <code class="language-plaintext highlighter-rouge">firmware</code> ваш файл с ключами (<code class="language-plaintext highlighter-rouge">prod.keys</code>)</li>
   <li>Запустите <code class="language-plaintext highlighter-rouge">recreate_boot_by_yoti.bat</code>. После окончания работы программы вы получите файлы <code class="language-plaintext highlighter-rouge">BOOT0_ERISTA</code>, <code class="language-plaintext highlighter-rouge">BOOT0_MARIKO</code>, <code class="language-plaintext highlighter-rouge">BOOT1_ERISTA</code>, <code class="language-plaintext highlighter-rouge">BOOT1_MARIKO</code></li>
   <li>Определите какой ревизии ваша приставка (<strong>Erista</strong> или <strong>Mariko</strong>) и переименуйте файлы, соответствующие вашей ревизии в <code class="language-plaintext highlighter-rouge">BOOT0</code> и <code class="language-plaintext highlighter-rouge">BOOT1</code>
@@ -727,7 +727,7 @@ lang: ruдампим-ключи" target="_blank">Снимите копию кл�
   </li>
 </ol>
 
-<p class="notice--info">Если не помогло, вам придётся <a href="emunand" target="_blank">создавать новый EmuNAND</a></p>
+<p class="notice--info">Если не помогло, вам придётся <a href="/ru/emunand" target="_blank">создавать новый EmuNAND</a></p>
 
 <p class="notice--info">Теперь установите <span class="tooltip_container">
 	<a href="kefir" target="_blank">kefir</a>
@@ -751,7 +751,7 @@ lang: ruдампим-ключи" target="_blank">Снимите копию кл�
 </div></details>
 
 <details class="spoiler"><summary class="spoiler-title">Не могу запустить HBL</summary><div class="spoiler-body">
-<p>В Atmosphere HBL запускается, удерживая (R) при запуске альбомов. Подробнее - <a href="hbl" target="_blank">Homebrew Launcher</a></p>
+<p>В Atmosphere HBL запускается, удерживая (R) при запуске альбомов. Подробнее - <a href="/ru/hbl" target="_blank">Homebrew Launcher</a></p>
 
 </div></details>
 

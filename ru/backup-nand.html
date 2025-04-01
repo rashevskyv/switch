@@ -330,7 +330,7 @@
   
     <div class="author__avatar">
       
-        <center><img src="/images/bio-photo.png" class="author__avatar" alt="xHR" itemprop="image"></center>
+        <center><img src="/assets/images/bio-photo.png" class="author__avatar" alt="xHR" itemprop="image"></center>
       
     </div>
   
@@ -514,7 +514,7 @@
 
 <div class="notice">Делайте <a href="/ru/backup-saves" target="_blank">бэкапы сохранений</a> как можно чаще!</div>
 
-<div class="notice--warning"><strong>Если приставка зависла или не подаёт признаков жизни, выключите её удержанием кнопки {% include inc/btn.txt btn="POWER" %} 30 секунд, затем включите и пробросьте пейлоад!</strong></div>
+<div class="notice--warning"><strong>Если приставка зависла или не подаёт признаков жизни, выключите её удержанием кнопки (POWER) 30 секунд, затем включите и пробросьте пейлоад!</strong></div>
 
 <hr />
 
@@ -564,14 +564,14 @@
       <li>Если уже делали, не нужно делать повторно</li>
     </ul>
   </li>
-  <li>Увійдіть в <span class="tooltip_container">
+  <li>Войдите в <span class="tooltip_container">
  hekate
  <span class="tooltip">▼
      <span class="bottom">
          Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
      </span>
  </span>
-</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
+</span> с помощью поддерживаемого на вашей приставке эксплойта, запуститив пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip">▼
      <span class="bottom">
@@ -579,12 +579,14 @@
      </span>
  </span>
 </span>
-    <ul>
-      <li>Якщо приставка чипована - просто влючить її</li>
-      <li>Пропустіть цей крок, якщо ви вже в hekate</li>
-    </ul>
+    <ol>
+      <li>Удерживайте (VOL-) на приставке во время появления логотипа kefir, чтобы попасть в hekate
+        <ul>
+          <li>Пропустите этот шаг, если вы уже в hekate</li>
+        </ul>
+      </li>
+    </ol>
   </li>
-  <li>Утримуйте (VOL-) на приставці під час появи логотипу kefir, щоб потрапити в hekate</li>
   <li>Перейдите в меню “<strong>Payloads</strong>”</li>
   <li>Выберите “<strong>Lockpick_RCM.bin</strong>”</li>
   <li>Выберите “<strong>Dump keys from SysNAND</strong>”
@@ -612,14 +614,14 @@
      </span>
  </span>
 </span> по инструкции из репозитория, если не делали этого ранее</li>
-  <li>Увійдіть в <span class="tooltip_container">
+  <li>Войдите в <span class="tooltip_container">
  hekate
  <span class="tooltip">▼
      <span class="bottom">
          Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
      </span>
  </span>
-</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
+</span> с помощью поддерживаемого на вашей приставке эксплойта, запуститив пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip">▼
      <span class="bottom">
@@ -627,12 +629,14 @@
      </span>
  </span>
 </span>
-    <ul>
-      <li>Якщо приставка чипована - просто влючить її</li>
-      <li>Пропустіть цей крок, якщо ви вже в hekate</li>
-    </ul>
+    <ol>
+      <li>Удерживайте (VOL-) на приставке во время появления логотипа kefir, чтобы попасть в hekate
+        <ul>
+          <li>Пропустите этот шаг, если вы уже в hekate</li>
+        </ul>
+      </li>
+    </ol>
   </li>
-  <li>Утримуйте (VOL-) на приставці під час появи логотипу kefir, щоб потрапити в hekate</li>
   <li>Перейдите в меню “<strong>Tools</strong>” -&gt; “<strong>Backup eMMC</strong>”</li>
   <li>Выберите “<strong>eMMC RAW GPP</strong>”
     <ul>
@@ -649,14 +653,14 @@
 
 <details class="spoiler"><summary class="spoiler-title">Часть II - делаем дамп загрузочных разделов (BOOT0/BOOT1)</summary><div class="spoiler-body">
 <ol>
-  <li>Увійдіть в <span class="tooltip_container">
+  <li>Войдите в <span class="tooltip_container">
  hekate
  <span class="tooltip">▼
      <span class="bottom">
          Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
      </span>
  </span>
-</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
+</span> с помощью поддерживаемого на вашей приставке эксплойта, запуститив пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip">▼
      <span class="bottom">
@@ -664,12 +668,14 @@
      </span>
  </span>
 </span>
-    <ul>
-      <li>Якщо приставка чипована - просто влючить її</li>
-      <li>Пропустіть цей крок, якщо ви вже в hekate</li>
-    </ul>
+    <ol>
+      <li>Удерживайте (VOL-) на приставке во время появления логотипа kefir, чтобы попасть в hekate
+        <ul>
+          <li>Пропустите этот шаг, если вы уже в hekate</li>
+        </ul>
+      </li>
+    </ol>
   </li>
-  <li>Утримуйте (VOL-) на приставці під час появи логотипу kefir, щоб потрапити в hekate</li>
   <li>Перейдите в меню “<strong>Tools</strong>” -&gt; “<strong>Backup eMMC</strong>”</li>
   <li>Выберите “<strong>eMMC BOOT0 &amp; BOOT1</strong>”</li>
   <li>Нажмите кнопку “<strong>Close</strong>”, чтобы вернуться в предыдущее меню</li>
@@ -699,7 +705,7 @@
   <li>Скопируйте <strong>содержимое</strong> папки <code class="language-plaintext highlighter-rouge">sample</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива с <a href="https://switchtools.sshnuke.net/" target="_blank">memloader</a> в <strong>корень</strong> вашей карты памяти</li>
   <li>Верните карту памяти обратно в Switch</li>
   <li>Скопируйте пейлоад <a href="https://switchtools.sshnuke.net/" target="_blank"><code class="language-plaintext highlighter-rouge">memloader.bin</code></a> в папку из которой передаёте их на Switch (или в папку <code class="language-plaintext highlighter-rouge">\bootloader\payloads</code> для запуска через hekate)</li>
-  <li>Запустите пейлоад <a href="https://switchtools.sshnuke.net/" target="_blank"><code class="language-plaintext highlighter-rouge">memloader.bin</code></a> с помощью <a href="fusee-gelee" target="_blank">Fusée Gelée</a></li>
+  <li>Запустите пейлоад <a href="https://switchtools.sshnuke.net/" target="_blank"><code class="language-plaintext highlighter-rouge">memloader.bin</code></a> с помощью <a href="/ru/fusee-gelee" target="_blank">Fusée Gelée</a></li>
   <li>На экране приставки выберите <code class="language-plaintext highlighter-rouge">ums_eMMC.ini</code> и запустите
     <ul>
       <li>Для перемещения по меню используйте клавиши (VOL-) и (VOL+), для выбора - (POWER)</li>
@@ -709,9 +715,9 @@
 
     <p class="notice--danger"><strong>ВНИМАНИЕ!!!</strong> Если вы в процессе выполнения руководства увидите диалоговое окно, с предложением отформатировать диск - <strong>нажмите отмена</strong>!!</p>
 
-    <p class="text-center notice--danger"><img src="/images/screenshots/format.png" alt="" /></p>
+    <p class="text-center notice--danger">![]((/assets/images/switch/screenshots/format.png)</p>
 
-    <p class="text-center notice--danger"><img src="/images/screenshots/format_mac.png" alt="" /></p>
+    <p class="text-center notice--danger">![]((/assets/images/switch/screenshots/format_mac.png)</p>
 
     <ul>
       <li>Экран приставки останется чёрным</li>
@@ -753,7 +759,7 @@
           <li>После удаления устройств выберите “<strong>Действия</strong>” -&gt; “<strong>Обновить конфигурацию оборудования</strong>” в диспетчере устройств</li>
         </ul>
       </li>
-      <li>Если после всех манипуляций диск так и не появился, выключите Switch, перезагрузите ПК, переустановите драйвера и по новой запустите пейлоад <code class="language-plaintext highlighter-rouge">memloader.bin</code> с помощью <a href="fusee-gelee" target="_blank">Fusée Gelée</a></li>
+      <li>Если после всех манипуляций диск так и не появился, выключите Switch, перезагрузите ПК, переустановите драйвера и по новой запустите пейлоад <code class="language-plaintext highlighter-rouge">memloader.bin</code> с помощью <a href="/ru/fusee-gelee" target="_blank">Fusée Gelée</a></li>
     </ul>
   </li>
   <li>Запустите <a href="http://hddguru.com/software/HDD-Raw-Copy-Tool/HDDRawCopy1.10Portable.exe" target="_blank">HDD Raw Copy Tool</a> от имени администратора</li>
@@ -773,7 +779,7 @@
 <ol>
   <li>Запустите программу Дисковая утилита, убедитесь, что там появился внешний диск с названием “Linux UMS disk 0 Media”
     <ul>
-      <li>Если такового нет, то выключите Switch и по новой запустите пейлоад <code class="language-plaintext highlighter-rouge">memloader.bin</code> с помощью <a href="fusee-gelee" target="_blank">Fusée Gelée</a></li>
+      <li>Если такового нет, то выключите Switch и по новой запустите пейлоад <code class="language-plaintext highlighter-rouge">memloader.bin</code> с помощью <a href="/ru/fusee-gelee" target="_blank">Fusée Gelée</a></li>
     </ul>
   </li>
   <li>В Дисковой утилите нажмите правой кнопкой мыши на пункте “Linux UMS disk 0 Media”</li>
@@ -812,7 +818,7 @@
 </ol>
 
 <p class="text-center">В общем случае, бекап должен выглядить примерно так: <br /><br />
-<img src="/images/screenshots/backup.png" alt="" /></p>
+![]((/assets/images/switch/screenshots/backup.png)</p>
 <p class="notice--info">Бекап, сделанный на Switch OLED, будет содержать вдвое больше файлов, поскольку имеет вдвое больше внутренней памяти - 64Гб</p>
 
 <p class="notice--danger">После первого запуска консоли в прошивку, атмосфера автоматически создаст бекап еще двух важных файлов, они будут находиться в папке <code class="language-plaintext highlighter-rouge">atmosphere/automatic_backups</code>. Так же перенесите эту папку в надежное место. Имея на руках эти файлы и ключи, вы сможете восстановить вашу приставку даже не имея бекапа NAND (но это не значит, что его не нужно беречь)</p>
@@ -833,17 +839,17 @@
       <li>В итоге все должно выглядеть примерно так: <code class="language-plaintext highlighter-rouge">/backup/ID/restore</code> <br /><br /></li>
     </ul>
 
-    <p class="text-center notice--info"><img src="/images/screenshots/restore.png" alt="" /></p>
+    <p class="text-center notice--info">![]((/assets/images/switch/screenshots/restore.png)</p>
   </li>
   <li>Переместите папку <code class="language-plaintext highlighter-rouge">backup</code> в корень карты памяти вашей консоли</li>
-  <li>Увійдіть в <span class="tooltip_container">
+  <li>Войдите в <span class="tooltip_container">
  hekate
  <span class="tooltip">▼
      <span class="bottom">
          Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
      </span>
  </span>
-</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
+</span> с помощью поддерживаемого на вашей приставке эксплойта, запуститив пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip">▼
      <span class="bottom">
@@ -851,12 +857,14 @@
      </span>
  </span>
 </span>
-    <ul>
-      <li>Якщо приставка чипована - просто влючить її</li>
-      <li>Пропустіть цей крок, якщо ви вже в hekate</li>
-    </ul>
+    <ol>
+      <li>Удерживайте (VOL-) на приставке во время появления логотипа kefir, чтобы попасть в hekate
+        <ul>
+          <li>Пропустите этот шаг, если вы уже в hekate</li>
+        </ul>
+      </li>
+    </ol>
   </li>
-  <li>Утримуйте (VOL-) на приставці під час появи логотипу kefir, щоб потрапити в hekate</li>
   <li>Перейдите в <code class="language-plaintext highlighter-rouge">Tools -&gt; Restore</code> и выберите “<strong>Restore eMMC”</strong></li>
   <li>Выберите “<strong>eMMC BOOT0 &amp; BOOT1</strong>” для восстановления BOOT0 и BOOT1</li>
   <li>Выберите “<strong>eMMC RAW GPP</strong>” для восстановления RAW раздела</li>
@@ -878,7 +886,7 @@
 
 <p>Восстановление проводится ровно через те же самые программы, что и делалась резервная копия, за исключением того, что вы сперва выбираете файл резервной копии, а потом диск, на который она будет восстанавливаться. Обратите внимание, что восстанавливать нужно и RAWNAND и BOOT0, BOOT1!</p>
 
-<p>При проблемах с восстановлением или отсутствии бекапа можете попробовать <a href="downgrade_fw" target="_blank">эту инструкцию</a></p>
+<p>При проблемах с восстановлением или отсутствии бекапа можете попробовать <a href="/ru/downgrade_fw" target="_blank">эту инструкцию</a></p>
 
 </div></details>
 

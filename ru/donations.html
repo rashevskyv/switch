@@ -330,7 +330,7 @@
   
     <div class="author__avatar">
       
-        <center><img src="/images/bio-photo.png" class="author__avatar" alt="xHR" itemprop="image"></center>
+        <center><img src="/assets/images/bio-photo.png" class="author__avatar" alt="xHR" itemprop="image"></center>
       
     </div>
   
@@ -493,53 +493,18 @@
 <ul class="toc__menu" id="markdown-toc">
   <li><a href="#банка-monobank" id="markdown-toc-банка-monobank">Банка monobank</a></li>
   <li><a href="#paypal" id="markdown-toc-paypal">Paypal</a></li>
+  <li><a href="#usdt-trc20" id="markdown-toc-usdt-trc20">USDT TRC20</a></li>
   <li><a href="#помочь-украине-из-за-рубежа" id="markdown-toc-помочь-украине-из-за-рубежа">Помочь Украине из-за рубежа</a></li>
 </ul>
 
   </nav>
 </aside>
 
-<hr />
-
-<div class="notice--success"><h2>Вы можете прошить, или купить уже прошитый свитч у меня</h2><ul><li><a href="https://t.me/kefir_help" target="_blank">Группа в телеграме, там есть отзывы и примеры работ</a></li><li><a href="https://t.me/xhrxhrxhr" target="_blank"><b>Мой личный телеграм</b> (обращайтесь за чиповкой или покупкой)</a></li><li><a href="/ru/donations" target="_blank">Задонатить на развитие kefir</a></li></ul></div>
-
-<div class="notice--warning">Если вы попали в это руководство впервые и не знаете, как прошивается Switch, рекомендуем начать знакомство с ним с <a href="/ru/" target="_blank">первой страницы</a></div>
-
-<div class="notice--warning">Если вы пользователь MacOS, воспользуйтесь <a href="/ru/sd-macos.html" target="_blank">этими рекомендациями</a>, чтобы избежать проблем с картой памяти</div>
-
-<div class="notice">Делайте <a href="/ru/backup-saves" target="_blank">бэкапы сохранений</a> как можно чаще!</div>
-
-<div class="notice--warning"><strong>Если приставка зависла или не подаёт признаков жизни, выключите её удержанием кнопки {% include inc/btn.txt btn="POWER" %} 30 секунд, затем включите и пробросьте пейлоад!</strong></div>
-
-<hr />
-
-<!-- 
-<script>
-location.href = 'https://supportukrainenow.org/';
-</script> -->
-
 <h2 id="банка-monobank">Банка monobank</h2>
 
-<p class="text-center notice--info"><a href="https://send.monobank.ua/jar/6VmeFAs1zG" target="_blank"><img alt="Монобанка" border="0" src="/images/mono.jpg" width="400px" style="border-radius:10px !important" /></a></p>
+<p class="text-center notice--info"><a href="https://send.monobank.ua/jar/6VmeFAs1zG" target="_blank"><img alt="Монобанка" border="0" src="/assets/images/donate/mono.jpg" width="400px" style="border-radius:10px !important" /></a></p>
 
 <h2 id="paypal">Paypal</h2>
-
-<style>
-  .donate-wrapper {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .donate-form {
-    text-align: center;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-  }
-</style>
 
 <div class="donate-wrapper text-center notice--info">
 	<div class="donate-form">
@@ -548,13 +513,76 @@ location.href = 'https://supportukrainenow.org/';
 		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
 		<img alt="" border="0" src="https://www.paypal.com/en_UA/i/scr/pixel.gif" width="1" height="1" />
 	</form>
-		<img alt="PayPal" border="0" src="/images/paypal.png" />
+		<img alt="PayPal" border="0" src="/assets/images/donate/paypal.png" />
 	</div>
+</div>
+
+<h2 id="usdt-trc20">USDT TRC20</h2>
+<div class="donate-wrapper text-center notice--info">
+<div>
+  <img alt="USDT TRC20" border="0" src="/assets/images/donate/usdt.png" width="400px" /><br />
+  <div class="copy-address" onclick="copyToClipboard('TNhAUg4RFbjeyeLN6HAJ93EVTtpprU9xug')">
+    <code id="wallet-address">TNhAUg4RFbjeyeLN6HAJ93EVTtpprU9xug</code>
+    <span class="copy-tooltip">Натисніть, щоб скопіювати</span>
+  </div>
+</div>
 </div>
 
 <h2 id="помочь-украине-из-за-рубежа">Помочь Украине из-за рубежа</h2>
 
-<p class="text-center notice--info"><a href="https://supportukrainenow.org/" target="_blank"><img alt="Support Ukraine Now" border="0" src="/images/sun.png" width="400px" style="border-radius:10px !important" /></a></p>
+<p class="text-center notice--info"><a href="https://supportukrainenow.org/" target="_blank"><img alt="Support Ukraine Now" border="0" src="/assets/images/donate/sun.png" width="400px" style="border-radius:10px !important" /></a></p>
+
+<script>
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(function() {
+    // Зміна підказки на короткий час
+    var tooltip = document.querySelector('.copy-tooltip');
+    tooltip.innerHTML = 'Скопійовано!';
+    setTimeout(function() {
+      tooltip.innerHTML = 'Натисніть, щоб скопіювати';
+    }, 2000);
+  });
+}
+</script>
+
+<style>
+.copy-address {
+  position: relative;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.copy-address:hover {
+  background-color: #e0e0e0;
+}
+
+.copy-tooltip {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.donate-wrapper {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donate-form {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+</style>
+
 
 				
         

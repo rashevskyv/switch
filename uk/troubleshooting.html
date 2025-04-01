@@ -322,7 +322,7 @@
   
     <div class="author__avatar">
       
-        <center><img src="/images/bio-photo.png" class="author__avatar" alt="xHR" itemprop="image"></center>
+        <center><img src="/assets/images/bio-photo.png" class="author__avatar" alt="xHR" itemprop="image"></center>
       
     </div>
   
@@ -479,7 +479,7 @@
       
 	  
         <p>lang: uk
-В этом разделе только самые частые проблемы и их решения. Раздел, в котором собраны ответы на самые часто задаваемые вопросы находится здесь - <a href="faq" target="_blank">FAQ</a></p>
+В этом разделе только самые частые проблемы и их решения. Раздел, в котором собраны ответы на самые часто задаваемые вопросы находится здесь - <a href="/uk/faq" target="_blank">FAQ</a></p>
 
 <aside class="sidebar__right">
 <nav class="toc">
@@ -561,9 +561,9 @@
       <li>Перейдите в раздел <strong>USER</strong>. Если ошибок нет, то раздел USER монтируется и проблема не в нём</li>
     </ol>
   </li>
-  <li><a href="backup-nand#восстановление-резервной-копии" target="_blank">Восстановите бекап</a>, если таковой имеется</li>
-  <li>Сделайте <a href="system-wipe" target="_blank">сброс к заводским настройкам</a></li>
-  <li>Сделайте <a href="downgrade_fw" target="_blank">восстановление прошивки</a></li>
+  <li><a href="/uk/backup-nand#восстановление-резервной-копии" target="_blank">Восстановите бекап</a>, если таковой имеется</li>
+  <li>Сделайте <a href="/uk/system-wipe" target="_blank">сброс к заводским настройкам</a></li>
+  <li>Сделайте <a href="/uk/downgrade_fw" target="_blank">восстановление прошивки</a></li>
 </ol>
 
 </div></details>
@@ -579,9 +579,9 @@
          Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
      </span>
  </span>
-</span>. Если получилось, возможно вы пытались откатить прошивку из-за чего случился конфликт между версией прошивки и сожжёнными фьюзами. Попробуйте запустить <strong>Full Stock</strong> и <a href="update-fw" target="_blank">обновить прошивку до последней версии</a>, или отключить Emunand (hekate &gt; emuMMC &gt; Change emummc &gt; Disable) и обновить прошивку через настройки</li>
-  <li><a href="backup-nand#восстановление-резервной-копии" target="_blank">Восстановите бекап</a>, если таковой имеется</li>
-  <li>Сделайте <a href="downgrade_fw" target="_blank">восстановление прошивки</a></li>
+</span>. Если получилось, возможно вы пытались откатить прошивку из-за чего случился конфликт между версией прошивки и сожжёнными фьюзами. Попробуйте запустить <strong>Full Stock</strong> и <a href="/uk/update-fw" target="_blank">обновить прошивку до последней версии</a>, или отключить Emunand (hekate &gt; emuMMC &gt; Change emummc &gt; Disable) и обновить прошивку через настройки</li>
+  <li><a href="/uk/backup-nand#восстановление-резервной-копии" target="_blank">Восстановите бекап</a>, если таковой имеется</li>
+  <li>Сделайте <a href="/uk/downgrade_fw" target="_blank">восстановление прошивки</a></li>
 </ol>
 
 </div></details>
@@ -639,8 +639,8 @@
       <li>Перейдите в раздел <strong>SYSTEM</strong>. Если ошибок нет, то раздел SYSTEM монтируется и проблема не в нём</li>
     </ol>
   </li>
-  <li><a href="backup-nand#восстановление-резервной-копии" target="_blank">Восстановите бекап</a>, если таковой имеется</li>
-  <li>Сделайте <a href="downgrade_fw" target="_blank">восстановление прошивки</a></li>
+  <li><a href="/uk/backup-nand#восстановление-резервной-копии" target="_blank">Восстановите бекап</a>, если таковой имеется</li>
+  <li>Сделайте <a href="/uk/downgrade_fw" target="_blank">восстановление прошивки</a></li>
 </ol>
 
 </div></details>
@@ -651,7 +651,7 @@
 </div></details>
 
 <details class="spoiler"><summary class="spoiler-title">Страшная ошибка с белыми буквами на черном экране после обновления прошивки через интернет</summary><div class="spoiler-body">
-<p class="text-center notice--info"><img src="/images/screenshots/exfat_failed.png" alt="" /></p>
+<p class="text-center notice--info"><img src="/assets/images/switch/screenshots/exfat_failed.png" alt="" /></p>
 
 <p>Отформатируйте вашу карту памяти в <a href="https://format.customfw.xyz" target="_blank">FAT32</a>.</p>
 
@@ -669,7 +669,7 @@
 <details class="spoiler"><summary class="spoiler-title">После запуска приставки ошибка на фиолетовом фоне с надписью **Error Code** и номером ошибки</summary><div class="spoiler-body">
 <p>Обратите внимание на числа во второй строке после <strong>Title:</strong>. Эти числа указывают на то, какой тайтл вызвал ошибку и из-за которого не загружается приставка. Если номер тайтла <strong>не</strong> <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то перейдите в папку <code class="language-plaintext highlighter-rouge">atmosphere/contents</code> (<code class="language-plaintext highlighter-rouge">atmosphere/titles</code> на атмосфере ниже, чем 0.10.0) и удалите папку с номером, указанным на экране вашей приставки во второй строке. Если номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то вероятнее всего ошибка вызвана тем, что какое-то хомбрю запущено в режиме апплета и ему не хватает памяти.</p>
 
-<p class="text-center notice--info"><img src="/images/screenshots/atmos_title_error.png" alt="" /></p>
+<p class="text-center notice--info"><img src="/assets/images/switch/screenshots/atmos_title_error.png" alt="" /></p>
 
 </div></details>
 
@@ -692,7 +692,7 @@
 </div></details>
 
 <details class="spoiler"><summary class="spoiler-title">Не могу использовать картриджи в EmuNAND, хотя в SysNAND все работает</summary><div class="spoiler-body">
-<p>Для корректной работы картриджей SysNAND и EmuNAND должны находится на одной версии прошивки. Если это не так, <a href="update-fw">обновите EmuNAND</a>. Если это не помогло, убедитесь, что в hekate у вас отключен <strong>NoGC</strong> (<strong>Options</strong> -&gt; <strong>Auto NoGC</strong> -&gt; <strong>OFF</strong>)</p>
+<p>Для корректной работы картриджей SysNAND и EmuNAND должны находится на одной версии прошивки. Если это не так, <a href="/uk/update-fw">обновите EmuNAND</a>. Если это не помогло, убедитесь, что в hekate у вас отключен <strong>NoGC</strong> (<strong>Options</strong> -&gt; <strong>Auto NoGC</strong> -&gt; <strong>OFF</strong>)</p>
 
 </div></details>
 
@@ -714,12 +714,12 @@
 	</span>
 </span> не помогло, обратите внимание на числа во второй строке после <strong>Title:</strong>. Эти числа указывают на то, какой тайтл вызвал ошибку и из-за которого не загружается приставка. Если номер тайтла <strong>не</strong> <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то перейдите в папку <code class="language-plaintext highlighter-rouge">atmosphere/contents</code> (<code class="language-plaintext highlighter-rouge">atmosphere/titles</code> на атмосфере ниже, чем 0.10.0) и удалите папку с номером, указанным на экране вашей приставки во второй строке. Если номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то вероятнее всего ошибка вызвана тем, что какое-то хомбрю запущено в режиме апплета и ему не хватает памяти. Если номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000001F</code>, то вытащите картридж из приставки. Держите emunand и sysnand на одной версии прошивки, чтобы в дальнейшем не было таких проблем.</p>
 
-<p class="text-center notice--info"><img src="/images/screenshots/atmos_title_error2.png" alt="" /></p>
+<p class="text-center notice--info"><img src="/assets/images/switch/screenshots/atmos_title_error2.png" alt="" /></p>
 
 </div></details>
 
 <details class="spoiler"><summary class="spoiler-title">Хотел установить игру, но установка зависла, игра в меню не появилась, но место занимает. Как удалить?</summary><div class="spoiler-body">
-<p>Запустите <strong>DBI</strong> и выберите “<strong>Clean Orphaned Files</strong>” - все файлы, на которых нет ссылок в системной базе данных будут удалены. <strong>Важно:</strong> запускайте DBI только <a href="hbl" target="_blank">в режиме апплета</a>, кефир должен быть свежим. Иначе магия не сработает.</p>
+<p>Запустите <strong>DBI</strong> и выберите “<strong>Clean Orphaned Files</strong>” - все файлы, на которых нет ссылок в системной базе данных будут удалены. <strong>Важно:</strong> запускайте DBI только <a href="/uk/hbl" target="_blank">в режиме апплета</a>, кефир должен быть свежим. Иначе магия не сработает.</p>
 </div></details>
 
 <details class="spoiler"><summary class="spoiler-title">Не могу установить игры в NAND</summary><div class="spoiler-body">
@@ -771,10 +771,10 @@
 </div></details>
 
 <details class="spoiler"><summary class="spoiler-title">Не запускается ни одна игра. При запуске идёт проверка, затем ошибка</summary><div class="spoiler-body">
-<p>Возможно, вы удалили тикеты всех игр. Для переустановки тикетов, запустите <a href="games" target="_blank">tinfoil</a>, перейдите на вкладку “<strong>Тикеты</strong>”, и для каждой игры проделайте следующее:</p>
+<p>Возможно, вы удалили тикеты всех игр. Для переустановки тикетов, запустите <a href="/uk/games" target="_blank">tinfoil</a>, перейдите на вкладку “<strong>Тикеты</strong>”, и для каждой игры проделайте следующее:</p>
 <ol>
-  <li>На игре нажмите <img src="/images/buttons/Y.png" alt="(Y)" /></li>
-  <li>Нажмите <img src="/images/buttons/R.png" alt="(R)" /></li>
+  <li>На игре нажмите <img src="/assets/images/switch/buttons/Y.png" alt="(Y)" /></li>
+  <li>Нажмите <img src="/assets/images/switch/buttons/R.png" alt="(R)" /></li>
   <li>Включите опцию “<strong>Установить Ticket</strong>”</li>
   <li>Нажмите “<strong>Начать установку</strong>”</li>
 </ol>
@@ -782,10 +782,10 @@
 </div></details>
 
 <details class="spoiler"><summary class="spoiler-title">Я случайно удалил тикеты игр в tinfoil</summary><div class="spoiler-body">
-<p>Для переустановки тикетов, запустите <a href="games" target="_blank">tinfoil</a>, перейдите на вкладку “<strong>Тикеты</strong>”, и для каждой игры проделайте следующее:</p>
+<p>Для переустановки тикетов, запустите <a href="/uk/games" target="_blank">tinfoil</a>, перейдите на вкладку “<strong>Тикеты</strong>”, и для каждой игры проделайте следующее:</p>
 <ol>
-  <li>На игре нажмите <img src="/images/buttons/Y.png" alt="(Y)" /></li>
-  <li>Нажмите <img src="/images/buttons/R.png" alt="(R)" /></li>
+  <li>На игре нажмите <img src="/assets/images/switch/buttons/Y.png" alt="(Y)" /></li>
+  <li>Нажмите <img src="/assets/images/switch/buttons/R.png" alt="(R)" /></li>
   <li>Включите опцию “<strong>Установить Ticket</strong>”</li>
   <li>Нажмите “<strong>Начать установку</strong>”</li>
 </ol>
@@ -801,7 +801,7 @@ lang: ukдампим-ключи" target="_blank">дамп ключей на ва
 <h3 id="проблемы-с-файлами--картой-памяти">Проблемы с файлами / картой памяти</h3>
 
 <details class="spoiler"><summary class="spoiler-title">Не могу закинуть на карту игру более 4х Гб, что делать?</summary><div class="spoiler-body">
-<p>Нет ни одной причины закидывать игры на карту памяти. Сразу <a href="games" target="_blank">устанавливайте их</a> рекомендуемым способом по MTP через DBI!</p>
+<p>Нет ни одной причины закидывать игры на карту памяти. Сразу <a href="/uk/games" target="_blank">устанавливайте их</a> рекомендуемым способом по MTP через DBI!</p>
 
 </div></details>
 
@@ -834,7 +834,7 @@ lang: ukдампим-ключи" target="_blank">дамп ключей на ва
 </div></details>
 
 <details class="spoiler"><summary class="spoiler-title">Приставка не видит карту в формате exFAT и просит обновить прошивку</summary><div class="spoiler-body">
-<p>Вам нужно установить драйвер exFAT. Для этого проделайте <a href="update-fw" target="_blank">безопасное обновление прошивки</a>. Его нужно делать даже в том случае, если у вас и так стоит последняя версия взламываемой прошивки! Повторное обновление просто установит отсутствующий драйвер. А вообще, <a href="http://format.customfw.xyz" target="_blank">переходите на FAT32</a>!</p>
+<p>Вам нужно установить драйвер exFAT. Для этого проделайте <a href="/uk/update-fw" target="_blank">безопасное обновление прошивки</a>. Его нужно делать даже в том случае, если у вас и так стоит последняя версия взламываемой прошивки! Повторное обновление просто установит отсутствующий драйвер. А вообще, <a href="http://format.customfw.xyz" target="_blank">переходите на FAT32</a>!</p>
 
 </div></details>
 
@@ -900,7 +900,7 @@ lang: ukдампим-ключи" target="_blank">дамп ключей на ва
 </div></details>
 
 <details class="spoiler"><summary class="spoiler-title">После запуска хомбрю ошибка на фиолетовом фоне с надписью Error Code и номером ошибки</summary><div class="spoiler-body">
-<p>Вы запускаете программу из режима апплета (Applet mode), то есть из Альбомов, тогда как делать это нужно в режиме тайла (Tile mode), то есть через игру или форвардер. Как правильно запускать HBL описано в <a href="hbl" target="_blank">инструкции</a>. Режим апплета не даёт запускаемой программе полного доступа ко всему объёму оперативной памяти в приставке, отчего и случаются ошибки. Если номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то вероятнее всего ошибка вызвана тем, что какое-то хомбрю запущено в режиме апплета и ему не хватает памяти. Если номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000001F</code>, то вытащите картридж из приставки. Держите emunand и sysnand на одной версии прошивки, чтобы в дальнейшем не было таких проблем. Так же исправьте атрибуты (как ищите на этой же странице)</p>
+<p>Вы запускаете программу из режима апплета (Applet mode), то есть из Альбомов, тогда как делать это нужно в режиме тайла (Tile mode), то есть через игру или форвардер. Как правильно запускать HBL описано в <a href="/uk/hbl" target="_blank">инструкции</a>. Режим апплета не даёт запускаемой программе полного доступа ко всему объёму оперативной памяти в приставке, отчего и случаются ошибки. Если номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то вероятнее всего ошибка вызвана тем, что какое-то хомбрю запущено в режиме апплета и ему не хватает памяти. Если номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000001F</code>, то вытащите картридж из приставки. Держите emunand и sysnand на одной версии прошивки, чтобы в дальнейшем не было таких проблем. Так же исправьте атрибуты (как ищите на этой же странице)</p>
 </div></details>
 
 <details class="spoiler"><summary class="spoiler-title">Ошибка при запуске хомбрю с главного меню приставки через форвардер</summary><div class="spoiler-body">
@@ -931,12 +931,12 @@ lang: ukдампим-ключи" target="_blank">дамп ключей на ва
 <h3 id="проблемы-с-системой">Проблемы с системой</h3>
 
 <details class="spoiler"><summary class="spoiler-title">У меня скачалась прошивка, как её удалить не обновляясь?</summary><div class="spoiler-body">
-<p>Запустите <strong>DBI</strong> и выберите “<strong>Clean Orphaned Files</strong>” - все файлы, на которых нет ссылок в системной базе данных будут удалены. <strong>Важно:</strong> запускайте DBI только <a href="hbl" target="_blank">в режиме апплета</a>, кефир должен быть свежим. Иначе магия не сработает.</p>
+<p>Запустите <strong>DBI</strong> и выберите “<strong>Clean Orphaned Files</strong>” - все файлы, на которых нет ссылок в системной базе данных будут удалены. <strong>Важно:</strong> запускайте DBI только <a href="/uk/hbl" target="_blank">в режиме апплета</a>, кефир должен быть свежим. Иначе магия не сработает.</p>
 
 </div></details>
 
 <details class="spoiler"><summary class="spoiler-title">У меня последняя прошивка, но при запуске некоторых игр я вижу, что "*доступно обновление системы*". Почему так происходит?</summary><div class="spoiler-body">
-<p>Имеется ввиду обновление игры. Скачайте его и установите как обычную игру. Так же сбросить проверку версии можно через DBI. Запустите программу, выберите <strong>Browse installed applications</strong>, нажмите <img src="/images/buttons/Y.png" alt="(Y)" />, чтобы выделить все пункты, нажмите <img src="/images/buttons/A.png" alt="(A)" />, а затем выберите <strong>Reset required version</strong>. DBI должен быть <a href="hbl" target="_blank">запущен из режима апплета</a>, кефир должен быть свежим. Иначе магия не сработает.</p>
+<p>Имеется ввиду обновление игры. Скачайте его и установите как обычную игру. Так же сбросить проверку версии можно через DBI. Запустите программу, выберите <strong>Browse installed applications</strong>, нажмите <img src="/assets/images/switch/buttons/Y.png" alt="(Y)" />, чтобы выделить все пункты, нажмите <img src="/assets/images/switch/buttons/A.png" alt="(A)" />, а затем выберите <strong>Reset required version</strong>. DBI должен быть <a href="/uk/hbl" target="_blank">запущен из режима апплета</a>, кефир должен быть свежим. Иначе магия не сработает.</p>
 
 </div></details>
 
@@ -946,7 +946,7 @@ lang: ukдампим-ключи" target="_blank">дамп ключей на ва
 </div></details>
 
 <details class="spoiler"><summary class="spoiler-title">Не синхронизируется время</summary><div class="spoiler-body">
-<p>Автоматическая синхронизация времени отключена в кефире, начиная с версии 660 для экономии батареи в режиме сна. Для синхронизации используйте модуль <a href="https://github.com/nedex/QuickNTP" target="_blank">QuickNTP</a> для Tesla (входит в состав кефира). Запустите Tesla, нажав одновременно <img src="/images/buttons/L.png" alt="(L)" /> + <img src="/images/buttons/DOWN.png" alt="(DOWN)" /> + <img src="/images/buttons/R3.png" alt="(R3)" />, выберите QuickNTP, нажмите <img src="/images/buttons/A.png" alt="(A)" />. Если время не синхронизировалось, выберите другой сервер синхронизации крестовиной (ВЛЕВО-ВПРАВО).</p>
+<p>Автоматическая синхронизация времени отключена в кефире, начиная с версии 660 для экономии батареи в режиме сна. Для синхронизации используйте модуль <a href="https://github.com/nedex/QuickNTP" target="_blank">QuickNTP</a> для Tesla (входит в состав кефира). Запустите Tesla, нажав одновременно <img src="/assets/images/switch/buttons/L.png" alt="(L)" /> + <img src="/assets/images/switch/buttons/DOWN.png" alt="(DOWN)" /> + <img src="/assets/images/switch/buttons/R3.png" alt="(R3)" />, выберите QuickNTP, нажмите <img src="/assets/images/switch/buttons/A.png" alt="(A)" />. Если время не синхронизировалось, выберите другой сервер синхронизации крестовиной (ВЛЕВО-ВПРАВО).</p>
 
 </div></details>
 

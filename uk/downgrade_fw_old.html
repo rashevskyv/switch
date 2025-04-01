@@ -322,7 +322,7 @@
   
     <div class="author__avatar">
       
-        <center><img src="/images/bio-photo.png" class="author__avatar" alt="xHR" itemprop="image"></center>
+        <center><img src="/assets/images/bio-photo.png" class="author__avatar" alt="xHR" itemprop="image"></center>
       
     </div>
   
@@ -498,15 +498,15 @@
   </nav>
 </aside>
 
-<p>Этот гайд для даунгрейда прошивки и для тех, у кого приставка не включается, но цел раздел PRODINFO, либо есть его бекап (атмосфера 0.8.1 и выше бекапит PRODINFO на карту автоматически). Для обновления прошивки воспользуйтесь <a href="update-fw">этой</a> инструкцией!</p>
+<p>Этот гайд для даунгрейда прошивки и для тех, у кого приставка не включается, но цел раздел PRODINFO, либо есть его бекап (атмосфера 0.8.1 и выше бекапит PRODINFO на карту автоматически). Для обновления прошивки воспользуйтесь <a href="/uk/update-fw">этой</a> инструкцией!</p>
 
-<p class="notice--danger">Это ОЧЕНЬ сложный и комплексный метод. ОБЯЗАТЕЛЬНО <a href="backup-nand" target="_blank">сделайте бекап</a> своей текущей прошивки до того, как начнёте выполнение этого метода. ОБЯЗАТЕЛЬНО.</p>
+<p class="notice--danger">Это ОЧЕНЬ сложный и комплексный метод. ОБЯЗАТЕЛЬНО <a href="/uk/backup-nand" target="_blank">сделайте бекап</a> своей текущей прошивки до того, как начнёте выполнение этого метода. ОБЯЗАТЕЛЬНО.</p>
 
 <h2 id="что-понадобится">Что понадобится</h2>
 
 <ul>
   <li>Включите <a href="https://customfw.xyz/file-extensions-windows" target="_blank">отображение расширений файлов</a>, если у вас Windows</li>
-  <li>Умение <a href="fusee-gelee" target="_blank">запускать пейлоады через Fusée Gelée</a></li>
+  <li>Умение <a href="/uk/fusee-gelee" target="_blank">запускать пейлоады через Fusée Gelée</a></li>
   <li>Приставка должна быть полностью заряжена!</li>
   <li>Свежая версия пейлоада <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
   <a href="kefir" target="_blank">kefir</a>
@@ -541,7 +541,7 @@
 <p class="notice--danger">Этот пункт нужно делать <strong>обязательно</strong>! Для продолжения работы нам понадобятся уникальные ключи именно вашей приставки! Без шуток! Вероятность, что что-то пойдёт не так много выше нуля, без бекапа вы ничего не сможете исправить. Ну и обязательно нужен дамп ключей.</p>
 
 <ol>
-  <li>Создайте <a href="backup-nand" target="_blank">резервную копию NAND</a> консоли и поместите её в надёжное место</li>
+  <li>Создайте <a href="/uk/backup-nand" target="_blank">резервную копию NAND</a> консоли и поместите её в надёжное место</li>
   <li>Установите <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip">▼
@@ -565,7 +565,7 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
   <li>
     <p>Скопируйте значение строки “<strong>tsec_key</strong>” из файла <code class="language-plaintext highlighter-rouge">prod.keys</code> вместо <code class="language-plaintext highlighter-rouge">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</code> в поле “<strong>tsec_key</strong>” в файле <code class="language-plaintext highlighter-rouge">keys.txt</code></p>
 
-    <p class="text-center notice--info"><img src="/images/screenshots/keys.png" alt="" /></p>
+    <p class="text-center notice--info">![]((/assets/images/switch/screenshots/keys.png)</p>
   </li>
   <li>Запустите командную строку в папке <code class="language-plaintext highlighter-rouge">EmmcHaccGen</code> (вызовите контекстное меню с зажатой клавишей Shift, нажав на свободное место в папке, и выберите “<strong>Открыть Командную строку здесь</strong>” или “<strong>Открыть окно PowerShell здесь</strong>”)</li>
   <li>В открывшемся окне наберите:
@@ -582,7 +582,7 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
 <div class="notice--danger">
 <p><strong>ВНИМАНИЕ!!!</strong> Если вы в процессе выполнения руководства увидите диалоговое окно, с предложением отформатировать диск - <strong>нажмите отмена</strong>!!</p>
 
-<p class="text-center"><img src="/images/screenshots/format.png" alt="" /></p>
+<p class="text-center">![]((/assets/images/switch/screenshots/format.png)</p>
 </div>
 
 <ol>
@@ -621,14 +621,14 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
 <details class="spoiler"><summary class="spoiler-title">Монтирование BOOT0 в "LINUX UMS DISK 0"</summary><div class="spoiler-body">
 <div class="notice--danger">
 <p class="text-left"><strong>ВНИМАНИЕ!!!</strong> Если вы в процессе выполнения руководства увидите диалоговое окно, с предложением отформатировать диск - <strong>нажмите отмена</strong>!!</p>
-<p class="text-center"><img src="/images/screenshots/format.png" alt="" /></p>
+<p class="text-center">![]((/assets/images/switch/screenshots/format.png)</p>
 </div>
 
 <ol>
   <li>Запустите пейлоад <code class="language-plaintext highlighter-rouge">memloader.bin</code> с помощью <a href="fusee-gelee" target="_blank">Fusée Gelée</a></li>
   <li>На экране приставки выберите <code class="language-plaintext highlighter-rouge">ums_BOOT0.ini</code> и запустите
     <ul>
-      <li>Для перемещения по меню используйте клавиши (VOL-) и (VOL+), для выбора - <img src="/images/buttons/POWER.png" alt="(POWER)" /></li>
+      <li>Для перемещения по меню используйте клавиши (VOL-) и (VOL+), для выбора - <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" /></li>
       <li>Обратите внимание, что выбрали именно “ums_<strong>BOOT0</strong>.ini”</li>
       <li>Экран приставки останется чёрным</li>
     </ul>
@@ -659,11 +659,11 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
       <li>Если это не так, нажмите “<strong>Change и выберите его вручную</strong>”</li>
     </ul>
 
-    <p class="text-center notice--info"><img src="/images/screenshots/etcher_boot0.png" alt="" /></p>
+    <p class="text-center notice--info">![]((/assets/images/switch/screenshots/etcher_boot0.png)</p>
   </li>
   <li>Нажмите “<strong>Flash!</strong>” и ожидайте окончания закачки</li>
   <li>Закройте программу</li>
-  <li>Удерживайте кнопку <img src="/images/buttons/POWER.png" alt="(POWER)" /> 15 секунд, пока не погаснет подсветка экрана Switch</li>
+  <li>Удерживайте кнопку <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" /> 15 секунд, пока не погаснет подсветка экрана Switch</li>
   <li><strong>Повторите для BOOT1</strong></li>
 </ol>
 
@@ -672,14 +672,14 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
 <details class="spoiler"><summary class="spoiler-title">Монтирование eMMC RAW в "LINUX UMS DISK 0"</summary><div class="spoiler-body">
 <div class="notice--danger">
 <p class="text-left"><strong>ВНИМАНИЕ!!!</strong> Если вы в процессе выполнения руководства увидите диалоговое окно, с предложением отформатировать диск - <strong>нажмите отмена</strong>!!</p>
-<p class="text-center"><img src="/images/screenshots/format.png" alt="" /></p>
+<p class="text-center">![]((/assets/images/switch/screenshots/format.png)</p>
 </div>
 
 <ol>
   <li>Запустите пейлоад <code class="language-plaintext highlighter-rouge">memloader.bin</code> с помощью <a href="fusee-gelee" target="_blank">Fusée Gelée</a></li>
   <li>На экране приставки выберите <code class="language-plaintext highlighter-rouge">ums_eMMC RAW.ini</code> и запустите
     <ul>
-      <li>Для перемещения по меню используйте клавиши (VOL-) и (VOL+), для выбора - <img src="/images/buttons/POWER.png" alt="(POWER)" /></li>
+      <li>Для перемещения по меню используйте клавиши (VOL-) и (VOL+), для выбора - <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" /></li>
       <li>Обратите внимание, что выбрали именно “ums_<strong>eMMC RAW</strong>.ini”</li>
       <li>Экран приставки останется чёрным</li>
     </ul>
@@ -709,14 +709,14 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
   <li>
     <p>Вы увидите полный список разделов, содержащихся в этом диске</p>
 
-    <p class="text-center notice--info"><img src="/images/screenshots/hdm_disk.png" alt="" /></p>
+    <p class="text-center notice--info">![]((/assets/images/switch/screenshots/hdm_disk.png)</p>
   </li>
   <li>Дважды нажмите на <code class="language-plaintext highlighter-rouge">PRODINFO</code></li>
   <li>Откройте файл <code class="language-plaintext highlighter-rouge">prod.keys</code>, который мы получили при создании дампа ключей в Части I</li>
   <li>
     <p>В разделе “<strong>bis_key_00</strong>” есть длинная 64-х символьная последовательность, первые 32 символа - это - “<strong>Crypto</strong>”, последние - “<strong>Tweak</strong>”. В файле с ключами ключи делятся попарно. В каждой паре есть так же ключ с меткой “<strong>Crypto</strong>” (crypt) и “<strong>Tweak</strong>” (tweak).</p>
 
-    <p class="text-center notice--info"><img src="/images/screenshots/hdm_key_test.png" alt="" /></p>
+    <p class="text-center notice--info">![]((/assets/images/switch/screenshots/hdm_key_test.png)</p>
   </li>
   <li>Скопируйте ключи соответственно их меткам  из текстового файла <code class="language-plaintext highlighter-rouge">prod.keys</code> в окно программы и нажмите кнопку “<strong>Test</strong>”</li>
   <li>Рядом с кнопкой высветится надпись зелёного цвета (<strong>OK! Enthropy: (tested)</strong>), то ключ скопирован верно - нажмите кнопку “<strong>Save</strong>” и закройте окно (не программу!)
@@ -742,7 +742,7 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
   <li>
     <p>В секции “<strong>Restore from file</strong>” нажмите “<strong>Browse</strong>”</p>
 
-    <p class="text-center notice--info"><img src="/images/screenshots/hdm_bcpkg21-nm.png" alt="" /></p>
+    <p class="text-center notice--info">![]((/assets/images/switch/screenshots/hdm_bcpkg21-nm.png)</p>
   </li>
   <li>Выберите <code class="language-plaintext highlighter-rouge">BCPKG2-1-Normal-Main.bin</code>, который находится в папке <code class="language-plaintext highlighter-rouge">NX-6.1.0-exfat</code>, которую мы сгенерировали в Части III</li>
   <li>Нажмите кнопку “<strong>Start</strong>”</li>
@@ -773,7 +773,7 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
   <li>
     <p>Нажмите кнопку “<strong>Mount</strong>”</p>
 
-    <p class="text-center notice--info"><img src="/images/screenshots/hdm_safe.png" alt="" /></p>
+    <p class="text-center notice--info">![]((/assets/images/switch/screenshots/hdm_safe.png)</p>
   </li>
   <li>
     <p>Если всё сделано верно, в “<strong>Мой компьютер</strong>” появится диск с выбранной буковой. Откройте его</p>
@@ -800,7 +800,7 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
   <li>
     <p>Нажмите кнопку “<strong>Mount</strong>”</p>
 
-    <p class="text-center notice--info"><img src="/images/screenshots/hdm_safe.png" alt="" /></p>
+    <p class="text-center notice--info">![]((/assets/images/switch/screenshots/hdm_safe.png)</p>
   </li>
   <li>Если всё сделано верно, в “<strong>Мой компьютер</strong>” появится диск с выбранной буковой. Откройте его</li>
 </ol>
@@ -850,7 +850,7 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
   <li>
     <p>Нажмите кнопку “<strong>Mount</strong>”</p>
 
-    <p class="text-center notice--info"><img src="/images/screenshots/hdm_safe.png" alt="" /></p>
+    <p class="text-center notice--info">![]((/assets/images/switch/screenshots/hdm_safe.png)</p>
   </li>
   <li>Если всё сделано верно, в “<strong>Мой компьютер</strong>” появится диск с выбранной буковой. Откройте его</li>
 </ol>
@@ -877,7 +877,7 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
   <li>Перейдите в папку <code class="language-plaintext highlighter-rouge">NX-6.1.0-exfat</code>, которую мы сгенерировали в Части III и скопируйте всё <strong>содержимое</strong> папки <code class="language-plaintext highlighter-rouge">USER</code> на смонтированный диск с заменой (<strong>объединить</strong> на macOS)</li>
   <li>После окончания копирования отмонтируйте диск, нажав на кнопку “<strong>Unmount</strong>” в окне HacDiskMount</li>
   <li>Закройте HacDiskMount</li>
-  <li>Выключите Switch, зажав кнопку <img src="/images/buttons/POWER.png" alt="(POWER)" /> на 15 секунд, пока подсветка экрана не отключится</li>
+  <li>Выключите Switch, зажав кнопку <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" /> на 15 секунд, пока подсветка экрана не отключится</li>
 </ol>
 
 </div></details>
@@ -911,7 +911,7 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
 
 <hr />
 
-<h1 class="notice--success" id="следующий-шаг-безопасное-обновление-прошивки">Следующий шаг: <a href="update-fw">Безопасное обновление прошивки</a></h1>
+<h1 class="notice--success" id="следующий-шаг-безопасное-обновление-прошивки">Следующий шаг: <a href="/uk/update-fw">Безопасное обновление прошивки</a></h1>
 
 				
         

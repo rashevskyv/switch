@@ -322,7 +322,7 @@
   
     <div class="author__avatar">
       
-        <center><img src="/images/bio-photo.png" class="author__avatar" alt="xHR" itemprop="image"></center>
+        <center><img src="/assets/images/bio-photo.png" class="author__avatar" alt="xHR" itemprop="image"></center>
       
     </div>
   
@@ -512,7 +512,7 @@
 
 <div class="notice">Робіть <a href="/uk/backup-saves" target="_blank">бекапи збережень</a> якомога частіше!</div>
 
-<div class="notice--warning"><strong>Якщо приставка зависла або не подає ознак життя, вимкніть її утриманням кнопки {% include inc/btn.txt btn="POWER" %} 30 секунд, потім увімкніть і пробросьте пейлоад!</strong></div>
+<div class="notice--warning"><strong>Якщо приставка зависла або не подає ознак життя, вимкніть її утриманням кнопки (POWER) 30 секунд, потім увімкніть і пробросьте пейлоад!</strong></div>
 
 <hr />
 
@@ -545,15 +545,15 @@
 	</span>
 </span>, може використовувати вразливість для виконання неперевіреного коду.</p>
 
-<p><strong>Fusée Gelée</strong> - це ланцюжок експлойтів для Nintendo Switch, побудований навколо апаратної вразливості чипа Nvidia Tegra. З її допомогою можна запускати непідписаний код на Nintendo Switch. Оскільки вразливість апаратна, її неможливо закрити, не змінюючи ревізії заліза. Останні версії приставки, однак, позбавлені цієї діри, тому будьте уважні при купівлі пристрою для прошивки. Дізнатися, чи прошивається ваша приставка, можна <a href="get-started#%D0%BF%D1%96%D0%B4%D0%B1%D1%96%D1%80-%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D0%B2%D1%96%D0%B4%D0%BD%D0%BE%D1%97-%D0%B2%D1%80%D0%B0%D0%B7%D0%BB%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D1%96" target="_blank">тут</a></p>
+<p><strong>Fusée Gelée</strong> - це ланцюжок експлойтів для Nintendo Switch, побудований навколо апаратної вразливості чипа Nvidia Tegra. З її допомогою можна запускати непідписаний код на Nintendo Switch. Оскільки вразливість апаратна, її неможливо закрити, не змінюючи ревізії заліза. Останні версії приставки, однак, позбавлені цієї діри, тому будьте уважні при купівлі пристрою для прошивки. Дізнатися, чи прошивається ваша приставка, можна <a href="/uk/get-started#%D0%BF%D1%96%D0%B4%D0%B1%D1%96%D1%80-%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D0%B2%D1%96%D0%B4%D0%BD%D0%BE%D1%97-%D0%B2%D1%80%D0%B0%D0%B7%D0%BB%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D1%96" target="_blank">тут</a></p>
 
 <h2 id="що-таке-rcm">Що таке RCM</h2>
 
-<p><strong>RCM</strong> - це штатний режим відновлення на Tegra-пристроях. Для того, щоб увійти в нього, потрібно вимкнути консоль, а потім затиснути <img src="/images/buttons/POWER.png" alt="(POWER)" /> + (VOL+) + <img src="/images/buttons/HOME.png" alt="(HOME)" />. Але не той <img src="/images/buttons/HOME.png" alt="(HOME)" />, що ми бачимо на правому джойконі, а кнопку, яку NVIDIA Tegra вважає такою. На жаль, на самій приставці її немає. Нам знадобиться відключити консоль, замкнути певний контакт на місці кріплення правого joy-con і землю (для цього використовується замикач), підключити консоль до ПК і відправити на неї пейлоадер будь-яким зручним способом. Нижче ми розглянемо детальніше, як це робити.</p>
+<p><strong>RCM</strong> - це штатний режим відновлення на Tegra-пристроях. Для того, щоб увійти в нього, потрібно вимкнути консоль, а потім затиснути <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" /> + (VOL+) + <img src="/assets/images/switch/buttons/HOME.png" alt="(HOME)" />. Але не той <img src="/assets/images/switch/buttons/HOME.png" alt="(HOME)" />, що ми бачимо на правому джойконі, а кнопку, яку NVIDIA Tegra вважає такою. На жаль, на самій приставці її немає. Нам знадобиться відключити консоль, замкнути певний контакт на місці кріплення правого joy-con і землю (для цього використовується замикач), підключити консоль до ПК і відправити на неї пейлоадер будь-яким зручним способом. Нижче ми розглянемо детальніше, як це робити.</p>
 
 <h2 id="як-все-це-відбувається">Як все це відбувається</h2>
 
-<p>У загальному вигляді ланцюжок такий - ви вставляєте <a href="#замикач">замикач</a> в приставку, вводите її в <span class="tooltip_container">
+<p>У загальному вигляді ланцюжок такий - ви вставляєте <a href="/uk/#замикач">замикач</a> в приставку, вводите її в <span class="tooltip_container">
 	RCM<span class="tooltip">▼
 		<span class="bottom">
 			Режим восстановления на устройствах с процессором Nvidia Tegra, коим является и Switch. Конкретно в свитче вызывается с помощью одновременного нажатия кнопки включения, кнопки увеличения громкости и замыкания с помощью специального замыкателя определённых контактов в планшете. RCM есть во всех Nintendo Switch, но не каждую можно из этого режима прошить.
@@ -633,7 +633,7 @@
   <li>
     <p>Від’єднайте правий joy-con і ставте <strong>замикач</strong> в направляючу <strong>правого</strong> джойкона до упору</p>
 
-    <p class="text-center notice--info"><img src="/images/screenshots/jig.jpg" alt="" /></p>
+    <p class="text-center notice--info"><img src="/assets/images/switch/screenshots/jig.jpg" alt="" /></p>
   </li>
   <li>Затисніть (VOL+) і увімкніть приставку, не відпускаючи кнопку гучності</li>
   <li>Можете дістати замикач</li>
@@ -645,7 +645,7 @@
 <ul>
   <li>Замкнуті не ті контакти</li>
   <li>Замикач нічого не замикає, наприклад, дріт порвався і контакти не замикаються, або він початково зібраний з помилками</li>
-  <li>Кнопки затиснуті не одночасно. Спробуйте затискати спочатку (VOL+), а потім, не відпускаючи її, натисніть <img src="/images/buttons/POWER.png" alt="(POWER)" /></li>
+  <li>Кнопки затиснуті не одночасно. Спробуйте затискати спочатку (VOL+), а потім, не відпускаючи її, натисніть <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" /></li>
 </ul>
 
 <p class="notice--success">У разі успіху на екрані не відбуватиметься нічого. У разі невдачі запуститься офіційна прошивка</p>
@@ -688,8 +688,8 @@
   </span>
 </span>
     <ul>
-      <li>Інструкція для <a href="r4#прошивка-донгла" target="_blank">R4S</a></li>
-      <li>Інструкція для <a href="rcmloader#прошивка-донгла" target="_blank">RCMLoader</a></li>
+      <li>Інструкція для <a href="/uk/r4#прошивка-донгла" target="_blank">R4S</a></li>
+      <li>Інструкція для <a href="/uk/rcmloader#прошивка-донгла" target="_blank">RCMLoader</a></li>
     </ul>
   </li>
   <li>Приставка повинна знаходитися в режимі <a href="#%D1%87%D0%B0%D1%81%D1%82%D1%8C-i---
@@ -833,16 +833,16 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a> до ПК</li>
   <li>Запустіть <a href="https://github.com/eliboa/TegraRcmGUI/releases/latest" target="_blank"><code class="language-plaintext highlighter-rouge">TegraRcmGUI.exe</code></a> від імені Адміністратора</li>
 </ol>
 
-<p class="text-center notice--info"><img src="/images/screenshots/tegrarcmgui.png" alt="" /></p>
+<p class="text-center notice--info">![]((/assets/images/switch/screenshots/tegrarcmgui.png)</p>
 
 <ol>
-  <li>Натисніть на кнопку <img src="/images/screenshots/search.png" alt="" /> і виберіть пейлоад, який збираєтеся запустити</li>
+  <li>Натисніть на кнопку <img src="/assets/images/switch/screenshots/search.png" alt="" /> і виберіть пейлоад, який збираєтеся запустити</li>
   <li>Натисніть на кнопку “<strong>Inject Payload</strong>”, щоб відправити пейлоад на консоль</li>
   <li>Пейлоад запуститься на консолі
     <ul>
       <li>Якщо пейлоад не запускається, перевірте правильно чи встановлені драйвери. Правильно встановлений драйвер пристрою відображатиметься в диспетчері пристроїв як <code class="language-plaintext highlighter-rouge">libusbK USB Devices</code></li>
       <li>Спробуйте передати пейлоад ще раз</li>
-      <li>Кнопкою <img src="/images/screenshots/add_to_fav.png" alt="" /> можна додати пейлоад у вибране</li>
+      <li>Кнопкою <img src="/assets/images/switch/screenshots/add_to_fav.png" alt="" /> можна додати пейлоад у вибране</li>
     </ul>
   </li>
 </ol>
@@ -1002,7 +1002,7 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a>!</p>
 
 <hr />
 
-<h1 class="notice--success" id="наступний-крок-підготовчі-роботи">Наступний крок: <a href="preparation-fuse">Підготовчі роботи</a></h1>
+<h1 class="notice--success" id="наступний-крок-підготовчі-роботи">Наступний крок: <a href="/uk/preparation-fuse">Підготовчі роботи</a></h1>
 
 				
         

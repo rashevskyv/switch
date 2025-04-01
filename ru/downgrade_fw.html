@@ -330,7 +330,7 @@
   
     <div class="author__avatar">
       
-        <center><img src="/images/bio-photo.png" class="author__avatar" alt="xHR" itemprop="image"></center>
+        <center><img src="/assets/images/bio-photo.png" class="author__avatar" alt="xHR" itemprop="image"></center>
       
     </div>
   
@@ -513,27 +513,27 @@
 
 <div class="notice">Делайте <a href="/ru/backup-saves" target="_blank">бэкапы сохранений</a> как можно чаще!</div>
 
-<div class="notice--warning"><strong>Если приставка зависла или не подаёт признаков жизни, выключите её удержанием кнопки {% include inc/btn.txt btn="POWER" %} 30 секунд, затем включите и пробросьте пейлоад!</strong></div>
+<div class="notice--warning"><strong>Если приставка зависла или не подаёт признаков жизни, выключите её удержанием кнопки (POWER) 30 секунд, затем включите и пробросьте пейлоад!</strong></div>
 
 <hr />
 
-<p>Этот гайд для даунгрейда прошивки и для тех, у кого приставка не включается, но цел раздел PRODINFO, либо есть его бекап (атмосфера 0.8.1 и выше бекапит PRODINFO на карту автоматически). Для обновления прошивки воспользуйтесь <a href="update-fw">этой</a> инструкцией!</p>
+<p>Этот гайд для даунгрейда прошивки и для тех, у кого приставка не включается, но цел раздел PRODINFO, либо есть его бекап (атмосфера 0.8.1 и выше бекапит PRODINFO на карту автоматически). Для обновления прошивки воспользуйтесь <a href="/ru/update-fw">этой</a> инструкцией!</p>
 
 <h2 id="что-понадобится">Что понадобится</h2>
 
-<p class="notice--danger">ОБЯЗАТЕЛЬНО <a href="backup-nand" target="_blank">сделайте бекап</a> своей текущей прошивки до того, как начнёте выполнение инструкции, даже если ваша приставка не включается!</p>
+<p class="notice--danger">ОБЯЗАТЕЛЬНО <a href="/ru/backup-nand" target="_blank">сделайте бекап</a> своей текущей прошивки до того, как начнёте выполнение инструкции, даже если ваша приставка не включается!</p>
 
 <ul>
   <li><a href="backup-nand#часть-ii---
 lang: ruдампим-ключи" target="_blank">Ключи</a>, уникальны для каждой консоли</li>
   <li><a href="https://darthsternie.net/switch-firmwares/">Прошивка</a> той версии, на которую вы собираетесь восстанавливаться (но не выше той, с которой вы сняли ключи)</li>
-  <li><a href="files/SystemRestoreV3.te" target="_blank">SystemRestoreV3.te</a> - скрипт для восстановления прошивки</li>
+  <li><a href="/ru/files/SystemRestoreV3.te" target="_blank">SystemRestoreV3.te</a> - скрипт для восстановления прошивки</li>
   <li>Свежая версия <a href="https://github.com/suchmememanyskill/EmmcHaccGen" target="_blank">EmmcHaccGen</a>
     <ul>
       <li>Требует для работы <a href="https://dotnet.microsoft.com/download/dotnet-core/3.1" target="_blank">.NET SDK 3.1</a></li>
     </ul>
   </li>
-  <li>Создайте <a href="backup-nand" target="_blank">резервную копию NAND</a> консоли и поместите её в надёжное место</li>
+  <li>Создайте <a href="/ru/backup-nand" target="_blank">резервную копию NAND</a> консоли и поместите её в надёжное место</li>
   <li>Установите <span class="tooltip_container">
   <a href="kefir" target="_blank">kefir</a>
   <span class="tooltip">▼
@@ -576,7 +576,7 @@ lang: ruдампим-ключи" target="_blank">ключами</a></li>
 <h3 id="часть-ii---загрузка-прошивки-на-устройство">Часть II - Загрузка прошивки на устройство</h3>
 
 <ol>
-  <li>На карте памяти приставки создайте папку <code class="language-plaintext highlighter-rouge">FW</code> и поместите туда <a href="files/SystemRestoreV3.te" target="_blank">SystemRestoreV3.te</a>, а так же <code class="language-plaintext highlighter-rouge">boot.bis</code> и папку <code class="language-plaintext highlighter-rouge">SYSTEM</code>, которые находятся в папке <code class="language-plaintext highlighter-rouge">Y-X.X.X-exfat</code></li>
+  <li>На карте памяти приставки создайте папку <code class="language-plaintext highlighter-rouge">FW</code> и поместите туда <a href="/ru/files/SystemRestoreV3.te" target="_blank">SystemRestoreV3.te</a>, а так же <code class="language-plaintext highlighter-rouge">boot.bis</code> и папку <code class="language-plaintext highlighter-rouge">SYSTEM</code>, которые находятся в папке <code class="language-plaintext highlighter-rouge">Y-X.X.X-exfat</code></li>
   <li>Запустите <span class="tooltip_container">
  hekate
  <span class="tooltip">▼
@@ -589,15 +589,15 @@ lang: ruдампим-ключи" target="_blank">ключами</a></li>
   <li>Следуйте информации на экране и восстановите BIS и SYSTEM (restore both)</li>
   <li>Пробуйте загрузиться в систему
     <ul>
-      <li>Имейте ввиду, что если ваша консоль прошивается Fusée Gelée, то <a href="autorcm" target="_blank">AutoRCM</a> будет включен</li>
-      <li>Если приставка всё ещё не грузится, сделайте <a href="system-wipe">восстановление к заводским настройкам</a></li>
+      <li>Имейте ввиду, что если ваша консоль прошивается Fusée Gelée, то <a href="/ru/autorcm" target="_blank">AutoRCM</a> будет включен</li>
+      <li>Если приставка всё ещё не грузится, сделайте <a href="/ru/system-wipe">восстановление к заводским настройкам</a></li>
     </ul>
   </li>
 </ol>
 
 <hr />
 
-<h1 class="notice--success" id="следующий-шаг-безопасное-обновление-прошивки">Следующий шаг: <a href="update-fw">Безопасное обновление прошивки</a></h1>
+<h1 class="notice--success" id="следующий-шаг-безопасное-обновление-прошивки">Следующий шаг: <a href="/ru/update-fw">Безопасное обновление прошивки</a></h1>
 
 				
         
