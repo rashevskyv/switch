@@ -13,7 +13,7 @@
 
 
 
-<title>Чиповка Nintendo Switch - Взлом Switch</title>
+<title>Чипування Nintendo Switch - Взлом Switch</title>
 
 
 
@@ -27,7 +27,7 @@
 
 <meta property="og:locale" content="uk_UA">
 <meta property="og:site_name" content="Взлом Switch">
-<meta property="og:title" content="Чиповка Nintendo Switch">
+<meta property="og:title" content="Чипування Nintendo Switch">
 
 
 
@@ -109,6 +109,8 @@
 
   <body class="layout--single">
     
+
+
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
 <![endif]-->
@@ -461,14 +463,14 @@
  
   
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Чиповка Nintendo Switch">
+    <meta itemprop="headline" content="Чипування Nintendo Switch">
     
     
     
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Чиповка Nintendo Switch
+          <h1 class="page__title" itemprop="headline">Чипування Nintendo Switch
 </h1>
           
           <div class="language-selector-container">
@@ -481,169 +483,219 @@
         
 <aside class="sidebar__right">
 <nav class="toc">
-    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Разделы</h4></header>
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Розділи</h4></header>
 <ul class="toc__menu" id="markdown-toc">
-  <li><a href="#установка-чипа-в-приставку" id="markdown-toc-установка-чипа-в-приставку">Установка чипа в приставку</a></li>
-  <li><a href="#установка-прошивки-в-emunand" id="markdown-toc-установка-прошивки-в-emunand">Установка прошивки в EmuNAND</a></li>
+  <li><a href="#встановлення-чипа-в-приставку" id="markdown-toc-встановлення-чипа-в-приставку">Встановлення чипа в приставку</a></li>
+  <li><a href="#встановлення-прошивки-в-emunand" id="markdown-toc-встановлення-прошивки-в-emunand">Встановлення прошивки в EmuNAND</a></li>
 </ul>
 
   </nav>
 </aside>
 
-<p>В этой части мы уделим время настройке свитча до и после чиповки. Про саму же чиповку хорошо рассказано в официальных мануалах. Впрочем, всему своё время.</p>
+<hr />
 
-<p>В данный момент существуют чипы двух типов - HWFLY, являющийся клоном чипа SX, и чипы на базе процессора rp2040 в различных вариациях. Последние могут носить разные названия (rp2040, picofly, часто можно встретить и HWFLY rp2040, которые не имеют ничего общего с HWFLY). Обращайте внимание на маркировку процессора, если не знаете какой у вас чип. На момент написания єтого материала большинство чипов будут именно RP2040. Вам так же может попасться чип под маркировкой InstinctNX: по-сути єто тот же HWFLY.</p>
+<div class="notice--success"><h2>Ви можете прошити, або придбати вже прошитий світч в мене</h2><ul><li><a href="https://t.me/kefir_ukr" target="_blank">Група в телеграмі для українців, там є відгуки та приклади робіт</a></li><li><a href="https://t.me/xhrxhrxhr" target="_blank"><b>Мій особистий телеграм</b> (звертайтеся за чипуванням або купівлею)</a></li><li><a href="/uk/donations" target="_blank">Задонатити на розвиток kefir</a></li></ul></div>
 
-<details class="spoiler"><summary class="spoiler-title">Внешний вид чипов HWFLY</summary><div class="spoiler-body">
-<ul>
-  <li>OLED:</li>
-</ul>
+<div class="notice--warning">Якщо ви потрапили в цей посібник вперше і не знаєте, як прошивається Switch, рекомендуємо почати знайомство з ним з <a href="/" target="_blank">першої сторінки</a></div>
 
-<p class="text-center notice--info"><img src="/assets/images/switch/modchips/hwfly/hw_oled.jpg" alt="" /></p>
+<div class="notice--warning">Якщо ви користувач MacOS, скористайтеся <a href="/uk/sd-macos.html" target="_blank">цими рекомендаціями</a>, щоб уникнути проблем з картою пам'яті</div>
 
-<ul>
-  <li>Lite:</li>
-</ul>
+<div class="notice">Робіть <a href="/uk/backup-saves" target="_blank">бекапи збережень</a> якомога частіше!</div>
 
-<p class="text-center notice--info"><img src="/assets/images/switch/modchips/hwfly/hw_lite.jpg" alt="" /></p>
+<div class="notice--warning"><strong>Якщо приставка зависла або не подає ознак життя, вимкніть її утриманням кнопки (POWER) 30 секунд, потім увімкніть і пробросьте пейлоад!</strong></div>
 
-<ul>
-  <li>Core:</li>
-</ul>
+<hr />
 
-<p class="text-center notice--info"><img src="/assets/images/switch/modchips/hwfly/hw_core.png" alt="" /></p>
+<p>У цій частині ми приділимо час налаштуванню світча до та після чипування. Про саме ж чипування добре розказано в офіційних мануалах. Втім, усьому свій час.</p>
 
-<p class="notice--warning">Обратите внимание на количество элементов на чипе. Их значительно больше, чем на чипах на базе RP2040</p>
+<p>На даний момент існує лише один чип - це чип на базі процесора <strong>rp2040</strong> у різних варіаціях. Вони  можуть мати різні назви (<strong>rp2040</strong>, <strong>picofly</strong>, часто можна зустріти й <strong>HWFLY rp2040</strong>, які не мають нічого спільного з HWFLY). Звертайте увагу на маркування процесора, якщо не знаєте, який саме у вас мод-чип. На момент написання цього матеріалу більшість чипів уц продажі будуть саме RP2040.</p>
 
-</div></details>
+<p>Між тим, на вашій консолі можуть стояти і чипи, що були розповсюджені раніше - <strong>SX Core, SX Lite, HWFLY або  InstinctNX</strong>. Всі ці чипи побудовані на однаковій елементній базі і більше не продаються, оскільки у всьому гірші за RP2040</p>
 
-<details class="spoiler"><summary class="spoiler-title">Внешний вид чипов RP2040</summary><div class="spoiler-body">
-<ul>
-  <li>Сам процессор:</li>
-</ul>
+<details class="spoiler" id="spoiler-70ab4c32">
+  <summary>Зовнішній вигляд чипів RP2040</summary>
+  <div class="spoiler-content">
+    <ul>
+  <li>
+    <p>Сам процесор:</p>
 
-<p class="text-center notice--info"><img src="/assets/images/switch/modchips/rp2040/chip.png" alt="" /></p>
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/rp2040/chip.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Універсальний класичний:</p>
 
-<ul>
-  <li>Универсальный классический:</li>
-</ul>
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/rp2040/rp2040.png" alt="" /></p>
+  </li>
+  <li>
+    <p>OLED:</p>
 
-<p class="text-center notice--info"><img src="/assets/images/switch/modchips/rp2040/rp2040.png" alt="" /></p>
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/rp2040/rp_oled.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Lite:</p>
 
-<ul>
-  <li>OLED:</li>
-</ul>
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/rp2040/rp_lite.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Core:</p>
 
-<p class="text-center notice--info"><img src="/assets/images/switch/modchips/rp2040/rp_oled.png" alt="" /></p>
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/rp2040/rp_core.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Інші варіанти:</p>
 
-<ul>
-  <li>Lite:</li>
-</ul>
-
-<p class="text-center notice--info"><img src="/assets/images/switch/modchips/rp2040/rp_lite.png" alt="" /></p>
-
-<ul>
-  <li>Core:</li>
-</ul>
-
-<p class="text-center notice--info"><img src="/assets/images/switch/modchips/rp2040/rp_core.png" alt="" /></p>
-
-<ul>
-  <li>Другие варианты:</li>
-</ul>
-
-<p class="text-center notice--info"><img src="/assets/images/switch/modchips/rp2040/other_1.png" alt="" />
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/rp2040/other_1.png" alt="" />
 <img src="/assets/images/switch/modchips/rp2040/other_2.png" alt="" /></p>
+  </li>
+</ul>
 
-<p class="notice--warning">Обратите внимание на количество элементов на чипе. Их значительно меньше, чем на чипах HWFLY. Так же зачастую присутствуют большие золотистые кнопки.</p>
+<p class="notice--warning">Зверніть увагу маркування процесору, там намальовано логотип RP2040. Елементів на мод-чипі також значно менше, ніж на чипах HWFLY. Часто присутні великі золотисті кнопки.</p>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-70ab4c32'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Зовнішній вигляд чипів RP2040 <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<p>Как правило в чипе прошивка старой версии, которая может не работать, или работать плохо на приставках со свежей версией системного ПО, потому его следует обновить на свежую версию прошивки - <a href="https://github.com/hwfly-nx/firmware" target="_blank">HWFLY</a>, который будет загружать любой пейлоад, находящийся на карте памяти под именем <code class="language-plaintext highlighter-rouge">payload.bin</code>. При большом желании, через HWFLY-NX можно загрузить и SX OS.</p>
+<details class="spoiler" id="spoiler-e7e750ff">
+  <summary>Зовнішній вигляд чипів HWFLY</summary>
+  <div class="spoiler-content">
+    <ul>
+  <li>
+    <p>OLED:</p>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/hwfly/hw_oled.jpg" alt="" /></p>
+  </li>
+  <li>
+    <p>Lite:</p>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/hwfly/hw_lite.jpg" alt="" /></p>
+  </li>
+  <li>
+    <p>Core:</p>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/hwfly/hw_core.png" alt="" /></p>
+  </li>
+</ul>
+
+<p class="notice--warning">Зверніть увагу на кількість елементів на чипі. Їх значно більше, ніж на чипах на базі RP2040</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-e7e750ff'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Зовнішній вигляд чипів HWFLY <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<p>Як правило, в чипі встановлена прошивка старої версії, яка може не працювати або працювати погано на приставках зі свіжою версією системного ПЗ, тому її слід оновити на свіжу версію прошивки - <a href="https://github.com/hwfly-nx/firmware/releases" target="_blank">прошивку для чіпу</a>, яка завантажуватиме будь-який пейлоад, що знаходиться на карті пам’яті під ім’ям <code class="language-plaintext highlighter-rouge">payload.bin</code>. За великим бажанням, через спеціальну прошивку чипу можна завантажити й SX OS.</p>
 
 <!-- ## Прошивка чипа на HWFLY-NX
-Если у вас приставка ревизии <span class="tooltip_container">
+Якщо у вас приставка ревізії <span class="tooltip_container">
 	Mariko
 	<span class="tooltip">▼
 		<span class="bottom">
-			Кодовым словом **Mariko** обозначаются приставки второй ревизии (вторая буква в серийнике согласная, например XK* или XJ*), а так же Switch Lite и OLED. Собраны на новом техпроцессе, благодаря чему имеют лучшую автономность (большие свитчи). Прошиваются **только** методом чиповки.
+			Кодовим словом **Mariko** позначаються приставки другої ревізії (друга літера в серійнику приголосна, наприклад XK* або XJ*), а також Switch Lite та OLED. Зібрані на новому техпроцесі, завдяки чому мають кращу автономність (великі свічі). Прошиваються **тільки** методом чипування.
 		</span>
 	</span>
-</span>, пропустите часть с прошивкой чипа. 
-<details class="spoiler"><summary class="spoiler-title">Открыть</summary><div class="spoiler-body">
-<ol>
-  <li>Вставьте USB-кабель из комплекта чипа в сам чип
+</span>, пропустіть частину з прошивкою чипа.
+<details class="spoiler" id="spoiler-c821bacf">
+  <summary>Прошивка чипа</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Вставте USB-кабель з комплекту чипа в сам чип
     <ul>
-      <li>Не перепутайте и не поставьте случайно вверх ногами. На ленте кабеля есть отметка, где у него верх, а где них.</li>
+      <li>Не переплутайте і не поставте випадково догори ногами. На стрічці кабелю є позначка, де в нього верх, а де низ.</li>
       <li>
-        <p>Для SX Core верхом считается металлическое основание, на SX Light верх совпадает с направлением крышки процессора. То есть, после монтажа чипа в приставку, та сторона, которая будет смотреть вверх и есть верхняя.</p>
+        <p>Для SX Core верхом вважається металева основа, на SX Light верх збігається з напрямком кришки процесора. Тобто, після монтажу чипа в приставку, та сторона, яка буде дивитися вгору, і є верхньою.</p>
 
         <p class="text-center notice--info"><img src="/assets/images/switch/modchips/core_up.png" alt="SX Core ribbon" /><img src="/assets/images/switch/modchips/light_up.png" alt="SX Light ribbon" /></p>
       </li>
     </ul>
   </li>
-  <li>Подключите чип к ПК кабелем. Если лента вставлена правильно, светодиод на чипе засветится зелёным.</li>
+  <li>Підключіть чип до ПК кабелем. Якщо стрічка вставлена правильно, світлодіод на чипі засвітиться зеленим.</li>
   <li>
-    <p>Откройте <strong>диспетчер устройств</strong> Windows и дождитесь установки драйверов. Если драйвера установлены верно, чип будет виден как “<strong>USB Serial Device</strong>”</p>
+    <p>Відкрийте <strong>диспетчер пристроїв</strong> Windows і дочекайтеся встановлення драйверів. Якщо драйвери встановлені правильно, чип буде видно як “<strong>USB Serial Device</strong>”</p>
 
     <p class="text-center notice--info"><img src="/assets/images/switch/modchips/device_manager.png" alt="" /></p>
   </li>
-  <li>Скачайте <a href="/files/HWFLY031.zip/firmware" target="_blank">свежую версию прошивки</a> из репозитория HWFLY-NX и распакуйте в корень диска <code class="language-plaintext highlighter-rouge">C</code> вашего ПК.
+  <li>Скачайте <a href="https://github.com/hwfly-nx/firmware/releases" target="_blank">свіжу версію прошивки для чіпу</a> та розпакуйте в корінь диска <code class="language-plaintext highlighter-rouge">C</code> вашого ПК.
     <ul>
-      <li>По пути к файлу <code class="language-plaintext highlighter-rouge">flash.bat</code>, находящемуся в распакованном архиве не должно быть пробелов или других символов не латиницы!</li>
+      <li>За шляхом до файлу <code class="language-plaintext highlighter-rouge">flash.bat</code>, що знаходиться в розпакованому архіві, не повинно бути пробілів або інших символів не латиниці!</li>
     </ul>
   </li>
-  <li>Запустите <code class="language-plaintext highlighter-rouge">flash.bat</code>
+  <li>Запустіть <code class="language-plaintext highlighter-rouge">flash.bat</code>
     <ul>
-      <li>Не отключайте USB-кабель в процессе заливки загрузчика! Иначе рискуете получить брик!</li>
+      <li>Не відключайте USB-кабель у процесі заливки завантажувача! Інакше ризикуєте отримати брик!</li>
     </ul>
   </li>
-  <li>Дождитесь окончания прошивки и нажмите любую кнопку, чтобы закрыть окно
+  <li>Дочекайтеся закінчення прошивки та натисніть будь-яку кнопку, щоб закрити вікно
     <ul>
-      <li>После успешного окончания прошивки, светодиод сменит цвет на желто-зелёный.</li>
+      <li>Після успішного закінчення прошивки, світлодіод змінить колір на жовто-зелений.</li>
     </ul>
 
     <p class="text-center notice--info"><img src="/assets/images/switch/modchips/done.png" alt="" /></p>
   </li>
 </ol>
 
-<details class="spoiler"><summary class="spoiler-title">Возможные ошибки</summary><div class="spoiler-body">
-<details class="spoiler"><summary class="spoiler-title">Скрипт завис, ничего не происходит</summary><div class="spoiler-body">
-<p class="text-center notice--info"><img src="/assets/images/switch/modchips/freeze.png" alt="" /></p>
+<details class="spoiler" id="spoiler-2ec946a0">
+  <summary>Можливі помилки</summary>
+  <div class="spoiler-content">
+    <details class="spoiler" id="spoiler-aedeae6e">
+  <summary>Скрипт завис, нічого не відбувається</summary>
+  <div class="spoiler-content">
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/freeze.png" alt="" /></p>
 
-<p>Происходит. Наберитесь терпения</p>
+<p>Таке буває. Наберіться терпіння.</p>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-aedeae6e'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Скрипт завис, нічого не відбувається <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<details class="spoiler"><summary class="spoiler-title">DFU not found!</summary><div class="spoiler-body">
-<p class="text-center notice--info"><img src="/assets/images/switch/modchips/DFU.png" alt="" /></p>
+<details class="spoiler" id="spoiler-247b1114">
+  <summary>DFU not found!</summary>
+  <div class="spoiler-content">
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/DFU.png" alt="" /></p>
 
-<p>Windows не успела установить драйвера. Попробуйте ещё раз. Если не помогло, перезагрузите ПК, попробуйте другой порт, попробуйте другой кабель</p>
+<p>Windows не встигла встановити драйвери. Спробуйте ще раз. Якщо не допомогло, перезавантажте ПК, спробуйте інший порт, спробуйте інший кабель.</p>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-247b1114'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">DFU not found! <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<details class="spoiler"><summary class="spoiler-title">Failed to read! 6</summary><div class="spoiler-body">
-<p class="text-center notice--info"><img src="/assets/images/switch/modchips/error6.png" alt="" /></p>
+<details class="spoiler" id="spoiler-23426cea">
+  <summary>Failed to read! 6</summary>
+  <div class="spoiler-content">
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/error6.png" alt="" /></p>
 
-<p>Попробуйте перезапустить скрипт. Пробуйте столько раз, сколько необходимо, до тех пор, пока не получится. Если не помогло, перезагрузите ПК, попробуйте другой порт, попробуйте другой кабель</p>
-</div></details>
+<p>Спробуйте перезапустити скрипт. Пробуйте стільки разів, скільки необхідно, доки не вийде. Якщо не допомогло, перезавантажте ПК, спробуйте інший порт, спробуйте інший кабель.</p>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-23426cea'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Failed to read! 6 <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-</div></details>-->
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-2ec946a0'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Можливі помилки <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<h2 id="установка-чипа-в-приставку">Установка чипа в приставку</h2>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-c821bacf'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Прошивка чипа <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+ -->
+
+<h2 id="встановлення-чипа-в-приставку">Встановлення чипа в приставку</h2>
 
 <ol>
-  <li>Обновите приставку до последней версии системного ПО чрез настройки, прежде чем устанавливать чип</li>
-  <li>Для установки чипа воспользуйтесь следующими инструкциями
+  <li>Оновіть приставку до останньої версії системного ПЗ через налаштування, перш ніж встановлювати чип</li>
+  <li>Для встановлення чипа скористайтеся наступними інструкціями
     <ul>
-      <li><a href="https://gbatemp.net/download/a-definitive-picofly-install-guide.37968/" target="_blank">Универсальный гайд для PicoFLY</a> универсального типа</li>
-      <li>Гайд для HWFLY, а так же чипов RP2040 с набором шлейфов от HWFLY:
+      <li><a href="https://gbatemp.net/download/a-definitive-picofly-install-guide.37968/" target="_blank">Універсальний гайд для PicoFLY</a> універсального типу</li>
+      <li>Гайд для HWFLY, а також чипів RP2040 з набором шлейфів від HWFLY:
         <ul>
-          <li><a href="https://www.sthetix.info/installing-the-sx-core-mod-kit-full-guide/" target="_blank">Обычный Switch первой или второй ревизии</a>
+          <li><a href="https://www.sthetix.info/installing-the-sx-core-mod-kit-full-guide/" target="_blank">Звичайний Switch першої або другої ревізії</a>
             <ul>
-              <li><strong>Не забудьте смонтировать на чип вашу NAND-память!</strong></li>
+              <li><strong>Не забудьте змонтувати на чип вашу NAND-пам’ять!</strong></li>
             </ul>
           </li>
           <li><a href="https://www.sthetix.info/installing-the-sx-lite-mod-kit/" target="_blank">Switch Lite</a></li>
@@ -652,64 +704,100 @@
       </li>
     </ul>
   </li>
-  <li>После установки чипа убедитесь, что в приставке нет карты памяти и включите её. Чип замигает светодиодом (цвет зависит от типа чипа и его прошивки)
+  <li>Після встановлення чипа переконайтеся, що в приставці немає карти пам’яті, та увімкніть її. Чип заблимає світлодіодом (колір залежить від типу чипа та його прошивки)
     <ul>
-      <li>Терпеливо ожидайте. Чип обучается! Обучение может длиться до получаса.</li>
-      <li>Если у вас rp2040 и при включении он не мигает светодиодом, убедитесь что вы залили прошивку в чип, как єто сказано в <a href="https://gbatemp.net/download/a-definitive-picofly-install-guide.37968/" target="_blank">универсальной инструкции</a> (при подключении чипа к ПК должен отобразится диск, куда и следует скопировать прошивку; если диск не появился, зажмите на чипе кнопку BOOT и, не отпуская её, нажмите RESET)</li>
+      <li>Терпляче чекайте. Чип навчається! Навчання може тривати до півгодини.</li>
+      <li>Якщо у вас rp2040 і при ввімкненні він не блимає світлодіодом, переконайтеся, що ви залили прошивку в чип, як це сказано в <a href="https://gbatemp.net/download/a-definitive-picofly-install-guide.37968/" target="_blank">універсальній інструкції</a> (при підключенні чипа до ПК має відобразитися диск, куди й слід скопіювати прошивку; якщо диск не з’явився, затисніть на чипі кнопку BOOT і, не відпускаючи її, натисніть RESET)</li>
     </ul>
   </li>
-  <li>Как только мигание прекратится, обратите внимание на экран консоли, на нем должно отображаться сообщение, что в приставку не вставлена карта памяти</li>
-  <li>Выключите консоль, удерживая кнопку питания до тех пор, пока экран не потухнет</li>
+  <li>Як тільки блимання припиниться, зверніть увагу на екран консолі, на ньому має відображатися повідомлення, що в приставку не вставлено карту пам’яті</li>
+  <li>Вимкніть консоль, утримуючи кнопку живлення до тих пір, поки екран не погасне</li>
 </ol>
 
-<h2 id="установка-прошивки-в-emunand">Установка прошивки в EmuNAND</h2>
+<h2 id="встановлення-прошивки-в-emunand">Встановлення прошивки в EmuNAND</h2>
 
 <ol>
-  <li><a href="/uk/kefir" target="blank_">Установка и запуск Kefir</a></li>
-  <li><a href="/uk/backup-nand" target="_blank">Резервное копирование NAND</a></li>
-  <li><a href="/uk/emunand" target="blank_">Создание EmuNAND</a></li>
-  <li><a href="/uk/link-account" target="blank_">Привязка аккаунта</a> - последний штрих. Привязки аккаунта для работы требуют некоторые игры</li>
-  <li><a href="/uk/games" target="blank_">Запуск игр</a> - финальная часть, ради которой всё и делалось</li>
-  <li><a href="/uk/usage">Использование уже прошитой приставки</a></li>
+  <li><a href="/uk/kefir" target="blank_">Встановлення та запуск Kefir</a></li>
+  <li><a href="/uk/backup-nand" target="blank_">Резервне копіювання NAND</a></li>
+  <li><a href="/uk/emunand" target="blank_">Створення EmuNAND</a></li>
+  <li><a href="/uk/link-account" target="blank_">Прив’язка акаунту</a> - останній штрих. Прив’язки акаунту для роботи вимагають деякі ігри</li>
+  <li><a href="/uk/games" target="blank_">Запуск ігор</a> - фінальна частина, заради якої все й робилося</li>
+  <li><a href="/uk/usage">Використання вже прошитої приставки</a></li>
 </ol>
 
-<p>Теперь вы можете использовать EmuNAND для игры в пиратку, а SysNAND для игры в лицензию.</p>
+<p>Тепер ви можете використовувати <span class="tooltip_container">
+	EmuNAND
+	<span class="tooltip">▼
+		<span class="bottom">
+			Повна копія NAND, розташована на карті пам’яті. Застосовується для того, щоб залишити офіційну прошивку в максимально незайманому вигляді. Наприклад, ви можете грати в EmuNAND в піратку, а в стоці (так називають оригінальну прошивку, розташовану у внутрішній пам’яті консолі) користуватися онлайном і купленими іграми. Таким чином буде мінімізовано шанс отримати бан.
+		</span>
+	</span>
+</span> для гри в піратку, а <span class="tooltip_container">
+	SysNAND
+	<span class="tooltip">▼
+		<span class="bottom">
+		У цьому гайді під цим терміном мається на увазі прошивка, запущена з внутрішньої пам’яті приставки (не з EmuNAND). Приставка з магазину йтиме саме з такою прошивкою.
+Часто є антонімом до EmuNAND. Сток може бути пропатчений атмосферою, може використовуватися для ліцензії, може використовуватися для піратки, однак говорячи сток найчастіше ми маємо на увазі, що прошивка консолі запущена з внутрішньої карти пам’яті для використання консолі для гри в ліцензію.
+		</span>
+	</span>
+</span> для гри в ліцензію.</p>
 
-<p class="notice--warning">Категорически не рекомендуется использовать приставки ревизии <span class="tooltip_container">
+<p class="notice--warning">Категорично не рекомендується використовувати приставки ревізії <span class="tooltip_container">
 	Mariko
 	<span class="tooltip">▼
 		<span class="bottom">
-			Кодовым словом <strong>Mariko</strong> обозначаются приставки второй ревизии (вторая буква в серийнике согласная, например XK* или XJ*), а так же Switch Lite и OLED. Собраны на новом техпроцессе, благодаря чему имеют лучшую автономность (большие свитчи). Прошиваются <strong>только</strong> методом чиповки.
+			Кодовим словом <strong>Mariko</strong> позначаються приставки другої ревізії (друга літера в серійнику приголосна, наприклад XK* або XJ*), а також Switch Lite та OLED. Зібрані на новому техпроцесі, завдяки чому мають кращу автономність (великі свічі). Прошиваються <strong>тільки</strong> методом чипування.
 		</span>
 	</span>
-</span> без эмунанда. На Mariko эмунанд не опция, а необходимость, поскольку для этой ревизии нет инструментов, которые помогут воскресить вашу консоль буквально из любого состояния в случае поломки. Поэтому запуск приставки без EmuNAND мы рассматривать в руководстве не будем!</p>
+</span> без емунанда. На <span class="tooltip_container">
+	Mariko
+	<span class="tooltip">▼
+		<span class="bottom">
+			Кодовим словом <strong>Mariko</strong> позначаються приставки другої ревізії (друга літера в серійнику приголосна, наприклад XK* або XJ*), а також Switch Lite та OLED. Зібрані на новому техпроцесі, завдяки чому мають кращу автономність (великі свічі). Прошиваються <strong>тільки</strong> методом чипування.
+		</span>
+	</span>
+</span> емунанд не опція, а необхідність, оскільки для цієї ревізії немає інструментів, які допоможуть воскресити вашу консоль буквально з будь-якого стану у випадку поломки. Тому запуск приставки без <span class="tooltip_container">
+	EmuNAND
+	<span class="tooltip">▼
+		<span class="bottom">
+			Повна копія NAND, розташована на карті пам’яті. Застосовується для того, щоб залишити офіційну прошивку в максимально незайманому вигляді. Наприклад, ви можете грати в EmuNAND в піратку, а в стоці (так називають оригінальну прошивку, розташовану у внутрішній пам’яті консолі) користуватися онлайном і купленими іграми. Таким чином буде мінімізовано шанс отримати бан.
+		</span>
+	</span>
+</span> ми розглядати в посібнику не будемо!</p>
 
 <hr />
 
-<details class="spoiler"><summary class="spoiler-title">Материалы для самостоятельного изучения</summary><div class="spoiler-body">
-<ul>
-  <li><a href="faq" target="blank_">Часто задаваемые вопросы</a></li>
-  <li><a href="troubleshooting">Проблемы и их решения</a></li>
-  <li><a href="cheats" target="blank_">Использование читов в EdiZon</a></li>
-  <li><a href="backup-saves" target="blank_">Резервное копирование и восстановление сохранений </a></li>
-  <li><a href="lanplay" target="blank_">Онлайн для прошитых и забаненных</a></li>
+<details class="spoiler" id="spoiler-287cb24a">
+  <summary>Матеріали для самостійного вивчення</summary>
+  <div class="spoiler-content">
+    <ul>
+  <li><a href="faq" target="blank_">Часто задавані питання</a></li>
+  <li><a href="troubleshooting">Проблеми та їх вирішення</a></li>
+  <li><a href="cheats" target="blank_">Використання читів в EdiZon</a></li>
+  <li><a href="backup-saves" target="blank_">Резервне копіювання та відновлення збережень </a></li>
+  <li><a href="lanplay" target="blank_">Онлайн для прошитих та забанених</a></li>
   <li><a href="hbl" target="blank_">Запуск Homebrew Launcher</a></li>
-  <li><a href="emuiibo" target="blank_">Эмуляция Amiibo с помощью модуля emuiibo</a></li>
-  <li><a href="https://4pda.to/forum/index.php?act=findpost&amp;pid=73214535&amp;anchor=Spoil-73214535-3" target="blank_">Инструкции на сайте 4pda</a></li>
+  <li><a href="emuiibo" target="blank_">Емуляція Amiibo за допомогою модуля emuiibo</a></li>
+  <li><a href="https://4pda.to/forum/index.php?act=findpost&amp;pid=73214535&amp;anchor=Spoil-73214535-3" target="blank_">Інструкції на сайті 4pda</a></li>
 </ul>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-287cb24a'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Матеріали для самостійного вивчення <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <hr />
 
-<p class="notice--info">Всё  получилось? Вы большой молодец!</p>
+<p class="notice--info">Все вийшло? Ви молодець!</p>
 
 <p class="text-center"><img src="/assets/images/switch/switch.png" alt="" /></p>
 
-<p class="notice--warning">Не забудьте поблагодарить авторов руководства по реквизитам, указанным ниже:</p>
+<p class="notice--warning">Не забудьте подякувати авторам посібника за реквізитами, вказаними нижче</p>
 
-<details class="spoiler"><summary class="spoiler-title">Реквизиты для сбора пожертвований:</summary><div class="spoiler-body">
-<h2 id="банка-monobank">Банка monobank</h2>
+<details class="spoiler" id="spoiler-50a74fe1">
+  <summary>Реквізити для збору пожертв</summary>
+  <div class="spoiler-content">
+    <h2 id="банка-monobank">Банка monobank</h2>
 
 <p class="text-center notice--info"><a href="https://send.monobank.ua/jar/6VmeFAs1zG" target="_blank"><img alt="Монобанка" border="0" src="/assets/images/donate/mono.jpg" width="400px" style="border-radius:10px !important" /></a></p>
 
@@ -792,7 +880,11 @@ function copyToClipboard(text) {
 }
 </style>
 
-</div></details>
+
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-50a74fe1'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Реквізити для збору пожертв <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <script>
 	localStorage.setItem('fuse', 1);

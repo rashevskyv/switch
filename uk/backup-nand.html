@@ -109,6 +109,8 @@
 
   <body class="layout--single">
     
+
+
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
 <![endif]-->
@@ -500,7 +502,7 @@
 
 <div class="notice--success"><h2>Ви можете прошити, або придбати вже прошитий світч в мене</h2><ul><li><a href="https://t.me/kefir_ukr" target="_blank">Група в телеграмі для українців, там є відгуки та приклади робіт</a></li><li><a href="https://t.me/xhrxhrxhr" target="_blank"><b>Мій особистий телеграм</b> (звертайтеся за чипуванням або купівлею)</a></li><li><a href="/uk/donations" target="_blank">Задонатити на розвиток kefir</a></li></ul></div>
 
-<div class="notice--warning">Якщо ви потрапили в цей посібник вперше і не знаєте, як прошивається Switch, рекомендуємо почати знайомство з ним з <a href="/uk/" target="_blank">першої сторінки</a></div>
+<div class="notice--warning">Якщо ви потрапили в цей посібник вперше і не знаєте, як прошивається Switch, рекомендуємо почати знайомство з ним з <a href="/" target="_blank">першої сторінки</a></div>
 
 <div class="notice--warning">Якщо ви користувач MacOS, скористайтеся <a href="/uk/sd-macos.html" target="_blank">цими рекомендаціями</a>, щоб уникнути проблем з картою пам'яті</div>
 
@@ -521,7 +523,7 @@
   <a href="kefir" target="_blank">kefir</a>
   <span class="tooltip">▼
       <span class="bottom">
-          Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+          Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
       </span>
   </span>
 </span></li>
@@ -549,7 +551,7 @@
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip">▼
      <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
      </span>
  </span>
 </span> за інструкцією, що знаходиться в його репозиторії
@@ -561,14 +563,14 @@
  hekate
  <span class="tooltip">▼
      <span class="bottom">
-         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+         Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
      </span>
  </span>
-</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
+</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> з <code class="language-plaintext highlighter-rouge">.zip</code>-архіву <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip">▼
      <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
      </span>
  </span>
 </span>
@@ -592,16 +594,20 @@
 
 <h3 id="частина-ii---резервне-копіювання-nand">Частина II - Резервне копіювання NAND</h3>
 
-<details class="spoiler"><summary class="spoiler-title">Спосіб I - За допомогою hekate (рекомендовано)</summary><div class="spoiler-body">
-<details class="spoiler"><summary class="spoiler-title">Частина I - робимо дамп внутрішньої пам'яті приставки (NAND)</summary><div class="spoiler-body">
-<p class="notice--info">Цей спосіб вимагає карти пам’яті з не менш ніж 32-ма Гб вільного місця, якщо OLED - 64Гб. Якщо у вас немає такої, але є карта меншого розміру, бекап робитиметься частинами. Після заповнення поточного обсягу на карті на екрані буде виведена інформація про те, що вам необхідно перенести папку backup на ПК, потім повернути карту в консоль і продовжити створення резервної копії.</p>
+<details class="spoiler" id="spoiler-80badd36">
+  <summary>Спосіб I - За допомогою hekate (рекомендовано)</summary>
+  <div class="spoiler-content">
+    <details class="spoiler" id="spoiler-334738c7">
+  <summary>Частина I - робимо дамп внутрішньої пам'яті приставки (NAND)</summary>
+  <div class="spoiler-content">
+    <p class="notice--info">Цей спосіб вимагає карти пам’яті з не менш ніж 32-ма Гб вільного місця, якщо OLED - 64Гб. Якщо у вас немає такої, але є карта меншого розміру, бекап робитиметься частинами. Після заповнення поточного обсягу на карті на екрані буде виведена інформація про те, що вам необхідно перенести папку backup на ПК, потім повернути карту в консоль і продовжити створення резервної копії.</p>
 
 <ol>
   <li>Оновіть <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip">▼
      <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
      </span>
  </span>
 </span> за інструкцією з репозиторію, якщо не робили цього раніше</li>
@@ -609,14 +615,14 @@
  hekate
  <span class="tooltip">▼
      <span class="bottom">
-         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+         Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
      </span>
  </span>
-</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
+</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> з <code class="language-plaintext highlighter-rouge">.zip</code>-архіву <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip">▼
      <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
      </span>
  </span>
 </span>
@@ -638,22 +644,27 @@
 
 <p class="notice--info">Якщо ви робили резервне копіювання NAND на <strong>новій</strong> приставці, в NAND якої ще не встановлювали ігор, то архівування резервної копії дасть якісний результат. Цього результату не буде, якщо приставка вживана і сброшена до заводських налаштувань.</p>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-334738c7'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Частина I - робимо дамп внутрішньої пам'яті приставки (NAND) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<details class="spoiler"><summary class="spoiler-title">Частина II - робимо дамп завантажувальних розділів (BOOT0/BOOT1)</summary><div class="spoiler-body">
-<ol>
+<details class="spoiler" id="spoiler-89a2ff87">
+  <summary>Частина II - робимо дамп завантажувальних розділів (BOOT0/BOOT1)</summary>
+  <div class="spoiler-content">
+    <ol>
   <li>Увійдіть в <span class="tooltip_container">
  hekate
  <span class="tooltip">▼
      <span class="bottom">
-         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+         Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
      </span>
  </span>
-</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
+</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> з <code class="language-plaintext highlighter-rouge">.zip</code>-архіву <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip">▼
      <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
      </span>
  </span>
 </span>
@@ -668,12 +679,20 @@
   <li>Натисніть кнопку “<strong>Close</strong>”, щоб повернутися в попереднє меню</li>
 </ol>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-89a2ff87'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Частина II - робимо дамп завантажувальних розділів (BOOT0/BOOT1) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-80badd36'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб I - За допомогою hekate (рекомендовано) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<details class="spoiler"><summary class="spoiler-title">Спосіб II - За допомогою ПК</summary><div class="spoiler-body">
-<h3 id="дамп-nand">Дамп NAND</h3>
+<details class="spoiler" id="spoiler-4108009a">
+  <summary>Спосіб II - За допомогою ПК</summary>
+  <div class="spoiler-content">
+    <h3 id="дамп-nand">Дамп NAND</h3>
 
 <p class="notice--info">Цей спосіб складніший, ніж попередній, але не вимагає наявності великої карти пам’яті. Швидкість створення резервної копії таким способом буде не більше 6МБ/с</p>
 
@@ -684,14 +703,14 @@
  hekate
  <span class="tooltip">▼
      <span class="bottom">
-         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+         Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
      </span>
  </span>
-</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
+</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> з <code class="language-plaintext highlighter-rouge">.zip</code>-архіву <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip">▼
      <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
      </span>
  </span>
 </span>
@@ -716,8 +735,10 @@
 
 <p><strong>Виберіть вашу операційну систему:</strong></p>
 
-<details class="spoiler"><summary class="spoiler-title">Windows</summary><div class="spoiler-body">
-<ol>
+<details class="spoiler" id="spoiler-f5c35682">
+  <summary>Windows</summary>
+  <div class="spoiler-content">
+    <ol>
   <li>Запустіть <a href="http://hddguru.com/software/HDD-Raw-Copy-Tool/HDDRawCopy1.10Portable.exe" target="_blank">HDD Raw Copy Tool</a> від імені адміністратора</li>
   <li>Виберіть “<strong>hekate eMMC GPP</strong>” і натисніть “<strong>Continue</strong>”
     <ul>
@@ -734,10 +755,16 @@
   <li>Якщо все пройшло успішно, то дамп NAND з’явиться в директорії, яку ви вказали. Збережіть його в надійному місці!</li>
   <li>Від’єднайте пристрій <strong>UMS</strong> безпечно через трей операційної системи, або видаліть його через панель керування</li>
 </ol>
-</div></details>
 
-<details class="spoiler"><summary class="spoiler-title">macOS</summary><div class="spoiler-body">
-<ol>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-f5c35682'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Windows <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-4a15423c">
+  <summary>macOS</summary>
+  <div class="spoiler-content">
+    <ol>
   <li>Запустіть програму Дискова утиліта, переконайтеся, що там з’явився зовнішній диск з назвою “<strong>hekate eMMC GPP</strong>”</li>
   <li>В Дисковій утиліті натисніть правою кнопкою миші на пункті “Linux UMS disk 0 Media”</li>
   <li>Виберіть опцію “Образ з Linux UMS disk 0 Media” і вкажіть шлях, куди зберегти отриманий файл
@@ -749,18 +776,26 @@
   <li>Якщо все пройшло успішно, то дамп NAND з’явиться в директорії, яку ви вказали. Збережіть його в надійному місці!</li>
 </ol>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-4a15423c'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">macOS <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <h3 id="дамп-boot0boot1">Дамп BOOT0/BOOT1</h3>
 
 <p>Робіть аналогічним способом, як робили <strong>Дамп NAND</strong>, але замість “<strong>eMMC RAW GPP</strong>” оберіть “<strong>BOOT0</strong>” та “<strong>BOOT1</strong>” по черзі і збережіть їх під відповідними іменами</p>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-4108009a'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб II - За допомогою ПК <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <h3 id="частина-iii---копіювання-резервної-копії-на-пк">Частина III - Копіювання резервної копії на ПК</h3>
 
-<details class="spoiler"><summary class="spoiler-title">Інструкція</summary><div class="spoiler-body">
-<p class="notice--warning">Якщо ви збираєтеся робити EmuNAND, то саме копіюйте файли, а не переміщуйте, оскільки далі ми зможемо зробити з цього бекапу EmuNAND</p>
+<details class="spoiler" id="spoiler-b38f0ac7">
+  <summary>Інструкція</summary>
+  <div class="spoiler-content">
+    <p class="notice--warning">Якщо ви збираєтеся робити EmuNAND, то саме копіюйте файли, а не переміщуйте, оскільки далі ми зможемо зробити з цього бекапу EmuNAND</p>
 
 <ol>
   <li>Вставте карту пам’яті консолі в ПК</li>
@@ -782,14 +817,19 @@
 
 <p class="notice--danger">Після першого запуску консолі в прошивку, атмосфера автоматично створить бекап ще двох важливих файлів, вони будуть знаходитися в папці <code class="language-plaintext highlighter-rouge">atmosphere/automatic_backups</code>. Також перенесіть цю папку в надійне місце. Маючи на руках ці файли і ключі, ви зможете відновити вашу приставку навіть не маючи бекапу NAND (але це не означає, що його не потрібно берегти)</p>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-b38f0ac7'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Інструкція <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <h2 id="відновлення-резервної-копії">Відновлення резервної копії</h2>
 
 <p class="notice--danger">Ніколи не відновлюйте чужий бекап на свою консоль! Відновивши чужий бекап, ви отримаєте брик. Якщо у вас при цьому немає власного бекапу, то брик буде невідновний простими способами.</p>
 
-<details class="spoiler"><summary class="spoiler-title">Спосіб I - Відновлення через hekate</summary><div class="spoiler-body">
-<ol>
+<details class="spoiler" id="spoiler-db72df18">
+  <summary>Спосіб I - Відновлення через hekate</summary>
+  <div class="spoiler-content">
+    <ol>
   <li>На ПК перейдіть у папку зі своїми резервними копіями</li>
   <li>В папці <code class="language-plaintext highlighter-rouge">backup -&gt; ID</code> створіть папку <code class="language-plaintext highlighter-rouge">restore</code> і перемістіть вміст папки <code class="language-plaintext highlighter-rouge">ID</code> в папку <code class="language-plaintext highlighter-rouge">restore</code>
     <ul>
@@ -805,14 +845,14 @@
  hekate
  <span class="tooltip">▼
      <span class="bottom">
-         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+         Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
      </span>
  </span>
-</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
+</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> з <code class="language-plaintext highlighter-rouge">.zip</code>-архіву <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip">▼
      <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
      </span>
  </span>
 </span>
@@ -829,14 +869,19 @@
   <li>Не забудьте видалити з карти пам’яті папку <code class="language-plaintext highlighter-rouge">backup</code> після закінчення відновлення і перевірки працездатності консолі після відновлення</li>
 </ol>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-db72df18'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб I - Відновлення через hekate <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<details class="spoiler"><summary class="spoiler-title">Спосіб II - Відновлення через ПК</summary><div class="spoiler-body">
-<p class="notice--warning">Цей спосіб працює тільки на приставках першої ревізії - <span class="tooltip_container">
+<details class="spoiler" id="spoiler-d4db11ad">
+  <summary>Спосіб II - Відновлення через ПК</summary>
+  <div class="spoiler-content">
+    <p class="notice--warning">Цей спосіб працює тільки на приставках першої ревізії - <span class="tooltip_container">
 	Erista
 	<span class="tooltip">▼
 		<span class="bottom">
-			Кодовым словом <strong>Erista</strong> обозначаются приставки первой ревизии (серийник начинается на XA*). Erista бывают двух типов - не патченные, уязвимые к методы Fusée Gelée, а так же патченные, с закрытой уязвимостью. Патченные приставки можно прошить <strong>только</strong> при помощи чипа!
+			Кодовим словом <strong>Erista</strong> позначаються приставки першої ревізії (серійник починається на XA*). Erista бувають двох типів - не патчені, вразливі до методу Fusée Gelée, а також патчені, із закритою вразливістю. Патчені приставки можна прошити <strong>тільки</strong> за допомогою чипа!
 		</span>
 	</span>
 </span></p>
@@ -845,10 +890,15 @@
 
 <p>При проблемах з відновленням або відсутності бекапу можете спробувати <a href="/uk/downgrade_fw" target="_blank">цю інструкцію</a></p>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-d4db11ad'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб II - Відновлення через ПК <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<details class="spoiler"><summary class="spoiler-title">Вирішення проблем</summary><div class="spoiler-body">
-<ul>
+<details class="spoiler" id="spoiler-d5d8361e">
+  <summary>Вирішення проблем</summary>
+  <div class="spoiler-content">
+    <ul>
   <li><strong>П:</strong> Приставка не запускається після відновлення бекапу
     <ul>
       <li><strong>В:</strong> Спробуйте <a href="/uk/downgrade_fw" target="_blank">цей метод</a> для відновлення та підвищення версії прошивки</li>
@@ -871,7 +921,10 @@
   </li>
 </ul>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-d5d8361e'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Вирішення проблем <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <hr />
 

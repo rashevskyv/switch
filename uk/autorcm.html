@@ -109,6 +109,8 @@
 
   <body class="layout--single">
     
+
+
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
 <![endif]-->
@@ -481,12 +483,11 @@
         
 <aside class="sidebar__right">
 <nav class="toc">
-    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Разделы</h4></header>
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Зміст</h4></header>
 <ul class="toc__menu" id="markdown-toc">
-  <li><a href="#что-понадобится" id="markdown-toc-что-понадобится">Что понадобится</a></li>
-  <li><a href="#рекомендуемый-способ" id="markdown-toc-рекомендуемый-способ">Рекомендуемый способ</a>    <ul>
-      <li><a href="#установка-autorcm" id="markdown-toc-установка-autorcm">Установка AutoRCM</a></li>
-      <li><a href="#отключение-autorcm" id="markdown-toc-отключение-autorcm">Отключение AutoRCM</a></li>
+  <li><a href="#що-знадобиться" id="markdown-toc-що-знадобиться">Що знадобиться</a>    <ul>
+      <li><a href="#встановлення-autorcm" id="markdown-toc-встановлення-autorcm">Встановлення AutoRCM</a></li>
+      <li><a href="#відключення-autorcm" id="markdown-toc-відключення-autorcm">Відключення AutoRCM</a></li>
     </ul>
   </li>
 </ul>
@@ -494,33 +495,51 @@
   </nav>
 </aside>
 
-<p class="notice--info">AutoRCM - на консоли специальным образом изменяется загрузочный сектор, вследствие чего консоль не может загрузиться прямо в систему и загружается автоматически в режим RCM. Достаточно просто включить консоли и она автоматически попадёт в режим восстановления. Не нужно зажимать комбинацию кнопок и использовать замыкатель, но пейлоад для запуска прошивки всё равно передавать нужно!</p>
+<hr />
 
-<p class="notice--danger">Если вы используете <a href="/uk/caffeine" target="_blank">Caffeine</a>, то вам <strong>ни в коем случае</strong> нельзя использовать AutoRCM! Иначе приставка превратится в кирпич! При любых подозрениях на включенный AutoRCM, удалите его по этой инструкции!</p>
+<div class="notice--success"><h2>Ви можете прошити, або придбати вже прошитий світч в мене</h2><ul><li><a href="https://t.me/kefir_ukr" target="_blank">Група в телеграмі для українців, там є відгуки та приклади робіт</a></li><li><a href="https://t.me/xhrxhrxhr" target="_blank"><b>Мій особистий телеграм</b> (звертайтеся за чипуванням або купівлею)</a></li><li><a href="/uk/donations" target="_blank">Задонатити на розвиток kefir</a></li></ul></div>
 
-<h1 id="что-понадобится">Что понадобится</h1>
+<div class="notice--warning">Якщо ви потрапили в цей посібник вперше і не знаєте, як прошивається Switch, рекомендуємо почати знайомство з ним з <a href="/" target="_blank">першої сторінки</a></div>
+
+<div class="notice--warning">Якщо ви користувач MacOS, скористайтеся <a href="/uk/sd-macos.html" target="_blank">цими рекомендаціями</a>, щоб уникнути проблем з картою пам'яті</div>
+
+<div class="notice">Робіть <a href="/uk/backup-saves" target="_blank">бекапи збережень</a> якомога частіше!</div>
+
+<div class="notice--warning"><strong>Якщо приставка зависла або не подає ознак життя, вимкніть її утриманням кнопки (POWER) 30 секунд, потім увімкніть і пробросьте пейлоад!</strong></div>
+
+<hr />
+
+<p class="notice--info"><strong>AutoRCM</strong> - на консолі спеціальним чином змінюється завантажувальний сектор, внаслідок чого консоль не може завантажитися прямо в систему і завантажується автоматично в режим <span class="tooltip_container">
+	RCM<span class="tooltip">▼
+		<span class="bottom">
+			Режим відновлення на пристроях з процесором Nvidia Tegra, яким є і Switch. Конкретно у світчі викликається за допомогою одночасного натискання кнопки увімкнення, кнопки збільшення гучності та замикання за допомогою спеціального замикача певних контактів у планшеті. RCM є у всіх Nintendo Switch, але не кожну можна з цього режиму прошити.
+		</span>
+	</span>
+</span>. Достатньо просто увімкнути консоль, і вона автоматично потрапить до режиму відновлення. Не потрібно затискати комбінацію кнопок і використовувати замикач, але пейлоад для запуску прошивки все одно передавати потрібно!</p>
+
+<p class="notice--danger">Якщо ви використовуєте <a href="/uk/caffeine" target="_blank">Caffeine</a>, то вам <strong>у жодному разі</strong> не можна використовувати AutoRCM! Інакше приставка перетвориться на цеглину! При будь-яких підозрах на увімкнений AutoRCM, видаліть його за цією інструкцією!</p>
+
+<h2 id="що-знадобиться">Що знадобиться</h2>
 
 <ul>
-  <li>Умение <a href="/uk/fusee-gelee" target="_blank">запускать пейлоады через Fusée Gelée</a></li>
+  <li>Вміння <a href="/uk/fusee-gelee" target="_blank">запускати пейлоади через Fusée Gelée</a></li>
 </ul>
 
-<h1 id="рекомендуемый-способ">Рекомендуемый способ</h1>
-
-<h2 id="установка-autorcm">Установка AutoRCM</h2>
+<h3 id="встановлення-autorcm">Встановлення AutoRCM</h3>
 
 <ol>
   <li>Увійдіть в <span class="tooltip_container">
  hekate
  <span class="tooltip">▼
      <span class="bottom">
-         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+         Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
      </span>
  </span>
-</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
+</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> з <code class="language-plaintext highlighter-rouge">.zip</code>-архіву <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip">▼
      <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
      </span>
  </span>
 </span>
@@ -530,37 +549,33 @@
     </ul>
   </li>
   <li>Утримуйте (VOL-) на приставці під час появи логотипу kefir, щоб потрапити в hekate</li>
-  <li>Перейдите в раздел “<strong>Tools</strong>” -&gt; “<strong>Archive bit - AutoRCM</strong>” (внизу экрана) и установите “<strong>AutoRCM</strong>” в положение “<strong>ON</strong>”</li>
-  <li>Нажмите “<strong>Home</strong>” вверху экрана</li>
-  <li><a href="/uk/cfw" target="_blank">Запустите</a> <span class="tooltip_container">
- кастомную прошивку
- <span class="tooltip">▼
-     <span class="bottom">
-         Модифицированное программное обеспечение консоли, написанное энтузиастами, позволяет делать вещи, недоступные пользователям официальных прошивок, например, запускать неподписанные приложения. В контексте прошивки свитча мы будем называть имеющееся программное обеспечение кастомной прошивкой, хотя, чисто технически, это не так
-     </span>
- </span>
+  <li>Перейдіть до розділу “<strong>Tools</strong>” -&gt; “<strong>Arch bit - AutoRCM</strong>” (внизу екрана) та встановіть “<strong>AutoRCM</strong>” у положення “<strong>ON</strong>”</li>
+  <li>Натисніть “<strong>Home</strong>” вгорі екрана</li>
+  <li><a href="/uk/cfw" target="_blank">Запустіть</a> <span class="tooltip_container">
+кастомну прошивку
+<span class="tooltip">▼
+    <span class="bottom">
+        Модифіковане програмне забезпечення консолі, написане ентузіастами, дозволяє робити речі, недоступні користувачам офіційних прошивок, наприклад, запускати непідписані програми. В контексті прошивки Світча ми будемо називати наявне програмне забезпечення кастомною прошивкою, хоча, чисто технічно, це не так
+    </span>
+</span>
 </span></li>
 </ol>
 
-<hr />
-
-<p class="notice--success"><a href="javascript:window.close();">Закрыть страницу</a></p>
-
-<h2 id="отключение-autorcm">Отключение AutoRCM</h2>
+<h3 id="відключення-autorcm">Відключення AutoRCM</h3>
 
 <ol>
   <li>Увійдіть в <span class="tooltip_container">
  hekate
  <span class="tooltip">▼
      <span class="bottom">
-         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+         Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
      </span>
  </span>
-</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
+</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> з <code class="language-plaintext highlighter-rouge">.zip</code>-архіву <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip">▼
      <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
      </span>
  </span>
 </span>
@@ -570,21 +585,21 @@
     </ul>
   </li>
   <li>Утримуйте (VOL-) на приставці під час появи логотипу kefir, щоб потрапити в hekate</li>
-  <li>Перейдите в раздел “<strong>Tools</strong>” -&gt; “<strong>Archive bit - AutoRCM</strong>” (внизу экрана) и установите “<strong>AutoRCM</strong>” в положение “<strong>OFF</strong>”</li>
-  <li>Нажмите “<strong>Home</strong>” вверху экрана</li>
-  <li><a href="/uk/cfw" target="_blank">Запустите</a> <span class="tooltip_container">
- кастомную прошивку
- <span class="tooltip">▼
-     <span class="bottom">
-         Модифицированное программное обеспечение консоли, написанное энтузиастами, позволяет делать вещи, недоступные пользователям официальных прошивок, например, запускать неподписанные приложения. В контексте прошивки свитча мы будем называть имеющееся программное обеспечение кастомной прошивкой, хотя, чисто технически, это не так
-     </span>
- </span>
+  <li>Перейдіть до розділу “<strong>Tools</strong>” -&gt; “<strong>Arch bit - AutoRCM</strong>” (внизу екрана) та встановіть “<strong>AutoRCM</strong>” у положення “<strong>OFF</strong>”</li>
+  <li>Натисніть “<strong>Home</strong>” вгорі екрана</li>
+  <li><a href="/uk/cfw" target="_blank">Запустіть</a> <span class="tooltip_container">
+кастомну прошивку
+<span class="tooltip">▼
+    <span class="bottom">
+        Модифіковане програмне забезпечення консолі, написане ентузіастами, дозволяє робити речі, недоступні користувачам офіційних прошивок, наприклад, запускати непідписані програми. В контексті прошивки Світча ми будемо називати наявне програмне забезпечення кастомною прошивкою, хоча, чисто технічно, це не так
+    </span>
+</span>
 </span></li>
 </ol>
 
 <hr />
 
-<p class="notice--success"><a href="javascript:window.close();">Закрыть страницу</a></p>
+<p class="notice--success"><a href="javascript:window.close();">Закрити сторінку</a></p>
 
 				
         

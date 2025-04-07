@@ -109,6 +109,8 @@
 
   <body class="layout--single">
     
+
+
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
 <![endif]-->
@@ -508,11 +510,11 @@
   <li>Включите <a href="https://customfw.xyz/file-extensions-windows" target="_blank">отображение расширений файлов</a>, если у вас Windows</li>
   <li>Умение <a href="/uk/fusee-gelee" target="_blank">запускать пейлоады через Fusée Gelée</a></li>
   <li>Приставка должна быть полностью заряжена!</li>
-  <li>Свежая версия пейлоада <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
+  <li>Свежая версия пейлоада <code class="language-plaintext highlighter-rouge">payload.bin</code> з <code class="language-plaintext highlighter-rouge">.zip</code>-архіву <span class="tooltip_container">
   <a href="kefir" target="_blank">kefir</a>
   <span class="tooltip">▼
       <span class="bottom">
-          Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+          Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
       </span>
   </span>
 </span></li>
@@ -546,7 +548,7 @@
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip">▼
      <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
      </span>
  </span>
 </span>, если ещё не делали этого</li>
@@ -595,14 +597,14 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
  hekate
  <span class="tooltip">▼
      <span class="bottom">
-         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+         Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
      </span>
  </span>
-</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
+</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> з <code class="language-plaintext highlighter-rouge">.zip</code>-архіву <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip">▼
      <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
      </span>
  </span>
 </span>
@@ -618,39 +620,46 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
 
 <h3 id="часть-iv---загрузка-прошивки-на-устройство">Часть IV - Загрузка прошивки на устройство</h3>
 
-<details class="spoiler"><summary class="spoiler-title">Монтирование BOOT0 в "LINUX UMS DISK 0"</summary><div class="spoiler-body">
-<div class="notice--danger">
-<p class="text-left"><strong>ВНИМАНИЕ!!!</strong> Если вы в процессе выполнения руководства увидите диалоговое окно, с предложением отформатировать диск - <strong>нажмите отмена</strong>!!</p>
-<p class="text-center">![]((/assets/images/switch/screenshots/format.png)</p>
+<details class="spoiler" id="spoiler-6ec246c3">
+  <summary>Монтирование BOOT0 в "LINUX UMS DISK 0"</summary>
+  <div class="spoiler-content">
+    <div class="notice--danger">
+<p class="text-left"><strong>УВАГА!!!</strong> Якщо ви в процесі виконання посібника побачите діалогове вікно з пропозицією відформатувати диск - <strong>натисніть скасувати</strong>!!</p>
+<p class="text-center"><img src="/assets/images/switch/screenshots/format.png" alt="" /></p>
 </div>
 
 <ol>
-  <li>Запустите пейлоад <code class="language-plaintext highlighter-rouge">memloader.bin</code> с помощью <a href="fusee-gelee" target="_blank">Fusée Gelée</a></li>
-  <li>На экране приставки выберите <code class="language-plaintext highlighter-rouge">ums_BOOT0.ini</code> и запустите
+  <li>Запустіть пейлоад <code class="language-plaintext highlighter-rouge">memloader.bin</code> за допомогою <a href="fusee-gelee" target="_blank">Fusée Gelée</a></li>
+  <li>На екрані приставки виберіть <code class="language-plaintext highlighter-rouge">ums_BOOT0.ini</code> та запустіть
     <ul>
-      <li>Для перемещения по меню используйте клавиши (VOL-) и (VOL+), для выбора - <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" /></li>
-      <li>Обратите внимание, что выбрали именно “ums_<strong>BOOT0</strong>.ini”</li>
-      <li>Экран приставки останется чёрным</li>
+      <li>Для переміщення по меню використовуйте клавіші (VOL-) та (VOL+), для вибору - <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" /></li>
+      <li>Зверніть увагу, що вибрали саме “ums_<strong>BOOT0</strong>.ini”</li>
+      <li>Екран приставки залишиться чорним</li>
     </ul>
   </li>
-  <li>Запустите “<strong>Диспетчер устройств</strong>”, убедитесь, что там, в дереве “<strong>Дисковые устройства</strong>” появилось устройство с названием “<strong>LINUX UMS DISK 0</strong>”
+  <li>Запустіть “<strong>Диспетчер пристроїв</strong>”, переконайтеся, що там, у дереві “<strong>Дискові пристрої</strong>” з’явився пристрій з назвою “<strong>LINUX UMS DISK 0</strong>”
     <ul>
-      <li>Если такового там нет,
+      <li>Якщо такого там немає,
         <ul>
-          <li>удалите все устройства с восклицательным знаком (так же ставьте галочку на удалении драйверов)</li>
-          <li>удалите все устройства с меткой “<strong>USB Download Gadget</strong>”.</li>
-          <li>После удаления устройств выберите “<strong>Действия</strong>” -&gt; “<strong>Обновить конфигурацию оборудования</strong>” в диспетчере устройств</li>
+          <li>видаліть усі пристрої зі знаком оклику (також ставте галочку на видаленні драйверів)</li>
+          <li>видаліть усі пристрої з міткою “<strong>USB Download Gadget</strong>”.</li>
+          <li>Після видалення пристроїв виберіть “<strong>Дії</strong>” -&gt; “<strong>Оновити конфігурацію обладнання</strong>” в диспетчері пристроїв</li>
         </ul>
       </li>
-      <li>Если после всех манипуляций диск так и не появился, выключите Switch и по новой запустите пейлоад <code class="language-plaintext highlighter-rouge">memloader.bin</code> с помощью <a href="fusee-gelee" target="_blank">Fusée Gelée</a></li>
+      <li>Якщо після всіх маніпуляцій диск так і не з’явився, вимкніть Switch і заново запустіть пейлоад <code class="language-plaintext highlighter-rouge">memloader.bin</code> за допомогою <a href="fusee-gelee" target="_blank">Fusée Gelée</a></li>
     </ul>
   </li>
 </ol>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-6ec246c3'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Монтирование BOOT0 в "LINUX UMS DISK 0" <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<details class="spoiler"><summary class="spoiler-title">Загрузка BOOT0/1</summary><div class="spoiler-body">
-<ol>
+<details class="spoiler" id="spoiler-12c30583">
+  <summary>Загрузка BOOT0/1</summary>
+  <div class="spoiler-content">
+    <ol>
   <li>Установите и запустите Etcher</li>
   <li>Нажмите “<strong>Select Image</strong>” и выберите <code class="language-plaintext highlighter-rouge">BOOT0.BIN</code>, который находится в папке <code class="language-plaintext highlighter-rouge">NX-6.1.0-exfat</code>, которую мы сгенерировали в <strong>Части III</strong></li>
   <li>В появившемся окне нажмите “<strong>Continue</strong>”</li>
@@ -667,41 +676,51 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
   <li><strong>Повторите для BOOT1</strong></li>
 </ol>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-12c30583'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Загрузка BOOT0/1 <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<details class="spoiler"><summary class="spoiler-title">Монтирование eMMC RAW в "LINUX UMS DISK 0"</summary><div class="spoiler-body">
-<div class="notice--danger">
-<p class="text-left"><strong>ВНИМАНИЕ!!!</strong> Если вы в процессе выполнения руководства увидите диалоговое окно, с предложением отформатировать диск - <strong>нажмите отмена</strong>!!</p>
-<p class="text-center">![]((/assets/images/switch/screenshots/format.png)</p>
+<details class="spoiler" id="spoiler-9b047ef5">
+  <summary>Монтирование eMMC RAW в "LINUX UMS DISK 0"</summary>
+  <div class="spoiler-content">
+    <div class="notice--danger">
+<p class="text-left"><strong>УВАГА!!!</strong> Якщо ви в процесі виконання посібника побачите діалогове вікно з пропозицією відформатувати диск - <strong>натисніть скасувати</strong>!!</p>
+<p class="text-center"><img src="/assets/images/switch/screenshots/format.png" alt="" /></p>
 </div>
 
 <ol>
-  <li>Запустите пейлоад <code class="language-plaintext highlighter-rouge">memloader.bin</code> с помощью <a href="fusee-gelee" target="_blank">Fusée Gelée</a></li>
-  <li>На экране приставки выберите <code class="language-plaintext highlighter-rouge">ums_eMMC RAW.ini</code> и запустите
+  <li>Запустіть пейлоад <code class="language-plaintext highlighter-rouge">memloader.bin</code> за допомогою <a href="fusee-gelee" target="_blank">Fusée Gelée</a></li>
+  <li>На екрані приставки виберіть <code class="language-plaintext highlighter-rouge">ums_eMMC RAW.ini</code> та запустіть
     <ul>
-      <li>Для перемещения по меню используйте клавиши (VOL-) и (VOL+), для выбора - <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" /></li>
-      <li>Обратите внимание, что выбрали именно “ums_<strong>eMMC RAW</strong>.ini”</li>
-      <li>Экран приставки останется чёрным</li>
+      <li>Для переміщення по меню використовуйте клавіші (VOL-) та (VOL+), для вибору - <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" /></li>
+      <li>Зверніть увагу, що вибрали саме “ums_<strong>eMMC RAW</strong>.ini”</li>
+      <li>Екран приставки залишиться чорним</li>
     </ul>
   </li>
-  <li>Запустите “<strong>Диспетчер устройств</strong>”, убедитесь, что там, в дереве “<strong>Дисковые устройства</strong>” появилось устройство с названием “<strong>LINUX UMS DISK 0</strong>”
+  <li>Запустіть “<strong>Диспетчер пристроїв</strong>”, переконайтеся, що там, у дереві “<strong>Дискові пристрої</strong>” з’явився пристрій з назвою “<strong>LINUX UMS DISK 0</strong>”
     <ul>
-      <li>Если такового там нет,
+      <li>Якщо такого там немає,
         <ul>
-          <li>удалите все устройства с восклицательным знаком (так же ставьте галочку на удалении драйверов)</li>
-          <li>удалите все устройства с меткой “<strong>USB Download Gadget</strong>”.</li>
-          <li>После удаления устройств выберите “<strong>Действия</strong>” -&gt; “<strong>Обновить конфигурацию оборудования</strong>” в диспетчере устройств</li>
+          <li>видаліть усі пристрої зі знаком оклику (також ставте галочку на видаленні драйверів)</li>
+          <li>видаліть усі пристрої з міткою “<strong>USB Download Gadget</strong>”.</li>
+          <li>Після видалення пристроїв виберіть “<strong>Дії</strong>” -&gt; “<strong>Оновити конфігурацію обладнання</strong>” в диспетчері пристроїв</li>
         </ul>
       </li>
-      <li>Если после всех манипуляций диск так и не появился, выключите Switch и по новой запустите пейлоад <code class="language-plaintext highlighter-rouge">memloader.bin</code> с помощью <a href="fusee-gelee" target="_blank">Fusée Gelée</a></li>
+      <li>Якщо після всіх маніпуляцій диск так і не з’явився, вимкніть Switch і заново запустіть пейлоад <code class="language-plaintext highlighter-rouge">memloader.bin</code> за допомогою <a href="fusee-gelee" target="_blank">Fusée Gelée</a></li>
     </ul>
   </li>
 </ol>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-9b047ef5'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Монтирование eMMC RAW в "LINUX UMS DISK 0" <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<details class="spoiler"><summary class="spoiler-title">Настройка eMMC через HacDiskMount</summary><div class="spoiler-body">
-<ol>
+<details class="spoiler" id="spoiler-138667a3">
+  <summary>Настройка eMMC через HacDiskMount</summary>
+  <div class="spoiler-content">
+    <ol>
   <li>Распакуйте <a href="https://switchtools.sshnuke.net/" target="_blank">HacDiskMount</a> в удобную папку</li>
   <li>Запустите <code class="language-plaintext highlighter-rouge">HacDiskMount.exe</code> от имени администратора</li>
   <li>Выберите  “<strong>File</strong>” -&gt; “<strong>Open Physical</strong>”</li>
@@ -733,10 +752,15 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
   <li>В открывшемся окошке уже будут вбиты ключи. Протестируйте их и удостоверьтесь, что результат зелёный. Закройте окно не сохраняя.</li>
 </ol>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-138667a3'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Настройка eMMC через HacDiskMount <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<details class="spoiler"><summary class="spoiler-title">Перенос образов BCPKG2</summary><div class="spoiler-body">
-<ol>
+<details class="spoiler" id="spoiler-b48ab298">
+  <summary>Перенос образов BCPKG2</summary>
+  <div class="spoiler-content">
+    <ol>
   <li>Дважды нажмите на <code class="language-plaintext highlighter-rouge">BCPKG2-1-Normal-Main</code></li>
   <li>Убедитесь, что поля для ключей пустые. Если это не так, отчистите их</li>
   <li>
@@ -755,54 +779,62 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
   </li>
 </ol>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-b48ab298'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Перенос образов BCPKG2 <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<details class="spoiler"><summary class="spoiler-title">Работа с разделом SAFE</summary><div class="spoiler-body">
-<ol>
-  <li>Дважды нажмите на <code class="language-plaintext highlighter-rouge">SAFE</code></li>
-  <li>Протестируйте ключи, нажав на кнопку “<strong>Test</strong>”
+<details class="spoiler" id="spoiler-7bb96e5d">
+  <summary>Работа с разделом SAFE</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Двічі натисніть на <code class="language-plaintext highlighter-rouge">SAFE</code></li>
+  <li>Протестуйте ключі, натиснувши кнопку “<strong>Test</strong>”
     <ul>
-      <li>Если ключи не проходят проверку - вам нужно вписать сюда те, что проходят! Не забудьте нажать на кнопку “<strong>Save</strong>”</li>
+      <li>Якщо ключі не проходять перевірку - вам потрібно вписати сюди ті, що проходять! Не забудьте натиснути кнопку “<strong>Save</strong>”</li>
     </ul>
   </li>
-  <li>Обратите внимание на раздел “<strong>Virtual Drive</strong>”</li>
-  <li>Если там написано “<strong>Driver not installed</strong>”, нажмите на кнопку “<strong>Install</strong>”</li>
-  <li>Надпись должна смениться на “<strong>Driver (ver 2017.0.3.20) installed, service is running</strong>”</li>
-  <li>В поле “<strong>Drive letter</strong>” выберите не занятую букву диска</li>
-  <li>Отметьте галочкой поле “<strong>Passthrough zeroes</strong>”</li>
+  <li>Зверніть увагу на розділ “<strong>Virtual Drive</strong>”</li>
+  <li>Якщо там написано “<strong>Driver not installed</strong>”, натисніть кнопку “<strong>Install</strong>”</li>
+  <li>Напис має змінитися на “<strong>Driver (ver 2017.0.3.20) installed, service is running</strong>”</li>
+  <li>У полі “<strong>Drive letter</strong>” виберіть незайняту літеру диска</li>
+  <li>Позначте галочкою поле “<strong>Passthrough zeroes</strong>”</li>
   <li>
-    <p>Нажмите кнопку “<strong>Mount</strong>”</p>
+    <p>Натисніть кнопку “<strong>Mount</strong>”</p>
 
-    <p class="text-center notice--info">![]((/assets/images/switch/screenshots/hdm_safe.png)</p>
+    <p class="text-center notice--info"><img src="/assets/images/switch/screenshots/hdm_safe.png" alt="" /></p>
   </li>
-  <li>
-    <p>Если всё сделано верно, в “<strong>Мой компьютер</strong>” появится диск с выбранной буковой. Откройте его</p>
-  </li>
+  <li>Якщо все зроблено правильно, у “<strong>Мій комп’ютер</strong>” з’явиться диск з вибраною літерою. Відкрийте його</li>
   <li>Если на диске есть файлы - удалите их все!</li>
   <li>После окончания отмонтируйте диск, нажав на кнопку “<strong>Unmount</strong>” в окне HacDiskMount</li>
 </ol>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-7bb96e5d'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Работа с разделом SAFE <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<details class="spoiler"><summary class="spoiler-title">Работа с разделом SYSTEM</summary><div class="spoiler-body">
-<ol>
-  <li>Дважды нажмите на <code class="language-plaintext highlighter-rouge">SYSTEM</code></li>
-  <li>Протестируйте ключи, нажав на кнопку “<strong>Test</strong>”
+<details class="spoiler" id="spoiler-793aae3c">
+  <summary>Работа с разделом SYSTEM</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Двічі натисніть на <code class="language-plaintext highlighter-rouge">SYSTEM</code></li>
+  <li>Протестуйте ключі, натиснувши кнопку “<strong>Test</strong>”
     <ul>
-      <li>Если ключи не проходят проверку - вам нужно вписать сюда те, что проходят! Не забудьте нажать на кнопку “<strong>Save</strong>”</li>
+      <li>Якщо ключі не проходять перевірку - вам потрібно вписати сюди ті, що проходять! Не забудьте натиснути кнопку “<strong>Save</strong>”</li>
     </ul>
   </li>
-  <li>Обратите внимание на раздел “<strong>Virtual Drive</strong>”</li>
-  <li>Если там написано “<strong>Driver not installed</strong>”, нажмите на кнопку “<strong>Install</strong>”</li>
-  <li>Надпись должна смениться на “<strong>Driver (ver 2017.0.3.20) installed, service is running</strong>”</li>
-  <li>В поле “<strong>Drive letter</strong>” выберите не занятую букву диска</li>
-  <li>Отметьте галочкой поле “<strong>Passthrough zeroes</strong>”</li>
+  <li>Зверніть увагу на розділ “<strong>Virtual Drive</strong>”</li>
+  <li>Якщо там написано “<strong>Driver not installed</strong>”, натисніть кнопку “<strong>Install</strong>”</li>
+  <li>Напис має змінитися на “<strong>Driver (ver 2017.0.3.20) installed, service is running</strong>”</li>
+  <li>У полі “<strong>Drive letter</strong>” виберіть незайняту літеру диска</li>
+  <li>Позначте галочкою поле “<strong>Passthrough zeroes</strong>”</li>
   <li>
-    <p>Нажмите кнопку “<strong>Mount</strong>”</p>
+    <p>Натисніть кнопку “<strong>Mount</strong>”</p>
 
-    <p class="text-center notice--info">![]((/assets/images/switch/screenshots/hdm_safe.png)</p>
+    <p class="text-center notice--info"><img src="/assets/images/switch/screenshots/hdm_safe.png" alt="" /></p>
   </li>
-  <li>Если всё сделано верно, в “<strong>Мой компьютер</strong>” появится диск с выбранной буковой. Откройте его</li>
+  <li>Якщо все зроблено правильно, у “<strong>Мій комп’ютер</strong>” з’явиться диск з вибраною літерою. Відкрийте його</li>
 </ol>
 
 <h4 id="выберите-один-из-методов">Выберите один из методов:</h4>
@@ -832,27 +864,32 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
   <li>После окончания копирования отмонтируйте диск, нажав на кнопку “<strong>Unmount</strong>” в окне HacDiskMount</li>
 </ol>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-793aae3c'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Работа с разделом SYSTEM <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<details class="spoiler"><summary class="spoiler-title">Работа с разделом USER</summary><div class="spoiler-body">
-<ol>
-  <li>Дважды нажмите на <code class="language-plaintext highlighter-rouge">USER</code></li>
-  <li>Протестируйте ключи, нажав на кнопку “<strong>Test</strong>”
+<details class="spoiler" id="spoiler-5740557e">
+  <summary>Работа с разделом USER</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Двічі натисніть на <code class="language-plaintext highlighter-rouge">USER</code></li>
+  <li>Протестуйте ключі, натиснувши кнопку “<strong>Test</strong>”
     <ul>
-      <li>Если ключи не проходят проверку - вам нужно вписать сюда те, что проходят! Не забудьте нажать на кнопку “<strong>Save</strong>”</li>
+      <li>Якщо ключі не проходять перевірку - вам потрібно вписати сюди ті, що проходять! Не забудьте натиснути кнопку “<strong>Save</strong>”</li>
     </ul>
   </li>
-  <li>Обратите внимание на раздел “<strong>Virtual Drive</strong>”</li>
-  <li>Если там написано “<strong>Driver not installed</strong>”, нажмите на кнопку “<strong>Install</strong>”</li>
-  <li>Надпись должна смениться на “<strong>Driver (ver 2017.0.3.20) installed, service is running</strong>”</li>
-  <li>В поле “<strong>Drive letter</strong>” выберите не занятую букву диска</li>
-  <li>Отметьте галочкой поле “<strong>Passthrough zeroes</strong>”</li>
+  <li>Зверніть увагу на розділ “<strong>Virtual Drive</strong>”</li>
+  <li>Якщо там написано “<strong>Driver not installed</strong>”, натисніть кнопку “<strong>Install</strong>”</li>
+  <li>Напис має змінитися на “<strong>Driver (ver 2017.0.3.20) installed, service is running</strong>”</li>
+  <li>У полі “<strong>Drive letter</strong>” виберіть незайняту літеру диска</li>
+  <li>Позначте галочкою поле “<strong>Passthrough zeroes</strong>”</li>
   <li>
-    <p>Нажмите кнопку “<strong>Mount</strong>”</p>
+    <p>Натисніть кнопку “<strong>Mount</strong>”</p>
 
-    <p class="text-center notice--info">![]((/assets/images/switch/screenshots/hdm_safe.png)</p>
+    <p class="text-center notice--info"><img src="/assets/images/switch/screenshots/hdm_safe.png" alt="" /></p>
   </li>
-  <li>Если всё сделано верно, в “<strong>Мой компьютер</strong>” появится диск с выбранной буковой. Откройте его</li>
+  <li>Якщо все зроблено правильно, у “<strong>Мій комп’ютер</strong>” з’явиться диск з вибраною літерою. Відкрийте його</li>
 </ol>
 
 <h4 id="выберите-один-из-методов">Выберите один из методов:</h4>
@@ -880,7 +917,10 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
   <li>Выключите Switch, зажав кнопку <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" /> на 15 секунд, пока подсветка экрана не отключится</li>
 </ol>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-5740557e'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Работа с разделом USER <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <h3 id="часть-v---autorcm">Часть V - AutoRCM</h3>
 
@@ -889,14 +929,14 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
  hekate
  <span class="tooltip">▼
      <span class="bottom">
-         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+         Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
      </span>
  </span>
-</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.zip</code>-архива <span class="tooltip_container">
+</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> з <code class="language-plaintext highlighter-rouge">.zip</code>-архіву <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip">▼
      <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
      </span>
  </span>
 </span>

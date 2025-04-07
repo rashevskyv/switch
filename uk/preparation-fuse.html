@@ -109,6 +109,8 @@
 
   <body class="layout--single">
     
+
+
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
 <![endif]-->
@@ -495,7 +497,7 @@
 
 <div class="notice--success"><h2>Ви можете прошити, або придбати вже прошитий світч в мене</h2><ul><li><a href="https://t.me/kefir_ukr" target="_blank">Група в телеграмі для українців, там є відгуки та приклади робіт</a></li><li><a href="https://t.me/xhrxhrxhr" target="_blank"><b>Мій особистий телеграм</b> (звертайтеся за чипуванням або купівлею)</a></li><li><a href="/uk/donations" target="_blank">Задонатити на розвиток kefir</a></li></ul></div>
 
-<div class="notice--warning">Якщо ви потрапили в цей посібник вперше і не знаєте, як прошивається Switch, рекомендуємо почати знайомство з ним з <a href="/uk/" target="_blank">першої сторінки</a></div>
+<div class="notice--warning">Якщо ви потрапили в цей посібник вперше і не знаєте, як прошивається Switch, рекомендуємо почати знайомство з ним з <a href="/" target="_blank">першої сторінки</a></div>
 
 <div class="notice--warning">Якщо ви користувач MacOS, скористайтеся <a href="/uk/sd-macos.html" target="_blank">цими рекомендаціями</a>, щоб уникнути проблем з картою пам'яті</div>
 
@@ -523,12 +525,14 @@
 
 <h2 id="запуск-прошивки-без-використання-emunand-не-рекомендується">Запуск прошивки без використання EmuNAND (не рекомендується)</h2>
 
-<details class="spoiler"><summary class="spoiler-title">Открыть</summary><div class="spoiler-body">
-<p class="notice--danger">Ви не зможете користуватися онлайном навіть у куплених іграх, доти, доки не перенесете SysNAND в <span class="tooltip_container">
+<details class="spoiler" id="spoiler-391e5815">
+  <summary>Спойлер</summary>
+  <div class="spoiler-content">
+    <p class="notice--danger">Ви не зможете користуватися онлайном навіть у куплених іграх, доти, доки не перенесете SysNAND в <span class="tooltip_container">
 	EmuNAND
 	<span class="tooltip">▼
 		<span class="bottom">
-			Полная копия NAND, расположенная на карте памяти. Применяется для того, чтобы оставить официальную прошивку в максимально нетронутом виде. Например, вы можете играть в EmuNAND в пиратку, а в стоке (так называют оригинальную прошивку, расположенную во внутренней памяти консоли) пользоваться онлайном и купленными играми. Таким образом будет минимизирован шанс получить бан.
+			Повна копія NAND, розташована на карті пам’яті. Застосовується для того, щоб залишити офіційну прошивку в максимально незайманому вигляді. Наприклад, ви можете грати в EmuNAND в піратку, а в стоці (так називають оригінальну прошивку, розташовану у внутрішній пам’яті консолі) користуватися онлайном і купленими іграми. Таким чином буде мінімізовано шанс отримати бан.
 		</span>
 	</span>
 </span> <a href="/uk/preparation-white" target="blank_">за цією інструкцією</a>, а в SysNAND не відновите чистий бекап.</p>
@@ -540,36 +544,46 @@
   <li><a href="/uk/games" target="blank_">Запуск ігор</a> - фінальна частина, заради якої все й робилося</li>
 </ol>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-391e5815'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спойлер <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <hr />
 
 <h2 id="матеріали-для-самостійного-вивчення">Матеріали для самостійного вивчення</h2>
 
-<details class="spoiler"><summary class="spoiler-title">Открыть</summary><div class="spoiler-body">
-<ul>
-  <li><a href="faq" target="blank_">Часто задаваемые вопросы</a></li>
-  <li><a href="troubleshooting">Проблемы и их решения</a></li>
-  <li><a href="cheats" target="blank_">Использование читов в EdiZon</a></li>
-  <li><a href="backup-saves" target="blank_">Резервное копирование и восстановление сохранений </a></li>
-  <li><a href="lanplay" target="blank_">Онлайн для прошитых и забаненных</a></li>
+<details class="spoiler" id="spoiler-4c4cf7c5">
+  <summary>Спойлер</summary>
+  <div class="spoiler-content">
+    <ul>
+  <li><a href="faq" target="blank_">Часто задавані питання</a></li>
+  <li><a href="troubleshooting">Проблеми та їх вирішення</a></li>
+  <li><a href="cheats" target="blank_">Використання читів в EdiZon</a></li>
+  <li><a href="backup-saves" target="blank_">Резервне копіювання та відновлення збережень </a></li>
+  <li><a href="lanplay" target="blank_">Онлайн для прошитих та забанених</a></li>
   <li><a href="hbl" target="blank_">Запуск Homebrew Launcher</a></li>
-  <li><a href="emuiibo" target="blank_">Эмуляция Amiibo с помощью модуля emuiibo</a></li>
-  <li><a href="https://4pda.to/forum/index.php?act=findpost&amp;pid=73214535&amp;anchor=Spoil-73214535-3" target="blank_">Инструкции на сайте 4pda</a></li>
+  <li><a href="emuiibo" target="blank_">Емуляція Amiibo за допомогою модуля emuiibo</a></li>
+  <li><a href="https://4pda.to/forum/index.php?act=findpost&amp;pid=73214535&amp;anchor=Spoil-73214535-3" target="blank_">Інструкції на сайті 4pda</a></li>
 </ul>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-4c4cf7c5'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спойлер <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <hr />
 
-<p class="notice--info">Всё  получилось? Вы большой молодец!</p>
+<p class="notice--info">Все вийшло? Ви молодець!</p>
 
 <p class="text-center"><img src="/assets/images/switch/switch.png" alt="" /></p>
 
-<p class="notice--warning">Не забудьте поблагодарить авторов руководства по реквизитам, указанным ниже:</p>
+<p class="notice--warning">Не забудьте подякувати авторам посібника за реквізитами, вказаними нижче</p>
 
-<details class="spoiler"><summary class="spoiler-title">Реквизиты для сбора пожертвований:</summary><div class="spoiler-body">
-<h2 id="банка-monobank">Банка monobank</h2>
+<details class="spoiler" id="spoiler-680459e4">
+  <summary>Реквізити для збору пожертв</summary>
+  <div class="spoiler-content">
+    <h2 id="банка-monobank">Банка monobank</h2>
 
 <p class="text-center notice--info"><a href="https://send.monobank.ua/jar/6VmeFAs1zG" target="_blank"><img alt="Монобанка" border="0" src="/assets/images/donate/mono.jpg" width="400px" style="border-radius:10px !important" /></a></p>
 
@@ -652,7 +666,11 @@ function copyToClipboard(text) {
 }
 </style>
 
-</div></details>
+
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-680459e4'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Реквізити для збору пожертв <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <script>
     // Встановлюємо значення

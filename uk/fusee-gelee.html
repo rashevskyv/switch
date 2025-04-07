@@ -109,6 +109,8 @@
 
   <body class="layout--single">
     
+
+
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
 <![endif]-->
@@ -506,7 +508,7 @@
 
 <div class="notice--success"><h2>Ви можете прошити, або придбати вже прошитий світч в мене</h2><ul><li><a href="https://t.me/kefir_ukr" target="_blank">Група в телеграмі для українців, там є відгуки та приклади робіт</a></li><li><a href="https://t.me/xhrxhrxhr" target="_blank"><b>Мій особистий телеграм</b> (звертайтеся за чипуванням або купівлею)</a></li><li><a href="/uk/donations" target="_blank">Задонатити на розвиток kefir</a></li></ul></div>
 
-<div class="notice--warning">Якщо ви потрапили в цей посібник вперше і не знаєте, як прошивається Switch, рекомендуємо почати знайомство з ним з <a href="/uk/" target="_blank">першої сторінки</a></div>
+<div class="notice--warning">Якщо ви потрапили в цей посібник вперше і не знаєте, як прошивається Switch, рекомендуємо почати знайомство з ним з <a href="/" target="_blank">першої сторінки</a></div>
 
 <div class="notice--warning">Якщо ви користувач MacOS, скористайтеся <a href="/uk/sd-macos.html" target="_blank">цими рекомендаціями</a>, щоб уникнути проблем з картою пам'яті</div>
 
@@ -516,8 +518,10 @@
 
 <hr />
 
-<details class="spoiler"><summary class="spoiler-title">Відеоінструкція</summary><div class="spoiler-body">
-<p class="notice--warning">ВНИМАНИЕ!!! Мы не рекомендуем слепо следовать видео-инструкции! Используйте её только в качестве вспомогательной! Дело в том, что текстовый гайд постоянно обновляется. Невозможно следить за всеми обновлениями в гайде и каждый раз менять видео-инструкцию вслед за ним! Поэтому текстовый гайд всегда будет более точным и более актуальным, чем видео!</p>
+<details class="spoiler" id="spoiler-3f42c6e5">
+  <summary>Відеоінструкція</summary>
+  <div class="spoiler-content">
+    <p class="notice--warning">ВНИМАНИЕ!!! Мы не рекомендуем слепо следовать видео-инструкции! Используйте её только в качестве вспомогательной! Дело в том, что текстовый гайд постоянно обновляется. Невозможно следить за всеми обновлениями в гайде и каждый раз менять видео-инструкцию вслед за ним! Поэтому текстовый гайд всегда будет более точным и более актуальным, чем видео!</p>
 
 <div style="margin:0 auto;" class="text-center notice--info">
   <div class="ytcontainer">
@@ -525,7 +529,10 @@
   </div>
 </div>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-3f42c6e5'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Відеоінструкція <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <p class="notice--warning"><strong>Ця сторінка є пояснювальною. На цій сторінці не розглядається безпосередньо запуск кастомної прошивки, а дана лише теоретична частина. Практична частина буде дана далі, в процесі виконання посібника.</strong></p>
 
@@ -534,13 +541,13 @@
 <p>Деякі мобільні процесори NVIDIA Tegra, випущені до 2016 року, містять вразливість переповнення буфера в режимі відновлення BootROM (<span class="tooltip_container">
 	RCM<span class="tooltip">▼
 		<span class="bottom">
-			Режим восстановления на устройствах с процессором Nvidia Tegra, коим является и Switch. Конкретно в свитче вызывается с помощью одновременного нажатия кнопки включения, кнопки увеличения громкости и замыкания с помощью специального замыкателя определённых контактов в планшете. RCM есть во всех Nintendo Switch, но не каждую можно из этого режима прошить.
+			Режим відновлення на пристроях з процесором Nvidia Tegra, яким є і Switch. Конкретно у світчі викликається за допомогою одночасного натискання кнопки увімкнення, кнопки збільшення гучності та замикання за допомогою спеціального замикача певних контактів у планшеті. RCM є у всіх Nintendo Switch, але не кожну можна з цього режиму прошити.
 		</span>
 	</span>
 </span>). Зловмисник з фізичним доступом до USB-порту пристрою і можливістю примусового перезавантаження пристрою в <span class="tooltip_container">
 	RCM<span class="tooltip">▼
 		<span class="bottom">
-			Режим восстановления на устройствах с процессором Nvidia Tegra, коим является и Switch. Конкретно в свитче вызывается с помощью одновременного нажатия кнопки включения, кнопки увеличения громкости и замыкания с помощью специального замыкателя определённых контактов в планшете. RCM есть во всех Nintendo Switch, но не каждую можно из этого режима прошить.
+			Режим відновлення на пристроях з процесором Nvidia Tegra, яким є і Switch. Конкретно у світчі викликається за допомогою одночасного натискання кнопки увімкнення, кнопки збільшення гучності та замикання за допомогою спеціального замикача певних контактів у планшеті. RCM є у всіх Nintendo Switch, але не кожну можна з цього режиму прошити.
 		</span>
 	</span>
 </span>, може використовувати вразливість для виконання неперевіреного коду.</p>
@@ -556,21 +563,21 @@
 <p>У загальному вигляді ланцюжок такий - ви вставляєте <a href="/uk/#замикач">замикач</a> в приставку, вводите її в <span class="tooltip_container">
 	RCM<span class="tooltip">▼
 		<span class="bottom">
-			Режим восстановления на устройствах с процессором Nvidia Tegra, коим является и Switch. Конкретно в свитче вызывается с помощью одновременного нажатия кнопки включения, кнопки увеличения громкости и замыкания с помощью специального замыкателя определённых контактов в планшете. RCM есть во всех Nintendo Switch, но не каждую можно из этого режима прошить.
+			Режим відновлення на пристроях з процесором Nvidia Tegra, яким є і Switch. Конкретно у світчі викликається за допомогою одночасного натискання кнопки увімкнення, кнопки збільшення гучності та замикання за допомогою спеціального замикача певних контактів у планшеті. RCM є у всіх Nintendo Switch, але не кожну можна з цього режиму прошити.
 		</span>
 	</span>
 </span> і передаєте на неї корисне навантаження, яке в свою чергу виконує код на самій приставці. Корисне навантаження, воно ж <span class="tooltip_container">
 	пейлоад
 	<span class="tooltip">▼
 		<span class="bottom">
-			Файл с исполняемым кодом в формате <code class="language-plaintext highlighter-rouge">.bin</code>, которые мы загружаем в приставку, чаще всего - загрузчик
+			Файл з виконуваним кодом у форматі <code class="language-plaintext highlighter-rouge">.bin</code>, який ми завантажуємо в приставку, найчастіше - завантажувач
 		</span>
 	</span>
 </span>, можна передати через ПК, смартфон або спеціальний <span class="tooltip_container">
 	донгл
 	<span class="tooltip">▼
 		<span class="bottom">
-			Специальное устройство небольшого размера, единственной задачей которого является отправка пейлоада на консоль.
+			Спеціальний пристрій невеликого розміру, єдиним завданням якого є відправлення пейлоаду на консоль.
 		</span>
 	</span>
 </span>, створений виключно для цього. Для простоти будь-який пристрій, здатний передавати пейлоад, ми називатимемо <strong>хостом</strong>. Для спрощення запуску прошивки хост <a href="https://gbatemp.net/threads/internal-modchip-samd21-trinket-m0-gemma-m0-itsybitsy-m0-express-guide-files-support.508068/" target="_blank">можна вбудувати в саму приставку</a>. Хост, вбудований в приставку, називається <strong>чипом</strong>. Різниця між чипом і донглом насамперед у тому, що перший завжди знаходиться в приставці, запускає пейлоад відразу при її включенні, а також стежить за тим, щоб не допустити повного розряду приставки. Варто розуміти, що це не той же самий чип, за допомогою якого зламуються приставки на Mariko і патчені приставки першої ревізії. У цьому випадку чип просто замінює собою донгл. У випадку ж з чипуванням на Mariko, чип сам по собі і є зламом. Тобто, на Mariko без чипа ви не зможете зламати приставку взагалі, а в разі з приставкою, вразливою до Fusée Gelée, без чипа цілком можна обійтися, пробросивши пейлоад через Донгл або ПК.</p>
@@ -616,8 +623,10 @@
 
 <h3 id="частина-i---вхід-в-rcm">Частина I - Вхід в RCM</h3>
 
-<details class="spoiler"><summary class="spoiler-title">Відеоінструкція</summary><div class="spoiler-body">
-<p class="notice--warning">ВНИМАНИЕ!!! Мы не рекомендуем слепо следовать видео-инструкции! Используйте её только в качестве вспомогательной! Дело в том, что текстовый гайд постоянно обновляется. Невозможно следить за всеми обновлениями в гайде и каждый раз менять видео-инструкцию вслед за ним! Поэтому текстовый гайд всегда будет более точным и более актуальным, чем видео!</p>
+<details class="spoiler" id="spoiler-3979772e">
+  <summary>Відеоінструкція</summary>
+  <div class="spoiler-content">
+    <p class="notice--warning">ВНИМАНИЕ!!! Мы не рекомендуем слепо следовать видео-инструкции! Используйте её только в качестве вспомогательной! Дело в том, что текстовый гайд постоянно обновляется. Невозможно следить за всеми обновлениями в гайде и каждый раз менять видео-инструкцию вслед за ним! Поэтому текстовый гайд всегда будет более точным и более актуальным, чем видео!</p>
 
 <div style="margin:0 auto;" class="text-center notice--info">
   <div class="ytcontainer">
@@ -625,7 +634,10 @@
   </div>
 </div>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-3979772e'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Відеоінструкція <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <ol>
   <li>Якщо в приставку вставлений картридж - витягніть його</li>
@@ -656,8 +668,10 @@
 
 <p>Залежно від ситуації, пробрасуваний пейлоад може бути різним. Ми навмисно не вказуємо на цій сторінці, який пейлоад потрібно пробросити. У явному вигляді це буде сказано на відповідних сторінках. Найчастіше ви будете пробрасувати гекату, яка знаходиться в складі кефіру у вигляді <code class="language-plaintext highlighter-rouge">payload.bin</code></p>
 
-<details class="spoiler"><summary class="spoiler-title">Запуск через донгл</summary><div class="spoiler-body">
-<p>Донгл - це автономний пристрій, який створений виключно для зручного запуску зламу.</p>
+<details class="spoiler" id="spoiler-964311a8">
+  <summary>Запуск через донгл</summary>
+  <div class="spoiler-content">
+    <p>Донгл - це автономний пристрій, який створений виключно для зручного запуску зламу.</p>
 
 <h2 id="що-знадобиться">Що знадобиться</h2>
 
@@ -665,7 +679,7 @@
 	Донгл
 	<span class="tooltip">▼
 		<span class="bottom">
-			Специальное устройство небольшого размера, единственной задачей которого является отправка пейлоада на консоль.
+			Спеціальний пристрій невеликого розміру, єдиним завданням якого є відправлення пейлоаду на консоль.
 		</span>
 	</span>
 </span> необхідно зарядити комплектним кабелем microUSB-USB, або вставити в <strong>увімкнену</strong> приставку</p>
@@ -675,7 +689,7 @@
   донгл
   <span class="tooltip">▼
       <span class="bottom">
-          Специальное устройство небольшого размера, единственной задачей которого является отправка пейлоада на консоль.
+          Спеціальний пристрій невеликого розміру, єдиним завданням якого є відправлення пейлоаду на консоль.
       </span>
   </span>
 </span></li>
@@ -683,7 +697,7 @@
   hekate
   <span class="tooltip">▼
       <span class="bottom">
-          Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+          Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
       </span>
   </span>
 </span>
@@ -709,14 +723,14 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a>.</li>
   hekate
   <span class="tooltip">▼
       <span class="bottom">
-          Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+          Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
       </span>
   </span>
 </span> просто вставте <span class="tooltip_container">
   донгл
   <span class="tooltip">▼
       <span class="bottom">
-          Специальное устройство небольшого размера, единственной задачей которого является отправка пейлоада на консоль.
+          Спеціальний пристрій невеликого розміру, єдиним завданням якого є відправлення пейлоаду на консоль.
       </span>
   </span>
 </span> в приставку, коли з’явиться сплешскрін кефіру, натисніть кнопку зменшення гучності</li>
@@ -730,7 +744,7 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a>.</li>
   Пейлоад
   <span class="tooltip">▼
       <span class="bottom">
-          Файл с исполняемым кодом в формате <code class="language-plaintext highlighter-rouge">.bin</code>, которые мы загружаем в приставку, чаще всего - загрузчик
+          Файл з виконуваним кодом у форматі <code class="language-plaintext highlighter-rouge">.bin</code>, який ми завантажуємо в приставку, найчастіше - завантажувач
       </span>
   </span>
 </span>, який ви збираєтеся запускати
@@ -739,14 +753,14 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a>.</li>
   hekate
   <span class="tooltip">▼
   <span class="bottom">
-      Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+      Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
   </span>
   </span>
 </span> вона повинна бути прошита в <span class="tooltip_container">
   донгл
   <span class="tooltip">▼
   <span class="bottom">
-      Специальное устройство небольшого размера, единственной задачей которого является отправка пейлоада на консоль.
+      Спеціальний пристрій невеликого розміру, єдиним завданням якого є відправлення пейлоаду на консоль.
   </span>
   </span>
 </span>, додатково її нікуди не потрібно скидати</li>
@@ -760,14 +774,14 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a></li>
 	донгла
 	<span class="tooltip">▼
 		<span class="bottom">
-			Специальное устройство небольшого размера, единственной задачей которого является отправка пейлоада на консоль.
+			Спеціальний пристрій невеликого розміру, єдиним завданням якого є відправлення пейлоаду на консоль.
 		</span>
 	</span>
 </span>, на якому прошита <span class="tooltip_container">
 	hekate
 	<span class="tooltip">▼
 		<span class="bottom">
-			Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+			Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
 		</span>
 	</span>
 </span></p>
@@ -777,7 +791,7 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a></li>
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip">▼
      <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
      </span>
  </span>
 </span></li>
@@ -785,7 +799,7 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a></li>
  пейлоад
  <span class="tooltip">▼
      <span class="bottom">
-         Файл с исполняемым кодом в формате <code class="language-plaintext highlighter-rouge">.bin</code>, которые мы загружаем в приставку, чаще всего - загрузчик
+         Файл з виконуваним кодом у форматі <code class="language-plaintext highlighter-rouge">.bin</code>, який ми завантажуємо в приставку, найчастіше - завантажувач
      </span>
  </span>
 </span>, який ви збираєтеся запускати в папку <code class="language-plaintext highlighter-rouge">bootloader/payloads</code> на карті пам’яті консолі та вставте картку в консоль</li>
@@ -794,10 +808,16 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a></li>
   <li>В hekate натисніть <strong>Payloads…</strong> -&gt; <strong>%ваш_пейлоад%.bin</strong></li>
   <li>Пейлоад запуститься на консолі</li>
 </ol>
-</div></details>
 
-<details class="spoiler"><summary class="spoiler-title">Запуск на Windows</summary><div class="spoiler-body">
-<h2 id="що-знадобиться">Що знадобиться</h2>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-964311a8'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Запуск через донгл <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-e598626e">
+  <summary>Запуск на Windows</summary>
+  <div class="spoiler-content">
+    <h2 id="що-знадобиться">Що знадобиться</h2>
 
 <ul>
   <li>Свіжа версія <a href="https://github.com/eliboa/TegraRcmGUI/releases/latest" target="_blank">TegraRcmGUI</a></li>
@@ -805,7 +825,7 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a></li>
   Пейлоад
   <span class="tooltip">▼
       <span class="bottom">
-          Файл с исполняемым кодом в формате <code class="language-plaintext highlighter-rouge">.bin</code>, которые мы загружаем в приставку, чаще всего - загрузчик
+          Файл з виконуваним кодом у форматі <code class="language-plaintext highlighter-rouge">.bin</code>, який ми завантажуємо в приставку, найчастіше - завантажувач
       </span>
   </span>
 </span>, який ви збираєтеся запускати на приставці</li>
@@ -847,17 +867,22 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a> до ПК</li>
   </li>
 </ol>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-e598626e'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Запуск на Windows <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<details class="spoiler"><summary class="spoiler-title">Запуск на macOS</summary><div class="spoiler-body">
-<h2 id="що-знадобиться">Що знадобиться</h2>
+<details class="spoiler" id="spoiler-6d4d2f27">
+  <summary>Запуск на macOS</summary>
+  <div class="spoiler-content">
+    <h2 id="що-знадобиться">Що знадобиться</h2>
 
 <ul>
   <li><span class="tooltip_container">
   Пейлоад
   <span class="tooltip">▼
       <span class="bottom">
-          Файл с исполняемым кодом в формате <code class="language-plaintext highlighter-rouge">.bin</code>, которые мы загружаем в приставку, чаще всего - загрузчик
+          Файл з виконуваним кодом у форматі <code class="language-plaintext highlighter-rouge">.bin</code>, який ми завантажуємо в приставку, найчастіше - завантажувач
       </span>
   </span>
 </span>, який ви збираєтеся запускати на приставці</li>
@@ -884,7 +909,7 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a></li>
 	пейлоад
 	<span class="tooltip">▼
 		<span class="bottom">
-			Файл с исполняемым кодом в формате <code class="language-plaintext highlighter-rouge">.bin</code>, которые мы загружаем в приставку, чаще всего - загрузчик
+			Файл з виконуваним кодом у форматі <code class="language-plaintext highlighter-rouge">.bin</code>, який ми завантажуємо в приставку, найчастіше - завантажувач
 		</span>
 	</span>
 </span>.</p>
@@ -923,17 +948,22 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a></p>
   <li>Якщо все пройшло успішно, то на вашому Switch запуститься вибраний payload і можна дістати замикач</li>
 </ol>
 
-</div></details>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-6d4d2f27'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Запуск на macOS <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<details class="spoiler"><summary class="spoiler-title">Запуск на Android</summary><div class="spoiler-body">
-<h2 id="що-знадобиться">Що знадобиться</h2>
+<details class="spoiler" id="spoiler-6f4c8a6d">
+  <summary>Запуск на Android</summary>
+  <div class="spoiler-content">
+    <h2 id="що-знадобиться">Що знадобиться</h2>
 
 <ul>
   <li><span class="tooltip_container">
   Пейлоад
   <span class="tooltip">▼
       <span class="bottom">
-          Файл с исполняемым кодом в формате <code class="language-plaintext highlighter-rouge">.bin</code>, которые мы загружаем в приставку, чаще всего - загрузчик
+          Файл з виконуваним кодом у форматі <code class="language-plaintext highlighter-rouge">.bin</code>, який ми завантажуємо в приставку, найчастіше - завантажувач
       </span>
   </span>
 </span>, який ви збираєтеся запускати на приставці</li>
@@ -954,17 +984,23 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a></li>
   <li>Телефон запитає використовувати чи <strong>Rekado</strong> для підключення за замовчуванням. Відповідайте стверджувально</li>
   <li>Натисніть “<strong>Boot Payload</strong>” і виберіть ваш пейлоад</li>
 </ol>
-</div></details>
 
-<details class="spoiler"><summary class="spoiler-title">Запуск на будь-якій платформі, на якій є браузер</summary><div class="spoiler-body">
-<h2 id="що-знадобиться">Що знадобиться</h2>
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-6f4c8a6d'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Запуск на Android <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-6210f106">
+  <summary>Запуск на будь-якій платформі, на якій є браузер</summary>
+  <div class="spoiler-content">
+    <h2 id="що-знадобиться">Що знадобиться</h2>
 
 <ul>
   <li><span class="tooltip_container">
   Пейлоад
   <span class="tooltip">▼
       <span class="bottom">
-          Файл с исполняемым кодом в формате <code class="language-plaintext highlighter-rouge">.bin</code>, которые мы загружаем в приставку, чаще всего - загрузчик
+          Файл з виконуваним кодом у форматі <code class="language-plaintext highlighter-rouge">.bin</code>, який ми завантажуємо в приставку, найчастіше - завантажувач
       </span>
   </span>
 </span>, який ви збираєтеся запускати на приставці</li>
@@ -972,7 +1008,7 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a></li>
   хосту
   <span class="tooltip">▼
       <span class="bottom">
-          Устройство, позволяющее отправить на консоль пейлоад, в качестве хоста может использоваться ПК, смартфон на Android (iOS, если есть джейлбрейк) или специальное устройство – донгл
+          Пристрій, що дозволяє відправити на консоль пейлоад; як хост може використовуватися ПК, смартфон на Android (iOS, якщо є джейлбрейк) або спеціальний пристрій – донгл
       </span>
   </span>
 </span></li>
@@ -998,7 +1034,11 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a>!</p>
   <li>Пейлоад запуститься на консолі</li>
   <li>Можете діставати замикач</li>
 </ol>
-</div></details>
+
+    
+  </div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-6210f106'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Запуск на будь-якій платформі, на якій є браузер <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <hr />
 
