@@ -18,34 +18,52 @@ module Jekyll
 
       spoiler_id = "spoiler-#{SecureRandom.hex(4)}"
 
-      # --- Оновлений JavaScript для закриття та скролу ---
-      # Функція, яку буде викликати і summary (неявно) і кнопка/футер
-      onclick_js = %Q|var el = document.getElementById('#{spoiler_id}'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);|
-      # Додано перевірку if (!el.open) return; щоб не скролити, якщо вже закрито
-      # Невелика затримка setTimeout може допомогти візуалізації закриття перед скролом
+      onclick_toggle_js = <<~JS.gsub(/\s+/, ' ').strip
+        var el = document.getElementById('#{spoiler_id}');
+        if (el.classList.contains('closing')) return;
+        if (el.classList.contains('open')) {
+          el.classList.add('closing');
+          requestAnimationFrame(function() {
+            requestAnimationFrame(function() {
+              el.classList.remove('open');
+              el.classList.remove('closing');
+            });
+          });
+        } else {
+          el.classList.add('open');
+        }
+      JS
 
-      # --- Кнопка "Згорнути" (якщо ще потрібна) ---
-      # Якщо ця кнопка більше не потрібна, можна її видалити/закоментувати
-      # collapse_button_html = %Q|<button type="button" class="spoiler-collapse-button" onclick="#{onclick_js}">Згорнути</button>|
-      # Видаляємо кнопку, бо буде нижня панель
+      onclick_close_js = <<~JS.gsub(/\s+/, ' ').strip
+        var el = document.getElementById('#{spoiler_id}');
+        if (!el.classList.contains('open') || el.classList.contains('closing')) return;
+        el.classList.add('closing');
+        requestAnimationFrame(function() {
+          requestAnimationFrame(function() {
+            el.classList.remove('open');
+            el.classList.remove('closing');
+            var shouldScroll = el.offsetHeight > window.innerHeight;
+            if (shouldScroll) {
+              el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          });
+        });
+      JS
 
-      # --- Елемент для закриття знизу ---
-      # Використовуємо <div>, який буде стилізований як <summary>
-      # Додаємо той самий onclick JavaScript
-      close_footer_html = %Q|<div class="spoiler-close-footer" onclick="#{onclick_js}" role="button" aria-label="Згорнути спойлер" tabindex="0">#{@title} <span class="close-icon" aria-hidden="true"></span></div>|
-      # Додано span для можливої іконки закриття/стрілки вгору через CSS
+      close_footer_html = %Q|<div class="spoiler-close-footer" onclick="#{onclick_close_js}" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>|
 
-      # --- Фінальний HTML ---
-      # Змінюємо структуру: кнопка Згорнути видалена, додано .spoiler-close-footer
       output = <<~HTML
-        <details class="spoiler" id="#{spoiler_id}">
-          <summary>#{@title}</summary>
-          <div class="spoiler-content">
-            #{html_content}
-            
+        <div class="spoiler" id="#{spoiler_id}">
+          <div class="spoiler-summary" role="button" tabindex="0" onclick="#{onclick_toggle_js}">
+            #{@title}
           </div>
-          #{close_footer_html}
-        </details>
+          <div class="spoiler-body">
+            <div class="spoiler-content">
+              #{html_content}
+            </div>
+            #{close_footer_html}
+          </div>
+        </div>
       HTML
 
       output
