@@ -110,6 +110,7 @@
   <body class="layout--single">
     
 
+<link rel="stylesheet" href="/assets/css/custom.css">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -517,10 +518,13 @@
 
 <hr />
 
-<details class="spoiler" id="spoiler-4d66590d">
-  <summary>Відеоінструкція</summary>
-  <div class="spoiler-content">
-    <p class="notice--warning">ВНИМАНИЕ!!! Мы не рекомендуем слепо следовать видео-инструкции! Используйте её только в качестве вспомогательной! Дело в том, что текстовый гайд постоянно обновляется. Невозможно следить за всеми обновлениями в гайде и каждый раз менять видео-инструкцию вслед за ним! Поэтому текстовый гайд всегда будет более точным и более актуальным, чем видео!</p>
+<div class="spoiler" id="spoiler-45724a51">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-45724a51'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Відеоінструкція
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p class="notice--warning">ВНИМАНИЕ!!! Мы не рекомендуем слепо следовать видео-инструкции! Используйте её только в качестве вспомогательной! Дело в том, что текстовый гайд постоянно обновляется. Невозможно следить за всеми обновлениями в гайде и каждый раз менять видео-инструкцию вслед за ним! Поэтому текстовый гайд всегда будет более точным и более актуальным, чем видео!</p>
 
 <div style="margin:0 auto;" class="text-center notice--info">
   <div class="ytcontainer">
@@ -528,10 +532,10 @@
   </div>
 </div>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-45724a51'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-4d66590d'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Відеоінструкція <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
 <h2 id="важлива-інформація">Важлива інформація</h2>
 
@@ -606,15 +610,21 @@
 
 <h3 id="виберіть-один-із-методів-встановлення">Виберіть один із методів встановлення</h3>
 
-<details class="spoiler" id="spoiler-33274a72">
-  <summary>Спосіб I - Встановлення по USB (рекомендований)</summary>
-  <div class="spoiler-content">
-    <h3 id="встановлення-ігор">Встановлення ігор</h3>
+<div class="spoiler" id="spoiler-577cfa51">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-577cfa51'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Спосіб I - Встановлення по USB (рекомендований)
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <h3 id="встановлення-ігор">Встановлення ігор</h3>
 
-<details class="spoiler" id="spoiler-c9b4d633">
-  <summary>Підготовчі роботи в MacOS</summary>
-  <div class="spoiler-content">
-    <ol>
+<div class="spoiler" id="spoiler-a30efbb1">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-a30efbb1'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Підготовчі роботи в MacOS
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <ol>
   <li>Встановіть <a href="https://openmtp.ganeshrvel.com/" target="_blank">OpenMTP</a>, якщо версія вашої MacOS 10.13 або новіша</li>
 </ol>
 
@@ -631,10 +641,10 @@
   <li>Після встановлення коректного з’єднання, розблокуйте екран Switch і продовжуйте за стандартною процедурою встановлення</li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-a30efbb1'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-c9b4d633'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Підготовчі роботи в MacOS <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
 <ol>
   <li>Підключіть консоль до ПК USB-кабелем (type-c)</li>
@@ -656,15 +666,18 @@
 
 <p class="notice--info">Як альтернатива, в MacOS можна використовувати DBIbackend.py для встановлення по USB. Зверніться до <a href="https://4pda.to/forum/index.php?showtopic=939714&amp;st=5140#entry98421804" target="_blank">цієї інструкції</a> для подробиць</p>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-577cfa51'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-33274a72'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб I - Встановлення по USB (рекомендований) <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-0aeb4a85">
-  <summary>Спосіб II - Встановлення з USB-носія</summary>
-  <div class="spoiler-content">
-    <p class="notice--warning">Ви маєте скинути ігри у форматі <code class="language-plaintext highlighter-rouge">.nsp</code> / <code class="language-plaintext highlighter-rouge">.nsz</code> / <code class="language-plaintext highlighter-rouge">.xci</code> / <code class="language-plaintext highlighter-rouge">.xcz</code>,  підключити носій до консолі через OTG-кабель, або в док-станцію, і встановлювати ігри безпосередньо з носія. Носій повинен бути відформатований у файлову систему <strong>exFAT</strong></p>
+<div class="spoiler" id="spoiler-fecd3646">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-fecd3646'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Спосіб II - Встановлення з USB-носія
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p class="notice--warning">Ви маєте скинути ігри у форматі <code class="language-plaintext highlighter-rouge">.nsp</code> / <code class="language-plaintext highlighter-rouge">.nsz</code> / <code class="language-plaintext highlighter-rouge">.xci</code> / <code class="language-plaintext highlighter-rouge">.xcz</code>,  підключити носій до консолі через OTG-кабель, або в док-станцію, і встановлювати ігри безпосередньо з носія. Носій повинен бути відформатований у файлову систему <strong>exFAT</strong></p>
 
 <ol>
   <li>Підключіть USB-носій з іграми до приставки
@@ -696,15 +709,18 @@
   <li>Натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> для закриття програми</li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-fecd3646'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-0aeb4a85'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб II - Встановлення з USB-носія <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-6cd06bb7">
-  <summary>Спосіб III - Встановлення з карти пам'яті (устарілий)</summary>
-  <div class="spoiler-content">
-    <p class="notice--warning"><strong>Спосіб не є рекомендованим</strong>, оскільки ваша картка має бути в форматі FAT32, що означає неможливість записати на картку файли більші за 4Гб напряму. Більш того, часто виймати і вставляти карту в приставку може бути небезпечно для слота картки пам’яті консолі і може пошкодити його! За необхідністю ви можете переміщати файли на карту пам’яті, використовуючи вбудований в DBI MTP-сервер, однак встановлювати таким чином ігри немає жодного сенсу.</p>
+<div class="spoiler" id="spoiler-b73b9a1c">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-b73b9a1c'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Спосіб III - Встановлення з карти пам'яті (устарілий)
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p class="notice--warning"><strong>Спосіб не є рекомендованим</strong>, оскільки ваша картка має бути в форматі FAT32, що означає неможливість записати на картку файли більші за 4Гб напряму. Більш того, часто виймати і вставляти карту в приставку може бути небезпечно для слота картки пам’яті консолі і може пошкодити його! За необхідністю ви можете переміщати файли на карту пам’яті, використовуючи вбудований в DBI MTP-сервер, однак встановлювати таким чином ігри немає жодного сенсу.</p>
 
 <ol>
   <li>
@@ -738,24 +754,27 @@
   </li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-b73b9a1c'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-6cd06bb7'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб III - Встановлення з карти пам'яті (устарілий) <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-105c2fa3">
-  <summary>Спосіб IV - Встановлення ігор, DLC, оновлень через інтернет прямо на приставці (Tinfoil)</summary>
-  <div class="spoiler-content">
-    <p>За допомогою tinfoil ігри можна встановлювати безпосередньо з віддаленого сервера в інтернеті, який постійно поповнюється силами спільноти.</p>
+<div class="spoiler" id="spoiler-89fdabe9">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-89fdabe9'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Спосіб IV - Встановлення ігор, DLC, оновлень через інтернет прямо на приставці (Tinfoil)
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>За допомогою tinfoil ігри можна встановлювати безпосередньо з віддаленого сервера в інтернеті, який постійно поповнюється силами спільноти.</p>
 
 <p class="notice--warning">Цей додаток використовує сторонні сервери для встановлення ігор, що підтримуються різними спільнотами, через це робота цих серверів не стабільна. Не рекомендується використовувати tinfoil для встановлення ігор, однак і не забороняється.</p>
 
 <p>Більш детальна інструкція знаходиться <a href="/uk/tinfoil" target="_blank">тут</a></p>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-89fdabe9'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-105c2fa3'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб IV - Встановлення ігор, DLC, оновлень через інтернет прямо на приставці (Tinfoil) <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
 <h3 id="використання-перекладів-і-модифікацій">Використання перекладів і модифікацій</h3>
 

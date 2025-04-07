@@ -110,6 +110,7 @@
   <body class="layout--single">
     
 
+<link rel="stylesheet" href="/assets/css/custom.css">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -535,10 +536,13 @@
 </ol>
 
 <h3 id="за-допомогою-caffeine">За допомогою Caffeine</h3>
-<details class="spoiler" id="spoiler-16f1b2d8">
-  <summary>Інструкція</summary>
-  <div class="spoiler-content">
-    <h4 id="частина-i---запуск-pegaswitch">Частина I - Запуск PegaSwitch</h4>
+<div class="spoiler" id="spoiler-3f2efa3d">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-3f2efa3d'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Інструкція
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <h4 id="частина-i---запуск-pegaswitch">Частина I - Запуск PegaSwitch</h4>
 
 <ol>
   <li>Увімкніть приставку
@@ -566,10 +570,10 @@
   <li>Якщо все зроблено правильно, приставка перезавантажиться в кастомну прошивку</li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-3f2efa3d'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-16f1b2d8'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Інструкція <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
 <p><a href="/uk/troubleshooting" target="blank_">Можливі проблеми та їх вирішення</a></p>
 

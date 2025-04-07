@@ -110,6 +110,7 @@
   <body class="layout--single">
     
 
+<link rel="stylesheet" href="/assets/css/custom.css">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -564,10 +565,13 @@
 
 <h2 id="возможные-проблемы-и-ошибки">Возможные проблемы и ошибки</h2>
 
-<details class="spoiler" id="spoiler-76d1f1a1">
-  <summary>В Tinfoil пропали все игры</summary>
-  <div class="spoiler-content">
-    <p><strong>О:</strong></p>
+<div class="spoiler" id="spoiler-50e19785">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-50e19785'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    В Tinfoil пропали все игры
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p><strong>О:</strong></p>
 <ul>
   <li>Не меняйте в tinfoil тему! Тема в программе должна начинаться с префикса <code class="language-plaintext highlighter-rouge">hbg_</code></li>
   <li>Убедитесь, что на приставке стоит верная дата и время</li>
@@ -581,15 +585,18 @@
 </span>, установите tinfoil из папки games на карте памяти</li>
 </ul>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-50e19785'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-76d1f1a1'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">В Tinfoil пропали все игры <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-0b447daf">
-  <summary>Я случайно удалил тикеты игры в tinfoil</summary>
-  <div class="spoiler-content">
-    <p><strong>О:</strong> Для переустановки тикетов, запустите <a href="/uk/games" target="_blank">tinfoil</a>, перейдите на вкладку “<strong>Тикеты</strong>”, и для каждой игры проделайте следующее:</p>
+<div class="spoiler" id="spoiler-f4b81cd8">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-f4b81cd8'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Я случайно удалил тикеты игры в tinfoil
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p><strong>О:</strong> Для переустановки тикетов, запустите <a href="/uk/games" target="_blank">tinfoil</a>, перейдите на вкладку “<strong>Тикеты</strong>”, и для каждой игры проделайте следующее:</p>
 <ol>
   <li>На игре нажмите <img src="/assets/images/switch/buttons/Y.png" alt="(Y)" /></li>
   <li>Нажмите <img src="/assets/images/switch/buttons/R.png" alt="(R)" /></li>
@@ -597,30 +604,36 @@
   <li>Нажмите “<strong>Начать установку</strong>”</li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-f4b81cd8'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-0b447daf'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Я случайно удалил тикеты игры в tinfoil <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-0457dec5">
-  <summary>SSL connection failed</summary>
-  <div class="spoiler-content">
-    <p>Вам нужно выставить корректное время и дату на вашей приставке. Убедитесь, что на приставке включён интернет, запустите программу и нажмите (А). Если в приставке отключена синхронизация времени в настройке, потребуется перезагрузка программы. После перезагрузки, запустите программу ещё раз. Если после синхронизации время на приставке не совпадает с вашим локальным, убедитесь, что в настройках консоли указан верный часовой пояс.</p>
-
-    
+<div class="spoiler" id="spoiler-032e50cc">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-032e50cc'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    SSL connection failed
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-0457dec5'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">SSL connection failed <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Вам нужно выставить корректное время и дату на вашей приставке. Убедитесь, что на приставке включён интернет, запустите программу и нажмите (А). Если в приставке отключена синхронизация времени в настройке, потребуется перезагрузка программы. После перезагрузки, запустите программу ещё раз. Если после синхронизации время на приставке не совпадает с вашим локальным, убедитесь, что в настройках консоли указан верный часовой пояс.</p>
 
-<details class="spoiler" id="spoiler-e1b325bf">
-  <summary>Красный экран, говорящий о том, что установлен KOSMOS</summary>
-  <div class="spoiler-content">
-    <p>Переустановите кефир через скрипт</p>
-
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-032e50cc'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-e1b325bf'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Красный экран, говорящий о том, что установлен KOSMOS <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
+
+<div class="spoiler" id="spoiler-eda157e3">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-eda157e3'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Красный экран, говорящий о том, что установлен KOSMOS
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Переустановите кефир через скрипт</p>
+
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-eda157e3'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+  </div>
+</div>
 
 
 				

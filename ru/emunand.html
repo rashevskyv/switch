@@ -118,6 +118,7 @@
 	<div id="ukranian-flag"></div>
 
 
+<link rel="stylesheet" href="/assets/css/custom.css">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -631,10 +632,13 @@
 
 <h2 id="создание-emunand">Создание EmuNAND</h2>
 
-<details class="spoiler" id="spoiler-ed1a92d2">
-  <summary>Подготовительные работы</summary>
-  <div class="spoiler-content">
-    <ol>
+<div class="spoiler" id="spoiler-8d2495c1">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-8d2495c1'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Подготовительные работы
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <ol>
   <li>Запустите приставку и <strong>выберите светлую тему</strong> в настройка Switch, а так же <strong>переименуйте ваш аккаунт в “SysNAND”</strong>
     <ul>
       <li>Это необходимо сделать для того, чтобы вы всегда могли визуально отличить EmuNAND от SysNAND.</li>
@@ -660,18 +664,24 @@
   <li>Убедитесь, что включили <a href="https://customfw.xyz/file-extensions-windows" target="_blank">отображение расширений файлов</a>, если у вас Windows</li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-8d2495c1'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-ed1a92d2'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Подготовительные работы <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-114f5dc1">
-  <summary>Создание EmuNAND</summary>
-  <div class="spoiler-content">
-    <details class="spoiler" id="spoiler-fbe08c80">
-  <summary>Если вы только что сделали бекап и не удалили его с карты памяти</summary>
-  <div class="spoiler-content">
-    <ol>
+<div class="spoiler" id="spoiler-0e480654">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-0e480654'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Создание EmuNAND
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <div class="spoiler" id="spoiler-51c584e8">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-51c584e8'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Если вы только что сделали бекап и не удалили его с карты памяти
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <ol>
   <li>Включите консоль, удерживая кнопку понижения громкости, чтобы загрузиться в <strong>hekate</strong></li>
   <li>Перейдите в “<strong>emuMMC</strong>”</li>
   <li>Нажмите “<strong>Migrate emuMMC</strong>” -&gt; “<strong>Backup</strong>”
@@ -687,15 +697,18 @@
   </li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-51c584e8'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-fbe08c80'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Если вы только что сделали бекап и не удалили его с карты памяти <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-dae35d29">
-  <summary>Если вы не делали только что бекап, или удалили его с карты памяти</summary>
-  <div class="spoiler-content">
-    <ol>
+<div class="spoiler" id="spoiler-87dcedb5">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-87dcedb5'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Если вы не делали только что бекап, или удалили его с карты памяти
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <ol>
   <li>Выключите консоль</li>
   <li>Вставьте карту памяти в ПК и установите <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
@@ -720,22 +733,25 @@
   </li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-87dcedb5'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-dae35d29'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Если вы не делали только что бекап, или удалили его с карты памяти <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-0e480654'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-114f5dc1'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Создание EmuNAND <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
 <h3 id="запуск-прошивки">Запуск прошивки</h3>
 
-<details class="spoiler" id="spoiler-cba0e005">
-  <summary>Запуск EmuNAND</summary>
-  <div class="spoiler-content">
-    <p>По-умолчанию кефир настроен таким образом, что при пробросе <code class="language-plaintext highlighter-rouge">payload.bin</code> из состава <span class="tooltip_container">
+<div class="spoiler" id="spoiler-4193133f">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-4193133f'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Запуск EmuNAND
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>По-умолчанию кефир настроен таким образом, что при пробросе <code class="language-plaintext highlighter-rouge">payload.bin</code> из состава <span class="tooltip_container">
 	<a href="kefir" target="_blank">kefir</a>
 	<span class="tooltip">▼
 		<span class="bottom">
@@ -753,15 +769,18 @@
 	</span>
 </span>, то просто перейдите в “<strong>Launch</strong>” -&gt; “<strong>Atmosphere</strong>”</p>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-4193133f'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-cba0e005'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Запуск EmuNAND <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-5715c84b">
-  <summary>Работа со стоковой прошивки</summary>
-  <div class="spoiler-content">
-    <h3 id="запуск-стока">Запуск стока</h3>
+<div class="spoiler" id="spoiler-39fa934e">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-39fa934e'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Работа со стоковой прошивки
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <h3 id="запуск-стока">Запуск стока</h3>
 
 <p>При выборе <strong>Semi-stock</strong>, будет запущен сток, с патчами атмосферы, кроме тех, что отвечают а запуск нелицензионного ПО. Это значит, что вы сможете пользоваться переводами и модами для игр даже в лицензии. Помните, что использование модов или читов в онлайн-играх неминуемо приведет вас к бану. Использование модов в оффлайн играх допускается. Если у вас установлена тема в EmuNAND, тог она так же будет отображаться в стоке. За это тоже не банят. Находясь в семи-стоке вы можете перезагружать приставку через меню прямо в гекату, а так же обновлять системное ПО стока через настройки приставки не теряя при этом AutoRCM. Так же в стоке будет работать homebrew, например менеджеры сохранений, что позволить делать бекап сохранений своих лицензионных игр, а так же переносить их в эмунанд и обратно (на свой страх и риск). Помните, что некоторые игры могут отслеживать такие манипуляции (например, Animal Crossing), потому делайте всё это на свой страх и риск. Для просто игры семи-сток полностью безопасен.</p>
 
@@ -844,10 +863,10 @@
   </li>
 </ul>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-39fa934e'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-5715c84b'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Работа со стоковой прошивки <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
 <hr />
 

@@ -110,6 +110,7 @@
   <body class="layout--single">
     
 
+<link rel="stylesheet" href="/assets/css/custom.css">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -594,13 +595,19 @@
 
 <h3 id="частина-ii---резервне-копіювання-nand">Частина II - Резервне копіювання NAND</h3>
 
-<details class="spoiler" id="spoiler-80badd36">
-  <summary>Спосіб I - За допомогою hekate (рекомендовано)</summary>
-  <div class="spoiler-content">
-    <details class="spoiler" id="spoiler-334738c7">
-  <summary>Частина I - робимо дамп внутрішньої пам'яті приставки (NAND)</summary>
-  <div class="spoiler-content">
-    <p class="notice--info">Цей спосіб вимагає карти пам’яті з не менш ніж 32-ма Гб вільного місця, якщо OLED - 64Гб. Якщо у вас немає такої, але є карта меншого розміру, бекап робитиметься частинами. Після заповнення поточного обсягу на карті на екрані буде виведена інформація про те, що вам необхідно перенести папку backup на ПК, потім повернути карту в консоль і продовжити створення резервної копії.</p>
+<div class="spoiler" id="spoiler-dacbc1c1">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-dacbc1c1'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Спосіб I - За допомогою hekate (рекомендовано)
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <div class="spoiler" id="spoiler-230b24fc">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-230b24fc'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Частина I - робимо дамп внутрішньої пам'яті приставки (NAND)
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p class="notice--info">Цей спосіб вимагає карти пам’яті з не менш ніж 32-ма Гб вільного місця, якщо OLED - 64Гб. Якщо у вас немає такої, але є карта меншого розміру, бекап робитиметься частинами. Після заповнення поточного обсягу на карті на екрані буде виведена інформація про те, що вам необхідно перенести папку backup на ПК, потім повернути карту в консоль і продовжити створення резервної копії.</p>
 
 <ol>
   <li>Оновіть <span class="tooltip_container">
@@ -644,15 +651,18 @@
 
 <p class="notice--info">Якщо ви робили резервне копіювання NAND на <strong>новій</strong> приставці, в NAND якої ще не встановлювали ігор, то архівування резервної копії дасть якісний результат. Цього результату не буде, якщо приставка вживана і сброшена до заводських налаштувань.</p>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-230b24fc'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-334738c7'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Частина I - робимо дамп внутрішньої пам'яті приставки (NAND) <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-89a2ff87">
-  <summary>Частина II - робимо дамп завантажувальних розділів (BOOT0/BOOT1)</summary>
-  <div class="spoiler-content">
-    <ol>
+<div class="spoiler" id="spoiler-5b0810e5">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-5b0810e5'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Частина II - робимо дамп завантажувальних розділів (BOOT0/BOOT1)
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <ol>
   <li>Увійдіть в <span class="tooltip_container">
  hekate
  <span class="tooltip">▼
@@ -679,20 +689,23 @@
   <li>Натисніть кнопку “<strong>Close</strong>”, щоб повернутися в попереднє меню</li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-5b0810e5'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-89a2ff87'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Частина II - робимо дамп завантажувальних розділів (BOOT0/BOOT1) <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-dacbc1c1'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-80badd36'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб I - За допомогою hekate (рекомендовано) <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-4108009a">
-  <summary>Спосіб II - За допомогою ПК</summary>
-  <div class="spoiler-content">
-    <h3 id="дамп-nand">Дамп NAND</h3>
+<div class="spoiler" id="spoiler-edc553b0">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-edc553b0'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Спосіб II - За допомогою ПК
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <h3 id="дамп-nand">Дамп NAND</h3>
 
 <p class="notice--info">Цей спосіб складніший, ніж попередній, але не вимагає наявності великої карти пам’яті. Швидкість створення резервної копії таким способом буде не більше 6МБ/с</p>
 
@@ -735,10 +748,13 @@
 
 <p><strong>Виберіть вашу операційну систему:</strong></p>
 
-<details class="spoiler" id="spoiler-f5c35682">
-  <summary>Windows</summary>
-  <div class="spoiler-content">
-    <ol>
+<div class="spoiler" id="spoiler-d3e7666b">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-d3e7666b'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Windows
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <ol>
   <li>Запустіть <a href="http://hddguru.com/software/HDD-Raw-Copy-Tool/HDDRawCopy1.10Portable.exe" target="_blank">HDD Raw Copy Tool</a> від імені адміністратора</li>
   <li>Виберіть “<strong>hekate eMMC GPP</strong>” і натисніть “<strong>Continue</strong>”
     <ul>
@@ -756,15 +772,18 @@
   <li>Від’єднайте пристрій <strong>UMS</strong> безпечно через трей операційної системи, або видаліть його через панель керування</li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-d3e7666b'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-f5c35682'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Windows <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-4a15423c">
-  <summary>macOS</summary>
-  <div class="spoiler-content">
-    <ol>
+<div class="spoiler" id="spoiler-74d0c3cf">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-74d0c3cf'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    macOS
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <ol>
   <li>Запустіть програму Дискова утиліта, переконайтеся, що там з’явився зовнішній диск з назвою “<strong>hekate eMMC GPP</strong>”</li>
   <li>В Дисковій утиліті натисніть правою кнопкою миші на пункті “Linux UMS disk 0 Media”</li>
   <li>Виберіть опцію “Образ з Linux UMS disk 0 Media” і вкажіть шлях, куди зберегти отриманий файл
@@ -776,26 +795,29 @@
   <li>Якщо все пройшло успішно, то дамп NAND з’явиться в директорії, яку ви вказали. Збережіть його в надійному місці!</li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-74d0c3cf'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-4a15423c'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">macOS <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
 <h3 id="дамп-boot0boot1">Дамп BOOT0/BOOT1</h3>
 
 <p>Робіть аналогічним способом, як робили <strong>Дамп NAND</strong>, але замість “<strong>eMMC RAW GPP</strong>” оберіть “<strong>BOOT0</strong>” та “<strong>BOOT1</strong>” по черзі і збережіть їх під відповідними іменами</p>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-edc553b0'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-4108009a'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб II - За допомогою ПК <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
 <h3 id="частина-iii---копіювання-резервної-копії-на-пк">Частина III - Копіювання резервної копії на ПК</h3>
 
-<details class="spoiler" id="spoiler-b38f0ac7">
-  <summary>Інструкція</summary>
-  <div class="spoiler-content">
-    <p class="notice--warning">Якщо ви збираєтеся робити EmuNAND, то саме копіюйте файли, а не переміщуйте, оскільки далі ми зможемо зробити з цього бекапу EmuNAND</p>
+<div class="spoiler" id="spoiler-7a865938">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-7a865938'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Інструкція
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p class="notice--warning">Якщо ви збираєтеся робити EmuNAND, то саме копіюйте файли, а не переміщуйте, оскільки далі ми зможемо зробити з цього бекапу EmuNAND</p>
 
 <ol>
   <li>Вставте карту пам’яті консолі в ПК</li>
@@ -817,19 +839,22 @@
 
 <p class="notice--danger">Після першого запуску консолі в прошивку, атмосфера автоматично створить бекап ще двох важливих файлів, вони будуть знаходитися в папці <code class="language-plaintext highlighter-rouge">atmosphere/automatic_backups</code>. Також перенесіть цю папку в надійне місце. Маючи на руках ці файли і ключі, ви зможете відновити вашу приставку навіть не маючи бекапу NAND (але це не означає, що його не потрібно берегти)</p>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-7a865938'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-b38f0ac7'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Інструкція <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
 <h2 id="відновлення-резервної-копії">Відновлення резервної копії</h2>
 
 <p class="notice--danger">Ніколи не відновлюйте чужий бекап на свою консоль! Відновивши чужий бекап, ви отримаєте брик. Якщо у вас при цьому немає власного бекапу, то брик буде невідновний простими способами.</p>
 
-<details class="spoiler" id="spoiler-db72df18">
-  <summary>Спосіб I - Відновлення через hekate</summary>
-  <div class="spoiler-content">
-    <ol>
+<div class="spoiler" id="spoiler-f0e627e0">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-f0e627e0'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Спосіб I - Відновлення через hekate
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <ol>
   <li>На ПК перейдіть у папку зі своїми резервними копіями</li>
   <li>В папці <code class="language-plaintext highlighter-rouge">backup -&gt; ID</code> створіть папку <code class="language-plaintext highlighter-rouge">restore</code> і перемістіть вміст папки <code class="language-plaintext highlighter-rouge">ID</code> в папку <code class="language-plaintext highlighter-rouge">restore</code>
     <ul>
@@ -869,15 +894,18 @@
   <li>Не забудьте видалити з карти пам’яті папку <code class="language-plaintext highlighter-rouge">backup</code> після закінчення відновлення і перевірки працездатності консолі після відновлення</li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-f0e627e0'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-db72df18'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб I - Відновлення через hekate <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-d4db11ad">
-  <summary>Спосіб II - Відновлення через ПК</summary>
-  <div class="spoiler-content">
-    <p class="notice--warning">Цей спосіб працює тільки на приставках першої ревізії - <span class="tooltip_container">
+<div class="spoiler" id="spoiler-d1a8d535">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-d1a8d535'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Спосіб II - Відновлення через ПК
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p class="notice--warning">Цей спосіб працює тільки на приставках першої ревізії - <span class="tooltip_container">
 	Erista
 	<span class="tooltip">▼
 		<span class="bottom">
@@ -890,15 +918,18 @@
 
 <p>При проблемах з відновленням або відсутності бекапу можете спробувати <a href="/uk/downgrade_fw" target="_blank">цю інструкцію</a></p>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-d1a8d535'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-d4db11ad'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб II - Відновлення через ПК <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-d5d8361e">
-  <summary>Вирішення проблем</summary>
-  <div class="spoiler-content">
-    <ul>
+<div class="spoiler" id="spoiler-88dfa2fc">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-88dfa2fc'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Вирішення проблем
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <ul>
   <li><strong>П:</strong> Приставка не запускається після відновлення бекапу
     <ul>
       <li><strong>В:</strong> Спробуйте <a href="/uk/downgrade_fw" target="_blank">цей метод</a> для відновлення та підвищення версії прошивки</li>
@@ -921,10 +952,10 @@
   </li>
 </ul>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-88dfa2fc'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-d5d8361e'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Вирішення проблем <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
 <hr />
 

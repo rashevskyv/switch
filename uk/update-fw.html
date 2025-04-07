@@ -110,6 +110,7 @@
   <body class="layout--single">
     
 
+<link rel="stylesheet" href="/assets/css/custom.css">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -631,10 +632,13 @@
 <!--В даний момент останньою прошивкою є 19.0.1, однак, оскільки вона тільки вийшла і недостатньо оттестована, а так само тому що ще немає ігор, що вимагають її, не рекомендується поки на неї оновлюватися. Якщо ж ви вже на ній встановіть рекомендовану прошивку за інструкцією нижче!
 {: .notice--warning}-->
 
-<!-- <details class="spoiler" id="spoiler-5de8a671">
-  <summary>Відеоінструкція</summary>
-  <div class="spoiler-content">
-    <p class="notice--warning">ВНИМАНИЕ!!! Мы не рекомендуем слепо следовать видео-инструкции! Используйте её только в качестве вспомогательной! Дело в том, что текстовый гайд постоянно обновляется. Невозможно следить за всеми обновлениями в гайде и каждый раз менять видео-инструкцию вслед за ним! Поэтому текстовый гайд всегда будет более точным и более актуальным, чем видео!</p>
+<!-- <div class="spoiler" id="spoiler-05102bd5">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-05102bd5'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Відеоінструкція
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p class="notice--warning">ВНИМАНИЕ!!! Мы не рекомендуем слепо следовать видео-инструкции! Используйте её только в качестве вспомогательной! Дело в том, что текстовый гайд постоянно обновляется. Невозможно следить за всеми обновлениями в гайде и каждый раз менять видео-инструкцию вслед за ним! Поэтому текстовый гайд всегда будет более точным и более актуальным, чем видео!</p>
 
 <div style="margin:0 auto;" class="text-center notice--info">
   <div class="ytcontainer">
@@ -642,17 +646,20 @@
   </div>
 </div>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-05102bd5'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight > window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-5de8a671'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Відеоінструкція <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 -->
 </div>
 
-<details class="spoiler" id="spoiler-fc2b4e04">
-  <summary>Оновлення прошивки за допомогою Kefir Updater</summary>
-  <div class="spoiler-content">
-    <div class="hideble button2 hide">
+<div class="spoiler" id="spoiler-29f1cd31">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-29f1cd31'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Оновлення прошивки за допомогою Kefir Updater
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <div class="hideble button2 hide">
 <!-- Caffeine -->
 
 <div class="notice--warning">
@@ -705,15 +712,18 @@
 
 <p class="notice--info">Ви можете видалити папку <code class="language-plaintext highlighter-rouge">firmware</code> з прошивкою з карти пам’яті. Вона нам більше не потрібна</p>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-29f1cd31'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-fc2b4e04'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Оновлення прошивки за допомогою Kefir Updater <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-e6e7423f">
-  <summary>Оновлення за допомогою ПК</summary>
-  <div class="spoiler-content">
-    <h3 id="частина-i---підготовка-до-оновлення">Частина I - Підготовка до оновлення</h3>
+<div class="spoiler" id="spoiler-9f3a387f">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-9f3a387f'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Оновлення за допомогою ПК
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <h3 id="частина-i---підготовка-до-оновлення">Частина I - Підготовка до оновлення</h3>
 <p class="notice--warning"><strong>Важлива інформація!!</strong> Використовуйте карти пам’яті тільки з файловою системою <a href="http://customfw.xyz/format_sd" target="_blank">FAT32</a>!</p>
 
 <ol>
@@ -795,10 +805,10 @@
 
 <p class="notice--info">Ви можете видалити папку <code class="language-plaintext highlighter-rouge">firmware</code> з прошивкою з карти пам’яті. Вона нам більше не потрібна</p>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-9f3a387f'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-e6e7423f'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Оновлення за допомогою ПК <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
 <h2 id="важливо-знати">Важливо знати</h2>
 

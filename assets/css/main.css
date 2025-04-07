@@ -3131,34 +3131,6 @@ a.reversefootnote:hover { text-decoration: underline; }
 /* ========================================================================== PRINT STYLES ========================================================================== */
 @media print { [hidden] { display: none; } * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } html { margin: 0; padding: 0; min-height: auto !important; font-size: 16px; } body { margin: 0 auto; background: #fff !important; color: #000 !important; font-size: 1rem; line-height: 1.5; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; } h1, h2, h3, h4, h5, h6 { color: #000; line-height: 1.2; margin-bottom: 0.75rem; margin-top: 0; } h1 { font-size: 2.5rem; } h2 { font-size: 2rem; } h3 { font-size: 1.75rem; } h4 { font-size: 1.5rem; } h5 { font-size: 1.25rem; } h6 { font-size: 1rem; } a, a:visited { color: #000; text-decoration: underline; word-wrap: break-word; } table { border-collapse: collapse; } thead { display: table-header-group; } table, th, td { border-bottom: 1px solid #000; } td, th { padding: 8px 16px; } img { border: 0; display: block; max-width: 100% !important; vertical-align: middle; } hr { border: 0; border-bottom: 2px solid #bbb; height: 0; margin: 2.25rem 0; padding: 0; } dt { font-weight: bold; } dd { margin: 0; margin-bottom: 0.75rem; } abbr[title], acronym[title] { border: 0; text-decoration: none; } table, blockquote, pre, code, figure, li, hr, ul, ol, a, tr { page-break-inside: avoid; } h2, h3, h4, p, a { orphans: 3; widows: 3; } h1, h2, h3, h4, h5, h6 { page-break-after: avoid; page-break-inside: avoid; } h1 + p, h2 + p, h3 + p { page-break-before: avoid; } img { page-break-after: auto; page-break-before: auto; page-break-inside: avoid; } pre { white-space: pre-wrap !important; word-wrap: break-word; } a[href^='http://']:after, a[href^='https://']:after, a[href^='ftp://']:after { content: " (" attr(href) ")"; font-size: 80%; } abbr[title]:after, acronym[title]:after { content: " (" attr(title) ")"; } #main { max-width: 100%; } .page { margin: 0; padding: 0; width: 100%; } .page-break, .page-break-before { page-break-before: always; } .page-break-after { page-break-after: always; } .no-print { display: none; } a.no-reformat:after { content: ''; } abbr.no-reformat[title]:after, acronym.no-reformat[title]:after { content: ''; } .page__hero-caption { color: #000 !important; background: #fff !important; opacity: 1; } .page__hero-caption a { color: #000 !important; } /* Hide the following elements on print ========================================================================== */ .masthead, .toc, .page__share, .page__related, .pagination, .ads, .page__footer, .page__comments-form, .author__avatar, .author__content, .author__urls-wrapper, .nav__list, .sidebar, .adsbygoogle { display: none !important; height: 1px !important; } }
 
-/* --- Спойлер --- */
-details.spoiler { background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 1.5em; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Менш виразна тінь */ overflow: hidden; /* Важливо для border-radius та footer */ }
-
-/* --- Заголовок (Summary) --- */
-details.spoiler summary { padding: 12px 20px; font-weight: 600; color: #333; cursor: pointer; background-color: #f7f7f7; transition: background-color 0.2s ease; list-style: none; /* Прибирає стандартний маркер */ position: relative; outline: none; /* Додаємо рамку знизу, якщо спойлер закритий */ border-bottom: 1px solid transparent; }
-
-details.spoiler:not([open]) summary { border-bottom-color: #e0e0e0; }
-
-details.spoiler summary:hover { background-color: #f0f0f0; }
-
-/* Кастомний маркер (стрілка) */
-details.spoiler summary::after { content: '+'; /* Простіший символ + */ font-size: 1.6em; font-weight: 300; /* Тонший */ color: #666; position: absolute; right: 20px; top: 50%; line-height: 1; transform: translateY(-50%); transition: transform 0.2s ease; }
-
-details.spoiler[open] summary::after { content: '−'; /* Мінус для відкритого стану */ font-weight: normal; transform: translateY(-50%); }
-
-/* --- Контент Спойлера --- */
-details.spoiler .spoiler-content { /* Прибираємо внутрішній падінг, щоб не було білих смуг */ /* padding: 15px 20px; */ /* Замість цього додаємо падінг самому <details> */ padding: 0 20px 15px 20px; /* Зверху 0, бо межує з summary, знизу 15px, з боків 20px */ /* border-top: 1px solid #e0e0e0;  Переносимо верхню межу до summary/footer */ line-height: 1.6; color: #444; }
-
-/* --- Нижня панель для закриття --- */
-.spoiler-close-footer { padding: 12px 20px; font-weight: 600; /* Той же, що й summary */ color: #333; cursor: pointer; background-color: #f7f7f7; /* Той же, що й summary */ transition: background-color 0.2s ease; border-top: 1px solid #e0e0e0; /* Верхня межа, яка відділяє від контенту */ text-align: center; /* Центруємо текст/іконку */ position: relative; /* Для іконки, якщо потрібна */ margin-top: -15px; /* Компенсуємо нижній падінг контенту, щоб не було зайвого відступу */ }
-
-.spoiler-close-footer:hover { background-color: #f0f0f0; }
-
-/* Іконка (стрілка вгору) для нижньої панелі */
-.spoiler-close-footer .close-icon::before { content: '↑'; /* Стрілка вгору */ /* Або можна використовувати SVG/Font Awesome іконку */ display: inline-block; /* Щоб можна було стилізувати */ margin-left: 0.5em; font-weight: bold; color: #666; transition: color 0.2s ease; }
-
-.spoiler-close-footer:hover .close-icon::before { color: #333; }
-
 @media (min-width: 80em) { #main { max-width: 1920px; } }
 
 html { /* Убирает прокрутку по горизонтале, для мобильной версии */ overflow-x: hidden; /*margin-bottom: 0!important;*/ }

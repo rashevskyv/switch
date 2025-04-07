@@ -110,6 +110,7 @@
   <body class="layout--single">
     
 
+<link rel="stylesheet" href="/assets/css/custom.css">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -500,10 +501,13 @@
 
 <h3 id="проблемы-с-запуском-прошивки">Проблемы с запуском прошивки</h3>
 
-<details class="spoiler" id="spoiler-b8fcd261">
-  <summary>Приставка зависает на логотипе Switch</summary>
-  <div class="spoiler-content">
-    <p>Возможные пути решения проблемы:</p>
+<div class="spoiler" id="spoiler-ba8107f0">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-ba8107f0'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Приставка зависает на логотипе Switch
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Возможные пути решения проблемы:</p>
 
 <ol>
   <li>Убедитесь. что можете загрузиться в сток. Если это так, возможно вы установили какие-то системные модули, которые мешают загрузке. Для этого:
@@ -570,15 +574,18 @@
   <li>Сделайте <a href="/uk/downgrade_fw" target="_blank">восстановление прошивки</a></li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-ba8107f0'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-b8fcd261'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Приставка зависает на логотипе Switch <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-633ea138">
-  <summary>При запуске приставки ничего не происходит / Не могу включить приставку</summary>
-  <div class="spoiler-content">
-    <p>Возможные пути решения проблемы:</p>
+<div class="spoiler" id="spoiler-a02e055b">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-a02e055b'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    При запуске приставки ничего не происходит / Не могу включить приставку
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Возможные пути решения проблемы:</p>
 <ol>
   <li>Возможно на приставке стоял AutoRCM или она села - <a href="https://4pda.to/forum/index.php?showtopic=900987&amp;st=16320#entry89527321" target="_blank">наиболее обширная инструкция по запуску севшей приставки</a></li>
   <li>Попробуйте запустить <span class="tooltip_container">
@@ -593,15 +600,18 @@
   <li>Сделайте <a href="/uk/downgrade_fw" target="_blank">восстановление прошивки</a></li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-a02e055b'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-633ea138'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">При запуске приставки ничего не происходит / Не могу включить приставку <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-01fd484c">
-  <summary>После проброса пейлоада и появления сплешскринов, консоль висит в черном экране / на логотипе Atmosphere / на логотипе Nintendo.</summary>
-  <div class="spoiler-content">
-    <ol>
+<div class="spoiler" id="spoiler-3b56303a">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-3b56303a'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    После проброса пейлоада и появления сплешскринов, консоль висит в черном экране / на логотипе Atmosphere / на логотипе Nintendo.
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <ol>
   <li>Убедитесь. что можете загрузиться в сток. Если это так, возможно вы установили какие-то системные модули, которые мешают загрузке. Для этого:
     <ol>
       <li>Запустите <span class="tooltip_container">
@@ -657,25 +667,31 @@
   <li>Сделайте <a href="/uk/downgrade_fw" target="_blank">восстановление прошивки</a></li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-3b56303a'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-01fd484c'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">После проброса пейлоада и появления сплешскринов, консоль висит в черном экране / на логотипе Atmosphere / на логотипе Nintendo. <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-569d097f">
-  <summary>При запуске Emunand ошибка "Failed to match warmboot with fuses"</summary>
-  <div class="spoiler-content">
-    <p>Просто загрузитесь в Full Stock (<strong>hekate</strong> -&gt; “<strong>More Configs</strong>” -&gt; “<strong>Full Stock</strong>”), перезагрузитесь и ошибка пропадет.</p>
-
-    
+<div class="spoiler" id="spoiler-214ae907">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-214ae907'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    При запуске Emunand ошибка "Failed to match warmboot with fuses"
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-569d097f'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">При запуске Emunand ошибка "Failed to match warmboot with fuses" <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Просто загрузитесь в Full Stock (<strong>hekate</strong> -&gt; “<strong>More Configs</strong>” -&gt; “<strong>Full Stock</strong>”), перезагрузитесь и ошибка пропадет.</p>
 
-<details class="spoiler" id="spoiler-570c3c6a">
-  <summary>Страшная ошибка с белыми буквами на черном экране после обновления прошивки через интернет</summary>
-  <div class="spoiler-content">
-    <p class="text-center notice--info"><img src="/assets/images/switch/screenshots/exfat_failed.png" alt="" /></p>
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-214ae907'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+  </div>
+</div>
+
+<div class="spoiler" id="spoiler-f48c3605">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-f48c3605'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Страшная ошибка с белыми буквами на черном экране после обновления прошивки через интернет
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p class="text-center notice--info"><img src="/assets/images/switch/screenshots/exfat_failed.png" alt="" /></p>
 
 <p>Отформатируйте вашу карту памяти в <a href="https://format.customfw.xyz" target="_blank">FAT32</a>.</p>
 
@@ -688,27 +704,33 @@
 	</span>
 </span> начисто. Для этого удалите с карты памяти всё, кроме папки Nintendo и emummc (или sxos/emunand) и ставьте кефир заново</p>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-f48c3605'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-570c3c6a'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Страшная ошибка с белыми буквами на черном экране после обновления прошивки через интернет <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-72ffce54">
-  <summary>После запуска приставки ошибка на фиолетовом фоне с надписью **Error Code** и номером ошибки</summary>
-  <div class="spoiler-content">
-    <p>Обратите внимание на числа во второй строке после <strong>Title:</strong>. Эти числа указывают на то, какой тайтл вызвал ошибку и из-за которого не загружается приставка. Если номер тайтла <strong>не</strong> <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то перейдите в папку <code class="language-plaintext highlighter-rouge">atmosphere/contents</code> (<code class="language-plaintext highlighter-rouge">atmosphere/titles</code> на атмосфере ниже, чем 0.10.0) и удалите папку с номером, указанным на экране вашей приставки во второй строке. Если номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то вероятнее всего ошибка вызвана тем, что какое-то хомбрю запущено в режиме апплета и ему не хватает памяти.</p>
+<div class="spoiler" id="spoiler-c5a0e57a">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-c5a0e57a'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    После запуска приставки ошибка на фиолетовом фоне с надписью **Error Code** и номером ошибки
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Обратите внимание на числа во второй строке после <strong>Title:</strong>. Эти числа указывают на то, какой тайтл вызвал ошибку и из-за которого не загружается приставка. Если номер тайтла <strong>не</strong> <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то перейдите в папку <code class="language-plaintext highlighter-rouge">atmosphere/contents</code> (<code class="language-plaintext highlighter-rouge">atmosphere/titles</code> на атмосфере ниже, чем 0.10.0) и удалите папку с номером, указанным на экране вашей приставки во второй строке. Если номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то вероятнее всего ошибка вызвана тем, что какое-то хомбрю запущено в режиме апплета и ему не хватает памяти.</p>
 
 <p class="text-center notice--info"><img src="/assets/images/switch/screenshots/atmos_title_error.png" alt="" /></p>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-c5a0e57a'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-72ffce54'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">После запуска приставки ошибка на фиолетовом фоне с надписью **Error Code** и номером ошибки <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-8044714a">
-  <summary>При запуске прошивки получаю ошибку "Fatal Error: [NXBOOT]"</summary>
-  <div class="spoiler-content">
-    <p>Обновите <span class="tooltip_container">
+<div class="spoiler" id="spoiler-2f011c2d">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-2f011c2d'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    При запуске прошивки получаю ошибку "Fatal Error: [NXBOOT]"
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Обновите <span class="tooltip_container">
 	<a href="kefir" target="_blank">kefir</a>
 	<span class="tooltip">▼
 		<span class="bottom">
@@ -717,37 +739,46 @@
 	</span>
 </span></p>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-2f011c2d'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-8044714a'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">При запуске прошивки получаю ошибку "Fatal Error: [NXBOOT]" <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
 <h3 id="проблемы-с-запуском-игр">Проблемы с запуском игр</h3>
 
-<details class="spoiler" id="spoiler-b76dd93b">
-  <summary>При запуске игр в emunand вылезает назойливое окно про облачные сохранения</summary>
-  <div class="spoiler-content">
-    <p>Если вы пропустили этот пункт и у вас были включены облачные сохранения, то в эмунанде при запуске игр будет вылетать ошибка, чтобы её устранить, в <strong>эмунанде</strong> через DBI удалите аккаунт на котором появляется ошибка через <strong>Tools &gt; Delete account</strong>, после чего создайте новый с тем же именем.</p>
-
-    
+<div class="spoiler" id="spoiler-f622d782">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-f622d782'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    При запуске игр в emunand вылезает назойливое окно про облачные сохранения
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-b76dd93b'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">При запуске игр в emunand вылезает назойливое окно про облачные сохранения <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Если вы пропустили этот пункт и у вас были включены облачные сохранения, то в эмунанде при запуске игр будет вылетать ошибка, чтобы её устранить, в <strong>эмунанде</strong> через DBI удалите аккаунт на котором появляется ошибка через <strong>Tools &gt; Delete account</strong>, после чего создайте новый с тем же именем.</p>
 
-<details class="spoiler" id="spoiler-d06591f7">
-  <summary>Не могу использовать картриджи в EmuNAND, хотя в SysNAND все работает</summary>
-  <div class="spoiler-content">
-    <p>Для корректной работы картриджей SysNAND и EmuNAND должны находится на одной версии прошивки. Если это не так, <a href="/uk/update-fw">обновите EmuNAND</a>. Если это не помогло, убедитесь, что в hekate у вас отключен <strong>NoGC</strong> (<strong>Options</strong> -&gt; <strong>Auto NoGC</strong> -&gt; <strong>OFF</strong>)</p>
-
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-f622d782'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-d06591f7'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Не могу использовать картриджи в EmuNAND, хотя в SysNAND все работает <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-ce7329d0">
-  <summary>После запуска приставки ошибка на чёрном фоне с надписью "**Panic occurred while running Atmosphere**".</summary>
-  <div class="spoiler-content">
-    <p>Обновите <span class="tooltip_container">
+<div class="spoiler" id="spoiler-bce51fcd">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-bce51fcd'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Не могу использовать картриджи в EmuNAND, хотя в SysNAND все работает
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Для корректной работы картриджей SysNAND и EmuNAND должны находится на одной версии прошивки. Если это не так, <a href="/uk/update-fw">обновите EmuNAND</a>. Если это не помогло, убедитесь, что в hekate у вас отключен <strong>NoGC</strong> (<strong>Options</strong> -&gt; <strong>Auto NoGC</strong> -&gt; <strong>OFF</strong>)</p>
+
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-bce51fcd'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+  </div>
+</div>
+
+<div class="spoiler" id="spoiler-f1a3a83a">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-f1a3a83a'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    После запуска приставки ошибка на чёрном фоне с надписью "**Panic occurred while running Atmosphere**".
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Обновите <span class="tooltip_container">
 	<a href="kefir" target="_blank">kefir</a>
 	<span class="tooltip">▼
 		<span class="bottom">
@@ -766,25 +797,31 @@
 
 <p class="text-center notice--info"><img src="/assets/images/switch/screenshots/atmos_title_error2.png" alt="" /></p>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-f1a3a83a'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-ce7329d0'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">После запуска приставки ошибка на чёрном фоне с надписью "**Panic occurred while running Atmosphere**". <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-73fd39d9">
-  <summary>Хотел установить игру, но установка зависла, игра в меню не появилась, но место занимает. Как удалить?</summary>
-  <div class="spoiler-content">
-    <p>Запустите <strong>DBI</strong> и выберите “<strong>Clean Orphaned Files</strong>” - все файлы, на которых нет ссылок в системной базе данных будут удалены. <strong>Важно:</strong> запускайте DBI только <a href="/uk/hbl" target="_blank">в режиме апплета</a>, кефир должен быть свежим. Иначе магия не сработает.</p>
-
-    
+<div class="spoiler" id="spoiler-8593ec27">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-8593ec27'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Хотел установить игру, но установка зависла, игра в меню не появилась, но место занимает. Как удалить?
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-73fd39d9'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Хотел установить игру, но установка зависла, игра в меню не появилась, но место занимает. Как удалить? <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Запустите <strong>DBI</strong> и выберите “<strong>Clean Orphaned Files</strong>” - все файлы, на которых нет ссылок в системной базе данных будут удалены. <strong>Важно:</strong> запускайте DBI только <a href="/uk/hbl" target="_blank">в режиме апплета</a>, кефир должен быть свежим. Иначе магия не сработает.</p>
 
-<details class="spoiler" id="spoiler-48e96653">
-  <summary>Не могу установить игры в NAND</summary>
-  <div class="spoiler-content">
-    <p>Судя по всему вы используете EmuNAND и старый <span class="tooltip_container">
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-8593ec27'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+  </div>
+</div>
+
+<div class="spoiler" id="spoiler-d743b8e8">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-d743b8e8'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Не могу установить игры в NAND
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Судя по всему вы используете EmuNAND и старый <span class="tooltip_container">
 	<a href="kefir" target="_blank">kefir</a>
 	<span class="tooltip">▼
 		<span class="bottom">
@@ -793,15 +830,18 @@
 	</span>
 </span>. Обновите его.</p>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-d743b8e8'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-48e96653'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Не могу установить игры в NAND <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-42e40388">
-  <summary>В Tinfoil пропали все игры</summary>
-  <div class="spoiler-content">
-    <ul>
+<div class="spoiler" id="spoiler-cfd2151a">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-cfd2151a'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    В Tinfoil пропали все игры
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <ul>
   <li>Убедитесь, что на приставке стоит верная дата и время.</li>
   <li>Обновите <span class="tooltip_container">
   <a href="kefir" target="_blank">kefir</a>
@@ -822,15 +862,18 @@
   <li><a href="https://vk.com/topic-178659422_48077007" target="_blank">Еще советы</a></li>
 </ul>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-cfd2151a'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-42e40388'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">В Tinfoil пропали все игры <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-55e478ed">
-  <summary>Некоторые игры не запускаются с ошибкой "Приложение закрыто, потому что произошла ошибка"</summary>
-  <div class="spoiler-content">
-    <p>Возможно, установлен ReverseNX. Удалите его. Так же попробуйте выключить приставку, запустить <span class="tooltip_container">
+<div class="spoiler" id="spoiler-eed97db6">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-eed97db6'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Некоторые игры не запускаются с ошибкой "Приложение закрыто, потому что произошла ошибка"
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Возможно, установлен ReverseNX. Удалите его. Так же попробуйте выключить приставку, запустить <span class="tooltip_container">
 	hekate
 	<span class="tooltip">▼
 		<span class="bottom">
@@ -839,15 +882,18 @@
 	</span>
 </span>, перейдите в <strong>Payloads</strong> и выберите <code class="language-plaintext highlighter-rouge">fusee.bin</code>, после чего сразу зажмите одновременно обе кнопки громкости до тех пор, пока не попадёте в рекавери. После выключите приставку удерживая кнопку питания. Затем включите как обычно.</p>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-eed97db6'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-55e478ed'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Некоторые игры не запускаются с ошибкой "Приложение закрыто, потому что произошла ошибка" <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-093a74b0">
-  <summary>Не запускается ни одна игра. При запуске идёт проверка, затем ошибка</summary>
-  <div class="spoiler-content">
-    <p>Возможно, вы удалили тикеты всех игр. Для переустановки тикетов, запустите <a href="/uk/games" target="_blank">tinfoil</a>, перейдите на вкладку “<strong>Тикеты</strong>”, и для каждой игры проделайте следующее:</p>
+<div class="spoiler" id="spoiler-e5674871">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-e5674871'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Не запускается ни одна игра. При запуске идёт проверка, затем ошибка
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Возможно, вы удалили тикеты всех игр. Для переустановки тикетов, запустите <a href="/uk/games" target="_blank">tinfoil</a>, перейдите на вкладку “<strong>Тикеты</strong>”, и для каждой игры проделайте следующее:</p>
 <ol>
   <li>На игре нажмите <img src="/assets/images/switch/buttons/Y.png" alt="(Y)" /></li>
   <li>Нажмите <img src="/assets/images/switch/buttons/R.png" alt="(R)" /></li>
@@ -855,15 +901,18 @@
   <li>Нажмите “<strong>Начать установку</strong>”</li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-e5674871'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-093a74b0'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Не запускается ни одна игра. При запуске идёт проверка, затем ошибка <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-37cfcf91">
-  <summary>Я случайно удалил тикеты игр в tinfoil</summary>
-  <div class="spoiler-content">
-    <p>Для переустановки тикетов, запустите <a href="/uk/games" target="_blank">tinfoil</a>, перейдите на вкладку “<strong>Тикеты</strong>”, и для каждой игры проделайте следующее:</p>
+<div class="spoiler" id="spoiler-f7802a27">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-f7802a27'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Я случайно удалил тикеты игр в tinfoil
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Для переустановки тикетов, запустите <a href="/uk/games" target="_blank">tinfoil</a>, перейдите на вкладку “<strong>Тикеты</strong>”, и для каждой игры проделайте следующее:</p>
 <ol>
   <li>На игре нажмите <img src="/assets/images/switch/buttons/Y.png" alt="(Y)" /></li>
   <li>Нажмите <img src="/assets/images/switch/buttons/R.png" alt="(R)" /></li>
@@ -871,38 +920,47 @@
   <li>Нажмите “<strong>Начать установку</strong>”</li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-f7802a27'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-37cfcf91'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Я случайно удалил тикеты игр в tinfoil <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-7abcd3d0">
-  <summary>После обновления прошивки, некоторые игры перестали запускаться</summary>
-  <div class="spoiler-content">
-    <p>Вероятнее всего, у вас перестали запускаться игры, сконвертированные из xci через старую версию n4xci (вы могли скачать уже сконвертированный образ из любого источника; редко когда источник указывает, что игра - конвертка). Для решения этой проблемы, скачайте свежую версию <a href="https://github.com/The-4n/4NXCI/releases/tag/v4.03" target="_blank">n4xci</a> (качайте 4nxci-vX.XX<strong>_GUI</strong>.zip). Сделайте <a href="backup-nand#часть-iii---
+<div class="spoiler" id="spoiler-8f32d476">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-8f32d476'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    После обновления прошивки, некоторые игры перестали запускаться
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Вероятнее всего, у вас перестали запускаться игры, сконвертированные из xci через старую версию n4xci (вы могли скачать уже сконвертированный образ из любого источника; редко когда источник указывает, что игра - конвертка). Для решения этой проблемы, скачайте свежую версию <a href="https://github.com/The-4n/4NXCI/releases/tag/v4.03" target="_blank">n4xci</a> (качайте 4nxci-vX.XX<strong>_GUI</strong>.zip). Сделайте <a href="backup-nand#часть-iii---
 lang: ukдампим-ключи" target="_blank">дамп ключей на вашей актуальной прошивке</a> и положите их в одну папку с программой. Не забудьте указать путь к ним в поле <strong>Keyset File</strong>. Сконвертированный образ NSP должен начать работать.</p>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-8f32d476'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-7abcd3d0'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">После обновления прошивки, некоторые игры перестали запускаться <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
 <h3 id="проблемы-с-файлами--картой-памяти">Проблемы с файлами / картой памяти</h3>
 
-<details class="spoiler" id="spoiler-0fc3c274">
-  <summary>Не могу закинуть на карту игру более 4х Гб, что делать?</summary>
-  <div class="spoiler-content">
-    <p>Нет ни одной причины закидывать игры на карту памяти. Сразу <a href="/uk/games" target="_blank">устанавливайте их</a> рекомендуемым способом по MTP через DBI!</p>
-
-    
+<div class="spoiler" id="spoiler-7c1b8453">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-7c1b8453'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Не могу закинуть на карту игру более 4х Гб, что делать?
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-0fc3c274'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Не могу закинуть на карту игру более 4х Гб, что делать? <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Нет ни одной причины закидывать игры на карту памяти. Сразу <a href="/uk/games" target="_blank">устанавливайте их</a> рекомендуемым способом по MTP через DBI!</p>
 
-<details class="spoiler" id="spoiler-e7029acf">
-  <summary>После установки модификации или перевода на игру, модификация или перевод не работает</summary>
-  <div class="spoiler-content">
-    <p>Перезагрузите приставку. Если это не помогло, исправьте атрибуты</p>
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-7c1b8453'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+  </div>
+</div>
+
+<div class="spoiler" id="spoiler-e60f85b9">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-e60f85b9'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    После установки модификации или перевода на игру, модификация или перевод не работает
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Перезагрузите приставку. Если это не помогло, исправьте атрибуты</p>
 <ol>
   <li>В <strong>hekate</strong> перейдіть в меню “<strong>Tools</strong>”, переключіться на вкладку “<strong>Arch bit • RCM • Touch • Partitions</strong>” (в нижній частині екрану), виберіть “<strong>Fix Archive Bit</strong>”
     <ul>
@@ -913,15 +971,18 @@ lang: ukдампим-ключи" target="_blank">дамп ключей на ва
   <li>Виберіть “<strong>Home</strong>” -&gt; “<strong>Launch</strong>” -&gt; “<strong>Atmosphere</strong>”, щоб завантажитися назад у прошивку</li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-e60f85b9'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-e7029acf'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">После установки модификации или перевода на игру, модификация или перевод не работает <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-1a50c545">
-  <summary>На MacOS скинул файлы на карту памяти, но DBI \ tinfoil \ GoldLeaf их не видит</summary>
-  <div class="spoiler-content">
-    <p>Нужно исправить атрибуты.</p>
+<div class="spoiler" id="spoiler-ae83efd1">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-ae83efd1'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    На MacOS скинул файлы на карту памяти, но DBI \ tinfoil \ GoldLeaf их не видит
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Нужно исправить атрибуты.</p>
 <ol>
   <li>В <strong>hekate</strong> перейдіть в меню “<strong>Tools</strong>”, переключіться на вкладку “<strong>Arch bit • RCM • Touch • Partitions</strong>” (в нижній частині екрану), виберіть “<strong>Fix Archive Bit</strong>”
     <ul>
@@ -932,35 +993,44 @@ lang: ukдампим-ключи" target="_blank">дамп ключей на ва
   <li>Виберіть “<strong>Home</strong>” -&gt; “<strong>Launch</strong>” -&gt; “<strong>Atmosphere</strong>”, щоб завантажитися назад у прошивку</li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-ae83efd1'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-1a50c545'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">На MacOS скинул файлы на карту памяти, но DBI \ tinfoil \ GoldLeaf их не видит <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-1678b93f">
-  <summary>Приставка не видит карту в формате exFAT и просит обновить прошивку</summary>
-  <div class="spoiler-content">
-    <p>Вам нужно установить драйвер exFAT. Для этого проделайте <a href="/uk/update-fw" target="_blank">безопасное обновление прошивки</a>. Его нужно делать даже в том случае, если у вас и так стоит последняя версия взламываемой прошивки! Повторное обновление просто установит отсутствующий драйвер. А вообще, <a href="http://format.customfw.xyz" target="_blank">переходите на FAT32</a>!</p>
-
-    
+<div class="spoiler" id="spoiler-c963f8e3">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-c963f8e3'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Приставка не видит карту в формате exFAT и просит обновить прошивку
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-1678b93f'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Приставка не видит карту в формате exFAT и просит обновить прошивку <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Вам нужно установить драйвер exFAT. Для этого проделайте <a href="/uk/update-fw" target="_blank">безопасное обновление прошивки</a>. Его нужно делать даже в том случае, если у вас и так стоит последняя версия взламываемой прошивки! Повторное обновление просто установит отсутствующий драйвер. А вообще, <a href="http://format.customfw.xyz" target="_blank">переходите на FAT32</a>!</p>
 
-<details class="spoiler" id="spoiler-f0b4fd24">
-  <summary>Постоянные ошибки, игры вылетают во время работы</summary>
-  <div class="spoiler-content">
-    <p><a href="https://customfw.xyz/test_sd" target="_blank">Проверьте свою SD-карту на ошибки</a>, а затем установите кефир через скрипт.</p>
-
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-c963f8e3'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-f0b4fd24'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Постоянные ошибки, игры вылетают во время работы <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-ffc72419">
-  <summary>Проблемы после копирования файлов на карту на маке/В Homebrew Menu/Tinfoil пусто, хотя на карте всё есть</summary>
-  <div class="spoiler-content">
-    <ul>
+<div class="spoiler" id="spoiler-880dd561">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-880dd561'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Постоянные ошибки, игры вылетают во время работы
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p><a href="https://customfw.xyz/test_sd" target="_blank">Проверьте свою SD-карту на ошибки</a>, а затем установите кефир через скрипт.</p>
+
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-880dd561'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+  </div>
+</div>
+
+<div class="spoiler" id="spoiler-d0b45b0b">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-d0b45b0b'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Проблемы после копирования файлов на карту на маке/В Homebrew Menu/Tinfoil пусто, хотя на карте всё есть
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <ul>
   <li>Убедитесь, что имя вашей карты отлично от <code class="language-plaintext highlighter-rouge">Switch</code> в любой комбинации строчных или заглавных букв</li>
   <li>
     <ol>
@@ -978,15 +1048,18 @@ lang: ukдампим-ключи" target="_blank">дамп ключей на ва
   <li>Если вы пользователь MacOS и вам не помог способ выше, выполните следующую команду: <code class="language-plaintext highlighter-rouge">sudo chflags -R arch /Volumes/&lt;name of SD card&gt;</code></li>
 </ul>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-d0b45b0b'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-ffc72419'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Проблемы после копирования файлов на карту на маке/В Homebrew Menu/Tinfoil пусто, хотя на карте всё есть <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-5eb5fe1c">
-  <summary>Исправление архивных атрибутов</summary>
-  <div class="spoiler-content">
-    <ol>
+<div class="spoiler" id="spoiler-38c830ff">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-38c830ff'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Исправление архивных атрибутов
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <ol>
   <li>В <strong>hekate</strong> перейдіть в меню “<strong>Tools</strong>”, переключіться на вкладку “<strong>Arch bit • RCM • Touch • Partitions</strong>” (в нижній частині екрану), виберіть “<strong>Fix Archive Bit</strong>”
     <ul>
       <li>Щоб потрапити в hekate, якщо ви знаходитесь не в ній, перезавантажте приставку, для цього утримуйте 5 секунд кнопку живлення, перебуваючи в кастомній прошивці, потім виберіть “<strong>Параметри електроживлення</strong>” -&gt; “<strong>Перезавантаження</strong>”. Коли з’явиться сплешскрін кефіра, натисніть (VOL-) (кнопка зниження гучності)</li>
@@ -996,15 +1069,18 @@ lang: ukдампим-ключи" target="_blank">дамп ключей на ва
   <li>Виберіть “<strong>Home</strong>” -&gt; “<strong>Launch</strong>” -&gt; “<strong>Atmosphere</strong>”, щоб завантажитися назад у прошивку</li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-38c830ff'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-5eb5fe1c'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Исправление архивных атрибутов <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-3f9d096d">
-  <summary>Возникают ошибки при установке NSP-файлов</summary>
-  <div class="spoiler-content">
-    <ul>
+<div class="spoiler" id="spoiler-72db12bb">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-72db12bb'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Возникают ошибки при установке NSP-файлов
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <ul>
   <li>Дайте файлам короткое имя</li>
   <li>Обновите <span class="tooltip_container">
   <a href="kefir" target="_blank">kefir</a>
@@ -1018,49 +1094,61 @@ lang: ukдампим-ключи" target="_blank">дамп ключей на ва
   <li>На switch’е через hekate во вкладке <strong>tools</strong> выберите <strong>Unset archive bit</strong></li>
 </ul>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-72db12bb'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-3f9d096d'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Возникают ошибки при установке NSP-файлов <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
 <h3 id="проблемы-с-homebrew-или-родительским-контролем">Проблемы с Homebrew или родительским контролем</h3>
 
-<details class="spoiler" id="spoiler-6a9480d7">
-  <summary>Перед прошивкой забыл убрать родительский контроль, а теперь не могу! При входе в меню родительского контроля вылетает атмосфера, что делать?</summary>
-  <div class="spoiler-content">
-    <p><a href="https://github.com/ITotalJustice/Reset-Parental-Controls-NX/releases" target="_blank">Удалить родительский контроль</a></p>
-
-    
+<div class="spoiler" id="spoiler-4f831eff">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-4f831eff'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Перед прошивкой забыл убрать родительский контроль, а теперь не могу! При входе в меню родительского контроля вылетает атмосфера, что делать?
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-6a9480d7'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Перед прошивкой забыл убрать родительский контроль, а теперь не могу! При входе в меню родительского контроля вылетает атмосфера, что делать? <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p><a href="https://github.com/ITotalJustice/Reset-Parental-Controls-NX/releases" target="_blank">Удалить родительский контроль</a></p>
 
-<details class="spoiler" id="spoiler-dfe2e872">
-  <summary>После запуска хомбрю ошибка на фиолетовом фоне с надписью Error Code и номером ошибки</summary>
-  <div class="spoiler-content">
-    <p>Вы запускаете программу из режима апплета (Applet mode), то есть из Альбомов, тогда как делать это нужно в режиме тайла (Tile mode), то есть через игру или форвардер. Как правильно запускать HBL описано в <a href="/uk/hbl" target="_blank">инструкции</a>. Режим апплета не даёт запускаемой программе полного доступа ко всему объёму оперативной памяти в приставке, отчего и случаются ошибки. Если номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то вероятнее всего ошибка вызвана тем, что какое-то хомбрю запущено в режиме апплета и ему не хватает памяти. Если номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000001F</code>, то вытащите картридж из приставки. Держите emunand и sysnand на одной версии прошивки, чтобы в дальнейшем не было таких проблем. Так же исправьте атрибуты (как ищите на этой же странице)</p>
-
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-4f831eff'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-dfe2e872'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">После запуска хомбрю ошибка на фиолетовом фоне с надписью Error Code и номером ошибки <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-a962a350">
-  <summary>Ошибка при запуске хомбрю с главного меню приставки через форвардер</summary>
-  <div class="spoiler-content">
-    <p>Вам нужно обновить форвардер</p>
-
-    
+<div class="spoiler" id="spoiler-69711eea">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-69711eea'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    После запуска хомбрю ошибка на фиолетовом фоне с надписью Error Code и номером ошибки
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-a962a350'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Ошибка при запуске хомбрю с главного меню приставки через форвардер <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Вы запускаете программу из режима апплета (Applet mode), то есть из Альбомов, тогда как делать это нужно в режиме тайла (Tile mode), то есть через игру или форвардер. Как правильно запускать HBL описано в <a href="/uk/hbl" target="_blank">инструкции</a>. Режим апплета не даёт запускаемой программе полного доступа ко всему объёму оперативной памяти в приставке, отчего и случаются ошибки. Если номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то вероятнее всего ошибка вызвана тем, что какое-то хомбрю запущено в режиме апплета и ему не хватает памяти. Если номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000001F</code>, то вытащите картридж из приставки. Держите emunand и sysnand на одной версии прошивки, чтобы в дальнейшем не было таких проблем. Так же исправьте атрибуты (как ищите на этой же странице)</p>
+
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-69711eea'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+  </div>
+</div>
+
+<div class="spoiler" id="spoiler-c73c5527">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-c73c5527'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Ошибка при запуске хомбрю с главного меню приставки через форвардер
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Вам нужно обновить форвардер</p>
+
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-c73c5527'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+  </div>
+</div>
 
 <h3 id="проблемы-с-железом">Проблемы с железом</h3>
 
-<details class="spoiler" id="spoiler-a1fbbb7c">
-  <summary>Джойконы в эмунанде не работают отдельно от консоли, хотя в стоке сиснанда работают</summary>
-  <div class="spoiler-content">
-    <ol>
+<div class="spoiler" id="spoiler-2292862f">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-2292862f'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Джойконы в эмунанде не работают отдельно от консоли, хотя в стоке сиснанда работают
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <ol>
   <li>Синхронизируй joy-con’ы с sysnand</li>
   <li>Скиньте <a href="/files/Syncfix.te" target="_blank">Syncfixv2.te</a> в корень карты памяти</li>
   <li>Скачайте пейлоад <a href="https://github.com/suchmememanyskill/TegraExplorer/releases/" target="_blank">TegraExplorer</a> и поместите его в папку <code class="language-plaintext highlighter-rouge">bootloader/payloads</code></li>
@@ -1070,62 +1158,77 @@ lang: ukдампим-ключи" target="_blank">дамп ключей на ва
   <li>После окончания работы скрипта, перезагрузите приставку</li>
 </ol>
 
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-2292862f'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-a1fbbb7c'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Джойконы в эмунанде не работают отдельно от консоли, хотя в стоке сиснанда работают <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-af1c75fb">
-  <summary>Батарея отображает неверный заряд \ калибровка батареи</summary>
-  <div class="spoiler-content">
-    <p><strong>О:</strong> <a href="https://4pda.to/forum/index.php?showtopic=900987&amp;st=14880#entry87254644" target="_blank">Исчерпывающая статья</a></p>
-
-    
+<div class="spoiler" id="spoiler-0c87b15f">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-0c87b15f'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Батарея отображает неверный заряд \ калибровка батареи
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-af1c75fb'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Батарея отображает неверный заряд \ калибровка батареи <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p><strong>О:</strong> <a href="https://4pda.to/forum/index.php?showtopic=900987&amp;st=14880#entry87254644" target="_blank">Исчерпывающая статья</a></p>
+
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-0c87b15f'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+  </div>
+</div>
 
 <h3 id="проблемы-с-системой">Проблемы с системой</h3>
 
-<details class="spoiler" id="spoiler-575f6c89">
-  <summary>У меня скачалась прошивка, как её удалить не обновляясь?</summary>
-  <div class="spoiler-content">
-    <p>Запустите <strong>DBI</strong> и выберите “<strong>Clean Orphaned Files</strong>” - все файлы, на которых нет ссылок в системной базе данных будут удалены. <strong>Важно:</strong> запускайте DBI только <a href="/uk/hbl" target="_blank">в режиме апплета</a>, кефир должен быть свежим. Иначе магия не сработает.</p>
-
-    
+<div class="spoiler" id="spoiler-d5c8276f">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-d5c8276f'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    У меня скачалась прошивка, как её удалить не обновляясь?
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-575f6c89'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">У меня скачалась прошивка, как её удалить не обновляясь? <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Запустите <strong>DBI</strong> и выберите “<strong>Clean Orphaned Files</strong>” - все файлы, на которых нет ссылок в системной базе данных будут удалены. <strong>Важно:</strong> запускайте DBI только <a href="/uk/hbl" target="_blank">в режиме апплета</a>, кефир должен быть свежим. Иначе магия не сработает.</p>
 
-<details class="spoiler" id="spoiler-cf0b0309">
-  <summary>У меня последняя прошивка, но при запуске некоторых игр я вижу, что "*доступно обновление системы*". Почему так происходит?</summary>
-  <div class="spoiler-content">
-    <p>Имеется ввиду обновление игры. Скачайте его и установите как обычную игру. Так же сбросить проверку версии можно через DBI. Запустите программу, выберите <strong>Browse installed applications</strong>, нажмите <img src="/assets/images/switch/buttons/Y.png" alt="(Y)" />, чтобы выделить все пункты, нажмите <img src="/assets/images/switch/buttons/A.png" alt="(A)" />, а затем выберите <strong>Reset required version</strong>. DBI должен быть <a href="/uk/hbl" target="_blank">запущен из режима апплета</a>, кефир должен быть свежим. Иначе магия не сработает.</p>
-
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-d5c8276f'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-cf0b0309'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">У меня последняя прошивка, но при запуске некоторых игр я вижу, что "*доступно обновление системы*". Почему так происходит? <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
 
-<details class="spoiler" id="spoiler-5c9544ca">
-  <summary>Не могу удалить пользователя</summary>
-  <div class="spoiler-content">
-    <p><strong>DBI &gt; Tools &gt; Delete account</strong></p>
-
-    
+<div class="spoiler" id="spoiler-8f87fd66">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-8f87fd66'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    У меня последняя прошивка, но при запуске некоторых игр я вижу, что "*доступно обновление системы*". Почему так происходит?
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-5c9544ca'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Не могу удалить пользователя <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Имеется ввиду обновление игры. Скачайте его и установите как обычную игру. Так же сбросить проверку версии можно через DBI. Запустите программу, выберите <strong>Browse installed applications</strong>, нажмите <img src="/assets/images/switch/buttons/Y.png" alt="(Y)" />, чтобы выделить все пункты, нажмите <img src="/assets/images/switch/buttons/A.png" alt="(A)" />, а затем выберите <strong>Reset required version</strong>. DBI должен быть <a href="/uk/hbl" target="_blank">запущен из режима апплета</a>, кефир должен быть свежим. Иначе магия не сработает.</p>
 
-<details class="spoiler" id="spoiler-47235dd3">
-  <summary>Не синхронизируется время</summary>
-  <div class="spoiler-content">
-    <p>Автоматическая синхронизация времени отключена в кефире, начиная с версии 660 для экономии батареи в режиме сна. Для синхронизации используйте модуль <a href="https://github.com/nedex/QuickNTP" target="_blank">QuickNTP</a> для Tesla (входит в состав кефира). Запустите Tesla, нажав одновременно <img src="/assets/images/switch/buttons/L.png" alt="(L)" /> + <img src="/assets/images/switch/buttons/DOWN.png" alt="(DOWN)" /> + <img src="/assets/images/switch/buttons/R3.png" alt="(R3)" />, выберите QuickNTP, нажмите <img src="/assets/images/switch/buttons/A.png" alt="(A)" />. Если время не синхронизировалось, выберите другой сервер синхронизации крестовиной (ВЛЕВО-ВПРАВО).</p>
-
-    
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-8f87fd66'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-47235dd3'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Не синхронизируется время <span class="close-icon" aria-hidden="true"></span></div>
-</details>
+</div>
+
+<div class="spoiler" id="spoiler-68815574">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-68815574'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Не могу удалить пользователя
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p><strong>DBI &gt; Tools &gt; Delete account</strong></p>
+
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-68815574'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+  </div>
+</div>
+
+<div class="spoiler" id="spoiler-01d09604">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-01d09604'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+    Не синхронизируется время
+  </div>
+  <div class="spoiler-body">
+    <div class="spoiler-content">
+      <p>Автоматическая синхронизация времени отключена в кефире, начиная с версии 660 для экономии батареи в режиме сна. Для синхронизации используйте модуль <a href="https://github.com/nedex/QuickNTP" target="_blank">QuickNTP</a> для Tesla (входит в состав кефира). Запустите Tesla, нажав одновременно <img src="/assets/images/switch/buttons/L.png" alt="(L)" /> + <img src="/assets/images/switch/buttons/DOWN.png" alt="(DOWN)" /> + <img src="/assets/images/switch/buttons/R3.png" alt="(R3)" />, выберите QuickNTP, нажмите <img src="/assets/images/switch/buttons/A.png" alt="(A)" />. Если время не синхронизировалось, выберите другой сервер синхронизации крестовиной (ВЛЕВО-ВПРАВО).</p>
+
+    </div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-01d09604'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+  </div>
+</div>
 
 <hr />
 
