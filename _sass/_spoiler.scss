@@ -1,0 +1,96 @@
+/* --- Спойлер --- */
+details.spoiler {
+	background-color: #ffffff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	margin-bottom: 1.5em;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Менш виразна тінь */
+	overflow: hidden; /* Важливо для border-radius та footer */
+ }
+ 
+ /* --- Заголовок (Summary) --- */
+ details.spoiler summary {
+	padding: 12px 20px;
+	font-weight: 600;
+	color: #333;
+	cursor: pointer;
+	background-color: #f7f7f7;
+	transition: background-color 0.2s ease;
+	list-style: none; /* Прибирає стандартний маркер */
+	position: relative;
+	outline: none;
+	/* Додаємо рамку знизу, якщо спойлер закритий */
+	border-bottom: 1px solid transparent;
+ }
+ details.spoiler:not([open]) summary {
+	 border-bottom-color: #e0e0e0;
+ }
+ 
+ 
+ details.spoiler summary:hover {
+	  background-color: #f0f0f0;
+ }
+ 
+ /* Кастомний маркер (стрілка) */
+ details.spoiler summary::after {
+	  content: '+'; /* Простіший символ + */
+	  font-size: 1.6em;
+	  font-weight: 300; /* Тонший */
+	  color: #666;
+	  position: absolute;
+	  right: 20px;
+	  top: 50%;
+	  line-height: 1;
+	  transform: translateY(-50%);
+	  transition: transform 0.2s ease;
+ }
+ 
+ details.spoiler[open] summary::after {
+	  content: '−'; /* Мінус для відкритого стану */
+	  font-weight: normal;
+	  transform: translateY(-50%);
+ }
+ 
+ /* --- Контент Спойлера --- */
+ details.spoiler .spoiler-content {
+	/* Прибираємо внутрішній падінг, щоб не було білих смуг */
+	/* padding: 15px 20px; */
+	/* Замість цього додаємо падінг самому <details> */
+	padding: 0 20px 15px 20px; /* Зверху 0, бо межує з summary, знизу 15px, з боків 20px */
+	/* border-top: 1px solid #e0e0e0;  Переносимо верхню межу до summary/footer */
+	line-height: 1.6;
+	color: #444;
+ }
+ 
+ /* --- Нижня панель для закриття --- */
+ .spoiler-close-footer {
+	padding: 12px 20px;
+	font-weight: 600; /* Той же, що й summary */
+	color: #333;
+	cursor: pointer;
+	background-color: #f7f7f7; /* Той же, що й summary */
+	transition: background-color 0.2s ease;
+	border-top: 1px solid #e0e0e0; /* Верхня межа, яка відділяє від контенту */
+	text-align: center; /* Центруємо текст/іконку */
+	position: relative; /* Для іконки, якщо потрібна */
+	margin-top: -15px; /* Компенсуємо нижній падінг контенту, щоб не було зайвого відступу */
+ }
+ 
+ .spoiler-close-footer:hover {
+	background-color: #f0f0f0;
+ }
+ 
+ /* Іконка (стрілка вгору) для нижньої панелі */
+ .spoiler-close-footer .close-icon::before {
+	  content: '↑'; /* Стрілка вгору */
+	  /* Або можна використовувати SVG/Font Awesome іконку */
+	  display: inline-block; /* Щоб можна було стилізувати */
+	  margin-left: 0.5em;
+	  font-weight: bold;
+	  color: #666;
+	  transition: color 0.2s ease;
+ }
+ 
+ .spoiler-close-footer:hover .close-icon::before {
+	  color: #333;
+ }
