@@ -518,11 +518,11 @@
 </ol>
 
 <p>Теперь вы можете использовать EmuNAND для игры в пиратку, а SysNAND для игры в лицензию.</p>
-<div class="spoiler" id="spoiler-142a6bd9">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-142a6bd9'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-d118e51a">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-d118e51a'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Запуск прошивки без использования EmuNAND (не рекомендуется)
   </div>
-  <div class="spoiler-body">
+  <div class="spoiler-body" style="max-height: 0; display: none;">
     <div class="spoiler-content">
       <p class="notice--danger">Вы не сможете пользоваться онлайном даже в купленных играх, до тех пор, пока не перенесёте SysNAND в <span class="tooltip_container">
 	EmuNAND
@@ -541,17 +541,17 @@
 </ol>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-142a6bd9'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-d118e51a'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
 <hr />
 
-<div class="spoiler" id="spoiler-7f09ead5">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-7f09ead5'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-ba67e6e5">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-ba67e6e5'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Материалы для самостоятельного изучения
   </div>
-  <div class="spoiler-body">
+  <div class="spoiler-body" style="max-height: 0; display: none;">
     <div class="spoiler-content">
       <ul>
   <li><a href="faq" target="blank_">Часто задаваемые вопросы</a></li>
@@ -565,7 +565,7 @@
 </ul>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-7f09ead5'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-ba67e6e5'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
@@ -577,11 +577,11 @@
 
 <p class="notice--warning">Не забудьте поблагодарить авторов руководства по реквизитам, указанным ниже:</p>
 
-<div class="spoiler" id="spoiler-fa5bd70a">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-fa5bd70a'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-da48d219">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-da48d219'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Реквизиты для сбора пожертвований:
   </div>
-  <div class="spoiler-body">
+  <div class="spoiler-body" style="max-height: 0; display: none;">
     <div class="spoiler-content">
       <h2 id="банка-monobank">Банка monobank</h2>
 
@@ -668,7 +668,7 @@ function copyToClipboard(text) {
 
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-fa5bd70a'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-da48d219'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 

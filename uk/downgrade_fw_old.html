@@ -621,11 +621,11 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
 
 <h3 id="часть-iv---загрузка-прошивки-на-устройство">Часть IV - Загрузка прошивки на устройство</h3>
 
-<div class="spoiler" id="spoiler-5d1b6ee8">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-5d1b6ee8'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-7d0bc7ba">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-7d0bc7ba'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Монтирование BOOT0 в "LINUX UMS DISK 0"
   </div>
-  <div class="spoiler-body">
+  <div class="spoiler-body" style="max-height: 0; display: none;">
     <div class="spoiler-content">
       <div class="notice--danger">
 <p class="text-left"><strong>УВАГА!!!</strong> Якщо ви в процесі виконання посібника побачите діалогове вікно з пропозицією відформатувати диск - <strong>натисніть скасувати</strong>!!</p>
@@ -656,15 +656,15 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
 </ol>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-5d1b6ee8'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-7d0bc7ba'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
-<div class="spoiler" id="spoiler-afabdbdb">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-afabdbdb'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-941f1a06">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-941f1a06'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Загрузка BOOT0/1
   </div>
-  <div class="spoiler-body">
+  <div class="spoiler-body" style="max-height: 0; display: none;">
     <div class="spoiler-content">
       <ol>
   <li>Установите и запустите Etcher</li>
@@ -684,15 +684,15 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
 </ol>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-afabdbdb'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-941f1a06'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
-<div class="spoiler" id="spoiler-dc494964">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-dc494964'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-6ec688a3">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-6ec688a3'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Монтирование eMMC RAW в "LINUX UMS DISK 0"
   </div>
-  <div class="spoiler-body">
+  <div class="spoiler-body" style="max-height: 0; display: none;">
     <div class="spoiler-content">
       <div class="notice--danger">
 <p class="text-left"><strong>УВАГА!!!</strong> Якщо ви в процесі виконання посібника побачите діалогове вікно з пропозицією відформатувати диск - <strong>натисніть скасувати</strong>!!</p>
@@ -723,15 +723,15 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
 </ol>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-dc494964'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-6ec688a3'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
-<div class="spoiler" id="spoiler-be51a4f4">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-be51a4f4'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-6f75eff3">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-6f75eff3'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Настройка eMMC через HacDiskMount
   </div>
-  <div class="spoiler-body">
+  <div class="spoiler-body" style="max-height: 0; display: none;">
     <div class="spoiler-content">
       <ol>
   <li>Распакуйте <a href="https://switchtools.sshnuke.net/" target="_blank">HacDiskMount</a> в удобную папку</li>
@@ -766,15 +766,15 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
 </ol>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-be51a4f4'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-6f75eff3'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
-<div class="spoiler" id="spoiler-e6535a80">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-e6535a80'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-5925f9bc">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-5925f9bc'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Перенос образов BCPKG2
   </div>
-  <div class="spoiler-body">
+  <div class="spoiler-body" style="max-height: 0; display: none;">
     <div class="spoiler-content">
       <ol>
   <li>Дважды нажмите на <code class="language-plaintext highlighter-rouge">BCPKG2-1-Normal-Main</code></li>
@@ -796,15 +796,15 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
 </ol>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-e6535a80'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-5925f9bc'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
-<div class="spoiler" id="spoiler-502c9bc7">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-502c9bc7'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-9d8d12c8">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-9d8d12c8'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Работа с разделом SAFE
   </div>
-  <div class="spoiler-body">
+  <div class="spoiler-body" style="max-height: 0; display: none;">
     <div class="spoiler-content">
       <ol>
   <li>Двічі натисніть на <code class="language-plaintext highlighter-rouge">SAFE</code></li>
@@ -829,15 +829,15 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
 </ol>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-502c9bc7'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-9d8d12c8'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
-<div class="spoiler" id="spoiler-f0d49755">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-f0d49755'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-e680aca6">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-e680aca6'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Работа с разделом SYSTEM
   </div>
-  <div class="spoiler-body">
+  <div class="spoiler-body" style="max-height: 0; display: none;">
     <div class="spoiler-content">
       <ol>
   <li>Двічі натисніть на <code class="language-plaintext highlighter-rouge">SYSTEM</code></li>
@@ -887,15 +887,15 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
 </ol>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-f0d49755'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-e680aca6'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
-<div class="spoiler" id="spoiler-9819060c">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-9819060c'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); }); }); } else { el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-dc028dca">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-dc028dca'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Работа с разделом USER
   </div>
-  <div class="spoiler-body">
+  <div class="spoiler-body" style="max-height: 0; display: none;">
     <div class="spoiler-content">
       <ol>
   <li>Двічі натисніть на <code class="language-plaintext highlighter-rouge">USER</code></li>
@@ -943,7 +943,7 @@ lang: uk%D0%B4%D0%B0%D0%BC%D0%BF%D0%B8%D0%BC-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8" tar
 </ol>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-9819060c'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; el.classList.add('closing'); requestAnimationFrame(function() { requestAnimationFrame(function() { el.classList.remove('open'); el.classList.remove('closing'); var shouldScroll = el.offsetHeight &gt; window.innerHeight; if (shouldScroll) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-dc028dca'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
