@@ -113,11 +113,6 @@
 
   <body class="layout--single">
     
-	<div id="preloader" class="preloader"></div>
-	<div id="stay-for-ukraine-popup"></div>
-	<div id="ukranian-flag"></div>
-
-
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -172,14 +167,7 @@
         
 
         
-        
 
-        
-        
-
-        
-
-        
         <a href="/uk/backup-nand.html" class="language-switcher__item">
           <span class="language-switcher__flag language-switcher__flag--uk"></span>
           <span class="language-switcher__text">Українська</span>
@@ -226,6 +214,7 @@
     text-decoration: none;
     transition: all 0.2s ease;
     color: inherit; /* Успадкування кольору тексту */
+    margin: 0 0.1rem !important;
   }
 
   .language-switcher__item:hover {
@@ -627,10 +616,10 @@
 
 <h3 id="часть-ii---резервное-копирование-nand">Часть II - Резервное копирование NAND</h3>
 
-<details class="spoiler" id="spoiler-c8e9494c">
+<details class="spoiler" id="spoiler-d0349889">
   <summary>Способ I - С помощью hekate</summary>
   <div class="spoiler-content">
-    <details class="spoiler" id="spoiler-12e45255">
+    <details class="spoiler" id="spoiler-ac71e3aa">
   <summary>Часть I - делаем дамп внутренней памяти приставки (NAND)</summary>
   <div class="spoiler-content">
     <p class="notice--info">Этот способ требует карты памяти с не менее чем 32-мя Гб свободного места, если OLED - 64Гб. Если у вас нет таковой, но есть карта меньшего размера, бекап будет делаться по частям. После заполнения текущего объёма на карте на экране будет выведена информация о том, что вам необходимо перенести папку backup на ПК, затем вернуть карту в консоль и продолжить создание резервной копии.</p>
@@ -681,10 +670,10 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-12e45255'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Часть I - делаем дамп внутренней памяти приставки (NAND) <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-ac71e3aa'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Часть I - делаем дамп внутренней памяти приставки (NAND) <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-22da9bea">
+<details class="spoiler" id="spoiler-f3349390">
   <summary>Часть II - делаем дамп загрузочных разделов (BOOT0/BOOT1)</summary>
   <div class="spoiler-content">
     <ol>
@@ -718,15 +707,15 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-22da9bea'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Часть II - делаем дамп загрузочных разделов (BOOT0/BOOT1) <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-f3349390'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Часть II - делаем дамп загрузочных разделов (BOOT0/BOOT1) <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-c8e9494c'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Способ I - С помощью hekate <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-d0349889'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Способ I - С помощью hekate <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-d014919d">
+<details class="spoiler" id="spoiler-29cbea83">
   <summary>Способ II - С помощью ПК</summary>
   <div class="spoiler-content">
     <h3 id="дамп-nand">Дамп NAND</h3>
@@ -772,7 +761,7 @@
 
 <p><strong>Выберите вашу операционную систему:</strong></p>
 
-<details class="spoiler" id="spoiler-9941af58">
+<details class="spoiler" id="spoiler-41be3d28">
   <summary>Windows</summary>
   <div class="spoiler-content">
     <h2 id="что-понадобится">Что понадобится</h2>
@@ -822,10 +811,10 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-9941af58'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Windows <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-41be3d28'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Windows <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-fdcc6c91">
+<details class="spoiler" id="spoiler-811ad68e">
   <summary>macOS</summary>
   <div class="spoiler-content">
     <ol>
@@ -846,7 +835,7 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-fdcc6c91'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">macOS <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-811ad68e'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">macOS <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
 <h3 id="дамп-boot0boot1">Дамп BOOT0/BOOT1</h3>
@@ -855,12 +844,12 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-d014919d'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Способ II - С помощью ПК <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-29cbea83'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Способ II - С помощью ПК <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
 <h3 id="часть-iii---копирование-резервной-копии-на-пк">Часть III - Копирование резервной копии на ПК</h3>
 
-<details class="spoiler" id="spoiler-28c24f16">
+<details class="spoiler" id="spoiler-e51ec233">
   <summary>Инструкция</summary>
   <div class="spoiler-content">
     <p class="notice--warning">Если вы собираетесь делать EmuNAND, то именно копируйте файлы, а не перемещайте, поскольку далее мы сможем сделать из этого бекапа EmuNAND</p>
@@ -885,14 +874,14 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-28c24f16'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Инструкция <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-e51ec233'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Инструкция <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
 <h2 id="восстановление-резервной-копии">Восстановление резервной копии</h2>
 
 <p class="notice--danger">Никогда не восстанавливайте чужой бекап на свою консоль! Восстановив чужой бекап вы получите брик. Если у вас при этом нет собственного бекапа, то брик будет не восстановимый.</p>
 
-<details class="spoiler" id="spoiler-2d3b5a05">
+<details class="spoiler" id="spoiler-61513139">
   <summary>Способ I - Восстановление через hekate</summary>
   <div class="spoiler-content">
     <ol>
@@ -939,10 +928,10 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-2d3b5a05'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Способ I - Восстановление через hekate <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-61513139'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Способ I - Восстановление через hekate <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-3005d2b0">
+<details class="spoiler" id="spoiler-93adb33e">
   <summary>Способ II - Восстановление через ПК</summary>
   <div class="spoiler-content">
     <p class="notice--warning">Этот способ работает только на приставках первой ревизии - <span class="tooltip_container">
@@ -960,7 +949,7 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-3005d2b0'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Способ II - Восстановление через ПК <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-93adb33e'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Способ II - Восстановление через ПК <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
 <hr />

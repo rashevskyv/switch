@@ -113,11 +113,6 @@
 
   <body class="layout--single">
     
-	<div id="preloader" class="preloader"></div>
-	<div id="stay-for-ukraine-popup"></div>
-	<div id="ukranian-flag"></div>
-
-
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -172,14 +167,7 @@
         
 
         
-        
 
-        
-        
-
-        
-
-        
         <a href="/uk/emunand.html" class="language-switcher__item">
           <span class="language-switcher__flag language-switcher__flag--uk"></span>
           <span class="language-switcher__text">Українська</span>
@@ -226,6 +214,7 @@
     text-decoration: none;
     transition: all 0.2s ease;
     color: inherit; /* Успадкування кольору тексту */
+    margin: 0 0.1rem !important;
   }
 
   .language-switcher__item:hover {
@@ -655,7 +644,7 @@
 
 <h2 id="создание-emunand">Создание EmuNAND</h2>
 
-<details class="spoiler" id="spoiler-2c8afa93">
+<details class="spoiler" id="spoiler-27cb3c41">
   <summary>Подготовительные работы</summary>
   <div class="spoiler-content">
     <ol>
@@ -686,13 +675,13 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-2c8afa93'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Подготовительные работы <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-27cb3c41'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Подготовительные работы <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-23c6b206">
+<details class="spoiler" id="spoiler-d687c844">
   <summary>Создание EmuNAND</summary>
   <div class="spoiler-content">
-    <details class="spoiler" id="spoiler-441de4a5">
+    <details class="spoiler" id="spoiler-43d337fb">
   <summary>Если вы только что сделали бекап и не удалили его с карты памяти</summary>
   <div class="spoiler-content">
     <ol>
@@ -713,10 +702,10 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-441de4a5'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Если вы только что сделали бекап и не удалили его с карты памяти <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-43d337fb'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Если вы только что сделали бекап и не удалили его с карты памяти <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-b56c40fa">
+<details class="spoiler" id="spoiler-3ad922c7">
   <summary>Если вы не делали только что бекап, или удалили его с карты памяти</summary>
   <div class="spoiler-content">
     <ol>
@@ -746,17 +735,17 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-b56c40fa'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Если вы не делали только что бекап, или удалили его с карты памяти <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-3ad922c7'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Если вы не делали только что бекап, или удалили его с карты памяти <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-23c6b206'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Создание EmuNAND <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-d687c844'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Создание EmuNAND <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
 <h3 id="запуск-прошивки">Запуск прошивки</h3>
 
-<details class="spoiler" id="spoiler-cd63fda4">
+<details class="spoiler" id="spoiler-bc779f5b">
   <summary>Запуск EmuNAND</summary>
   <div class="spoiler-content">
     <p>По-умолчанию кефир настроен таким образом, что при пробросе <code class="language-plaintext highlighter-rouge">payload.bin</code> из состава <span class="tooltip_container">
@@ -779,10 +768,10 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-cd63fda4'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Запуск EmuNAND <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-bc779f5b'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Запуск EmuNAND <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-90b1ba2e">
+<details class="spoiler" id="spoiler-80264910">
   <summary>Работа со стоковой прошивки</summary>
   <div class="spoiler-content">
     <h3 id="запуск-стока">Запуск стока</h3>
@@ -870,7 +859,7 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-90b1ba2e'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Работа со стоковой прошивки <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-80264910'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Работа со стоковой прошивки <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
 <hr />
