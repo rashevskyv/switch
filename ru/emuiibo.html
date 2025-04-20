@@ -161,31 +161,51 @@
         
         <!-- Додаємо перемикач мов в навігацію -->
         <div class="masthead-language-selector">
-          <div class="language-switcher">
-  
-    
-      
+          
+<div class="language-switcher">
+   
+     
+       
         
+        
+         
+
+        
+
+        
+        
+
+        
+        
+
+        
+
         
         <a href="/uk/emuiibo.html" class="language-switcher__item">
           <span class="language-switcher__flag language-switcher__flag--uk"></span>
           <span class="language-switcher__text">Українська</span>
         </a>
       
+
+      
       
         <span class="language-switcher__divider"></span>
       
-    
-      
+     
+       
+        
         <span class="language-switcher__item language-switcher__item--active">
           <span class="language-switcher__flag language-switcher__flag--ru"></span>
           <span class="language-switcher__text">Русский</span>
         </span>
       
+
+      
       
     
   
 </div>
+
 
 <style>
   .language-switcher {
@@ -197,7 +217,7 @@
     border-radius: 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   }
-  
+
   .language-switcher__item {
     display: flex;
     align-items: center;
@@ -205,18 +225,20 @@
     border-radius: 4px;
     text-decoration: none;
     transition: all 0.2s ease;
+    color: inherit; /* Успадкування кольору тексту */
   }
-  
+
   .language-switcher__item:hover {
     background-color: rgba(0,0,0,0.1);
     text-decoration: none;
   }
-  
+
   .language-switcher__item--active {
     font-weight: bold;
     background-color: rgba(0,0,0,0.1);
+    cursor: default; /* Показує, що це не клікабельний елемент */
   }
-  
+
   .language-switcher__flag {
     display: inline-block;
     width: 18px;
@@ -226,15 +248,15 @@
     border-radius: 2px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   }
-  
+
   .language-switcher__flag--uk {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Crect width='1200' height='800' fill='%23005BBB'/%3E%3Crect width='1200' height='400' y='400' fill='%23FFD500'/%3E%3C/svg%3E");
   }
-  
+
   .language-switcher__flag--ru {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 600'%3E%3Crect width='900' height='600' fill='%23fff'/%3E%3Crect width='900' height='200' y='200' fill='%230039A6'/%3E%3Crect width='900' height='200' y='400' fill='%23D52B1E'/%3E%3C/svg%3E");
   }
-  
+
   .language-switcher__divider {
     display: inline-block;
     width: 1px;
@@ -242,9 +264,10 @@
     margin: 0 6px;
     background-color: rgba(0,0,0,0.2);
   }
-  
+
   .language-switcher__text {
     margin-left: 2px;
+    white-space: nowrap; /* Запобігає переносу назви мови */
   }
 
   /* Адаптивність для мобільних */
@@ -252,13 +275,13 @@
     .language-switcher {
       padding: 3px 8px;
     }
-    
+
     .language-switcher__text {
-      display: none;
+      display: none; /* Приховати текст на малих екранах */
     }
-    
+
     .language-switcher__flag {
-      margin-right: 0;
+      margin-right: 0; /* Забрати відступ, коли тексту немає */
     }
   }
 </style>

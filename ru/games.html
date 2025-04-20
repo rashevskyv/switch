@@ -161,31 +161,51 @@
         
         <!-- Додаємо перемикач мов в навігацію -->
         <div class="masthead-language-selector">
-          <div class="language-switcher">
-  
-    
-      
+          
+<div class="language-switcher">
+   
+     
+       
         
+        
+         
+
+        
+
+        
+        
+
+        
+        
+
+        
+
         
         <a href="/uk/games.html" class="language-switcher__item">
           <span class="language-switcher__flag language-switcher__flag--uk"></span>
           <span class="language-switcher__text">Українська</span>
         </a>
       
+
+      
       
         <span class="language-switcher__divider"></span>
       
-    
-      
+     
+       
+        
         <span class="language-switcher__item language-switcher__item--active">
           <span class="language-switcher__flag language-switcher__flag--ru"></span>
           <span class="language-switcher__text">Русский</span>
         </span>
       
+
+      
       
     
   
 </div>
+
 
 <style>
   .language-switcher {
@@ -197,7 +217,7 @@
     border-radius: 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   }
-  
+
   .language-switcher__item {
     display: flex;
     align-items: center;
@@ -205,18 +225,20 @@
     border-radius: 4px;
     text-decoration: none;
     transition: all 0.2s ease;
+    color: inherit; /* Успадкування кольору тексту */
   }
-  
+
   .language-switcher__item:hover {
     background-color: rgba(0,0,0,0.1);
     text-decoration: none;
   }
-  
+
   .language-switcher__item--active {
     font-weight: bold;
     background-color: rgba(0,0,0,0.1);
+    cursor: default; /* Показує, що це не клікабельний елемент */
   }
-  
+
   .language-switcher__flag {
     display: inline-block;
     width: 18px;
@@ -226,15 +248,15 @@
     border-radius: 2px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   }
-  
+
   .language-switcher__flag--uk {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Crect width='1200' height='800' fill='%23005BBB'/%3E%3Crect width='1200' height='400' y='400' fill='%23FFD500'/%3E%3C/svg%3E");
   }
-  
+
   .language-switcher__flag--ru {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 600'%3E%3Crect width='900' height='600' fill='%23fff'/%3E%3Crect width='900' height='200' y='200' fill='%230039A6'/%3E%3Crect width='900' height='200' y='400' fill='%23D52B1E'/%3E%3C/svg%3E");
   }
-  
+
   .language-switcher__divider {
     display: inline-block;
     width: 1px;
@@ -242,9 +264,10 @@
     margin: 0 6px;
     background-color: rgba(0,0,0,0.2);
   }
-  
+
   .language-switcher__text {
     margin-left: 2px;
+    white-space: nowrap; /* Запобігає переносу назви мови */
   }
 
   /* Адаптивність для мобільних */
@@ -252,13 +275,13 @@
     .language-switcher {
       padding: 3px 8px;
     }
-    
+
     .language-switcher__text {
-      display: none;
+      display: none; /* Приховати текст на малих екранах */
     }
-    
+
     .language-switcher__flag {
-      margin-right: 0;
+      margin-right: 0; /* Забрати відступ, коли тексту немає */
     }
   }
 </style>
@@ -526,8 +549,8 @@
 
 <hr />
 
-<div class="spoiler" id="spoiler-a37c851d">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-a37c851d'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-fc8c0aad">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-fc8c0aad'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Видеоинструкция
   </div>
   <div class="spoiler-body" style="max-height: 0; display: none;">
@@ -549,7 +572,7 @@
 </div>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-a37c851d'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-fc8c0aad'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
@@ -625,16 +648,16 @@
   <li>Запустите <a href="/ru/hbl" target="_blank">Homebrew Launcher</a></li>
 </ol>
 
-<div class="spoiler" id="spoiler-8738fbab">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-8738fbab'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-c6ef27e3">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-c6ef27e3'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Способ I - Установка по USB (рекомендуемый)
   </div>
   <div class="spoiler-body" style="max-height: 0; display: none;">
     <div class="spoiler-content">
       <h3 id="установка-игр">Установка игр</h3>
 
-<div class="spoiler" id="spoiler-b85129ec">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-b85129ec'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-262ad597">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-262ad597'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Подготовительные работы в MacOS
   </div>
   <div class="spoiler-body" style="max-height: 0; display: none;">
@@ -649,7 +672,7 @@
 Спасибо <a href="https://vk.com/im?peers=c105_c106&amp;sel=c109&amp;w=wall-178659422_196578" target="_blank">Мише Наумчуку</a></p>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-b85129ec'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-262ad597'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
@@ -678,12 +701,12 @@
 <p class="notice--info">Как альтернатива, в MacOS можно использовать DBIbackend.py для установки по USB. Обратитесь к <a href="https://4pda.to/forum/index.php?showtopic=939714&amp;st=5140#entry98421804" target="_blank">этой инструкции</a> для подробностей</p>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-8738fbab'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-c6ef27e3'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
-<div class="spoiler" id="spoiler-a83f8995">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-a83f8995'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-c846a60a">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-c846a60a'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Способ II - Установка с USB-носителя
   </div>
   <div class="spoiler-body" style="max-height: 0; display: none;">
@@ -721,12 +744,12 @@
 </ol>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-a83f8995'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-c846a60a'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
-<div class="spoiler" id="spoiler-78426f93">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-78426f93'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-6d47fe63">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-6d47fe63'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Способ III - Установка с карты памяти
   </div>
   <div class="spoiler-body" style="max-height: 0; display: none;">
@@ -763,12 +786,12 @@
 </ol>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-78426f93'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-6d47fe63'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
-<div class="spoiler" id="spoiler-65941b54">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-65941b54'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-d93fc228">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-d93fc228'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Способ IV - Установка игр, DLC, обновлений через интернет прямо на приставке (Tinfoil)
   </div>
   <div class="spoiler-body" style="max-height: 0; display: none;">
@@ -778,7 +801,7 @@
 <p>Более подробная инструкция находится <a href="/ru/tinfoil" target="_blank">здесь</a></p>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-65941b54'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-d93fc228'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 

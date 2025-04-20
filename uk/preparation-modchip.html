@@ -153,31 +153,51 @@
         
         <!-- Додаємо перемикач мов в навігацію -->
         <div class="masthead-language-selector">
-          <div class="language-switcher">
-  
-    
-      
+          
+<div class="language-switcher">
+   
+     
+       
+        
         <span class="language-switcher__item language-switcher__item--active">
           <span class="language-switcher__flag language-switcher__flag--uk"></span>
           <span class="language-switcher__text">Українська</span>
         </span>
       
+
+      
       
         <span class="language-switcher__divider"></span>
       
-    
-      
+     
+       
         
+        
+         
+
+        
+
+        
+        
+
+        
+        
+
+        
+
         
         <a href="/ru/preparation-modchip.html" class="language-switcher__item">
           <span class="language-switcher__flag language-switcher__flag--ru"></span>
           <span class="language-switcher__text">Русский</span>
         </a>
       
+
+      
       
     
   
 </div>
+
 
 <style>
   .language-switcher {
@@ -189,7 +209,7 @@
     border-radius: 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   }
-  
+
   .language-switcher__item {
     display: flex;
     align-items: center;
@@ -197,18 +217,20 @@
     border-radius: 4px;
     text-decoration: none;
     transition: all 0.2s ease;
+    color: inherit; /* Успадкування кольору тексту */
   }
-  
+
   .language-switcher__item:hover {
     background-color: rgba(0,0,0,0.1);
     text-decoration: none;
   }
-  
+
   .language-switcher__item--active {
     font-weight: bold;
     background-color: rgba(0,0,0,0.1);
+    cursor: default; /* Показує, що це не клікабельний елемент */
   }
-  
+
   .language-switcher__flag {
     display: inline-block;
     width: 18px;
@@ -218,15 +240,15 @@
     border-radius: 2px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   }
-  
+
   .language-switcher__flag--uk {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Crect width='1200' height='800' fill='%23005BBB'/%3E%3Crect width='1200' height='400' y='400' fill='%23FFD500'/%3E%3C/svg%3E");
   }
-  
+
   .language-switcher__flag--ru {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 600'%3E%3Crect width='900' height='600' fill='%23fff'/%3E%3Crect width='900' height='200' y='200' fill='%230039A6'/%3E%3Crect width='900' height='200' y='400' fill='%23D52B1E'/%3E%3C/svg%3E");
   }
-  
+
   .language-switcher__divider {
     display: inline-block;
     width: 1px;
@@ -234,9 +256,10 @@
     margin: 0 6px;
     background-color: rgba(0,0,0,0.2);
   }
-  
+
   .language-switcher__text {
     margin-left: 2px;
+    white-space: nowrap; /* Запобігає переносу назви мови */
   }
 
   /* Адаптивність для мобільних */
@@ -244,13 +267,13 @@
     .language-switcher {
       padding: 3px 8px;
     }
-    
+
     .language-switcher__text {
-      display: none;
+      display: none; /* Приховати текст на малих екранах */
     }
-    
+
     .language-switcher__flag {
-      margin-right: 0;
+      margin-right: 0; /* Забрати відступ, коли тексту немає */
     }
   }
 </style>
@@ -513,8 +536,8 @@
 
 <p>Між тим, на вашій консолі можуть стояти і чипи, що були розповсюджені раніше - <strong>SX Core, SX Lite, HWFLY або  InstinctNX</strong>. Всі ці чипи побудовані на однаковій елементній базі і більше не продаються, оскільки у всьому гірші за RP2040</p>
 
-<div class="spoiler" id="spoiler-10515c8d">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-10515c8d'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-7f3e84fd">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-7f3e84fd'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Зовнішній вигляд чипів RP2040
   </div>
   <div class="spoiler-body" style="max-height: 0; display: none;">
@@ -556,12 +579,12 @@
 <p class="notice--warning">Зверніть увагу маркування процесору, там намальовано логотип RP2040. Елементів на мод-чипі також значно менше, ніж на чипах HWFLY. Часто присутні великі золотисті кнопки.</p>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-10515c8d'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-7f3e84fd'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
-<div class="spoiler" id="spoiler-645c9649">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-645c9649'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-2c295122">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-2c295122'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Зовнішній вигляд чипів HWFLY
   </div>
   <div class="spoiler-body" style="max-height: 0; display: none;">
@@ -587,7 +610,7 @@
 <p class="notice--warning">Зверніть увагу на кількість елементів на чипі. Їх значно більше, ніж на чипах на базі RP2040</p>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-645c9649'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-2c295122'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
@@ -602,8 +625,8 @@
 		</span>
 	</span>
 </span>, пропустіть частину з прошивкою чипа.
-<div class="spoiler" id="spoiler-84105544">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-84105544'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-ab0c378a">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-ab0c378a'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Прошивка чипа
   </div>
   <div class="spoiler-body" style="max-height: 0; display: none;">
@@ -644,14 +667,14 @@
   </li>
 </ol>
 
-<div class="spoiler" id="spoiler-40eb7134">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-40eb7134'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-53ce445a">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-53ce445a'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Можливі помилки
   </div>
   <div class="spoiler-body" style="max-height: 0; display: none;">
     <div class="spoiler-content">
-      <div class="spoiler" id="spoiler-65a321f8">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-65a321f8'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
+      <div class="spoiler" id="spoiler-dd368613">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-dd368613'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Скрипт завис, нічого не відбувається
   </div>
   <div class="spoiler-body" style="max-height: 0; display: none;">
@@ -661,12 +684,12 @@
 <p>Таке буває. Наберіться терпіння.</p>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-65a321f8'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-dd368613'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
-<div class="spoiler" id="spoiler-78212261">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-78212261'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-73078951">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-73078951'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     DFU not found!
   </div>
   <div class="spoiler-body" style="max-height: 0; display: none;">
@@ -676,12 +699,12 @@
 <p>Windows не встигла встановити драйвери. Спробуйте ще раз. Якщо не допомогло, перезавантажте ПК, спробуйте інший порт, спробуйте інший кабель.</p>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-78212261'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-73078951'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
-<div class="spoiler" id="spoiler-a714bf2a">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-a714bf2a'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-650ce5a4">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-650ce5a4'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Failed to read! 6
   </div>
   <div class="spoiler-body" style="max-height: 0; display: none;">
@@ -691,17 +714,17 @@
 <p>Спробуйте перезапустити скрипт. Пробуйте стільки разів, скільки необхідно, доки не вийде. Якщо не допомогло, перезавантажте ПК, спробуйте інший порт, спробуйте інший кабель.</p>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-a714bf2a'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-650ce5a4'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-40eb7134'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-53ce445a'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-84105544'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) < 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-ab0c378a'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) < 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
  -->
@@ -789,8 +812,8 @@
 
 <hr />
 
-<div class="spoiler" id="spoiler-04ad4cd2">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-04ad4cd2'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-4a2dc657">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-4a2dc657'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Матеріали для самостійного вивчення
   </div>
   <div class="spoiler-body" style="max-height: 0; display: none;">
@@ -807,7 +830,7 @@
 </ul>
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-04ad4cd2'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-4a2dc657'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
@@ -819,8 +842,8 @@
 
 <p class="notice--warning">Не забудьте подякувати авторам посібника за реквізитами, вказаними нижче</p>
 
-<div class="spoiler" id="spoiler-f9767236">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-f9767236'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
+<div class="spoiler" id="spoiler-954b34e9">
+  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-954b34e9'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
     Реквізити для збору пожертв
   </div>
   <div class="spoiler-body" style="max-height: 0; display: none;">
@@ -910,7 +933,7 @@ function copyToClipboard(text) {
 
 
     </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-f9767236'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-954b34e9'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
   </div>
 </div>
 
