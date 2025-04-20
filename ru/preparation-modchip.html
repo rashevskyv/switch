@@ -113,6 +113,9 @@
 
   <body class="layout--single">
     
+	<div id="preloader" class="preloader"></div>
+	<div id="stay-for-ukraine-popup"></div>
+	<div id="ukranian-flag"></div>
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -531,7 +534,7 @@
 
 <p>В данный момент существуют чипы двух типов - HWFLY, являющийся клоном чипа SX, и чипы на базе процессора rp2040 в различных вариациях. Последние могут носить разные названия (rp2040, picofly, часто можно встретить и HWFLY rp2040, которые не имеют ничего общего с HWFLY). Обращайте внимание на маркировку процессора, если не знаете какой у вас чип. На момент написания єтого материала большинство чипов будут именно RP2040. Вам так же может попасться чип под маркировкой InstinctNX: по-сути єто тот же HWFLY.</p>
 
-<details class="spoiler" id="spoiler-c382668e">
+<details class="spoiler" id="spoiler-7eccb7c4">
   <summary>Внешний вид чипов HWFLY</summary>
   <div class="spoiler-content">
     <ul>
@@ -556,10 +559,10 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-c382668e'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Внешний вид чипов HWFLY <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-7eccb7c4'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Внешний вид чипов HWFLY <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-b623116e">
+<details class="spoiler" id="spoiler-b879b8f8">
   <summary>Внешний вид чипов RP2040</summary>
   <div class="spoiler-content">
     <ul>
@@ -603,7 +606,7 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-b623116e'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Внешний вид чипов RP2040 <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-b879b8f8'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Внешний вид чипов RP2040 <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
 <p>Как правило в чипе прошивка старой версии, которая может не работать, или работать плохо на приставках со свежей версией системного ПО, потому его следует обновить на свежую версию прошивки - <a href="https://github.com/hwfly-nx/firmware" target="_blank">HWFLY</a>, который будет загружать любой пейлоад, находящийся на карте памяти под именем <code class="language-plaintext highlighter-rouge">payload.bin</code>. При большом желании, через HWFLY-NX можно загрузить и SX OS.</p>
@@ -617,7 +620,7 @@
 		</span>
 	</span>
 </span>, пропустите часть с прошивкой чипа. 
-<details class="spoiler" id="spoiler-89bcc5ec">
+<details class="spoiler" id="spoiler-2a9ec4ba">
   <summary>Спойлер</summary>
   <div class="spoiler-content">
     <ol>
@@ -656,10 +659,10 @@
   </li>
 </ol>
 
-<details class="spoiler" id="spoiler-e5461fc8">
+<details class="spoiler" id="spoiler-a7f27755">
   <summary>Возможные ошибки</summary>
   <div class="spoiler-content">
-    <details class="spoiler" id="spoiler-4a14e4e2">
+    <details class="spoiler" id="spoiler-8eeda42d">
   <summary>Скрипт завис, ничего не происходит</summary>
   <div class="spoiler-content">
     <p class="text-center notice--info"><img src="/assets/images/switch/modchips/freeze.png" alt="" /></p>
@@ -668,10 +671,10 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-4a14e4e2'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Скрипт завис, ничего не происходит <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-8eeda42d'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Скрипт завис, ничего не происходит <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-1900b244">
+<details class="spoiler" id="spoiler-33938a3d">
   <summary>DFU not found!</summary>
   <div class="spoiler-content">
     <p class="text-center notice--info"><img src="/assets/images/switch/modchips/DFU.png" alt="" /></p>
@@ -680,10 +683,10 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-1900b244'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">DFU not found! <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-33938a3d'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">DFU not found! <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-2544db2e">
+<details class="spoiler" id="spoiler-7ad417c0">
   <summary>Failed to read! 6</summary>
   <div class="spoiler-content">
     <p class="text-center notice--info"><img src="/assets/images/switch/modchips/error6.png" alt="" /></p>
@@ -692,17 +695,17 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-2544db2e'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Failed to read! 6 <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-7ad417c0'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Failed to read! 6 <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-e5461fc8'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Возможные ошибки <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-a7f27755'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Возможные ошибки <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-89bcc5ec'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спойлер <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-2a9ec4ba'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спойлер <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 -->
 
@@ -760,7 +763,7 @@
 
 <hr />
 
-<details class="spoiler" id="spoiler-3db927c7">
+<details class="spoiler" id="spoiler-9fe614c3">
   <summary>Материалы для самостоятельного изучения</summary>
   <div class="spoiler-content">
     <ul>
@@ -776,7 +779,7 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-3db927c7'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Материалы для самостоятельного изучения <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-9fe614c3'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Материалы для самостоятельного изучения <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
 <hr />
@@ -787,7 +790,7 @@
 
 <p class="notice--warning">Не забудьте поблагодарить авторов руководства по реквизитам, указанным ниже:</p>
 
-<details class="spoiler" id="spoiler-eb31525b">
+<details class="spoiler" id="spoiler-7ab7308f">
   <summary>Реквизиты для сбора пожертвований:</summary>
   <div class="spoiler-content">
     <h2 id="банка-monobank">Банка monobank</h2>
@@ -876,7 +879,7 @@ function copyToClipboard(text) {
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-eb31525b'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Реквизиты для сбора пожертвований: <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-7ab7308f'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Реквизиты для сбора пожертвований: <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
 <script>
