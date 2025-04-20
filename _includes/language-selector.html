@@ -1,42 +1,70 @@
+{% comment %} Файл: _includes/language-selector.html {% endcomment %}
 <div class="language-switcher">
-  {% if page.lang %}
-    {% for lang in site.data.navigation.languages %}
-      {% if lang.code == page.lang %}
+  {% if page.lang %} {% comment %} Перевіряємо, чи визначена мова для поточної сторінки {% endcomment %}
+    {% for lang in site.data.navigation.languages %} {% comment %} Перебираємо мови, визначені в site.data.navigation.languages {% endcomment %}
+      {% if lang.code == page.lang %} {% comment %} Якщо це активна мова {% endcomment %}
+        {% comment %} Показуємо поточну мову як неактивне посилання (просто текст) {% endcomment %}
         <span class="language-switcher__item language-switcher__item--active">
           <span class="language-switcher__flag language-switcher__flag--{{ lang.code }}"></span>
           <span class="language-switcher__text">{{ lang.title }}</span>
         </span>
-      {% else %}
+      {% else %} {% comment %} Якщо це інша мова (на яку можна перемкнутися) {% endcomment %}
         {% assign current_url = page.url %}
-        {% if page.lang == "uk" and lang.code == "ru" %}
-          {% assign translation_url = current_url | replace_first: "/uk/", "/ru/" %}
-        {% elsif page.lang == "ru" and lang.code == "uk" %}
-          {% assign translation_url = current_url | replace_first: "/ru/", "/uk/" %}
-        {% else %}
-          {% assign translation_url = lang.url %}
+        {% assign target_lang_code = lang.code %}
+        {% assign translation_url = nil %} {% comment %} Ініціалізуємо змінну для URL перекладу {% endcomment %}
+
+        {% if (current_url == '/ru/') and target_lang_code == 'uk' %}
+          {% assign translation_url = '/' %}
+
+        {% elsif page.lang == "uk" and target_lang_code == "ru" %}
+          {% comment %} Спробуємо замінити префікс, якщо він є {% endcomment %}
+          {% if current_url contains '/uk/' %}
+             {% assign translation_url = current_url | replace_first: "/uk/", "/ru/" %}
+          {% endif %}
+        {% elsif page.lang == "ru" and target_lang_code == "uk" %}
+           {% comment %} Спробуємо замінити префікс, якщо він є {% endcomment %}
+           {% if current_url contains '/ru/' %}
+             {% assign translation_url = current_url | replace_first: "/ru/", "/uk/" %}
+           {% endif %}
         {% endif %}
+
+        {% if translation_url == nil %}
+           {% comment %} Спробуємо взяти URL з даних навігації, якщо він там є {% endcomment %}
+           {% assign fallback_url_from_data = lang.url %}
+           {% if fallback_url_from_data and fallback_url_from_data != "" %}
+              {% assign translation_url = fallback_url_from_data %}
+           {% else %}
+              {% comment %} Якщо в даних немає, генеруємо посилання на home цільової мови {% endcomment %}
+              {% assign translation_url = '/' | append: target_lang_code | append: '/home' %}
+           {% endif %}
+        {% endif %}
+
         <a href="{{ translation_url | relative_url }}" class="language-switcher__item">
           <span class="language-switcher__flag language-switcher__flag--{{ lang.code }}"></span>
           <span class="language-switcher__text">{{ lang.title }}</span>
         </a>
       {% endif %}
+
+      {% comment %} Додаємо роздільник між мовами, крім останньої {% endcomment %}
       {% unless forloop.last %}
         <span class="language-switcher__divider"></span>
       {% endunless %}
     {% endfor %}
-  {% else %}
-    <a href="/uk/" class="language-switcher__item">
+  {% else %} {% comment %} Якщо мова сторінки не визначена (наприклад, сторінка редиректу index.html) {% endcomment %}
+    {% comment %} Показуємо посилання на головні сторінки обох мов {% endcomment %}
+    <a href="/uk/home" class="language-switcher__item">
       <span class="language-switcher__flag language-switcher__flag--uk"></span>
       <span class="language-switcher__text">Українська</span>
     </a>
     <span class="language-switcher__divider"></span>
-    <a href="/ru/" class="language-switcher__item">
+    <a href="/ru/home" class="language-switcher__item">
       <span class="language-switcher__flag language-switcher__flag--ru"></span>
       <span class="language-switcher__text">Русский</span>
     </a>
   {% endif %}
 </div>
 
+{% comment %} Стилі залишаються без змін {% endcomment %}
 <style>
   .language-switcher {
     display: flex;
@@ -46,27 +74,31 @@
     padding: 5px 10px;
     border-radius: 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-right: 10px;
   }
-  
+
   .language-switcher__item {
     display: flex;
     align-items: center;
-    padding: 2px 6px;
+    padding: 2px 6px !important;
     border-radius: 4px;
     text-decoration: none;
     transition: all 0.2s ease;
+    color: inherit; /* Успадкування кольору тексту */
+    margin: 0 0.1rem !important;
   }
-  
+
   .language-switcher__item:hover {
     background-color: rgba(0,0,0,0.1);
     text-decoration: none;
   }
-  
+
   .language-switcher__item--active {
     font-weight: bold;
     background-color: rgba(0,0,0,0.1);
+    cursor: default; /* Показує, що це не клікабельний елемент */
   }
-  
+
   .language-switcher__flag {
     display: inline-block;
     width: 18px;
@@ -76,15 +108,15 @@
     border-radius: 2px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   }
-  
+
   .language-switcher__flag--uk {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Crect width='1200' height='800' fill='%23005BBB'/%3E%3Crect width='1200' height='400' y='400' fill='%23FFD500'/%3E%3C/svg%3E");
   }
-  
+
   .language-switcher__flag--ru {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 600'%3E%3Crect width='900' height='600' fill='%23fff'/%3E%3Crect width='900' height='200' y='200' fill='%230039A6'/%3E%3Crect width='900' height='200' y='400' fill='%23D52B1E'/%3E%3C/svg%3E");
   }
-  
+
   .language-switcher__divider {
     display: inline-block;
     width: 1px;
@@ -92,9 +124,10 @@
     margin: 0 6px;
     background-color: rgba(0,0,0,0.2);
   }
-  
+
   .language-switcher__text {
     margin-left: 2px;
+    white-space: nowrap; /* Запобігає переносу назви мови */
   }
 
   /* Адаптивність для мобільних */
@@ -102,13 +135,13 @@
     .language-switcher {
       padding: 3px 8px;
     }
-    
+
     .language-switcher__text {
-      display: none;
+      display: none; /* Приховати текст на малих екранах */
     }
-    
+
     .language-switcher__flag {
-      margin-right: 0;
+      margin-right: 0; /* Забрати відступ, коли тексту немає */
     }
   }
 </style>
