@@ -118,7 +118,6 @@
 	<div id="ukranian-flag"></div>
 
 
-<link rel="stylesheet" href="/assets/css/custom.css">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -216,12 +215,13 @@
     padding: 5px 10px;
     border-radius: 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-right: 10px;
   }
 
   .language-switcher__item {
     display: flex;
     align-items: center;
-    padding: 2px 6px;
+    padding: 2px 6px !important;
     border-radius: 4px;
     text-decoration: none;
     transition: all 0.2s ease;
@@ -550,13 +550,10 @@
 
 <hr />
 
-<div class="spoiler" id="spoiler-bd3313ee">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-bd3313ee'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Видеоинструкция
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <p class="notice--warning">ВНИМАНИЕ!!! Мы не рекомендуем слепо следовать видео-инструкции! Используйте её только в качестве вспомогательной! Дело в том, что текстовый гайд постоянно обновляется. Невозможно следить за всеми обновлениями в гайде и каждый раз менять видео-инструкцию вслед за ним! Поэтому текстовый гайд всегда будет более точным и более актуальным, чем видео!</p>
+<details class="spoiler" id="spoiler-e8b4159f">
+  <summary>Видеоинструкция</summary>
+  <div class="spoiler-content">
+    <p class="notice--warning">ВНИМАНИЕ!!! Мы не рекомендуем слепо следовать видео-инструкции! Используйте её только в качестве вспомогательной! Дело в том, что текстовый гайд постоянно обновляется. Невозможно следить за всеми обновлениями в гайде и каждый раз менять видео-инструкцию вслед за ним! Поэтому текстовый гайд всегда будет более точным и более актуальным, чем видео!</p>
 
 <div style="margin:0 auto;" class="text-center notice--info">
   <div class="ytcontainer">
@@ -564,10 +561,10 @@
   </div>
 </div>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-bd3313ee'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-e8b4159f'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Видеоинструкция <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <p class="notice--warning">Эта страница является пояснительной. На этой странице не рассматривается непосредственно запуск кастомной прошивки, а дана лишь теоретическая часть. Практическая часть будет дана далее, в процессе выполнения руководства.</p>
 
@@ -680,13 +677,10 @@
   <li>Кнопки зажаты не одновременно. Пробуйте зажимать вначале (VOL+), а затем, не отпуская её, нажмите (POWER)</li>
 </ul>
 
-<div class="spoiler" id="spoiler-67695430">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-67695430'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Видеоинструкция
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <p class="notice--warning">ВНИМАНИЕ!!! Мы не рекомендуем слепо следовать видео-инструкции! Используйте её только в качестве вспомогательной! Дело в том, что текстовый гайд постоянно обновляется. Невозможно следить за всеми обновлениями в гайде и каждый раз менять видео-инструкцию вслед за ним! Поэтому текстовый гайд всегда будет более точным и более актуальным, чем видео!</p>
+<details class="spoiler" id="spoiler-7775be8f">
+  <summary>Видеоинструкция</summary>
+  <div class="spoiler-content">
+    <p class="notice--warning">ВНИМАНИЕ!!! Мы не рекомендуем слепо следовать видео-инструкции! Используйте её только в качестве вспомогательной! Дело в том, что текстовый гайд постоянно обновляется. Невозможно следить за всеми обновлениями в гайде и каждый раз менять видео-инструкцию вслед за ним! Поэтому текстовый гайд всегда будет более точным и более актуальным, чем видео!</p>
 
 <div style="margin:0 auto;" class="text-center notice--info">
   <div class="ytcontainer">
@@ -694,10 +688,10 @@
   </div>
 </div>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-67695430'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-7775be8f'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Видеоинструкция <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <p class="notice--success">В случае успеха на экране не будет происходить ничего. В случае неудачи запустится официальная прошивка</p>
 
@@ -707,13 +701,10 @@
 
 <p>В зависимости от ситуации, пробрасываемый пейлоад может быть разным. Мы намеренно не указываем на этой странице какой пейлоад нужно пробросить. В явном виде это будет сказано на соответствующих страницах. Чаще всего вы будет пробрасывать гекату, которая находится в составе кефира в виде <code class="language-plaintext highlighter-rouge">payload.bin</code></p>
 
-<div class="spoiler" id="spoiler-fd47f15b">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-fd47f15b'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Запуск через донгл
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <p>Донгл - это автономное устройство, которое создано исключительно для удобного запуска взлома.</p>
+<details class="spoiler" id="spoiler-65737300">
+  <summary>Запуск через донгл</summary>
+  <div class="spoiler-content">
+    <p>Донгл - это автономное устройство, которое создано исключительно для удобного запуска взлома.</p>
 
 <h2 id="что-понадобится">Что понадобится</h2>
 
@@ -862,18 +853,15 @@ lang: ruвход-в-rcm" target="_blank">режиме RCM</a></li>
   <li>Пейлоад запустится на консоли</li>
 </ol>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-fd47f15b'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-65737300'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Запуск через донгл <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<div class="spoiler" id="spoiler-a1b24a36">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-a1b24a36'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Запуск на Windows
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <h2 id="что-понадобится">Что понадобится</h2>
+<details class="spoiler" id="spoiler-34ee34cf">
+  <summary>Запуск на Windows</summary>
+  <div class="spoiler-content">
+    <h2 id="что-понадобится">Что понадобится</h2>
 
 <ul>
   <li>Свежая версия <a href="https://github.com/eliboa/TegraRcmGUI/releases/latest" target="_blank">TegraRcmGUI</a></li>
@@ -923,18 +911,15 @@ lang: ruвход-в-rcm" target="_blank">режиме RCM</a> к ПК</li>
   </li>
 </ol>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-a1b24a36'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-34ee34cf'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Запуск на Windows <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<div class="spoiler" id="spoiler-5ee6fd23">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-5ee6fd23'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Запуск на macOS
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <h2 id="что-понадобится">Что понадобится</h2>
+<details class="spoiler" id="spoiler-a06ae869">
+  <summary>Запуск на macOS</summary>
+  <div class="spoiler-content">
+    <h2 id="что-понадобится">Что понадобится</h2>
 
 <ul>
   <li><span class="tooltip_container">
@@ -1007,18 +992,15 @@ lang: ruвход-в-rcm" target="_blank">режиме RCM</a></p>
   <li>Если все прошло успешно, то на вашем Switch запуститься выбранный payload и можно достать замыкатель</li>
 </ol>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-5ee6fd23'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-a06ae869'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Запуск на macOS <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<div class="spoiler" id="spoiler-208c43ac">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-208c43ac'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Запуск на Android
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <h2 id="что-понадобится">Что понадобится</h2>
+<details class="spoiler" id="spoiler-9b3ddc5f">
+  <summary>Запуск на Android</summary>
+  <div class="spoiler-content">
+    <h2 id="что-понадобится">Что понадобится</h2>
 
 <ul>
   <li><span class="tooltip_container">
@@ -1047,18 +1029,15 @@ lang: ruвход-в-rcm" target="_blank">режиме RCM</a></li>
   <li>Нажмите “<strong>Boot Payload</strong>” и выберите ваш пейлоад</li>
 </ol>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-208c43ac'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-9b3ddc5f'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Запуск на Android <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<div class="spoiler" id="spoiler-72f389b8">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-72f389b8'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Запуск на любой платформе, на которой есть браузер
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <h2 id="что-понадобится">Что понадобится</h2>
+<details class="spoiler" id="spoiler-39bb670f">
+  <summary>Запуск на любой платформе, на которой есть браузер</summary>
+  <div class="spoiler-content">
+    <h2 id="что-понадобится">Что понадобится</h2>
 
 <ul>
   <li><span class="tooltip_container">
@@ -1100,10 +1079,10 @@ lang: ruвход-в-rcm" target="_blank">режиме RCM</a>!</p>
   <li>Можете доставать замыкатель</li>
 </ol>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-72f389b8'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-39bb670f'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Запуск на любой платформе, на которой есть браузер <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <hr />
 

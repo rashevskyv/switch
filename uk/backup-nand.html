@@ -110,7 +110,6 @@
   <body class="layout--single">
     
 
-<link rel="stylesheet" href="/assets/css/custom.css">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -208,12 +207,13 @@
     padding: 5px 10px;
     border-radius: 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-right: 10px;
   }
 
   .language-switcher__item {
     display: flex;
     align-items: center;
-    padding: 2px 6px;
+    padding: 2px 6px !important;
     border-radius: 4px;
     text-decoration: none;
     transition: all 0.2s ease;
@@ -618,19 +618,13 @@
 
 <h3 id="частина-ii---резервне-копіювання-nand">Частина II - Резервне копіювання NAND</h3>
 
-<div class="spoiler" id="spoiler-fc3d8e5b">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-fc3d8e5b'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Спосіб I - За допомогою hekate (рекомендовано)
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <div class="spoiler" id="spoiler-fb2b689b">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-fb2b689b'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Частина I - робимо дамп внутрішньої пам'яті приставки (NAND)
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <p class="notice--info">Цей спосіб вимагає карти пам’яті з не менш ніж 32-ма Гб вільного місця, якщо OLED - 64Гб. Якщо у вас немає такої, але є карта меншого розміру, бекап робитиметься частинами. Після заповнення поточного обсягу на карті на екрані буде виведена інформація про те, що вам необхідно перенести папку backup на ПК, потім повернути карту в консоль і продовжити створення резервної копії.</p>
+<details class="spoiler" id="spoiler-25ce58bf">
+  <summary>Спосіб I - За допомогою hekate (рекомендовано)</summary>
+  <div class="spoiler-content">
+    <details class="spoiler" id="spoiler-689420c0">
+  <summary>Частина I - робимо дамп внутрішньої пам'яті приставки (NAND)</summary>
+  <div class="spoiler-content">
+    <p class="notice--info">Цей спосіб вимагає карти пам’яті з не менш ніж 32-ма Гб вільного місця, якщо OLED - 64Гб. Якщо у вас немає такої, але є карта меншого розміру, бекап робитиметься частинами. Після заповнення поточного обсягу на карті на екрані буде виведена інформація про те, що вам необхідно перенести папку backup на ПК, потім повернути карту в консоль і продовжити створення резервної копії.</p>
 
 <ol>
   <li>Оновіть <span class="tooltip_container">
@@ -674,18 +668,15 @@
 
 <p class="notice--info">Якщо ви робили резервне копіювання NAND на <strong>новій</strong> приставці, в NAND якої ще не встановлювали ігор, то архівування резервної копії дасть якісний результат. Цього результату не буде, якщо приставка вживана і сброшена до заводських налаштувань.</p>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-fb2b689b'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-689420c0'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Частина I - робимо дамп внутрішньої пам'яті приставки (NAND) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<div class="spoiler" id="spoiler-c3d9fcd4">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-c3d9fcd4'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Частина II - робимо дамп завантажувальних розділів (BOOT0/BOOT1)
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <ol>
+<details class="spoiler" id="spoiler-c27b287d">
+  <summary>Частина II - робимо дамп завантажувальних розділів (BOOT0/BOOT1)</summary>
+  <div class="spoiler-content">
+    <ol>
   <li>Увійдіть в <span class="tooltip_container">
  hekate
  <span class="tooltip">▼
@@ -712,23 +703,20 @@
   <li>Натисніть кнопку “<strong>Close</strong>”, щоб повернутися в попереднє меню</li>
 </ol>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-c3d9fcd4'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-c27b287d'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Частина II - робимо дамп завантажувальних розділів (BOOT0/BOOT1) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-fc3d8e5b'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-25ce58bf'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб I - За допомогою hekate (рекомендовано) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<div class="spoiler" id="spoiler-e63d28b8">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-e63d28b8'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Спосіб II - За допомогою ПК
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <h3 id="дамп-nand">Дамп NAND</h3>
+<details class="spoiler" id="spoiler-a23f61ae">
+  <summary>Спосіб II - За допомогою ПК</summary>
+  <div class="spoiler-content">
+    <h3 id="дамп-nand">Дамп NAND</h3>
 
 <p class="notice--info">Цей спосіб складніший, ніж попередній, але не вимагає наявності великої карти пам’яті. Швидкість створення резервної копії таким способом буде не більше 6МБ/с</p>
 
@@ -771,13 +759,10 @@
 
 <p><strong>Виберіть вашу операційну систему:</strong></p>
 
-<div class="spoiler" id="spoiler-713de606">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-713de606'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Windows
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <ol>
+<details class="spoiler" id="spoiler-618ad8d4">
+  <summary>Windows</summary>
+  <div class="spoiler-content">
+    <ol>
   <li>Запустіть <a href="http://hddguru.com/software/HDD-Raw-Copy-Tool/HDDRawCopy1.10Portable.exe" target="_blank">HDD Raw Copy Tool</a> від імені адміністратора</li>
   <li>Виберіть “<strong>hekate eMMC GPP</strong>” і натисніть “<strong>Continue</strong>”
     <ul>
@@ -795,18 +780,15 @@
   <li>Від’єднайте пристрій <strong>UMS</strong> безпечно через трей операційної системи, або видаліть його через панель керування</li>
 </ol>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-713de606'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-618ad8d4'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Windows <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<div class="spoiler" id="spoiler-e693957d">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-e693957d'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    macOS
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <ol>
+<details class="spoiler" id="spoiler-1cf73807">
+  <summary>macOS</summary>
+  <div class="spoiler-content">
+    <ol>
   <li>Запустіть програму Дискова утиліта, переконайтеся, що там з’явився зовнішній диск з назвою “<strong>hekate eMMC GPP</strong>”</li>
   <li>В Дисковій утиліті натисніть правою кнопкою миші на пункті “Linux UMS disk 0 Media”</li>
   <li>Виберіть опцію “Образ з Linux UMS disk 0 Media” і вкажіть шлях, куди зберегти отриманий файл
@@ -818,29 +800,26 @@
   <li>Якщо все пройшло успішно, то дамп NAND з’явиться в директорії, яку ви вказали. Збережіть його в надійному місці!</li>
 </ol>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-e693957d'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-1cf73807'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">macOS <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <h3 id="дамп-boot0boot1">Дамп BOOT0/BOOT1</h3>
 
 <p>Робіть аналогічним способом, як робили <strong>Дамп NAND</strong>, але замість “<strong>eMMC RAW GPP</strong>” оберіть “<strong>BOOT0</strong>” та “<strong>BOOT1</strong>” по черзі і збережіть їх під відповідними іменами</p>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-e63d28b8'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-a23f61ae'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб II - За допомогою ПК <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <h3 id="частина-iii---копіювання-резервної-копії-на-пк">Частина III - Копіювання резервної копії на ПК</h3>
 
-<div class="spoiler" id="spoiler-c8d6b972">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-c8d6b972'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Інструкція
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <p class="notice--warning">Якщо ви збираєтеся робити EmuNAND, то саме копіюйте файли, а не переміщуйте, оскільки далі ми зможемо зробити з цього бекапу EmuNAND</p>
+<details class="spoiler" id="spoiler-a2ed4b9c">
+  <summary>Інструкція</summary>
+  <div class="spoiler-content">
+    <p class="notice--warning">Якщо ви збираєтеся робити EmuNAND, то саме копіюйте файли, а не переміщуйте, оскільки далі ми зможемо зробити з цього бекапу EmuNAND</p>
 
 <ol>
   <li>Вставте карту пам’яті консолі в ПК</li>
@@ -862,22 +841,19 @@
 
 <p class="notice--danger">Після першого запуску консолі в прошивку, атмосфера автоматично створить бекап ще двох важливих файлів, вони будуть знаходитися в папці <code class="language-plaintext highlighter-rouge">atmosphere/automatic_backups</code>. Також перенесіть цю папку в надійне місце. Маючи на руках ці файли і ключі, ви зможете відновити вашу приставку навіть не маючи бекапу NAND (але це не означає, що його не потрібно берегти)</p>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-c8d6b972'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-a2ed4b9c'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Інструкція <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <h2 id="відновлення-резервної-копії">Відновлення резервної копії</h2>
 
 <p class="notice--danger">Ніколи не відновлюйте чужий бекап на свою консоль! Відновивши чужий бекап, ви отримаєте брик. Якщо у вас при цьому немає власного бекапу, то брик буде невідновний простими способами.</p>
 
-<div class="spoiler" id="spoiler-9d261c2f">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-9d261c2f'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Спосіб I - Відновлення через hekate
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <ol>
+<details class="spoiler" id="spoiler-f41ff9d1">
+  <summary>Спосіб I - Відновлення через hekate</summary>
+  <div class="spoiler-content">
+    <ol>
   <li>На ПК перейдіть у папку зі своїми резервними копіями</li>
   <li>В папці <code class="language-plaintext highlighter-rouge">backup -&gt; ID</code> створіть папку <code class="language-plaintext highlighter-rouge">restore</code> і перемістіть вміст папки <code class="language-plaintext highlighter-rouge">ID</code> в папку <code class="language-plaintext highlighter-rouge">restore</code>
     <ul>
@@ -917,18 +893,15 @@
   <li>Не забудьте видалити з карти пам’яті папку <code class="language-plaintext highlighter-rouge">backup</code> після закінчення відновлення і перевірки працездатності консолі після відновлення</li>
 </ol>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-9d261c2f'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-f41ff9d1'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб I - Відновлення через hekate <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<div class="spoiler" id="spoiler-d178f7ac">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-d178f7ac'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Спосіб II - Відновлення через ПК
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <p class="notice--warning">Цей спосіб працює тільки на приставках першої ревізії - <span class="tooltip_container">
+<details class="spoiler" id="spoiler-eca0bb28">
+  <summary>Спосіб II - Відновлення через ПК</summary>
+  <div class="spoiler-content">
+    <p class="notice--warning">Цей спосіб працює тільки на приставках першої ревізії - <span class="tooltip_container">
 	Erista
 	<span class="tooltip">▼
 		<span class="bottom">
@@ -941,18 +914,15 @@
 
 <p>При проблемах з відновленням або відсутності бекапу можете спробувати <a href="/uk/downgrade_fw" target="_blank">цю інструкцію</a></p>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-d178f7ac'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-eca0bb28'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб II - Відновлення через ПК <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<div class="spoiler" id="spoiler-47d3e0d0">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-47d3e0d0'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Вирішення проблем
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <ul>
+<details class="spoiler" id="spoiler-cf034506">
+  <summary>Вирішення проблем</summary>
+  <div class="spoiler-content">
+    <ul>
   <li><strong>П:</strong> Приставка не запускається після відновлення бекапу
     <ul>
       <li><strong>В:</strong> Спробуйте <a href="/uk/downgrade_fw" target="_blank">цей метод</a> для відновлення та підвищення версії прошивки</li>
@@ -975,10 +945,10 @@
   </li>
 </ul>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-47d3e0d0'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-cf034506'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Вирішення проблем <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <hr />
 

@@ -118,7 +118,6 @@
 	<div id="ukranian-flag"></div>
 
 
-<link rel="stylesheet" href="/assets/css/custom.css">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -216,12 +215,13 @@
     padding: 5px 10px;
     border-radius: 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-right: 10px;
   }
 
   .language-switcher__item {
     display: flex;
     align-items: center;
-    padding: 2px 6px;
+    padding: 2px 6px !important;
     border-radius: 4px;
     text-decoration: none;
     transition: all 0.2s ease;
@@ -542,13 +542,10 @@
 
 <h3 id="работа-с-caffeine">Работа с Caffeine</h3>
 
-<div class="spoiler" id="spoiler-76ba640c">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-76ba640c'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Установка и настройка Caffeine
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <h4 id="i---установка-caffeine-на-карту-памяти">I - Установка Caffeine на карту памяти</h4>
+<details class="spoiler" id="spoiler-c5ab153e">
+  <summary>Установка и настройка Caffeine</summary>
+  <div class="spoiler-content">
+    <h4 id="i---установка-caffeine-на-карту-памяти">I - Установка Caffeine на карту памяти</h4>
 
 <ol>
   <li>Убедитесь, что ваша карта памяти в формате FAT32. Если это не так - <a href="https://format.customfw.xyz" target="_blank">отформатируйте</a> её</li>
@@ -619,18 +616,15 @@
   <li>Если все сделано правильно, приставка перезагрузится в кастомную прошивку</li>
 </ol>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-76ba640c'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-c5ab153e'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Установка и настройка Caffeine <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<div class="spoiler" id="spoiler-a7aa9228">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-a7aa9228'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Запуск настроенного Caffeine
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <ol>
+<details class="spoiler" id="spoiler-9b7c681d">
+  <summary>Запуск настроенного Caffeine</summary>
+  <div class="spoiler-content">
+    <ol>
   <li>Запустите <strong>eShop</strong>. Приставка потребует подключения к сети, нажмите “<strong>Далее</strong>”</li>
   <li>Откроется окно браузера, в котором будет загружена страница <strong>PegaSwitch</strong>. Дождитесь её полной загрузки</li>
   <li>На странице PegaScape выберите иконку <strong>Caffeine</strong>
@@ -659,10 +653,10 @@
   <li>Если вы сменили точку доступа, то вам необходимо заново настроить DNS по инструкции <strong>Настройка точки доступа для запуска Caffeine</strong></li>
 </ul>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-a7aa9228'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-9b7c681d'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Запуск настроенного Caffeine <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <hr />
 

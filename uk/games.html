@@ -110,7 +110,6 @@
   <body class="layout--single">
     
 
-<link rel="stylesheet" href="/assets/css/custom.css">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -208,12 +207,13 @@
     padding: 5px 10px;
     border-radius: 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-right: 10px;
   }
 
   .language-switcher__item {
     display: flex;
     align-items: center;
-    padding: 2px 6px;
+    padding: 2px 6px !important;
     border-radius: 4px;
     text-decoration: none;
     transition: all 0.2s ease;
@@ -541,13 +541,10 @@
 
 <hr />
 
-<div class="spoiler" id="spoiler-dd0c7d16">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-dd0c7d16'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Відеоінструкція
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <p class="notice--warning">ВНИМАНИЕ!!! Мы не рекомендуем слепо следовать видео-инструкции! Используйте её только в качестве вспомогательной! Дело в том, что текстовый гайд постоянно обновляется. Невозможно следить за всеми обновлениями в гайде и каждый раз менять видео-инструкцию вслед за ним! Поэтому текстовый гайд всегда будет более точным и более актуальным, чем видео!</p>
+<details class="spoiler" id="spoiler-b8b6487c">
+  <summary>Відеоінструкція</summary>
+  <div class="spoiler-content">
+    <p class="notice--warning">ВНИМАНИЕ!!! Мы не рекомендуем слепо следовать видео-инструкции! Используйте её только в качестве вспомогательной! Дело в том, что текстовый гайд постоянно обновляется. Невозможно следить за всеми обновлениями в гайде и каждый раз менять видео-инструкцию вслед за ним! Поэтому текстовый гайд всегда будет более точным и более актуальным, чем видео!</p>
 
 <div style="margin:0 auto;" class="text-center notice--info">
   <div class="ytcontainer">
@@ -555,10 +552,10 @@
   </div>
 </div>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-dd0c7d16'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-b8b6487c'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Відеоінструкція <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <h2 id="важлива-інформація">Важлива інформація</h2>
 
@@ -633,21 +630,15 @@
 
 <h3 id="виберіть-один-із-методів-встановлення">Виберіть один із методів встановлення</h3>
 
-<div class="spoiler" id="spoiler-b8aabc0f">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-b8aabc0f'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Спосіб I - Встановлення по USB (рекомендований)
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <h3 id="встановлення-ігор">Встановлення ігор</h3>
+<details class="spoiler" id="spoiler-4a3aa19e">
+  <summary>Спосіб I - Встановлення по USB (рекомендований)</summary>
+  <div class="spoiler-content">
+    <h3 id="встановлення-ігор">Встановлення ігор</h3>
 
-<div class="spoiler" id="spoiler-db7a05f1">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-db7a05f1'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Підготовчі роботи в MacOS
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <ol>
+<details class="spoiler" id="spoiler-5989e05d">
+  <summary>Підготовчі роботи в MacOS</summary>
+  <div class="spoiler-content">
+    <ol>
   <li>Встановіть <a href="https://openmtp.ganeshrvel.com/" target="_blank">OpenMTP</a>, якщо версія вашої MacOS 10.13 або новіша</li>
 </ol>
 
@@ -664,10 +655,10 @@
   <li>Після встановлення коректного з’єднання, розблокуйте екран Switch і продовжуйте за стандартною процедурою встановлення</li>
 </ol>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-db7a05f1'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-5989e05d'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Підготовчі роботи в MacOS <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <ol>
   <li>Підключіть консоль до ПК USB-кабелем (type-c)</li>
@@ -689,18 +680,15 @@
 
 <p class="notice--info">Як альтернатива, в MacOS можна використовувати DBIbackend.py для встановлення по USB. Зверніться до <a href="https://4pda.to/forum/index.php?showtopic=939714&amp;st=5140#entry98421804" target="_blank">цієї інструкції</a> для подробиць</p>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-b8aabc0f'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-4a3aa19e'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб I - Встановлення по USB (рекомендований) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<div class="spoiler" id="spoiler-47b8bb24">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-47b8bb24'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Спосіб II - Встановлення з USB-носія
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <p class="notice--warning">Ви маєте скинути ігри у форматі <code class="language-plaintext highlighter-rouge">.nsp</code> / <code class="language-plaintext highlighter-rouge">.nsz</code> / <code class="language-plaintext highlighter-rouge">.xci</code> / <code class="language-plaintext highlighter-rouge">.xcz</code>,  підключити носій до консолі через OTG-кабель, або в док-станцію, і встановлювати ігри безпосередньо з носія. Носій повинен бути відформатований у файлову систему <strong>exFAT</strong></p>
+<details class="spoiler" id="spoiler-22cfa24c">
+  <summary>Спосіб II - Встановлення з USB-носія</summary>
+  <div class="spoiler-content">
+    <p class="notice--warning">Ви маєте скинути ігри у форматі <code class="language-plaintext highlighter-rouge">.nsp</code> / <code class="language-plaintext highlighter-rouge">.nsz</code> / <code class="language-plaintext highlighter-rouge">.xci</code> / <code class="language-plaintext highlighter-rouge">.xcz</code>,  підключити носій до консолі через OTG-кабель, або в док-станцію, і встановлювати ігри безпосередньо з носія. Носій повинен бути відформатований у файлову систему <strong>exFAT</strong></p>
 
 <ol>
   <li>Підключіть USB-носій з іграми до приставки
@@ -732,18 +720,15 @@
   <li>Натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> для закриття програми</li>
 </ol>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-47b8bb24'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-22cfa24c'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб II - Встановлення з USB-носія <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<div class="spoiler" id="spoiler-4dc202d5">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-4dc202d5'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Спосіб III - Встановлення з карти пам'яті (устарілий)
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <p class="notice--warning"><strong>Спосіб не є рекомендованим</strong>, оскільки ваша картка має бути в форматі FAT32, що означає неможливість записати на картку файли більші за 4Гб напряму. Більш того, часто виймати і вставляти карту в приставку може бути небезпечно для слота картки пам’яті консолі і може пошкодити його! За необхідністю ви можете переміщати файли на карту пам’яті, використовуючи вбудований в DBI MTP-сервер, однак встановлювати таким чином ігри немає жодного сенсу.</p>
+<details class="spoiler" id="spoiler-77a2258d">
+  <summary>Спосіб III - Встановлення з карти пам'яті (устарілий)</summary>
+  <div class="spoiler-content">
+    <p class="notice--warning"><strong>Спосіб не є рекомендованим</strong>, оскільки ваша картка має бути в форматі FAT32, що означає неможливість записати на картку файли більші за 4Гб напряму. Більш того, часто виймати і вставляти карту в приставку може бути небезпечно для слота картки пам’яті консолі і може пошкодити його! За необхідністю ви можете переміщати файли на карту пам’яті, використовуючи вбудований в DBI MTP-сервер, однак встановлювати таким чином ігри немає жодного сенсу.</p>
 
 <ol>
   <li>
@@ -777,27 +762,24 @@
   </li>
 </ol>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-4dc202d5'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-77a2258d'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб III - Встановлення з карти пам'яті (устарілий) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
-<div class="spoiler" id="spoiler-3206fbfa">
-  <div class="spoiler-summary" role="button" tabindex="0" onclick="var el = document.getElementById('spoiler-3206fbfa'); var body = el.querySelector('.spoiler-body'); if (el.classList.contains('closing')) return; if (el.classList.contains('open')) { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } else { body.style.display = 'block'; body.style.maxHeight = body.scrollHeight + 'px'; el.classList.add('open'); }">
-    Спосіб IV - Встановлення ігор, DLC, оновлень через інтернет прямо на приставці (Tinfoil)
-  </div>
-  <div class="spoiler-body" style="max-height: 0; display: none;">
-    <div class="spoiler-content">
-      <p>За допомогою tinfoil ігри можна встановлювати безпосередньо з віддаленого сервера в інтернеті, який постійно поповнюється силами спільноти.</p>
+<details class="spoiler" id="spoiler-5af0a0b6">
+  <summary>Спосіб IV - Встановлення ігор, DLC, оновлень через інтернет прямо на приставці (Tinfoil)</summary>
+  <div class="spoiler-content">
+    <p>За допомогою tinfoil ігри можна встановлювати безпосередньо з віддаленого сервера в інтернеті, який постійно поповнюється силами спільноти.</p>
 
 <p class="notice--warning">Цей додаток використовує сторонні сервери для встановлення ігор, що підтримуються різними спільнотами, через це робота цих серверів не стабільна. Не рекомендується використовувати tinfoil для встановлення ігор, однак і не забороняється.</p>
 
 <p>Більш детальна інструкція знаходиться <a href="/uk/tinfoil" target="_blank">тут</a></p>
 
-    </div>
-    <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-3206fbfa'); var body = el.querySelector('.spoiler-body'); var summary = el.querySelector('.spoiler-summary'); if (!el.classList.contains('open') || el.classList.contains('closing')) return; var targetOffset = summary.getBoundingClientRect().top + window.scrollY - 100; function doClose() { el.classList.add('closing'); body.style.maxHeight = body.scrollHeight + 'px'; requestAnimationFrame(function() { body.style.maxHeight = '0px'; body.addEventListener('transitionend', function handler(e) { if (e.propertyName === 'max-height') { el.classList.remove('open'); el.classList.remove('closing'); body.style.display = 'none'; body.removeEventListener('transitionend', handler); } }); }); } var lastScrollY = window.scrollY; window.scrollTo({ top: targetOffset, behavior: 'smooth' }); var scrollCheck = setInterval(function() { if (Math.abs(window.scrollY - targetOffset) &lt; 4 || window.scrollY === lastScrollY) { clearInterval(scrollCheck); doClose(); } lastScrollY = window.scrollY; }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0"><span class="spoiler-close-icon" aria-hidden="true"></span>Згорнути</div>
+    
   </div>
-</div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-5af0a0b6'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб IV - Встановлення ігор, DLC, оновлень через інтернет прямо на приставці (Tinfoil) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
 
 <h3 id="використання-перекладів-і-модифікацій">Використання перекладів і модифікацій</h3>
 
