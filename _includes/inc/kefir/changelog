@@ -2,10 +2,10 @@
 **Повна підтримка 19.0.1**
 
 **761**
-* [**Оновлено**] [Atmosphere 1.8.0e](https://github.com/rashevskyv/Kefirosphere) - зібрано з останніми коммітами
+* [**Оновлено**] [Atmosphere 1.8.0](https://github.com/rashevskyv/Kefirosphere) - зібрано з останніми коммітами
 * [**Оновлено**] [Sphaira 0.7.0](https://github.com/ITotalJustice/sphaira/releases/tag/0.7.0) - додана підтримка встановлення тайтлів через файловий менеджер
 * [**Видалено**] [tinfoil](https://tinfoil.io/Download#download) - бо нема толку від нього
-* [**Виделено**] [dbi.locations] - в них тепер все через реєстрацію консолі на сервері, то ж сенсу тримати цей конфіг немає
+* [**Видалено**] [dbi.locations] - в них тепер все через реєстрацію консолі на сервері, то ж сенсу тримати цей конфіг немає
 * [**Виправлено**] [DBI] - виправлено видалення DBI при скачуванні через uberhand при відсутності інтернету (@olexandr_mudryi)
 
 **760**
@@ -48,10 +48,10 @@ ____
 **Full support for 19.0.1**
 
 **761**
-* [**Updated**] [Atmosphere 1.8.0e](https://github.com/rashevskyv/Kefirosphere) - built with the latest commits
+* [**Updated**] [Atmosphere 1.8.0](https://github.com/rashevskyv/Kefirosphere) - built with the latest commits
 * [**Updated**] [Sphaira 0.7.0](https://github.com/ITotalJustice/sphaira/releases/tag/0.7.0) - added support for installing titles via file manager
 * [**Removed**] [tinfoil](https://tinfoil.io/Download#download) - because it's useless now
-* [**Split**] [dbi.locations] - now everything goes through console registration on the server, so there's no point keeping this config
+* [**Removed**] [dbi.locations] - now everything goes through console registration on the server, so there's no point keeping this config
 * [**Fixed**] [DBI] - fixed DBI deletion when downloading via uberhand with no internet connection (@olexandr_mudryi)
 
 **760**
