@@ -134,10 +134,10 @@ lang: ukдампим-ключи){:target="_blank"}
 1. [Снимите копию ключей вашей приставки](backup-nand#часть-ii---
 lang: ukдампим-ключи){:target="_blank"}
 1. Вставьте карту памяти приставки в ПК 
-1. Скачайте [reBoot.zip](/uk/files/reBoot.zip){:target="_blank"}
+1. Скачайте [reBoot.zip](/files/reBoot.zip){:target="_blank"}
 1. [Скачайте прошивку](https://darthsternie.net/switch-firmwares/){:target="_blank"}, соответствующую **текущей версии прошивки вашего emunand**
 1. Распакуйте архив с прошивкой в папку `firmware` на вашем ПК 
-1. Поместите файлы из архива [reBoot.zip](/uk/files/reBoot.zip){:target="_blank"} в папку `firmware`
+1. Поместите файлы из архива [reBoot.zip](/files/reBoot.zip){:target="_blank"} в папку `firmware`
 1. Поместите в папку `firmware` ваш файл с ключами (`prod.keys`)
 1. Запустите `recreate_boot_by_yoti.bat`. После окончания работы программы вы получите файлы `BOOT0_ERISTA`, `BOOT0_MARIKO`, `BOOT1_ERISTA`, `BOOT1_MARIKO`
 1. Определите какой ревизии ваша приставка (**Erista** или **Mariko**) и переименуйте файлы, соответствующие вашей ревизии в `BOOT0` и `BOOT1`
