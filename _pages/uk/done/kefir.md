@@ -8,7 +8,7 @@ author_profile: true
 {% include toc title="Розділи" %}
 {% include notices %}	
 
-## [KEFIR {% include /inc/kefir/version %}](https://github.com/rashevskyv/kefir/releases){:target="_blank"}
+## [KEFIR {% include /inc/kefir/version %}](https://github.com/rashevskyv/kefir/releases){:target="_blank"} - скачати останню версію
 
 ![kefir](/assets/images/switch/kefir.png){: width="70%"}
 {: .text-center}

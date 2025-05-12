@@ -1,6 +1,10 @@
 #### **UKR**
 **Повна підтримка 20.0.x**  
 
+Хоч підтримка і повна, за можливістю тримайте емунанд на 19.0.1 (тоді в сісмодулях можна вимкнути sys-patch). На 20й прошивці апплетам виділяється значно менше пам'яті, через що деякі модулі та модифікації на 20.0.х можуть тупо вилітати через нестачу пам'яті. То ж 19.0.1 - краще рішення для емунанду. 
+
+https://youtu.be/w3_w0S6DPWM - виправлення помилки 2002-3005 при даунгрейді з 20.0.0 to 19.0.1
+
 **765**
 * [**Оновлено**] [Atmosphere 1.9.0pre](https://github.com/rashevskyv/Kefirosphere) — офіційний пре-реліз  
     * [**Детальніше про зміни в Atmosphere**](https://github.com/Atmosphere-NX/Atmosphere/releases)
@@ -14,6 +18,10 @@ ____
 
 #### **ENG**  
 **Full support for 20.0.x**  
+
+While support is complete, it's still recommended to keep your emuNAND on 19.0.1 if possible (this way you can disable sys-patch in sysmodules). On firmware 20.x, applets get significantly less memory, which may cause some modules or mods to crash due to memory shortage. So 19.0.1 remains the better choice for emuNAND.
+
+https://youtu.be/w3_w0S6DPWM - Fix 2002-3005 error when downgrade from 20.0.0 to 19.0.1
 
 **765**
 * [**Updated**] [Atmosphere 1.9.0pre](https://github.com/rashevskyv/Kefirosphere) — official pre-release  
