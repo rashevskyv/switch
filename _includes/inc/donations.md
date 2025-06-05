@@ -1,6 +1,6 @@
 ## Банка monobank
 	
-<a href="https://send.monobank.ua/jar/6VmeFAs1zG" target="_blank"><img alt="Монобанка" border="0" src="/assets/images/donate/mono.jpg" width="400px" style="border-radius:10px !important"></a>
+<a href="https://send.monobank.ua/jar/9PwYEXHYbs" target="_blank"><img alt="Монобанка" border="0" src="/assets/images/donate/mono.jpg" width="400px" style="border-radius:10px !important"></a>
 {: .text-center}
 {: .notice--info}
 
