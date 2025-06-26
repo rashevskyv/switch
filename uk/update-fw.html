@@ -581,13 +581,13 @@
 			Формат карт пам’яті розширеного об’єму. Підтримується Nintendo Switch тільки після оновлення, встановленого спеціальним чином. За замовчуванням, навіть свіжа прошивка не містить цього оновлення, тому як тільки в приставку буде вставлена карта пам’яті у форматі exFAT, приставка вимагатиме оновити прошивку.
 		</span>
 	</span>
-</span> і для підняття прошивки ідентичний! Так, потрібно робити, навіть якщо у вас вже й так 19.0.1</p>
+</span> і для підняття прошивки ідентичний! Так, потрібно робити, навіть якщо у вас вже й так 20.1.5</p>
 
-<p>При прошивці на деякі версії (1.0.0, 2.0.0, 5.0.0, 6.0.0, 6.2.0, 7.0.0) приставка спалює спеціальні запобіжники на чипі, щоб за їх станом відстежувати версію системного ПЗ на вашій приставці. У звичайному режимі при встановленні прошивки, консоль перевіряє кількість спалених запобіжників. Якщо ця кількість більша, ніж потрібно для прошивки, то консоль розуміє, що ви намагаєтеся встановити прошивку нижче, ніж була встановлена до цього, і не дозволить це зробити. Якщо ж кількість спалених запобіжників нижча, ніж вимагає встановлювана прошивка, то прошивка дозволяється і в ході неї спалюється стільки запобіжників скільки необхідно, щоб відповідати зазначеній в прошивці кількості. Таким чином, якщо ви оновилися до 19.0.1 офіційно, у вас на приставці буде спалено умовно 12 запобіжників. Якщо ви спробуєте відновити бекап, скажімо, зроблений на прошивці 8.1.0, для роботи якої потрібно 10 запобіжників (а у вас спалено 12), то приставка зрозуміє це і офіційна прошивка не запуститься!</p>
+<p>При прошивці на деякі версії (1.0.0, 2.0.0, 5.0.0, 6.0.0, 6.2.0, 7.0.0) приставка спалює спеціальні запобіжники на чипі, щоб за їх станом відстежувати версію системного ПЗ на вашій приставці. У звичайному режимі при встановленні прошивки, консоль перевіряє кількість спалених запобіжників. Якщо ця кількість більша, ніж потрібно для прошивки, то консоль розуміє, що ви намагаєтеся встановити прошивку нижче, ніж була встановлена до цього, і не дозволить це зробити. Якщо ж кількість спалених запобіжників нижча, ніж вимагає встановлювана прошивка, то прошивка дозволяється і в ході неї спалюється стільки запобіжників скільки необхідно, щоб відповідати зазначеній в прошивці кількості. Таким чином, якщо ви оновилися до 20.1.5 офіційно, у вас на приставці буде спалено умовно 12 запобіжників. Якщо ви спробуєте відновити бекап, скажімо, зроблений на прошивці 8.1.0, для роботи якої потрібно 10 запобіжників (а у вас спалено 12), то приставка зрозуміє це і офіційна прошивка не запуститься!</p>
 
 <p><strong>Кількість спалених запобіжників не важлива для кастомних прошивок. Ви зможете відкотитися на будь-яку прошивку за умови використання кастомного завантажувача.</strong> Офіційна ж прошивка не запуститься, якщо версія встановленої прошивки нижче, ніж на те вказують запобіжники. Якщо вище, то OFW спалить запобіжники, щоб вони відповідали запущеній версії прошивки.</p>
 
-<p>За цією інструкцією можна міняти версію свого ПЗ на будь-яку, а не тільки на 19.0.1.</p>
+<p>За цією інструкцією можна міняти версію свого ПЗ на будь-яку, а не тільки на 20.1.5.</p>
 
 <h2 id="що-знадобиться">Що знадобиться</h2>
 
@@ -600,7 +600,7 @@
       </span>
   </span>
 </span></li>
-  <li><a href="https://darthsternie.net/switch-firmwares/" target="_blank">Прошивка <strong>19.0.1</strong></a></li>
+  <li><a href="https://darthsternie.net/switch-firmwares/" target="_blank">Прошивка <strong>20.1.5</strong></a></li>
   <li>Карта пам’яті</li>
 </ul>
 
@@ -644,10 +644,10 @@
 	</div>
 </div>
 
-<!--В даний момент останньою прошивкою є 20.1.1, однак, оскільки вона тільки вийшла і недостатньо оттестована, а так само тому що ще немає ігор, що вимагають її, не рекомендується поки на неї оновлюватися. Якщо ж ви вже на ній встановіть рекомендовану прошивку за інструкцією нижче!
+<!--В даний момент останньою прошивкою є 20.1.5, однак, оскільки вона тільки вийшла і недостатньо оттестована, а так само тому що ще немає ігор, що вимагають її, не рекомендується поки на неї оновлюватися. Якщо ж ви вже на ній встановіть рекомендовану прошивку за інструкцією нижче!
 {: .notice--warning}-->
 
-<!-- <details class="spoiler" id="spoiler-00b62e1b">
+<!-- <details class="spoiler" id="spoiler-d5d516ac">
   <summary>Відеоінструкція</summary>
   <div class="spoiler-content">
     <p class="notice--warning">ВНИМАНИЕ!!! Мы не рекомендуем слепо следовать видео-инструкции! Используйте её только в качестве вспомогательной! Дело в том, что текстовый гайд постоянно обновляется. Невозможно следить за всеми обновлениями в гайде и каждый раз менять видео-инструкцию вслед за ним! Поэтому текстовый гайд всегда будет более точным и более актуальным, чем видео!</p>
@@ -660,12 +660,12 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-00b62e1b'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Відеоінструкція <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-d5d516ac'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Відеоінструкція <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 -->
 </div>
 
-<details class="spoiler" id="spoiler-ae3c5f6a">
+<details class="spoiler" id="spoiler-626d95d7">
   <summary>Оновлення прошивки за допомогою Kefir Updater</summary>
   <div class="spoiler-content">
     <div class="hideble button2 hide">
@@ -723,10 +723,10 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-ae3c5f6a'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Оновлення прошивки за допомогою Kefir Updater <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-626d95d7'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Оновлення прошивки за допомогою Kefir Updater <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-53ff800d">
+<details class="spoiler" id="spoiler-8aaa681e">
   <summary>Оновлення за допомогою ПК</summary>
   <div class="spoiler-content">
     <h3 id="частина-i---підготовка-до-оновлення">Частина I - Підготовка до оновлення</h3>
@@ -756,7 +756,7 @@
       </li>
     </ul>
   </li>
-  <li>Розпакуйте архів <code class="language-plaintext highlighter-rouge">19.0.1.zip</code> в папку <code class="language-plaintext highlighter-rouge">firmware</code>на карті пам’яті вашої приставки (якщо її немає, створіть)
+  <li>Розпакуйте архів <code class="language-plaintext highlighter-rouge">20.1.5.zip</code> в папку <code class="language-plaintext highlighter-rouge">firmware</code>на карті пам’яті вашої приставки (якщо її немає, створіть)
     <ul>
       <li>Уважно: саме архів <strong>з прошивкою</strong>. Не архів з кефіром! Архів з прошивкою розташований в частині <a href="/uk/#що-знадобиться">Що знадобиться</a>. Потрібно скопіювати не сам архів, а саме його <strong>вміст</strong></li>
       <li>Замість цього ви можете скачати архів зі свіжою версією системного ПЗ через додаток <strong>Kefir Updater</strong> прямо на вашій приставці. Для цього запустіть <a href="/uk/hbl" target="_blank">HBL</a> через гру, виберіть додаток <strong>Kefir Updater</strong>, перейдіть в меню “<strong>Скачати прошивку</strong>” і виберіть необхідну версію. Натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" />, натисніть “<strong>Продовжити</strong>”, щоб почати закачування прошивки. Програма сама скачає обрану версію системного ПЗ і розпакує її в папку <code class="language-plaintext highlighter-rouge">firmware</code>.</li>
@@ -796,7 +796,7 @@
   </li>
   <li>Відкрийте <a href="/uk/hbl" target="_blank">Homebrew Launcher</a></li>
   <li>Запустіть <strong>Daybreak</strong> і виберіть <strong>Install</strong></li>
-  <li>Перейдіть в папку <code class="language-plaintext highlighter-rouge">firmware</code>, в ній знаходиться прошивка 19.0.1, скопійована раніше, і натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" />
+  <li>Перейдіть в папку <code class="language-plaintext highlighter-rouge">firmware</code>, в ній знаходиться прошивка 20.1.5, скопійована раніше, і натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" />
     <ul>
       <li>Якщо ви не можете перейти в папку (папка відображається як файл), значить ваша папка має неправильні <em>атрибути</em>. Як їх виправити описано в <a href="/uk/faq" target="_blank">FAQ</a> або в розділі <a href="/uk/troubleshooting" target="_blank">проблеми та їх рішення</a></li>
     </ul>
@@ -813,7 +813,7 @@
 
     
   </div>
-  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-53ff800d'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Оновлення за допомогою ПК <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" onclick="var el = document.getElementById('spoiler-8aaa681e'); if (!el.open) return; el.open = false; setTimeout(function(){ el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);" role="button" aria-label="Згорнути спойлер" tabindex="0">Оновлення за допомогою ПК <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
 <h2 id="важливо-знати">Важливо знати</h2>
