@@ -15,7 +15,7 @@ author_profile: true
 
 * [Ключи](backup-nand#часть-ii---
 lang: ukдампим-ключи){:target="_blank"}, уникальны для каждой консоли
-* [Прошивка](https://darthsternie.net/switch-firmwares/) той версии, на которую вы собираетесь восстанавливаться (но не выше той, с которой вы сняли ключи)
+* [Прошивка](https://github.com/THZoria/NX_Firmware/releases/latest)
 * [SystemRestoreV3.te](/files/SystemRestoreV3.te){:target="_blank"} - скрипт для восстановления прошивки
 * Свежая версия [EmmcHaccGen](https://github.com/suchmememanyskill/EmmcHaccGen){:target="_blank"}
 	* Требует для работы [.NET SDK 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1){:target="_blank"}
