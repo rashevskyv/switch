@@ -34,7 +34,7 @@ author_profile: true
 ## Що знадобиться
 
 * Свіжа версія {% include abbr/uk/kefir_addr.txt %}
-* [Прошивка **{% include /vars/update_version.txt %}**](https://darthsternie.net/switch-firmwares/){:target="_blank"}
+* [Прошивка **{% include /vars/update_version.txt %}**](https://github.com/THZoria/NX_Firmware/releases/){:target="_blank"}
 * Карта пам'яті
 
 ### Частина I - Резервне копіювання NAND
