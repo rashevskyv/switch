@@ -166,11 +166,12 @@ lang: ukдампимо-ключі){:target="_blank"}
 ## Додаткова інформація
 * Для роботи з модулями ([sys-con](https://github.com/cathery/sys-con/releases/latest){:target="_blank"}, [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} та ін.) у кефірі встановлений [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} - спеціальне оверлей-меню для взаємодії з системою. Для його активації натисніть {% include inc/uk/btn.txt btn="L" %} + {% include inc/uk/btn.txt btn="DOWN" %} + {% include inc/uk/btn.txt btn="R3" %}
 * Для переходу в semi-stock
-  * **З самої прошивки**: перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/uk/btn.txt btn="L" %} + {% include inc/uk/btn.txt btn="DOWN" %} + {% include inc/uk/btn.txt btn="R3" %}), натисніть вправо > `Semi-stock`
-  * **При запуску консолі**:
+  * **З самої прошивки (рекомендовано)**: перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/uk/btn.txt btn="L" %} + {% include inc/uk/btn.txt btn="DOWN" %} + {% include inc/uk/btn.txt btn="R3" %}), натисніть вправо > `Semi-stock`
+  * **При запуску консолі (не рекомендується)**:
     {% include inc/uk/launch-hekate.txt %}
-    1. Виберіть `More-configs` > `Semi-stock (blackscreen fix)`
-  * Зверніть увагу, що при запуску з прошивки, встановлена тема буде вимкнена, що дозволить уникнути помилок, якщо на консолі різні версії системного ПЗ та емунанду
+    1. Виберіть `More-configs` > `Semi-stock`
+  * **Зверніть увагу**, що при запуску з прошивки, встановлена тема буде вимкнена, що дозволить уникнути помилок, якщо на консолі різні версії системного ПЗ та емунанду
+  * **Зверніть увагу**, що при запуску через `More-configs` > `Semi-stock` тема, що встановлена в emunand буде відображатися і Semi-stock. У випадку, якщо в semi-stock та emunand встановлені різні версії системного ПЗ, це приведе до помилки і перезагрузки приставки!
 * Оновити кефір можна за допомогою утиліти **Kefir Updater**
 * [Корисні інструкції з використання приставки](/uk/usage){:target="_blank"}
 * [FAQ](/uk/faq){:target="_blank"}
@@ -178,13 +179,21 @@ lang: ukдампимо-ключі){:target="_blank"}
 
 ### Розгін
 * **Увімкнення**
-  Для активації розгону перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/uk/btn.txt btn="L" %} + {% include inc/uk/btn.txt btn="DOWN" %} + {% include inc/uk/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Use overclock`
+  Для активації розгону перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/uk/btn.txt btn="L" %} + {% include inc/uk/btn.txt btn="DOWN" %} + {% include inc/uk/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Overlock status`
 * **Вимкнення**
-  Для активації розгону перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/uk/btn.txt btn="L" %} + {% include inc/uk/btn.txt btn="DOWN" %} + {% include inc/uk/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Disable overclock`
+  Для активації розгону перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/uk/btn.txt btn="L" %} + {% include inc/uk/btn.txt btn="DOWN" %} + {% include inc/uk/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Overlock status`
+
+Якщо розгін включено, `Overlock status` буде в положенні `On`
+{: .notice--info}
 
 ### Режим підтримки 8Гб пам'яті
+
+УВАГА! Якщо ви не робитли модифікацію своєї консолі і не встановлювали в неї 8GB пам'яті, то нее вмикайте цю опцію!
+{: .notice--danger}
+
 * **Увімкнення**
-  * Для вмикання перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/uk/btn.txt btn="L" %} + {% include inc/uk/btn.txt btn="DOWN" %} + {% include inc/uk/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Enable 8GB support`
+  * Для вмикання перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/uk/btn.txt btn="L" %} + {% include inc/uk/btn.txt btn="DOWN" %} + {% include inc/uk/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Advance` > `Enable 8GB support`
+    * Опція навмисно захована за 3 вкладених мменю, щоб запобігти випадкове включання
 * **Вимкнення**
   * Для вимкнення перевстановіть кефір зручними способом
 
