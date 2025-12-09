@@ -178,10 +178,7 @@ lang: ukдампимо-ключі){:target="_blank"}
 * [Проблеми та їх рішення](/uk/troubleshooting){:target="_blank"}
 
 ### Розгін
-* **Увімкнення**
-  Для активації розгону перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/uk/btn.txt btn="L" %} + {% include inc/uk/btn.txt btn="DOWN" %} + {% include inc/uk/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Overlock status`
-* **Вимкнення**
-  Для активації розгону перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/uk/btn.txt btn="L" %} + {% include inc/uk/btn.txt btn="DOWN" %} + {% include inc/uk/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Overlock status`
+Для зміни статуса розгону перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/uk/btn.txt btn="L" %} + {% include inc/uk/btn.txt btn="DOWN" %} + {% include inc/uk/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Overlock status`. **On** - розгін включено, **Off** - вимкнено. 
 
 Якщо розгін включено, `Overlock status` буде в положенні `On`
 {: .notice--info}
