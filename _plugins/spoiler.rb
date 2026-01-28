@@ -32,7 +32,7 @@ module Jekyll
       # --- Елемент для закриття знизу ---
       # Використовуємо <div>, який буде стилізований як <summary>
       # Додаємо той самий onclick JavaScript
-      close_footer_html = %Q|<div class="spoiler-close-footer" onclick="#{onclick_js}" role="button" aria-label="Згорнути спойлер" tabindex="0">#{@title} <span class="close-icon" aria-hidden="true"></span></div>|
+      close_footer_html = %Q|<div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">#{@title} <span class="close-icon" aria-hidden="true"></span></div>|
       # Додано span для можливої іконки закриття/стрілки вгору через CSS
 
       # --- Фінальний HTML ---

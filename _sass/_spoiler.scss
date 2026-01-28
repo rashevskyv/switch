@@ -72,6 +72,10 @@ details.spoiler .spoiler-content {
 	flex: 1;
 }
 
+.spoiler-content > p {
+	margin-top: 0.5rem;
+}
+
 /* Прибираємо відступ у останнього елемента контенту, щоб не було дірки перед футером */
 details.spoiler .spoiler-content> :last-child {
 	margin-bottom: 0;
@@ -89,6 +93,7 @@ details.spoiler .spoiler-content> :last-child {
 	text-align: center;
 	position: relative;
 	margin: 0;
+	margin-top: 0.5rem;
 }
 
 .spoiler-close-footer:hover {

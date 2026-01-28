@@ -273,3 +273,7 @@ defaults:
     values:
       lang: ru
       permalink: /ru/:year/:month/:day/:title/
+
+# Custom Scripts
+footer_scripts:
+  - /assets/js/spoiler-anim.js
