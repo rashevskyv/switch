@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
     spoilers.forEach(function (spoiler) {
         const summary = spoiler.querySelector('summary');
         const content = spoiler.querySelector('.spoiler-content');
-        const footer = spoiler.querySelector('.spoiler-close-footer');
+        // Find the footer that is a direct child of this spoiler
+        const footer = Array.from(spoiler.children).find(child => child.classList.contains('spoiler-close-footer'));
 
         // Helper to calculate full height including content and footer
         function getFullHeight() {
