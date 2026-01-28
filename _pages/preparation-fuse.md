@@ -30,7 +30,7 @@ author_profile: true
 
 {% spoiler %}
 
-Ви не зможете користуватися онлайном навіть у куплених іграх, доти, доки не перенесете SysNAND в {% include abbr/uk/emunand.md abbr="EmuNAND" %} [за цією інструкцією](/preparation-white){:target="blank_"}, а в SysNAND не відновите чистий бекап.
+Ви не зможете користуватися онлайном навіть у куплених іграх, доти, доки не перенесете SysNAND в {% include abbr/emunand.md abbr="EmuNAND" %} [за цією інструкцією](/preparation-white){:target="blank_"}, а в SysNAND не відновите чистий бекап.
 {: .notice--danger}
 
 1. [Запуск кастомної прошивки](/cfw){:target="blank_"}

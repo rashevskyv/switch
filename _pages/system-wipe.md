@@ -17,9 +17,9 @@ author_profile: true
 Рекомендується зробити бекап перед скиданням!
 {: .notice--warning}
 
-1. Запустіть {% include abbr/uk/hekate.txt abbr="hekate" %} -> **Payloads** -> `TegraExplorer.bin`
+1. Запустіть {% include abbr/hekate.txt abbr="hekate" %} -> **Payloads** -> `TegraExplorer.bin`
 1. Виберіть `SystemWipe.te`
-1. Виберіть **Wipe sysmmc**, щоб скинути до заводських {% include abbr/uk/sysnand.md abbr="SysNAND" %} і **Wipe emummc**, щоб скинути {% include abbr/uk/emunand.md abbr="EmuNAND" %}
+1. Виберіть **Wipe sysmmc**, щоб скинути до заводських {% include abbr/sysnand.md abbr="SysNAND" %} і **Wipe emummc**, щоб скинути {% include abbr/emunand.md abbr="EmuNAND" %}
 1. Натисніть кнопку {% include /inc/btn.txt btn="POWER" %} для підтвердження скидання 
 
 

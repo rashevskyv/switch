@@ -39,7 +39,7 @@ author_profile: true
 {: .notice--danger}
 
 1. Створіть [резервну копію NAND](/backup-nand){:target="_blank"} консолі та помістіть її в надійне місце 
-1. Встановіть {% include abbr/uk/kefir_addr.txt %}, якщо ще не робили цього
+1. Встановіть {% include abbr/kefir_addr.txt %}, якщо ще не робили цього
 
 ### Частина II - Перепакування прошивки під вашу систему
 

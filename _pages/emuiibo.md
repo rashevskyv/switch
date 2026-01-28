@@ -25,7 +25,7 @@ https://github.com/XorTroll/emuiibo/
 ### Встановлення emuiibo 
 
 1. Вимкніть приставку та вставте карту пам'яті консолі в ПК
-1. Оновіть {% include abbr/uk/kefir_addr.txt %} за інструкцією з репозиторію. 
+1. Оновіть {% include abbr/kefir_addr.txt %} за інструкцією з репозиторію. 
 1. Перейдіть у папку `atmosphere/titles` і видаліть з неї папку `0100000000000352`
 1. Скачайте свіжу версію [emuiibo](https://github.com/XorTroll/emuiibo/releases/latest){:target="_blank"} і перемістіть папку `atmosphere` з архіву в корінь вашої карти пам'яті
 1. Скопіюйте потрібні Amiibo в папку `emuiibo` в корені вашої карти пам'яті

@@ -28,7 +28,7 @@ author_profile: true
 
 1.  Створіть [резервну копію NAND](/backup-nand){:target="_blank"} консолі та помістіть її в надійне місце, якщо ще не робили цього
 {% include /inc/launch-hekate.txt %}
-2.  Встановіть {% include abbr/uk/kefir_addr.txt %} за інструкцією, що знаходиться в його репозиторії
+2.  Встановіть {% include abbr/kefir_addr.txt %} за інструкцією, що знаходиться в його репозиторії
     *   Якщо вже робили, не потрібно робити повторно
 3.  Перейдіть до меню "**Payloads**"
 4.  Виберіть "**Incognito_RCM.bin**"
@@ -47,7 +47,7 @@ author_profile: true
 
 1.  Скопіюйте `prodinfo_sysnand.bin` в корінь вашої карти пам'яті
 {% include /inc/launch-hekate.txt %}
-2.  Встановіть {% include abbr/uk/kefir_addr.txt %} за інструкцією, що знаходиться в його репозиторії
+2.  Встановіть {% include abbr/kefir_addr.txt %} за інструкцією, що знаходиться в його репозиторії
     *   Якщо вже робили, не потрібно робити повторно
 3.  Перейдіть до меню "**Payloads**"
 4.  Виберіть "**Incognito_RCM.bin**"

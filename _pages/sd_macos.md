@@ -38,7 +38,7 @@ author_profile: true
 
 ### Очищення атрибутів 
 
-1. Запустіть приставку, утримуючи кнопку зниження гучності, щоб потрапити в {% include abbr/uk/hekate.txt abbr="hekate" %}
+1. Запустіть приставку, утримуючи кнопку зниження гучності, щоб потрапити в {% include abbr/hekate.txt abbr="hekate" %}
 {% include /inc/fixatributes.txt %}
 
 

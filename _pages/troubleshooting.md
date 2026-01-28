@@ -18,14 +18,14 @@ author_profile: true
 Можливі шляхи вирішення проблеми:
 
 1. Переконайтеся, що можете завантажитися в сток. Якщо це так, можливо ви встановили якісь системні модулі, які заважають завантаженню. Для цього: 
-	1. Запустіть {% include abbr/uk/hekate.txt abbr="hekate" %} -> **Payloads** -> `TegraExplorer` -> `kefir-helper.te`
+	1. Запустіть {% include abbr/hekate.txt abbr="hekate" %} -> **Payloads** -> `TegraExplorer` -> `kefir-helper.te`
 	1. Якщо після цього приставка запрацювала, шукайте проблему в установлених модулях 
-1. Перевстановіть {% include abbr/uk/kefir_addr.txt %} начисто. Для цього видаліть з карти пам'яті все, крім папки `Nintendo` та `emummc` і ставте кефір заново
+1. Перевстановіть {% include abbr/kefir_addr.txt %} начисто. Для цього видаліть з карти пам'яті все, крім папки `Nintendo` та `emummc` і ставте кефір заново
 1. Відформатуйте вашу карту пам'яті в [FAT32](https://format.customfw.xyz){:target="_blank"}. 
-1. Перевстановіть {% include abbr/uk/kefir_addr.txt %} начисто. Для цього видаліть з карти пам'яті все, крім папки `Nintendo` та `emummc` (або `sxos/emunand`) і ставте кефір заново
+1. Перевстановіть {% include abbr/kefir_addr.txt %} начисто. Для цього видаліть з карти пам'яті все, крім папки `Nintendo` та `emummc` (або `sxos/emunand`) і ставте кефір заново
 1. Перевірте чи монтується розділ `USER`. Для цього: 
-	1. Запустіть {% include abbr/uk/hekate.txt abbr="hekate" %} -> **Payloads** -> `TegraExplorer.bin`
-	1. Виберіть **Browse EMUMMC** якщо не запускається {% include abbr/uk/emunand.md abbr="EmuNAND" %} або **Browse EMMC**, якщо не запускається {% include abbr/uk/sysnand.md abbr="SysNAND" %}
+	1. Запустіть {% include abbr/hekate.txt abbr="hekate" %} -> **Payloads** -> `TegraExplorer.bin`
+	1. Виберіть **Browse EMUMMC** якщо не запускається {% include abbr/emunand.md abbr="EmuNAND" %} або **Browse EMMC**, якщо не запускається {% include abbr/sysnand.md abbr="SysNAND" %}
 	1. Перейдіть у розділ **USER**. Якщо помилок немає, то розділ USER монтується і проблема не в ньому
 1. [Відновіть бекап](/backup-nand#відновлення-резервної-копії){:target="_blank"}, якщо такий є
 1. Зробіть [скидання до заводських налаштувань](/system-wipe){:target="_blank"}
@@ -37,7 +37,7 @@ author_profile: true
 
 Можливі шляхи вирішення проблеми:
 1. Можливо на приставці стояв AutoRCM або вона сіла - [найбільш розлога інструкція з запуску приставки, що сіла](https://4pda.to/forum/index.php?showtopic=900987&st=16320#entry89527321){:target="_blank"}
-1. Спробуйте запустити {% include abbr/uk/hekate.txt abbr="hekate" %}. Якщо вийшло, можливо ви намагалися відкотити прошивку через що стався конфлікт між версією прошивки та спаленими ф'юзами. Спробуйте запустити **Full Stock** та [оновити прошивку до останньої версії](/update-fw){:target="_blank"}, або відключити Emunand (hekate > emuMMC > Change emummc > Disable) та оновити прошивку через налаштування
+1. Спробуйте запустити {% include abbr/hekate.txt abbr="hekate" %}. Якщо вийшло, можливо ви намагалися відкотити прошивку через що стався конфлікт між версією прошивки та спаленими ф'юзами. Спробуйте запустити **Full Stock** та [оновити прошивку до останньої версії](/update-fw){:target="_blank"}, або відключити Emunand (hekate > emuMMC > Change emummc > Disable) та оновити прошивку через налаштування
 1. [Відновіть бекап](/backup-nand#відновлення-резервної-копії){:target="_blank"}, якщо такий є
 1. Зробіть [відновлення прошивки](/downgrade_fw){:target="_blank"}
 
@@ -46,13 +46,13 @@ author_profile: true
 {% spoiler Після прокидання пейлоада та появи сплешскрінів, консоль висить у чорному екрані / на логотипі Atmosphere / на логотипі Nintendo. %}
 
 1. Переконайтеся, що можете завантажитися в сток. Якщо це так, можливо ви встановили якісь системні модулі, які заважають завантаженню. Для цього: 
-	1. Запустіть {% include abbr/uk/hekate.txt abbr="hekate" %} -> **Payloads** -> `TegraExplorer` -> `kefir-helper.te`
+	1. Запустіть {% include abbr/hekate.txt abbr="hekate" %} -> **Payloads** -> `TegraExplorer` -> `kefir-helper.te`
 	1. Якщо після цього приставка запрацювала, шукайте проблему в установлених модулях 
 1. Якщо ваша карта в exFAT, відформатуйте її в [FAT32](https://format.customfw.xyz){:target="_blank"}. 
-1. Перевстановіть {% include abbr/uk/kefir_addr.txt %} начисто. Для цього видаліть з карти пам'яті все, крім папки `Nintendo` та `emummc` (або `sxos/emunand`) і ставте кефір заново
+1. Перевстановіть {% include abbr/kefir_addr.txt %} начисто. Для цього видаліть з карти пам'яті все, крім папки `Nintendo` та `emummc` (або `sxos/emunand`) і ставте кефір заново
 1. Перевірте чи монтується розділ `SYSTEM`. Для цього: 
-	1. Запустіть {% include abbr/uk/hekate.txt abbr="hekate" %} -> **Payloads** -> `TegraExplorer.bin`
-	1. Виберіть **Browse EMUMMC** якщо не запускається {% include abbr/uk/emunand.md abbr="EmuNAND" %} або **Browse EMMC**, якщо не запускається {% include abbr/uk/sysnand.md abbr="SysNAND" %}
+	1. Запустіть {% include abbr/hekate.txt abbr="hekate" %} -> **Payloads** -> `TegraExplorer.bin`
+	1. Виберіть **Browse EMUMMC** якщо не запускається {% include abbr/emunand.md abbr="EmuNAND" %} або **Browse EMMC**, якщо не запускається {% include abbr/sysnand.md abbr="SysNAND" %}
 	1. Перейдіть у розділ **SYSTEM**. Якщо помилок немає, то розділ SYSTEM монтується і проблема не в ньому
 1. [Відновіть бекап](/backup-nand#відновлення-резервної-копії){:target="_blank"}, якщо такий є
 1. Зробіть [відновлення прошивки](/downgrade_fw){:target="_blank"}
@@ -73,7 +73,7 @@ author_profile: true
 
 Відформатуйте вашу карту пам'яті в [FAT32](https://format.customfw.xyz){:target="_blank"}. 
 
-Якщо не допомагає, перевстановіть {% include abbr/uk/kefir_addr.txt %} начисто. Для цього видаліть з карти пам'яті все, крім папки Nintendo та emummc (або sxos/emunand) і ставте кефір заново
+Якщо не допомагає, перевстановіть {% include abbr/kefir_addr.txt %} начисто. Для цього видаліть з карти пам'яті все, крім папки Nintendo та emummc (або sxos/emunand) і ставте кефір заново
 
 {% endspoiler %}
 
@@ -88,7 +88,7 @@ author_profile: true
 {% endspoiler %}
 
 {% spoiler При запуску прошивки отримую помилку "Fatal Error: [NXBOOT]" %}
-Оновіть {% include abbr/uk/kefir_addr.txt %}
+Оновіть {% include abbr/kefir_addr.txt %}
 {% endspoiler %}
 
 ### Проблеми з запуском ігор
@@ -107,8 +107,8 @@ author_profile: true
 
 {% spoiler Після запуску приставки помилка на чорному фоні з написом "**Panic occurred while running Atmosphere**". %}
 
-Оновіть {% include abbr/uk/kefir_addr.txt %}. 
-Якщо оновлення {% include abbr/uk/kefir_addr.txt %} не допомогло, зверніть увагу на числа у другому рядку після **Title:**. Ці числа вказують на те, який тайтл викликав помилку і через який не завантажується приставка. Якщо номер тайтла **не** `010000000000000D`, то перейдіть у папку `atmosphere/contents` (`atmosphere/titles` на атмосфері нижче ніж 0.10.0) і видаліть папку з номером, вказаним на екрані вашої приставки у другому рядку. Якщо номер тайтла - `010000000000000D`, то найімовірніше помилка викликана тим, що якесь хомбрю запущено в режимі аплету і йому не вистачає пам'яті. Якщо номер тайтла - `010000000000001F`, то витягніть картридж із приставки. Тримайте emunand та sysnand на одній версії прошивки, щоб надалі не було таких проблем.
+Оновіть {% include abbr/kefir_addr.txt %}. 
+Якщо оновлення {% include abbr/kefir_addr.txt %} не допомогло, зверніть увагу на числа у другому рядку після **Title:**. Ці числа вказують на те, який тайтл викликав помилку і через який не завантажується приставка. Якщо номер тайтла **не** `010000000000000D`, то перейдіть у папку `atmosphere/contents` (`atmosphere/titles` на атмосфері нижче ніж 0.10.0) і видаліть папку з номером, вказаним на екрані вашої приставки у другому рядку. Якщо номер тайтла - `010000000000000D`, то найімовірніше помилка викликана тим, що якесь хомбрю запущено в режимі аплету і йому не вистачає пам'яті. Якщо номер тайтла - `010000000000001F`, то витягніть картридж із приставки. Тримайте emunand та sysnand на одній версії прошивки, щоб надалі не було таких проблем.
 
 ![](/assets/images/switch/screenshots/atmos_title_error2.png)
 {: .text-center}
@@ -123,22 +123,21 @@ author_profile: true
 
 {% spoiler Не можу встановити ігри в NAND %}
 
-Судячи з усього ви використовуєте EmuNAND і старий {% include abbr/uk/kefir_addr.txt %}. Оновіть його. 
+Судячи з усього ви використовуєте EmuNAND і старий {% include abbr/kefir_addr.txt %}. Оновіть його. 
 
 {% endspoiler %}
 
 {% spoiler В Tinfoil зникли всі ігри %}
 
 * Переконайтеся, що на приставці стоїть вірна дата та час. 
-* Оновіть {% include abbr/uk/kefir_addr.txt %} до актуальної версії 
-* Видаліть tinfoil, оновіть {% include abbr/uk/kefir_addr.txt %}, встановіть tinfoil з папки `games` на карті пам'яті 
-* [Ще поради](https://vk.com/topic-178659422_48077007){:target="_blank"}
+* Оновіть {% include abbr/kefir_addr.txt %} до актуальної версії 
+* Видаліть tinfoil, оновіть {% include abbr/kefir_addr.txt %}, встановіть tinfoil з папки `games` на карті пам'яті 
 
 {% endspoiler %}
 
 {% spoiler Деякі ігри не запускаються з помилкою "Програма закрита, тому що сталася помилка" %}
 
-Можливо, встановлений ReverseNX. Видаліть його. Також спробуйте вимкнути приставку, запустіть {% include abbr/uk/hekate.txt abbr="hekate" %}, перейдіть в **Payloads** і виберіть `fusee.bin`, після чого відразу затисніть одночасно обидві кнопки гучності доти, доки не потрапите в рекавері. Після вимкніть приставку утримуючи кнопку живлення. Потім увімкніть як зазвичай. 
+Можливо, встановлений ReverseNX. Видаліть його. Також спробуйте вимкнути приставку, запустіть {% include abbr/hekate.txt abbr="hekate" %}, перейдіть в **Payloads** і виберіть `fusee.bin`, після чого відразу затисніть одночасно обидві кнопки гучності доти, доки не потрапите в рекавері. Після вимкніть приставку утримуючи кнопку живлення. Потім увімкніть як зазвичай. 
 
 {% endspoiler %}
 
@@ -217,7 +216,7 @@ author_profile: true
 {% spoiler Виникають помилки при встановленні NSP-файлів  %}
 
 * Дайте файлам коротке ім'я
-* Оновіть {% include abbr/uk/kefir_addr.txt %}
+* Оновіть {% include abbr/kefir_addr.txt %}
 * Якщо не допомогло - перекачайте файли, можливо вони не докачані
 * На switch'і через hekate у вкладці **tools** виберіть **Unset archive bit**
 {% endspoiler %}

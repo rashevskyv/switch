@@ -50,12 +50,12 @@ author_profile: true
 	1. Увімкніть приставку, утримуючи кнопку підвищення гучності, поки не з'явиться меню SXOS 
 	1. Перейдіть в "**Options**" -> "**SX Core**" -> "**Cleanup**", потім виберіть **Power Off** і **не вмикайте** приставку, поки не встановите кефір!
 1. Вставте карту пам'яті приставки в ПК 
-1. Встановіть свіжий {% include abbr/uk/kefir_addr.txt %}
+1. Встановіть свіжий {% include abbr/kefir_addr.txt %}
 1. Дочекайтеся закінчення встановлення, потім поверніть карту пам'яті в консоль
 
 ### Частина II - Міграція Emunand 
 
-Якщо ви не знаєте, чи є у вас {% include abbr/uk/emunand.md abbr="EmuNAND" %}, вставте карту пам'яті в ПК і подивіться, чи є в папці `sxos` папка `emunand`. Якщо папка є - у вас є емунанд 
+Якщо ви не знаєте, чи є у вас {% include abbr/emunand.md abbr="EmuNAND" %}, вставте карту пам'яті в ПК і подивіться, чи є в папці `sxos` папка `emunand`. Якщо папка є - у вас є емунанд 
 {: .notice--info}
 
 1. Увімкніть консоль 
@@ -102,7 +102,7 @@ author_profile: true
 1. Перейдіть в "**Options**" -> "**SX Core** / **SX Lite**", потім виберіть "**Cleanup**" -> "**Continue**"
 1. Перейдіть в "**Payloads**" -> `payload.bin`"`, потім виберіть "**Launch**". Має завантажитися SysNAND.
 
-Тепер встановіть {% include abbr/uk/kefir_addr.txt %} ще раз. Наступні запуски kefir буде запускатися автоматично відразу при ввімкненні приставки.
+Тепер встановіть {% include abbr/kefir_addr.txt %} ще раз. Наступні запуски kefir буде запускатися автоматично відразу при ввімкненні приставки.
 {: .notice--info}
 
 {% endspoiler %}
@@ -126,7 +126,7 @@ author_profile: true
 
 {% spoiler Як дізнатися версію свого emunand:  %}
 
-1. Запустіть {% include abbr/uk/hekate.txt abbr="hekate" %}
+1. Запустіть {% include abbr/hekate.txt abbr="hekate" %}
 1. Запустіть **TegraExplorer** (**Payloads** -> `TegraExplorer.bin`)
 1. Запустіть `FW_version.te` (**Launch script**)
 1. Дочекайтеся появи версії Sys та EmuNAND на екрані
@@ -153,7 +153,7 @@ author_profile: true
 Якщо не помогло, вам доведеться [створювати новий EmuNAND](/emunand){:target="_blank"}
 {: .notice--info}
 
-Тепер встановіть {% include abbr/uk/kefir_addr.txt %} ще раз. Наступні запуски kefir буде запускатися автоматично відразу при ввімкненні приставки.
+Тепер встановіть {% include abbr/kefir_addr.txt %} ще раз. Наступні запуски kefir буде запускатися автоматично відразу при ввімкненні приставки.
 {: .notice--info}
 
 {% endspoiler %}

@@ -1,5 +1,5 @@
 <abbr title="файли з виконуваним кодом у форматі `.bin`, які ми завантажуємо в приставку, найчастіше - завантажувачі">(.*?)</abbr>
 
-{% include abbr/uk/payload.txt abbr="$1" %}
+{% include abbr/payload.txt abbr="$1" %}
 
 (.*?)
