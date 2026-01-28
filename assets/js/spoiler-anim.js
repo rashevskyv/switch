@@ -93,37 +93,31 @@ document.addEventListener('DOMContentLoaded', function () {
         el.style.transition = 'height 0.3s ease-out';
         el.style.height = endHeight + 'px';
 
+        // Restore position relative to viewport immediately
+        if (el.dataset.openPosition) {
+            const targetViewportTop = parseFloat(el.dataset.openPosition);
+            const currentRect = el.getBoundingClientRect();
+            const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Calculate where we need to scroll to
+            const absoluteTop = currentRect.top + currentScrollTop;
+            const targetScrollTop = absoluteTop - targetViewportTop;
+
+            window.scrollTo({
+                top: targetScrollTop,
+                behavior: 'smooth'
+            });
+
+            // Clean up
+            delete el.dataset.openPosition;
+        }
+
         el.addEventListener('transitionend', function transitionEnd() {
             el.open = false;
             el.style.height = '';
             el.style.transition = '';
             el.style.overflow = ''; // Reset overflow
             el.removeEventListener('transitionend', transitionEnd);
-
-            // Restore position relative to viewport
-            if (el.dataset.openPosition) {
-                const targetViewportTop = parseFloat(el.dataset.openPosition);
-                const currentRect = el.getBoundingClientRect();
-                const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-                // Calculate where we need to scroll to
-                // We want: newBoundingRect.top == targetViewportTop
-                // newBoundingRect.top is roughly (absoluteTop - newScrollTop)
-                // So: absoluteTop - newScrollTop = targetViewportTop
-                // newScrollTop = absoluteTop - targetViewportTop
-                // absoluteTop = currentRect.top + currentScrollTop
-
-                const absoluteTop = currentRect.top + currentScrollTop;
-                const targetScrollTop = absoluteTop - targetViewportTop;
-
-                window.scrollTo({
-                    top: targetScrollTop,
-                    behavior: 'smooth'
-                });
-
-                // Clean up
-                delete el.dataset.openPosition;
-            }
         });
     }
 });
