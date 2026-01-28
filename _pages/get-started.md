@@ -32,4 +32,4 @@ author_profile: true
 
 ## Підбір відповідної вразливості
 
-{% include /inc/uk/checker.md %}
+{% include /inc/checker.md %}

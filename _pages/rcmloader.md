@@ -37,7 +37,7 @@ author_profile: true
 	{: .notice--info}
 
 1. Від'єднайте {% include abbr/uk/dongle.txt abbr="донгл" %} від ПК
-1. Довгим натисканням кнопки {% include inc/uk/btn.txt btn="+" %} перемкніть {% include abbr/uk/dongle.txt abbr="донгл" %} у потрібний режим, згідно з кольором діода та відповідністю його таблиці
+1. Довгим натисканням кнопки {% include /inc/btn.txt btn="+" %} перемкніть {% include abbr/uk/dongle.txt abbr="донгл" %} у потрібний режим, згідно з кольором діода та відповідністю його таблиці
 
 ## Використання донгла
 
@@ -51,7 +51,7 @@ author_profile: true
     {: .text-center}
     {: .notice--info}
 
-1. Перемкніть {% include abbr/uk/dongle.txt abbr="донгл" %} на блакитне світло діода за допомогою довгого натискання на кнопку {% include inc/uk/btn.txt btn="+" %}
+1. Перемкніть {% include abbr/uk/dongle.txt abbr="донгл" %} на блакитне світло діода за допомогою довгого натискання на кнопку {% include /inc/btn.txt btn="+" %}
 	* Достатньо виставити один раз
 1. Вставте {% include abbr/uk/dongle.txt abbr="донгл" %} в USBtype-C порт світча
 1. Утримуючи (VOL+), увімкніть приставку

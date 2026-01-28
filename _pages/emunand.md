@@ -129,25 +129,25 @@ author_profile: true
 
 {% spoiler Робота зі стоковою прошивкою %}
 
-{% include inc/uk/sysnand_warning.md %}
+{% include /inc/sysnand_warning.md %}
 
 ### Запуск стоку
 
-{% include inc/uk/launch-hekate.txt %}
+{% include /inc/launch-hekate.txt %}
 1. Перейдіть в "**Launch**"
 1. Запустіть "**Full Stock**" для запуску {% include abbr/uk/sysnand.md abbr="офіційної прошивки" %}
 
 ### Запуск semi-stock
 
-1. Запустіть **Uberhand** ({% include inc/uk/btn.txt btn="L" %} + {% include inc/uk/btn.txt btn="R3" %} + {% include inc/uk/btn.txt btn="DOWN" %}), перейдіть в меню **Packages**, натиснувши вправо і виберіть **Semi-stock**
+1. Запустіть **Uberhand** ({% include /inc/btn.txt btn="L" %} + {% include /inc/btn.txt btn="R3" %} + {% include /inc/btn.txt btn="DOWN" %}), перейдіть в меню **Packages**, натиснувши вправо і виберіть **Semi-stock**
 
 ### Запуск EmuNAND зі стоку
 
-* Якщо ви знаходитеся в **Semi-Stock**, запустіть **Uberhand** ({% include inc/uk/btn.txt btn="L" %} + {% include inc/uk/btn.txt btn="R3" %} + {% include inc/uk/btn.txt btn="DOWN" %}), перейдіть в меню **Packages**, натиснувши вправо і виберіть **Emunand**
+* Якщо ви знаходитеся в **Semi-Stock**, запустіть **Uberhand** ({% include /inc/btn.txt btn="L" %} + {% include /inc/btn.txt btn="R3" %} + {% include /inc/btn.txt btn="DOWN" %}), перейдіть в меню **Packages**, натиснувши вправо і виберіть **Emunand**
 * Якщо ви знаходитеся в **Full Stock** і ваша приставка чипована, просто перезавантажте приставку
 * Якщо ви знаходитеся в **Full Stock** в приставці, без чипа:
     1. Вимкніть приставку
-    {% include inc/uk/launch-cfw.txt %}
+    {% include /inc/launch-cfw.txt %}
 
 {% endspoiler %}
 

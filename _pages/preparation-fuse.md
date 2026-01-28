@@ -46,11 +46,11 @@ ___
 
 {% spoiler %}
 
-{% include inc/uk/additional.txt %}
+{% include /inc/additional.txt %}
 
 {% endspoiler %}
 
-{% include /inc/uk/final_message.md %}
+{% include /inc/final_message.md %}
 
 <script>
     // Встановлюємо значення

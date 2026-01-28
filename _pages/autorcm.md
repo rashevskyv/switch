@@ -23,14 +23,14 @@ author_profile: true
 
 ### Встановлення AutoRCM
 
-{% include inc/uk/launch-hekate.txt %}
+{% include /inc/launch-hekate.txt %}
 1.  Перейдіть до розділу "**Tools**" -> "**Arch bit - AutoRCM**" (внизу екрана) та встановіть "**AutoRCM**" у положення "**ON**"
 2.  Натисніть "**Home**" вгорі екрана
 3.  [Запустіть](/cfw){:target="_blank"} {% include abbr/uk/cfw.txt abbr="кастомну прошивку" %}
 
 ### Відключення AutoRCM
 
-{% include inc/uk/launch-hekate.txt %}
+{% include /inc/launch-hekate.txt %}
 1.  Перейдіть до розділу "**Tools**" -> "**Arch bit - AutoRCM**" (внизу екрана) та встановіть "**AutoRCM**" у положення "**OFF**"
 2.  Натисніть "**Home**" вгорі екрана
 3.  [Запустіть](/cfw){:target="_blank"} {% include abbr/uk/cfw.txt abbr="кастомну прошивку" %}

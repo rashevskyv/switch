@@ -19,7 +19,7 @@ author_profile: true
 * Увімкніть [відображення розширень файлів](https://customfw.xyz/file-extensions-windows){:target="_blank"}, якщо у вас Windows
 * Вміння [запускати пейлоади через Fusée Gelée](/fusee-gelee){:target="_blank"}
 * Приставка має бути повністю заряджена!
-* Свіжа версія пейлоада {% include inc/uk/hekate.txt %}
+* Свіжа версія пейлоада {% include /inc/hekate.txt %}
 * [Ключі](/files/keys.zip){:target="_blank"}, однакові для всіх консолей
 * Прошивка **6.1.0**:
 	* [ЯД](https://yadi.sk/d/Qaaj2QznA1wc_g){:target="_blank"}
@@ -75,7 +75,7 @@ author_profile: true
 1. Скопіюйте **вміст** `.zip`-архіву з [memloader](/files/memloader.zip){:target="_blank"} у **корінь** вашої карти пам'яті, погоджуючись на заміну (об'єднати в macOS)
 1. Скопіюйте пейлоад `memloader.bin` у папку `bootloader/payloads`
 1. Поверніть карту пам'яті назад у Switch
-{% include inc/uk/launch-hekate.txt %}
+{% include /inc/launch-hekate.txt %}
 1. Перейдіть у меню "**Payloads**"
 1. Виберіть "**memloader.bin**"
 
@@ -83,7 +83,7 @@ author_profile: true
 
 {% spoiler Монтування BOOT0 в "LINUX UMS DISK 0" %}
 
-{% include inc/uk/mount_boot.txt
+{% include /inc/mount_boot.txt
 
 	boot="BOOT0" 
 
@@ -105,14 +105,14 @@ author_profile: true
 
 1. Натисніть "**Flash!**" та очікуйте закінчення завантаження
 1. Закрийте програму
-1. Утримуйте кнопку {% include inc/uk/btn.txt btn="POWER" %} 15 секунд, поки не згасне підсвічування екрана Switch
+1. Утримуйте кнопку {% include /inc/btn.txt btn="POWER" %} 15 секунд, поки не згасне підсвічування екрана Switch
 1. **Повторіть для BOOT1**
 
 {% endspoiler %}
 
 {% spoiler Монтування eMMC RAW в "LINUX UMS DISK 0" %}
 
-{% include inc/uk/mount_boot.txt 
+{% include /inc/mount_boot.txt 
 
 	boot="eMMC RAW" 
 
@@ -171,7 +171,7 @@ author_profile: true
 
 {% spoiler Робота з розділом SAFE  %}
 
-{% include inc/uk/mount.txt 
+{% include /inc/mount.txt 
 
 	mount="SAFE" 
 
@@ -183,7 +183,7 @@ author_profile: true
 
 {% spoiler Робота з розділом SYSTEM %}
 
-{% include inc/uk/mount.txt 
+{% include /inc/mount.txt 
 
 	mount="SYSTEM" 
 
@@ -214,7 +214,7 @@ author_profile: true
 
 {% spoiler Робота з розділом USER %}
 
-{% include inc/uk/mount.txt 
+{% include /inc/mount.txt 
 
 	mount="USER" 
 
@@ -237,14 +237,14 @@ author_profile: true
 1. Перейдіть у папку `NX-6.1.0-exfat`, яку ми згенерували в Частині III та скопіюйте весь **вміст** папки `USER` на змонтований диск із заміною (**об'єднати** на macOS)
 1. Після закінчення копіювання відмонтуйте диск, натиснувши на кнопку "**Unmount**" у вікні HacDiskMount
 1. Закрийте HacDiskMount
-1. Вимкніть Switch, затиснувши кнопку {% include inc/uk/btn.txt btn="POWER" %} на 15 секунд, поки підсвічування екрана не вимкнеться
+1. Вимкніть Switch, затиснувши кнопку {% include /inc/btn.txt btn="POWER" %} на 15 секунд, поки підсвічування екрана не вимкнеться
 
 {% endspoiler %}
 
 
 ### Частина V - AutoRCM
 
-{% include inc/uk/launch-hekate.txt %}
+{% include /inc/launch-hekate.txt %}
 1. Перейдіть у розділ "**Tools**" -> "**autoRCM**" і виберіть "**Enable AutoRCM**", потім натисніть будь-яку кнопку і виберіть "**Back**" для повернення в головне меню
 
 ___

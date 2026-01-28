@@ -4,7 +4,7 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 Copyright (c) 2015 Luke Jackson
 */
 
-$(document).ready(function(){
+$(document).ready(function () {
 
   var $btn = $('nav.greedy-nav button');
   var $vlinks = $('nav.greedy-nav .visible-links');
@@ -16,8 +16,8 @@ $(document).ready(function(){
   var breakWidths = [];
 
   // Get initial state
-  $vlinks.children().outerWidth(function(i, w) {
-    totalSpace += w;
+  $vlinks.children().each(function () {
+    totalSpace += $(this).outerWidth(true);
     numOfItems += 1;
     breakWidths.push(totalSpace);
   });
@@ -52,23 +52,23 @@ $(document).ready(function(){
   }
 
   // Window listeners
-  $(window).resize(function() {
+  $(window).resize(function () {
     check();
   });
 
-  $btn.on('click', function() {
+  $btn.on('click', function () {
     $hlinks.toggleClass('hidden');
     $(this).toggleClass('close');
     clearTimeout(timer);
   });
 
-  $hlinks.on('mouseleave', function() {
+  $hlinks.on('mouseleave', function () {
     // Mouse has left, start the timer
-    timer = setTimeout(function() {
+    timer = setTimeout(function () {
       $hlinks.addClass('hidden');
       $btn.toggleClass('close');
     }, closingTime);
-  }).on('mouseenter', function() {
+  }).on('mouseenter', function () {
     // Mouse is back, cancel the timer
     clearTimeout(timer);
   });

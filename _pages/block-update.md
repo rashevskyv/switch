@@ -27,13 +27,13 @@ author_profile: true
 ### Блокування доступу до серверів Nintendo
 
 1.  Створіть [резервну копію NAND](/backup-nand){:target="_blank"} консолі та помістіть її в надійне місце, якщо ще не робили цього
-{% include inc/uk/launch-hekate.txt %}
+{% include /inc/launch-hekate.txt %}
 2.  Встановіть {% include abbr/uk/kefir_addr.txt %} за інструкцією, що знаходиться в його репозиторії
     *   Якщо вже робили, не потрібно робити повторно
 3.  Перейдіть до меню "**Payloads**"
 4.  Виберіть "**Incognito_RCM.bin**"
 5.  Виберіть "**Backup (SysNAND)**" або "**Backup (EmuMMC)**" залежно від того, в якому з розділів ви хочете заблокувати доступ до серверів Nintendo
-    *   Навігація по меню здійснюється кнопками гучності, а вибір кнопкою {% include inc/uk/btn.txt btn="POWER" %}
+    *   Навігація по меню здійснюється кнопками гучності, а вибір кнопкою {% include /inc/btn.txt btn="POWER" %}
     *   Якщо ви не використовуєте EmuNAND, виберіть SysNAND
     *   Якщо ви використовуєте EmuNAND для піратки, а SysNAND для ліцензії, виберіть EmuNAND
 6.  Виберіть "**Incognito (SysNAND)**" або "**Incognito (EmuMMC)**" залежно від того, в якому з розділів ви хочете заблокувати доступ до серверів Nintendo
@@ -46,7 +46,7 @@ author_profile: true
 ### Відновлення доступу до серверів Nintendo
 
 1.  Скопіюйте `prodinfo_sysnand.bin` в корінь вашої карти пам'яті
-{% include inc/uk/launch-hekate.txt %}
+{% include /inc/launch-hekate.txt %}
 2.  Встановіть {% include abbr/uk/kefir_addr.txt %} за інструкцією, що знаходиться в його репозиторії
     *   Якщо вже робили, не потрібно робити повторно
 3.  Перейдіть до меню "**Payloads**"

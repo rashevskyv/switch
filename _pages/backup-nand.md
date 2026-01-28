@@ -34,13 +34,13 @@ author_profile: true
 
 1. Встановіть {% include abbr/uk/kefir_addr.txt %} за інструкцією, що знаходиться в його репозиторії
     * Якщо вже робили, не потрібно робити повторно
-{% include inc/uk/launch-hekate.txt %}
+{% include /inc/launch-hekate.txt %}
 1. Перейдіть в меню "**Payloads**"
 1. Виберіть "**Lockpick_RCM.bin**"
 1. Виберіть "**Dump keys from SysNAND**"
-    * Навігація по меню здійснюється кнопками гучності, а вибір кнопкою {% include inc/uk/btn.txt btn="POWER" %}
+    * Навігація по меню здійснюється кнопками гучності, а вибір кнопкою {% include /inc/btn.txt btn="POWER" %}
 	* Дампінг почнеться негайно
-1. Натисніть {% include inc/uk/btn.txt btn="POWER" %}, щоб повернутися в головне меню програми
+1. Натисніть {% include /inc/btn.txt btn="POWER" %}, щоб повернутися в головне меню програми
 1. Виберіть "**Reboot to hekate**", щоб завантажитися в прошивку
 
 ### Частина II - Резервне копіювання NAND
@@ -53,7 +53,7 @@ author_profile: true
 {: .notice--info}
 
 1. Оновіть {% include abbr/uk/kefir_addr.txt %} за інструкцією з репозиторію, якщо не робили цього раніше
-{% include inc/uk/launch-hekate.txt %}
+{% include /inc/launch-hekate.txt %}
 1. Перейдіть в меню "**Tools**" -> "**Backup eMMC**"
 1. Виберіть "**eMMC RAW GPP**"
 	* Дочекайтеся закінчення резервного копіювання
@@ -67,7 +67,7 @@ author_profile: true
 
 {% spoiler Частина II - робимо дамп завантажувальних розділів (BOOT0/BOOT1) %}
 
-{% include inc/uk/launch-hekate.txt %}
+{% include /inc/launch-hekate.txt %}
 1. Перейдіть в меню "**Tools**" -> "**Backup eMMC**"
 1. Виберіть "**eMMC BOOT0 & BOOT1**"
 1. Натисніть кнопку "**Close**", щоб повернутися в попереднє меню
@@ -85,7 +85,7 @@ author_profile: true
 
 1. Вимкніть консоль
 1. Вставте карту пам'яті приставки в ПК
-{% include inc/uk/launch-hekate.txt %}
+{% include /inc/launch-hekate.txt %}
 1. Перейдіть в меню "**Tools**" -> "**USB Tools**"
 1. Під'єднайте консоль до ПК
 1. Натисніть "**eMMC RAW GPP**"
@@ -176,11 +176,11 @@ author_profile: true
 	{: .text-center}
 	{: .notice--info}	
 1. Перемістіть папку `backup` в корінь карти пам'яті вашої консолі
-{% include inc/uk/launch-hekate.txt %}
+{% include /inc/launch-hekate.txt %}
 1. Перейдіть в "**Tools**" -> "**Restore**" і виберіть "**Restore eMMC"**
 1. Виберіть "**eMMC BOOT0 & BOOT1**" для відновлення BOOT0 і BOOT1
 1. Виберіть "**eMMC RAW GPP**" для відновлення RAW розділу
-1. Для підтвердження натисніть {% include inc/uk/btn.txt btn="POWER" %}
+1. Для підтвердження натисніть {% include /inc/btn.txt btn="POWER" %}
 1. Не забудьте видалити з карти пам'яті папку `backup` після закінчення відновлення і перевірки працездатності консолі після відновлення
 
 {% endspoiler %}

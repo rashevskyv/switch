@@ -46,7 +46,7 @@ lang: ukдампимо-ключі){:target="_blank"}
   * [TegraExplorer](https://github.com/rashevskyv/TegraExplorer/){:target="_blank"} - файловий менеджер для Switch у вигляді пейлоада. Аналог GodMode9 для 3DS
 5. **Встановлене Homebrew**
   * [DBI](https://github.com/rashevskyv/dbi){:target="_blank"} - програма для [встановлення ігор](/games){:target="_blank"} по USB або з карти пам'яті
-  * [{% include /inc/uk/tinfoil.txt %}](http://tinfoil.io){:target="_blank"} - програма, що дозволяє [качати ігри](/tinfoil){:target="_blank"} для приставки прямо з мережі
+  * [{% include /inc/tinfoil.txt %}](http://tinfoil.io){:target="_blank"} - програма, що дозволяє [качати ігри](/tinfoil){:target="_blank"} для приставки прямо з мережі
   * [Kefir Updater](https://github.com/rashevskyv/kefir-updater){:target="_blank"} - програма для оновлення kefir через інтернет
   * [Sphaira](https://github.com/ITotalJustice/sphaira/releases/){:target="_blank"} - середовище для запуску homebrew, скачування тем та додатків на switch, файловий менеджер 
   * [Daybreak](https://github.com/Atmosphere-NX/Atmosphere/tree/0.14.1/troposphere/daybreak){:target="_blank"} - програма для [безпечного оновлення](/update-fw){:target="_blank"} версії системного ПЗ приставки
@@ -89,7 +89,7 @@ lang: ukдампимо-ключі){:target="_blank"}
 {: .notice--warning}
 
 Якщо приставка вимкнена, вставте карту пам'яті в ПК, якщо увімкнена, то:
-1. Перезавантажте приставку через меню, що викликається утриманням кнопки {% include inc/uk/btn.txt btn="POWER" %}
+1. Перезавантажте приставку через меню, що викликається утриманням кнопки {% include /inc/btn.txt btn="POWER" %}
 1. На сплеш-скріні кефіру натисніть кнопку зниження гучності, щоб потрапити в hekate
 1. Тепер ви можете вийняти карту пам'яті зі свіча і вставити її в ПК.
 
@@ -151,7 +151,7 @@ lang: ukдампимо-ключі){:target="_blank"}
 
 
 ## Запуск Atmosphere
-{% include inc/uk/launch-cfw.txt %}
+{% include /inc/launch-cfw.txt %}
 
 Якщо після входу в прошивку приставка не бачить карту і вимагає оновити прошивку для її роботи, або просто зависає в чорному екрані після логотипу Nintendo, то на вашій приставці не встановлені драйвери exFAT! Відформатуйте карту пам'яті в [FAT32](https://format.customfw.xyz){: target="blank_"}
 {: .notice--warning}
@@ -162,16 +162,16 @@ lang: ukдампимо-ключі){:target="_blank"}
 ### **Важлива інформація!**
 
   * Перезавантаження в hekate відбувається прямо з прошивки, через звичайне меню перезавантаження. Просто затисніть (VOL-) під час сплешскріна кефіру
-  * Ви можете отримати доступ до своєї карти пам'яті, не виймаючи її з приставки по MTP (**DBI** -> **Run MTP Responder**), або через hekate ({% include inc/uk/sd_hekate.md %}) (не у всіх працює коректно, **неможливо оновити kefir по MTP**)
+  * Ви можете отримати доступ до своєї карти пам'яті, не виймаючи її з приставки по MTP (**DBI** -> **Run MTP Responder**), або через hekate ({% include /inc/sd_hekate.md %}) (не у всіх працює коректно, **неможливо оновити kefir по MTP**)
   * Встановлення та оновлення kefir проводяться однаково!
   * При виникненні помилки "**Is BEK missing**" вимкніть приставку й увімкніть заново.
 
 ## Додаткова інформація
-* Для роботи з модулями ([sys-con](https://github.com/cathery/sys-con/releases/latest){:target="_blank"}, [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} та ін.) у кефірі встановлений [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} - спеціальне оверлей-меню для взаємодії з системою. Для його активації натисніть {% include inc/uk/btn.txt btn="L" %} + {% include inc/uk/btn.txt btn="DOWN" %} + {% include inc/uk/btn.txt btn="R3" %}
+* Для роботи з модулями ([sys-con](https://github.com/cathery/sys-con/releases/latest){:target="_blank"}, [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} та ін.) у кефірі встановлений [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} - спеціальне оверлей-меню для взаємодії з системою. Для його активації натисніть {% include /inc/btn.txt btn="L" %} + {% include /inc/btn.txt btn="DOWN" %} + {% include /inc/btn.txt btn="R3" %}
 * Для переходу в semi-stock
-  * **З самої прошивки (рекомендовано)**: перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/uk/btn.txt btn="L" %} + {% include inc/uk/btn.txt btn="DOWN" %} + {% include inc/uk/btn.txt btn="R3" %}), натисніть вправо > `Semi-stock`
+  * **З самої прошивки (рекомендовано)**: перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include /inc/btn.txt btn="L" %} + {% include /inc/btn.txt btn="DOWN" %} + {% include /inc/btn.txt btn="R3" %}), натисніть вправо > `Semi-stock`
   * **При запуску консолі (не рекомендується)**:
-    {% include inc/uk/launch-hekate.txt %}
+    {% include /inc/launch-hekate.txt %}
     1. Виберіть `More-configs` > `Semi-stock`
   * **Зверніть увагу**, що при запуску з прошивки, встановлена тема буде вимкнена, що дозволить уникнути помилок, якщо на консолі різні версії системного ПЗ та емунанду
   * **Зверніть увагу**, що при запуску через `More-configs` > `Semi-stock` тема, що встановлена в emunand буде відображатися і Semi-stock. У випадку, якщо в semi-stock та emunand встановлені різні версії системного ПЗ, це приведе до помилки і перезагрузки приставки!
@@ -181,7 +181,7 @@ lang: ukдампимо-ключі){:target="_blank"}
 * [Проблеми та їх рішення](/troubleshooting){:target="_blank"}
 
 ### Розгін
-Для зміни статуса розгону перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/uk/btn.txt btn="L" %} + {% include inc/uk/btn.txt btn="DOWN" %} + {% include inc/uk/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Overlock status`. **On** - розгін включено, **Off** - вимкнено. 
+Для зміни статуса розгону перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include /inc/btn.txt btn="L" %} + {% include /inc/btn.txt btn="DOWN" %} + {% include /inc/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Overlock status`. **On** - розгін включено, **Off** - вимкнено. 
 
 Якщо розгін включено, `Overlock status` буде в положенні `On`
 {: .notice--info}
@@ -192,7 +192,7 @@ lang: ukдампимо-ключі){:target="_blank"}
 {: .notice--danger}
 
 * **Увімкнення**
-  * Для вмикання перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include inc/uk/btn.txt btn="L" %} + {% include inc/uk/btn.txt btn="DOWN" %} + {% include inc/uk/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Advance` > `Enable 8GB support`
+  * Для вмикання перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include /inc/btn.txt btn="L" %} + {% include /inc/btn.txt btn="DOWN" %} + {% include /inc/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Advance` > `Enable 8GB support`
     * Опція навмисно захована за 3 вкладених мменю, щоб запобігти випадкове включання
 * **Вимкнення**
   * Для вимкнення перевстановіть кефір зручними способом

@@ -22,7 +22,7 @@ details.spoiler:not([open]):hover {
 
 /* Open State */
 details.spoiler[open] {
-	background-color: #ffffff;
+	background-color: #f5f5f5;
 }
 
 /* --- Заголовок (Summary) --- */
@@ -68,7 +68,7 @@ details.spoiler .spoiler-content {
 	padding: 16px 24px;
 	line-height: 1.6;
 	color: #444;
-	background-color: #ffffff;
+	background-color: #f5f5f5;
 	flex: 1;
 }
 

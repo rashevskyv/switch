@@ -145,8 +145,8 @@ author_profile: true
 {% spoiler Не запускається жодна гра. При запуску йде перевірка, потім помилка %}
 
 Можливо, ви видалили тікети всіх ігор. Для перевстановлення тікетів, запустіть [tinfoil](/games){:target="_blank"}, перейдіть на вкладку "**Тікети**", і для кожної гри виконайте наступне:
-1. На грі натисніть {% include inc/uk/btn.txt btn="Y" %}
-1. Натисніть {% include inc/uk/btn.txt btn="R" %}
+1. На грі натисніть {% include /inc/btn.txt btn="Y" %}
+1. Натисніть {% include /inc/btn.txt btn="R" %}
 1. Увімкніть опцію "**Встановити Ticket**"
 1. Натисніть "**Почати встановлення**"
 
@@ -155,8 +155,8 @@ author_profile: true
 {% spoiler Я випадково видалив тікети ігор у tinfoil %}
 
 Для перевстановлення тікетів, запустіть [tinfoil](/games){:target="_blank"}, перейдіть на вкладку "**Тікети**", і для кожної гри виконайте наступне:
-1. На грі натисніть {% include inc/uk/btn.txt btn="Y" %}
-1. Натисніть {% include inc/uk/btn.txt btn="R" %}
+1. На грі натисніть {% include /inc/btn.txt btn="Y" %}
+1. Натисніть {% include /inc/btn.txt btn="R" %}
 1. Увімкніть опцію "**Встановити Ticket**"
 1. Натисніть "**Почати встановлення**"
 
@@ -179,14 +179,14 @@ author_profile: true
 {% spoiler Після встановлення модифікації або перекладу на гру, модифікація або переклад не працює %}
 
 Перезавантажте приставку. Якщо це не допомогло, виправте атрибути
-{% include /inc/uk/fixatributes.txt %}
+{% include /inc/fixatributes.txt %}
 
 {% endspoiler %}
 
 {% spoiler На MacOS скинув файли на карту пам'яті, але DBI \ tinfoil \ GoldLeaf їх не бачить %}
 
 Потрібно виправити атрибути.
-{% include /inc/uk/fixatributes.txt %}
+{% include /inc/fixatributes.txt %}
 
 {% endspoiler %}
 
@@ -205,13 +205,13 @@ author_profile: true
 {% spoiler Проблеми після копіювання файлів на карту на маку/В Homebrew Menu/Tinfoil порожньо, хоча на карті все є %}
 
 * Переконайтеся, що ім'я вашої карти відрізняється від `Switch` у будь-якій комбінації малих або великих літер
-* {% include /inc/uk/fixatributes.txt %}
+* {% include /inc/fixatributes.txt %}
 * Якщо ви користувач MacOS і вам не допоміг спосіб вище, виконайте наступну команду: `sudo chflags -R arch /Volumes/<name of SD card>`
 
 {% endspoiler %}
 
 {% spoiler Виправлення архівних атрибутів %}
-{% include /inc/uk/fixatributes.txt %}
+{% include /inc/fixatributes.txt %}
 {% endspoiler %}
 
 {% spoiler Виникають помилки при встановленні NSP-файлів  %}
@@ -270,7 +270,7 @@ author_profile: true
 
 {% spoiler У мене остання прошивка, але при запуску деяких ігор я бачу, що "*доступне оновлення системи*". Чому так відбувається? %}
 
-Мається на увазі оновлення гри. Скачайте його та встановіть як звичайну гру. Також скинути перевірку версії можна через DBI. Запустіть програму, виберіть **Browse installed applications**, натисніть {% include inc/uk/btn.txt btn="Y" %}, щоб виділити всі пункти, натисніть {% include inc/uk/btn.txt btn="A" %}, а потім виберіть **Reset required version**. DBI має бути [запущений з режиму аплету](/hbl){:target="_blank"}, кефір має бути свіжим. Інакше магія не спрацює. 
+Мається на увазі оновлення гри. Скачайте його та встановіть як звичайну гру. Також скинути перевірку версії можна через DBI. Запустіть програму, виберіть **Browse installed applications**, натисніть {% include /inc/btn.txt btn="Y" %}, щоб виділити всі пункти, натисніть {% include /inc/btn.txt btn="A" %}, а потім виберіть **Reset required version**. DBI має бути [запущений з режиму аплету](/hbl){:target="_blank"}, кефір має бути свіжим. Інакше магія не спрацює. 
 
 {% endspoiler %}
 
@@ -282,7 +282,7 @@ author_profile: true
 
 {% spoiler Не синхронізується час %}
 
-Автоматична синхронізація часу вимкнена в кефірі, починаючи з версії 660 для економії батареї в режимі сну. Для синхронізації використовуйте модуль [QuickNTP](https://github.com/nedex/QuickNTP){:target="_blank"} для Tesla (входить до складу кефіру). Запустіть Tesla, натиснувши одночасно {% include inc/uk/btn.txt btn="L" %} + {% include inc/uk/btn.txt btn="DOWN" %} + {% include inc/uk/btn.txt btn="R3" %}, виберіть QuickNTP, натисніть {% include inc/uk/btn.txt btn="A" %}. Якщо час не синхронізувався, виберіть інший сервер синхронізації хрестовиною (ВЛІВО-ВПРАВО).
+Автоматична синхронізація часу вимкнена в кефірі, починаючи з версії 660 для економії батареї в режимі сну. Для синхронізації використовуйте модуль [QuickNTP](https://github.com/nedex/QuickNTP){:target="_blank"} для Tesla (входить до складу кефіру). Запустіть Tesla, натиснувши одночасно {% include /inc/btn.txt btn="L" %} + {% include /inc/btn.txt btn="DOWN" %} + {% include /inc/btn.txt btn="R3" %}, виберіть QuickNTP, натисніть {% include /inc/btn.txt btn="A" %}. Якщо час не синхронізувався, виберіть інший сервер синхронізації хрестовиною (ВЛІВО-ВПРАВО).
 
 {% endspoiler %}
 

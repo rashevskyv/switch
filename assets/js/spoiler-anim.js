@@ -40,6 +40,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function openSpoiler(el) {
+        // Store the current position relative to the viewport
+        const rect = el.getBoundingClientRect();
+        el.dataset.openPosition = rect.top;
+
         // Set starting height
         el.style.height = el.offsetHeight + 'px';
         el.open = true; // Add open attribute to render content
@@ -95,11 +99,30 @@ document.addEventListener('DOMContentLoaded', function () {
             el.style.overflow = ''; // Reset overflow
             el.removeEventListener('transitionend', transitionEnd);
 
-            // Scroll back to summary if it's out of view (optional, but good UX)
-            // const rect = el.getBoundingClientRect();
-            // if (rect.top < 0) {
-            //   el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            // }
+            // Restore position relative to viewport
+            if (el.dataset.openPosition) {
+                const targetViewportTop = parseFloat(el.dataset.openPosition);
+                const currentRect = el.getBoundingClientRect();
+                const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                // Calculate where we need to scroll to
+                // We want: newBoundingRect.top == targetViewportTop
+                // newBoundingRect.top is roughly (absoluteTop - newScrollTop)
+                // So: absoluteTop - newScrollTop = targetViewportTop
+                // newScrollTop = absoluteTop - targetViewportTop
+                // absoluteTop = currentRect.top + currentScrollTop
+
+                const absoluteTop = currentRect.top + currentScrollTop;
+                const targetScrollTop = absoluteTop - targetViewportTop;
+
+                window.scrollTo({
+                    top: targetScrollTop,
+                    behavior: 'smooth'
+                });
+
+                // Clean up
+                delete el.dataset.openPosition;
+            }
         });
     }
 });

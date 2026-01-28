@@ -172,7 +172,7 @@ author_profile: true
 
 {% spoiler Не можу запустити HBL %}
 
-В Atmosphere HBL запускається, утримуючи {% include inc/uk/btn.txt btn="R" %} при запуску альбомів. Детальніше - [Homebrew Launcher](/hbl){:target="_blank"}
+В Atmosphere HBL запускається, утримуючи {% include /inc/btn.txt btn="R" %} при запуску альбомів. Детальніше - [Homebrew Launcher](/hbl){:target="_blank"}
 
 {% endspoiler %}
 

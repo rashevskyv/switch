@@ -32,7 +32,7 @@
 {: .text-center}
 {: .notice--info}
 
-## Помочь Украине из-за рубежа
+## Допомогти Україні з-за кордону
 
 <a href="https://supportukrainenow.org/" target="_blank"><img alt="Support Ukraine Now" border="0" src="/assets/images/donate/sun.png" width="400px" style="border-radius:10px !important"></a>
 {: .text-center}
