@@ -1,101 +1,70 @@
-# Українське меню
-main-uk:
+# Головне меню
+main:
   - title: "<b>Купити<br>прошиту</b>"
     url: https://shop.customfw.xyz/
   - title: "<i>Інші гайди</i>"
     url: http://customfw.xyz
   - title: "<b>Пожертви</b>"
-    url: /uk/donations
+    url: https://customfw.xyz/donations
   - title: "Методи<br>злому"
-    url: /uk/get-started
+    url: /get-started
   - title: "Kefir"
-    url: /uk/kefir
+    url: /kefir
   - title: "Резервне<br>копіювання"
-    url: /uk/backup-nand
+    url: /backup-nand
   - title: "EmuNAND"
-    url: /uk/emunand
+    url: /emunand
   - title: "Використання<br>прошитого Switch"
-    url: /uk/usage
+    url: /usage
   - title: "FAQ"
-    url: /uk/faq
+    url: /faq
   - title: "Проблеми та<br>їх вирішення"
-    url: /uk/troubleshooting
+    url: /troubleshooting
   - title: "Встановлення<br>ігор"
-    url: /uk/games
+    url: /games
   - title: "Безпечне<br>оновлення"
-    url: /uk/update-fw
+    url: /update-fw
   - title: "Навігація по сайту"
-    url: /uk/site-navigation
+    url: /site-navigation
   - title: "Зв'язатися з нами"
     url: http://customfw.xyz/contacts
 
-# Російське меню
-main-ru:
-  - title: "<b>Купить<br>прошитую</b>"
-    url: https://shop.customfw.xyz/
-  - title: "<i>Другие гайды</i>"
-    url: http://customfw.xyz
-  - title: "<b>Пожертвования</b>"
-    url: /ru/donations
-  - title: "Методы<br>взлома"
-    url: /ru/get-started
-  - title: "Kefir"
-    url: /ru/kefir
-  - title: "Резервное<br>копирование"
-    url: /ru/backup-nand
-  - title: "EmuNAND"
-    url: /ru/emunand
-  - title: "Использование<br>прошитого Switch"
-    url: /ru/usage
-  - title: "FAQ"
-    url: /ru/faq
-  - title: "Проблемы и<br>их решения"
-    url: /ru/troubleshooting
-  - title: "Установка<br>игр"
-    url: /ru/games
-  - title: "Безопасное<br>обновление"
-    url: /ru/update-fw
-  - title: "Навигация по сайту"
-    url: /ru/site-navigation
-  - title: "Связаться с нами"
-    url: http://customfw.xyz/contacts
-
-# Українські додатки
-addons-uk:
+# Додатки
+addons:
   - title: "Інструкція з використання вже прошитої приставки"
-    url: /uk/usage
+    url: /usage
   - title: "Перехід з SX OS на Atmosphere"
-    url: /uk/migrate
+    url: /migrate
   - title: "FAQ"
-    url: /uk/faq
+    url: /faq
   - title: "Блокування серверів Nintendo, захист від бану"
-    url: /uk/block-update
+    url: /block-update
   - title: "Встановлення ігор, DLC, оновлень"
-    url: /uk/games
+    url: /games
   - title: "Де брати ігри"
-    url: /uk/games#%D0%B4%D0%B5-%D0%B1%D1%80%D0%B0%D1%82%D0%B8-%D1%96%D0%B3%D1%80%D0%B8-%D1%82%D0%B0-%D0%BE%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F
+    url: /games#%D0%B4%D0%B5-%D0%B1%D1%80%D0%B0%D1%82%D0%B8-%D1%96%D0%B3%D1%80%D0%B8-%D1%82%D0%B0-%D0%BE%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F
   - title: "Прив'язка облікового запису консолі до облікового запису Nintendo"
-    url: /uk/link-account
+    url: /link-account
   - title: "Використання EmuNAND для тих, хто вже прошився раніше"
-    url: /uk/preparation-white
+    url: /preparation-white
   - title: "Використання читів в EdiZon"
-    url: /uk/cheats
+    url: /cheats
   - title: "Резервне копіювання та відновлення збережень"
-    url: /uk/backup-saves
+    url: /backup-saves
   - title: "Онлайн для прошитих і забанених"
-    url: /uk/lanplay
+    url: /lanplay
   - title: "Безпечне оновлення прошивки"
-    url: /uk/update-fw
+    url: /update-fw
   - title: "Резервне копіювання NAND"
-    url: /uk/backup-nand
+    url: /backup-nand
   - title: "Запуск пейлоадера через Fusée Gelée"
-    url: /uk/fusee-gelee
+    url: /fusee-gelee
   - title: "Запуск Homebrew Launcher"
-    url: /uk/launch-hbl
+    url: /launch-hbl
   - title: "Кастомні прошивки"
-    url: /uk/cfw
+    url: /cfw
   - title: "Емуляція Amiibo за допомогою модуля emuiibo"
-    url: /uk/emuiibo
+    url: /emuiibo
   - title: "Tesla Overlay Menu"
     url: "https://4pda.to/forum/index.php?showtopic=900987&st=18260#entry93523431"
   - title: "Chiaki - Remote Play для PS4"
@@ -106,59 +75,3 @@ addons-uk:
     url: "https://4pda.to/forum/index.php?showtopic=939714&st=0#Spoil-81825647-4"
   - title: "Повна інструкція з використання DBI"
     url: "https://github.com/rashevskyv/dbi"
-
-# Російські додатки
-addons-ru:
-  - title: "Инструкция по использованию уже прошитой приставки"
-    url: /ru/usage
-  - title: "Переход с SX OS на Atmosphere"
-    url: /ru/migrate
-  - title: "FAQ"
-    url: /ru/faq
-  - title: "Блокировка серверов Nintendo, защита от бана"
-    url: /ru/block-update
-  - title: "Установка игр, DLC, обновлений"
-    url: /ru/games
-  - title: "Где брать игры"
-    url: /ru/games#%D0%B3%D0%B4%D0%B5-%D0%B1%D1%80%D0%B0%D1%82%D1%8C-%D0%B8%D0%B3%D1%80%D1%8B-%D0%B8-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F
-  - title: "Привязка учётной записи консоли к учётной записи Nintendo"
-    url: /ru/link-account
-  - title: "Использование EmuNAND для тех, кто уже прошился ранее"
-    url: /ru/preparation-white
-  - title: "Использование читов в EdiZon"
-    url: /ru/cheats
-  - title: "Резервное копирование и восстановление сохранений"
-    url: /ru/backup-saves
-  - title: "Онлайн для прошитых и забаненных"
-    url: /ru/lanplay
-  - title: "Безопасное обновление прошивки"
-    url: /ru/update-fw
-  - title: "Резервное копирование NAND"
-    url: /ru/backup-nand
-  - title: "Запуск пейлоадера через Fusée Gelée"
-    url: /ru/fusee-gelee
-  - title: "Запуск Homebrew Launcher"
-    url: /ru/launch-hbl
-  - title: "Кастомные прошивки"
-    url: /ru/cfw
-  - title: "Эмуляция Amiibo с помощью модуля emuiibo"
-    url: /ru/emuiibo
-  - title: "Tesla Overlay Menu"
-    url: "https://4pda.to/forum/index.php?showtopic=900987&st=18260#entry93523431"
-  - title: "Chiaki - Remote Play для PS4"
-    url: "https://4pda.to/forum/index.php?showtopic=900987&st=19780#entry96367163"
-  - title: "Разгон (SYS-CLK, Freebird)"
-    url: "https://4pda.to/forum/index.php?showtopic=900987&st=9620#entry81429122"
-  - title: "Эмуляторы для Switch"
-    url: "https://4pda.to/forum/index.php?showtopic=939714&st=0#Spoil-81825647-4"
-  - title: "Полная инструкция по использованию DBI"
-    url: "https://github.com/rashevskyv/dbi"
-
-# Перемикач мов
-languages:
-  - title: "Українська"
-    url: /uk/
-    code: uk
-  - title: "Русский"
-    url: /ru/
-    code: ru

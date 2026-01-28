@@ -1,4 +1,3 @@
-<!-- Додаємо підтримку мов у шапці сайту -->
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
@@ -6,25 +5,16 @@
         <a class="site-title" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
         <ul class="visible-links">
           {%- assign navigation = site.data.navigation -%}
-          {%- if page.lang -%}
-            {%- assign nav_key = page.lang | prepend: 'main-' -%}
-            {%- assign nav_list = navigation[nav_key] -%}
-          {%- else -%}
-            {%- assign nav_list = navigation.main-uk -%}
-          {%- endif -%}
+          {%- assign nav_list = navigation.main -%}
 
           {%- for link in nav_list -%}
-            <li class="masthead__menu-item">
-              <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
-            </li>
+          <li class="masthead__menu-item">
+            <a href="{{ link.url | relative_url }}" {% if link.description %} title="{{ link.description }}" {% endif
+              %}>{{ link.title }}</a>
+          </li>
           {%- endfor -%}
         </ul>
-        
-        <!-- Додаємо перемикач мов в навігацію -->
-        <div class="masthead-language-selector">
-          {% include language-selector.html %}
-        </div>
-        
+
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
           <div class="navicon"></div>
@@ -34,48 +24,3 @@
     </div>
   </div>
 </div>
-
-<!-- Додаємо стилі для перемикача мов в шапці -->
-<style>
-  .masthead-language-selector {
-    margin-left: 1rem;
-    display: flex;
-    align-items: center;
-  }
-  
-  @media (max-width: 768px) {
-    .masthead-language-selector {
-      margin-right: 50px; /* Щоб не перекривався кнопкою меню на мобільних пристроях */
-    }
-  }
-  
-  /* Анімований ефект при наведенні на перемикач мов */
-  .language-switcher__item {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .language-switcher__item:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: currentColor;
-    transition: width 0.3s ease;
-  }
-  
-  .language-switcher__item:hover:after {
-    width: 100%;
-  }
-  
-  /* Додаткові ефекти при наведенні */
-  .language-switcher__flag {
-    transition: transform 0.2s ease;
-  }
-  
-  .language-switcher__item:hover .language-switcher__flag {
-    transform: scale(1.1);
-  }
-</style>

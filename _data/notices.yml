@@ -1,15 +1,7 @@
 # Українські повідомлення
 uk:
-  - content: <div class="notice--success"><h2>Ви можете прошити, або придбати вже прошитий світч в мене</h2><ul><li><a href="https://t.me/kefir_ukr" target="_blank">Група в телеграмі для українців, там є відгуки та приклади робіт</a></li><li><a href="https://t.me/xhrxhrxhr" target="_blank"><b>Мій особистий телеграм</b> (звертайтеся за чипуванням або купівлею)</a></li><li><a href="/uk/donations" target="_blank">Задонатити на розвиток kefir</a></li></ul></div>
+  - content: <div class="notice--success"><h2>Ви можете прошити, або придбати вже прошитий світч в мене</h2><ul><li><a href="https://t.me/kefir_ukr" target="_blank">Група в телеграмі для українців, там є відгуки та приклади робіт</a></li><li><a href="https://t.me/xhrxhrxhr" target="_blank"><b>Мій особистий телеграм</b> (звертайтеся за чипуванням або купівлею)</a></li><li><a href="https://customfw.xyz/donations" target="_blank">Задонатити на розвиток kefir</a></li></ul></div>
   - content: <div class="notice--warning">Якщо ви потрапили в цей посібник вперше і не знаєте, як прошивається Switch, рекомендуємо почати знайомство з ним з <a href="/" target="_blank">першої сторінки</a></div>
-  - content: <div class="notice--warning">Якщо ви користувач MacOS, скористайтеся <a href="/uk/sd-macos.html" target="_blank">цими рекомендаціями</a>, щоб уникнути проблем з картою пам'яті</div>
-  - content: <div class="notice">Робіть <a href="/uk/backup-saves" target="_blank">бекапи збережень</a> якомога частіше!</div>
+  - content: <div class="notice--warning">Якщо ви користувач MacOS, скористайтеся <a href="/sd-macos" target="_blank">цими рекомендаціями</a>, щоб уникнути проблем з картою пам'яті</div>
+  - content: <div class="notice">Робіть <a href="/backup-saves" target="_blank">бекапи збережень</a> якомога частіше!</div>
   - content: <div class="notice--warning"><strong>Якщо приставка зависла або не подає ознак життя, вимкніть її утриманням кнопки (POWER) 30 секунд, потім увімкніть і пробросьте пейлоад!</strong></div>
-
-# Російські повідомлення
-ru:
-  - content: <div class="notice--success"><h2>Вы можете прошить, или купить уже прошитый свитч у меня</h2><ul><li><a href="https://t.me/kefir_help" target="_blank">Группа в телеграме, там есть отзывы и примеры работ</a></li><li><a href="https://t.me/xhrxhrxhr" target="_blank"><b>Мой личный телеграм</b> (обращайтесь за чиповкой или покупкой)</a></li><li><a href="/ru/donations" target="_blank">Задонатить на развитие kefir</a></li></ul></div>
-  - content: <div class="notice--warning">Если вы попали в это руководство впервые и не знаете, как прошивается Switch, рекомендуем начать знакомство с ним с <a href="/ru/" target="_blank">первой страницы</a></div>
-  - content: <div class="notice--warning">Если вы пользователь MacOS, воспользуйтесь <a href="/ru/sd-macos.html" target="_blank">этими рекомендациями</a>, чтобы избежать проблем с картой памяти</div>
-  - content: <div class="notice">Делайте <a href="/ru/backup-saves" target="_blank">бэкапы сохранений</a> как можно чаще!</div>
-  - content: <div class="notice--warning"><strong>Если приставка зависла или не подаёт признаков жизни, выключите её удержанием кнопки (POWER) 30 секунд, затем включите и пробросьте пейлоад!</strong></div>

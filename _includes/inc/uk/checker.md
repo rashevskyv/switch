@@ -1,4 +1,5 @@
-<link rel="stylesheet" type="text/css" href="https://check.customfw.xyz/css/main_checker.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/checker.css">
+<div class="checker-scope">
 <div class="content" id="fullpage">
   <div class="checker__body inpage">
     <div class="table__wrapper">
@@ -12,6 +13,7 @@
     <div class="result hidden" id="scroll_here"></div>
     <div class="check-result hidden"></div>
   </div>
+</div>
 </div>
 <script src="https://check.customfw.xyz/js/libs.min.js"></script>
 <script src="https://check.customfw.xyz/js/main.js"></script>
