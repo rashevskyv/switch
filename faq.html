@@ -1,15 +1,987 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Перенаправлення...</title>
-  <link rel="canonical" href="/uk/faq">
-  <meta http-equiv="refresh" content="0; url=/uk/faq">
-</head>
-<body>
-  <h1>Перенаправлення...</h1>
-  <p>Сторінка переїхала. Якщо ви не були перенаправлені автоматично, 
-  <a href="/uk/faq">натисніть тут</a>.</p>
-  <script>location="/uk/faq"</script>
-</body>
+<!doctype html>
+<html lang="uk" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Часто задавані питання - Взлом Switch</title>
+
+
+
+
+<meta name="description" content="Повне керівництво з прошивки Nintendo Switch">
+
+
+
+
+<meta name="author" content="xHR">
+
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="Взлом Switch">
+<meta property="og:title" content="Часто задавані питання">
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "nincfw team",
+      "url" : null,
+      "sameAs" : null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="/feed.xml"
+  type="application/atom+xml" rel="alternate" title="Взлом Switch Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  </head>
+
+  <body class="layout--single">
+    
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Взлом Switch</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+            <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
+          </li><li class="masthead__menu-item">
+            <a href="http://customfw.xyz" ><i>Інші гайди</i></a>
+          </li><li class="masthead__menu-item">
+            <a href="https://customfw.xyz/donations" ><b>Пожертви</b></a>
+          </li><li class="masthead__menu-item">
+            <a href="/get-started" >Методи<br>злому</a>
+          </li><li class="masthead__menu-item">
+            <a href="/kefir" >Kefir</a>
+          </li><li class="masthead__menu-item">
+            <a href="/backup-nand" >Резервне<br>копіювання</a>
+          </li><li class="masthead__menu-item">
+            <a href="/emunand" >EmuNAND</a>
+          </li><li class="masthead__menu-item">
+            <a href="/usage" >Використання<br>прошитого Switch</a>
+          </li><li class="masthead__menu-item">
+            <a href="/faq" >FAQ</a>
+          </li><li class="masthead__menu-item">
+            <a href="/troubleshooting" >Проблеми та<br>їх вирішення</a>
+          </li><li class="masthead__menu-item">
+            <a href="/games" >Встановлення<br>ігор</a>
+          </li><li class="masthead__menu-item">
+            <a href="/update-fw" >Безпечне<br>оновлення</a>
+          </li><li class="masthead__menu-item">
+            <a href="/site-navigation" >Навігація по сайту</a>
+          </li><li class="masthead__menu-item">
+            <a href="http://customfw.xyz/contacts" >Зв'язатися з нами</a>
+          </li></ul>
+
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+  <div class="author__avatar">
+    
+    <center><img src="/assets/images/bio-photo.png" class="author__avatar" alt="xHR"
+        itemprop="image"></center>
+    
+  </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">xHR</h3><br>
+    
+  </div>
+
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--def btn--inverse btn--large btn--buy">Контакти</button>
+    <ul class="author__urls social-icons">
+      
+      <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+        <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Івано-Франківськ</span>
+      </li>
+      
+      <hr class="style-two">
+
+      
+<li>
+  <a href="https://t.me/xhrxhrxhr" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Telegram (чипування)
+  </a>
+</li>
+
+
+<li>
+  <a href="https://t.me/kefir_support" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Група в Telegram
+  </a>
+</li>
+
+
+<li>
+  <a href="tel:0997763996" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-phone" aria-hidden="true"></i> Телефон
+  </a>
+</li>
+
+
+<li>
+  <a href="viber://0977359431" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-whatsapp" aria-hidden="true"></i> Viber
+  </a>
+</li>
+
+
+      
+
+      
+      <li>
+        <a href="mailto:rashevsky.v@gmail.com">
+          <meta itemprop="email" content="rashevsky.v@gmail.com" />
+          <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a href="https://instagram.com/rashevsky.v" target="_blank" itemprop="sameAs">
+          <i class="fa fa-fw fa-instagram" aria-hidden="true"></i> Instagram
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+      <li>
+        <a href="https://github.com/rashevskyv" target="_blank" itemprop="sameAs">
+          <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+      <li>
+        <a href="https://customfw.xyz/donations" itemprop="sameAs">
+          <i class="fa fa-fw fa-vine" aria-hidden="true"></i><strong>Пожертви</strong>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+  
+   
+  </div>
+ 
+  
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Часто задавані питання">
+    
+    
+    
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Часто задавані питання
+</h1>
+          
+          <div class="language-selector-container">
+            <!-- Не показуємо текст "lang: uk", а показуємо перемикач мов -->
+            
+          </div>
+        </header>
+      
+	  
+        <p>В цьому розділі тільки відповіді на найчастіші запитання. Розділ, у якому зібрані найчастіші проблеми та їх вирішення знаходиться тут - <a href="/troubleshooting" target="_blank">Проблеми та їх вирішення</a></p>
+
+<p class="notice--info">Не соромтеся використовувати пошук по розділу. Для цього натисніть <strong>Ctrl+F</strong></p>
+
+<details class="spoiler" id="spoiler-98048ed1">
+  <summary>Занадто багато незнайомих слів - нічого не розумію!</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Вивчіть <a href="/#основні-терміни" target="_blank">глосарій</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Занадто багато незнайомих слів - нічого не розумію! <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-7677c0b7">
+  <summary>Як перевірити консоль при купівлі з рук?</summary>
+  <div class="spoiler-content">
+    <p>Загалом, все дуже добре описано у відео нижче. Однак, пам’ятайте, що все, що говорить автор відео про бан, має мало спільного з реальністю. Купуючи прошиту приставку з рук майте на увазі, що ви не застраховані від бану, що б ви не робили!</p>
+
+<div style="margin:0 auto;" class="text-center notice--info">
+  <div class="ytcontainer">
+    <iframe width="1667" height="946" class="yt" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/eqhbXjC5awo?start="></iframe>
+  </div>
+</div>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Як перевірити консоль при купівлі з рук? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-75f40f2e">
+  <summary>Виправлення архівних атрибутів</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>В <strong>hekate</strong> перейдіть в меню “<strong>Tools</strong>”, переключіться на вкладку “<strong>Arch bit • RCM • Touch • Partitions</strong>” (в нижній частині екрану), виберіть “<strong>Fix Archive Bit</strong>”
+    <ul>
+      <li>Щоб потрапити в hekate, якщо ви знаходитесь не в ній, перезавантажте приставку, для цього утримуйте 5 секунд кнопку живлення, перебуваючи в кастомній прошивці, потім виберіть “<strong>Параметри електроживлення</strong>” -&gt; “<strong>Перезавантаження</strong>”. Коли з’явиться сплешскрін кефіра, натисніть (VOL-) (кнопка зниження гучності)</li>
+    </ul>
+  </li>
+  <li>Після закінчення фіксу атрибутів, натисніть “<strong>Close</strong>” у верхньому правому куті</li>
+  <li>Виберіть “<strong>Home</strong>” -&gt; “<strong>Launch</strong>” -&gt; “<strong>Atmosphere</strong>”, щоб завантажитися назад у прошивку</li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Виправлення архівних атрибутів <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-28f0bc6e">
+  <summary>Чому необхідно тримати ПЗ завжди оновленим</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> <a href="https://4pda.to/forum/index.php?showtopic=900987&amp;st=24420#entry102270146">Вичерпна відповідь</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чому необхідно тримати ПЗ завжди оновленим <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-a475973a">
+  <summary>Що таке Tesla Menu Overlay і як цим користуватися?</summary>
+  <div class="spoiler-content">
+    <p><a href="https://4pda.to/forum/index.php?showtopic=900987&amp;st=18260#entry93523431" target="_blank">Що таке Tesla Menu Overlay і як цим користуватися?</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Що таке Tesla Menu Overlay і як цим користуватися? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-47026ee7">
+  <summary>Чи можна досягти кращої продуктивності / розігнати Switch?</summary>
+  <div class="spoiler-content">
+    <p><a href="https://4pda.to/forum/index.php?showtopic=900987&amp;st=9620#entry81429122" target="_blank">Розгін (SYS-CLK, Freebird)</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чи можна досягти кращої продуктивності / розігнати Switch? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-2dbc8234">
+  <summary>Використання Chiaki та Remote Play для стрімінгу ігор з PS4 на Switch</summary>
+  <div class="spoiler-content">
+    <p><a href="https://4pda.to/forum/index.php?showtopic=900987&amp;st=19780#entry96367163" target="_blank">Використання Chiaki та Remote Play для стрімінгу ігор з PS4 на Switch</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Використання Chiaki та Remote Play для стрімінгу ігор з PS4 на Switch <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-da538d50">
+  <summary>Що таке кефір?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> У контексті цього посібника - збірка, що складається з обраного <span class="tooltip_container">
+	кастому
+	<span class="tooltip">▼
+		<span class="bottom">
+			Модифіковане програмне забезпечення консолі, написане ентузіастами, дозволяє робити речі, недоступні користувачам офіційних прошивок, наприклад, запускати непідписані програми. В контексті прошивки Світча ми будемо називати наявне програмне забезпечення кастомною прошивкою, хоча, чисто технічно, це не так
+		</span>
+	</span>
+</span>, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію з встановлення можна подивитися в його <a href="https://github.com/rashevskyv/kefir/releases/latest" target="_blank">репозиторії</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Що таке кефір? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-e7f5fbf7">
+  <summary>Що таке hbgshop?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> <a href="https://4pda.to/forum/index.php?showtopic=939714&amp;st=1480#entry87313387">Вичерпна відповідь</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Що таке hbgshop? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-8acf309f">
+  <summary>Будь-який switch можна прошити?</summary>
+  <div class="spoiler-content">
+    <p>На даний момент прошиваються <strong>всі</strong> приставки сімейства Nintendo Switch. Однак, залежно від ревізії приставки, а також наявності в ній ряду вразливостей, методи прошивки можуть відрізнятися. Тому першочерговим завданням стане визначити, який саме метод підходить саме вам.</p>
+
+<link rel="stylesheet" type="text/css" href="/assets/css/checker.css" />
+
+<div class="checker-scope">
+<div class="content" id="fullpage">
+  <div class="checker__body inpage">
+    <div class="table__wrapper">
+      <div class="table__container">
+        <div class="table__ns__caption table__caption">Nintendo Switch</div>
+        <div class="table__ns__body table__body" id="ns"><img class="table descriptionToggler" src="https://check.customfw.xyz/img/ns.png" alt="Nintendo Switch" data-result="result1" /></div>
+        <div class="table__nsl__caption table__caption">Nintendo Switch Lite / OLED</div>
+        <div class="table__nsl__body table__body" id="nsl"><img class="table descriptionToggler" src="https://check.customfw.xyz/img/nsl.png" alt="Nintendo Switch Lite / OLED" data-result="result2" /></div>
+      </div>
+    </div>
+    <div class="result hidden" id="scroll_here"></div>
+    <div class="check-result hidden"></div>
+  </div>
+</div>
+</div>
+<script src="https://check.customfw.xyz/js/libs.min.js"></script>
+
+<script src="https://check.customfw.xyz/js/main.js"></script>
+
+<script src="https://check.customfw.xyz/js/vercheck.js"></script>
+
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Будь-який switch можна прошити? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-46d59d99">
+  <summary>Чи працює локальний мультиплеєр?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Так</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чи працює локальний мультиплеєр? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-2c07b510">
+  <summary>Чи працює підключення до телевізора? Док?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Так</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чи працює підключення до телевізора? Док? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-5d488979">
+  <summary>Я вже прошив приставку, але так і не зрозумів як їй користуватися</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Скористайтеся <a href="/usage" target="_blank">цією інструкцією</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Я вже прошив приставку, але так і не зрозумів як їй користуватися <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-aeac9d68">
+  <summary>Чи можна грати на зарядці?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Так</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чи можна грати на зарядці? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-c12d7c35">
+  <summary>А що не буде працювати?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Все буде. Все те ж саме, що і на офіційній прошивці.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">А що не буде працювати? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-d78d5977">
+  <summary>У мого світча прошивка версії X.X.X, чи зможу я його прошити?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> <a href="https://check.customfw.xyz" target="_blank">Перевіряйте</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">У мого світча прошивка версії X.X.X, чи зможу я його прошити? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-97e6cd5e">
+  <summary>Чи потрібно мені що-небудь паяти для використання зламу?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Більшість приставок вимагають чипування. Якщо у вас немає достатнього досвіду в пайці, краще зверніться до фахівців, або купіть вже чиповану консоль. <a href="https://docs.google.com/document/d/1CDo48LguVDxGO_IAnmeX0V2wnQ5aLG-6Me2JBp2FHvA/edit" target="_blank">Список майстрів, які можуть допомогти з встановленням чипів на приставку</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чи потрібно мені що-небудь паяти для використання зламу? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-4212cc6d">
+  <summary>Це що, кожного разу після перезавантаження приставки злам потрібно буде запускати заново?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Ні. Після перезавантаження приставка все одно перезавантажиться в кастом. Для приставок, прошитих через Fusée Gelée після кожного холодного старту, <span class="tooltip_container">
+	пейлоад
+	<span class="tooltip">▼
+		<span class="bottom">
+			Файл з виконуваним кодом у форматі <code class="language-plaintext highlighter-rouge">.bin</code>, який ми завантажуємо в приставку, найчастіше - завантажувач
+		</span>
+	</span>
+</span> потрібно буде прокидати заново. Для чипованих консолей цього не потрібно, оскільки пейлоад прокидає сам чип.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Це що, кожного разу після перезавантаження приставки злам потрібно буде запускати заново? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-69b850f2">
+  <summary>Чи можна діставати карту пам'яті при включеній приставці?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Ні. Перезавантажте приставку через меню електроживлення (утримання кнопки <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" /> -&gt; <strong>Параметри електроживлення</strong> -&gt; <strong>Перезавантаження</strong>), щоб потрапити в <span class="tooltip_container">
+	hekate
+	<span class="tooltip">▼
+		<span class="bottom">
+			Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+		</span>
+	</span>
+</span>. Звідти ви зможете безпечно витягнути карту з приставки. Для того, щоб з <span class="tooltip_container">
+	hekate
+	<span class="tooltip">▼
+		<span class="bottom">
+			Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+		</span>
+	</span>
+</span> запустити прошивку знову, перейдіть в <strong>Launch -&gt; Atmosphere</strong>.</p>
+
+<p>Також ви можете підключити приставку до ПК кабелем, запустити DBI і натиснути в ньому <img src="/assets/images/switch/buttons/X.png" alt="(X)" />. Приставка визначиться комп’ютером як MTP-пристрій і ви отримаєте доступ до ваших файлів на карті пам’яті.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чи можна діставати карту пам'яті при включеній приставці? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-83bfb8c5">
+  <summary>Джойкон просить оновити прошивку. Можна?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Так</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Джойкон просить оновити прошивку. Можна? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-836b93dd">
+  <summary>Що краще FAT32 чи exFAT?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> <a href="https://github.com/libretro/RetroArch/issues/7480#issuecomment-434262799" target="_blank">Розгорнута відповідь</a></p>
+
+<p>Коротка відповідь - конкретно на Switch FAT32 значно надійніше і набагато більш щадний для карти пам’яті. Але ви не зможете закинути на карту в FAT32 файли більше 4Гб. Всі ігри більшого розміру доведеться <a href="/dbi#установка-приложеній-в-форматі-nsp-по-usb" target="_blank">встановлювати по USB</a> або передавати їх на приставку по MTP через tinfoil або DBI</p>
+
+<p>Форматування карти пам’яті відбувається за <a href="https://format.customfw.xyz" target="_blank">цією інструкцією</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Що краще FAT32 чи exFAT? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-287adcab">
+  <summary>Приставка не бачить карту у форматі exFAT і просить оновити прошивку</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Вам потрібно встановити драйвер exFAT. Для цього виконайте <a href="/update-fw" target="_blank">безпечне оновлення прошивки</a>. Його потрібно робити навіть у тому випадку, якщо у вас і так стоїть остання версія прошивки, що зламується! Повторне оновлення просто встановить відсутній драйвер.</p>
+
+<p>Пам’ятайте, що рекомендованою файловою системою для роботи зі Switch все ж таки є <strong>FAT32</strong>.</p>
+
+<p>Форматування карти пам’яті відбувається за <a href="https://format.customfw.xyz" target="_blank">цією інструкцією</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Приставка не бачить карту у форматі exFAT і просить оновити прошивку <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-c9c4255e">
+  <summary>У мене остання прошивка, але при запуску деяких ігор я бачу, що "*доступне оновлення системи*". Чому так відбувається?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Мається на увазі оновлення гри. Скачайте його та встановіть як звичайну гру. Також скинути перевірку версії можна через DBI. Запустіть програму, виберіть <strong>Browse installed applications</strong>, натисніть <img src="/assets/images/switch/buttons/Y.png" alt="(Y)" />, щоб виділити всі пункти, натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" />, а потім виберіть <strong>Reset required version</strong>. DBI має бути <a href="/hbl" target="_blank">запущений з режиму аплету</a>, кефір має бути свіжим. Інакше магія не спрацює.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">У мене остання прошивка, але при запуску деяких ігор я бачу, що "*доступне оновлення системи*". Чому так відбувається? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-4bcb6deb">
+  <summary>Що потрібно для використання зламу?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Сам світч, карта пам’яті, скріпка та <span class="tooltip_container">
+	хост
+	<span class="tooltip">▼
+		<span class="bottom">
+			Пристрій, що дозволяє відправити на консоль пейлоад; як хост може використовуватися ПК, смартфон на Android (iOS, якщо є джейлбрейк) або спеціальний пристрій – донгл
+		</span>
+	</span>
+</span>-пристрій (ПК/Android/iOS з джейлбрейком/донгл) для <a href="/fusee-gelee" target="_blank">запуску зламу</a> у приставок, схильних до вразливості Fusée Gelée.</p>
+
+<p>Сам світч, карта пам’яті, встановлений чип для приставок із закритою вразливістю Fusée Gelée</p>
+
+<p>Детальніше - <a href="/get-started" target="_blank">Існуючі методи зламу</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Що потрібно для використання зламу? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-7948cecf">
+  <summary>Чи можна встановлювати аматорські переклади?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> <a href="/games#використання-перекладів-і-модифікацій" target="_blank">Так</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чи можна встановлювати аматорські переклади? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-779eea4c">
+  <summary>Чи зможу я встановлювати цифрові релізи / DLC / оновлення?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Так. І ігри, що виходили на картриджах теж зможете. І DLC і оновлення зможете</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чи зможу я встановлювати цифрові релізи / DLC / оновлення? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-531e0e6b">
+  <summary>Чи можна запустити ігри, що вимагають прив'язаного акаунта, не прив'язуючи акаунт?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Скористайтеся <a href="/link-account" target="_blank">цією інструкцією</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чи можна запустити ігри, що вимагають прив'язаного акаунта, не прив'язуючи акаунт? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-a190c09c">
+  <summary>Не видаляється гра після встановлення, не можу видалити і через NX-shell</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> 1. В <strong>hekate</strong> перейдіть в меню “<strong>Tools</strong>”, переключіться на вкладку “<strong>Arch bit • RCM • Touch • Partitions</strong>” (в нижній частині екрану), виберіть “<strong>Fix Archive Bit</strong>”</p>
+<ul>
+  <li>Щоб потрапити в hekate, якщо ви знаходитесь не в ній, перезавантажте приставку, для цього утримуйте 5 секунд кнопку живлення, перебуваючи в кастомній прошивці, потім виберіть “<strong>Параметри електроживлення</strong>” -&gt; “<strong>Перезавантаження</strong>”. Коли з’явиться сплешскрін кефіра, натисніть (VOL-) (кнопка зниження гучності)
+    <ol>
+      <li>Після закінчення фіксу атрибутів, натисніть “<strong>Close</strong>” у верхньому правому куті</li>
+      <li>Виберіть “<strong>Home</strong>” -&gt; “<strong>Launch</strong>” -&gt; “<strong>Atmosphere</strong>”, щоб завантажитися назад у прошивку</li>
+    </ol>
+  </li>
+</ul>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Не видаляється гра після встановлення, не можу видалити і через NX-shell <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-d2c2a5df">
+  <summary>Чи зможу я після зламу запускати сторонні програми та емулятори?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Так! <span class="tooltip_container">
+	Кастомна прошивка
+	<span class="tooltip">▼
+		<span class="bottom">
+			Модифіковане програмне забезпечення консолі, написане ентузіастами, дозволяє робити речі, недоступні користувачам офіційних прошивок, наприклад, запускати непідписані програми. В контексті прошивки Світча ми будемо називати наявне програмне забезпечення кастомною прошивкою, хоча, чисто технічно, це не так
+		</span>
+	</span>
+</span> підтримує Homebrew Launcher. Причому користуватися Homebrew Launcher можна і на SX OS без купівлі ліцензії.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чи зможу я після зламу запускати сторонні програми та емулятори? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-7a7e81d5">
+  <summary>Чому після вимкнення моя приставка розряджається?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Якщо у вас увімкнено режим <a href="/autorcm" target="_blank">AutoRCM</a>, то іноді можна випадково ввімкнути приставку і без прокидання <span class="tooltip_container">
+	пейлоада
+	<span class="tooltip">▼
+		<span class="bottom">
+			Файл з виконуваним кодом у форматі <code class="language-plaintext highlighter-rouge">.bin</code>, який ми завантажуємо в приставку, найчастіше - завантажувач
+		</span>
+	</span>
+</span> вона застрягне в RCM і буде втрачати заряд. Ви можете після вимкнення приставки затиснути і утримувати на 20 секунд кнопку живлення, приставка вимкнеться напевно, або відключати її через <span class="tooltip_container">
+	hekate
+	<span class="tooltip">▼
+		<span class="bottom">
+			Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+		</span>
+	</span>
+</span>, вибравши Power Off.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чому після вимкнення моя приставка розряджається? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-6edb2ab4">
+  <summary>Не можу ввімкнути приставку</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Відключіть приставку від джерела живлення\вийміть з неї USB, 30 секунд утримуйте кнопку <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" />, після цього натисніть на кнопку <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" /> один раз і запускайте прошивку. Якщо не допомагає, знову 30 секунд утримуйте кнопку <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" />, ставте консоль на зарядку не менше ніж на 3 години в оригінальний док або ЗП, після чого відключіть приставку від джерела живлення\вийміть з неї USB, 30 секунд утримуйте кнопку <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" />, після цього натисніть на кнопку <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" /> один раз і запускайте прошивку.</p>
+
+<p><a href="https://4pda.to/forum/index.php?showtopic=900987&amp;st=16340#entry89527321" target="_blank">Детальніше</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Не можу ввімкнути приставку <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-40ab51c7">
+  <summary>Під час встановлення ігор приставка гасить екран. Що робити?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Використовуйте <a href="/games" target="_blank">DBI</a> для встановлення</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Під час встановлення ігор приставка гасить екран. Що робити? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-457f4b23">
+  <summary>Як мені перенести дані на нову SD-карту?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Відформатуйте нову карту в <a href="https://format.customfw.xyz" target="_blank">FAT32</a>, і перенесіть всі дані на неї зі старої карти.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Як мені перенести дані на нову SD-карту? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-80495dec">
+  <summary>Чи можна запускати ігри іншого регіону?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> У Switch немає регіонального захисту</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чи можна запускати ігри іншого регіону? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-01551f11">
+  <summary>Як перенести EmuNAND на іншу карту</summary>
+  <div class="spoiler-content">
+    <p>Якщо EmuNAND створений у вигляді файлів, то він переноситься простим копіюванням</p>
+
+<p>Якщо на розділі, скористайтеся <a href="https://gbatemp.net/threads/emutool-move-partition-emu-on-another-sd-switch-emu-type-on-sxos-and-more.550756/" target="_blank">цією утилітою</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Як перенести EmuNAND на іншу карту <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-18cfd771">
+  <summary>Я ввімкнув у hekate автозавантаження прошивки, як мені тепер зайти в саму hekate?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Натисніть (VOL-) під час появи сплешскріна кефіру</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Я ввімкнув у hekate автозавантаження прошивки, як мені тепер зайти в саму hekate? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-19b7a14c">
+  <summary>Чи можна перенести дамп NAND з однієї системи на іншу?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> NAND шифрується унікальним для кожної консолі ключем, тому перенесення неможливе. Більше того, небезпечне. Якщо у вас немає бекапа власного PRODINFO, то ви не зможете відновити приставку в принципі.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чи можна перенести дамп NAND з однієї системи на іншу? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-32c72f23">
+  <summary>Чи можу я обійтися без використання комп'ютера (наприклад, використовувати телефон на Android)?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Якщо ваш телефон вміє копіювати файли на флешку, то так</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чи можу я обійтися без використання комп'ютера (наприклад, використовувати телефон на Android)? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-362a3ea4">
+  <summary>Що з приводу банів?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> <a href="https://vk.com/@pg_testing-pro-bany-razvernuto-podrobno-ponyatno" target="_blank">Розгорнуто про бани</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Що з приводу банів? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-810540ff">
+  <summary>Чи можна грати онлайн?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Так, якщо налаштувати приставку особливим чином і зробити на ній <a href="/emunand" target="_blank">EmuNAND</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чи можна грати онлайн? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-98fead4b">
+  <summary>Чого я позбудуся у разі бану?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Бан може бути різним: на картридж, на акаунт або цілком на консоль. У найгіршому випадку Ви втрачаєте доступ до eShop та онлайн сервісів, при цьому системне ПЗ та оновлення ігор будуть качатися.
+Як правило, банять саму приставку, але не акаунт.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чого я позбудуся у разі бану? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-2a37938d">
+  <summary>Якого розміру карта рекомендується?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Я б брав не менше 128Гб. Чим більша карта, тим більше ігор влізе. Switch підтримує карти пам’яті до 2ТБ включно</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Якого розміру карта рекомендується? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-b06943f4">
+  <summary>Це все безкоштовно?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Прошивка приставок з вразливістю Fusée Gelée - так. Чипування приставок - ні.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Це все безкоштовно? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-ea96d1c2">
+  <summary>Який шанс брику?</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Залежить від того, як чітко ви дотримуєтесь інструкцій. Обов’язково зробіть <a href="/backup-nand" target="_blank">бекап</a>!</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Який шанс брику? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-3dafd6d9">
+  <summary>Чи безпечно переносити збереження зі зламаної на незламану консоль?</summary>
+  <div class="spoiler-content">
+    <p>Навіть злегка змінений сейв будь-якої гри (змінений читами, редактором збережень, хекс-редактором або іншими інструментами) небезпечно переносити на не прошиту приставку. Більше того, сейви деяких ігор знають, що вони були зроблені не на тій консолі, на якій вони зараз працюють.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чи безпечно переносити збереження зі зламаної на незламану консоль? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<hr />
+
+<p class="notice--success"><a href="javascript:window.close();">Закрити сторінку</a></p>
+
+
+				
+        
+      </section>
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+		
+    
+  </article>
+
+  
+  
+</div>
+    <a href="#" class="scrollup">Наверх</a>
+
+    <div class="page__footer-container">
+      <footer class="page__footer">
+        <script src="/assets/js/main.min.js"></script>
+
+<!-- // to top button -->
+<a href="#" class="scrollup">Наверх</a>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $(".scrollup").fadeIn();
+      } else {
+        $(".scrollup").fadeOut();
+      }
+    });
+
+    $(".scrollup").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+  });
+</script>
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a href="http://github.com/rashevskyv"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+	  <li><a href="https://t.me/xhrxhrxhr" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> TG</a></li>
+    
+    
+	  <li><a href="https://t.me/kefir_support" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Kefir / 4ifir - switch jailbroken
+	  </a></li>	
+    
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 nincfw team. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  
+    
+    <script src="/assets/js/spoiler-anim.js"></script>
+  
+
+
+
+
+
+
+
+  </body>
 </html>

@@ -1,15 +1,1056 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Перенаправлення...</title>
-  <link rel="canonical" href="/uk/troubleshooting">
-  <meta http-equiv="refresh" content="0; url=/uk/troubleshooting">
-</head>
-<body>
-  <h1>Перенаправлення...</h1>
-  <p>Сторінка переїхала. Якщо ви не були перенаправлені автоматично, 
-  <a href="/uk/troubleshooting">натисніть тут</a>.</p>
-  <script>location="/uk/troubleshooting"</script>
-</body>
+<!doctype html>
+<html lang="uk" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Проблеми та їх рішення - Взлом Switch</title>
+
+
+
+
+<meta name="description" content="Повне керівництво з прошивки Nintendo Switch">
+
+
+
+
+<meta name="author" content="xHR">
+
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="Взлом Switch">
+<meta property="og:title" content="Проблеми та їх рішення">
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "nincfw team",
+      "url" : null,
+      "sameAs" : null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="/feed.xml"
+  type="application/atom+xml" rel="alternate" title="Взлом Switch Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  </head>
+
+  <body class="layout--single">
+    
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Взлом Switch</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+            <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
+          </li><li class="masthead__menu-item">
+            <a href="http://customfw.xyz" ><i>Інші гайди</i></a>
+          </li><li class="masthead__menu-item">
+            <a href="https://customfw.xyz/donations" ><b>Пожертви</b></a>
+          </li><li class="masthead__menu-item">
+            <a href="/get-started" >Методи<br>злому</a>
+          </li><li class="masthead__menu-item">
+            <a href="/kefir" >Kefir</a>
+          </li><li class="masthead__menu-item">
+            <a href="/backup-nand" >Резервне<br>копіювання</a>
+          </li><li class="masthead__menu-item">
+            <a href="/emunand" >EmuNAND</a>
+          </li><li class="masthead__menu-item">
+            <a href="/usage" >Використання<br>прошитого Switch</a>
+          </li><li class="masthead__menu-item">
+            <a href="/faq" >FAQ</a>
+          </li><li class="masthead__menu-item">
+            <a href="/troubleshooting" >Проблеми та<br>їх вирішення</a>
+          </li><li class="masthead__menu-item">
+            <a href="/games" >Встановлення<br>ігор</a>
+          </li><li class="masthead__menu-item">
+            <a href="/update-fw" >Безпечне<br>оновлення</a>
+          </li><li class="masthead__menu-item">
+            <a href="/site-navigation" >Навігація по сайту</a>
+          </li><li class="masthead__menu-item">
+            <a href="http://customfw.xyz/contacts" >Зв'язатися з нами</a>
+          </li></ul>
+
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+  <div class="author__avatar">
+    
+    <center><img src="/assets/images/bio-photo.png" class="author__avatar" alt="xHR"
+        itemprop="image"></center>
+    
+  </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">xHR</h3><br>
+    
+  </div>
+
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--def btn--inverse btn--large btn--buy">Контакти</button>
+    <ul class="author__urls social-icons">
+      
+      <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+        <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Івано-Франківськ</span>
+      </li>
+      
+      <hr class="style-two">
+
+      
+<li>
+  <a href="https://t.me/xhrxhrxhr" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Telegram (чипування)
+  </a>
+</li>
+
+
+<li>
+  <a href="https://t.me/kefir_support" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Група в Telegram
+  </a>
+</li>
+
+
+<li>
+  <a href="tel:0997763996" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-phone" aria-hidden="true"></i> Телефон
+  </a>
+</li>
+
+
+<li>
+  <a href="viber://0977359431" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-whatsapp" aria-hidden="true"></i> Viber
+  </a>
+</li>
+
+
+      
+
+      
+      <li>
+        <a href="mailto:rashevsky.v@gmail.com">
+          <meta itemprop="email" content="rashevsky.v@gmail.com" />
+          <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a href="https://instagram.com/rashevsky.v" target="_blank" itemprop="sameAs">
+          <i class="fa fa-fw fa-instagram" aria-hidden="true"></i> Instagram
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+      <li>
+        <a href="https://github.com/rashevskyv" target="_blank" itemprop="sameAs">
+          <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+      <li>
+        <a href="https://customfw.xyz/donations" itemprop="sameAs">
+          <i class="fa fa-fw fa-vine" aria-hidden="true"></i><strong>Пожертви</strong>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+  
+   
+  </div>
+ 
+  
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Проблеми та їх рішення">
+    
+    
+    
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Проблеми та їх рішення
+</h1>
+          
+          <div class="language-selector-container">
+            <!-- Не показуємо текст "lang: uk", а показуємо перемикач мов -->
+            
+          </div>
+        </header>
+      
+	  
+        <p>В цьому розділі тільки найчастіші проблеми та їх рішення. Розділ, у якому зібрані відповіді на найчастіші запитання знаходиться тут - <a href="/faq" target="_blank">FAQ</a></p>
+
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Розділи</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#проблеми-з-запуском-прошивки" id="markdown-toc-проблеми-з-запуском-прошивки">Проблеми з запуском прошивки</a></li>
+  <li><a href="#проблеми-з-запуском-ігор" id="markdown-toc-проблеми-з-запуском-ігор">Проблеми з запуском ігор</a></li>
+  <li><a href="#проблеми-з-файлами--картою-памяті" id="markdown-toc-проблеми-з-файлами--картою-памяті">Проблеми з файлами / картою пам’яті</a></li>
+  <li><a href="#проблеми-з-homebrew-або-батьківським-контролем" id="markdown-toc-проблеми-з-homebrew-або-батьківським-контролем">Проблеми з Homebrew або батьківським контролем</a></li>
+  <li><a href="#проблеми-з-залізом" id="markdown-toc-проблеми-з-залізом">Проблеми з залізом</a></li>
+  <li><a href="#проблеми-з-системою" id="markdown-toc-проблеми-з-системою">Проблеми з системою</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<h3 id="проблеми-з-запуском-прошивки">Проблеми з запуском прошивки</h3>
+
+<details class="spoiler" id="spoiler-bdf1c343">
+  <summary>Приставка зависає на логотипі Switch</summary>
+  <div class="spoiler-content">
+    <p>Можливі шляхи вирішення проблеми:</p>
+
+<ol>
+  <li>Переконайтеся, що можете завантажитися в сток. Якщо це так, можливо ви встановили якісь системні модулі, які заважають завантаженню. Для цього:
+    <ol>
+      <li>Запустіть <span class="tooltip_container">
+ hekate
+ <span class="tooltip">▼
+ <span class="bottom">
+     Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+ </span>
+ </span>
+</span> -&gt; <strong>Payloads</strong> -&gt; <code class="language-plaintext highlighter-rouge">TegraExplorer</code> -&gt; <code class="language-plaintext highlighter-rouge">kefir-helper.te</code></li>
+      <li>Якщо після цього приставка запрацювала, шукайте проблему в установлених модулях</li>
+    </ol>
+  </li>
+  <li>Перевстановіть <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip">▼
+     <span class="bottom">
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+     </span>
+ </span>
+</span> начисто. Для цього видаліть з карти пам’яті все, крім папки <code class="language-plaintext highlighter-rouge">Nintendo</code> та <code class="language-plaintext highlighter-rouge">emummc</code> і ставте кефір заново</li>
+  <li>Відформатуйте вашу карту пам’яті в <a href="https://format.customfw.xyz" target="_blank">FAT32</a>.</li>
+  <li>Перевстановіть <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip">▼
+     <span class="bottom">
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+     </span>
+ </span>
+</span> начисто. Для цього видаліть з карти пам’яті все, крім папки <code class="language-plaintext highlighter-rouge">Nintendo</code> та <code class="language-plaintext highlighter-rouge">emummc</code> (або <code class="language-plaintext highlighter-rouge">sxos/emunand</code>) і ставте кефір заново</li>
+  <li>Перевірте чи монтується розділ <code class="language-plaintext highlighter-rouge">USER</code>. Для цього:
+    <ol>
+      <li>Запустіть <span class="tooltip_container">
+ hekate
+ <span class="tooltip">▼
+ <span class="bottom">
+     Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+ </span>
+ </span>
+</span> -&gt; <strong>Payloads</strong> -&gt; <code class="language-plaintext highlighter-rouge">TegraExplorer.bin</code></li>
+      <li>Виберіть <strong>Browse EMUMMC</strong> якщо не запускається <span class="tooltip_container">
+ EmuNAND
+ <span class="tooltip">▼
+ <span class="bottom">
+     Повна копія NAND, розташована на карті пам’яті. Застосовується для того, щоб залишити офіційну прошивку в максимально незайманому вигляді. Наприклад, ви можете грати в EmuNAND в піратку, а в стоці (так називають оригінальну прошивку, розташовану у внутрішній пам’яті консолі) користуватися онлайном і купленими іграми. Таким чином буде мінімізовано шанс отримати бан.
+ </span>
+ </span>
+</span> або <strong>Browse EMMC</strong>, якщо не запускається <span class="tooltip_container">
+ SysNAND
+ <span class="tooltip">▼
+ <span class="bottom">
+ У цьому гайді під цим терміном мається на увазі прошивка, запущена з внутрішньої пам’яті приставки (не з EmuNAND). Приставка з магазину йтиме саме з такою прошивкою.
+Часто є антонімом до EmuNAND. Сток може бути пропатчений атмосферою, може використовуватися для ліцензії, може використовуватися для піратки, однак говорячи сток найчастіше ми маємо на увазі, що прошивка консолі запущена з внутрішньої карти пам’яті для використання консолі для гри в ліцензію.
+ </span>
+ </span>
+</span></li>
+      <li>Перейдіть у розділ <strong>USER</strong>. Якщо помилок немає, то розділ USER монтується і проблема не в ньому</li>
+    </ol>
+  </li>
+  <li><a href="/backup-nand#відновлення-резервної-копії" target="_blank">Відновіть бекап</a>, якщо такий є</li>
+  <li>Зробіть <a href="/system-wipe" target="_blank">скидання до заводських налаштувань</a></li>
+  <li>Зробіть <a href="/downgrade_fw" target="_blank">відновлення прошивки</a></li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Приставка зависає на логотипі Switch <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-07e24169">
+  <summary>При запуску приставки нічого не відбувається / Не можу ввімкнути приставку</summary>
+  <div class="spoiler-content">
+    <p>Можливі шляхи вирішення проблеми:</p>
+<ol>
+  <li>Можливо на приставці стояв AutoRCM або вона сіла - <a href="https://4pda.to/forum/index.php?showtopic=900987&amp;st=16320#entry89527321" target="_blank">найбільш розлога інструкція з запуску приставки, що сіла</a></li>
+  <li>Спробуйте запустити <span class="tooltip_container">
+ hekate
+ <span class="tooltip">▼
+     <span class="bottom">
+         Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+     </span>
+ </span>
+</span>. Якщо вийшло, можливо ви намагалися відкотити прошивку через що стався конфлікт між версією прошивки та спаленими ф’юзами. Спробуйте запустити <strong>Full Stock</strong> та <a href="/update-fw" target="_blank">оновити прошивку до останньої версії</a>, або відключити Emunand (hekate &gt; emuMMC &gt; Change emummc &gt; Disable) та оновити прошивку через налаштування</li>
+  <li><a href="/backup-nand#відновлення-резервної-копії" target="_blank">Відновіть бекап</a>, якщо такий є</li>
+  <li>Зробіть <a href="/downgrade_fw" target="_blank">відновлення прошивки</a></li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">При запуску приставки нічого не відбувається / Не можу ввімкнути приставку <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-7d45e160">
+  <summary>Після прокидання пейлоада та появи сплешскрінів, консоль висить у чорному екрані / на логотипі Atmosphere / на логотипі Nintendo.</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Переконайтеся, що можете завантажитися в сток. Якщо це так, можливо ви встановили якісь системні модулі, які заважають завантаженню. Для цього:
+    <ol>
+      <li>Запустіть <span class="tooltip_container">
+ hekate
+ <span class="tooltip">▼
+ <span class="bottom">
+     Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+ </span>
+ </span>
+</span> -&gt; <strong>Payloads</strong> -&gt; <code class="language-plaintext highlighter-rouge">TegraExplorer</code> -&gt; <code class="language-plaintext highlighter-rouge">kefir-helper.te</code></li>
+      <li>Якщо після цього приставка запрацювала, шукайте проблему в установлених модулях</li>
+    </ol>
+  </li>
+  <li>Якщо ваша карта в exFAT, відформатуйте її в <a href="https://format.customfw.xyz" target="_blank">FAT32</a>.</li>
+  <li>Перевстановіть <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip">▼
+     <span class="bottom">
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+     </span>
+ </span>
+</span> начисто. Для цього видаліть з карти пам’яті все, крім папки <code class="language-plaintext highlighter-rouge">Nintendo</code> та <code class="language-plaintext highlighter-rouge">emummc</code> (або <code class="language-plaintext highlighter-rouge">sxos/emunand</code>) і ставте кефір заново</li>
+  <li>Перевірте чи монтується розділ <code class="language-plaintext highlighter-rouge">SYSTEM</code>. Для цього:
+    <ol>
+      <li>Запустіть <span class="tooltip_container">
+ hekate
+ <span class="tooltip">▼
+ <span class="bottom">
+     Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+ </span>
+ </span>
+</span> -&gt; <strong>Payloads</strong> -&gt; <code class="language-plaintext highlighter-rouge">TegraExplorer.bin</code></li>
+      <li>Виберіть <strong>Browse EMUMMC</strong> якщо не запускається <span class="tooltip_container">
+ EmuNAND
+ <span class="tooltip">▼
+ <span class="bottom">
+     Повна копія NAND, розташована на карті пам’яті. Застосовується для того, щоб залишити офіційну прошивку в максимально незайманому вигляді. Наприклад, ви можете грати в EmuNAND в піратку, а в стоці (так називають оригінальну прошивку, розташовану у внутрішній пам’яті консолі) користуватися онлайном і купленими іграми. Таким чином буде мінімізовано шанс отримати бан.
+ </span>
+ </span>
+</span> або <strong>Browse EMMC</strong>, якщо не запускається <span class="tooltip_container">
+ SysNAND
+ <span class="tooltip">▼
+ <span class="bottom">
+ У цьому гайді під цим терміном мається на увазі прошивка, запущена з внутрішньої пам’яті приставки (не з EmuNAND). Приставка з магазину йтиме саме з такою прошивкою.
+Часто є антонімом до EmuNAND. Сток може бути пропатчений атмосферою, може використовуватися для ліцензії, може використовуватися для піратки, однак говорячи сток найчастіше ми маємо на увазі, що прошивка консолі запущена з внутрішньої карти пам’яті для використання консолі для гри в ліцензію.
+ </span>
+ </span>
+</span></li>
+      <li>Перейдіть у розділ <strong>SYSTEM</strong>. Якщо помилок немає, то розділ SYSTEM монтується і проблема не в ньому</li>
+    </ol>
+  </li>
+  <li><a href="/backup-nand#відновлення-резервної-копії" target="_blank">Відновіть бекап</a>, якщо такий є</li>
+  <li>Зробіть <a href="/downgrade_fw" target="_blank">відновлення прошивки</a></li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Після прокидання пейлоада та появи сплешскрінів, консоль висить у чорному екрані / на логотипі Atmosphere / на логотипі Nintendo. <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-6909a26a">
+  <summary>При запуску Emunand помилка "Failed to match warmboot with fuses"</summary>
+  <div class="spoiler-content">
+    <p>Просто завантажтеся в Full Stock (<strong>hekate</strong> -&gt; “<strong>More Configs</strong>” -&gt; “<strong>Full Stock</strong>”), перезавантажтеся і помилка зникне.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">При запуску Emunand помилка "Failed to match warmboot with fuses" <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-297b98cb">
+  <summary>Страшна помилка з білими літерами на чорному екрані після оновлення прошивки через інтернет</summary>
+  <div class="spoiler-content">
+    <p class="text-center notice--info"><img src="/assets/images/switch/screenshots/exfat_failed.png" alt="" /></p>
+
+<p>Відформатуйте вашу карту пам’яті в <a href="https://format.customfw.xyz" target="_blank">FAT32</a>.</p>
+
+<p>Якщо не допомагає, перевстановіть <span class="tooltip_container">
+	<a href="kefir" target="_blank">kefir</a>
+	<span class="tooltip">▼
+		<span class="bottom">
+			Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+		</span>
+	</span>
+</span> начисто. Для цього видаліть з карти пам’яті все, крім папки Nintendo та emummc (або sxos/emunand) і ставте кефір заново</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Страшна помилка з білими літерами на чорному екрані після оновлення прошивки через інтернет <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-24b5106f">
+  <summary>Після запуску приставки помилка на фіолетовому фоні з написом **Error Code** та номером помилки</summary>
+  <div class="spoiler-content">
+    <p>Зверніть увагу на числа у другому рядку після <strong>Title:</strong>. Ці числа вказують на те, який тайтл викликав помилку і через який не завантажується приставка. Якщо номер тайтла <strong>не</strong> <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то перейдіть у папку <code class="language-plaintext highlighter-rouge">atmosphere/contents</code> (<code class="language-plaintext highlighter-rouge">atmosphere/titles</code> на атмосфері нижче ніж 0.10.0) і видаліть папку з номером, вказаним на екрані вашої приставки у другому рядку. Якщо номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то найімовірніше помилка викликана тим, що якесь хомбрю запущено в режимі аплету і йому не вистачає пам’яті.</p>
+
+<p class="text-center notice--info"><img src="/assets/images/switch/screenshots/atmos_title_error.png" alt="" /></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Після запуску приставки помилка на фіолетовому фоні з написом **Error Code** та номером помилки <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-8c0cb4cc">
+  <summary>При запуску прошивки отримую помилку "Fatal Error: [NXBOOT]"</summary>
+  <div class="spoiler-content">
+    <p>Оновіть <span class="tooltip_container">
+	<a href="kefir" target="_blank">kefir</a>
+	<span class="tooltip">▼
+		<span class="bottom">
+			Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+		</span>
+	</span>
+</span></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">При запуску прошивки отримую помилку "Fatal Error: [NXBOOT]" <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<h3 id="проблеми-з-запуском-ігор">Проблеми з запуском ігор</h3>
+
+<details class="spoiler" id="spoiler-5cf8bff6">
+  <summary>При запуску ігор в emunand вилізає настирливе вікно про хмарні збереження</summary>
+  <div class="spoiler-content">
+    <p>Якщо ви пропустили цей пункт і у вас були увімкнені хмарні збереження, то в емунанді при запуску ігор буде вилітати помилка, щоб її усунути, в <strong>емунанді</strong> через DBI видаліть акаунт на якому з’являється помилка через <strong>Tools &gt; Delete account</strong>, після чого створіть новий з тим самим ім’ям.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">При запуску ігор в emunand вилізає настирливе вікно про хмарні збереження <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-d9f27eaf">
+  <summary>Не можу використовувати картриджі в EmuNAND, хоча в SysNAND все працює</summary>
+  <div class="spoiler-content">
+    <p>Для коректної роботи картриджів SysNAND та EmuNAND повинні знаходитися на одній версії прошивки. Якщо це не так, <a href="/update-fw">оновіть EmuNAND</a>. Якщо це не допомогло, переконайтеся, що в hekate у вас відключено <strong>NoGC</strong> (<strong>Options</strong> -&gt; <strong>Auto NoGC</strong> -&gt; <strong>OFF</strong>)</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Не можу використовувати картриджі в EmuNAND, хоча в SysNAND все працює <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-1f359145">
+  <summary>Після запуску приставки помилка на чорному фоні з написом "**Panic occurred while running Atmosphere**".</summary>
+  <div class="spoiler-content">
+    <p>Оновіть <span class="tooltip_container">
+	<a href="kefir" target="_blank">kefir</a>
+	<span class="tooltip">▼
+		<span class="bottom">
+			Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+		</span>
+	</span>
+</span>. 
+Якщо оновлення <span class="tooltip_container">
+	<a href="kefir" target="_blank">kefir</a>
+	<span class="tooltip">▼
+		<span class="bottom">
+			Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+		</span>
+	</span>
+</span> не допомогло, зверніть увагу на числа у другому рядку після <strong>Title:</strong>. Ці числа вказують на те, який тайтл викликав помилку і через який не завантажується приставка. Якщо номер тайтла <strong>не</strong> <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то перейдіть у папку <code class="language-plaintext highlighter-rouge">atmosphere/contents</code> (<code class="language-plaintext highlighter-rouge">atmosphere/titles</code> на атмосфері нижче ніж 0.10.0) і видаліть папку з номером, вказаним на екрані вашої приставки у другому рядку. Якщо номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то найімовірніше помилка викликана тим, що якесь хомбрю запущено в режимі аплету і йому не вистачає пам’яті. Якщо номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000001F</code>, то витягніть картридж із приставки. Тримайте emunand та sysnand на одній версії прошивки, щоб надалі не було таких проблем.</p>
+
+<p class="text-center notice--info"><img src="/assets/images/switch/screenshots/atmos_title_error2.png" alt="" /></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Після запуску приставки помилка на чорному фоні з написом "**Panic occurred while running Atmosphere**". <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-eff8ceff">
+  <summary>Хотів встановити гру, але встановлення зависло, гра в меню не з'явилася, але місце займає. Як видалити?</summary>
+  <div class="spoiler-content">
+    <p>Запустіть <strong>DBI</strong> і виберіть “<strong>Clean Orphaned Files</strong>” - всі файли, на які немає посилань у системній базі даних, будуть видалені. <strong>Важливо:</strong> запускайте DBI тільки <a href="/hbl" target="_blank">в режимі аплету</a>, кефір має бути свіжим. Інакше магія не спрацює.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Хотів встановити гру, але встановлення зависло, гра в меню не з'явилася, але місце займає. Як видалити? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-93997a40">
+  <summary>Не можу встановити ігри в NAND</summary>
+  <div class="spoiler-content">
+    <p>Судячи з усього ви використовуєте EmuNAND і старий <span class="tooltip_container">
+	<a href="kefir" target="_blank">kefir</a>
+	<span class="tooltip">▼
+		<span class="bottom">
+			Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+		</span>
+	</span>
+</span>. Оновіть його.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Не можу встановити ігри в NAND <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-c1eef33a">
+  <summary>В Tinfoil зникли всі ігри</summary>
+  <div class="spoiler-content">
+    <ul>
+  <li>Переконайтеся, що на приставці стоїть вірна дата та час.</li>
+  <li>Оновіть <span class="tooltip_container">
+  <a href="kefir" target="_blank">kefir</a>
+  <span class="tooltip">▼
+      <span class="bottom">
+          Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+      </span>
+  </span>
+</span> до актуальної версії</li>
+  <li>Видаліть tinfoil, оновіть <span class="tooltip_container">
+  <a href="kefir" target="_blank">kefir</a>
+  <span class="tooltip">▼
+      <span class="bottom">
+          Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+      </span>
+  </span>
+</span>, встановіть tinfoil з папки <code class="language-plaintext highlighter-rouge">games</code> на карті пам’яті</li>
+  <li><a href="https://vk.com/topic-178659422_48077007" target="_blank">Ще поради</a></li>
+</ul>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">В Tinfoil зникли всі ігри <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-040c94dc">
+  <summary>Деякі ігри не запускаються з помилкою "Програма закрита, тому що сталася помилка"</summary>
+  <div class="spoiler-content">
+    <p>Можливо, встановлений ReverseNX. Видаліть його. Також спробуйте вимкнути приставку, запустіть <span class="tooltip_container">
+	hekate
+	<span class="tooltip">▼
+		<span class="bottom">
+			Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+		</span>
+	</span>
+</span>, перейдіть в <strong>Payloads</strong> і виберіть <code class="language-plaintext highlighter-rouge">fusee.bin</code>, після чого відразу затисніть одночасно обидві кнопки гучності доти, доки не потрапите в рекавері. Після вимкніть приставку утримуючи кнопку живлення. Потім увімкніть як зазвичай.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Деякі ігри не запускаються з помилкою "Програма закрита, тому що сталася помилка" <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-eccb1774">
+  <summary>Не запускається жодна гра. При запуску йде перевірка, потім помилка</summary>
+  <div class="spoiler-content">
+    <p>Можливо, ви видалили тікети всіх ігор. Для перевстановлення тікетів, запустіть <a href="/games" target="_blank">tinfoil</a>, перейдіть на вкладку “<strong>Тікети</strong>”, і для кожної гри виконайте наступне:</p>
+<ol>
+  <li>На грі натисніть <img src="/assets/images/switch/buttons/Y.png" alt="(Y)" /></li>
+  <li>Натисніть <img src="/assets/images/switch/buttons/R.png" alt="(R)" /></li>
+  <li>Увімкніть опцію “<strong>Встановити Ticket</strong>”</li>
+  <li>Натисніть “<strong>Почати встановлення</strong>”</li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Не запускається жодна гра. При запуску йде перевірка, потім помилка <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-c0665dfb">
+  <summary>Я випадково видалив тікети ігор у tinfoil</summary>
+  <div class="spoiler-content">
+    <p>Для перевстановлення тікетів, запустіть <a href="/games" target="_blank">tinfoil</a>, перейдіть на вкладку “<strong>Тікети</strong>”, і для кожної гри виконайте наступне:</p>
+<ol>
+  <li>На грі натисніть <img src="/assets/images/switch/buttons/Y.png" alt="(Y)" /></li>
+  <li>Натисніть <img src="/assets/images/switch/buttons/R.png" alt="(R)" /></li>
+  <li>Увімкніть опцію “<strong>Встановити Ticket</strong>”</li>
+  <li>Натисніть “<strong>Почати встановлення</strong>”</li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Я випадково видалив тікети ігор у tinfoil <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-7796455a">
+  <summary>Після оновлення прошивки, деякі ігри перестали запускатися</summary>
+  <div class="spoiler-content">
+    <p>Найімовірніше, у вас перестали запускатися ігри, сконвертовані з xci через стару версію n4xci (ви могли завантажити вже сконвертований образ з будь-якого джерела; рідко коли джерело вказує, що гра - конвертка). Для вирішення цієї проблеми, скачайте свіжу версію <a href="https://github.com/The-4n/4NXCI/releases/tag/v4.03" target="_blank">n4xci</a> (завантажуйте 4nxci-vX.XX<strong>_GUI</strong>.zip). Зробіть <a href="backup-nand#частина-iii---дампимо-ключі" target="_blank">дамп ключів на вашій актуальній прошивці</a> і покладіть їх в одну папку з програмою. Не забудьте вказати шлях до них у полі <strong>Keyset File</strong>. Сконвертований образ NSP має почати працювати.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Після оновлення прошивки, деякі ігри перестали запускатися <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<h3 id="проблеми-з-файлами--картою-памяті">Проблеми з файлами / картою пам’яті</h3>
+
+<details class="spoiler" id="spoiler-54b0f7d2">
+  <summary>Не можу закинути на карту гру більше 4х Гб, що робити?</summary>
+  <div class="spoiler-content">
+    <p>Немає жодної причини закидати ігри на карту пам’яті. Відразу <a href="/games" target="_blank">встановлюйте їх</a> рекомендованим способом по MTP через DBI!</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Не можу закинути на карту гру більше 4х Гб, що робити? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-58cf3871">
+  <summary>Після встановлення модифікації або перекладу на гру, модифікація або переклад не працює</summary>
+  <div class="spoiler-content">
+    <p>Перезавантажте приставку. Якщо це не допомогло, виправте атрибути</p>
+<ol>
+  <li>В <strong>hekate</strong> перейдіть в меню “<strong>Tools</strong>”, переключіться на вкладку “<strong>Arch bit • RCM • Touch • Partitions</strong>” (в нижній частині екрану), виберіть “<strong>Fix Archive Bit</strong>”
+    <ul>
+      <li>Щоб потрапити в hekate, якщо ви знаходитесь не в ній, перезавантажте приставку, для цього утримуйте 5 секунд кнопку живлення, перебуваючи в кастомній прошивці, потім виберіть “<strong>Параметри електроживлення</strong>” -&gt; “<strong>Перезавантаження</strong>”. Коли з’явиться сплешскрін кефіра, натисніть (VOL-) (кнопка зниження гучності)</li>
+    </ul>
+  </li>
+  <li>Після закінчення фіксу атрибутів, натисніть “<strong>Close</strong>” у верхньому правому куті</li>
+  <li>Виберіть “<strong>Home</strong>” -&gt; “<strong>Launch</strong>” -&gt; “<strong>Atmosphere</strong>”, щоб завантажитися назад у прошивку</li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Після встановлення модифікації або перекладу на гру, модифікація або переклад не працює <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-39dab9c1">
+  <summary>На MacOS скинув файли на карту пам'яті, але DBI \ tinfoil \ GoldLeaf їх не бачить</summary>
+  <div class="spoiler-content">
+    <p>Потрібно виправити атрибути.</p>
+<ol>
+  <li>В <strong>hekate</strong> перейдіть в меню “<strong>Tools</strong>”, переключіться на вкладку “<strong>Arch bit • RCM • Touch • Partitions</strong>” (в нижній частині екрану), виберіть “<strong>Fix Archive Bit</strong>”
+    <ul>
+      <li>Щоб потрапити в hekate, якщо ви знаходитесь не в ній, перезавантажте приставку, для цього утримуйте 5 секунд кнопку живлення, перебуваючи в кастомній прошивці, потім виберіть “<strong>Параметри електроживлення</strong>” -&gt; “<strong>Перезавантаження</strong>”. Коли з’явиться сплешскрін кефіра, натисніть (VOL-) (кнопка зниження гучності)</li>
+    </ul>
+  </li>
+  <li>Після закінчення фіксу атрибутів, натисніть “<strong>Close</strong>” у верхньому правому куті</li>
+  <li>Виберіть “<strong>Home</strong>” -&gt; “<strong>Launch</strong>” -&gt; “<strong>Atmosphere</strong>”, щоб завантажитися назад у прошивку</li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">На MacOS скинув файли на карту пам'яті, але DBI \ tinfoil \ GoldLeaf їх не бачить <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-a6d0bea2">
+  <summary>Приставка не бачить карту у форматі exFAT і просить оновити прошивку</summary>
+  <div class="spoiler-content">
+    <p>Вам потрібно встановити драйвер exFAT. Для цього виконайте <a href="/update-fw" target="_blank">безпечне оновлення прошивки</a>. Його потрібно робити навіть у тому випадку, якщо у вас і так стоїть остання версія прошивки, що зламується! Повторне оновлення просто встановить відсутній драйвер. А взагалі, <a href="http://format.customfw.xyz" target="_blank">переходьте на FAT32</a>!</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Приставка не бачить карту у форматі exFAT і просить оновити прошивку <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-40f06bda">
+  <summary>Постійні помилки, ігри вилітають під час роботи</summary>
+  <div class="spoiler-content">
+    <p><a href="https://customfw.xyz/test_sd" target="_blank">Перевірте свою SD-карту на помилки</a>, а потім встановіть кефір через скрипт.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Постійні помилки, ігри вилітають під час роботи <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-dd769a93">
+  <summary>Проблеми після копіювання файлів на карту на маку/В Homebrew Menu/Tinfoil порожньо, хоча на карті все є</summary>
+  <div class="spoiler-content">
+    <ul>
+  <li>Переконайтеся, що ім’я вашої карти відрізняється від <code class="language-plaintext highlighter-rouge">Switch</code> у будь-якій комбінації малих або великих літер</li>
+  <li>
+    <ol>
+      <li>В <strong>hekate</strong> перейдіть в меню “<strong>Tools</strong>”, переключіться на вкладку “<strong>Arch bit • RCM • Touch • Partitions</strong>” (в нижній частині екрану), виберіть “<strong>Fix Archive Bit</strong>”
+        <ul>
+          <li>Щоб потрапити в hekate, якщо ви знаходитесь не в ній, перезавантажте приставку, для цього утримуйте 5 секунд кнопку живлення, перебуваючи в кастомній прошивці, потім виберіть “<strong>Параметри електроживлення</strong>” -&gt; “<strong>Перезавантаження</strong>”. Коли з’явиться сплешскрін кефіра, натисніть (VOL-) (кнопка зниження гучності)</li>
+        </ul>
+        <ol>
+          <li>Після закінчення фіксу атрибутів, натисніть “<strong>Close</strong>” у верхньому правому куті</li>
+          <li>Виберіть “<strong>Home</strong>” -&gt; “<strong>Launch</strong>” -&gt; “<strong>Atmosphere</strong>”, щоб завантажитися назад у прошивку</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>Якщо ви користувач MacOS і вам не допоміг спосіб вище, виконайте наступну команду: <code class="language-plaintext highlighter-rouge">sudo chflags -R arch /Volumes/&lt;name of SD card&gt;</code></li>
+</ul>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Проблеми після копіювання файлів на карту на маку/В Homebrew Menu/Tinfoil порожньо, хоча на карті все є <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-f0ab403a">
+  <summary>Виправлення архівних атрибутів</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>В <strong>hekate</strong> перейдіть в меню “<strong>Tools</strong>”, переключіться на вкладку “<strong>Arch bit • RCM • Touch • Partitions</strong>” (в нижній частині екрану), виберіть “<strong>Fix Archive Bit</strong>”
+    <ul>
+      <li>Щоб потрапити в hekate, якщо ви знаходитесь не в ній, перезавантажте приставку, для цього утримуйте 5 секунд кнопку живлення, перебуваючи в кастомній прошивці, потім виберіть “<strong>Параметри електроживлення</strong>” -&gt; “<strong>Перезавантаження</strong>”. Коли з’явиться сплешскрін кефіра, натисніть (VOL-) (кнопка зниження гучності)</li>
+    </ul>
+  </li>
+  <li>Після закінчення фіксу атрибутів, натисніть “<strong>Close</strong>” у верхньому правому куті</li>
+  <li>Виберіть “<strong>Home</strong>” -&gt; “<strong>Launch</strong>” -&gt; “<strong>Atmosphere</strong>”, щоб завантажитися назад у прошивку</li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Виправлення архівних атрибутів <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-d793a0cd">
+  <summary>Виникають помилки при встановленні NSP-файлів</summary>
+  <div class="spoiler-content">
+    <ul>
+  <li>Дайте файлам коротке ім’я</li>
+  <li>Оновіть <span class="tooltip_container">
+  <a href="kefir" target="_blank">kefir</a>
+  <span class="tooltip">▼
+      <span class="bottom">
+          Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+      </span>
+  </span>
+</span></li>
+  <li>Якщо не допомогло - перекачайте файли, можливо вони не докачані</li>
+  <li>На switch’і через hekate у вкладці <strong>tools</strong> виберіть <strong>Unset archive bit</strong></li>
+</ul>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Виникають помилки при встановленні NSP-файлів <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<h3 id="проблеми-з-homebrew-або-батьківським-контролем">Проблеми з Homebrew або батьківським контролем</h3>
+
+<details class="spoiler" id="spoiler-b292a157">
+  <summary>Перед прошивкою забув прибрати батьківський контроль, а тепер не можу! При вході в меню батьківського контролю вилітає атмосфера, що робити?</summary>
+  <div class="spoiler-content">
+    <p><a href="https://github.com/ITotalJustice/Reset-Parental-Controls-NX/releases" target="_blank">Видалити батьківський контроль</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Перед прошивкою забув прибрати батьківський контроль, а тепер не можу! При вході в меню батьківського контролю вилітає атмосфера, що робити? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-5d77f9ea">
+  <summary>Після запуску хомбрю помилка на фіолетовому фоні з написом Error Code та номером помилки</summary>
+  <div class="spoiler-content">
+    <p>Ви запускаєте програму з режиму аплету (Applet mode), тобто з Альбомів, тоді як робити це потрібно в режимі тайла (Tile mode), тобто через гру або форвардер. Як правильно запускати HBL описано в <a href="/hbl" target="_blank">інструкції</a>. Режим аплету не дає програмі, що запускається, повного доступу до всього обсягу оперативної пам’яті в приставці, від чого і трапляються помилки. Якщо номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то найімовірніше помилка викликана тим, що якесь хомбрю запущено в режимі аплету і йому не вистачає пам’яті. Якщо номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000001F</code>, то витягніть картридж із приставки. Тримайте emunand та sysnand на одній версії прошивки, щоб надалі не було таких проблем. Також виправте атрибути (як шукайте на цій же сторінці)</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Після запуску хомбрю помилка на фіолетовому фоні з написом Error Code та номером помилки <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-360a8cd0">
+  <summary>Помилка при запуску хомбрю з головного меню приставки через форвардер</summary>
+  <div class="spoiler-content">
+    <p>Вам потрібно оновити форвардер</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Помилка при запуску хомбрю з головного меню приставки через форвардер <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<h3 id="проблеми-з-залізом">Проблеми з залізом</h3>
+
+<details class="spoiler" id="spoiler-c68f664f">
+  <summary>Джойкони в емунанді не працюють окремо від консолі, хоча в стоку сиснанда працюють</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Синхронізуй joy-con’и з sysnand</li>
+  <li>Скиньте <a href="/files/Syncfix.te" target="_blank">Syncfixv2.te</a> в корінь карти пам’яті</li>
+  <li>Скачайте пейлоад <a href="https://github.com/suchmememanyskill/TegraExplorer/releases/" target="_blank">TegraExplorer</a> і помістіть його в папку <code class="language-plaintext highlighter-rouge">bootloader/payloads</code></li>
+  <li>Встав карту в switch і зайди в hekate</li>
+  <li>Запусти <code class="language-plaintext highlighter-rouge">TegraExplorer.bin</code> з вкладки “<strong>payloads</strong>”, якщо побачите “<strong>Grabbing keys from prod.keys… Done</strong>*”, натисніть будь-яку кнопку</li>
+  <li>Перейди за шляхом <code class="language-plaintext highlighter-rouge">[SD:/] SD CARD -&gt; Syncfix.te -&gt; Launch Script</code></li>
+  <li>Після закінчення роботи скрипта, перезавантажте приставку</li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Джойкони в емунанді не працюють окремо від консолі, хоча в стоку сиснанда працюють <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-ef1645de">
+  <summary>Батарея відображає невірний заряд \ калібрування батареї</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> <a href="https://4pda.to/forum/index.php?showtopic=900987&amp;st=14880#entry87254644" target="_blank">Вичерпна стаття</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Батарея відображає невірний заряд \ калібрування батареї <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<h3 id="проблеми-з-системою">Проблеми з системою</h3>
+
+<details class="spoiler" id="spoiler-17c0d484">
+  <summary>У мене завантажилася прошивка, як її видалити не оновлюючись?</summary>
+  <div class="spoiler-content">
+    <p>Запустіть <strong>DBI</strong> і виберіть “<strong>Clean Orphaned Files</strong>” - всі файли, на які немає посилань у системній базі даних, будуть видалені. <strong>Важливо:</strong> запускайте DBI тільки <a href="/hbl" target="_blank">в режимі аплету</a>, кефір має бути свіжим. Інакше магія не спрацює.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">У мене завантажилася прошивка, як її видалити не оновлюючись? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-56bcfe53">
+  <summary>У мене остання прошивка, але при запуску деяких ігор я бачу, що "*доступне оновлення системи*". Чому так відбувається?</summary>
+  <div class="spoiler-content">
+    <p>Мається на увазі оновлення гри. Скачайте його та встановіть як звичайну гру. Також скинути перевірку версії можна через DBI. Запустіть програму, виберіть <strong>Browse installed applications</strong>, натисніть <img src="/assets/images/switch/buttons/Y.png" alt="(Y)" />, щоб виділити всі пункти, натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" />, а потім виберіть <strong>Reset required version</strong>. DBI має бути <a href="/hbl" target="_blank">запущений з режиму аплету</a>, кефір має бути свіжим. Інакше магія не спрацює.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">У мене остання прошивка, але при запуску деяких ігор я бачу, що "*доступне оновлення системи*". Чому так відбувається? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-b22b7b32">
+  <summary>Не можу видалити користувача</summary>
+  <div class="spoiler-content">
+    <p><strong>DBI &gt; Tools &gt; Delete account</strong></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Не можу видалити користувача <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-c88a5f97">
+  <summary>Не синхронізується час</summary>
+  <div class="spoiler-content">
+    <p>Автоматична синхронізація часу вимкнена в кефірі, починаючи з версії 660 для економії батареї в режимі сну. Для синхронізації використовуйте модуль <a href="https://github.com/nedex/QuickNTP" target="_blank">QuickNTP</a> для Tesla (входить до складу кефіру). Запустіть Tesla, натиснувши одночасно <img src="/assets/images/switch/buttons/L.png" alt="(L)" /> + <img src="/assets/images/switch/buttons/DOWN.png" alt="(DOWN)" /> + <img src="/assets/images/switch/buttons/R3.png" alt="(R3)" />, виберіть QuickNTP, натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" />. Якщо час не синхронізувався, виберіть інший сервер синхронізації хрестовиною (ВЛІВО-ВПРАВО).</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Не синхронізується час <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<hr />
+
+<p class="notice--success"><a href="javascript:window.close();">Закрити сторінку</a></p>
+
+
+				
+        
+      </section>
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+		
+    
+  </article>
+
+  
+  
+</div>
+    <a href="#" class="scrollup">Наверх</a>
+
+    <div class="page__footer-container">
+      <footer class="page__footer">
+        <script src="/assets/js/main.min.js"></script>
+
+<!-- // to top button -->
+<a href="#" class="scrollup">Наверх</a>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $(".scrollup").fadeIn();
+      } else {
+        $(".scrollup").fadeOut();
+      }
+    });
+
+    $(".scrollup").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+  });
+</script>
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a href="http://github.com/rashevskyv"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+	  <li><a href="https://t.me/xhrxhrxhr" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> TG</a></li>
+    
+    
+	  <li><a href="https://t.me/kefir_support" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Kefir / 4ifir - switch jailbroken
+	  </a></li>	
+    
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 nincfw team. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  
+    
+    <script src="/assets/js/spoiler-anim.js"></script>
+  
+
+
+
+
+
+
+
+  </body>
 </html>

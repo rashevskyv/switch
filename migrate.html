@@ -1,15 +1,698 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Перенаправлення...</title>
-  <link rel="canonical" href="/uk/migrate">
-  <meta http-equiv="refresh" content="0; url=/uk/migrate">
-</head>
-<body>
-  <h1>Перенаправлення...</h1>
-  <p>Сторінка переїхала. Якщо ви не були перенаправлені автоматично, 
-  <a href="/uk/migrate">натисніть тут</a>.</p>
-  <script>location="/uk/migrate"</script>
-</body>
+<!doctype html>
+<html lang="uk" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Перехід з SXOS на Atmosphere - Взлом Switch</title>
+
+
+
+
+<meta name="description" content="Повне керівництво з прошивки Nintendo Switch">
+
+
+
+
+<meta name="author" content="xHR">
+
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="Взлом Switch">
+<meta property="og:title" content="Перехід з SXOS на Atmosphere">
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "nincfw team",
+      "url" : null,
+      "sameAs" : null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="/feed.xml"
+  type="application/atom+xml" rel="alternate" title="Взлом Switch Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  </head>
+
+  <body class="layout--single">
+    
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Взлом Switch</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+            <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
+          </li><li class="masthead__menu-item">
+            <a href="http://customfw.xyz" ><i>Інші гайди</i></a>
+          </li><li class="masthead__menu-item">
+            <a href="https://customfw.xyz/donations" ><b>Пожертви</b></a>
+          </li><li class="masthead__menu-item">
+            <a href="/get-started" >Методи<br>злому</a>
+          </li><li class="masthead__menu-item">
+            <a href="/kefir" >Kefir</a>
+          </li><li class="masthead__menu-item">
+            <a href="/backup-nand" >Резервне<br>копіювання</a>
+          </li><li class="masthead__menu-item">
+            <a href="/emunand" >EmuNAND</a>
+          </li><li class="masthead__menu-item">
+            <a href="/usage" >Використання<br>прошитого Switch</a>
+          </li><li class="masthead__menu-item">
+            <a href="/faq" >FAQ</a>
+          </li><li class="masthead__menu-item">
+            <a href="/troubleshooting" >Проблеми та<br>їх вирішення</a>
+          </li><li class="masthead__menu-item">
+            <a href="/games" >Встановлення<br>ігор</a>
+          </li><li class="masthead__menu-item">
+            <a href="/update-fw" >Безпечне<br>оновлення</a>
+          </li><li class="masthead__menu-item">
+            <a href="/site-navigation" >Навігація по сайту</a>
+          </li><li class="masthead__menu-item">
+            <a href="http://customfw.xyz/contacts" >Зв'язатися з нами</a>
+          </li></ul>
+
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+  <div class="author__avatar">
+    
+    <center><img src="/assets/images/bio-photo.png" class="author__avatar" alt="xHR"
+        itemprop="image"></center>
+    
+  </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">xHR</h3><br>
+    
+  </div>
+
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--def btn--inverse btn--large btn--buy">Контакти</button>
+    <ul class="author__urls social-icons">
+      
+      <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+        <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Івано-Франківськ</span>
+      </li>
+      
+      <hr class="style-two">
+
+      
+<li>
+  <a href="https://t.me/xhrxhrxhr" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Telegram (чипування)
+  </a>
+</li>
+
+
+<li>
+  <a href="https://t.me/kefir_support" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Група в Telegram
+  </a>
+</li>
+
+
+<li>
+  <a href="tel:0997763996" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-phone" aria-hidden="true"></i> Телефон
+  </a>
+</li>
+
+
+<li>
+  <a href="viber://0977359431" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-whatsapp" aria-hidden="true"></i> Viber
+  </a>
+</li>
+
+
+      
+
+      
+      <li>
+        <a href="mailto:rashevsky.v@gmail.com">
+          <meta itemprop="email" content="rashevsky.v@gmail.com" />
+          <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a href="https://instagram.com/rashevsky.v" target="_blank" itemprop="sameAs">
+          <i class="fa fa-fw fa-instagram" aria-hidden="true"></i> Instagram
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+      <li>
+        <a href="https://github.com/rashevskyv" target="_blank" itemprop="sameAs">
+          <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+      <li>
+        <a href="https://customfw.xyz/donations" itemprop="sameAs">
+          <i class="fa fa-fw fa-vine" aria-hidden="true"></i><strong>Пожертви</strong>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+  
+   
+  </div>
+ 
+  
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Перехід з SXOS на Atmosphere">
+    
+    
+    
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Перехід з SXOS на Atmosphere
+</h1>
+          
+          <div class="language-selector-container">
+            <!-- Не показуємо текст "lang: uk", а показуємо перемикач мов -->
+            
+          </div>
+        </header>
+      
+	  
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Розділи</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#перехід-з-sx-на-atmosphere" id="markdown-toc-перехід-з-sx-на-atmosphere">Перехід з SX на Atmosphere</a>    <ul>
+      <li><a href="#частина-i---підготовчі-роботи" id="markdown-toc-частина-i---підготовчі-роботи">Частина I - Підготовчі роботи</a></li>
+      <li><a href="#частина-ii---міграція-emunand" id="markdown-toc-частина-ii---міграція-emunand">Частина II - Міграція Emunand</a></li>
+      <li><a href="#частина-iii---бекап-прошивки-та-ключів" id="markdown-toc-частина-iii---бекап-прошивки-та-ключів">Частина III - Бекап прошивки та ключів</a></li>
+      <li><a href="#частина-iv---завершення-міграції" id="markdown-toc-частина-iv---завершення-міграції">Частина IV - Завершення міграції</a></li>
+    </ul>
+  </li>
+  <li><a href="#проблеми-та-їх-вирішення" id="markdown-toc-проблеми-та-їх-вирішення">Проблеми та їх вирішення</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<details class="spoiler" id="spoiler-a9ce7a55">
+  <summary>Навіщо переходити на Atmosphere?</summary>
+  <div class="spoiler-content">
+    <p>У жовтні 2020 року <a href="https://www.theverge.com/2020/10/2/21499297/team-xecuter-selling-nintendo-hacks-arrested-charged-fraud" target="_blank">були заарештовані два лідери Xecuter Team</a> - компанії, що займалася розробкою та підтримкою SXOS, а також виробництвом чіпів для модифікації приставок із закритою вразливістю.</p>
+
+<p>1-го грудня 2020 року у світ виходить оновлення системного ПЗ Switch під версією 11.0.0 і вже через 5 днів команда SXOS випустила прошивку з підтримкою цього оновлення. Здавалося б, все йде добре і незважаючи на арешти, TX все ще працюють.</p>
+
+<p>Однак, приблизно в цей же час, всі китайські майданчики, що продавали чіпи, в один голос почали говорити про те, що чіпи у них закінчилися і перспективи виробництва нових партій вельми примарні. Також почали поширюватися чутки про те, що всі виробничі фабрики чіпів закриті, а продукція конфіскована. Штат співробітників розігнаний, а заборона на продаж чіпів пущена ледь не з верхівки комуністичної партії Китаю. У що не так вже й складно повірити, якщо згадати, що найпотужніша корпорація Tencent є офіційним дистриб’ютором продукції Nintendo в Китаї.</p>
+
+<p>Останньою ж краплею, що підтверджує, що злі язики, ймовірно, мають рацію, став вихід прошивки 11.0.1, яка на момент написання цієї замітки досі не працює на SXOS.</p>
+
+<p>Варто зазначити, що 11.0.1 оновлення мінорне і Atmosphere буквально до вечора того ж дня вже з ним працювала.</p>
+
+<p>На початку 2021 року вийшла Atmosphere 0.17.0, яка вже повністю підтримувала роботу на чіпованих приставках, так що тепер можна вже і не чекати нових версій SXOS - це просто вже не потрібно.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Навіщо переходити на Atmosphere? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<h2 id="перехід-з-sx-на-atmosphere">Перехід з SX на Atmosphere</h2>
+
+<details class="spoiler" id="spoiler-6682f70f">
+  <summary>Відеоінструкція</summary>
+  <div class="spoiler-content">
+    <p class="notice--warning">УВАГА!!! Ми не рекомендуємо сліпо слідувати відео-інструкції! Використовуйте її тільки як допоміжну! Справа в тому, що текстовий гайд постійно оновлюється. Неможливо стежити за всіма оновленнями в гайді і кожен раз змінювати відео-інструкцію слідом за ним! Тому текстовий гайд завжди буде більш точним і більш актуальним, ніж відео!</p>
+
+<div style="margin:0 auto;" class="text-center notice--info">
+  <div class="ytcontainer">
+    <iframe width="1667" height="946" class="yt" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/LQK_U6LSLIo?start="></iframe>
+  </div>
+</div>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Відеоінструкція <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<h3 id="частина-i---підготовчі-роботи">Частина I - Підготовчі роботи</h3>
+
+<p class="notice--warning">Якщо ваша приставка не запускається, наприклад, після оновлення sysnand через налаштування, то відразу переходьте до <strong>частини II</strong></p>
+
+<ol>
+  <li>Виконайте резервне копіювання збережень за <a href="/backup-saves.html" target="_blank">цією інструкцією</a>
+    <ul>
+      <li>Якщо вам не потрібні збереження, можете пропустити. Якщо потрібні, робити <strong>обов’язково</strong></li>
+    </ul>
+  </li>
+  <li>Запустіть ваш поточний емунанд і запам’ятайте, яка там версія системного ПЗ (<strong>Системні налаштування</strong> -&gt; <strong>Система</strong> -&gt; <strong>Поточна версія системи</strong>)
+    <ul>
+      <li>Ця інформація стане вам у пригоді, якщо емунанд нормально не запрацює на Atmosphere. У такому разі вам доведеться генерувати чисті бути.</li>
+    </ul>
+  </li>
+  <li>Якщо у вас Switch Lite або приставка другої ревізії (Mariko), виконайте наступні дії, якщо ні, пропустіть їх і переходьте до наступного пункту:
+    <ul>
+      <li>Нагадую, що приставки другої ревізії мають серійні номери з другою буквою <strong>K</strong>, наприклад <strong>XKJ</strong>, <strong>XKW</strong> тощо.
+        <ol>
+          <li>Увімкніть приставку, утримуючи кнопку підвищення гучності, поки не з’явиться меню SXOS</li>
+          <li>Перейдіть в “<strong>Options</strong>” -&gt; “<strong>SX Core</strong>” -&gt; “<strong>Cleanup</strong>”, потім виберіть <strong>Power Off</strong> і <strong>не вмикайте</strong> приставку, поки не встановите кефір!</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li>Вставте карту пам’яті приставки в ПК</li>
+  <li>Встановіть свіжий <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip">▼
+     <span class="bottom">
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+     </span>
+ </span>
+</span></li>
+  <li>Дочекайтеся закінчення встановлення, потім поверніть карту пам’яті в консоль</li>
+</ol>
+
+<h3 id="частина-ii---міграція-emunand">Частина II - Міграція Emunand</h3>
+
+<p class="notice--info">Якщо ви не знаєте, чи є у вас <span class="tooltip_container">
+	EmuNAND
+	<span class="tooltip">▼
+		<span class="bottom">
+			Повна копія NAND, розташована на карті пам’яті. Застосовується для того, щоб залишити офіційну прошивку в максимально незайманому вигляді. Наприклад, ви можете грати в EmuNAND в піратку, а в стоці (так називають оригінальну прошивку, розташовану у внутрішній пам’яті консолі) користуватися онлайном і купленими іграми. Таким чином буде мінімізовано шанс отримати бан.
+		</span>
+	</span>
+</span>, вставте карту пам’яті в ПК і подивіться, чи є в папці <code class="language-plaintext highlighter-rouge">sxos</code> папка <code class="language-plaintext highlighter-rouge">emunand</code>. Якщо папка є - у вас є емунанд</p>
+
+<ol>
+  <li>Увімкніть консоль</li>
+  <li><strong>Якщо у вас був EmuNAND</strong> (якщо не було, то достатньо просто встановлення кефіру), на заставці кефіру <strong>натисніть кнопку зниження гучності</strong>, щоб потрапити в hekate</li>
+  <li>Перейдіть в “<strong>emuMMC</strong>”</li>
+  <li>Натисніть “<strong>Migrate emuMMC</strong>”</li>
+  <li>Виберіть “<strong>Emunand</strong>” -&gt; “<strong>Continue</strong>”</li>
+  <li>Після закінчення міграції натисніть “<strong>Change emuMMC</strong>” і в правій частині екрана виберіть “<strong>emuMMC/EF00</strong>” (замість EF можуть бути інші букви)</li>
+  <li>Натисніть “<strong>ОК</strong>”
+    <ul>
+      <li>Тепер при запуску приставки вона автоматично буде запускати emuMMC.</li>
+      <li>Щоб потрапити в офіційну прошивку, запустіть <strong>hekate -&gt; Launch -&gt; Full Stock</strong></li>
+      <li>Щоб потрапити в піратську прошивку, запустіть <strong>hekate -&gt; Launch -&gt; Atmosphere</strong>. Буде запущено Emunand.</li>
+      <li>Якщо Emunand запускається з помилкою, або довго висить на чорному екрані, зверніться до розділу <a href="/#проблеми-та-їх-вирішення" target="_blank">проблеми та їх вирішення</a> внизу сторінки</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="частина-iii---бекап-прошивки-та-ключів">Частина III - Бекап прошивки та ключів</h3>
+
+<p class="notice--warning">Пропустіть, якщо у вас вже є бекап прошивки та ключів.</p>
+
+<ol>
+  <li>Вимкніть консоль</li>
+  <li>Вставте карту пам’яті приставки в ПК</li>
+  <li>Скопіюйте папку <code class="language-plaintext highlighter-rouge">emuMMC/eMMC</code> з кореня вашої карти пам’яті на ПК. Це ваш емунанд. Він ідентичний бекапу, тому немає ніякого сенсу створювати бекап окремо
+    <ul>
+      <li>Якщо такої папки немає, то у вас немає EmuNAND, тоді зробіть бекап згідно з цією <a href="/backup-nand" target="_blank">інструкцією</a></li>
+    </ul>
+  </li>
+  <li>Зробіть бекап ключів згідно з <a href="backup-nand#частина-ii---дампимо-ключі" target="_blank">цією інструкцією</a></li>
+  <li>Перейдіть у папку <code class="language-plaintext highlighter-rouge">sd:/switch</code> і скопіюйте файли <code class="language-plaintext highlighter-rouge">prod.keys</code> та <code class="language-plaintext highlighter-rouge">partialaes.keys</code> (якщо є) у ту ж папку, в яку ви скопіювали ваш бекап</li>
+</ol>
+
+<p class="notice--danger">Помістіть бекап у надійне місце, бажано в кілька різних. І в хмару. І на флешку яку-небудь. Не втратьте його!</p>
+
+<h3 id="частина-iv---завершення-міграції">Частина IV - Завершення міграції</h3>
+
+<ol>
+  <li>Спробуйте запустити SysNAND (<strong>hekate</strong> -&gt; “<strong>More Configs</strong>” -&gt; “<strong>Full Stock</strong>”). Якщо він не запускається, зверніться до розділу <a href="/#проблеми-та-їх-вирішення" target="_blank">проблеми та їх вирішення</a> внизу сторінки</li>
+  <li><a href="/update-fw" target="_blank">Оновіть Emunand</a> до системного ПЗ версії <strong>21.2.0</strong></li>
+</ol>
+
+<h2 id="проблеми-та-їх-вирішення">Проблеми та їх вирішення</h2>
+
+<details class="spoiler" id="spoiler-aa637f89">
+  <summary>Чорний екран при запуску SysNAND</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Вимкніть приставку, утримуючи 30 секунд кнопку живлення</li>
+  <li>Вставте карту пам’яті приставки в ПК</li>
+  <li>Завантажте <a href="https://drive.google.com/file/d/1Owt5TbJ0foqtNcMXs2gkuzQp-FVn-VMl/view?usp=sharing" target="_blank">SXOS 3.1.0 beta</a></li>
+  <li>Помістіть завантажений <code class="language-plaintext highlighter-rouge">boot.dat</code> у корінь карти пам’яті із заміною, вставте КП в консоль</li>
+  <li>Увімкніть консоль, утримуючи кнопку підвищення гучності, щоб потрапити в меню завантажувача SX OS</li>
+  <li>Перейдіть в “<strong>Options</strong>” -&gt; “<strong>SX Core</strong> / <strong>SX Lite</strong>”, потім виберіть “<strong>Cleanup</strong>” -&gt; “<strong>Continue</strong>”</li>
+  <li>Перейдіть в “<strong>Payloads</strong>” -&gt; <code class="language-plaintext highlighter-rouge">payload.bin</code>”`, потім виберіть “<strong>Launch</strong>”. Має завантажитися SysNAND.</li>
+</ol>
+
+<p class="notice--info">Тепер встановіть <span class="tooltip_container">
+	<a href="kefir" target="_blank">kefir</a>
+	<span class="tooltip">▼
+		<span class="bottom">
+			Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+		</span>
+	</span>
+</span> ще раз. Наступні запуски kefir буде запускатися автоматично відразу при ввімкненні приставки.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чорний екран при запуску SysNAND <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-3768bd99">
+  <summary>Відновлення BOOT / Чорний екран при запуску EmuNAND / Помилки при запуску EmuNAND, пов'язані з boot</summary>
+  <div class="spoiler-content">
+    <p class="notice--warning">Спершу спробуйте запустити SysNAND і виконуйте нижченаведену інструкцію тільки якщо SysNAND запускається! Якщо ні, спершу вирішіть цю проблему, а потім поверніться до виконання цієї інструкції!</p>
+
+<h4 id="якщо-sysnand-та-emunand-однієї-версії">Якщо SysNAND та EmuNAND однієї версії:</h4>
+<ol>
+  <li>Увімкніть консоль</li>
+  <li>На заставці кефіру <strong>натисніть кнопку зниження гучності</strong>, щоб потрапити в hekate</li>
+  <li>Перейдіть в “<strong>Tools</strong>” -&gt; “<strong>Backup eMMC</strong>” -&gt; “<strong>eMMC BOOT0 &amp; BOOT1</strong>”</li>
+  <li>Натисніть “<strong>Close</strong>”, “<strong>Close</strong>”, перейдіть в “<strong>Home</strong>” і натисніть “<strong>Power Off</strong>”, підтвердіть вимкнення</li>
+  <li>Вставте карту пам’яті приставки в ПК</li>
+  <li>Перейдіть у папку <code class="language-plaintext highlighter-rouge">sd:\backup\%emmc_id%</code>, де <strong>%emmc_id%</strong> - унікальний номер для кожної окремої приставки.</li>
+  <li>Скопіюйте <code class="language-plaintext highlighter-rouge">BOOT0</code> та <code class="language-plaintext highlighter-rouge">BOO1</code> з цієї папки в папку <code class="language-plaintext highlighter-rouge">emuMMC\ED00\eMMC</code> із заміною</li>
+  <li>Пробуйте запустити емунанд.</li>
+</ol>
+
+<h4 id="якщо-не-допомогло-або-версії-sysnand-та-emunand-різні">Якщо не допомогло або версії SysNAND та EmuNAND різні:</h4>
+
+<details class="spoiler" id="spoiler-252b46a3">
+  <summary>Як дізнатися версію свого emunand:</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Запустіть <span class="tooltip_container">
+ hekate
+ <span class="tooltip">▼
+     <span class="bottom">
+         Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+     </span>
+ </span>
+</span></li>
+  <li>Запустіть <strong>TegraExplorer</strong> (<strong>Payloads</strong> -&gt; <code class="language-plaintext highlighter-rouge">TegraExplorer.bin</code>)</li>
+  <li>Запустіть <code class="language-plaintext highlighter-rouge">FW_version.te</code> (<strong>Launch script</strong>)</li>
+  <li>Дочекайтеся появи версії Sys та EmuNAND на екрані</li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Як дізнатися версію свого emunand: <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<ol>
+  <li><a href="backup-nand#частина-ii---дампимо-ключі" target="_blank">Зніміть копію ключів вашої приставки</a></li>
+  <li>Вставте карту пам’яті приставки в ПК</li>
+  <li>Завантажте <a href="/files/reBoot.zip" target="_blank">reBoot.zip</a></li>
+  <li><a href="https://darthsternie.net/switch-firmwares/" target="_blank">Завантажте прошивку</a>, що відповідає <strong>поточній версії прошивки вашого emunand</strong></li>
+  <li>Розпакуйте архів з прошивкою в папку <code class="language-plaintext highlighter-rouge">firmware</code> на вашому ПК</li>
+  <li>Помістіть файли з архіву <a href="/files/reBoot.zip" target="_blank">reBoot.zip</a> у папку <code class="language-plaintext highlighter-rouge">firmware</code></li>
+  <li>Помістіть у папку <code class="language-plaintext highlighter-rouge">firmware</code> ваш файл з ключами (<code class="language-plaintext highlighter-rouge">prod.keys</code>)</li>
+  <li>Запустіть <code class="language-plaintext highlighter-rouge">recreate_boot_by_yoti.bat</code>. Після закінчення роботи програми ви отримаєте файли <code class="language-plaintext highlighter-rouge">BOOT0_ERISTA</code>, <code class="language-plaintext highlighter-rouge">BOOT0_MARIKO</code>, <code class="language-plaintext highlighter-rouge">BOOT1_ERISTA</code>, <code class="language-plaintext highlighter-rouge">BOOT1_MARIKO</code></li>
+  <li>Визначте, якої ревізії ваша приставка (<strong>Erista</strong> або <strong>Mariko</strong>) і перейменуйте файли, що відповідають вашій ревізії, в <code class="language-plaintext highlighter-rouge">BOOT0</code> та <code class="language-plaintext highlighter-rouge">BOOT1</code>
+    <ul>
+      <li>Якщо серійник вашої консолі починається на <strong>XK</strong>, то у вас <strong>Mariko</strong>. В інших випадках - <strong>Erista</strong> (<strong>XAW, XAJ, XAK тощо</strong>)
+        <ul>
+          <li>Серійний номер приставки знаходиться в <strong>Системних налаштуваннях -&gt; Система -&gt; Серійні номери</strong>, найперший серійник. Він же знаходиться поруч із роз’ємом для зарядки на нижній грані планшета.</li>
+        </ul>
+      </li>
+      <li>Switch Lite завжди Mariko</li>
+    </ul>
+  </li>
+  <li>Скопіюйте <code class="language-plaintext highlighter-rouge">BOOT0</code> та <code class="language-plaintext highlighter-rouge">BOO1</code> для вашої ревизії в папку <code class="language-plaintext highlighter-rouge">emuMMC\ED00\eMMC</code> із заміною
+    <ul>
+      <li>Замість <code class="language-plaintext highlighter-rouge">ED00</code> у шляху може бути як <code class="language-plaintext highlighter-rouge">SD01</code>, так і будь-які інші поєднання з двох букв і двох чисел</li>
+      <li>Тепер при запуску приставки вона автоматично буде запускати emuMMC.</li>
+      <li>Щоб потрапити в офіційну прошивку, запустіть <strong>hekate</strong> -&gt; “<strong>Launch</strong>” -&gt; “<strong>Full Stock</strong>”</li>
+    </ul>
+  </li>
+</ol>
+
+<p class="notice--info">Якщо не помогло, вам доведеться <a href="/emunand" target="_blank">створювати новий EmuNAND</a></p>
+
+<p class="notice--info">Тепер встановіть <span class="tooltip_container">
+	<a href="kefir" target="_blank">kefir</a>
+	<span class="tooltip">▼
+		<span class="bottom">
+			Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+		</span>
+	</span>
+</span> ще раз. Наступні запуски kefir буде запускатися автоматично відразу при ввімкненні приставки.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Відновлення BOOT / Чорний екран при запуску EmuNAND / Помилки при запуску EmuNAND, пов'язані з boot <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-5c5ae739">
+  <summary>Помилка "Pkg1 decryption failed! Is BEK Missing?"</summary>
+  <div class="spoiler-content">
+    <p>Вимкніть і ввімкніть приставку. Перезавантаження не допоможе. Необхідне саме повне вимкнення.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Помилка "Pkg1 decryption failed! Is BEK Missing?" <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-3943f9b4">
+  <summary>У мене інша помилка</summary>
+  <div class="spoiler-content">
+    <p>Розкажіть про це в <a href="http://tg.customfw.xyz">групі</a>. <strong>Обов’язково</strong> додайте скріншот помилки, версію своєї приставки (якщо не знаєте яка - серійник), як запускається прошивка (чіп (якщо так, то який), донгл (якщо так, то який), ще якось), версію системного ПЗ, наявність EmuNAND, що саме видає помилку - EmuNAND чи SysNAND, версію кефіру, після чого виникає помилка. 
+Відсутність <strong>будь-якого</strong> з цих пунктів призведе до того, що ваш пост видалять або проігнорують.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">У мене інша помилка <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-fb52d977">
+  <summary>Не можу запустити HBL</summary>
+  <div class="spoiler-content">
+    <p>В Atmosphere HBL запускається, утримуючи <img src="/assets/images/switch/buttons/R.png" alt="(R)" /> при запуску альбомів. Детальніше - <a href="/hbl" target="_blank">Homebrew Launcher</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Не можу запустити HBL <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+
+				
+        
+      </section>
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+		
+    
+  </article>
+
+  
+  
+</div>
+    <a href="#" class="scrollup">Наверх</a>
+
+    <div class="page__footer-container">
+      <footer class="page__footer">
+        <script src="/assets/js/main.min.js"></script>
+
+<!-- // to top button -->
+<a href="#" class="scrollup">Наверх</a>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $(".scrollup").fadeIn();
+      } else {
+        $(".scrollup").fadeOut();
+      }
+    });
+
+    $(".scrollup").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+  });
+</script>
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a href="http://github.com/rashevskyv"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+	  <li><a href="https://t.me/xhrxhrxhr" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> TG</a></li>
+    
+    
+	  <li><a href="https://t.me/kefir_support" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Kefir / 4ifir - switch jailbroken
+	  </a></li>	
+    
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 nincfw team. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  
+    
+    <script src="/assets/js/spoiler-anim.js"></script>
+  
+
+
+
+
+
+
+
+  </body>
 </html>

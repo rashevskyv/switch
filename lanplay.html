@@ -1,15 +1,553 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Перенаправлення...</title>
-  <link rel="canonical" href="/uk/lanplay">
-  <meta http-equiv="refresh" content="0; url=/uk/lanplay">
-</head>
-<body>
-  <h1>Перенаправлення...</h1>
-  <p>Сторінка переїхала. Якщо ви не були перенаправлені автоматично, 
-  <a href="/uk/lanplay">натисніть тут</a>.</p>
-  <script>location="/uk/lanplay"</script>
-</body>
+<!doctype html>
+<html lang="uk" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Мультиплеєр на прошитій консолі (LAN Play) - Взлом Switch</title>
+
+
+
+
+<meta name="description" content="Повне керівництво з прошивки Nintendo Switch">
+
+
+
+
+<meta name="author" content="xHR">
+
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="Взлом Switch">
+<meta property="og:title" content="Мультиплеєр на прошитій консолі (LAN Play)">
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "nincfw team",
+      "url" : null,
+      "sameAs" : null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="/feed.xml"
+  type="application/atom+xml" rel="alternate" title="Взлом Switch Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  </head>
+
+  <body class="layout--single">
+    
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Взлом Switch</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+            <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
+          </li><li class="masthead__menu-item">
+            <a href="http://customfw.xyz" ><i>Інші гайди</i></a>
+          </li><li class="masthead__menu-item">
+            <a href="https://customfw.xyz/donations" ><b>Пожертви</b></a>
+          </li><li class="masthead__menu-item">
+            <a href="/get-started" >Методи<br>злому</a>
+          </li><li class="masthead__menu-item">
+            <a href="/kefir" >Kefir</a>
+          </li><li class="masthead__menu-item">
+            <a href="/backup-nand" >Резервне<br>копіювання</a>
+          </li><li class="masthead__menu-item">
+            <a href="/emunand" >EmuNAND</a>
+          </li><li class="masthead__menu-item">
+            <a href="/usage" >Використання<br>прошитого Switch</a>
+          </li><li class="masthead__menu-item">
+            <a href="/faq" >FAQ</a>
+          </li><li class="masthead__menu-item">
+            <a href="/troubleshooting" >Проблеми та<br>їх вирішення</a>
+          </li><li class="masthead__menu-item">
+            <a href="/games" >Встановлення<br>ігор</a>
+          </li><li class="masthead__menu-item">
+            <a href="/update-fw" >Безпечне<br>оновлення</a>
+          </li><li class="masthead__menu-item">
+            <a href="/site-navigation" >Навігація по сайту</a>
+          </li><li class="masthead__menu-item">
+            <a href="http://customfw.xyz/contacts" >Зв'язатися з нами</a>
+          </li></ul>
+
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+  <div class="author__avatar">
+    
+    <center><img src="/assets/images/bio-photo.png" class="author__avatar" alt="xHR"
+        itemprop="image"></center>
+    
+  </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">xHR</h3><br>
+    
+  </div>
+
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--def btn--inverse btn--large btn--buy">Контакти</button>
+    <ul class="author__urls social-icons">
+      
+      <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+        <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Івано-Франківськ</span>
+      </li>
+      
+      <hr class="style-two">
+
+      
+<li>
+  <a href="https://t.me/xhrxhrxhr" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Telegram (чипування)
+  </a>
+</li>
+
+
+<li>
+  <a href="https://t.me/kefir_support" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Група в Telegram
+  </a>
+</li>
+
+
+<li>
+  <a href="tel:0997763996" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-phone" aria-hidden="true"></i> Телефон
+  </a>
+</li>
+
+
+<li>
+  <a href="viber://0977359431" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-whatsapp" aria-hidden="true"></i> Viber
+  </a>
+</li>
+
+
+      
+
+      
+      <li>
+        <a href="mailto:rashevsky.v@gmail.com">
+          <meta itemprop="email" content="rashevsky.v@gmail.com" />
+          <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a href="https://instagram.com/rashevsky.v" target="_blank" itemprop="sameAs">
+          <i class="fa fa-fw fa-instagram" aria-hidden="true"></i> Instagram
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+      <li>
+        <a href="https://github.com/rashevskyv" target="_blank" itemprop="sameAs">
+          <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+      <li>
+        <a href="https://customfw.xyz/donations" itemprop="sameAs">
+          <i class="fa fa-fw fa-vine" aria-hidden="true"></i><strong>Пожертви</strong>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+  
+   
+  </div>
+ 
+  
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Мультиплеєр на прошитій консолі (LAN Play)">
+    
+    
+    
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Мультиплеєр на прошитій консолі (LAN Play)
+</h1>
+          
+          <div class="language-selector-container">
+            <!-- Не показуємо текст "lang: uk", а показуємо перемикач мов -->
+            
+          </div>
+        </header>
+      
+	  
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Розділи</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#що-знадобиться" id="markdown-toc-що-знадобиться">Що знадобиться</a></li>
+  <li><a href="#попередні-налаштування" id="markdown-toc-попередні-налаштування">Попередні налаштування</a>    <ul>
+      <li><a href="#частина-i---налаштовуємо-клієнт" id="markdown-toc-частина-i---налаштовуємо-клієнт">Частина I - Налаштовуємо клієнт</a></li>
+      <li><a href="#частина-ii---налаштовуємо-switch" id="markdown-toc-частина-ii---налаштовуємо-switch">Частина II - Налаштовуємо Switch</a></li>
+    </ul>
+  </li>
+  <li><a href="#підключення-до-lan-play" id="markdown-toc-підключення-до-lan-play">Підключення до LAN-play</a></li>
+  <li><a href="#можливі-проблеми-та-їх-вирішення" id="markdown-toc-можливі-проблеми-та-їх-вирішення">Можливі проблеми та їх вирішення</a>    <ul>
+      <li><a href="#помилка-2110-3127-при-підключенні-до-wifi" id="markdown-toc-помилка-2110-3127-при-підключенні-до-wifi">Помилка 2110-3127 при підключенні до WiFi</a></li>
+      <li><a href="#помилка-2160-8007" id="markdown-toc-помилка-2160-8007">Помилка 2160-8007</a></li>
+      <li><a href="#помилка-2155-8007-при-підключенні-до-серверів-nintendo" id="markdown-toc-помилка-2155-8007-при-підключенні-до-серверів-nintendo">Помилка 2155-8007 при підключенні до серверів Nintendo</a></li>
+    </ul>
+  </li>
+</ul>
+
+  </nav>
+</aside>
+
+<p>Думаю, ні для кого не секрет, що на прошитій приставці за гру онлайн бан прилітає з надзвуковою швидкістю. Це пов’язано з тим, що гра онлайн відбувається через сервери Nintendo, які чудово знають, куплена ваша гра чи ні. Що стосується картриджа, то в кожен картридж вшитий унікальний ідентифікатор, який сервер також може відстежувати. Якщо з картриджа знято дамп, то всі, хто вийде з такого образу онлайн, матимуть однаковий ідентифікатор, що, природно, також призведе до бану картриджа та його користувачів.</p>
+
+<p>На даний момент можна грати в офіційний онлайн тільки на свій страх і ризик, використовуючи, наприклад, легальну копію гри для онлайну або безкоштовні ігри. Деякий час вас навіть не забанять.</p>
+
+<p>Вихід знайшли в локальній мережевій грі. Деякі ігри підтримують LAN-play, що дозволяє нам перенаправити дані, які надсилає консоль на ПК, і через спеціальний сервер направити їх іншим приставкам. Всі підключені до одного сервера консолі вважатимуть, що вони з’єднані безпосередньо. І так, цей метод дасть можливість пограти навіть тим, кого забанили.</p>
+
+<p>Найсуттєвіший мінус цього способу - це необхідність домовлятися заздалегідь з усіма учасниками гри. В російськомовному сегменті це робиться в Discord на каналі <a href="https://discordapp.com/invite/zEMCu5n" target="_blank">Switch Open - Піратський онлайн</a>. З гравцями з усього світу можна поспілкуватися <a href="https://discord.com/invite/JFqyGehJnc" target="_blank">тут</a>. Домовтеся з іншими гравцями, у що будете грати, і на якому сервері.</p>
+
+<h2 id="що-знадобиться">Що знадобиться</h2>
+
+<ul>
+  <li>Свіжа версія <span class="tooltip_container">
+  <a href="kefir" target="_blank">kefir</a>
+  <span class="tooltip">▼
+      <span class="bottom">
+          Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+      </span>
+  </span>
+</span></li>
+  <li>Свіжа версія <a href="https://github.com/spacemeowx2/ldn_mitm/releases/latest" target="_blank">ldn_mitm</a> (ldn_mitm_vx.x.x.zip)
+    <ul>
+      <li>Рекомендується завантажувати з <a href="https://apps.fortheusers.org/switch/ldn_mitm" target="_blank">hb appstore</a> (розділ tools)</li>
+    </ul>
+  </li>
+  <li>Свіжа версія програми <a href="https://github.com/Urferu/Lan-Play-Server-Manager/releases/latest" target="_blank">Lan-Play-Server-Manager</a>
+    <ul>
+      <li>Користувачі MacOS та Linux можуть скористатися програмою <a href="https://github.com/spacemeowx2/switch-lan-play" target="_blank">switch-lan-play</a></li>
+    </ul>
+  </li>
+  <li>Драйвери <a href="https://www.winpcap.org/install/bin/WinPcap_4_1_3.exe" target="_blank">WinPCap</a></li>
+</ul>
+
+<h2 id="попередні-налаштування">Попередні налаштування</h2>
+
+<h3 id="частина-i---налаштовуємо-клієнт">Частина I - Налаштовуємо клієнт</h3>
+
+<p>Інструкція буде дана для додатка <a href="https://github.com/Urferu/Lan-Play-Server-Manager/releases/latest" target="_blank">Lan-Play-Server-Manager</a>, який працює тільки на Windows. Користувачі MacOS та Linux можуть скористатися програмою <a href="https://gbatemp.net/threads/lan-play-gui-a-graphical-interface-for-lan-play-updated-v1-0-0.525900/" target="_blank">lan-play-GUI</a>. Як її налаштовувати, можна подивитися у відео, яке є за посиланням.</p>
+
+<ol>
+  <li>Завантажте та встановіть драйвери <a href="https://www.winpcap.org/install/bin/WinPcap_4_1_3.exe" target="_blank">WinPCap</a></li>
+  <li>Завантажте свіжу версію <a href="https://github.com/Urferu/Lan-Play-Server-Manager/releases/latest" target="_blank">Lan-Play-Server-Manager</a> та розпакуйте її на ПК</li>
+  <li>Розпакуйте архів <code class="language-plaintext highlighter-rouge">Lan-Play-Server-Manager.zip</code> у зручну папку</li>
+  <li>Запустіть <code class="language-plaintext highlighter-rouge">Lan-Play-Server-Manager.exe</code> від імені Адміністратора</li>
+  <li>У полі <strong>Lan-Play Version</strong> пропишіть “<strong>0.2.3</strong>”</li>
+  <li>У полі <strong>MTU</strong> напишіть “<strong>500</strong>”</li>
+  <li>Зніміть галочку з пункту “<strong>Fake Internet</strong>” 
+ <img src="/assets/images/switch/screenshots/lanplay.png" alt="" /></li>
+  <li>Виберіть потрібний сервер із представлених у списку та натисніть “<strong>Підключитися</strong>”
+    <ul>
+      <li>Тільки зелені сервери будуть працювати</li>
+      <li>Домовтеся з іншими гравцями в <a href="https://discordapp.com/invite/By4JA4C" target="_blank">Discord</a> на якому сервері ви будете грати</li>
+      <li>Якщо підключення встановлено, кнопка стане зеленою і змінить назву</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="частина-ii---налаштовуємо-switch">Частина II - Налаштовуємо Switch</h3>
+
+<ol>
+  <li>Оновіть <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip">▼
+     <span class="bottom">
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+     </span>
+ </span>
+</span> за інструкцією з репозиторію, якщо не робили цього раніше</li>
+  <li>Увімкніть приставку та перейдіть у “<strong>Системні налаштування</strong>” -&gt; “<strong>Інтернет</strong>” -&gt; “<strong>Інтернет-налаштування</strong>”</li>
+  <li>Виберіть ваше поточне підключення, натисніть на ньому <img src="/assets/images/switch/buttons/A.png" alt="(A)" /> і виберіть “<strong>Змінити налаштування</strong>”</li>
+  <li>Виберіть пункт “<strong>Налаштування IP-адреси</strong>” -&gt; “<strong>Ручне введення</strong>”</li>
+  <li>Введіть статичну IP-адресу в діапазоні від <code class="language-plaintext highlighter-rouge">10.13.0.1</code> до <code class="language-plaintext highlighter-rouge">10.13.255.254</code> (крім <code class="language-plaintext highlighter-rouge">10.13.37.1</code>)</li>
+  <li>Значення поля “<strong>Маска підмережі</strong>” встановіть у <code class="language-plaintext highlighter-rouge">255.255.0.0</code></li>
+  <li>Значення поля “<strong>Шлюз</strong>” встановіть у <code class="language-plaintext highlighter-rouge">10.13.37.001</code></li>
+  <li>Виберіть “<strong>Налаштування DNS</strong>” -&gt; “<strong>Ручне введення</strong>”</li>
+  <li>У полі “<strong>Первинний DNS</strong>” введіть <code class="language-plaintext highlighter-rouge">8.8.8.8</code></li>
+  <li>У полі “<strong>Вторинний DNS</strong>” введіть <code class="language-plaintext highlighter-rouge">8.8.8.4</code> і натисніть “<strong>Зберегти</strong>”, а потім OK</li>
+</ol>
+
+<h2 id="підключення-до-lan-play">Підключення до LAN-play</h2>
+
+<p>Не в кожній грі є можливість LAN-play. Актуальний список ігор, які підтримують цей режим, можна подивитися <a href="https://docs.google.com/spreadsheets/d/1fCPkCXSy_RJCcMvde3OxCeJeFRCfnnSZPcF3A6sBOPM/edit?usp=sharing" target="_blank">тут</a>. У деяких іграх ця функція активується <a href="http://www.lan-play.com/games" target="_blank">спеціальною комбінацією клавіш</a>. Більш детально про це ви можете дізнатися в <a href="https://discordapp.com/invite/By4JA4C" target="_blank">Discord</a></p>
+
+<p>Також не забувайте, що для успішного підключення всі гравці повинні мати однакову версію гри і не завжди найкращою буде остання. Уточнюйте в чаті, на якій версії слід грати і де брати апдейт.</p>
+
+<p>Налаштуємо гру на прикладі Mario Kart 8</p>
+
+<ol>
+  <li>Запустіть гру</li>
+  <li>Натисніть одночасно <img src="/assets/images/switch/buttons/L.png" alt="(L)" />+<img src="/assets/images/switch/buttons/R.png" alt="(R)" />+(Left_Analog)
+    <ul>
+      <li>Ви побачите, як назва останнього пункту змінилася на “<strong>Гра по LAN</strong>”</li>
+    </ul>
+  </li>
+  <li>Зайдіть у “<strong>Гра по LAN</strong>” і виберіть “<strong>1г</strong>”, якщо збираєтеся грати самостійно на своїй приставці, і “<strong>2г</strong>”, якщо на одній консолі будуть грати два гравці</li>
+  <li>Створіть кімнату, або підключіться до вже наявної</li>
+  <li>Грайте</li>
+</ol>
+
+<h2 id="можливі-проблеми-та-їх-вирішення">Можливі проблеми та їх вирішення</h2>
+
+<h3 id="помилка-2110-3127-при-підключенні-до-wifi">Помилка 2110-3127 при підключенні до WiFi</h3>
+
+<ol>
+  <li>Lan-play запущено без прав адміністратора</li>
+  <li>Злетів Winpcap driver - перевстановіть його</li>
+  <li>Проблема на стороні роутера (трапляється з дешевими моделями) - перезавантажте роутер</li>
+  <li>WiFi неправильно налаштований. Переконайтеся, що в точності повторили всі пункти</li>
+</ol>
+
+<h3 id="помилка-2160-8007">Помилка 2160-8007</h3>
+
+<ol>
+  <li>WiFi неправильно налаштований. Переконайтеся, що в точності повторили всі пункти</li>
+</ol>
+
+<h3 id="помилка-2155-8007-при-підключенні-до-серверів-nintendo">Помилка 2155-8007 при підключенні до серверів Nintendo</h3>
+
+<p>Вам і не потрібно до них підключатися</p>
+
+<hr />
+
+<p class="notice--success"><a href="javascript:window.close();">Закрити сторінку</a></p>
+
+
+				
+        
+      </section>
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+		
+    
+  </article>
+
+  
+  
+</div>
+    <a href="#" class="scrollup">Наверх</a>
+
+    <div class="page__footer-container">
+      <footer class="page__footer">
+        <script src="/assets/js/main.min.js"></script>
+
+<!-- // to top button -->
+<a href="#" class="scrollup">Наверх</a>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $(".scrollup").fadeIn();
+      } else {
+        $(".scrollup").fadeOut();
+      }
+    });
+
+    $(".scrollup").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+  });
+</script>
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a href="http://github.com/rashevskyv"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+	  <li><a href="https://t.me/xhrxhrxhr" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> TG</a></li>
+    
+    
+	  <li><a href="https://t.me/kefir_support" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Kefir / 4ifir - switch jailbroken
+	  </a></li>	
+    
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 nincfw team. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  
+    
+    <script src="/assets/js/spoiler-anim.js"></script>
+  
+
+
+
+
+
+
+
+  </body>
 </html>

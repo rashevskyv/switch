@@ -1,15 +1,556 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Перенаправлення...</title>
-  <link rel="canonical" href="/uk/block-update">
-  <meta http-equiv="refresh" content="0; url=/uk/block-update">
-</head>
-<body>
-  <h1>Перенаправлення...</h1>
-  <p>Сторінка переїхала. Якщо ви не були перенаправлені автоматично, 
-  <a href="/uk/block-update">натисніть тут</a>.</p>
-  <script>location="/uk/block-update"</script>
-</body>
+<!doctype html>
+<html lang="uk" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Блокування оновлень та доступу до серверів Nintendo через Incognito (тільки для Caffeine) - Взлом Switch</title>
+
+
+
+
+<meta name="description" content="Повне керівництво з прошивки Nintendo Switch">
+
+
+
+
+<meta name="author" content="xHR">
+
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="Взлом Switch">
+<meta property="og:title" content="Блокування оновлень та доступу до серверів Nintendo через Incognito (тільки для Caffeine)">
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "nincfw team",
+      "url" : null,
+      "sameAs" : null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="/feed.xml"
+  type="application/atom+xml" rel="alternate" title="Взлом Switch Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  </head>
+
+  <body class="layout--single">
+    
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Взлом Switch</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+            <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
+          </li><li class="masthead__menu-item">
+            <a href="http://customfw.xyz" ><i>Інші гайди</i></a>
+          </li><li class="masthead__menu-item">
+            <a href="https://customfw.xyz/donations" ><b>Пожертви</b></a>
+          </li><li class="masthead__menu-item">
+            <a href="/get-started" >Методи<br>злому</a>
+          </li><li class="masthead__menu-item">
+            <a href="/kefir" >Kefir</a>
+          </li><li class="masthead__menu-item">
+            <a href="/backup-nand" >Резервне<br>копіювання</a>
+          </li><li class="masthead__menu-item">
+            <a href="/emunand" >EmuNAND</a>
+          </li><li class="masthead__menu-item">
+            <a href="/usage" >Використання<br>прошитого Switch</a>
+          </li><li class="masthead__menu-item">
+            <a href="/faq" >FAQ</a>
+          </li><li class="masthead__menu-item">
+            <a href="/troubleshooting" >Проблеми та<br>їх вирішення</a>
+          </li><li class="masthead__menu-item">
+            <a href="/games" >Встановлення<br>ігор</a>
+          </li><li class="masthead__menu-item">
+            <a href="/update-fw" >Безпечне<br>оновлення</a>
+          </li><li class="masthead__menu-item">
+            <a href="/site-navigation" >Навігація по сайту</a>
+          </li><li class="masthead__menu-item">
+            <a href="http://customfw.xyz/contacts" >Зв'язатися з нами</a>
+          </li></ul>
+
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+  <div class="author__avatar">
+    
+    <center><img src="/assets/images/bio-photo.png" class="author__avatar" alt="xHR"
+        itemprop="image"></center>
+    
+  </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">xHR</h3><br>
+    
+  </div>
+
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--def btn--inverse btn--large btn--buy">Контакти</button>
+    <ul class="author__urls social-icons">
+      
+      <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+        <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Івано-Франківськ</span>
+      </li>
+      
+      <hr class="style-two">
+
+      
+<li>
+  <a href="https://t.me/xhrxhrxhr" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Telegram (чипування)
+  </a>
+</li>
+
+
+<li>
+  <a href="https://t.me/kefir_support" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Група в Telegram
+  </a>
+</li>
+
+
+<li>
+  <a href="tel:0997763996" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-phone" aria-hidden="true"></i> Телефон
+  </a>
+</li>
+
+
+<li>
+  <a href="viber://0977359431" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-whatsapp" aria-hidden="true"></i> Viber
+  </a>
+</li>
+
+
+      
+
+      
+      <li>
+        <a href="mailto:rashevsky.v@gmail.com">
+          <meta itemprop="email" content="rashevsky.v@gmail.com" />
+          <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a href="https://instagram.com/rashevsky.v" target="_blank" itemprop="sameAs">
+          <i class="fa fa-fw fa-instagram" aria-hidden="true"></i> Instagram
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+      <li>
+        <a href="https://github.com/rashevskyv" target="_blank" itemprop="sameAs">
+          <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+      <li>
+        <a href="https://customfw.xyz/donations" itemprop="sameAs">
+          <i class="fa fa-fw fa-vine" aria-hidden="true"></i><strong>Пожертви</strong>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+  
+   
+  </div>
+ 
+  
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Блокування оновлень та доступу до серверів Nintendo через Incognito (тільки для Caffeine)">
+    
+    
+    
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Блокування оновлень та доступу до серверів Nintendo через Incognito (тільки для Caffeine)
+</h1>
+          
+          <div class="language-selector-container">
+            <!-- Не показуємо текст "lang: uk", а показуємо перемикач мов -->
+            
+          </div>
+        </header>
+      
+	  
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Розділи</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#інструкція" id="markdown-toc-інструкція">Інструкція</a>    <ul>
+      <li><a href="#блокування-доступу-до-серверів-nintendo" id="markdown-toc-блокування-доступу-до-серверів-nintendo">Блокування доступу до серверів Nintendo</a></li>
+      <li><a href="#відновлення-доступу-до-серверів-nintendo" id="markdown-toc-відновлення-доступу-до-серверів-nintendo">Відновлення доступу до серверів Nintendo</a></li>
+    </ul>
+  </li>
+</ul>
+
+  </nav>
+</aside>
+
+<hr />
+
+<div class="notice--success"><h2>Ви можете прошити, або придбати вже прошитий світч в мене</h2><ul><li><a href="https://t.me/kefir_ukr" target="_blank">Група в телеграмі для українців, там є відгуки та приклади робіт</a></li><li><a href="https://t.me/xhrxhrxhr" target="_blank"><b>Мій особистий телеграм</b> (звертайтеся за чипуванням або купівлею)</a></li><li><a href="https://customfw.xyz/donations" target="_blank">Задонатити на розвиток kefir</a></li></ul></div>
+
+<div class="notice--warning">Якщо ви потрапили в цей посібник вперше і не знаєте, як прошивається Switch, рекомендуємо почати знайомство з ним з <a href="/" target="_blank">першої сторінки</a></div>
+
+<div class="notice--warning">Якщо ви користувач MacOS, скористайтеся <a href="/sd-macos" target="_blank">цими рекомендаціями</a>, щоб уникнути проблем з картою пам'яті</div>
+
+<div class="notice">Робіть <a href="/backup-saves" target="_blank">бекапи збережень</a> якомога частіше!</div>
+
+<div class="notice--warning"><strong>Якщо приставка зависла або не подає ознак життя, вимкніть її утриманням кнопки (POWER) 30 секунд, потім увімкніть і пробросьте пейлоад!</strong></div>
+
+<hr />
+
+<p class="notice--info">Ця інструкція призначена насамперед для користувачів Caffeine. Якщо ви використовуєте Fusée Gelée, то вам не потрібно виконувати цю інструкцію. Atmosphere все вже зробила за вас.</p>
+
+<ul>
+  <li><strong>Плюси</strong>
+    <ul>
+      <li>Не блокує доступ до серверів Nintendo, а блокує можливість авторизації на них. Тобто при спілкуванні з сервером Nintendo сервер просто не сприйматиме консоль як Switch</li>
+      <li>Працюватиме навіть якщо Nintendo змінить спосіб авторизації, адреси серверів або ще щось</li>
+      <li>Не потребує додаткового налаштування</li>
+    </ul>
+  </li>
+  <li><strong>Мінуси</strong>
+    <ul>
+      <li>Вимагає взаємодії з системними файлами через додаток, тому потенційно небезпечно</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="інструкція">Інструкція</h2>
+
+<h3 id="блокування-доступу-до-серверів-nintendo">Блокування доступу до серверів Nintendo</h3>
+
+<ol>
+  <li>Створіть <a href="/backup-nand" target="_blank">резервну копію NAND</a> консолі та помістіть її в надійне місце, якщо ще не робили цього</li>
+  <li>Увійдіть в <span class="tooltip_container">
+ hekate
+ <span class="tooltip">▼
+     <span class="bottom">
+         Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+     </span>
+ </span>
+</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> з <code class="language-plaintext highlighter-rouge">.zip</code>-архіву <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip">▼
+     <span class="bottom">
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+     </span>
+ </span>
+</span>
+    <ul>
+      <li>Якщо приставка чипована - просто влючить її</li>
+      <li>Пропустіть цей крок, якщо ви вже в hekate</li>
+    </ul>
+  </li>
+  <li>Утримуйте (VOL-) на приставці під час появи логотипу kefir, щоб потрапити в hekate</li>
+  <li>Встановіть <span class="tooltip_container">
+<a href="kefir" target="_blank">kefir</a>
+<span class="tooltip">▼
+    <span class="bottom">
+        Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+    </span>
+</span>
+</span> за інструкцією, що знаходиться в його репозиторії
+    <ul>
+      <li>Якщо вже робили, не потрібно робити повторно</li>
+    </ul>
+  </li>
+  <li>Перейдіть до меню “<strong>Payloads</strong>”</li>
+  <li>Виберіть “<strong>Incognito_RCM.bin</strong>”</li>
+  <li>Виберіть “<strong>Backup (SysNAND)</strong>” або “<strong>Backup (EmuMMC)</strong>” залежно від того, в якому з розділів ви хочете заблокувати доступ до серверів Nintendo
+    <ul>
+      <li>Навігація по меню здійснюється кнопками гучності, а вибір кнопкою <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" /></li>
+      <li>Якщо ви не використовуєте EmuNAND, виберіть SysNAND</li>
+      <li>Якщо ви використовуєте EmuNAND для піратки, а SysNAND для ліцензії, виберіть EmuNAND</li>
+    </ul>
+  </li>
+  <li>Виберіть “<strong>Incognito (SysNAND)</strong>” або “<strong>Incognito (EmuMMC)</strong>” залежно від того, в якому з розділів ви хочете заблокувати доступ до серверів Nintendo</li>
+  <li>Дочекайтеся закінчення встановлення та натисніть будь-яку кнопку</li>
+  <li>Виберіть <strong>Power Off</strong>, щоб вимкнути приставку</li>
+  <li>Вийміть карту пам’яті з приставки та вставте її в ПК</li>
+  <li>Скопіюйте <code class="language-plaintext highlighter-rouge">prodinfo_sysnand.bin</code> з кореня карти пам’яті в надійне місце - це бекап вашого PRODINFO в незміненому стані</li>
+  <li>Запустіть приставку</li>
+</ol>
+
+<h3 id="відновлення-доступу-до-серверів-nintendo">Відновлення доступу до серверів Nintendo</h3>
+
+<ol>
+  <li>Скопіюйте <code class="language-plaintext highlighter-rouge">prodinfo_sysnand.bin</code> в корінь вашої карти пам’яті</li>
+  <li>Увійдіть в <span class="tooltip_container">
+ hekate
+ <span class="tooltip">▼
+     <span class="bottom">
+         Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+     </span>
+ </span>
+</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> з <code class="language-plaintext highlighter-rouge">.zip</code>-архіву <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip">▼
+     <span class="bottom">
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+     </span>
+ </span>
+</span>
+    <ul>
+      <li>Якщо приставка чипована - просто влючить її</li>
+      <li>Пропустіть цей крок, якщо ви вже в hekate</li>
+    </ul>
+  </li>
+  <li>Утримуйте (VOL-) на приставці під час появи логотипу kefir, щоб потрапити в hekate</li>
+  <li>Встановіть <span class="tooltip_container">
+<a href="kefir" target="_blank">kefir</a>
+<span class="tooltip">▼
+    <span class="bottom">
+        Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+    </span>
+</span>
+</span> за інструкцією, що знаходиться в його репозиторії
+    <ul>
+      <li>Якщо вже робили, не потрібно робити повторно</li>
+    </ul>
+  </li>
+  <li>Перейдіть до меню “<strong>Payloads</strong>”</li>
+  <li>Виберіть “<strong>Incognito_RCM.bin</strong>”</li>
+  <li>Виберіть “<strong>Restore (SysNAND)</strong>” або “<strong>Restore (EmuMMC)</strong>” залежно від того, в який з розділів ви хочете відновити PRODINFO</li>
+  <li>Дочекайтеся закінчення встановлення та натисніть будь-яку кнопку</li>
+</ol>
+
+<hr />
+
+<p class="notice--success"><a href="javascript:window.close();">Закрити сторінку</a></p>
+
+
+				
+        
+      </section>
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+		
+    
+  </article>
+
+  
+  
+</div>
+    <a href="#" class="scrollup">Наверх</a>
+
+    <div class="page__footer-container">
+      <footer class="page__footer">
+        <script src="/assets/js/main.min.js"></script>
+
+<!-- // to top button -->
+<a href="#" class="scrollup">Наверх</a>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $(".scrollup").fadeIn();
+      } else {
+        $(".scrollup").fadeOut();
+      }
+    });
+
+    $(".scrollup").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+  });
+</script>
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a href="http://github.com/rashevskyv"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+	  <li><a href="https://t.me/xhrxhrxhr" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> TG</a></li>
+    
+    
+	  <li><a href="https://t.me/kefir_support" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Kefir / 4ifir - switch jailbroken
+	  </a></li>	
+    
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 nincfw team. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  
+    
+    <script src="/assets/js/spoiler-anim.js"></script>
+  
+
+
+
+
+
+
+
+  </body>
 </html>

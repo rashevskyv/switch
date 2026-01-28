@@ -1,15 +1,882 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Перенаправлення...</title>
-  <link rel="canonical" href="/uk/kefir">
-  <meta http-equiv="refresh" content="0; url=/uk/kefir">
-</head>
-<body>
-  <h1>Перенаправлення...</h1>
-  <p>Сторінка переїхала. Якщо ви не були перенаправлені автоматично, 
-  <a href="/uk/kefir">натисніть тут</a>.</p>
-  <script>location="/uk/kefir"</script>
-</body>
+<!doctype html>
+<html lang="uk" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Kefir - Взлом Switch</title>
+
+
+
+
+<meta name="description" content="Повне керівництво з прошивки Nintendo Switch">
+
+
+
+
+<meta name="author" content="xHR">
+
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="Взлом Switch">
+<meta property="og:title" content="Kefir">
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "nincfw team",
+      "url" : null,
+      "sameAs" : null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="/feed.xml"
+  type="application/atom+xml" rel="alternate" title="Взлом Switch Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  </head>
+
+  <body class="layout--single">
+    
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Взлом Switch</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+            <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
+          </li><li class="masthead__menu-item">
+            <a href="http://customfw.xyz" ><i>Інші гайди</i></a>
+          </li><li class="masthead__menu-item">
+            <a href="https://customfw.xyz/donations" ><b>Пожертви</b></a>
+          </li><li class="masthead__menu-item">
+            <a href="/get-started" >Методи<br>злому</a>
+          </li><li class="masthead__menu-item">
+            <a href="/kefir" >Kefir</a>
+          </li><li class="masthead__menu-item">
+            <a href="/backup-nand" >Резервне<br>копіювання</a>
+          </li><li class="masthead__menu-item">
+            <a href="/emunand" >EmuNAND</a>
+          </li><li class="masthead__menu-item">
+            <a href="/usage" >Використання<br>прошитого Switch</a>
+          </li><li class="masthead__menu-item">
+            <a href="/faq" >FAQ</a>
+          </li><li class="masthead__menu-item">
+            <a href="/troubleshooting" >Проблеми та<br>їх вирішення</a>
+          </li><li class="masthead__menu-item">
+            <a href="/games" >Встановлення<br>ігор</a>
+          </li><li class="masthead__menu-item">
+            <a href="/update-fw" >Безпечне<br>оновлення</a>
+          </li><li class="masthead__menu-item">
+            <a href="/site-navigation" >Навігація по сайту</a>
+          </li><li class="masthead__menu-item">
+            <a href="http://customfw.xyz/contacts" >Зв'язатися з нами</a>
+          </li></ul>
+
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+  <div class="author__avatar">
+    
+    <center><img src="/assets/images/bio-photo.png" class="author__avatar" alt="xHR"
+        itemprop="image"></center>
+    
+  </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">xHR</h3><br>
+    
+  </div>
+
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--def btn--inverse btn--large btn--buy">Контакти</button>
+    <ul class="author__urls social-icons">
+      
+      <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+        <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Івано-Франківськ</span>
+      </li>
+      
+      <hr class="style-two">
+
+      
+<li>
+  <a href="https://t.me/xhrxhrxhr" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Telegram (чипування)
+  </a>
+</li>
+
+
+<li>
+  <a href="https://t.me/kefir_support" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Група в Telegram
+  </a>
+</li>
+
+
+<li>
+  <a href="tel:0997763996" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-phone" aria-hidden="true"></i> Телефон
+  </a>
+</li>
+
+
+<li>
+  <a href="viber://0977359431" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-whatsapp" aria-hidden="true"></i> Viber
+  </a>
+</li>
+
+
+      
+
+      
+      <li>
+        <a href="mailto:rashevsky.v@gmail.com">
+          <meta itemprop="email" content="rashevsky.v@gmail.com" />
+          <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a href="https://instagram.com/rashevsky.v" target="_blank" itemprop="sameAs">
+          <i class="fa fa-fw fa-instagram" aria-hidden="true"></i> Instagram
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+      <li>
+        <a href="https://github.com/rashevskyv" target="_blank" itemprop="sameAs">
+          <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+      <li>
+        <a href="https://customfw.xyz/donations" itemprop="sameAs">
+          <i class="fa fa-fw fa-vine" aria-hidden="true"></i><strong>Пожертви</strong>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+  
+   
+  </div>
+ 
+  
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Kefir">
+    
+    
+    
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Kefir
+</h1>
+          
+          <div class="language-selector-container">
+            <!-- Не показуємо текст "lang: uk", а показуємо перемикач мов -->
+            
+          </div>
+        </header>
+      
+	  
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Розділи</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#kefir-795---скачати-останню-версію" id="markdown-toc-kefir-795---скачати-останню-версію">KEFIR 795 - скачати останню версію</a>    <ul>
+      <li><a href="#що-таке-кефір" id="markdown-toc-що-таке-кефір">Що таке кефір</a></li>
+      <li><a href="#інструкція-з-встановленняоновлення-kefir" id="markdown-toc-інструкція-з-встановленняоновлення-kefir">Інструкція з встановлення/оновлення kefir</a></li>
+      <li><a href="#вирішення-проблем" id="markdown-toc-вирішення-проблем">Вирішення проблем</a></li>
+    </ul>
+  </li>
+  <li><a href="#запуск-atmosphere" id="markdown-toc-запуск-atmosphere">Запуск Atmosphere</a>    <ul>
+      <li><a href="#важлива-інформація" id="markdown-toc-важлива-інформація"><strong>Важлива інформація!</strong></a></li>
+    </ul>
+  </li>
+  <li><a href="#додаткова-інформація" id="markdown-toc-додаткова-інформація">Додаткова інформація</a>    <ul>
+      <li><a href="#розгін" id="markdown-toc-розгін">Розгін</a></li>
+      <li><a href="#режим-підтримки-8гб-памяті" id="markdown-toc-режим-підтримки-8гб-памяті">Режим підтримки 8Гб пам’яті</a></li>
+      <li><a href="#зміни-від-минулої-версії" id="markdown-toc-зміни-від-минулої-версії">Зміни від минулої версії</a></li>
+    </ul>
+  </li>
+</ul>
+
+  </nav>
+</aside>
+
+<hr />
+
+<div class="notice--success"><h2>Ви можете прошити, або придбати вже прошитий світч в мене</h2><ul><li><a href="https://t.me/kefir_ukr" target="_blank">Група в телеграмі для українців, там є відгуки та приклади робіт</a></li><li><a href="https://t.me/xhrxhrxhr" target="_blank"><b>Мій особистий телеграм</b> (звертайтеся за чипуванням або купівлею)</a></li><li><a href="https://customfw.xyz/donations" target="_blank">Задонатити на розвиток kefir</a></li></ul></div>
+
+<div class="notice--warning">Якщо ви потрапили в цей посібник вперше і не знаєте, як прошивається Switch, рекомендуємо почати знайомство з ним з <a href="/" target="_blank">першої сторінки</a></div>
+
+<div class="notice--warning">Якщо ви користувач MacOS, скористайтеся <a href="/sd-macos" target="_blank">цими рекомендаціями</a>, щоб уникнути проблем з картою пам'яті</div>
+
+<div class="notice">Робіть <a href="/backup-saves" target="_blank">бекапи збережень</a> якомога частіше!</div>
+
+<div class="notice--warning"><strong>Якщо приставка зависла або не подає ознак життя, вимкніть її утриманням кнопки (POWER) 30 секунд, потім увімкніть і пробросьте пейлоад!</strong></div>
+
+<hr />
+
+<h2 id="kefir-795---скачати-останню-версію"><a href="https://github.com/rashevskyv/kefir/releases" target="_blank">KEFIR 795</a> - скачати останню версію</h2>
+
+<p class="text-center"><img src="/assets/images/switch/kefir.png" alt="kefir" width="70%" /></p>
+
+<h3 id="що-таке-кефір">Що таке кефір</h3>
+
+<p>Це збірник, що складається з модифікованої Atmosphere, необхідних програм і скриптів, які все це встановлюють правильно. Вона була придумана для полегшення встановлення та обслуговування програмного забезпечення на зламаній Nintendo Switch. Зміни, внесені в Atmosphere, спрямовані на підвищення якості користування самою системою.</p>
+
+<p>Основні відмінності від ванільної Atmosphere:</p>
+<ul>
+  <li>Версії кефіру біля версії системи</li>
+  <li>Встановлення exFAT-драйвера карти пам’яті за замовчуванням при оновленні системи</li>
+  <li>Видалення перевірки ACID-підпису для використання хомбрю без патчів</li>
+  <li>Видалення логування системи для запобігання засмічення карти пам’яті та надмірного її використання</li>
+  <li>Перенаправлення сейвів із внутрішньої пам’яті на карту пам’яті при використанні емунанду, щоб зменшити ймовірність їх втрати при виході з ладу емунанду (опціонально)</li>
+</ul>
+
+<p><strong>Кефір</strong> - <strong>не прошивка</strong>! Це збірка, що складається з прошивки Atmosphere і необхідного мінімуму рекомендованих програм, плагінів, модулів та іншого софту. Детальніше про склад кефіру нижче. Працює на прошивці <strong>21.2.0</strong> і нижче</p>
+
+<details class="spoiler" id="spoiler-54f74999">
+  <summary>Навіщо потрібен кефір?</summary>
+  <div class="spoiler-content">
+    <p>У першу чергу, кефір потрібен для того, щоб спростити життя користувача. Тобто, якщо у користувача стоїть рекомендована версія системного ПЗ і остання версія кефіру, то все повинно у нього працювати. Можна сказати, що користувач знаходиться в контрольованих умовах. Достатньо назвати версію системного ПЗ і кефіру, і відразу стає зрозуміло, що приблизно встановлено в системі.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Навіщо потрібен кефір? <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-f1370174">
+  <summary>Склад кефіру</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li><strong><a href="https://github.com/rashevskyv/Kefirosphere">Kefirosphere</a></strong>, форк <a href="https://github.com/Atmosphere-NX/Atmosphere">Atmosphere</a></li>
+  <li><strong>Сігпатчі</strong>. Завдяки ним на Atmosphere можна запускати непідписані (читай: <em>піратські</em>) програми та ігри.</li>
+  <li><strong>Завантажувач <a href="https://github.com/CTCaer/hekate" target="_blank">hekate</a></strong>. Завдяки завантажувачу ви можете запускати прошивку та інші <span class="tooltip_container">
+ пейлоади
+ <span class="tooltip">▼
+     <span class="bottom">
+         Файл з виконуваним кодом у форматі <code class="language-plaintext highlighter-rouge">.bin</code>, який ми завантажуємо в приставку, найчастіше - завантажувач
+     </span>
+ </span>
+</span> через зручне меню, створювати та відновлювати резервну копію NAND, робити EmuNAND, отримувати інформацію про стан системи, монтувати карту пам’яті до ПК без витягування її зі свічу, робити перерозмітку карти пам’яті для встановлення інших ОС і багато іншого</li>
+  <li><strong>Встановлені <span class="tooltip_container">
+ пейлоади
+ <span class="tooltip">▼
+     <span class="bottom">
+         Файл з виконуваним кодом у форматі <code class="language-plaintext highlighter-rouge">.bin</code>, який ми завантажуємо в приставку, найчастіше - завантажувач
+     </span>
+ </span>
+</span></strong>:
+    <ul>
+      <li><a href="https://codeberg.org/rashevskyv/Locktrick/" target="_blank">Lockpick_RCM</a> - програма для <a href="backup-nand#частина-iii---
+lang: ukдампимо-ключі" target="_blank">дампу ключів приставки</a></li>
+      <li><a href="https://github.com/rashevskyv/TegraExplorer/" target="_blank">TegraExplorer</a> - файловий менеджер для Switch у вигляді пейлоада. Аналог GodMode9 для 3DS</li>
+    </ul>
+  </li>
+  <li><strong>Встановлене Homebrew</strong>
+    <ul>
+      <li><a href="https://github.com/rashevskyv/dbi" target="_blank">DBI</a> - програма для <a href="/games" target="_blank">встановлення ігор</a> по USB або з карти пам’яті</li>
+      <li><a href="http://tinfoil.io" target="_blank">Tinfoil</a> - програма, що дозволяє <a href="/tinfoil" target="_blank">качати ігри</a> для приставки прямо з мережі</li>
+      <li><a href="https://github.com/rashevskyv/kefir-updater" target="_blank">Kefir Updater</a> - програма для оновлення kefir через інтернет</li>
+      <li><a href="https://github.com/ITotalJustice/sphaira/releases/" target="_blank">Sphaira</a> - середовище для запуску homebrew, скачування тем та додатків на switch, файловий менеджер</li>
+      <li><a href="https://github.com/Atmosphere-NX/Atmosphere/tree/0.14.1/troposphere/daybreak" target="_blank">Daybreak</a> - програма для <a href="/update-fw" target="_blank">безпечного оновлення</a> версії системного ПЗ приставки</li>
+      <li><a href="https://github.com/exelix11/SwitchThemeInjector" target="_blank">NXThemes Installer</a> - менеджер кастомних тем</li>
+      <li><a href="https://github.com/rdmrocha/linkalho" target="_blank">Linkalho</a> - програма <a href="/link-account" target="_blank">прив’язки облікового запису</a></li>
+    </ul>
+  </li>
+  <li><strong>Встановлені модулі</strong>. Модулі - це додаткові компоненти, що працюють всередині Atmosphere і дозволяють робити різні круті штуки, наприклад, використання xbox-сумісних контролерів, емуляцію amiibo, розгін тощо. На жаль, SX OS модулі не підтримує
+    <ul>
+      <li><a href="https://github.com/o0Zz/sys-con" target="_blank">sys-con</a> - модуль, що дозволяє підключати до консолі по USB практично будь-які геймпади</li>
+      <li><a href="https://github.com/ndeadly/MissionControl" target="_blank">Mission Control</a> - модуль, що дозволяє підключати до консолі по bluetooth практично будь-які геймпади</li>
+      <li><a href="https://github.com/efosamark/Uberhand-Overlay" target="_blank">Uberhand</a> - спеціальне оверлей-меню для взаємодії з системою p підтримкою користувацьких скриптів і модулів</li>
+    </ul>
+    <ul>
+      <li>Скрипти:
+        <ul>
+          <li><strong>DBI</strong> - зміна локалізації та оновлення програми</li>
+          <li><strong>Translate Interface</strong> - додаткові переклади інтерфейсу на вибір</li>
+          <li><strong>Semi-stock</strong> - завантаження в семісток з меню</li>
+          <li><strong>Reboot і Shutdown</strong> - перезавантаження та вимкнення консолі з меню</li>
+        </ul>
+      </li>
+      <li>Модулі:
+        <ul>
+          <li><a href="https://github.com/WerWolv/nx-ovlloader//" target="_blank">nx-ovlloader</a> - процес для роботи з nro через Tesla Menu</li>
+          <li><a href="https://github.com/proferabg/EdiZon-Overlay/releases" target="_blank">ovlEdiZon.ovl</a> - Модуль для <a href="/cheats" target="_blank">використання читів</a></li>
+          <li><a href="https://github.com/WerWolv/ovl-sysmodules/" target="_blank">ovlSysmodules.ovl</a> - Модуль для вмикання та вимикання встановлених системних модулів (наприклад, розгін, emuuibo тощо)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Склад кефіру <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<h3 id="інструкція-з-встановленняоновлення-kefir">Інструкція з встановлення/оновлення kefir</h3>
+
+<details class="spoiler" id="spoiler-8254a9fd">
+  <summary>Перше встановлення або встановлення на чисту карту пам'яті</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Скопіюйте в корінь карти пам’яті приставки <strong>вміст</strong> архіву <code class="language-plaintext highlighter-rouge">kefir.zip</code> з репозиторію <span class="tooltip_container">
+ <a href="https://github.com/rashevskyv/kefir/releases/latest" target="_blank">kefir</a>
+ <span class="tooltip">▼
+     <span class="bottom">
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+     </span>
+ </span>
+</span></li>
+  <li>Вставте карту пам’яті в Switch</li>
+  <li><a href="/get-started" target="_blank">Запустіть приставку у прошивку</a>, відповідно до типу вашого зламу. <code class="language-plaintext highlighter-rouge">payload.bin</code> - пейлоад, який потрібно пробрасувати при запуску приставки через Fusée Gelée, знаходиться в архіві зі збіркою</li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Перше встановлення або встановлення на чисту карту пам'яті <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-c958d20f">
+  <summary>Оновлення kefir або перехід з іншої збірки</summary>
+  <div class="spoiler-content">
+    <details class="spoiler" id="spoiler-2149f941">
+  <summary>Інструкція з встановлення вручну (всі ОС)</summary>
+  <div class="spoiler-content">
+    <h3 id="підключення-карти-памяті-приставки-до-пк">Підключення карти пам’яті приставки до ПК</h3>
+
+<p class="notice--warning">Якщо ви користувач MacOS, скористайтеся <a href="/sd-macos" target="_blank">цими рекомендаціями</a>, щоб уникнути проблем з картою пам’яті</p>
+
+<p>Якщо приставка вимкнена, вставте карту пам’яті в ПК, якщо увімкнена, то:</p>
+<ol>
+  <li>Перезавантажте приставку через меню, що викликається утриманням кнопки <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" /></li>
+  <li>На сплеш-скріні кефіру натисніть кнопку зниження гучності, щоб потрапити в hekate</li>
+  <li>Тепер ви можете вийняти карту пам’яті зі свіча і вставити її в ПК.</li>
+</ol>
+
+<p class="notice--info">При витяганні карти пам’яті в hekate, вам не потрібно буде заново пробрасувати пейлоад, щоб увійти в прошивку. Достатньо вставити карту в консоль і запустити прошивку через меню <strong>Launch</strong></p>
+
+<h3 id="встановлення-kefir-всі-ос">Встановлення kefir (всі ОС)</h3>
+
+<ol>
+  <li>Скопіюйте в корінь карти пам’яті приставки <strong>вміст</strong> архіву <code class="language-plaintext highlighter-rouge">kefir.zip</code> з репозиторію <span class="tooltip_container">
+ <a href="https://github.com/rashevskyv/kefir/releases/latest" target="_blank">kefir</a>
+ <span class="tooltip">▼
+     <span class="bottom">
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+     </span>
+ </span>
+</span></li>
+  <li>Вставте карту пам’яті назад у Switch</li>
+  <li>В <strong>hekate</strong> виберіть <strong>More configs</strong> -&gt; <strong>Update Kefir</strong></li>
+  <li>Після закінчення встановлення приставка запуститься в прошивку</li>
+</ol>
+
+<p class="notice--warning">Так само ви можете просто вимкнути консоль, дістати з неї карту, скопіювати на неї кефір із заміною, потім вставити карту назад у Switch і увімкнути консоль. У такому випадку автоматично буде запущений скрипт оновлення</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Інструкція з встановлення вручну (всі ОС) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-56816501">
+  <summary>Оновлення кефіру прямо на приставці (версія кефіру 529 або вище)</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Запустіть <a href="/hbl" target="_blank">HBL</a></li>
+  <li>Виберіть <strong>Kefir Updater</strong>
+    <ul>
+      <li>Потрібне підключення до інтернету!</li>
+    </ul>
+  </li>
+  <li>Натисніть “<strong>Оновити Kefir</strong>”, натисніть на “<strong>Kefir 795</strong>”, виберіть “<strong>Завантажити</strong>”</li>
+  <li>Дочекайтеся закінчення закачування та розпакування, потім натисніть “<strong>Продовжити</strong>”. Приставка перезавантажиться в пейлоад, після чого почнеться процес встановлення кефіру</li>
+  <li>Після закінчення встановлення, натисніть будь-яку кнопку для завантаження приставки в прошивку</li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Оновлення кефіру прямо на приставці (версія кефіру 529 або вище) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Оновлення kefir або перехід з іншої збірки <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<h3 id="вирішення-проблем">Вирішення проблем</h3>
+
+<details class="spoiler" id="spoiler-83c7bc1b">
+  <summary>Чисте встановлення кефіру (рекомендується при виникненні помилок)</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Видаліть з карти все, крім папок <code class="language-plaintext highlighter-rouge">Nintendo</code> і <code class="language-plaintext highlighter-rouge">emummc</code>, якщо такі є</li>
+  <li>Встановіть кефір зручним способом, розказаним вище</li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чисте встановлення кефіру (рекомендується при виникненні помилок) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-1c9e1a4a">
+  <summary>Налагоджувальне встановлення кефіру (рекомендується, якщо просто чисте не допомогло)</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Скопіюйте папки <code class="language-plaintext highlighter-rouge">Nintendo</code> і <code class="language-plaintext highlighter-rouge">emummc</code>, якщо такі є, на ПК</li>
+  <li><a href="https://format.customfw.xyz">Відформатуйте вашу карту</a> пам’яті в FAT32 і поверніть папки назад</li>
+  <li>Встановіть кефір зручним способом</li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Налагоджувальне встановлення кефіру (рекомендується, якщо просто чисте не допомогло) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<ul>
+  <li>При виникненні помилки [NOFAT] або при будь-якій іншій проблемі з оновленням через скрипт <code class="language-plaintext highlighter-rouge">kefir-updater</code>, скористайтеся встановленням кефіру через <code class="language-plaintext highlighter-rouge">install.bat</code>:
+    <ol>
+      <li>Розпакуйте <code class="language-plaintext highlighter-rouge">kefir.zip</code> в будь-яке зручне місце <strong>на ПК</strong>, <em>окрім картки пам’яті приставки</em></li>
+      <li><strong>Вставте в ПК</strong> карту пам’яті приставки</li>
+      <li>Запустіть <code class="language-plaintext highlighter-rouge">install.bat</code> з папки, в яку ви розпакували <code class="language-plaintext highlighter-rouge">kefir.zip</code> і вкажіть букву вашої карти пам’яті</li>
+      <li>Дочекайтеся закінчення копіювання</li>
+      <li>Вставте карту в ПК і запустіть прошивку</li>
+    </ol>
+  </li>
+  <li>При виникненні помилки “<strong>warmboot</strong>” зайдіть в фулсток та перезапустіть приставку</li>
+  <li>Якщо після оновлення приставка висить з чорни екраном, пееревстановіть кефір начисто:
+    <ol>
+      <li>Видаліть з карти все, крім папок <code class="language-plaintext highlighter-rouge">Nintendo</code> і <code class="language-plaintext highlighter-rouge">emummc</code>, якщо такі є</li>
+      <li>Встановіть кефір зручним способом, розказаним вище</li>
+    </ol>
+  </li>
+</ul>
+
+<h2 id="запуск-atmosphere">Запуск Atmosphere</h2>
+<ol>
+  <li>Запустіть <span class="tooltip_container">
+ кастом
+ <span class="tooltip">▼
+     <span class="bottom">
+         Модифіковане програмне забезпечення консолі, написане ентузіастами, дозволяє робити речі, недоступні користувачам офіційних прошивок, наприклад, запускати непідписані програми. В контексті прошивки Світча ми будемо називати наявне програмне забезпечення кастомною прошивкою, хоча, чисто технічно, це не так
+     </span>
+ </span>
+</span> за допомогою підтримуваного на вашій приставці експлойту:
+    <ul>
+      <li>Чиповану приставку достатньо просто увімкнути</li>
+      <li>Запустіть пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> з <code class="language-plaintext highlighter-rouge">.zip</code>-архіву <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip">▼
+ <span class="bottom">
+     Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+ </span>
+ </span>
+</span> за допомогою <a href="fusee-gelee" target="_blank">Fusée Gelée</a> або скористайтеся <a href="caffeine" target="_blank">Caffeine</a> для завантаження кастому</li>
+    </ul>
+  </li>
+</ol>
+
+<p class="notice--warning">Якщо після входу в прошивку приставка не бачить карту і вимагає оновити прошивку для її роботи, або просто зависає в чорному екрані після логотипу Nintendo, то на вашій приставці не встановлені драйвери exFAT! Відформатуйте карту пам’яті в <a href="https://format.customfw.xyz" target="blank_">FAT32</a></p>
+
+<p class="notice--info">В <span class="tooltip_container">
+	hekate
+	<span class="tooltip">▼
+		<span class="bottom">
+			Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+		</span>
+	</span>
+</span> за замовчуванням налаштований автозапуск. Тобто при запуску приставки меню <span class="tooltip_container">
+	hekate
+	<span class="tooltip">▼
+		<span class="bottom">
+			Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+		</span>
+	</span>
+</span> не відображатиметься, а запуститься одразу прошивка. Для переходу в меню <span class="tooltip_container">
+	hekate
+	<span class="tooltip">▼
+		<span class="bottom">
+			Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+		</span>
+	</span>
+</span> затисніть (VOL-) під час появи сплеш-скріна.</p>
+
+<h3 id="важлива-інформація"><strong>Важлива інформація!</strong></h3>
+
+<ul>
+  <li>Перезавантаження в hekate відбувається прямо з прошивки, через звичайне меню перезавантаження. Просто затисніть (VOL-) під час сплешскріна кефіру</li>
+  <li>Ви можете отримати доступ до своєї карти пам’яті, не виймаючи її з приставки по MTP (<strong>DBI</strong> -&gt; <strong>Run MTP Responder</strong>), або через hekate (<strong>Tools</strong> -&gt; <strong>USB Tools</strong> -&gt; <strong>SD Card</strong>) (не у всіх працює коректно, <strong>неможливо оновити kefir по MTP</strong>)</li>
+  <li>Встановлення та оновлення kefir проводяться однаково!</li>
+  <li>При виникненні помилки “<strong>Is BEK missing</strong>” вимкніть приставку й увімкніть заново.</li>
+</ul>
+
+<h2 id="додаткова-інформація">Додаткова інформація</h2>
+<ul>
+  <li>Для роботи з модулями (<a href="https://github.com/cathery/sys-con/releases/latest" target="_blank">sys-con</a>, <a href="https://github.com/ndeadly/MissionControl" target="_blank">Mission Control</a> та ін.) у кефірі встановлений <a href="https://github.com/efosamark/Uberhand-Overlay" target="_blank">Uberhand</a> - спеціальне оверлей-меню для взаємодії з системою. Для його активації натисніть <img src="/assets/images/switch/buttons/L.png" alt="(L)" /> + <img src="/assets/images/switch/buttons/DOWN.png" alt="(DOWN)" /> + <img src="/assets/images/switch/buttons/R3.png" alt="(R3)" /></li>
+  <li>Для переходу в semi-stock
+    <ul>
+      <li><strong>З самої прошивки (рекомендовано)</strong>: перейдіть в <a href="https://github.com/efosamark/Uberhand-Overlay" target="_blank">Uberhand</a> (<img src="/assets/images/switch/buttons/L.png" alt="(L)" /> + <img src="/assets/images/switch/buttons/DOWN.png" alt="(DOWN)" /> + <img src="/assets/images/switch/buttons/R3.png" alt="(R3)" />), натисніть вправо &gt; <code class="language-plaintext highlighter-rouge">Semi-stock</code></li>
+      <li><strong>При запуску консолі (не рекомендується)</strong>:
+        <ol>
+          <li>Увійдіть в <span class="tooltip_container">
+hekate
+<span class="tooltip">▼
+ <span class="bottom">
+     Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+ </span>
+</span>
+</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> з <code class="language-plaintext highlighter-rouge">.zip</code>-архіву <span class="tooltip_container">
+<a href="kefir" target="_blank">kefir</a>
+<span class="tooltip">▼
+ <span class="bottom">
+     Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+ </span>
+</span>
+</span>
+            <ul>
+              <li>Якщо приставка чипована - просто влючить її</li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+      <li>Пропустіть цей крок, якщо ви вже в hekate
+        <ol>
+          <li>Утримуйте (VOL-) на приставці під час появи логотипу kefir, щоб потрапити в hekate
+            <ol>
+              <li>Виберіть <code class="language-plaintext highlighter-rouge">More-configs</code> &gt; <code class="language-plaintext highlighter-rouge">Semi-stock</code></li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li><strong>Зверніть увагу</strong>, що при запуску з прошивки, встановлена тема буде вимкнена, що дозволить уникнути помилок, якщо на консолі різні версії системного ПЗ та емунанду</li>
+      <li><strong>Зверніть увагу</strong>, що при запуску через <code class="language-plaintext highlighter-rouge">More-configs</code> &gt; <code class="language-plaintext highlighter-rouge">Semi-stock</code> тема, що встановлена в emunand буде відображатися і Semi-stock. У випадку, якщо в semi-stock та emunand встановлені різні версії системного ПЗ, це приведе до помилки і перезагрузки приставки!</li>
+    </ul>
+  </li>
+  <li>Оновити кефір можна за допомогою утиліти <strong>Kefir Updater</strong></li>
+  <li><a href="/usage" target="_blank">Корисні інструкції з використання приставки</a></li>
+  <li><a href="/faq" target="_blank">FAQ</a></li>
+  <li><a href="/troubleshooting" target="_blank">Проблеми та їх рішення</a></li>
+</ul>
+
+<h3 id="розгін">Розгін</h3>
+<p>Для зміни статуса розгону перейдіть в <a href="https://github.com/efosamark/Uberhand-Overlay" target="_blank">Uberhand</a> (<img src="/assets/images/switch/buttons/L.png" alt="(L)" /> + <img src="/assets/images/switch/buttons/DOWN.png" alt="(DOWN)" /> + <img src="/assets/images/switch/buttons/R3.png" alt="(R3)" />), натисніть вправо &gt; <code class="language-plaintext highlighter-rouge">Settings</code> &gt; <code class="language-plaintext highlighter-rouge">Overlock status</code>. <strong>On</strong> - розгін включено, <strong>Off</strong> - вимкнено.</p>
+
+<p class="notice--info">Якщо розгін включено, <code class="language-plaintext highlighter-rouge">Overlock status</code> буде в положенні <code class="language-plaintext highlighter-rouge">On</code></p>
+
+<h3 id="режим-підтримки-8гб-памяті">Режим підтримки 8Гб пам’яті</h3>
+
+<p class="notice--danger">УВАГА! Якщо ви не робитли модифікацію своєї консолі і не встановлювали в неї 8GB пам’яті, то нее вмикайте цю опцію!</p>
+
+<ul>
+  <li><strong>Увімкнення</strong>
+    <ul>
+      <li>Для вмикання перейдіть в <a href="https://github.com/efosamark/Uberhand-Overlay" target="_blank">Uberhand</a> (<img src="/assets/images/switch/buttons/L.png" alt="(L)" /> + <img src="/assets/images/switch/buttons/DOWN.png" alt="(DOWN)" /> + <img src="/assets/images/switch/buttons/R3.png" alt="(R3)" />), натисніть вправо &gt; <code class="language-plaintext highlighter-rouge">Settings</code> &gt; <code class="language-plaintext highlighter-rouge">Advance</code> &gt; <code class="language-plaintext highlighter-rouge">Enable 8GB support</code>
+        <ul>
+          <li>Опція навмисно захована за 3 вкладених мменю, щоб запобігти випадкове включання</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Вимкнення</strong>
+    <ul>
+      <li>Для вимкнення перевстановіть кефір зручними способом</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="зміни-від-минулої-версії">Зміни від минулої версії</h3>
+
+<details class="spoiler" id="spoiler-6096b463">
+  <summary>Спойлер</summary>
+  <div class="spoiler-content">
+    <h4 id="ukr"><strong>UKR</strong></h4>
+<p><strong>Повна підтримка 21.2.0</strong></p>
+
+<p><strong>795</strong></p>
+<ul>
+  <li>[<strong>Оновлено</strong>] <a href="https://github.com/ndeadly/MissionControl/releases/tag/v0.14.2">Mission Control v0.14.2</a> — підтримка прошивки 21.2.0.</li>
+</ul>
+
+<p><strong>794</strong></p>
+<ul>
+  <li>[<strong>Оновлено</strong>] <a href="https://github.com/CTCaer/hekate/releases/tag/v6.5.0">hekate 6.5.0</a> — підтримка прошивки 21.2.0.</li>
+</ul>
+
+<p><strong>793</strong></p>
+<ul>
+  <li>[<strong>Оновлено</strong>] <a href="https://github.com/rashevskyv/Kefirosphere">Atmosphere 1.10.2</a> — підтримка прошивки 21.2.0.
+    <ul>
+      <li><a href="https://github.com/Atmosphere-NX/Atmosphere/releases"><strong>Подробніше про зміни в Atmosphere</strong></a></li>
+    </ul>
+  </li>
+  <li>[<strong>Оновлено</strong>] <a href="https://github.com/ppkantorski/ovl-sysmodules/releases/tag/v1.4.7">ovl-sysmodules v1.4.7</a> — виправлення помилок</li>
+  <li>[<strong>Оновлено</strong>] <a href="https://github.com/o0Zz/sys-con/releases/tag/1.6.2">Sys-con 1.6.2</a> — перерзібрано з новішим libultrahand</li>
+</ul>
+
+<hr />
+
+<h4 id="eng"><strong>ENG</strong></h4>
+<p><strong>Full support for 21.2.0</strong></p>
+
+<p><strong>795</strong></p>
+<ul>
+  <li>[<strong>Updated</strong>] <a href="https://github.com/ndeadly/MissionControl/releases/tag/v0.14.2">Mission Control v0.14.2</a> — firmware 21.2.0 support</li>
+</ul>
+
+<p><strong>794</strong></p>
+<ul>
+  <li>[<strong>Updated</strong>] <a href="https://github.com/CTCaer/hekate/releases/tag/v6.5.0">hekate 6.5.0</a> — firmware 21.2.0 support</li>
+</ul>
+
+<p><strong>793</strong></p>
+<ul>
+  <li>[<strong>Updated</strong>] <a href="https://github.com/rashevskyv/Kefirosphere">Atmosphere 1.10.2</a> — firmware 21.2.0 support
+    <ul>
+      <li><a href="https://github.com/Atmosphere-NX/Atmosphere/releases"><strong>More details about changes in Atmosphere</strong></a></li>
+    </ul>
+  </li>
+  <li>[<strong>Updated</strong>] <a href="https://github.com/ppkantorski/ovl-sysmodules/releases/tag/v1.4.7">ovl-sysmodules v1.4.7</a> — bug fixes</li>
+  <li>[<strong>Updated</strong>] <a href="https://github.com/o0Zz/sys-con/releases/tag/1.6.2">Sys-con 1.6.2</a> — rebuilt with a newer libultrahand</li>
+</ul>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Спойлер <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<hr />
+
+<p class="notice--success"><a href="javascript:window.close();">Закрити сторінку</a></p>
+
+
+				
+        
+      </section>
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+		
+    
+  </article>
+
+  
+  
+</div>
+    <a href="#" class="scrollup">Наверх</a>
+
+    <div class="page__footer-container">
+      <footer class="page__footer">
+        <script src="/assets/js/main.min.js"></script>
+
+<!-- // to top button -->
+<a href="#" class="scrollup">Наверх</a>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $(".scrollup").fadeIn();
+      } else {
+        $(".scrollup").fadeOut();
+      }
+    });
+
+    $(".scrollup").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+  });
+</script>
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a href="http://github.com/rashevskyv"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+	  <li><a href="https://t.me/xhrxhrxhr" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> TG</a></li>
+    
+    
+	  <li><a href="https://t.me/kefir_support" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Kefir / 4ifir - switch jailbroken
+	  </a></li>	
+    
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 nincfw team. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  
+    
+    <script src="/assets/js/spoiler-anim.js"></script>
+  
+
+
+
+
+
+
+
+  </body>
 </html>

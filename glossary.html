@@ -1,15 +1,689 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Перенаправлення...</title>
-  <link rel="canonical" href="/uk/glossary">
-  <meta http-equiv="refresh" content="0; url=/uk/glossary">
-</head>
-<body>
-  <h1>Перенаправлення...</h1>
-  <p>Сторінка переїхала. Якщо ви не були перенаправлені автоматично, 
-  <a href="/uk/glossary">натисніть тут</a>.</p>
-  <script>location="/uk/glossary"</script>
-</body>
+<!doctype html>
+<html lang="uk" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Глосарій термінів - Взлом Switch</title>
+
+
+
+
+<meta name="description" content="Повне керівництво з прошивки Nintendo Switch">
+
+
+
+
+<meta name="author" content="xHR">
+
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="Взлом Switch">
+<meta property="og:title" content="Глосарій термінів">
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "nincfw team",
+      "url" : null,
+      "sameAs" : null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="/feed.xml"
+  type="application/atom+xml" rel="alternate" title="Взлом Switch Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  </head>
+
+  <body class="layout--single">
+    
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Взлом Switch</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+            <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
+          </li><li class="masthead__menu-item">
+            <a href="http://customfw.xyz" ><i>Інші гайди</i></a>
+          </li><li class="masthead__menu-item">
+            <a href="https://customfw.xyz/donations" ><b>Пожертви</b></a>
+          </li><li class="masthead__menu-item">
+            <a href="/get-started" >Методи<br>злому</a>
+          </li><li class="masthead__menu-item">
+            <a href="/kefir" >Kefir</a>
+          </li><li class="masthead__menu-item">
+            <a href="/backup-nand" >Резервне<br>копіювання</a>
+          </li><li class="masthead__menu-item">
+            <a href="/emunand" >EmuNAND</a>
+          </li><li class="masthead__menu-item">
+            <a href="/usage" >Використання<br>прошитого Switch</a>
+          </li><li class="masthead__menu-item">
+            <a href="/faq" >FAQ</a>
+          </li><li class="masthead__menu-item">
+            <a href="/troubleshooting" >Проблеми та<br>їх вирішення</a>
+          </li><li class="masthead__menu-item">
+            <a href="/games" >Встановлення<br>ігор</a>
+          </li><li class="masthead__menu-item">
+            <a href="/update-fw" >Безпечне<br>оновлення</a>
+          </li><li class="masthead__menu-item">
+            <a href="/site-navigation" >Навігація по сайту</a>
+          </li><li class="masthead__menu-item">
+            <a href="http://customfw.xyz/contacts" >Зв'язатися з нами</a>
+          </li></ul>
+
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+  <div class="author__avatar">
+    
+    <center><img src="/assets/images/bio-photo.png" class="author__avatar" alt="xHR"
+        itemprop="image"></center>
+    
+  </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">xHR</h3><br>
+    
+  </div>
+
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--def btn--inverse btn--large btn--buy">Контакти</button>
+    <ul class="author__urls social-icons">
+      
+      <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+        <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Івано-Франківськ</span>
+      </li>
+      
+      <hr class="style-two">
+
+      
+<li>
+  <a href="https://t.me/xhrxhrxhr" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Telegram (чипування)
+  </a>
+</li>
+
+
+<li>
+  <a href="https://t.me/kefir_support" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Група в Telegram
+  </a>
+</li>
+
+
+<li>
+  <a href="tel:0997763996" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-phone" aria-hidden="true"></i> Телефон
+  </a>
+</li>
+
+
+<li>
+  <a href="viber://0977359431" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-whatsapp" aria-hidden="true"></i> Viber
+  </a>
+</li>
+
+
+      
+
+      
+      <li>
+        <a href="mailto:rashevsky.v@gmail.com">
+          <meta itemprop="email" content="rashevsky.v@gmail.com" />
+          <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a href="https://instagram.com/rashevsky.v" target="_blank" itemprop="sameAs">
+          <i class="fa fa-fw fa-instagram" aria-hidden="true"></i> Instagram
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+      <li>
+        <a href="https://github.com/rashevskyv" target="_blank" itemprop="sameAs">
+          <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+      <li>
+        <a href="https://customfw.xyz/donations" itemprop="sameAs">
+          <i class="fa fa-fw fa-vine" aria-hidden="true"></i><strong>Пожертви</strong>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+  
+   
+  </div>
+ 
+  
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Глосарій термінів">
+    
+    
+    
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Глосарій термінів
+</h1>
+          
+          <div class="language-selector-container">
+            <!-- Не показуємо текст "lang: uk", а показуємо перемикач мов -->
+            
+          </div>
+        </header>
+      
+	  
+        <hr />
+
+<div class="notice--success"><h2>Ви можете прошити, або придбати вже прошитий світч в мене</h2><ul><li><a href="https://t.me/kefir_ukr" target="_blank">Група в телеграмі для українців, там є відгуки та приклади робіт</a></li><li><a href="https://t.me/xhrxhrxhr" target="_blank"><b>Мій особистий телеграм</b> (звертайтеся за чипуванням або купівлею)</a></li><li><a href="https://customfw.xyz/donations" target="_blank">Задонатити на розвиток kefir</a></li></ul></div>
+
+<div class="notice--warning">Якщо ви потрапили в цей посібник вперше і не знаєте, як прошивається Switch, рекомендуємо почати знайомство з ним з <a href="/" target="_blank">першої сторінки</a></div>
+
+<div class="notice--warning">Якщо ви користувач MacOS, скористайтеся <a href="/sd-macos" target="_blank">цими рекомендаціями</a>, щоб уникнути проблем з картою пам'яті</div>
+
+<div class="notice">Робіть <a href="/backup-saves" target="_blank">бекапи збережень</a> якомога частіше!</div>
+
+<div class="notice--warning"><strong>Якщо приставка зависла або не подає ознак життя, вимкніть її утриманням кнопки (POWER) 30 секунд, потім увімкніть і пробросьте пейлоад!</strong></div>
+
+<hr />
+
+<p>У процесі прошивки ви зіткнетеся з безліччю нових термінів, знання яких вам будуть необхідні як у процесі проходження посібника, так і в спілкуванні з однодумцями у <a href="http://t.me/kefir_urk" target="_blank">групі в телеграмі</a>. Ознайомтеся з глосарієм термінів. У разі, якщо ви забудете якийсь термін, просто поверніться до глосарію і освіжіть пам’ять.</p>
+
+<details class="spoiler" id="spoiler-41e33536">
+  <summary>Atmosphere (атмосфера, атма)</summary>
+  <div class="spoiler-content">
+    <p>Надбудова над системою консолі, що дозволяє використовувати її для піратки і для запуску хомбрю, а також багато для чого ще цікавого. Примітно, що спочатку філософія Атмосфери не передбачає запуску піратського контенту, однак саме завдяки їй піратське ПЗ взагалі можливо запустити.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Atmosphere (атмосфера, атма) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-21eda885">
+  <summary>AutoRCM</summary>
+  <div class="spoiler-content">
+    <p><strong>AutoRCM</strong> - це стан, для активації якого необхідно спеціальним чином зіпсувати завантажувач приставки, щоб консоль не могла включитися нормальним чином. Упершись в неправильний завантажувач, консоль відразу переходить у режим RCM. Використовується, щоб не замикати контакти при кожному вимкненні консолі. Не рекомендується до використання через те, що неможливо розрізнити вимкнена консоль без пробросу пейлоада, через що консоль може сісти і її складно буде включити. Має значення лише для консолей першої ревізії, вразливих до зламу через Fusée Gelée.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">AutoRCM <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-fed610b4">
+  <summary>Бан (банан)</summary>
+  <div class="spoiler-content">
+    <p>Якщо ви отримаєте бан, то не зможете використовувати сервіси Nintendo, в тому числі онлайн, можливість купувати ігри і так далі. І все. Бан не призведе до поломки консолі і не перетворить її на “цеглину”.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Бан (банан) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-8527132b">
+  <summary>Вразливість (експлойт)</summary>
+  <div class="spoiler-content">
+    <p>Діра в захисті приставки, яку хакери використовують для отримання екстра прав на приставці і для запуску не підписаного коду. Уразливості бувають апаратними і програмними. Перші вимагають взаємодії з приставкою на фізичному рівні, другі на програмному.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Вразливість (експлойт) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-7107c615">
+  <summary>Донгл (dongle)</summary>
+  <div class="spoiler-content">
+    <p>Спеціальний пристрій невеликого розміру, єдиним завданням якого є відправка пейлоада на консоль. Має значення лише для консолей першої ревізії, вразливих до зламу через Fusée Gelée.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Донгл (dongle) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-9274f85b">
+  <summary>EmuNAND, emuMMC</summary>
+  <div class="spoiler-content">
+    <p>Повна копія внутрішньої пам’яті консолі, розташована на карті пам’яті. Застосовується для того, щоб залишити офіційну прошивку в максимально незачепленому вигляді. Наприклад, ви можете грати в EmuNAND в піратку, а в стоку (так називають оригінальну прошивку, розташовану у внутрішній пам’яті консолі) користуватися онлайном і купленими іграми. Таким чином буде мінімізований шанс отримати бан.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">EmuNAND, emuMMC <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-03088cf3">
+  <summary>Erista</summary>
+  <div class="spoiler-content">
+    <p>Кодовим словом <strong>Erista</strong> позначаються приставки першої ревізії (серійник починається на XA*). Erista бувають двох типів - не патчені, вразливі до методи Fusée Gelée, а також патчені, із закритою вразливістю. Патчені приставки можна прошити <strong>тільки</strong> за допомогою чипа!</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Erista <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-27f262b6">
+  <summary>Запобіжник (fuse, ф'юз)</summary>
+  <div class="spoiler-content">
+    <p>Запобіжник із спеціального масиву, що вказує на версію консолі. «Спалюється» при оновленні прошивки на певні версії. <strong>Зберігати їх, запобігати згоранню, звертати увагу на їх кількість в даний момент не має сенсу.</strong></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Запобіжник (fuse, ф'юз) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-a259982a">
+  <summary>Fusée Gelée (злам через скріпку)</summary>
+  <div class="spoiler-content">
+    <p>Метод зламу, до якого вразливі лише консолі першої ревізії, випущені до літа 2018 року. За допомогою скріпки (замикача) можна перевести приставку в спеціальний стан, після чого запустити злам.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Fusée Gelée (злам через скріпку) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-b792c315">
+  <summary>Hekate (хеката, геката)</summary>
+  <div class="spoiler-content">
+    <p>Кастомний завантажувач (бутлоадер), що заміняє собою такий від Nintendo. Завдяки hekate ми можемо сильно спростити собі запуск кастомної прошивки, зробити резервне копіювання системи на випадок збою, встановити і налаштувати емунанд, а також запускати різні пейлоади.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Hekate (хеката, геката) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-c89ca0ae">
+  <summary>Homebrew (хомбрю)</summary>
+  <div class="spoiler-content">
+    <p>Під словом <a href="https://uk.wikipedia.org/wiki/homebrew_(%D0%BA%D0%BE%D0%BC%D0%BF%27%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%96_%D1%96%D0%B3%D1%80%D0%B8)" target="_blank"><strong>Homebrew (хомбрю)</strong></a> зазвичай мають на увазі програмне забезпечення не авторизоване Nintendo. Як приклад можна навести різні саморобні ігри, програми для бекапу і редагування збережень і емулятори консолей попередніх поколінь. Homebrew запускається через спеціальний завантажувач - Homebrew Launcher.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Homebrew (хомбрю) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-ec5ac4fb">
+  <summary>Замикач (скріпка)</summary>
+  <div class="spoiler-content">
+    <p>Для використання вразливості Fusée Gelée приставку необхідно ввести в режим RCM, для чого необхідно замкнути певним чином контакти в салазці правого джойкона на консолі. Будь-яке пристосування, що використовується для цього для простоти названня скріпкою. <a href="/fusee-gelee#замикатель" target="blank_">Детальніше..</a></p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Замикач (скріпка) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-053250b0">
+  <summary>kefir (кефір)</summary>
+  <div class="spoiler-content">
+    <p>У контексті цього посібника - збірник, що складається з вибраного кастому, необхідних програм і скриптів, які все це встановлять належним чином. Детальніше про кефір <a href="https://kefir.customfw.xyz" target="_blank">тут</a>. Кефір містить у собі найбільш корисне і перевірене часом ПЗ, яке у свіжому кефірі завжди йде актуальної версії. Кефір встановлюється за допомогою скрипта, який написаний таким чином, щоб видаляти при установці всі проблемні модулі, через які система може працювати нестабільно або не працювати взагалі. При виникненні проблем, достатньо назвати версію кефіру, щоб відразу стало зрозуміло яке саме ПЗ і якої версії зараз на вашій приставці. Основа кефіру - Атмосфера.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">kefir (кефір) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-d2d01b9e">
+  <summary>Кастомна прошивка (CFW, кастом)</summary>
+  <div class="spoiler-content">
+    <p>Кастомна прошивка дозволяє користуватися всіма можливостями приставки і робити речі не доступні простим користувачам хомбрю. Наприклад, можна встановлювати не підписане ПЗ і запускати його прямо з домашнього екрану. На даний момент у розробці всього одна кастомна прошивка - Atmosphere. Однак, уже в поточному своєму стані вона придатна для роботи і дозволяє запускати комерційні ігри і хомбрю.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Кастомна прошивка (CFW, кастом) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-33c23259">
+  <summary>Mariko</summary>
+  <div class="spoiler-content">
+    <p>Кодовим словом <strong>Mariko</strong> позначаються приставки другої ревізії (друга літера в серійнику приголосна, наприклад XK* або XJ*), а також Switch Lite і OLED. Зібрані на новому техпроцесі, завдяки чому мають кращу автономність. Прошиваються <strong>тільки</strong> методом чиповки.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Mariko <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-912e4b6d">
+  <summary>NAND (внутрішня пам'ять)</summary>
+  <div class="spoiler-content">
+    <p>Внутрішня пам’ять консолі, фізично розташована на NAND-чипі на материнській платі приставки.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">NAND (внутрішня пам'ять) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-ed51477b">
+  <summary>Не прошивайка (пропатчена приставка)</summary>
+  <div class="spoiler-content">
+    <p>Приставка, в якій була закрита апаратна вразливість Fusée Gelée, а також приставка з чипом зменшеного тех-процесу - Mariko (приставки другої ревізії) і Switch Lite. Таку приставку можна прошити ТІЛЬКИ за допомогою модчипа, або якщо її прошивка 4.1.0 або нижче.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Не прошивайка (пропатчена приставка) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-bf53bb51">
+  <summary>Payload (пейлоад)</summary>
+  <div class="spoiler-content">
+    <p>Файл з розширенням *.bin, що містить різні програми для запуску на вашій консолі, використовуючи вразливість у захисті приставки.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Payload (пейлоад) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-b4d8e4b8">
+  <summary>Прошивайка (не патчена приставка, стара приставка, приставка першої ревізії)</summary>
+  <div class="spoiler-content">
+    <p>Приставка, в якій не закрита апаратна вразливість Fusée Gelée, внаслідок чого таку приставку можна прошити за допомогою скріпки, кабелю і комп’ютера (методом Fusée Gelée). Такі приставки перестали випускати з літа 2018 року.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Прошивайка (не патчена приставка, стара приставка, приставка першої ревізії) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-3e8b7324">
+  <summary>Процес прошивки (прошивка, установка кастому)</summary>
+  <div class="spoiler-content">
+    <p>Процес, в ході якого на приставку встановлюють кастомну прошивку. Саме цьому процесу присвячується даний посібник.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Процес прошивки (прошивка, установка кастому) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-3f1e1617">
+  <summary>Режим RCM (recovery mode, рцм)</summary>
+  <div class="spoiler-content">
+    <p><strong>RCM</strong> - це штатний режим відновлення для чипів, встановлених у Nintendo Switch. Саме через нього і відбувається злам методом Fusée Gelée. У режим RCM консоль вводять шляхом замикання потрібних контактів у салазці, в яку входить правий джойкон. Варто пам’ятати, що будь-яку консоль можна ввести в режим відновлення, але код з пейлоада запустить тільки вразлива. Консолі, що зламуються цим способом виходили до літа 2018 року.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Режим RCM (recovery mode, рцм) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-84012a13">
+  <summary>Сток (стокова прошивка, сиснанд, OFW, офіційна прошивка, системне ПЗ)</summary>
+  <div class="spoiler-content">
+    <p>У цьому гайді під цим терміном мається на увазі прошивка, запущена з внутрішньої пам’яті приставки (не з EmuNAND). Приставка з магазину йтиме саме з такою прошивкою.
+Часто є антонімом до EmuNAND. Сток може бути пропатчений атмосферою (семі-сток), може використовуватися для ліцензії, може використовуватися для піратки, однак кажучи сток найчастіше ми маємо на увазі, що прошивка консолі запущена з внутрішньої карти пам’яті для використання консолі для гри в ліцензію.
+Приставка з магазину буде йти саме з такою прошивкою (без модифікацій). Тому найчастіше її називають офіційною. Може зустрічатися у вигляді стоку (Full Stock) або семі-стоку (Semi-Stock). У першому випадку запускається офіційна прошивка без додаткових патчів, такою, яка вона є без злому. У другому випадку все-таки застосовується ряд патчів, наприклад, працюватиме Homebrew Launcher, будуть підвантажуватися сторонні модулі, працюватиме перезавантаження в гекату і т. п. Full Stock вважається більш безпечним, але в першу чергу через людський фактор, оскільки він не дозволяє користувачеві взагалі нічого, що потенційно могло б призвести до бану.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Сток (стокова прошивка, сиснанд, OFW, офіційна прошивка, системне ПЗ) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-89b2a2d1">
+  <summary>Семі-сток (semi-stock)</summary>
+  <div class="spoiler-content">
+    <p>Те ж, що і сток, однак з запущеною поверх Атмосферою, але без патчів, що дозволяють піратити. Потрібно для гри в офіційній прошивці, але з можливістю використовувати моди, переклади, розгін і чіти. Пам’ятайте, що за використання деяких модів і читів вас ймовірно забанять.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Семі-сток (semi-stock) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-a9a60045">
+  <summary>Хост (payload sender)</summary>
+  <div class="spoiler-content">
+    <p>Пристрій, що дозволяє відправити на консоль пейлоад, в якості хоста може використовуватися ПК, смартфон на Android (iOS, якщо є джейлбрейк) або спеціальний пристрій - донгл. Використовується тільки з апаратним експлойтом.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Хост (payload sender) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-5bb85e37">
+  <summary>Цегла (брик)</summary>
+  <div class="spoiler-content">
+    <p>Приставка що не подає ознак життя. Довести до такого стану свіч вкрай не просто. Найчастіше не впевнений користувач назве цеглою взагалі все що завгодно, навіть якщо це лікується перевстановленням кефіру. Однак, насправді лише апаратна поломка може перетворити вашу консоль на цеглу.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Цегла (брик) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-8c87cacd">
+  <summary>Чип (модчип, PicoFLY, RP2040, HWFLY, SXCore, SXLite, RCMX86, SAMD21)</summary>
+  <div class="spoiler-content">
+    <p>Спеціальний пристрій, що припаюється до материнську плати приставки. Буває двох типів - глітч-чип (SX Core і SX Lite / HWFly/ PicoFly / RP2040) і SAMD21 (Trinket M0, Gemma M0, ItsyBitsy M0 Express, RCMx86 та інші). Чипи першого типу призначені для модифікації так званих “не прошивних” приставок. Завдяки чипам цього типу тепер можна прошити взагалі будь-яку Nintendo Switch. Чипи другого типу підходять тільки для приставок, що прошиваються методом Fusée Gelée. чипи цього типу самі по собі нічого не зламують. Все що вони роблять - це вводять приставку в RCM і пробрасують пейлоад і потрібні тільки для зручності кінцевого користувача. Важливо розуміти, що без чипа першого типу неможливо прошити приставку, а чип другого типу строго опціональний.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чип (модчип, PicoFLY, RP2040, HWFLY, SXCore, SXLite, RCMX86, SAMD21) <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<hr />
+
+<p class="notice--success"><a href="javascript:window.close();">Закрити сторінку</a></p>
+
+
+				
+        
+      </section>
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+		
+    
+  </article>
+
+  
+  
+</div>
+    <a href="#" class="scrollup">Наверх</a>
+
+    <div class="page__footer-container">
+      <footer class="page__footer">
+        <script src="/assets/js/main.min.js"></script>
+
+<!-- // to top button -->
+<a href="#" class="scrollup">Наверх</a>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $(".scrollup").fadeIn();
+      } else {
+        $(".scrollup").fadeOut();
+      }
+    });
+
+    $(".scrollup").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+  });
+</script>
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a href="http://github.com/rashevskyv"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+	  <li><a href="https://t.me/xhrxhrxhr" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> TG</a></li>
+    
+    
+	  <li><a href="https://t.me/kefir_support" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Kefir / 4ifir - switch jailbroken
+	  </a></li>	
+    
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 nincfw team. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  
+    
+    <script src="/assets/js/spoiler-anim.js"></script>
+  
+
+
+
+
+
+
+
+  </body>
 </html>

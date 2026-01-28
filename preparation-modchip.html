@@ -1,15 +1,817 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Перенаправлення...</title>
-  <link rel="canonical" href="/uk/preparation-modchip">
-  <meta http-equiv="refresh" content="0; url=/uk/preparation-modchip">
-</head>
-<body>
-  <h1>Перенаправлення...</h1>
-  <p>Сторінка переїхала. Якщо ви не були перенаправлені автоматично, 
-  <a href="/uk/preparation-modchip">натисніть тут</a>.</p>
-  <script>location="/uk/preparation-modchip"</script>
-</body>
+<!doctype html>
+<html lang="uk" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Чипування Nintendo Switch - Взлом Switch</title>
+
+
+
+
+<meta name="description" content="Повне керівництво з прошивки Nintendo Switch">
+
+
+
+
+<meta name="author" content="xHR">
+
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="Взлом Switch">
+<meta property="og:title" content="Чипування Nintendo Switch">
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "nincfw team",
+      "url" : null,
+      "sameAs" : null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="/feed.xml"
+  type="application/atom+xml" rel="alternate" title="Взлом Switch Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  </head>
+
+  <body class="layout--single">
+    
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Взлом Switch</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+            <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
+          </li><li class="masthead__menu-item">
+            <a href="http://customfw.xyz" ><i>Інші гайди</i></a>
+          </li><li class="masthead__menu-item">
+            <a href="https://customfw.xyz/donations" ><b>Пожертви</b></a>
+          </li><li class="masthead__menu-item">
+            <a href="/get-started" >Методи<br>злому</a>
+          </li><li class="masthead__menu-item">
+            <a href="/kefir" >Kefir</a>
+          </li><li class="masthead__menu-item">
+            <a href="/backup-nand" >Резервне<br>копіювання</a>
+          </li><li class="masthead__menu-item">
+            <a href="/emunand" >EmuNAND</a>
+          </li><li class="masthead__menu-item">
+            <a href="/usage" >Використання<br>прошитого Switch</a>
+          </li><li class="masthead__menu-item">
+            <a href="/faq" >FAQ</a>
+          </li><li class="masthead__menu-item">
+            <a href="/troubleshooting" >Проблеми та<br>їх вирішення</a>
+          </li><li class="masthead__menu-item">
+            <a href="/games" >Встановлення<br>ігор</a>
+          </li><li class="masthead__menu-item">
+            <a href="/update-fw" >Безпечне<br>оновлення</a>
+          </li><li class="masthead__menu-item">
+            <a href="/site-navigation" >Навігація по сайту</a>
+          </li><li class="masthead__menu-item">
+            <a href="http://customfw.xyz/contacts" >Зв'язатися з нами</a>
+          </li></ul>
+
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+  <div class="author__avatar">
+    
+    <center><img src="/assets/images/bio-photo.png" class="author__avatar" alt="xHR"
+        itemprop="image"></center>
+    
+  </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">xHR</h3><br>
+    
+  </div>
+
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--def btn--inverse btn--large btn--buy">Контакти</button>
+    <ul class="author__urls social-icons">
+      
+      <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+        <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Івано-Франківськ</span>
+      </li>
+      
+      <hr class="style-two">
+
+      
+<li>
+  <a href="https://t.me/xhrxhrxhr" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Telegram (чипування)
+  </a>
+</li>
+
+
+<li>
+  <a href="https://t.me/kefir_support" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Група в Telegram
+  </a>
+</li>
+
+
+<li>
+  <a href="tel:0997763996" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-phone" aria-hidden="true"></i> Телефон
+  </a>
+</li>
+
+
+<li>
+  <a href="viber://0977359431" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-whatsapp" aria-hidden="true"></i> Viber
+  </a>
+</li>
+
+
+      
+
+      
+      <li>
+        <a href="mailto:rashevsky.v@gmail.com">
+          <meta itemprop="email" content="rashevsky.v@gmail.com" />
+          <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a href="https://instagram.com/rashevsky.v" target="_blank" itemprop="sameAs">
+          <i class="fa fa-fw fa-instagram" aria-hidden="true"></i> Instagram
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+      <li>
+        <a href="https://github.com/rashevskyv" target="_blank" itemprop="sameAs">
+          <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+      <li>
+        <a href="https://customfw.xyz/donations" itemprop="sameAs">
+          <i class="fa fa-fw fa-vine" aria-hidden="true"></i><strong>Пожертви</strong>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+  
+   
+  </div>
+ 
+  
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Чипування Nintendo Switch">
+    
+    
+    
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Чипування Nintendo Switch
+</h1>
+          
+          <div class="language-selector-container">
+            <!-- Не показуємо текст "lang: uk", а показуємо перемикач мов -->
+            
+          </div>
+        </header>
+      
+	  
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Розділи</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#встановлення-чипа-в-приставку" id="markdown-toc-встановлення-чипа-в-приставку">Встановлення чипа в приставку</a></li>
+  <li><a href="#встановлення-прошивки-в-emunand" id="markdown-toc-встановлення-прошивки-в-emunand">Встановлення прошивки в EmuNAND</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<hr />
+
+<div class="notice--success"><h2>Ви можете прошити, або придбати вже прошитий світч в мене</h2><ul><li><a href="https://t.me/kefir_ukr" target="_blank">Група в телеграмі для українців, там є відгуки та приклади робіт</a></li><li><a href="https://t.me/xhrxhrxhr" target="_blank"><b>Мій особистий телеграм</b> (звертайтеся за чипуванням або купівлею)</a></li><li><a href="https://customfw.xyz/donations" target="_blank">Задонатити на розвиток kefir</a></li></ul></div>
+
+<div class="notice--warning">Якщо ви потрапили в цей посібник вперше і не знаєте, як прошивається Switch, рекомендуємо почати знайомство з ним з <a href="/" target="_blank">першої сторінки</a></div>
+
+<div class="notice--warning">Якщо ви користувач MacOS, скористайтеся <a href="/sd-macos" target="_blank">цими рекомендаціями</a>, щоб уникнути проблем з картою пам'яті</div>
+
+<div class="notice">Робіть <a href="/backup-saves" target="_blank">бекапи збережень</a> якомога частіше!</div>
+
+<div class="notice--warning"><strong>Якщо приставка зависла або не подає ознак життя, вимкніть її утриманням кнопки (POWER) 30 секунд, потім увімкніть і пробросьте пейлоад!</strong></div>
+
+<hr />
+
+<p>У цій частині ми приділимо час налаштуванню світча до та після чипування. Про саме ж чипування добре розказано в офіційних мануалах. Втім, усьому свій час.</p>
+
+<p>На даний момент існує лише один чип - це чип на базі процесора <strong>rp2040</strong> у різних варіаціях. Вони  можуть мати різні назви (<strong>rp2040</strong>, <strong>picofly</strong>, часто можна зустріти й <strong>HWFLY rp2040</strong>, які не мають нічого спільного з HWFLY). Звертайте увагу на маркування процесора, якщо не знаєте, який саме у вас мод-чип. На момент написання цього матеріалу більшість чипів уц продажі будуть саме RP2040.</p>
+
+<p>Між тим, на вашій консолі можуть стояти і чипи, що були розповсюджені раніше - <strong>SX Core, SX Lite, HWFLY або  InstinctNX</strong>. Всі ці чипи побудовані на однаковій елементній базі і більше не продаються, оскільки у всьому гірші за RP2040</p>
+
+<details class="spoiler" id="spoiler-3d6a05b9">
+  <summary>Зовнішній вигляд чипів RP2040</summary>
+  <div class="spoiler-content">
+    <ul>
+  <li>
+    <p>Сам процесор:</p>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/rp2040/chip.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Універсальний класичний:</p>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/rp2040/rp2040.png" alt="" /></p>
+  </li>
+  <li>
+    <p>OLED:</p>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/rp2040/rp_oled.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Lite:</p>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/rp2040/rp_lite.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Core:</p>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/rp2040/rp_core.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Інші варіанти:</p>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/rp2040/other_1.png" alt="" />
+<img src="/assets/images/switch/modchips/rp2040/other_2.png" alt="" /></p>
+  </li>
+</ul>
+
+<p class="notice--warning">Зверніть увагу маркування процесору, там намальовано логотип RP2040. Елементів на мод-чипі також значно менше, ніж на чипах HWFLY. Часто присутні великі золотисті кнопки.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Зовнішній вигляд чипів RP2040 <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-1b252286">
+  <summary>Зовнішній вигляд чипів HWFLY</summary>
+  <div class="spoiler-content">
+    <ul>
+  <li>
+    <p>OLED:</p>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/hwfly/hw_oled.jpg" alt="" /></p>
+  </li>
+  <li>
+    <p>Lite:</p>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/hwfly/hw_lite.jpg" alt="" /></p>
+  </li>
+  <li>
+    <p>Core:</p>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/hwfly/hw_core.png" alt="" /></p>
+  </li>
+</ul>
+
+<p class="notice--warning">Зверніть увагу на кількість елементів на чипі. Їх значно більше, ніж на чипах на базі RP2040</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Зовнішній вигляд чипів HWFLY <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<p>Як правило, в чипі встановлена прошивка старої версії, яка може не працювати або працювати погано на приставках зі свіжою версією системного ПЗ, тому її слід оновити на свіжу версію прошивки - <a href="https://github.com/hwfly-nx/firmware/releases" target="_blank">прошивку для чіпу</a>, яка завантажуватиме будь-який пейлоад, що знаходиться на карті пам’яті під ім’ям <code class="language-plaintext highlighter-rouge">payload.bin</code>. За великим бажанням, через спеціальну прошивку чипу можна завантажити й SX OS.</p>
+
+<!-- ## Прошивка чипа на HWFLY-NX
+Якщо у вас приставка ревізії <span class="tooltip_container">
+	Mariko
+	<span class="tooltip">▼
+		<span class="bottom">
+			Кодовим словом **Mariko** позначаються приставки другої ревізії (друга літера в серійнику приголосна, наприклад XK* або XJ*), а також Switch Lite та OLED. Зібрані на новому техпроцесі, завдяки чому мають кращу автономність (великі свічі). Прошиваються **тільки** методом чипування.
+		</span>
+	</span>
+</span>, пропустіть частину з прошивкою чипа.
+<details class="spoiler" id="spoiler-1c542d27">
+  <summary>Прошивка чипа</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Вставте USB-кабель з комплекту чипа в сам чип
+    <ul>
+      <li>Не переплутайте і не поставте випадково догори ногами. На стрічці кабелю є позначка, де в нього верх, а де низ.</li>
+      <li>
+        <p>Для SX Core верхом вважається металева основа, на SX Light верх збігається з напрямком кришки процесора. Тобто, після монтажу чипа в приставку, та сторона, яка буде дивитися вгору, і є верхньою.</p>
+
+        <p class="text-center notice--info"><img src="/assets/images/switch/modchips/core_up.png" alt="SX Core ribbon" /><img src="/assets/images/switch/modchips/light_up.png" alt="SX Light ribbon" /></p>
+      </li>
+    </ul>
+  </li>
+  <li>Підключіть чип до ПК кабелем. Якщо стрічка вставлена правильно, світлодіод на чипі засвітиться зеленим.</li>
+  <li>
+    <p>Відкрийте <strong>диспетчер пристроїв</strong> Windows і дочекайтеся встановлення драйверів. Якщо драйвери встановлені правильно, чип буде видно як “<strong>USB Serial Device</strong>”</p>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/device_manager.png" alt="" /></p>
+  </li>
+  <li>Скачайте <a href="https://github.com/hwfly-nx/firmware/releases" target="_blank">свіжу версію прошивки для чіпу</a> та розпакуйте в корінь диска <code class="language-plaintext highlighter-rouge">C</code> вашого ПК.
+    <ul>
+      <li>За шляхом до файлу <code class="language-plaintext highlighter-rouge">flash.bat</code>, що знаходиться в розпакованому архіві, не повинно бути пробілів або інших символів не латиниці!</li>
+    </ul>
+  </li>
+  <li>Запустіть <code class="language-plaintext highlighter-rouge">flash.bat</code>
+    <ul>
+      <li>Не відключайте USB-кабель у процесі заливки завантажувача! Інакше ризикуєте отримати брик!</li>
+    </ul>
+  </li>
+  <li>Дочекайтеся закінчення прошивки та натисніть будь-яку кнопку, щоб закрити вікно
+    <ul>
+      <li>Після успішного закінчення прошивки, світлодіод змінить колір на жовто-зелений.</li>
+    </ul>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/done.png" alt="" /></p>
+  </li>
+</ol>
+
+<details class="spoiler" id="spoiler-ff98893a">
+  <summary>Можливі помилки</summary>
+  <div class="spoiler-content">
+    <details class="spoiler" id="spoiler-217d0831">
+  <summary>Скрипт завис, нічого не відбувається</summary>
+  <div class="spoiler-content">
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/freeze.png" alt="" /></p>
+
+<p>Таке буває. Наберіться терпіння.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Скрипт завис, нічого не відбувається <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-f70d178d">
+  <summary>DFU not found!</summary>
+  <div class="spoiler-content">
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/DFU.png" alt="" /></p>
+
+<p>Windows не встигла встановити драйвери. Спробуйте ще раз. Якщо не допомогло, перезавантажте ПК, спробуйте інший порт, спробуйте інший кабель.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">DFU not found! <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-2d18e88d">
+  <summary>Failed to read! 6</summary>
+  <div class="spoiler-content">
+    <p class="text-center notice--info"><img src="/assets/images/switch/modchips/error6.png" alt="" /></p>
+
+<p>Спробуйте перезапустити скрипт. Пробуйте стільки разів, скільки необхідно, доки не вийде. Якщо не допомогло, перезавантажте ПК, спробуйте інший порт, спробуйте інший кабель.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Failed to read! 6 <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Можливі помилки <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Прошивка чипа <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+ -->
+
+<h2 id="встановлення-чипа-в-приставку">Встановлення чипа в приставку</h2>
+
+<ol>
+  <li>Оновіть приставку до останньої версії системного ПЗ через налаштування, перш ніж встановлювати чип</li>
+  <li>Для встановлення чипа скористайтеся наступними інструкціями
+    <ul>
+      <li><a href="https://gbatemp.net/download/a-definitive-picofly-install-guide.37968/" target="_blank">Універсальний гайд для PicoFLY</a> універсального типу</li>
+      <li>Гайд для HWFLY, а також чипів RP2040 з набором шлейфів від HWFLY:
+        <ul>
+          <li><a href="https://www.sthetix.info/installing-the-sx-core-mod-kit-full-guide/" target="_blank">Звичайний Switch першої або другої ревізії</a>
+            <ul>
+              <li><strong>Не забудьте змонтувати на чип вашу NAND-пам’ять!</strong></li>
+            </ul>
+          </li>
+          <li><a href="https://www.sthetix.info/installing-the-sx-lite-mod-kit/" target="_blank">Switch Lite</a></li>
+          <li><a href="https://www.sthetix.info/hacking-the-switch-oled/" target="_blank">Switch OLED</a>.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Після встановлення чипа переконайтеся, що в приставці немає карти пам’яті, та увімкніть її. Чип заблимає світлодіодом (колір залежить від типу чипа та його прошивки)
+    <ul>
+      <li>Терпляче чекайте. Чип навчається! Навчання може тривати до півгодини.</li>
+      <li>Якщо у вас rp2040 і при ввімкненні він не блимає світлодіодом, переконайтеся, що ви залили прошивку в чип, як це сказано в <a href="https://gbatemp.net/download/a-definitive-picofly-install-guide.37968/" target="_blank">універсальній інструкції</a> (при підключенні чипа до ПК має відобразитися диск, куди й слід скопіювати прошивку; якщо диск не з’явився, затисніть на чипі кнопку BOOT і, не відпускаючи її, натисніть RESET)</li>
+    </ul>
+  </li>
+  <li>Як тільки блимання припиниться, зверніть увагу на екран консолі, на ньому має відображатися повідомлення, що в приставку не вставлено карту пам’яті</li>
+  <li>Вимкніть консоль, утримуючи кнопку живлення до тих пір, поки екран не погасне</li>
+</ol>
+
+<h2 id="встановлення-прошивки-в-emunand">Встановлення прошивки в EmuNAND</h2>
+
+<ol>
+  <li><a href="/kefir" target="blank_">Встановлення та запуск Kefir</a></li>
+  <li><a href="/backup-nand" target="blank_">Резервне копіювання NAND</a></li>
+  <li><a href="/emunand" target="blank_">Створення EmuNAND</a></li>
+  <li><a href="/link-account" target="blank_">Прив’язка акаунту</a> - останній штрих. Прив’язки акаунту для роботи вимагають деякі ігри</li>
+  <li><a href="/games" target="blank_">Запуск ігор</a> - фінальна частина, заради якої все й робилося</li>
+  <li><a href="/usage">Використання вже прошитої приставки</a></li>
+</ol>
+
+<p>Тепер ви можете використовувати <span class="tooltip_container">
+	EmuNAND
+	<span class="tooltip">▼
+		<span class="bottom">
+			Повна копія NAND, розташована на карті пам’яті. Застосовується для того, щоб залишити офіційну прошивку в максимально незайманому вигляді. Наприклад, ви можете грати в EmuNAND в піратку, а в стоці (так називають оригінальну прошивку, розташовану у внутрішній пам’яті консолі) користуватися онлайном і купленими іграми. Таким чином буде мінімізовано шанс отримати бан.
+		</span>
+	</span>
+</span> для гри в піратку, а <span class="tooltip_container">
+	SysNAND
+	<span class="tooltip">▼
+		<span class="bottom">
+		У цьому гайді під цим терміном мається на увазі прошивка, запущена з внутрішньої пам’яті приставки (не з EmuNAND). Приставка з магазину йтиме саме з такою прошивкою.
+Часто є антонімом до EmuNAND. Сток може бути пропатчений атмосферою, може використовуватися для ліцензії, може використовуватися для піратки, однак говорячи сток найчастіше ми маємо на увазі, що прошивка консолі запущена з внутрішньої карти пам’яті для використання консолі для гри в ліцензію.
+		</span>
+	</span>
+</span> для гри в ліцензію.</p>
+
+<p class="notice--warning">Категорично не рекомендується використовувати приставки ревізії <span class="tooltip_container">
+	Mariko
+	<span class="tooltip">▼
+		<span class="bottom">
+			Кодовим словом <strong>Mariko</strong> позначаються приставки другої ревізії (друга літера в серійнику приголосна, наприклад XK* або XJ*), а також Switch Lite та OLED. Зібрані на новому техпроцесі, завдяки чому мають кращу автономність (великі свічі). Прошиваються <strong>тільки</strong> методом чипування.
+		</span>
+	</span>
+</span> без емунанда. На <span class="tooltip_container">
+	Mariko
+	<span class="tooltip">▼
+		<span class="bottom">
+			Кодовим словом <strong>Mariko</strong> позначаються приставки другої ревізії (друга літера в серійнику приголосна, наприклад XK* або XJ*), а також Switch Lite та OLED. Зібрані на новому техпроцесі, завдяки чому мають кращу автономність (великі свічі). Прошиваються <strong>тільки</strong> методом чипування.
+		</span>
+	</span>
+</span> емунанд не опція, а необхідність, оскільки для цієї ревізії немає інструментів, які допоможуть воскресити вашу консоль буквально з будь-якого стану у випадку поломки. Тому запуск приставки без <span class="tooltip_container">
+	EmuNAND
+	<span class="tooltip">▼
+		<span class="bottom">
+			Повна копія NAND, розташована на карті пам’яті. Застосовується для того, щоб залишити офіційну прошивку в максимально незайманому вигляді. Наприклад, ви можете грати в EmuNAND в піратку, а в стоці (так називають оригінальну прошивку, розташовану у внутрішній пам’яті консолі) користуватися онлайном і купленими іграми. Таким чином буде мінімізовано шанс отримати бан.
+		</span>
+	</span>
+</span> ми розглядати в посібнику не будемо!</p>
+
+<hr />
+
+<details class="spoiler" id="spoiler-2a9ec917">
+  <summary>Матеріали для самостійного вивчення</summary>
+  <div class="spoiler-content">
+    <ul>
+  <li><a href="faq" target="blank_">Часто задавані питання</a></li>
+  <li><a href="troubleshooting">Проблеми та їх вирішення</a></li>
+  <li><a href="cheats" target="blank_">Використання читів в EdiZon</a></li>
+  <li><a href="backup-saves" target="blank_">Резервне копіювання та відновлення збережень </a></li>
+  <li><a href="lanplay" target="blank_">Онлайн для прошитих та забанених</a></li>
+  <li><a href="hbl" target="blank_">Запуск Homebrew Launcher</a></li>
+  <li><a href="emuiibo" target="blank_">Емуляція Amiibo за допомогою модуля emuiibo</a></li>
+  <li><a href="https://4pda.to/forum/index.php?act=findpost&amp;pid=73214535&amp;anchor=Spoil-73214535-3" target="blank_">Інструкції на сайті 4pda</a></li>
+</ul>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Матеріали для самостійного вивчення <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<hr />
+
+<p class="notice--info">Все вийшло? Ви молодець!</p>
+
+<p class="text-center"><img src="/assets/images/switch/switch.png" alt="" /></p>
+
+<p class="notice--warning">Не забудьте подякувати авторам посібника за реквізитами, вказаними нижче</p>
+
+<details class="spoiler" id="spoiler-3ad51a62">
+  <summary>Реквізити для збору пожертв</summary>
+  <div class="spoiler-content">
+    <h2 id="банка-monobank">Банка monobank</h2>
+
+<p class="text-center notice--info"><a href="https://send.monobank.ua/jar/9PwYEXHYbs" target="_blank"><img alt="Монобанка" border="0" src="/assets/images/donate/mono.jpg" width="400px" style="border-radius:10px !important" /></a></p>
+
+<h2 id="paypal">Paypal</h2>
+
+<div class="donate-wrapper text-center notice--info">
+	<div class="donate-form">
+	<form class="donate-form" action="https://www.paypal.com/donate" method="post" target="_blank">
+		<input type="hidden" name="hosted_button_id" value="S5BLF972J8G92" />
+		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+		<img alt="" border="0" src="https://www.paypal.com/en_UA/i/scr/pixel.gif" width="1" height="1" />
+	</form>
+		<img alt="PayPal" border="0" src="/assets/images/donate/paypal.png" />
+	</div>
+</div>
+
+<h2 id="usdt-trc20">USDT TRC20</h2>
+<div class="donate-wrapper text-center notice--info">
+<div>
+  <img alt="USDT TRC20" border="0" src="/assets/images/donate/usdt.png" width="400px" /><br />
+  <div class="copy-address" onclick="copyToClipboard('TNhAUg4RFbjeyeLN6HAJ93EVTtpprU9xug')">
+    <code id="wallet-address">TNhAUg4RFbjeyeLN6HAJ93EVTtpprU9xug</code>
+    <span class="copy-tooltip">Натисніть, щоб скопіювати</span>
+  </div>
+</div>
+</div>
+
+<h2 id="допомогти-україні-з-за-кордону">Допомогти Україні з-за кордону</h2>
+
+<p class="text-center notice--info"><a href="https://supportukrainenow.org/" target="_blank"><img alt="Support Ukraine Now" border="0" src="/assets/images/donate/sun.png" width="400px" style="border-radius:10px !important" /></a></p>
+
+<script>
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(function() {
+    // Зміна підказки на короткий час
+    var tooltip = document.querySelector('.copy-tooltip');
+    tooltip.innerHTML = 'Скопійовано!';
+    setTimeout(function() {
+      tooltip.innerHTML = 'Натисніть, щоб скопіювати';
+    }, 2000);
+  });
+}
+</script>
+
+<style>
+.copy-address {
+  position: relative;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.copy-address:hover {
+  background-color: #e0e0e0;
+}
+
+.copy-tooltip {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.donate-wrapper {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donate-form {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+</style>
+
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Реквізити для збору пожертв <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<script>
+	localStorage.setItem('fuse', 1);
+</script>
+
+
+				
+        
+      </section>
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+		
+    
+  </article>
+
+  
+  
+</div>
+    <a href="#" class="scrollup">Наверх</a>
+
+    <div class="page__footer-container">
+      <footer class="page__footer">
+        <script src="/assets/js/main.min.js"></script>
+
+<!-- // to top button -->
+<a href="#" class="scrollup">Наверх</a>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $(".scrollup").fadeIn();
+      } else {
+        $(".scrollup").fadeOut();
+      }
+    });
+
+    $(".scrollup").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+  });
+</script>
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a href="http://github.com/rashevskyv"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+	  <li><a href="https://t.me/xhrxhrxhr" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> TG</a></li>
+    
+    
+	  <li><a href="https://t.me/kefir_support" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Kefir / 4ifir - switch jailbroken
+	  </a></li>	
+    
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 nincfw team. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  
+    
+    <script src="/assets/js/spoiler-anim.js"></script>
+  
+
+
+
+
+
+
+
+  </body>
 </html>

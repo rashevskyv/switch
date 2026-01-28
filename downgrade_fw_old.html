@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="uk" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Даунгрейд та відновлення прошивки у випадку, якщо приставка вийшла з ладу - Взлом Switch</title>
+
+
+
+
+<meta name="description" content="Повне керівництво з прошивки Nintendo Switch">
+
+
+
+
+<meta name="author" content="xHR">
+
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="Взлом Switch">
+<meta property="og:title" content="Даунгрейд та відновлення прошивки у випадку, якщо приставка вийшла з ладу">
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "nincfw team",
+      "url" : null,
+      "sameAs" : null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="/feed.xml"
+  type="application/atom+xml" rel="alternate" title="Взлом Switch Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  </head>
+
+  <body class="layout--single">
+    
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Взлом Switch</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+            <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
+          </li><li class="masthead__menu-item">
+            <a href="http://customfw.xyz" ><i>Інші гайди</i></a>
+          </li><li class="masthead__menu-item">
+            <a href="https://customfw.xyz/donations" ><b>Пожертви</b></a>
+          </li><li class="masthead__menu-item">
+            <a href="/get-started" >Методи<br>злому</a>
+          </li><li class="masthead__menu-item">
+            <a href="/kefir" >Kefir</a>
+          </li><li class="masthead__menu-item">
+            <a href="/backup-nand" >Резервне<br>копіювання</a>
+          </li><li class="masthead__menu-item">
+            <a href="/emunand" >EmuNAND</a>
+          </li><li class="masthead__menu-item">
+            <a href="/usage" >Використання<br>прошитого Switch</a>
+          </li><li class="masthead__menu-item">
+            <a href="/faq" >FAQ</a>
+          </li><li class="masthead__menu-item">
+            <a href="/troubleshooting" >Проблеми та<br>їх вирішення</a>
+          </li><li class="masthead__menu-item">
+            <a href="/games" >Встановлення<br>ігор</a>
+          </li><li class="masthead__menu-item">
+            <a href="/update-fw" >Безпечне<br>оновлення</a>
+          </li><li class="masthead__menu-item">
+            <a href="/site-navigation" >Навігація по сайту</a>
+          </li><li class="masthead__menu-item">
+            <a href="http://customfw.xyz/contacts" >Зв'язатися з нами</a>
+          </li></ul>
+
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+  <div class="author__avatar">
+    
+    <center><img src="/assets/images/bio-photo.png" class="author__avatar" alt="xHR"
+        itemprop="image"></center>
+    
+  </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">xHR</h3><br>
+    
+  </div>
+
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--def btn--inverse btn--large btn--buy">Контакти</button>
+    <ul class="author__urls social-icons">
+      
+      <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+        <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Івано-Франківськ</span>
+      </li>
+      
+      <hr class="style-two">
+
+      
+<li>
+  <a href="https://t.me/xhrxhrxhr" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Telegram (чипування)
+  </a>
+</li>
+
+
+<li>
+  <a href="https://t.me/kefir_support" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Група в Telegram
+  </a>
+</li>
+
+
+<li>
+  <a href="tel:0997763996" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-phone" aria-hidden="true"></i> Телефон
+  </a>
+</li>
+
+
+<li>
+  <a href="viber://0977359431" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-whatsapp" aria-hidden="true"></i> Viber
+  </a>
+</li>
+
+
+      
+
+      
+      <li>
+        <a href="mailto:rashevsky.v@gmail.com">
+          <meta itemprop="email" content="rashevsky.v@gmail.com" />
+          <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a href="https://instagram.com/rashevsky.v" target="_blank" itemprop="sameAs">
+          <i class="fa fa-fw fa-instagram" aria-hidden="true"></i> Instagram
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+      <li>
+        <a href="https://github.com/rashevskyv" target="_blank" itemprop="sameAs">
+          <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+      <li>
+        <a href="https://customfw.xyz/donations" itemprop="sameAs">
+          <i class="fa fa-fw fa-vine" aria-hidden="true"></i><strong>Пожертви</strong>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+  
+   
+  </div>
+ 
+  
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Даунгрейд та відновлення прошивки у випадку, якщо приставка вийшла з ладу">
+    
+    
+    
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Даунгрейд та відновлення прошивки у випадку, якщо приставка вийшла з ладу
+</h1>
+          
+          <div class="language-selector-container">
+            <!-- Не показуємо текст "lang: uk", а показуємо перемикач мов -->
+            
+          </div>
+        </header>
+      
+	  
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Розділи</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#що-знадобиться" id="markdown-toc-що-знадобиться">Що знадобиться</a></li>
+  <li><a href="#інструкція" id="markdown-toc-інструкція">Інструкція</a>    <ul>
+      <li><a href="#частина-i---резервне-копіювання-nand" id="markdown-toc-частина-i---резервне-копіювання-nand">Частина I - Резервне копіювання NAND</a></li>
+      <li><a href="#частина-ii---перепакування-прошивки-під-вашу-систему" id="markdown-toc-частина-ii---перепакування-прошивки-під-вашу-систему">Частина II - Перепакування прошивки під вашу систему</a></li>
+      <li><a href="#частина-iii---підготовка-карти-памяті" id="markdown-toc-частина-iii---підготовка-карти-памяті">Частина III - Підготовка карти пам’яті</a></li>
+      <li><a href="#частина-iv---завантаження-прошивки-на-пристрій" id="markdown-toc-частина-iv---завантаження-прошивки-на-пристрій">Частина IV - Завантаження прошивки на пристрій</a></li>
+      <li><a href="#частина-v---autorcm" id="markdown-toc-частина-v---autorcm">Частина V - AutoRCM</a></li>
+    </ul>
+  </li>
+  <li><a href="#наступний-крок-безпечне-оновлення-прошивки" id="markdown-toc-наступний-крок-безпечне-оновлення-прошивки">Наступний крок: Безпечне оновлення прошивки</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<p>Цей гайд для даунгрейду прошивки і для тих, у кого приставка не вмикається, але цілий розділ PRODINFO, або є його бекап (атмосфера 0.8.1 і вище бекапить PRODINFO на карту автоматично). Для оновлення прошивки скористайтеся <a href="/update-fw">цією</a> інструкцією!</p>
+
+<p class="notice--danger">Це ДУЖЕ складний і комплексний метод. ОБОВ’ЯЗКОВО <a href="/backup-nand" target="_blank">зробіть бекап</a> своєї поточної прошивки до того, як почнете виконання цього методу. ОБОВ’ЯЗКОВО.</p>
+
+<h2 id="що-знадобиться">Що знадобиться</h2>
+
+<ul>
+  <li>Увімкніть <a href="https://customfw.xyz/file-extensions-windows" target="_blank">відображення розширень файлів</a>, якщо у вас Windows</li>
+  <li>Вміння <a href="/fusee-gelee" target="_blank">запускати пейлоади через Fusée Gelée</a></li>
+  <li>Приставка має бути повністю заряджена!</li>
+  <li>Свіжа версія пейлоада <code class="language-plaintext highlighter-rouge">payload.bin</code> з <code class="language-plaintext highlighter-rouge">.zip</code>-архіву <span class="tooltip_container">
+  <a href="kefir" target="_blank">kefir</a>
+  <span class="tooltip">▼
+      <span class="bottom">
+          Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+      </span>
+  </span>
+</span></li>
+  <li><a href="/files/keys.zip" target="_blank">Ключі</a>, однакові для всіх консолей</li>
+  <li>Прошивка <strong>6.1.0</strong>:
+    <ul>
+      <li><a href="https://yadi.sk/d/Qaaj2QznA1wc_g" target="_blank">ЯД</a></li>
+      <li><a href="https://mega.nz/#!cwVjlCbK!OzSENIs6Z8oNMVJPQFKhQSYu3rre01xRejZNKCkc40o" target="_blank">MEGA</a></li>
+      <li><a href="https://fex.net/912191309314/1157451339?fileId=1157451383" target="_blank">FEX</a></li>
+    </ul>
+  </li>
+  <li>Свіжа версія <a href="https://github.com/suchmememanyskill/EmmcHaccGen" target="_blank">EmmcHaccGen</a>
+    <ul>
+      <li>Потребує для роботи <a href="https://dotnet.microsoft.com/download/dotnet-core/3.1" target="_blank">.NET SDK 3.1</a></li>
+    </ul>
+  </li>
+  <li>Свіжа версія <a href="/files/memloader.zip" target="_blank">memloader</a></li>
+  <li>Свіжа версія <a href="https://github.com/resin-io/etcher/releases/latest" target="_blank">Etcher</a> качайте версію Portable для вашої платформи (для Windows - <strong>exe x86</strong>)</li>
+  <li>Свіжа версія <a href="https://switchtools.sshnuke.net/" target="_blank">HacDiskMount</a></li>
+</ul>
+
+<h2 id="інструкція">Інструкція</h2>
+
+<h3 id="частина-i---резервне-копіювання-nand">Частина I - Резервне копіювання NAND</h3>
+
+<p class="notice--danger">Цей пункт потрібно робити <strong>обов’язково</strong>! Для продовження роботи нам знадобляться унікальні ключі саме вашої приставки! Без жартів! Ймовірність, що щось піде не так набагато вища за нуль, без бекапу ви нічого не зможете виправити. Ну і обов’язково потрібен дамп ключів.</p>
+
+<ol>
+  <li>Створіть <a href="/backup-nand" target="_blank">резервну копію NAND</a> консолі та помістіть її в надійне місце</li>
+  <li>Встановіть <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip">▼
+     <span class="bottom">
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+     </span>
+ </span>
+</span>, якщо ще не робили цього</li>
+</ol>
+
+<h3 id="частина-ii---перепакування-прошивки-під-вашу-систему">Частина II - Перепакування прошивки під вашу систему</h3>
+
+<ol>
+  <li>Встановіть <a href="https://dotnet.microsoft.com/download/dotnet-core/3.1" target="_blank">.NET SDK 3.1</a></li>
+  <li>Розпакуйте <code class="language-plaintext highlighter-rouge">.zip-архів</code> з <a href="https://github.com/suchmememanyskill/EmmcHaccGen" target="_blank">EmmcHaccGen</a> у зручну папку</li>
+  <li>Покладіть у папку з <code class="language-plaintext highlighter-rouge">EmmcHaccGen</code> ваш файл з <a href="/backup-nand#частина-iii---дампимо-ключі" target="_blank">ключами</a></li>
+  <li>Розпакуйте <code class="language-plaintext highlighter-rouge">.zip-архів</code> з прошивкою <strong>6.1.0</strong> у папку <code class="language-plaintext highlighter-rouge">EmmcHaccGen</code> таким чином, щоб папка з прошивкою лежала в тій же директорії, що і <code class="language-plaintext highlighter-rouge">EmmcHaccGen.exe</code></li>
+  <li>Відкрийте файли <code class="language-plaintext highlighter-rouge">keys.txt</code> та <code class="language-plaintext highlighter-rouge">prod.keys</code> (бекап ваших ключів) за допомогою програми <a href="https://notepad-plus-plus.org/download/v7.6.3.html" target="_blank">notepad++</a>, який у вас вийшов у ході виконання “Частини I”</li>
+  <li>Скопіюйте значення рядка “<strong>secure_boot_key</strong>” з файлу <code class="language-plaintext highlighter-rouge">prod.keys</code> замість <code class="language-plaintext highlighter-rouge">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</code> у поле “<strong>secure_boot_key</strong>” у файлі <code class="language-plaintext highlighter-rouge">keys.txt</code></li>
+  <li>
+    <p>Скопіюйте значення рядка “<strong>tsec_key</strong>” з файлу <code class="language-plaintext highlighter-rouge">prod.keys</code> замість <code class="language-plaintext highlighter-rouge">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</code> у поле “<strong>tsec_key</strong>” у файлі <code class="language-plaintext highlighter-rouge">keys.txt</code></p>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/screenshots/keys.png" alt="" /></p>
+  </li>
+  <li>Запустіть командний рядок у папці <code class="language-plaintext highlighter-rouge">EmmcHaccGen</code> (викличте контекстне меню з затиснутою клавішею Shift, натиснувши на вільне місце в папці, і виберіть “<strong>Відкрити Командний рядок тут</strong>” або “<strong>Відкрити вікно PowerShell тут</strong>”)</li>
+  <li>У вікні, що відкрилося, наберіть:
+    <ul>
+      <li>Для powershell: <code class="language-plaintext highlighter-rouge">.\EmmcHaccGen.exe --keys prod.keys --fw 6.1.0</code></li>
+      <li>Для командного рядка: <code class="language-plaintext highlighter-rouge">EmmcHaccGen.exe --keys prod.keys --fw 6.1.0</code></li>
+    </ul>
+  </li>
+  <li>Дочекайтеся закінчення перепакування. В результаті ви отримаєте папку <code class="language-plaintext highlighter-rouge">NX-6.1.0-exfat</code></li>
+</ol>
+
+<h3 id="частина-iii---підготовка-карти-памяті">Частина III - Підготовка карти пам’яті</h3>
+
+<div class="notice--danger">
+<p><strong>УВАГА!!!</strong> Якщо ви в процесі виконання керівництва побачите діалогове вікно з пропозицією відформатувати диск - <strong>натисніть скасувати</strong>!!</p>
+
+<p class="text-center"><img src="/assets/images/switch/screenshots/format.png" alt="" /></p>
+</div>
+
+<ol>
+  <li>Вимкніть консоль</li>
+  <li>Вставте карту пам’яті приставки в ПК</li>
+  <li>Скопіюйте <strong>вміст</strong> <code class="language-plaintext highlighter-rouge">.zip</code>-архіву з <a href="/files/memloader.zip" target="_blank">memloader</a> у <strong>корінь</strong> вашої карти пам’яті, погоджуючись на заміну (об’єднати в macOS)</li>
+  <li>Скопіюйте пейлоад <code class="language-plaintext highlighter-rouge">memloader.bin</code> у папку <code class="language-plaintext highlighter-rouge">bootloader/payloads</code></li>
+  <li>Поверніть карту пам’яті назад у Switch</li>
+  <li>Увійдіть в <span class="tooltip_container">
+ hekate
+ <span class="tooltip">▼
+     <span class="bottom">
+         Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+     </span>
+ </span>
+</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> з <code class="language-plaintext highlighter-rouge">.zip</code>-архіву <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip">▼
+     <span class="bottom">
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+     </span>
+ </span>
+</span>
+    <ul>
+      <li>Якщо приставка чипована - просто влючить її</li>
+      <li>Пропустіть цей крок, якщо ви вже в hekate</li>
+    </ul>
+  </li>
+  <li>Утримуйте (VOL-) на приставці під час появи логотипу kefir, щоб потрапити в hekate</li>
+  <li>Перейдіть у меню “<strong>Payloads</strong>”</li>
+  <li>Виберіть “<strong>memloader.bin</strong>”</li>
+</ol>
+
+<h3 id="частина-iv---завантаження-прошивки-на-пристрій">Частина IV - Завантаження прошивки на пристрій</h3>
+
+<details class="spoiler" id="spoiler-75ac9b58">
+  <summary>Монтування BOOT0 в "LINUX UMS DISK 0"</summary>
+  <div class="spoiler-content">
+    <div class="notice--danger">
+<p class="text-left"><strong>УВАГА!!!</strong> Якщо ви в процесі виконання посібника побачите діалогове вікно з пропозицією відформатувати диск - <strong>натисніть скасувати</strong>!!</p>
+<p class="text-center"><img src="/assets/images/switch/screenshots/format.png" alt="" /></p>
+</div>
+
+<ol>
+  <li>Запустіть пейлоад <code class="language-plaintext highlighter-rouge">memloader.bin</code> за допомогою <a href="fusee-gelee" target="_blank">Fusée Gelée</a></li>
+  <li>На екрані приставки виберіть <code class="language-plaintext highlighter-rouge">ums_BOOT0.ini</code> та запустіть
+    <ul>
+      <li>Для переміщення по меню використовуйте клавіші (VOL-) та (VOL+), для вибору - <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" /></li>
+      <li>Зверніть увагу, що вибрали саме “ums_<strong>BOOT0</strong>.ini”</li>
+      <li>Екран приставки залишиться чорним</li>
+    </ul>
+  </li>
+  <li>Запустіть “<strong>Диспетчер пристроїв</strong>”, переконайтеся, що там, у дереві “<strong>Дискові пристрої</strong>” з’явився пристрій з назвою “<strong>LINUX UMS DISK 0</strong>”
+    <ul>
+      <li>Якщо такого там немає,
+        <ul>
+          <li>видаліть усі пристрої зі знаком оклику (також ставте галочку на видаленні драйверів)</li>
+          <li>видаліть усі пристрої з міткою “<strong>USB Download Gadget</strong>”.</li>
+          <li>Після видалення пристроїв виберіть “<strong>Дії</strong>” -&gt; “<strong>Оновити конфігурацію обладнання</strong>” в диспетчері пристроїв</li>
+        </ul>
+      </li>
+      <li>Якщо після всіх маніпуляцій диск так і не з’явився, вимкніть Switch і заново запустіть пейлоад <code class="language-plaintext highlighter-rouge">memloader.bin</code> за допомогою <a href="fusee-gelee" target="_blank">Fusée Gelée</a></li>
+    </ul>
+  </li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Монтування BOOT0 в "LINUX UMS DISK 0" <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-22c7e491">
+  <summary>Завантаження BOOT0/1</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Встановіть та запустіть Etcher</li>
+  <li>Натисніть “<strong>Select Image</strong>” та виберіть <code class="language-plaintext highlighter-rouge">BOOT0.BIN</code>, який знаходиться в папці <code class="language-plaintext highlighter-rouge">NX-6.1.0-exfat</code>, яку ми згенерували в <strong>Частині III</strong></li>
+  <li>У вікні, що з’явилося, натисніть “<strong>Continue</strong>”</li>
+  <li>Програма автоматично вибере “<strong>LINUX UMS DISK 0</strong>” у другому пункті
+    <ul>
+      <li>Якщо це не так, натисніть “<strong>Change та виберіть його вручну</strong>”</li>
+    </ul>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/screenshots/etcher_boot0.png" alt="" /></p>
+  </li>
+  <li>Натисніть “<strong>Flash!</strong>” та очікуйте закінчення завантаження</li>
+  <li>Закрийте програму</li>
+  <li>Утримуйте кнопку <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" /> 15 секунд, поки не згасне підсвічування екрана Switch</li>
+  <li><strong>Повторіть для BOOT1</strong></li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Завантаження BOOT0/1 <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-239080ec">
+  <summary>Монтування eMMC RAW в "LINUX UMS DISK 0"</summary>
+  <div class="spoiler-content">
+    <div class="notice--danger">
+<p class="text-left"><strong>УВАГА!!!</strong> Якщо ви в процесі виконання посібника побачите діалогове вікно з пропозицією відформатувати диск - <strong>натисніть скасувати</strong>!!</p>
+<p class="text-center"><img src="/assets/images/switch/screenshots/format.png" alt="" /></p>
+</div>
+
+<ol>
+  <li>Запустіть пейлоад <code class="language-plaintext highlighter-rouge">memloader.bin</code> за допомогою <a href="fusee-gelee" target="_blank">Fusée Gelée</a></li>
+  <li>На екрані приставки виберіть <code class="language-plaintext highlighter-rouge">ums_eMMC RAW.ini</code> та запустіть
+    <ul>
+      <li>Для переміщення по меню використовуйте клавіші (VOL-) та (VOL+), для вибору - <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" /></li>
+      <li>Зверніть увагу, що вибрали саме “ums_<strong>eMMC RAW</strong>.ini”</li>
+      <li>Екран приставки залишиться чорним</li>
+    </ul>
+  </li>
+  <li>Запустіть “<strong>Диспетчер пристроїв</strong>”, переконайтеся, що там, у дереві “<strong>Дискові пристрої</strong>” з’явився пристрій з назвою “<strong>LINUX UMS DISK 0</strong>”
+    <ul>
+      <li>Якщо такого там немає,
+        <ul>
+          <li>видаліть усі пристрої зі знаком оклику (також ставте галочку на видаленні драйверів)</li>
+          <li>видаліть усі пристрої з міткою “<strong>USB Download Gadget</strong>”.</li>
+          <li>Після видалення пристроїв виберіть “<strong>Дії</strong>” -&gt; “<strong>Оновити конфігурацію обладнання</strong>” в диспетчері пристроїв</li>
+        </ul>
+      </li>
+      <li>Якщо після всіх маніпуляцій диск так і не з’явився, вимкніть Switch і заново запустіть пейлоад <code class="language-plaintext highlighter-rouge">memloader.bin</code> за допомогою <a href="fusee-gelee" target="_blank">Fusée Gelée</a></li>
+    </ul>
+  </li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Монтування eMMC RAW в "LINUX UMS DISK 0" <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-b1718e58">
+  <summary>Налаштування eMMC через HacDiskMount</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Розпакуйте <a href="https://switchtools.sshnuke.net/" target="_blank">HacDiskMount</a> у зручну папку</li>
+  <li>Запустіть <code class="language-plaintext highlighter-rouge">HacDiskMount.exe</code> від імені адміністратора</li>
+  <li>Виберіть  “<strong>File</strong>” -&gt; “<strong>Open Physical</strong>”</li>
+  <li>Виберіть <code class="language-plaintext highlighter-rouge">UMS Linux Disk 0 (29.121GiB)</code></li>
+  <li>
+    <p>Ви побачите повний список розділів, що містяться в цьому диску</p>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/screenshots/hdm_disk.png" alt="" /></p>
+  </li>
+  <li>Двічі натисніть на <code class="language-plaintext highlighter-rouge">PRODINFO</code></li>
+  <li>Відкрийте файл <code class="language-plaintext highlighter-rouge">prod.keys</code>, який ми отримали при створенні дампу ключів у Частині I</li>
+  <li>
+    <p>У розділі “<strong>bis_key_00</strong>” є довга 64-символьна послідовність, перші 32 символи - це “<strong>Crypto</strong>”, останні - “<strong>Tweak</strong>”. У файлі з ключами ключі діляться попарно. У кожній парі є також ключ з міткою “<strong>Crypto</strong>” (crypt) та “<strong>Tweak</strong>” (tweak).</p>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/screenshots/hdm_key_test.png" alt="" /></p>
+  </li>
+  <li>Скопіюйте ключі відповідно до їх міток з текстового файлу <code class="language-plaintext highlighter-rouge">prod.keys</code> у вікно програми та натисніть кнопку “<strong>Test</strong>”</li>
+  <li>Поруч із кнопкою висвітиться напис зеленого кольору (<strong>OK! Enthropy: (tested)</strong>), то ключ скопійований вірно - натисніть кнопку “<strong>Save</strong>” та закрийте вікно (не програму!)
+    <ul>
+      <li>Якщо після тестування напис червоний - ви скопіювали не вірну пару!</li>
+    </ul>
+  </li>
+  <li>Повторіть ту саму процедуру для розділів <code class="language-plaintext highlighter-rouge">SAFE</code>, <code class="language-plaintext highlighter-rouge">SYSTEM</code> та <code class="language-plaintext highlighter-rouge">USER</code>, прописавши їм пари “<strong>bis_key_01</strong>”, “<strong>bis_key_02</strong>” та “<strong>bis_key_03</strong>” (два останні ключі однакові - це нормально) відповідно
+    <ul>
+      <li>Звертайте увагу на результат тестування та не забувайте натискати кнопку “<strong>Save</strong>”</li>
+    </ul>
+  </li>
+  <li>Двічі натисніть на <code class="language-plaintext highlighter-rouge">PRODINFO</code></li>
+  <li>У вікні, що відкрилося, вже будуть вбиті ключі. Протестуйте їх та переконайтеся, що результат зелений. Закрийте вікно не зберігаючи.</li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Налаштування eMMC через HacDiskMount <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-6d36d13f">
+  <summary>Перенесення образів BCPKG2</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Двічі натисніть на <code class="language-plaintext highlighter-rouge">BCPKG2-1-Normal-Main</code></li>
+  <li>Переконайтеся, що поля для ключів порожні. Якщо це не так, очистіть їх</li>
+  <li>
+    <p>У секції “<strong>Restore from file</strong>” натисніть “<strong>Browse</strong>”</p>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/screenshots/hdm_bcpkg21-nm.png" alt="" /></p>
+  </li>
+  <li>Виберіть <code class="language-plaintext highlighter-rouge">BCPKG2-1-Normal-Main.bin</code>, який знаходиться в папці <code class="language-plaintext highlighter-rouge">NX-6.1.0-exfat</code>, яку ми згенерували в Частині III</li>
+  <li>Натисніть кнопку “<strong>Start</strong>”</li>
+  <li>Після закінчення завантаження закрийте вікно (не програму!)</li>
+  <li>Повторіть те саме для <code class="language-plaintext highlighter-rouge">BCPKG2-2-Normal-Sub</code>, <code class="language-plaintext highlighter-rouge">BCPKG2-3-SafeMode-Main</code> та <code class="language-plaintext highlighter-rouge">BCPKG2-4-SafeMode-Sub</code>
+    <ul>
+      <li>Переконайтеся, що прошиваєте файли з назвами, ідентичними назвам розділів!</li>
+      <li>Не забувайте стирати ключі, якщо такі будуть</li>
+    </ul>
+  </li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Перенесення образів BCPKG2 <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-e5df2d92">
+  <summary>Робота з розділом SAFE</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Двічі натисніть на <code class="language-plaintext highlighter-rouge">SAFE</code></li>
+  <li>Протестуйте ключі, натиснувши кнопку “<strong>Test</strong>”
+    <ul>
+      <li>Якщо ключі не проходять перевірку - вам потрібно вписати сюди ті, що проходять! Не забудьте натиснути кнопку “<strong>Save</strong>”</li>
+    </ul>
+  </li>
+  <li>Зверніть увагу на розділ “<strong>Virtual Drive</strong>”</li>
+  <li>Якщо там написано “<strong>Driver not installed</strong>”, натисніть кнопку “<strong>Install</strong>”</li>
+  <li>Напис має змінитися на “<strong>Driver (ver 2017.0.3.20) installed, service is running</strong>”</li>
+  <li>У полі “<strong>Drive letter</strong>” виберіть незайняту літеру диска</li>
+  <li>Позначте галочкою поле “<strong>Passthrough zeroes</strong>”</li>
+  <li>
+    <p>Натисніть кнопку “<strong>Mount</strong>”</p>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/screenshots/hdm_safe.png" alt="" /></p>
+  </li>
+  <li>Якщо все зроблено правильно, у “<strong>Мій комп’ютер</strong>” з’явиться диск з вибраною літерою. Відкрийте його</li>
+  <li>Якщо на диску є файли - видаліть їх усі!</li>
+  <li>Після закінчення відмонтуйте диск, натиснувши на кнопку “<strong>Unmount</strong>” у вікні HacDiskMount</li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Робота з розділом SAFE <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-6c9b9e31">
+  <summary>Робота з розділом SYSTEM</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Двічі натисніть на <code class="language-plaintext highlighter-rouge">SYSTEM</code></li>
+  <li>Протестуйте ключі, натиснувши кнопку “<strong>Test</strong>”
+    <ul>
+      <li>Якщо ключі не проходять перевірку - вам потрібно вписати сюди ті, що проходять! Не забудьте натиснути кнопку “<strong>Save</strong>”</li>
+    </ul>
+  </li>
+  <li>Зверніть увагу на розділ “<strong>Virtual Drive</strong>”</li>
+  <li>Якщо там написано “<strong>Driver not installed</strong>”, натисніть кнопку “<strong>Install</strong>”</li>
+  <li>Напис має змінитися на “<strong>Driver (ver 2017.0.3.20) installed, service is running</strong>”</li>
+  <li>У полі “<strong>Drive letter</strong>” виберіть незайняту літеру диска</li>
+  <li>Позначте галочкою поле “<strong>Passthrough zeroes</strong>”</li>
+  <li>
+    <p>Натисніть кнопку “<strong>Mount</strong>”</p>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/screenshots/hdm_safe.png" alt="" /></p>
+  </li>
+  <li>Якщо все зроблено правильно, у “<strong>Мій комп’ютер</strong>” з’явиться диск з вибраною літерою. Відкрийте його</li>
+</ol>
+
+<h4 id="оберіть-один-з-методів">Оберіть один з методів:</h4>
+
+<h5 id="метод-1---повна-ініціалізація-системи">Метод 1 - Повна ініціалізація системи</h5>
+
+<p>Пішовши цим шляхом ви видалите всі дані з консолі, включаючи акаунти, ігри та збереження. Однак цей шлях більш безпечний і не призведе до проблем надалі</p>
+
+<ol>
+  <li>Виділіть всі файли на диску та видаліть їх!</li>
+</ol>
+
+<h5 id="метод-2---збереження-налаштувань">Метод 2 - Збереження налаштувань</h5>
+
+<p>Це експериментальний метод! Він може не спрацювати при спробі надалі знизити прошивку!</p>
+
+<ol>
+  <li>Видаліть папку “<strong>Content</strong>”</li>
+  <li>Видаліть “<strong>PRF2SAFE.RCV</strong>”, якщо такий є</li>
+  <li>Перейдіть у папку <code class="language-plaintext highlighter-rouge">save</code> та видаліть файл <code class="language-plaintext highlighter-rouge">8000000000000047</code></li>
+</ol>
+
+<h4 id="копіювання-файлів-у-розділ-system">Копіювання файлів у розділ SYSTEM</h4>
+
+<ol>
+  <li>Перейдіть у папку <code class="language-plaintext highlighter-rouge">NX-6.1.0-exfat</code>, яку ми згенерували в Частині III та скопіюйте весь <strong>вміст</strong> папки <code class="language-plaintext highlighter-rouge">SYSTEM</code> на змонтований диск із заміною (<strong>об’єднати</strong> на macOS)</li>
+  <li>Після закінчення копіювання відмонтуйте диск, натиснувши на кнопку “<strong>Unmount</strong>” у вікні HacDiskMount</li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Робота з розділом SYSTEM <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-b4f82b00">
+  <summary>Робота з розділом USER</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Двічі натисніть на <code class="language-plaintext highlighter-rouge">USER</code></li>
+  <li>Протестуйте ключі, натиснувши кнопку “<strong>Test</strong>”
+    <ul>
+      <li>Якщо ключі не проходять перевірку - вам потрібно вписати сюди ті, що проходять! Не забудьте натиснути кнопку “<strong>Save</strong>”</li>
+    </ul>
+  </li>
+  <li>Зверніть увагу на розділ “<strong>Virtual Drive</strong>”</li>
+  <li>Якщо там написано “<strong>Driver not installed</strong>”, натисніть кнопку “<strong>Install</strong>”</li>
+  <li>Напис має змінитися на “<strong>Driver (ver 2017.0.3.20) installed, service is running</strong>”</li>
+  <li>У полі “<strong>Drive letter</strong>” виберіть незайняту літеру диска</li>
+  <li>Позначте галочкою поле “<strong>Passthrough zeroes</strong>”</li>
+  <li>
+    <p>Натисніть кнопку “<strong>Mount</strong>”</p>
+
+    <p class="text-center notice--info"><img src="/assets/images/switch/screenshots/hdm_safe.png" alt="" /></p>
+  </li>
+  <li>Якщо все зроблено правильно, у “<strong>Мій комп’ютер</strong>” з’явиться диск з вибраною літерою. Відкрийте його</li>
+</ol>
+
+<h4 id="оберіть-один-з-методів">Оберіть один з методів:</h4>
+
+<h5 id="метод-1---повна-ініціалізація-системи">Метод 1 - Повна ініціалізація системи</h5>
+
+<p>Пішовши цим шляхом ви видалите всі дані з консолі, включаючи акаунти, ігри та збереження. Однак цей шлях більш безпечний і не призведе до проблем надалі</p>
+
+<ol>
+  <li>Виділіть всі файли на диску та видаліть їх!</li>
+</ol>
+
+<h5 id="метод-2---збереження-налаштувань">Метод 2 - Збереження налаштувань</h5>
+
+<ol>
+  <li>Видаліть “PRF2SAFE.RCV”, якщо такий є</li>
+</ol>
+
+<h3 id="копіювання-файлів-у-розділ-user">Копіювання файлів у розділ USER</h3>
+
+<ol>
+  <li>Перейдіть у папку <code class="language-plaintext highlighter-rouge">NX-6.1.0-exfat</code>, яку ми згенерували в Частині III та скопіюйте весь <strong>вміст</strong> папки <code class="language-plaintext highlighter-rouge">USER</code> на змонтований диск із заміною (<strong>об’єднати</strong> на macOS)</li>
+  <li>Після закінчення копіювання відмонтуйте диск, натиснувши на кнопку “<strong>Unmount</strong>” у вікні HacDiskMount</li>
+  <li>Закрийте HacDiskMount</li>
+  <li>Вимкніть Switch, затиснувши кнопку <img src="/assets/images/switch/buttons/POWER.png" alt="(POWER)" /> на 15 секунд, поки підсвічування екрана не вимкнеться</li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Робота з розділом USER <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<h3 id="частина-v---autorcm">Частина V - AutoRCM</h3>
+
+<ol>
+  <li>Увійдіть в <span class="tooltip_container">
+ hekate
+ <span class="tooltip">▼
+     <span class="bottom">
+         Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+     </span>
+ </span>
+</span> за допомогою підтримуваного на вашій приставці експлойту, запустивши пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> з <code class="language-plaintext highlighter-rouge">.zip</code>-архіву <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip">▼
+     <span class="bottom">
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+     </span>
+ </span>
+</span>
+    <ul>
+      <li>Якщо приставка чипована - просто влючить її</li>
+      <li>Пропустіть цей крок, якщо ви вже в hekate</li>
+    </ul>
+  </li>
+  <li>Утримуйте (VOL-) на приставці під час появи логотипу kefir, щоб потрапити в hekate</li>
+  <li>Перейдіть у розділ “<strong>Tools</strong>” -&gt; “<strong>autoRCM</strong>” і виберіть “<strong>Enable AutoRCM</strong>”, потім натисніть будь-яку кнопку і виберіть “<strong>Back</strong>” для повернення в головне меню</li>
+</ol>
+
+<hr />
+
+<h1 class="notice--success" id="наступний-крок-безпечне-оновлення-прошивки">Наступний крок: <a href="/update-fw">Безпечне оновлення прошивки</a></h1>
+
+
+				
+        
+      </section>
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+		
+    
+  </article>
+
+  
+  
+</div>
+    <a href="#" class="scrollup">Наверх</a>
+
+    <div class="page__footer-container">
+      <footer class="page__footer">
+        <script src="/assets/js/main.min.js"></script>
+
+<!-- // to top button -->
+<a href="#" class="scrollup">Наверх</a>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $(".scrollup").fadeIn();
+      } else {
+        $(".scrollup").fadeOut();
+      }
+    });
+
+    $(".scrollup").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+  });
+</script>
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a href="http://github.com/rashevskyv"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+	  <li><a href="https://t.me/xhrxhrxhr" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> TG</a></li>
+    
+    
+	  <li><a href="https://t.me/kefir_support" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Kefir / 4ifir - switch jailbroken
+	  </a></li>	
+    
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 nincfw team. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  
+    
+    <script src="/assets/js/spoiler-anim.js"></script>
+  
+
+
+
+
+
+
+
+  </body>
+</html>
