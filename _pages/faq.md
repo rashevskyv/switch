@@ -14,17 +14,13 @@ author_profile: true
 {: .notice--info}
 
 {% spoiler Занадто багато незнайомих слів - нічого не розумію! %}
-**В:** Вивчіть [глосарій](/#основні-терміни){:target="_blank"}
+**В:** Вивчіть [глосарій](glossary){:target="_blank"}
 
 {% endspoiler %}
 
 {% spoiler Як перевірити консоль при купівлі з рук? %}
 
-Загалом, все дуже добре описано у відео нижче. Однак, пам'ятайте, що все, що говорить автор відео про бан, має мало спільного з реальністю. Купуючи прошиту приставку з рук майте на увазі, що ви не застраховані від бану, що б ви не робили!
-
-{% include youtube_clean.html id="eqhbXjC5awo" %}
-{: .text-center}
-{: .notice--info}
+**В:** [Вичерпна відповідь](buying-used)
 
 {% endspoiler %}
 
@@ -46,7 +42,7 @@ author_profile: true
 
 {% spoiler Чи можна досягти кращої продуктивності / розігнати Switch? %}
 
-[Розгін (SYS-CLK, Freebird)](https://4pda.to/forum/index.php?showtopic=900987&st=9620#entry81429122){:target="_blank"}
+[Використовуйте 4IFIR](https://4ifir.customfw.xyz){:target="_blank"}
 
 {% endspoiler %}
 
@@ -58,12 +54,6 @@ author_profile: true
 
 {% spoiler Що таке кефір? %}
 **В:** У контексті цього посібника - збірка, що складається з обраного {% include abbr/cfw.txt abbr="кастому" %}, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію з встановлення можна подивитися в його [репозиторії](https://github.com/rashevskyv/kefir/releases/latest){:target="_blank"}
-
-{% endspoiler %}
-
-{% spoiler Що таке hbgshop? %}
-
-**В:** [Вичерпна відповідь](https://4pda.to/forum/index.php?showtopic=939714&st=1480#entry87313387)
 
 {% endspoiler %}
 
