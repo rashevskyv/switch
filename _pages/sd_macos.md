@@ -41,6 +41,10 @@ author_profile: true
 1. Запустіть приставку, утримуючи кнопку зниження гучності, щоб потрапити в {% include abbr/hekate.txt abbr="hekate" %}
 {% include /inc/fixatributes.txt %}
 
+___
+
+[Закрити сторінку](javascript:window.close();)
+{: .notice--success}
 
 
 
