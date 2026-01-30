@@ -4,7 +4,7 @@ minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint"
 locale                   : "uk-UA"  # Змінено на українську як основну мову
 title                    : "Взлом Switch"
 title_separator          : "-"
-name                     : "nincfw team"
+name                     : "xHR"
 description              : "Повне керівництво з прошивки Nintendo Switch"  # Перекладено на українську
 url                      : "" # змінено на відносний URL
 baseurl                  : "" # the subpath of your site, e.g. "/blog"

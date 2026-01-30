@@ -12,6 +12,17 @@ author_profile: true
 
 ## Основні ланцюжки зламу:
 
+### Чіповані приставки
+
+* [Злам за допомогою чіпа](/modchip){:target="_blank"}
+* [Чипування Nintendo Switch](/preparation-modchip){:target="_blank"}
+* [Kefir](/kefir){:target="_blank"}
+* [Резервне копіювання NAND](/backup-nand){:target="_blank"}
+* [Встановлення EmuNAND](/emunand){:target="_blank"}
+* [Прив'язка облікового запису консолі до акаунту Nintendo](/link-account){:target="_blank"}
+* [Встановлення ігор, DLC, оновлень](/games){:target="_blank"}
+* [Інструкція з використання вже прошитої приставки ](/usage){:target="_blank"}
+
 ### Fusée Gelée
 
 * [Запуск пейлоадера через Fusée Gelée](/fusee-gelee){:target="_blank"}
@@ -19,17 +30,6 @@ author_profile: true
 * [Kefir](/kefir){:target="_blank"}
 * [Резервне копіювання NAND](/backup-nand){:target="_blank"}
 * [Безпечне оновлення прошивки](/update-fw){:target="_blank"}
-* [Встановлення EmuNAND](/emunand){:target="_blank"}
-* [Прив'язка облікового запису консолі до акаунту Nintendo](/link-account){:target="_blank"}
-* [Встановлення ігор, DLC, оновлень](/games){:target="_blank"}
-* [Інструкція з використання вже прошитої приставки ](/usage){:target="_blank"}
-
-### Чіповані приставки
-
-* [Злам за допомогою чіпа](/modchip){:target="_blank"}
-* [Чипування Nintendo Switch](/preparation-modchip){:target="_blank"}
-* [Kefir](/kefir){:target="_blank"}
-* [Резервне копіювання NAND](/backup-nand){:target="_blank"}
 * [Встановлення EmuNAND](/emunand){:target="_blank"}
 * [Прив'язка облікового запису консолі до акаунту Nintendo](/link-account){:target="_blank"}
 * [Встановлення ігор, DLC, оновлень](/games){:target="_blank"}
@@ -57,6 +57,11 @@ author_profile: true
 * [Часті питання](/faq){:target="_blank"}
 * [Проблеми та їх вирішення](/troubleshooting){:target="_blank"}
 * [Kefir](/kefir){:target="_blank"}
+* [Лонгрід про роботу Атмосфери, Кефір, сток та семі-сток](/longread){:target="_blank"}
+* [Про бани. Розгорнуто, детально, зрозуміло](/ban){:target="_blank"}
+* [Як правильно купити вживану Nintendo Switch - повний гід з перевірки](/buying-used){:target="_blank"}
+* [Використання Chiaki та Remote Play для стрімінгу ігор з PS4/PS5 на Switch](/chiaki){:target="_blank"}
+* [Tesla Overlay Menu](/tesla-menu){:target="_blank"}
 
 ## Робота з системою
 

@@ -59,19 +59,5 @@ addons:
     url: /backup-nand
   - title: "Запуск пейлоадера через Fusée Gelée"
     url: /fusee-gelee
-  - title: "Запуск Homebrew Launcher"
-    url: /launch-hbl
-  - title: "Кастомні прошивки"
-    url: /cfw
-  - title: "Емуляція Amiibo за допомогою модуля emuiibo"
-    url: /emuiibo
-  - title: "Tesla Overlay Menu"
-    url: "https://4pda.to/forum/index.php?showtopic=900987&st=18260#entry93523431"
-  - title: "Chiaki - Remote Play для PS4"
-    url: "https://4pda.to/forum/index.php?showtopic=900987&st=19780#entry96367163"
-  - title: "Розгін (SYS-CLK, Freebird)"
-    url: "https://4pda.to/forum/index.php?showtopic=900987&st=9620#entry81429122"
-  - title: "Емулятори для Switch"
-    url: "https://4pda.to/forum/index.php?showtopic=939714&st=0#Spoil-81825647-4"
   - title: "Повна інструкція з використання DBI"
     url: "https://github.com/rashevskyv/dbi"
