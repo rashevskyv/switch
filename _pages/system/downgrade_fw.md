@@ -17,7 +17,7 @@ author_profile: true
 {: .notice--danger}
 
 * [Ключі](backup-nand#частина-ii---дампимо-ключі){:target="_blank"}, унікальні для кожної консолі
-* [Прошивка](https://github.com/THZoria/NX_Firmware/releases/latest)
+* [Прошивка](https://github.com/THZoria/NX_Firmware/releases/21.2.0)
 * [SystemRestoreV3.te](/files/SystemRestoreV3.te){:target="_blank"} - скрипт для відновлення прошивки
 * Свіжа версія [EmmcHaccGen](https://github.com/suchmememanyskill/EmmcHaccGen){:target="_blank"}
 	* Потребує для роботи [.NET SDK 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1){:target="_blank"}
