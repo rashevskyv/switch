@@ -16,7 +16,7 @@ words_per_minute         : 200
 # Підтримувані мови
 languages:
   - uk
-  - ru
+
 
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
