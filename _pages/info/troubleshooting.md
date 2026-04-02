@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/troubleshooting.html
   - /ru/troubleshooting.html
+  - /ru/troubleshooting
+  - /ru/troubleshooting/
+  - /uk/troubleshooting
+  - /uk/troubleshooting/
 lang: uk
 permalink: /troubleshooting
 title: Проблеми та їх рішення

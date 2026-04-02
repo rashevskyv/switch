@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/backup-nand.html
   - /ru/backup-nand.html
+  - /ru/backup-nand
+  - /ru/backup-nand/
+  - /uk/backup-nand
+  - /uk/backup-nand/
 lang: uk
 permalink: /backup-nand
 title: Резервне копіювання NAND

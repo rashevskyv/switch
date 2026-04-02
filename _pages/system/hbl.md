@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/hbl.html
   - /ru/hbl.html
+  - /ru/hbl
+  - /ru/hbl/
+  - /uk/hbl
+  - /uk/hbl/
 lang: uk
 permalink: /hbl
 title: Запуск Homebrew Launcher

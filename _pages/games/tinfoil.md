@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/tinfoil.html
   - /ru/tinfoil.html
+  - /ru/tinfoil
+  - /ru/tinfoil/
+  - /uk/tinfoil
+  - /uk/tinfoil/
 lang: uk
 permalink: /tinfoil
 title: Встановлення ігор за допомогою tinfoil

@@ -3,6 +3,13 @@ lang: uk
 permalink: /longread
 title: Лонгрід про роботу Атмосфери, Кефір, сток та семі-сток
 author_profile: true
+redirect_from:
+  - /ru/longread
+  - /ru/longread/
+  - /uk/longread
+  - /uk/longread/
+  - /ru/longread.html
+  - /uk/longread.html
 ---
 
 {% include toc title="Розділи" %}

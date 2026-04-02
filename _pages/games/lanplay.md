@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/lanplay.html
   - /ru/lanplay.html
+  - /ru/lanplay
+  - /ru/lanplay/
+  - /uk/lanplay
+  - /uk/lanplay/
 lang: uk
 permalink: /lanplay
 title: Мультиплеєр на прошитій консолі (LAN Play)

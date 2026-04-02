@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/sd-macos.html
   - /ru/sd-macos.html
+  - /ru/sd-macos
+  - /ru/sd-macos/
+  - /uk/sd-macos
+  - /uk/sd-macos/
 lang: uk
 title: Робота з картою пам'яті в MacOS 
 permalink: /sd-macos

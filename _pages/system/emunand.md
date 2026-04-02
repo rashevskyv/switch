@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/emunand.html
   - /ru/emunand.html
+  - /ru/emunand
+  - /ru/emunand/
+  - /uk/emunand
+  - /uk/emunand/
 lang: uk
 permalink: /emunand
 title: Встановлення EmuNAND

@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/backup-saves.html
   - /ru/backup-saves.html
+  - /ru/backup-saves
+  - /ru/backup-saves/
+  - /uk/backup-saves
+  - /uk/backup-saves/
 lang: uk
 permalink: /backup-saves
 title: Резервне копіювання та відновлення збережень

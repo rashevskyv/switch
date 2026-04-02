@@ -3,6 +3,13 @@ lang: uk
 permalink: /tesla-menu
 title: Tesla Overlay Menu
 author_profile: true
+redirect_from:
+  - /ru/tesla-menu
+  - /ru/tesla-menu/
+  - /uk/tesla-menu
+  - /uk/tesla-menu/
+  - /ru/tesla-menu.html
+  - /uk/tesla-menu.html
 ---
 
 {% include toc title="Розділи" %}

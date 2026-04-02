@@ -3,6 +3,13 @@ lang: uk
 permalink: /chiaki
 title: "Використання Chiaki та Remote Play для стрімінгу ігор з PS4/PS5 на Switch"
 author_profile: true
+redirect_from:
+  - /ru/chiaki
+  - /ru/chiaki/
+  - /uk/chiaki
+  - /uk/chiaki/
+  - /ru/chiaki.html
+  - /uk/chiaki.html
 ---
 
 {% include toc title="Розділи" %}

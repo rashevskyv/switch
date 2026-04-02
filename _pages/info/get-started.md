@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/get-started.html
   - /ru/get-started.html
+  - /ru/get-started
+  - /ru/get-started/
+  - /uk/get-started
+  - /uk/get-started/
 lang: uk
 permalink: /get-started
 title: Існуючі методи зламу

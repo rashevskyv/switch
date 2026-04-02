@@ -3,6 +3,13 @@ lang: uk
 permalink: /buying-used
 title: Як правильно купити вживану Nintendo Switch - повний гід з перевірки
 author_profile: true
+redirect_from:
+  - /ru/buying-used
+  - /ru/buying-used/
+  - /uk/buying-used
+  - /uk/buying-used/
+  - /ru/buying-used.html
+  - /uk/buying-used.html
 ---
 
 {% include toc title="Розділи" %}

@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/faq.html
   - /ru/faq.html
+  - /ru/faq
+  - /ru/faq/
+  - /uk/faq
+  - /uk/faq/
 lang: uk
 permalink: /faq
 title: Часто задавані питання

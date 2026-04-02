@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/games.html
   - /ru/games.html
+  - /ru/games
+  - /ru/games/
+  - /uk/games
+  - /uk/games/
 lang: uk
 permalink: /games
 title: Встановлення ігор, DLC, оновлень

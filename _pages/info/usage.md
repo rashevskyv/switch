@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/usage.html
   - /ru/usage.html
+  - /ru/usage
+  - /ru/usage/
+  - /uk/usage
+  - /uk/usage/
 lang: uk
 title: Інструкція з використання вже прошитої приставки
 permalink: /usage

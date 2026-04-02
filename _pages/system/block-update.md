@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/block-update.html
   - /ru/block-update.html
+  - /ru/block-update
+  - /ru/block-update/
+  - /uk/block-update
+  - /uk/block-update/
 lang: uk
 permalink: /block-update
 title: Блокування оновлень та доступу до серверів Nintendo через Incognito (тільки для Caffeine)

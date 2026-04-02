@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/autorcm.html
   - /ru/autorcm.html
+  - /ru/autorcm
+  - /ru/autorcm/
+  - /uk/autorcm
+  - /uk/autorcm/
 lang: uk
 permalink: /autorcm
 title: AutoRCM

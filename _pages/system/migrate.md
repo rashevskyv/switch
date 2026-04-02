@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/migrate
   - /ru/migrate
+  - /ru/migrate/
+  - /uk/migrate/
+  - /ru/migrate.html
+  - /uk/migrate.html
 lang: uk
 title: "Перехід з SXOS на Atmosphere"
 permalink: /migrate

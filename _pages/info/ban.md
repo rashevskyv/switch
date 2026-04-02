@@ -3,6 +3,13 @@ lang: uk
 permalink: /ban
 title: Про бани. Розгорнуто, детально, зрозуміло
 author_profile: true
+redirect_from:
+  - /ru/ban
+  - /ru/ban/
+  - /uk/ban
+  - /uk/ban/
+  - /ru/ban.html
+  - /uk/ban.html
 ---
 
 {% include toc title="Розділи" %}

@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/glossary.html
   - /ru/glossary.html
+  - /ru/glossary
+  - /ru/glossary/
+  - /uk/glossary
+  - /uk/glossary/
 lang: uk
 permalink: /glossary
 title: "Глосарій термінів"

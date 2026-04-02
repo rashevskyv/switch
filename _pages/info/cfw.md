@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/cfw.html
   - /ru/cfw.html
+  - /ru/cfw
+  - /ru/cfw/
+  - /uk/cfw
+  - /uk/cfw/
 lang: uk
 permalink: /cfw
 title: Кастомні прошивки

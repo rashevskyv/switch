@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/cheats.html
   - /ru/cheats.html
+  - /ru/cheats
+  - /ru/cheats/
+  - /uk/cheats
+  - /uk/cheats/
 lang: uk
 permalink: /cheats
 title: Використання читів в EdiZon

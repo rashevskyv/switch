@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/site-navigation
   - /ru/site-navigation
+  - /ru/site-navigation/
+  - /uk/site-navigation/
+  - /ru/site-navigation.html
+  - /uk/site-navigation.html
 lang: uk
 title: "Мапа сайту"
 permalink: /site-navigation

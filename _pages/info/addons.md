@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/addons.html
   - /ru/addons.html
+  - /ru/addons
+  - /ru/addons/
+  - /uk/addons
+  - /uk/addons/
 lang: uk
 title: "Список корисних після прошивки інструкцій"
 permalink: /addons

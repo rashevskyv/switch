@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/system-wipe.html
   - /ru/system-wipe.html
+  - /ru/system-wipe
+  - /ru/system-wipe/
+  - /uk/system-wipe
+  - /uk/system-wipe/
 lang: uk
 permalink: /system-wipe
 title: Скидання до заводських налаштувань

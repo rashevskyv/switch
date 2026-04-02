@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/preparation-white.html
   - /ru/preparation-white.html
+  - /ru/preparation-white
+  - /ru/preparation-white/
+  - /uk/preparation-white
+  - /uk/preparation-white/
 lang: uk
 permalink: /preparation-white
 title: Перехід на EmuNAND для вже прошитих

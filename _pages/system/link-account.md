@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/link-account.html
   - /ru/link-account.html
+  - /ru/link-account
+  - /ru/link-account/
+  - /uk/link-account
+  - /uk/link-account/
 lang: uk
 permalink: /link-account
 title: Прив'язка облікового запису консолі до облікового запису Nintendo

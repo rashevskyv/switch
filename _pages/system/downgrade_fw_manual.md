@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/downgrade_fw_old.html
   - /ru/downgrade_fw_old.html
+  - /ru/downgrade_fw_old
+  - /ru/downgrade_fw_old/
+  - /uk/downgrade_fw_old
+  - /uk/downgrade_fw_old/
 lang: uk
 permalink: /downgrade_fw_old
 title: Даунгрейд та відновлення прошивки у випадку, якщо приставка вийшла з ладу

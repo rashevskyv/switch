@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/kefir.html
   - /ru/kefir.html
+  - /ru/kefir
+  - /ru/kefir/
+  - /uk/kefir
+  - /uk/kefir/
 lang: uk
 title: Kefir
 permalink: /kefir

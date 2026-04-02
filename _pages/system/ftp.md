@@ -2,6 +2,10 @@
 redirect_from:
   - /uk/ftp.html
   - /ru/ftp.html
+  - /ru/ftp
+  - /ru/ftp/
+  - /uk/ftp
+  - /uk/ftp/
 lang: uk
 permalink: /ftp
 title: Використання FTP
