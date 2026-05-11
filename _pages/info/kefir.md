@@ -45,7 +45,7 @@ author_profile: true
 2. **Сігпатчі**. Завдяки ним на Atmosphere можна запускати непідписані (читай: *піратські*) програми та ігри.
 3. **Завантажувач [hekate](https://github.com/CTCaer/hekate){:target="_blank"}**. Завдяки завантажувачу ви можете запускати прошивку та інші {% include abbr/payload.txt abbr="пейлоади" %} через зручне меню, створювати та відновлювати резервну копію NAND, робити EmuNAND, отримувати інформацію про стан системи, монтувати карту пам'яті до ПК без витягування її зі свічу, робити перерозмітку карти пам'яті для встановлення інших ОС і багато іншого
 4. **Встановлені {% include abbr/payload.txt abbr="пейлоади" %}**:
-  * [Lockpick_RCM](https://codeberg.org/rashevskyv/Locktrick/){:target="_blank"} - програма для [дампу ключів приставки](backup-nand#частина-iii---
+  * [Lockpick_RCM] - програма для [дампу ключів приставки](backup-nand#частина-iii---
 lang: ukдампимо-ключі){:target="_blank"}
   * [TegraExplorer](https://github.com/rashevskyv/TegraExplorer/){:target="_blank"} - файловий менеджер для Switch у вигляді пейлоада. Аналог GodMode9 для 3DS
 5. **Встановлене Homebrew**
@@ -59,7 +59,7 @@ lang: ukдампимо-ключі){:target="_blank"}
 6. **Встановлені модулі**. Модулі - це додаткові компоненти, що працюють всередині Atmosphere і дозволяють робити різні круті штуки, наприклад, використання xbox-сумісних контролерів, емуляцію amiibo, розгін тощо. На жаль, SX OS модулі не підтримує
   * [sys-con](https://github.com/o0Zz/sys-con){:target="_blank"} - модуль, що дозволяє підключати до консолі по USB практично будь-які геймпади
   * [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} - модуль, що дозволяє підключати до консолі по bluetooth практично будь-які геймпади
-  * [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} - спеціальне оверлей-меню для взаємодії з системою p підтримкою користувацьких скриптів і модулів
+  * [Ultrahand](https://github.com/rashevskyv/Ultrahand-Overlay){:target="_blank"} - спеціальне оверлей-меню для взаємодії з системою p підтримкою користувацьких скриптів і модулів
     - Скрипти:
       * **DBI** - зміна локалізації та оновлення програми
       * **Translate Interface** - додаткові переклади інтерфейсу на вибір
