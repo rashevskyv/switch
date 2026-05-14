@@ -66,7 +66,7 @@ lang: ukдампимо-ключі){:target="_blank"}
       * **Semi-stock** - завантаження в семісток з меню
       * **Reboot і Shutdown** - перезавантаження та вимкнення консолі з меню
     - Модулі:
-      - [nx-ovlloader](https://github.com/WerWolv/nx-ovlloader//){:target="_blank"} - процес для роботи з nro через Tesla Menu
+      - [nx-ovlloader](https://github.com/ppkantorski/nx-ovlloader){:target="_blank"} - процес для роботи з nro через Tesla Menu
       - [ovlEdiZon.ovl](https://github.com/proferabg/EdiZon-Overlay/releases){:target="_blank"} - Модуль для [використання читів](/cheats){:target="_blank"}
       - [ovlSysmodules.ovl](https://github.com/WerWolv/ovl-sysmodules/){:target="_blank"} - Модуль для вмикання та вимикання встановлених системних модулів (наприклад, розгін, emuuibo тощо)
 
