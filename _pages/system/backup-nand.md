@@ -41,11 +41,9 @@ author_profile: true
 {% include /inc/launch-hekate.txt %}
 1. Перейдіть в меню "**Payloads**"
 1. Виберіть "**Lockpick_RCM.bin**"
-1. Виберіть "**Dump keys from SysNAND**"
-    * Навігація по меню здійснюється кнопками гучності, а вибір кнопкою {% include /inc/btn.txt btn="POWER" %}
-	* Дампінг почнеться негайно
-1. Натисніть {% include /inc/btn.txt btn="POWER" %}, щоб повернутися в головне меню програми
-1. Виберіть "**Reboot to hekate**", щоб завантажитися в прошивку
+
+Програма автоматично зробить дамп ключів і повернеться в hekate
+{: .notice--info}.
 
 ### Частина II - Резервне копіювання NAND
 
