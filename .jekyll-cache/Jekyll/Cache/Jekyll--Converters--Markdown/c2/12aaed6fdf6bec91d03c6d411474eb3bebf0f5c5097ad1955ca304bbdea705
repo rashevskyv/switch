@@ -1,7 +1,0 @@
-I"L
-<p><strong>Обов’язково переконайтеся, що знаходитесь в EmuNAND!</strong> Для цього перейдіть в “<strong>Системні налаштування</strong>” -&gt; “<strong>Система</strong>”. У рядку нижче “<strong>Оновлення системи</strong>” буде написана версія вашого системного ПЗ, версія Atmosphere і буква <strong>S</strong> або <strong>E</strong>, де <strong>S</strong> буде означати <em>SysNAND</em>, а <strong>E</strong> - <em>EmuNAND</em>.</p>
-
-<p class="text-center notice--info"><img src="/assets/images/switch/screenshots/atmo_emu.png" alt="" /></p>
-
-<p><strong>Якщо ви випадково оновите SysNAND до останньої версії системного ПЗ, то будь-яке завантаження в офіційну прошивку зробить прошивку через Caffeine неможливою і вам доведеться чипувати приставку!</strong></p>
-:ET
