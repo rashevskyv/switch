@@ -1,0 +1,268 @@
+I"vS
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Розділи</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#atmosphere" id="markdown-toc-atmosphere">Atmosphere</a></li>
+  <li><a href="#зверніть-увагу" id="markdown-toc-зверніть-увагу">Зверніть увагу</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<p>На даний момент під кастомною прошивкою мається на увазі офіційна прошивка з рядом патчів, які дозволяють запускати не підписаний код і додають у прошивку ряд унікальних функцій, наприклад <span class="tooltip_container">
+	LayeredFS
+	<span class="tooltip">▼
+		<span class="bottom">
+			Патч, який дозволяє змінювати дані гри в оперативній пам’яті на дані, що знаходяться на карті пам’яті. За допомогою цього патчу працюють переклади та моди.
+		</span>
+	</span>
+</span>. Найбільш важливими можна вважати <strong>Atmosphere</strong>, з якої відгалузилися RajNX, ReiNX та SX OS. Остання, так само як і інші, базується на вихідних кодах першої і є більш дружньою до користувача. Однак, вона не безкоштовна.</p>
+
+<p>Використання будь-якої прошивки в її поточному вигляді цілком легально (до тих пір, поки ви не починаєте піратити), оскільки прошивка розгортається в оперативній пам’яті приставки і не змінює жодні файли офіційної прошивки.</p>
+
+<h2 id="atmosphere">Atmosphere</h2>
+<p><a href="https://github.com/Atmosphere-NX/Atmosphere" target="_blank">Github</a></p>
+
+<p>Atmosphere - open source проект. Вона складається з п’яти основних модулів, кожен з яких наділений своїми функціями:</p>
+
+<ul>
+  <li><strong>Fusée</strong> - завантажувач першого етапу. Він відповідає за запуск та перевірку другого етапу (кастомний TrustZone) та package2 (ядро та системні модулі), а також за патчинг їх за потреби (<strong>реалізований</strong>)</li>
+  <li><strong>Exosphere</strong> - змінений TrustZone, необхідний для запуску Secure Monitor (<strong>реалізований</strong>)</li>
+  <li><strong>Thermosphere</strong> - модуль, що забезпечує підтримку EmuNAND (<strong>реалізований</strong>)</li>
+  <li><strong>Stratosphere</strong> - змінені системні модулі. Буде щось типу Rosalina на 3DS, що дозволить розширити можливості ядра та надасть нові функції (<strong>частково реалізований</strong>)</li>
+  <li><strong>Troposphere</strong> - патчі для реалізації запланованих функцій кастомної прошивки. Рівень взаємодії з додатками (<strong>не реалізований</strong>)</li>
+</ul>
+
+<p>Дозволяє встановлювати ігри в будь-якому форматі, встановлювати до них оновлення, DLC.</p>
+
+<details class="spoiler" id="spoiler-3c3aeab6">
+  <summary>Плюси</summary>
+  <div class="spoiler-content">
+    <ul>
+  <li>Безкоштовна</li>
+  <li>Постійно розвивається</li>
+  <li>Вміє запускати образи eShop-ігор</li>
+  <li>Підтримує <span class="tooltip_container">
+  LayeredFS
+  <span class="tooltip">▼
+      <span class="bottom">
+          Патч, який дозволяє змінювати дані гри в оперативній пам’яті на дані, що знаходяться на карті пам’яті. За допомогою цього патчу працюють переклади та моди.
+      </span>
+  </span>
+</span></li>
+  <li>Підтримує <span class="tooltip_container">
+  EmuNAND
+  <span class="tooltip">▼
+      <span class="bottom">
+          Повна копія NAND, розташована на карті пам’яті. Застосовується для того, щоб залишити офіційну прошивку в максимально незайманому вигляді. Наприклад, ви можете грати в EmuNAND в піратку, а в стоці (так називають оригінальну прошивку, розташовану у внутрішній пам’яті консолі) користуватися онлайном і купленими іграми. Таким чином буде мінімізовано шанс отримати бан.
+      </span>
+  </span>
+</span>, в тому числі і перемикання між декількома емунандами</li>
+  <li>Підтримує <a href="/cheats" target="_blank">чити</a></li>
+  <li>Вміє встановлювати ігри з USB-носія</li>
+  <li>З відкритим вихідним кодом</li>
+  <li>Модульна архітектура (завдяки модулям можливий розгін, емуляція amiibo та багато іншого)</li>
+  <li>Найбільш захищена</li>
+  <li>Працює на всіх версіях системного ПЗ</li>
+</ul>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Плюси <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-bb4449ba">
+  <summary>Мінуси</summary>
+  <div class="spoiler-content">
+    <ul>
+  <li>Не вміє монтувати XCI, але вміє встановлювати</li>
+</ul>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Мінуси <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-446cd235">
+  <summary>Встановлення Atmosphere</summary>
+  <div class="spoiler-content">
+    <h3 id="що-знадобиться">Що знадобиться</h3>
+
+<ul>
+  <li>Вміння <a href="fusee-gelee#частина-i---вхід-в-rcm" target="_blank">вводити консоль у режим відновлення (RCM)</a></li>
+  <li>Свіжа версія <span class="tooltip_container">
+  <a href="kefir" target="_blank">kefir</a>
+  <span class="tooltip">▼
+      <span class="bottom">
+          Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+      </span>
+  </span>
+</span></li>
+</ul>
+
+<h3 id="інструкція">Інструкція</h3>
+
+<h4 id="підготовчі-роботи">Підготовчі роботи</h4>
+
+<ol>
+  <li>Встановіть <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip">▼
+     <span class="bottom">
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+     </span>
+ </span>
+</span>, якщо ще не робили цього</li>
+  <li><code class="language-plaintext highlighter-rouge">payload.bin</code> з <code class="language-plaintext highlighter-rouge">.zip</code>-архіву <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip">▼
+     <span class="bottom">
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+     </span>
+ </span>
+</span> - це <span class="tooltip_container">
+ hekate
+ <span class="tooltip">▼
+     <span class="bottom">
+         Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+     </span>
+ </span>
+</span></li>
+</ol>
+
+<h4 id="запуск-atmosphere">Запуск Atmosphere</h4>
+<ol>
+  <li>Запустіть <span class="tooltip_container">
+ кастом
+ <span class="tooltip">▼
+     <span class="bottom">
+         Модифіковане програмне забезпечення консолі, написане ентузіастами, дозволяє робити речі, недоступні користувачам офіційних прошивок, наприклад, запускати непідписані програми. В контексті прошивки Світча ми будемо називати наявне програмне забезпечення кастомною прошивкою, хоча, чисто технічно, це не так
+     </span>
+ </span>
+</span> за допомогою підтримуваного на вашій приставці експлойту:
+    <ul>
+      <li>Чиповану приставку достатньо просто увімкнути</li>
+      <li>Запустіть пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> з <code class="language-plaintext highlighter-rouge">.zip</code>-архіву <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip">▼
+ <span class="bottom">
+     Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+ </span>
+ </span>
+</span> за допомогою <a href="fusee-gelee" target="_blank">Fusée Gelée</a> або скористайтеся <a href="caffeine" target="_blank">Caffeine</a> для завантаження кастому</li>
+    </ul>
+  </li>
+</ol>
+
+<p class="notice--warning">Якщо після входу в прошивку приставка не бачить карту і вимагає оновити прошивку для її роботи, або просто зависає в чорному екрані після логотипу Nintendo, то на вашій приставці не встановлені драйвери exFAT! Відформатуйте карту пам’яті в <a href="https://format.customfw.xyz" target="blank_">FAT32</a>.</p>
+
+<p class="notice--info">У <span class="tooltip_container">
+	hekate
+	<span class="tooltip">▼
+		<span class="bottom">
+			Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+		</span>
+	</span>
+</span> за замовчуванням налаштований автозапуск. Тобто при запуску приставки меню <span class="tooltip_container">
+	hekate
+	<span class="tooltip">▼
+		<span class="bottom">
+			Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+		</span>
+	</span>
+</span> не буде відображатися, а запуститься відразу прошивка. Для переходу в меню <span class="tooltip_container">
+	hekate
+	<span class="tooltip">▼
+		<span class="bottom">
+			Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+		</span>
+	</span>
+</span> затисніть (VOL-) під час появи сплеш-скріна.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Встановлення Atmosphere <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-33bf7709">
+  <summary>Запуск Atmosphere</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Запустіть <span class="tooltip_container">
+ кастом
+ <span class="tooltip">▼
+     <span class="bottom">
+         Модифіковане програмне забезпечення консолі, написане ентузіастами, дозволяє робити речі, недоступні користувачам офіційних прошивок, наприклад, запускати непідписані програми. В контексті прошивки Світча ми будемо називати наявне програмне забезпечення кастомною прошивкою, хоча, чисто технічно, це не так
+     </span>
+ </span>
+</span> за допомогою підтримуваного на вашій приставці експлойту:
+    <ul>
+      <li>Чиповану приставку достатньо просто увімкнути</li>
+      <li>Запустіть пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> з <code class="language-plaintext highlighter-rouge">.zip</code>-архіву <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip">▼
+ <span class="bottom">
+     Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+ </span>
+ </span>
+</span> за допомогою <a href="fusee-gelee" target="_blank">Fusée Gelée</a> або скористайтеся <a href="caffeine" target="_blank">Caffeine</a> для завантаження кастому</li>
+    </ul>
+  </li>
+</ol>
+
+<p class="notice--warning">Якщо після входу в прошивку приставка не бачить карту і вимагає оновити прошивку для її роботи, або просто зависає в чорному екрані після логотипу Nintendo, то на вашій приставці не встановлені драйвери exFAT! Відформатуйте карту пам’яті в <a href="https://format.customfw.xyz" target="blank_">FAT32</a>.</p>
+
+<p class="notice--info">У <span class="tooltip_container">
+	hekate
+	<span class="tooltip">▼
+		<span class="bottom">
+			Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+		</span>
+	</span>
+</span> за замовчуванням налаштований автозапуск. Тобто при запуску приставки меню <span class="tooltip_container">
+	hekate
+	<span class="tooltip">▼
+		<span class="bottom">
+			Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+		</span>
+	</span>
+</span> не буде відображатися, а запуститься відразу прошивка. Для переходу в меню <span class="tooltip_container">
+	hekate
+	<span class="tooltip">▼
+		<span class="bottom">
+			Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+		</span>
+	</span>
+</span> затисніть (VOL-) під час появи сплеш-скріна.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Запуск Atmosphere <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<h2 id="зверніть-увагу">Зверніть увагу</h2>
+
+<p>Якщо ви запустили прошивку в <span class="tooltip_container">
+	EmuNAND
+	<span class="tooltip">▼
+		<span class="bottom">
+			Повна копія NAND, розташована на карті пам’яті. Застосовується для того, щоб залишити офіційну прошивку в максимально незайманому вигляді. Наприклад, ви можете грати в EmuNAND в піратку, а в стоці (так називають оригінальну прошивку, розташовану у внутрішній пам’яті консолі) користуватися онлайном і купленими іграми. Таким чином буде мінімізовано шанс отримати бан.
+		</span>
+	</span>
+</span> вперше, не забудьте виконати рекомендації щодо зміни імені на “EmuNAND” та зміни теми на протилежну тій, з якою ви завантажилися, як це було описано в інструкції зі створення <a href="/emunand" target="blank_">EmuNAND</a>.
+Якщо ви не впевнені, що EmuNAND працює, просто перезавантажте приставку і переконайтеся, що завантажився <span class="tooltip_container">
+	SysNAND
+	<span class="tooltip">▼
+		<span class="bottom">
+		У цьому гайді під цим терміном мається на увазі прошивка, запущена з внутрішньої пам’яті приставки (не з EmuNAND). Приставка з магазину йтиме саме з такою прошивкою.
+Часто є антонімом до EmuNAND. Сток може бути пропатчений атмосферою, може використовуватися для ліцензії, може використовуватися для піратки, однак говорячи сток найчастіше ми маємо на увазі, що прошивка консолі запущена з внутрішньої карти пам’яті для використання консолі для гри в ліцензію.
+		</span>
+	</span>
+</span>. На це буде вказувати інша колірна схема, а також інше ім’я користувача.</p>
+
+<hr />
+
+<p class="notice--success"><a href="javascript:window.close();">Закрити сторінку</a></p>
+
+:ET

@@ -1,0 +1,13 @@
+I"#<ol>
+  <li>Скопіюйте в корінь карти пам’яті приставки <strong>вміст</strong> архіву <code class="language-plaintext highlighter-rouge">kefir.zip</code> з репозиторію <span class="tooltip_container">
+ <a href="https://github.com/rashevskyv/kefir/releases/latest" target="_blank">kefir</a>
+ <span class="tooltip">▼
+     <span class="bottom">
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+     </span>
+ </span>
+</span></li>
+  <li>Вставте карту пам’яті в Switch</li>
+  <li><a href="/get-started" target="_blank">Запустіть приставку у прошивку</a>, відповідно до типу вашого зламу. <code class="language-plaintext highlighter-rouge">payload.bin</code> - пейлоад, який потрібно пробрасувати при запуску приставки через Fusée Gelée, знаходиться в архіві зі збіркою</li>
+</ol>
+:ET

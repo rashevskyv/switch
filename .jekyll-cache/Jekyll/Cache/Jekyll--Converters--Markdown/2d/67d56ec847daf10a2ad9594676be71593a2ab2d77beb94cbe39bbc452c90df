@@ -1,0 +1,13 @@
+I"<p class="text-center notice--info"><img src="/assets/images/switch/screenshots/exfat_failed.png" alt="" /></p>
+
+<p>Відформатуйте вашу карту пам’яті в <a href="https://format.customfw.xyz" target="_blank">FAT32</a>.</p>
+
+<p>Якщо не допомагає, перевстановіть <span class="tooltip_container">
+	<a href="kefir" target="_blank">kefir</a>
+	<span class="tooltip">▼
+		<span class="bottom">
+			Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+		</span>
+	</span>
+</span> начисто. Для цього видаліть з карти пам’яті все, крім папки Nintendo та emummc (або sxos/emunand) і ставте кефір заново</p>
+:ET

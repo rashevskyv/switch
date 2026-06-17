@@ -1,0 +1,83 @@
+I"
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Розділи</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#типи-зламу" id="markdown-toc-типи-зламу">Типи зламу</a>    <ul>
+      <li><a href="#fusée-gelée" id="markdown-toc-fusée-gelée">Fusée Gelée</a></li>
+      <li><a href="#caffeine" id="markdown-toc-caffeine">Caffeine</a></li>
+      <li><a href="#чипування" id="markdown-toc-чипування">Чипування</a></li>
+    </ul>
+  </li>
+  <li><a href="#підбір-відповідної-вразливості" id="markdown-toc-підбір-відповідної-вразливості">Підбір відповідної вразливості</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<hr />
+
+<div class="notice--success"><h2>Ви можете прошити, або придбати вже прошитий світч в мене</h2><ul><li><a href="https://t.me/kefir_ukr" target="_blank">Група в телеграмі для українців, там є відгуки та приклади робіт</a></li><li><a href="https://t.me/xhrxhrxhr" target="_blank"><b>Мій особистий телеграм</b> (звертайтеся за чипуванням або купівлею)</a></li><li><a href="https://customfw.xyz/donations" target="_blank">Задонатити на розвиток kefir</a></li></ul></div>
+
+<div class="notice--warning">Якщо ви потрапили в цей посібник вперше і не знаєте, як прошивається Switch, рекомендуємо почати знайомство з ним з <a href="/" target="_blank">першої сторінки</a></div>
+
+<div class="notice--warning">Якщо ви користувач MacOS, скористайтеся <a href="/sd-macos" target="_blank">цими рекомендаціями</a>, щоб уникнути проблем з картою пам'яті</div>
+
+<div class="notice">Робіть <a href="/backup-saves" target="_blank">бекапи збережень</a> якомога частіше!</div>
+
+<div class="notice--warning"><strong>Якщо приставка зависла або не подає ознак життя, вимкніть її утриманням кнопки (POWER) 30 секунд, потім увімкніть і пробросьте пейлоад!</strong></div>
+
+<hr />
+
+<p class="notice--warning">Перед тим, як почати, увімкніть <a href="https://customfw.xyz/file-extensions-windows" target="_blank">відображення розширень файлів</a>, якщо у вас Windows</p>
+
+<p>На даний момент прошиваються <strong>всі</strong> приставки сімейства Nintendo Switch. Однак, залежно від ревізії приставки, а також наявності в ній ряду вразливостей, методи прошивки можуть відрізнятися. Тому першочерговим завданням стане визначити, який саме метод підходить саме вам.</p>
+
+<h2 id="типи-зламу">Типи зламу</h2>
+
+<h3 id="fusée-gelée"><a href="/fusee-gelee" target="_blank">Fusée Gelée</a></h3>
+
+<p>Цим типом зламу можна зламати тільки приставки, що випускалися до літа 2018 року. Незважаючи на те, що після зазначеного періоду приставки виходили точно на такій же апаратній платформі, вразливість була закрита. Якщо ви не знаєте, чи вразлива ваша приставка до методу Fusée Gelée, нижче ви знайдете помічник для підбору типу вразливості за серійним номером, скористайтеся ним.</p>
+
+<h3 id="caffeine"><a href="/preparation-caffeine" target="_blank">Caffeine</a></h3>
+
+<p>За допомогою цього типу зламу можна зламати будь-яку Nintendo Switch з версією системного ПЗ 4.0.0 - 4.1.0. Це програмна вразливість, прив’язана до певної версії системного ПЗ і працює тільки на ній. То ж, якщо ваша приставка має версію прошивки вищу за вказану, ви не зможете взломати її цим методом.</p>
+
+<h3 id="чипування"><a href="/modchip" target="_blank">Чипування</a></h3>
+
+<p>За допомогою чипування можна зламати взагалі <strong>будь-який Nintendo Switch</strong>. Консолі на платформі <span class="tooltip_container">
+	Mariko
+	<span class="tooltip">▼
+		<span class="bottom">
+			Кодовим словом <strong>Mariko</strong> позначаються приставки другої ревізії (друга літера в серійнику приголосна, наприклад XK* або XJ*), а також Switch Lite та OLED. Зібрані на новому техпроцесі, завдяки чому мають кращу автономність (великі свічі). Прошиваються <strong>тільки</strong> методом чипування.
+		</span>
+	</span>
+</span> можна зламати тільки за допомогою чипування. Приставки першої ревізії із закритою вразливістю і з прошивкою вище, ніж 4.1.0, теж можна зламати тільки прочипувавши.</p>
+
+<h2 id="підбір-відповідної-вразливості">Підбір відповідної вразливості</h2>
+
+<link rel="stylesheet" type="text/css" href="/assets/css/checker.css" />
+
+<div class="checker-scope">
+<div class="content" id="fullpage">
+  <div class="checker__body inpage">
+    <div class="table__wrapper">
+      <div class="table__container">
+        <div class="table__ns__caption table__caption">Nintendo Switch</div>
+        <div class="table__ns__body table__body" id="ns"><img class="table descriptionToggler" src="https://check.customfw.xyz/img/ns.png" alt="Nintendo Switch" data-result="result1" /></div>
+        <div class="table__nsl__caption table__caption">Nintendo Switch Lite / OLED</div>
+        <div class="table__nsl__body table__body" id="nsl"><img class="table descriptionToggler" src="https://check.customfw.xyz/img/nsl.png" alt="Nintendo Switch Lite / OLED" data-result="result2" /></div>
+      </div>
+    </div>
+    <div class="result hidden" id="scroll_here"></div>
+    <div class="check-result hidden"></div>
+  </div>
+</div>
+</div>
+<script src="https://check.customfw.xyz/js/libs.min.js"></script>
+
+<script src="https://check.customfw.xyz/js/main.js"></script>
+
+<script src="https://check.customfw.xyz/js/vercheck.js"></script>
+
+:ET

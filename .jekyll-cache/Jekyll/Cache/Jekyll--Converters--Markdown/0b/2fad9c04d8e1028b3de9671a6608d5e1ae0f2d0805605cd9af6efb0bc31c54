@@ -1,0 +1,67 @@
+I"m<p>Можливі шляхи вирішення проблеми:</p>
+
+<ol>
+  <li>Переконайтеся, що можете завантажитися в сток. Якщо це так, можливо ви встановили якісь системні модулі, які заважають завантаженню. Для цього:
+    <ol>
+      <li>Запустіть <span class="tooltip_container">
+ hekate
+ <span class="tooltip">▼
+ <span class="bottom">
+     Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+ </span>
+ </span>
+</span> -&gt; <strong>Payloads</strong> -&gt; <code class="language-plaintext highlighter-rouge">TegraExplorer</code> -&gt; <code class="language-plaintext highlighter-rouge">kefir-helper.te</code></li>
+      <li>Якщо після цього приставка запрацювала, шукайте проблему в установлених модулях</li>
+    </ol>
+  </li>
+  <li>Перевстановіть <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip">▼
+     <span class="bottom">
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+     </span>
+ </span>
+</span> начисто. Для цього видаліть з карти пам’яті все, крім папки <code class="language-plaintext highlighter-rouge">Nintendo</code> та <code class="language-plaintext highlighter-rouge">emummc</code> і ставте кефір заново</li>
+  <li>Відформатуйте вашу карту пам’яті в <a href="https://format.customfw.xyz" target="_blank">FAT32</a>.</li>
+  <li>Перевстановіть <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip">▼
+     <span class="bottom">
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+     </span>
+ </span>
+</span> начисто. Для цього видаліть з карти пам’яті все, крім папки <code class="language-plaintext highlighter-rouge">Nintendo</code> та <code class="language-plaintext highlighter-rouge">emummc</code> (або <code class="language-plaintext highlighter-rouge">sxos/emunand</code>) і ставте кефір заново</li>
+  <li>Перевірте чи монтується розділ <code class="language-plaintext highlighter-rouge">USER</code>. Для цього:
+    <ol>
+      <li>Запустіть <span class="tooltip_container">
+ hekate
+ <span class="tooltip">▼
+ <span class="bottom">
+     Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+ </span>
+ </span>
+</span> -&gt; <strong>Payloads</strong> -&gt; <code class="language-plaintext highlighter-rouge">TegraExplorer.bin</code></li>
+      <li>Виберіть <strong>Browse EMUMMC</strong> якщо не запускається <span class="tooltip_container">
+ EmuNAND
+ <span class="tooltip">▼
+ <span class="bottom">
+     Повна копія NAND, розташована на карті пам’яті. Застосовується для того, щоб залишити офіційну прошивку в максимально незайманому вигляді. Наприклад, ви можете грати в EmuNAND в піратку, а в стоці (так називають оригінальну прошивку, розташовану у внутрішній пам’яті консолі) користуватися онлайном і купленими іграми. Таким чином буде мінімізовано шанс отримати бан.
+ </span>
+ </span>
+</span> або <strong>Browse EMMC</strong>, якщо не запускається <span class="tooltip_container">
+ SysNAND
+ <span class="tooltip">▼
+ <span class="bottom">
+ У цьому гайді під цим терміном мається на увазі прошивка, запущена з внутрішньої пам’яті приставки (не з EmuNAND). Приставка з магазину йтиме саме з такою прошивкою.
+Часто є антонімом до EmuNAND. Сток може бути пропатчений атмосферою, може використовуватися для ліцензії, може використовуватися для піратки, однак говорячи сток найчастіше ми маємо на увазі, що прошивка консолі запущена з внутрішньої карти пам’яті для використання консолі для гри в ліцензію.
+ </span>
+ </span>
+</span></li>
+      <li>Перейдіть у розділ <strong>USER</strong>. Якщо помилок немає, то розділ USER монтується і проблема не в ньому</li>
+    </ol>
+  </li>
+  <li><a href="/backup-nand#відновлення-резервної-копії" target="_blank">Відновіть бекап</a>, якщо такий є</li>
+  <li>Зробіть <a href="/system-wipe" target="_blank">скидання до заводських налаштувань</a></li>
+  <li>Зробіть <a href="/downgrade_fw" target="_blank">відновлення прошивки</a></li>
+</ol>
+:ET

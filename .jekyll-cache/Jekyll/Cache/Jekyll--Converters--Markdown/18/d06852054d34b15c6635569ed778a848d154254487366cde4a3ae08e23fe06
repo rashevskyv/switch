@@ -1,0 +1,98 @@
+I"5'
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Розділи</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#що-знадобиться" id="markdown-toc-що-знадобиться">Що знадобиться</a></li>
+  <li><a href="#інструкція" id="markdown-toc-інструкція">Інструкція</a>    <ul>
+      <li><a href="#частина-i---перепакування-прошивки-під-вашу-систему" id="markdown-toc-частина-i---перепакування-прошивки-під-вашу-систему">Частина I - Перепакування прошивки під вашу систему</a></li>
+      <li><a href="#частина-ii---завантаження-прошивки-на-пристрій" id="markdown-toc-частина-ii---завантаження-прошивки-на-пристрій">Частина II - Завантаження прошивки на пристрій</a></li>
+    </ul>
+  </li>
+  <li><a href="#наступний-крок-безпечне-оновлення-прошивки" id="markdown-toc-наступний-крок-безпечне-оновлення-прошивки">Наступний крок: Безпечне оновлення прошивки</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<p>Цей гайд для даунгрейду прошивки і для тих, у кого приставка не вмикається, але цілий розділ PRODINFO, або є його бекап (атмосфера 0.8.1 і вище бекапить PRODINFO на карту автоматично). Для оновлення прошивки скористайтеся <a href="/update-fw">цією</a> інструкцією!</p>
+
+<h2 id="що-знадобиться">Що знадобиться</h2>
+
+<p class="notice--danger">ОБОВ’ЯЗКОВО <a href="/backup-nand" target="_blank">зробіть бекап</a> своєї поточної прошивки до того, як почнете виконання інструкції, навіть якщо ваша приставка не вмикається!</p>
+
+<ul>
+  <li><a href="backup-nand#частина-ii---дампимо-ключі" target="_blank">Ключі</a>, унікальні для кожної консолі</li>
+  <li><a href="https://github.com/THZoria/NX_Firmware/releases/21.2.0">Прошивка</a></li>
+  <li><a href="/files/SystemRestoreV3.te" target="_blank">SystemRestoreV3.te</a> - скрипт для відновлення прошивки</li>
+  <li>Свіжа версія <a href="https://github.com/suchmememanyskill/EmmcHaccGen" target="_blank">EmmcHaccGen</a>
+    <ul>
+      <li>Потребує для роботи <a href="https://dotnet.microsoft.com/download/dotnet-core/3.1" target="_blank">.NET SDK 3.1</a></li>
+    </ul>
+  </li>
+  <li>Створіть <a href="/backup-nand" target="_blank">резервну копію NAND</a> консолі та помістіть її в надійне місце</li>
+  <li>Встановіть <span class="tooltip_container">
+  <a href="kefir" target="_blank">kefir</a>
+  <span class="tooltip">▼
+      <span class="bottom">
+          Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+      </span>
+  </span>
+</span>, якщо ще не робили цього</li>
+</ul>
+
+<h2 id="інструкція">Інструкція</h2>
+
+<h3 id="частина-i---перепакування-прошивки-під-вашу-систему">Частина I - Перепакування прошивки під вашу систему</h3>
+
+<ol>
+  <li>Встановіть <a href="https://dotnet.microsoft.com/download/dotnet-core/3.1" target="_blank">.NET SDK 3.1</a></li>
+  <li>Розпакуйте <code class="language-plaintext highlighter-rouge">.zip-архів</code> з <a href="https://github.com/suchmememanyskill/EmmcHaccGen" target="_blank">EmmcHaccGen</a> у зручну папку</li>
+  <li>Покладіть у папку з <code class="language-plaintext highlighter-rouge">EmmcHaccGen</code> ваш файл з <a href="/backup-nand#частина-ii---дампимо-ключі" target="_blank">ключами</a></li>
+  <li>Розпакуйте <code class="language-plaintext highlighter-rouge">.zip-архів</code> з прошивкою в папку <code class="language-plaintext highlighter-rouge">EmmcHaccGen</code> таким чином, щоб папка з прошивкою лежала в тій же директорії, що і <code class="language-plaintext highlighter-rouge">EmmcHaccGen.exe</code></li>
+  <li>Запустіть командний рядок у папці <code class="language-plaintext highlighter-rouge">EmmcHaccGen</code> (викличте контекстне меню з затиснутою клавішею Shift, натиснувши на вільне місце в папці, і виберіть “<strong>Відкрити Командний рядок тут</strong>” або “<strong>Відкрити вікно PowerShell тут</strong>”)</li>
+  <li>У вікні, що відкрилося, наберіть:
+    <ul>
+      <li>Для powershell: <code class="language-plaintext highlighter-rouge">.\EmmcHaccGen.exe --keys prod.keys --fw X.X.X</code></li>
+      <li>Для командного рядка: <code class="language-plaintext highlighter-rouge">EmmcHaccGen.exe --keys prod.keys --fw X.X.X</code></li>
+      <li><strong>X.X.X</strong> - назва папки з вашою прошивкою. Наприклад, <code class="language-plaintext highlighter-rouge">EmmcHaccGen --keys prod.keys --fw 14.1.0</code></li>
+      <li>Якщо у вас <span class="tooltip_container">
+ Mariko
+ <span class="tooltip">▼
+  <span class="bottom">
+      Кодовим словом <strong>Mariko</strong> позначаються приставки другої ревізії (друга літера в серійнику приголосна, наприклад XK* або XJ*), а також Switch Lite та OLED. Зібрані на новому техпроцесі, завдяки чому мають кращу автономність (великі свічі). Прошиваються <strong>тільки</strong> методом чипування.
+  </span>
+ </span>
+</span>, то додайте ключ <code class="language-plaintext highlighter-rouge">--mariko</code> після версії прошивки (наприклад, <code class="language-plaintext highlighter-rouge">EmmcHaccGen --keys prod.keys --fw 14.1.0 --mariko</code>)</li>
+    </ul>
+  </li>
+  <li>Дочекайтеся закінчення перепакування. В результаті ви отримаєте папку <code class="language-plaintext highlighter-rouge">Y-X.X.X-exfat</code>, де <code class="language-plaintext highlighter-rouge">Y</code> приймає значення <code class="language-plaintext highlighter-rouge">NX</code> або <code class="language-plaintext highlighter-rouge">a</code>, залежно від ревізії консолі</li>
+</ol>
+
+<h3 id="частина-ii---завантаження-прошивки-на-пристрій">Частина II - Завантаження прошивки на пристрій</h3>
+
+<ol>
+  <li>На карті пам’яті приставки створіть папку <code class="language-plaintext highlighter-rouge">FW</code> і помістіть туди <a href="/files/SystemRestoreV3.te" target="_blank">SystemRestoreV3.te</a>, а також <code class="language-plaintext highlighter-rouge">boot.bis</code> та папку <code class="language-plaintext highlighter-rouge">SYSTEM</code>, які знаходяться в папці <code class="language-plaintext highlighter-rouge">Y-X.X.X-exfat</code></li>
+  <li>Запустіть <span class="tooltip_container">
+ hekate
+ <span class="tooltip">▼
+     <span class="bottom">
+         Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+     </span>
+ </span>
+</span> -&gt; <strong>Payloads</strong> -&gt; <code class="language-plaintext highlighter-rouge">TegraExplorer.bin</code></li>
+  <li>Виберіть <strong>Browse SD</strong>, перейдіть у папку <code class="language-plaintext highlighter-rouge">FW</code>, виберіть <code class="language-plaintext highlighter-rouge">systemRestore.te</code> -&gt; <strong>Launch Script</strong></li>
+  <li>Дотримуйтесь інформації на екрані та відновіть BIS та SYSTEM (restore both)</li>
+  <li>Пробуйте завантажитися в систему
+    <ul>
+      <li>Майте на увазі, що якщо ваша консоль прошивається Fusée Gelée, то <a href="/autorcm" target="_blank">AutoRCM</a> буде увімкнено</li>
+      <li>Якщо приставка все ще не вантажиться, зробіть <a href="/system-wipe">відновлення до заводських налаштувань</a></li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h1 class="notice--success" id="наступний-крок-безпечне-оновлення-прошивки">Наступний крок: <a href="/update-fw">Безпечне оновлення прошивки</a></h1>
+
+:ET

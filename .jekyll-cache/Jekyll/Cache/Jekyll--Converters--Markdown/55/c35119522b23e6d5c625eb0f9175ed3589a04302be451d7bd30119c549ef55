@@ -1,0 +1,72 @@
+I"
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Розділи</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#clean-my-drive-2" id="markdown-toc-clean-my-drive-2">Clean My Drive 2</a></li>
+  <li><a href="#sdcard-cleanup-script-for-for-macos-users" id="markdown-toc-sdcard-cleanup-script-for-for-macos-users">SDCard cleanup script for for MacOS users</a>    <ul>
+      <li><a href="#функції-скрипта" id="markdown-toc-функції-скрипта">Функції скрипта:</a></li>
+      <li><a href="#встановлення" id="markdown-toc-встановлення">Встановлення:</a></li>
+      <li><a href="#використання" id="markdown-toc-використання">Використання:</a></li>
+    </ul>
+  </li>
+  <li><a href="#очищення-атрибутів" id="markdown-toc-очищення-атрибутів">Очищення атрибутів</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<p>Не рекомендується використовувати карту пам’яті світча з MacOS. Річ у тім, що ця ОС створює велику кількість мета-файлів і папок на карті пам’яті, а також може без дозволу користувача змінювати атрибути папок і файлів на вашій карті пам’яті, тим самим роблячи її частково або повністю непрацездатною. Це може виражатися в зіпсованих іграх або додатках, які не будуть відображатися або просто перестануть запускатися.</p>
+
+<p>Для того, щоб мінімізувати шкоду, рекомендується використовувати віртуальні машини з Windows або наступні додатки та скрипти:</p>
+
+<h3 id="clean-my-drive-2"><a href="https://apps.apple.com/us/app/cleanmydrive-2/id523620159?mt=12" target="_blank">Clean My Drive 2</a></h3>
+<p>Цей додаток автоматично видаляє все макосівське сміття при вилученні будь-якого usb носія.</p>
+
+<h3 id="sdcard-cleanup-script-for-for-macos-users"><a href="https://gbatemp.net/threads/sdcard-cleanup-script-for-for-macos-users.521177/" target="_blank">SDCard cleanup script for for MacOS users</a></h3>
+
+<h4 id="функції-скрипта">Функції скрипта:</h4>
+<ul>
+  <li>Вимкнення та видалення індексації Spotlight</li>
+  <li>Видалення файлів dot</li>
+  <li>Видалення файлів dot underbar</li>
+  <li>Видалення слідів fsevents</li>
+  <li>Виправлення прапорців на всіх каталогах карти, крім <code class="language-plaintext highlighter-rouge">Nintendo</code> та <code class="language-plaintext highlighter-rouge">Emutendo</code> (оскільки це може зіпсувати інсталяційні файли та призвести до пошкодження встановлених ігор/тікетів)</li>
+  <li>Вилучення карти пам’яті після завершення роботи (за бажанням)</li>
+</ul>
+
+<h4 id="встановлення">Встановлення:</h4>
+<p>Закиньте скрипт у ваш улюблений каталог. Рекомендується використовувати <code class="language-plaintext highlighter-rouge">/usr/local/bin</code>, оскільки він автоматично знаходиться в системному шляху.</p>
+
+<h4 id="використання">Використання:</h4>
+<p>Після завершення всіх операцій на карті пам’яті запустіть скрипт подвійним клацанням або через термінал. При першому запуску програма запитає системне ім’я вашої карти. Після цього програма запам’ятає його і зможе знайти самостійно. Якщо вам потрібно скинути це налаштування, тому що ви змінили ім’я карти, видаліть файл <code class="language-plaintext highlighter-rouge">.switch-eject.conf</code>, який буде створено в каталозі HOME, або запустіть скрипт через термінал, використовуючи прапорець <code class="language-plaintext highlighter-rouge">-c</code>.</p>
+
+<p>Ви також можете використовувати прапорець <code class="language-plaintext highlighter-rouge">-e</code> в терміналі для автоматичного вилучення по завершенні роботи. Якщо ви хочете, щоб скрипт завжди виконував автовилучення, змініть рядок <strong>71</strong> з <code class="language-plaintext highlighter-rouge">[ ! -z "${e}" ] &amp;&amp; echo "Ejecting ${VOL}" &amp;&amp; sudo umount ${VOL}</code> на <code class="language-plaintext highlighter-rouge">echo "Ejecting ${VOL}" &amp;&amp; sudo umount ${VOL}</code></p>
+
+<p><em>Переклад Deniss Ivanjuk</em></p>
+
+<h3 id="очищення-атрибутів">Очищення атрибутів</h3>
+
+<ol>
+  <li>Запустіть приставку, утримуючи кнопку зниження гучності, щоб потрапити в <span class="tooltip_container">
+ hekate
+ <span class="tooltip">▼
+     <span class="bottom">
+         Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+     </span>
+ </span>
+</span></li>
+  <li>В <strong>hekate</strong> перейдіть в меню “<strong>Tools</strong>”, переключіться на вкладку “<strong>Arch bit • RCM • Touch • Partitions</strong>” (в нижній частині екрану), виберіть “<strong>Fix Archive Bit</strong>”
+    <ul>
+      <li>Щоб потрапити в hekate, якщо ви знаходитесь не в ній, перезавантажте приставку, для цього утримуйте 5 секунд кнопку живлення, перебуваючи в кастомній прошивці, потім виберіть “<strong>Параметри електроживлення</strong>” -&gt; “<strong>Перезавантаження</strong>”. Коли з’явиться сплешскрін кефіра, натисніть (VOL-) (кнопка зниження гучності)</li>
+    </ul>
+  </li>
+  <li>Після закінчення фіксу атрибутів, натисніть “<strong>Close</strong>” у верхньому правому куті</li>
+  <li>Виберіть “<strong>Home</strong>” -&gt; “<strong>Launch</strong>” -&gt; “<strong>Atmosphere</strong>”, щоб завантажитися назад у прошивку</li>
+</ol>
+
+<hr />
+
+<p class="notice--success"><a href="javascript:window.close();">Закрити сторінку</a></p>
+
+:ET

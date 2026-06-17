@@ -1,0 +1,15 @@
+I"
+<p><strong>В:</strong></p>
+<ul>
+  <li>Не змінюйте в tinfoil тему! Тема в програмі має починатися з префікса <code class="language-plaintext highlighter-rouge">hbg_</code></li>
+  <li>Переконайтеся, що на приставці встановлено правильну дату та час</li>
+  <li>Видаліть tinfoil, оновіть <span class="tooltip_container">
+  <a href="kefir" target="_blank">kefir</a>
+  <span class="tooltip">▼
+      <span class="bottom">
+          Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+      </span>
+  </span>
+</span>, встановіть tinfoil з папки games на карті пам’яті</li>
+</ul>
+:ET

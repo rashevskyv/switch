@@ -1,0 +1,14 @@
+I"<script>
+  let path = window.location.pathname;
+  if (/^\/(ru|uk)\//.test(path)) {
+    let newPath = path.replace(/^\/(ru|uk)\//, '/');
+    window.location.replace(newPath + window.location.search + window.location.hash);
+  }
+</script>
+
+<h1 id="ой-сторінку-не-знайдено">Ой! Сторінку не знайдено</h1>
+
+<p>Здається, такої сторінки не існує.</p>
+
+<p>Якщо ви шукали стару версію сайту російською або українською мовою, вас має перенаправити автоматично. Якщо цього не сталося, скористайтеся <a href="/">головною сторінкою</a> або меню для навігації.</p>
+:ET

@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="uk" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Використання Chiaki та Remote Play для стрімінгу ігор з PS4/PS5 на Switch - Взлом Switch</title>
+
+
+
+
+<meta name="description" content="Повне керівництво з прошивки Nintendo Switch">
+
+
+
+
+<meta name="author" content="xHR">
+
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="Взлом Switch">
+<meta property="og:title" content="Використання Chiaki та Remote Play для стрімінгу ігор з PS4/PS5 на Switch">
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "xHR",
+      "url" : null,
+      "sameAs" : null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="/feed.xml"
+  type="application/atom+xml" rel="alternate" title="Взлом Switch Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  </head>
+
+  <body class="layout--single">
+    
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Взлом Switch</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+            <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
+          </li><li class="masthead__menu-item">
+            <a href="http://customfw.xyz" ><i>Інші гайди</i></a>
+          </li><li class="masthead__menu-item">
+            <a href="https://customfw.xyz/donations" ><b>Пожертви</b></a>
+          </li><li class="masthead__menu-item">
+            <a href="/get-started" >Методи<br>злому</a>
+          </li><li class="masthead__menu-item">
+            <a href="/kefir" >Kefir</a>
+          </li><li class="masthead__menu-item">
+            <a href="/backup-nand" >Резервне<br>копіювання</a>
+          </li><li class="masthead__menu-item">
+            <a href="/emunand" >EmuNAND</a>
+          </li><li class="masthead__menu-item">
+            <a href="/usage" >Використання<br>прошитого Switch</a>
+          </li><li class="masthead__menu-item">
+            <a href="/faq" >FAQ</a>
+          </li><li class="masthead__menu-item">
+            <a href="/troubleshooting" >Проблеми та<br>їх вирішення</a>
+          </li><li class="masthead__menu-item">
+            <a href="/games" >Встановлення<br>ігор</a>
+          </li><li class="masthead__menu-item">
+            <a href="/update-fw" >Безпечне<br>оновлення</a>
+          </li><li class="masthead__menu-item">
+            <a href="/site-navigation" >Навігація по сайту</a>
+          </li><li class="masthead__menu-item">
+            <a href="http://customfw.xyz/contacts" >Зв'язатися з нами</a>
+          </li></ul>
+
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+  <div class="author__avatar">
+    
+    <center><img src="/assets/images/bio-photo.png" class="author__avatar" alt="xHR"
+        itemprop="image"></center>
+    
+  </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">xHR</h3><br>
+    
+  </div>
+
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--def btn--inverse btn--large btn--buy">Контакти</button>
+    <ul class="author__urls social-icons">
+      
+      <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+        <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Івано-Франківськ</span>
+      </li>
+      
+      <hr class="style-two">
+
+      
+<li>
+  <a href="https://t.me/xhrxhrxhr" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Telegram (чипування)
+  </a>
+</li>
+
+
+<li>
+  <a href="https://t.me/kefir_ukr" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Група в Telegram
+  </a>
+</li>
+
+
+<li>
+  <a href="tel:0997763996" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-phone" aria-hidden="true"></i> Телефон
+  </a>
+</li>
+
+
+<li>
+  <a href="viber://0977359431" target="_blank" itemprop="sameAs">
+    <i class="fa fa-fw fa-whatsapp" aria-hidden="true"></i> Viber
+  </a>
+</li>
+
+
+      
+
+      
+      <li>
+        <a href="mailto:rashevsky.v@gmail.com">
+          <meta itemprop="email" content="rashevsky.v@gmail.com" />
+          <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a href="https://instagram.com/rashevsky.v" target="_blank" itemprop="sameAs">
+          <i class="fa fa-fw fa-instagram" aria-hidden="true"></i> Instagram
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+      <li>
+        <a href="https://github.com/rashevskyv" target="_blank" itemprop="sameAs">
+          <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+      <li>
+        <a href="https://customfw.xyz/donations" itemprop="sameAs">
+          <i class="fa fa-fw fa-vine" aria-hidden="true"></i><strong>Пожертви</strong>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+  
+   
+  </div>
+ 
+  
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Використання Chiaki та Remote Play для стрімінгу ігор з PS4/PS5 на Switch">
+    
+    
+    
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Використання Chiaki та Remote Play для стрімінгу ігор з PS4/PS5 на Switch
+</h1>
+          
+          <div class="language-selector-container">
+            <!-- Не показуємо текст "lang: uk", а показуємо перемикач мов -->
+            
+          </div>
+        </header>
+      
+	  
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Розділи</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#️-важливі-вимоги" id="markdown-toc-️-важливі-вимоги">⚠️ Важливі вимоги</a></li>
+  <li><a href="#крок-1-отримання-psn-account-id" id="markdown-toc-крок-1-отримання-psn-account-id">Крок 1: Отримання PSN Account ID</a></li>
+  <li><a href="#крок-2-встановлення-chiaki-на-switch" id="markdown-toc-крок-2-встановлення-chiaki-на-switch">Крок 2: Встановлення Chiaki на Switch</a></li>
+  <li><a href="#крок-3-налаштування-playstation" id="markdown-toc-крок-3-налаштування-playstation">Крок 3: Налаштування PlayStation</a></li>
+  <li><a href="#крок-4-підключення-та-запуск" id="markdown-toc-крок-4-підключення-та-запуск">Крок 4: Підключення та запуск</a></li>
+  <li><a href="#просунуте-налаштування-якщо-виникають-помилки" id="markdown-toc-просунуте-налаштування-якщо-виникають-помилки">Просунуте налаштування (якщо виникають помилки)</a></li>
+  <li><a href="#гра-через-інтернет-поза-домом" id="markdown-toc-гра-через-інтернет-поза-домом">Гра через Інтернет (поза домом)</a>    <ul>
+      <li><a href="#спосіб-1-прокидання-портів-port-forwarding" id="markdown-toc-спосіб-1-прокидання-портів-port-forwarding">Спосіб 1: Прокидання портів (Port Forwarding)</a></li>
+      <li><a href="#спосіб-2-vpn-безпечніший" id="markdown-toc-спосіб-2-vpn-безпечніший">Спосіб 2: VPN (Безпечніший)</a></li>
+    </ul>
+  </li>
+  <li><a href="#вирішення-проблем-та-поради" id="markdown-toc-вирішення-проблем-та-поради">Вирішення проблем та поради</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<p>Мрієте грати в ексклюзиви PlayStation у портативі, але не хочете витрачати гроші на PlayStation Portal? Якщо у вас є <strong>прошита Nintendo Switch</strong>, ви можете зробити це безкоштовно за допомогою програми <strong>Chiaki</strong>.</p>
+
+<p>Ця програма дозволяє транслювати зображення з вашої PS4 або PS5 на екран Switch через Wi-Fi.</p>
+
+<h2 id="️-важливі-вимоги">⚠️ Важливі вимоги</h2>
+<ol>
+  <li><strong>Консолі:</strong> Nintendo Switch зі встановленою прошивкою <strong>Atmosphere</strong> та PS4/PS5.</li>
+  <li><strong>Мережа:</strong> Обидві консолі мають бути в одній локальній мережі. Для комфортної гри <strong>настійно рекомендується Wi-Fi 5 ГГц</strong> для Switch, а PlayStation краще під’єднати кабелем LAN до роутера.</li>
+  <li><strong>ПК або смартфон:</strong> Для отримання ID акаунту.</li>
+</ol>
+
+<hr />
+
+<h2 id="крок-1-отримання-psn-account-id">Крок 1: Отримання PSN Account ID</h2>
+
+<p>Це найскладніший етап, але його треба пройти лише один раз. Вам потрібно отримати спеціальний код (base64), прив’язаний до вашого акаунту PlayStation.</p>
+
+<p><strong>Метод А (Найпростіший — через веб-сайт):</strong></p>
+<ol>
+  <li>Перейдіть на сайт <a href="https://psn.flipscreen.games/" target="_blank">psn.flipscreen.games</a></li>
+  <li>Введіть свій PSN Username (ваш нікнейм у мережі PSN, який бачать інші гравці) і натисніть <strong>Submit</strong>.</li>
+  <li>Сайт перенаправить вас на сторінку входу Sony. Увійдіть у свій акаунт.</li>
+  <li>Після входу ви побачите сторінку з білим екраном і написом “redirect”. Скопіюйте <strong>повну URL-адресу</strong> цієї сторінки з браузера.</li>
+  <li>Вставте скопійоване посилання назад у відповідне поле на сайті flipscreen.games.</li>
+  <li>Сайт видасть вам <strong>Encoded ID (for Chiaki)</strong>. Скопіюйте та збережіть його (він закінчується на <code class="language-plaintext highlighter-rouge">=</code>, це нормально).</li>
+</ol>
+
+<p><strong>Метод Б (Через Python скрипт):</strong>
+Якщо сайт не працює, використайте офіційний скрипт.</p>
+<ol>
+  <li>Відкрийте <a href="https://trinket.io/embed/python3/52183a157e?outputOnly=true&amp;runOption=run&amp;start=result&amp;showInstructions=true" target="_blank">Trinket.io Python3 Script</a></li>
+  <li>Натисніть кнопку <strong>Run</strong> (трикутник).</li>
+  <li>Дотримуйтесь інструкцій на екрані: перейдіть за посиланням, залогіньтесь, скопіюйте URL переадресації та вставте його в консоль скрипта.</li>
+  <li>Скрипт видасть ваш ID.</li>
+</ol>
+
+<hr />
+
+<h2 id="крок-2-встановлення-chiaki-на-switch">Крок 2: Встановлення Chiaki на Switch</h2>
+
+<ol>
+  <li>Завантажте останню версію <code class="language-plaintext highlighter-rouge">Chiaki</code> для Switch (файл <code class="language-plaintext highlighter-rouge">.nro</code>) з <a href="https://git.sr.ht/~thestr4ng3r/chiaki" target="_blank">офіційного GitHub</a> або через <strong>HB App Store</strong>.</li>
+  <li>Підключіть карту пам’яті Switch до ПК (або використайте MTP через DBI/FTP).</li>
+  <li>Створіть папку <code class="language-plaintext highlighter-rouge">Chiaki</code> за шляхом: <code class="language-plaintext highlighter-rouge">/switch/Chiaki/</code>.</li>
+  <li>Скопіюйте файл <code class="language-plaintext highlighter-rouge">chiaki.nro</code> у цю папку.</li>
+</ol>
+
+<blockquote class="notice--info">
+  <p><strong>Порада:</strong> Рекомендується запускати Chiaki через <strong>Title Override</strong> (утримуючи кнопку <code class="language-plaintext highlighter-rouge">R</code> при запуску будь-якої встановленої гри), щоб програма отримала доступ до всієї оперативної пам’яті консолі. Запуск через “Альбом” (Applet Mode) може призвести до вильотів.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="крок-3-налаштування-playstation">Крок 3: Налаштування PlayStation</h2>
+
+<p>Вам потрібно активувати дистанційну гру на домашній консолі.</p>
+
+<p><strong>Для PlayStation 5:</strong></p>
+<ul>
+  <li>Налаштування -&gt; Система -&gt; Дистанційна гра -&gt; Увімкнути “Дозволити дистанційну гру”.</li>
+  <li>Потім перейдіть у пункт “Прив’язати пристрій” (Link Device). Ви отримаєте 8-значний код (він діє 300 секунд).</li>
+</ul>
+
+<p><strong>Для PlayStation 4:</strong></p>
+<ul>
+  <li>Налаштування -&gt; Налаштування з’єднання дистанційного відтворення -&gt; Поставити галочку “Дозволити дистанційне відтворення”.</li>
+  <li>Натисніть “Додати пристрій”. Ви отримаєте 8-значний код.</li>
+</ul>
+
+<hr />
+
+<h2 id="крок-4-підключення-та-запуск">Крок 4: Підключення та запуск</h2>
+
+<ol>
+  <li>Запустіть <strong>Chiaki</strong> на Nintendo Switch.</li>
+  <li>Програма має автоматично знайти вашу PS4/PS5, якщо ви в одній Wi-Fi мережі.
+    <ul>
+      <li><em>Якщо консоль не знайшлася:</em> Натисніть <code class="language-plaintext highlighter-rouge">+</code> (Add Host), щоб додати вручну. Вам знадобиться IP-адреса вашої PlayStation (її можна знайти в налаштуваннях мережі на самій PlayStation).</li>
+    </ul>
+  </li>
+  <li>Виберіть вашу консоль зі списку (натисніть <code class="language-plaintext highlighter-rouge">A</code>).</li>
+  <li>У полі <strong>PSN Account ID</strong> введіть той довгий код (base64), який ви отримали на Кроці 1.</li>
+  <li>У полі <strong>PIN</strong> введіть 8 цифр, які зараз показує ваша PlayStation (з Кроку 3).
+    <ul>
+      <li><strong>Важливо:</strong> Вводьте цифри суцільно, без пробілів!</li>
+    </ul>
+  </li>
+  <li>Натисніть <strong>Register/Connect</strong>.</li>
+</ol>
+
+<p>Якщо все зроблено вірно, на екрані з’явиться трансляція з PlayStation.</p>
+
+<hr />
+
+<h2 id="просунуте-налаштування-якщо-виникають-помилки">Просунуте налаштування (якщо виникають помилки)</h2>
+
+<p>Якщо автоматичне підключення не спрацьовує або виникають помилки, створіть файл конфігурації вручну на комп’ютері.</p>
+
+<ol>
+  <li>Створіть текстовий файл <code class="language-plaintext highlighter-rouge">chiaki.conf</code>.</li>
+  <li>Вставте туди наступний текст (замініть дані на свої):</li>
+</ol>
+
+<div class="language-ini highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">[PS4-XXX]</span>
+<span class="py">host_ip</span> <span class="p">=</span> <span class="s">192.168.1.XXX</span>
+<span class="py">psn_online_id</span> <span class="p">=</span> <span class="s">ваш_нікнейм</span>
+<span class="py">psn_account_id</span> <span class="p">=</span> <span class="s">ваш_base64_id=</span>
+<span class="py">video_fps</span> <span class="p">=</span> <span class="s">60</span>
+<span class="py">video_resolution</span> <span class="p">=</span> <span class="s">720p</span>
+<span class="py">audio_buffer</span> <span class="p">=</span> <span class="s">19200</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Збережіть файл та перемістіть його в папку <code class="language-plaintext highlighter-rouge">/switch/Chiaki/</code> на карті пам’яті.</li>
+</ol>
+
+<p><strong>Правила заповнення:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">[PS4-XXX]</code>: Замість XXX — останні 3 символи MAC-адреси або довільна назва, але <strong>обов’язково</strong> у квадратних дужках.</li>
+  <li><code class="language-plaintext highlighter-rouge">host_ip</code>: Локальна IP-адреса вашої PlayStation.</li>
+  <li>Дотримуйтесь усіх пробілів та знаків <code class="language-plaintext highlighter-rouge">=</code> точно як у прикладі.</li>
+</ul>
+
+<hr />
+
+<h2 id="гра-через-інтернет-поза-домом">Гра через Інтернет (поза домом)</h2>
+
+<p>Щоб грати з іншої мережі (наприклад, з роботи або дачі):</p>
+
+<h3 id="спосіб-1-прокидання-портів-port-forwarding">Спосіб 1: Прокидання портів (Port Forwarding)</h3>
+<p>На домашньому роутері відкрийте порти для IP-адреси вашої PlayStation:</p>
+<ul>
+  <li><strong>UDP &amp; TCP:</strong> 987, 9295</li>
+  <li><strong>UDP:</strong> 9296, 9297</li>
+</ul>
+
+<p>У налаштуваннях Chiaki замість локального IP вкажіть вашу <strong>зовнішню (“білу”) IP-адресу</strong>.</p>
+
+<h3 id="спосіб-2-vpn-безпечніший">Спосіб 2: VPN (Безпечніший)</h3>
+<p>Налаштуйте VPN-сервер (наприклад, WireGuard або OpenVPN) на домашньому роутері. Під’єднайтеся до нього з телефону, роздайте інтернет на Switch, і консоль “думатиме”, що вона вдома.</p>
+
+<hr />
+
+<h2 id="вирішення-проблем-та-поради">Вирішення проблем та поради</h2>
+
+<ol>
+  <li><strong>Помилка “35413-6”</strong>: Неправильно введено PIN-код. Спробуйте ще раз, переконайтеся, що не поставили пробіл між цифрами.</li>
+  <li><strong>Помилка “35406-8”</strong>: Акаунти не збігаються. Перевірте, чи активована PS4/PS5 як “основна” для цього акаунту. Видаліть файл <code class="language-plaintext highlighter-rouge">chiaki.conf</code> і спробуйте зареєструватися наново.</li>
+  <li><strong>Зелений екран / Артефакти</strong>: Проблема з декодуванням. В налаштуваннях Chiaki переконайтеся, що стоїть роздільна здатність <strong>720p</strong> (екран Switch не підтримує 1080p, це лише даремно навантажує мережу).</li>
+  <li><strong>Розгін Switch</strong>: Для ідеальних 60fps без лагів рекомендується трохи розігнати Switch через <strong>SysClk</strong> (homebrew для розгону).
+    <ul>
+      <li><em>Рекомендовані частоти:</em> CPU = 1224 MHz, GPU = 768 MHz.</li>
+    </ul>
+  </li>
+  <li><strong>Ввімкнення консолі</strong>: Chiaki <strong>не вміє</strong> вмикати PlayStation з повного вимкнення. Консоль має перебувати у “Режимі спокою” (Rest Mode).</li>
+  <li><strong>Управління</strong>: Сенсорний екран Switch емулює натискання тачпаду DualShock/DualSense.</li>
+</ol>
+
+<p>Приємної гри!</p>
+
+<hr />
+
+<p class="notice--success"><a href="javascript:window.close();">Закрити сторінку</a></p>
+
+				
+        
+      </section>
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+		
+    
+  </article>
+
+  
+  
+</div>
+    <a href="#" class="scrollup">Наверх</a>
+
+    <div class="page__footer-container">
+      <footer class="page__footer">
+        <script src="/assets/js/main.min.js"></script>
+
+<!-- // to top button -->
+<a href="#" class="scrollup">Наверх</a>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $(".scrollup").fadeIn();
+      } else {
+        $(".scrollup").fadeOut();
+      }
+    });
+
+    $(".scrollup").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+  });
+</script>
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a href="http://github.com/rashevskyv"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+	  <li><a href="https://t.me/xhrxhrxhr" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> TG</a></li>
+    
+    
+	  <li><a href="https://t.me/kefir_ukr" target="_blank" itemprop="sameAs"><i class="fa fa-fw fa-telegram" aria-hidden="true"></i> Kefir / 4ifir - switch jailbroken
+	  </a></li>	
+    
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 xHR. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  
+    
+    <script src="/assets/js/spoiler-anim.js"></script>
+  
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,42 @@
+I"C<h2 id="що-знадобиться">Що знадобиться</h2>
+
+<ul>
+  <li><span class="tooltip_container">
+  Пейлоад
+  <span class="tooltip">▼
+      <span class="bottom">
+          Файл з виконуваним кодом у форматі <code class="language-plaintext highlighter-rouge">.bin</code>, який ми завантажуємо в приставку, найчастіше - завантажувач
+      </span>
+  </span>
+</span>, який ви збираєтеся запускати на приставці</li>
+  <li>USB type-С на USB type-A кабель для підключення Switch до <span class="tooltip_container">
+  хосту
+  <span class="tooltip">▼
+      <span class="bottom">
+          Пристрій, що дозволяє відправити на консоль пейлоад; як хост може використовуватися ПК, смартфон на Android (iOS, якщо є джейлбрейк) або спеціальний пристрій – донгл
+      </span>
+  </span>
+</span></li>
+  <li>Браузер Chrome (з іншими браузерами працювати не буде!)</li>
+  <li>Приставка повинна бути в <a href="fusee-gelee#частина-i---
+lang: ukвхід-в-rcm" target="_blank">режимі RCM</a></li>
+</ul>
+
+<h2 id="запуск-пейлоада">Запуск пейлоада</h2>
+
+<p class="notice--info">Приставка повинна знаходитися в <a href="fusee-gelee#частина-i---
+lang: ukвхід-в-rcm" target="_blank">режимі RCM</a>!</p>
+
+<ol>
+  <li>Відкрийте цю <a href="https://webcfw.sdsetup.com/" target="_blank">веб-сторінку</a> і увімкніть Російську мову</li>
+  <li>У частині “<strong>Налаштування відправки пейлоада</strong>” виберіть пейлоад зі списку “<strong>Завантажити свій пейлоад</strong>”, натисніть “<strong>Виберіть файл</strong>”, після чого виберіть <code class="language-plaintext highlighter-rouge">.bin</code>-файл вашого пейлоада
+    <ul>
+      <li>Не вибирайте пейлоад зі списку! Використовуйте той, що в архіві, інакше ви ризикуєте отримати помилку на тому чи іншому етапі прошивки!</li>
+    </ul>
+  </li>
+  <li>Натисніть “<strong>Deliver payload!</strong>”</li>
+  <li>У відкритому вікні виберіть “<strong>APX</strong>” і натисніть “<strong>Підключення</strong>”</li>
+  <li>Пейлоад запуститься на консолі</li>
+  <li>Можете діставати замикач</li>
+</ol>
+:ET

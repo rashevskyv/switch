@@ -1,0 +1,62 @@
+I"~<ol>
+  <li><strong><a href="https://github.com/rashevskyv/Kefirosphere">Kefirosphere</a></strong>, форк <a href="https://github.com/Atmosphere-NX/Atmosphere">Atmosphere</a></li>
+  <li><strong>Сігпатчі</strong>. Завдяки ним на Atmosphere можна запускати непідписані (читай: <em>піратські</em>) програми та ігри.</li>
+  <li><strong>Завантажувач <a href="https://github.com/CTCaer/hekate" target="_blank">hekate</a></strong>. Завдяки завантажувачу ви можете запускати прошивку та інші <span class="tooltip_container">
+ пейлоади
+ <span class="tooltip">▼
+     <span class="bottom">
+         Файл з виконуваним кодом у форматі <code class="language-plaintext highlighter-rouge">.bin</code>, який ми завантажуємо в приставку, найчастіше - завантажувач
+     </span>
+ </span>
+</span> через зручне меню, створювати та відновлювати резервну копію NAND, робити EmuNAND, отримувати інформацію про стан системи, монтувати карту пам’яті до ПК без витягування її зі свічу, робити перерозмітку карти пам’яті для встановлення інших ОС і багато іншого</li>
+  <li><strong>Встановлені <span class="tooltip_container">
+ пейлоади
+ <span class="tooltip">▼
+     <span class="bottom">
+         Файл з виконуваним кодом у форматі <code class="language-plaintext highlighter-rouge">.bin</code>, який ми завантажуємо в приставку, найчастіше - завантажувач
+     </span>
+ </span>
+</span></strong>:
+    <ul>
+      <li>[Lockpick_RCM] - програма для <a href="backup-nand#частина-iii---
+lang: ukдампимо-ключі" target="_blank">дампу ключів приставки</a></li>
+      <li><a href="https://github.com/rashevskyv/TegraExplorer/" target="_blank">TegraExplorer</a> - файловий менеджер для Switch у вигляді пейлоада. Аналог GodMode9 для 3DS</li>
+    </ul>
+  </li>
+  <li><strong>Встановлене Homebrew</strong>
+    <ul>
+      <li><a href="https://github.com/rashevskyv/dbi" target="_blank">DBI</a> - програма для <a href="/games" target="_blank">встановлення ігор</a> по USB або з карти пам’яті</li>
+      <li><a href="http://tinfoil.io" target="_blank">Tinfoil</a> - програма, що дозволяє <a href="/tinfoil" target="_blank">качати ігри</a> для приставки прямо з мережі</li>
+      <li><a href="https://github.com/rashevskyv/kefir-updater" target="_blank">Kefir Updater</a> - програма для оновлення kefir через інтернет</li>
+      <li><a href="https://github.com/ITotalJustice/sphaira/releases/" target="_blank">Sphaira</a> - середовище для запуску homebrew, скачування тем та додатків на switch, файловий менеджер</li>
+      <li><a href="https://github.com/Atmosphere-NX/Atmosphere/tree/0.14.1/troposphere/daybreak" target="_blank">Daybreak</a> - програма для <a href="/update-fw" target="_blank">безпечного оновлення</a> версії системного ПЗ приставки</li>
+      <li><a href="https://github.com/exelix11/SwitchThemeInjector" target="_blank">NXThemes Installer</a> - менеджер кастомних тем</li>
+      <li><a href="https://github.com/rdmrocha/linkalho" target="_blank">Linkalho</a> - програма <a href="/link-account" target="_blank">прив’язки облікового запису</a></li>
+    </ul>
+  </li>
+  <li><strong>Встановлені модулі</strong>. Модулі - це додаткові компоненти, що працюють всередині Atmosphere і дозволяють робити різні круті штуки, наприклад, використання xbox-сумісних контролерів, емуляцію amiibo, розгін тощо. На жаль, SX OS модулі не підтримує
+    <ul>
+      <li><a href="https://github.com/o0Zz/sys-con" target="_blank">sys-con</a> - модуль, що дозволяє підключати до консолі по USB практично будь-які геймпади</li>
+      <li><a href="https://github.com/ndeadly/MissionControl" target="_blank">Mission Control</a> - модуль, що дозволяє підключати до консолі по bluetooth практично будь-які геймпади</li>
+      <li><a href="https://github.com/rashevskyv/Ultrahand-Overlay" target="_blank">Ultrahand</a> - спеціальне оверлей-меню для взаємодії з системою p підтримкою користувацьких скриптів і модулів</li>
+    </ul>
+    <ul>
+      <li>Скрипти:
+        <ul>
+          <li><strong>DBI</strong> - зміна локалізації та оновлення програми</li>
+          <li><strong>Translate Interface</strong> - додаткові переклади інтерфейсу на вибір</li>
+          <li><strong>Semi-stock</strong> - завантаження в семісток з меню</li>
+          <li><strong>Reboot і Shutdown</strong> - перезавантаження та вимкнення консолі з меню</li>
+        </ul>
+      </li>
+      <li>Модулі:
+        <ul>
+          <li><a href="https://github.com/ppkantorski/nx-ovlloader" target="_blank">nx-ovlloader</a> - процес для роботи з nro через Tesla Menu</li>
+          <li><a href="https://github.com/proferabg/EdiZon-Overlay/releases" target="_blank">ovlEdiZon.ovl</a> - Модуль для <a href="/cheats" target="_blank">використання читів</a></li>
+          <li><a href="https://github.com/WerWolv/ovl-sysmodules/" target="_blank">ovlSysmodules.ovl</a> - Модуль для вмикання та вимикання встановлених системних модулів (наприклад, розгін, emuuibo тощо)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+:ET

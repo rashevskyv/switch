@@ -1,0 +1,77 @@
+I"/<p class="notice--warning">Спершу спробуйте запустити SysNAND і виконуйте нижченаведену інструкцію тільки якщо SysNAND запускається! Якщо ні, спершу вирішіть цю проблему, а потім поверніться до виконання цієї інструкції!</p>
+
+<h4 id="якщо-sysnand-та-emunand-однієї-версії">Якщо SysNAND та EmuNAND однієї версії:</h4>
+<ol>
+  <li>Увімкніть консоль</li>
+  <li>На заставці кефіру <strong>натисніть кнопку зниження гучності</strong>, щоб потрапити в hekate</li>
+  <li>Перейдіть в “<strong>Tools</strong>” -&gt; “<strong>Backup eMMC</strong>” -&gt; “<strong>eMMC BOOT0 &amp; BOOT1</strong>”</li>
+  <li>Натисніть “<strong>Close</strong>”, “<strong>Close</strong>”, перейдіть в “<strong>Home</strong>” і натисніть “<strong>Power Off</strong>”, підтвердіть вимкнення</li>
+  <li>Вставте карту пам’яті приставки в ПК</li>
+  <li>Перейдіть у папку <code class="language-plaintext highlighter-rouge">sd:\backup\%emmc_id%</code>, де <strong>%emmc_id%</strong> - унікальний номер для кожної окремої приставки.</li>
+  <li>Скопіюйте <code class="language-plaintext highlighter-rouge">BOOT0</code> та <code class="language-plaintext highlighter-rouge">BOO1</code> з цієї папки в папку <code class="language-plaintext highlighter-rouge">emuMMC\ED00\eMMC</code> із заміною</li>
+  <li>Пробуйте запустити емунанд.</li>
+</ol>
+
+<h4 id="якщо-не-допомогло-або-версії-sysnand-та-emunand-різні">Якщо не допомогло або версії SysNAND та EmuNAND різні:</h4>
+
+<details class="spoiler" id="spoiler-b273aaf1">
+  <summary>Як дізнатися версію свого emunand:</summary>
+  <div class="spoiler-content">
+    <ol>
+  <li>Запустіть <span class="tooltip_container">
+ hekate
+ <span class="tooltip">▼
+     <span class="bottom">
+         Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+     </span>
+ </span>
+</span></li>
+  <li>Запустіть <strong>TegraExplorer</strong> (<strong>Payloads</strong> -&gt; <code class="language-plaintext highlighter-rouge">TegraExplorer.bin</code>)</li>
+  <li>Запустіть <code class="language-plaintext highlighter-rouge">FW_version.te</code> (<strong>Launch script</strong>)</li>
+  <li>Дочекайтеся появи версії Sys та EmuNAND на екрані</li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Як дізнатися версію свого emunand: <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<ol>
+  <li><a href="backup-nand#частина-ii---дампимо-ключі" target="_blank">Зніміть копію ключів вашої приставки</a></li>
+  <li>Вставте карту пам’яті приставки в ПК</li>
+  <li>Завантажте <a href="/files/reBoot.zip" target="_blank">reBoot.zip</a></li>
+  <li><a href="https://darthsternie.net/switch-firmwares/" target="_blank">Завантажте прошивку</a>, що відповідає <strong>поточній версії прошивки вашого emunand</strong></li>
+  <li>Розпакуйте архів з прошивкою в папку <code class="language-plaintext highlighter-rouge">firmware</code> на вашому ПК</li>
+  <li>Помістіть файли з архіву <a href="/files/reBoot.zip" target="_blank">reBoot.zip</a> у папку <code class="language-plaintext highlighter-rouge">firmware</code></li>
+  <li>Помістіть у папку <code class="language-plaintext highlighter-rouge">firmware</code> ваш файл з ключами (<code class="language-plaintext highlighter-rouge">prod.keys</code>)</li>
+  <li>Запустіть <code class="language-plaintext highlighter-rouge">recreate_boot_by_yoti.bat</code>. Після закінчення роботи програми ви отримаєте файли <code class="language-plaintext highlighter-rouge">BOOT0_ERISTA</code>, <code class="language-plaintext highlighter-rouge">BOOT0_MARIKO</code>, <code class="language-plaintext highlighter-rouge">BOOT1_ERISTA</code>, <code class="language-plaintext highlighter-rouge">BOOT1_MARIKO</code></li>
+  <li>Визначте, якої ревізії ваша приставка (<strong>Erista</strong> або <strong>Mariko</strong>) і перейменуйте файли, що відповідають вашій ревізії, в <code class="language-plaintext highlighter-rouge">BOOT0</code> та <code class="language-plaintext highlighter-rouge">BOOT1</code>
+    <ul>
+      <li>Якщо серійник вашої консолі починається на <strong>XK</strong>, то у вас <strong>Mariko</strong>. В інших випадках - <strong>Erista</strong> (<strong>XAW, XAJ, XAK тощо</strong>)
+        <ul>
+          <li>Серійний номер приставки знаходиться в <strong>Системних налаштуваннях -&gt; Система -&gt; Серійні номери</strong>, найперший серійник. Він же знаходиться поруч із роз’ємом для зарядки на нижній грані планшета.</li>
+        </ul>
+      </li>
+      <li>Switch Lite завжди Mariko</li>
+    </ul>
+  </li>
+  <li>Скопіюйте <code class="language-plaintext highlighter-rouge">BOOT0</code> та <code class="language-plaintext highlighter-rouge">BOO1</code> для вашої ревизії в папку <code class="language-plaintext highlighter-rouge">emuMMC\ED00\eMMC</code> із заміною
+    <ul>
+      <li>Замість <code class="language-plaintext highlighter-rouge">ED00</code> у шляху може бути як <code class="language-plaintext highlighter-rouge">SD01</code>, так і будь-які інші поєднання з двох букв і двох чисел</li>
+      <li>Тепер при запуску приставки вона автоматично буде запускати emuMMC.</li>
+      <li>Щоб потрапити в офіційну прошивку, запустіть <strong>hekate</strong> -&gt; “<strong>Launch</strong>” -&gt; “<strong>Full Stock</strong>”</li>
+    </ul>
+  </li>
+</ol>
+
+<p class="notice--info">Якщо не помогло, вам доведеться <a href="/emunand" target="_blank">створювати новий EmuNAND</a></p>
+
+<p class="notice--info">Тепер встановіть <span class="tooltip_container">
+	<a href="kefir" target="_blank">kefir</a>
+	<span class="tooltip">▼
+		<span class="bottom">
+			Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+		</span>
+	</span>
+</span> ще раз. Наступні запуски kefir буде запускатися автоматично відразу при ввімкненні приставки.</p>
+:ET

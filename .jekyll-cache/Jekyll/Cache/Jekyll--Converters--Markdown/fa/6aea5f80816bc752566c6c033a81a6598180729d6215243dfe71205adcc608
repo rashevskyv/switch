@@ -1,0 +1,144 @@
+I"D.
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Розділи</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#підготовчі-роботи" id="markdown-toc-підготовчі-роботи">Підготовчі роботи</a></li>
+  <li><a href="#робота-з-tinfoil" id="markdown-toc-робота-з-tinfoil">Робота з tinfoil</a></li>
+  <li><a href="#можливі-проблеми-та-помилки" id="markdown-toc-можливі-проблеми-та-помилки">Можливі проблеми та помилки</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<p class="notice--danger">На даний момент немає жодного безкоштовного публічного джерела для тінфоїл, от жє quj мождна вважати не робочим</p>
+
+<p class="notice--warning">Цей додаток використовує сторонні сервери для встановлення ігор, що підтримуються різними спільнотами, через це робота цих серверів не стабільна. Не рекомендується використовувати tinfoil для встановлення ігор, однак і не забороняється.</p>
+
+<p>За допомогою додатка tinfoil ігри можна встановлювати безпосередньо з віддаленого сервера в інтернеті, який постійно поповнюється силами спільноти. По суті програма є аналогом freeshop для 3DS</p>
+
+<ul>
+  <li><a href="https://4pda.to/forum/index.php?showtopic=939714&amp;st=1480#entry87313387" target="_blank">Як працює tinfoil</a></li>
+</ul>
+
+<p>За допомогою цієї програми не рекомендується встановлювати ігри з ПК. Використовуйте її виключно для встановлення ігор через інтернет.</p>
+
+<h2 id="підготовчі-роботи">Підготовчі роботи</h2>
+
+<ol>
+  <li>Вимкніть консоль</li>
+  <li>Вставте карту пам’яті в ПК</li>
+  <li>Встановіть <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip">▼
+     <span class="bottom">
+         Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+     </span>
+ </span>
+</span>, якщо ще не робили цього</li>
+  <li>Вставте карту пам’яті в консоль і запустіть <a href="/cfw" target="_blank"><span class="tooltip_container">
+ CFW
+ <span class="tooltip">▼
+     <span class="bottom">
+         Модифіковане програмне забезпечення консолі, написане ентузіастами, дозволяє робити речі, недоступні користувачам офіційних прошивок, наприклад, запускати непідписані програми. В контексті прошивки Світча ми будемо називати наявне програмне забезпечення кастомною прошивкою, хоча, чисто технічно, це не так
+     </span>
+ </span>
+</span></a></li>
+  <li>Запустіть DBI через <a href="/hbl" target="_blank">HBL</a></li>
+  <li>Встановіть <code class="language-plaintext highlighter-rouge">Tinfoil [050000BADDAD0000]</code> з папки <code class="language-plaintext highlighter-rouge">games</code></li>
+</ol>
+
+<h2 id="робота-з-tinfoil">Робота з tinfoil</h2>
+
+<ol>
+  <li>Запустіть <strong>tinfoil</strong> з головного меню приставки</li>
+  <li>Дочекайтеся, поки завантажиться список ігор, доступних для встановлення</li>
+  <li>У вікнах, що з’явилися, натискайте <strong>OK</strong>
+    <ul>
+      <li>Можуть також з’являтися помилки, ігноруйте їх</li>
+    </ul>
+  </li>
+  <li>Перейдіть у потрібний розділ, виберіть гру і натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" />
+    <ul>
+      <li>У розділі <strong>Нові ігри</strong> знаходяться всі ігри, які є на сервері
+        <ul>
+          <li>Для пошуку натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> на джойконі, перебуваючи на рядку <strong>Нові ігри</strong> в лівій частині меню</li>
+        </ul>
+      </li>
+      <li>У розділі <strong>Нові оновлення</strong> знаходяться оновлення для встановлених у вас ігор</li>
+      <li>У розділі <strong>Нові DLC</strong> знаходяться DLC для встановлених у вас ігор</li>
+    </ul>
+  </li>
+  <li>У меню, що з’явилося, виберіть “<strong>Встановлювати всі DLC</strong>” та “<strong>Встановлювати всі оновлення</strong>”, щоб разом з грою встановилося останнє оновлення та всі наявні DLC</li>
+  <li>Натисніть “<strong>Install</strong>”, щоб почати встановлення</li>
+  <li>Натисніть <img src="/assets/images/switch/buttons/B.png" alt="(B)" />, щоб згорнути вікно, що з’явилося</li>
+  <li>Прогрес і швидкість завантаження відображатимуться в панелі “<strong>Download</strong>”, яка з’явиться вгорі екрана</li>
+  <li>Ви можете додавати ігри до списку завантаження способом, описаним вище. Весь список можна подивитися у вкладці “<strong>Черга</strong>”, яка знаходиться на панелі вкладок ліворуч</li>
+  <li>Після того, як обрана гра завантажиться, вийдіть з програми кнопкою <img src="/assets/images/switch/buttons/HOME.png" alt="(HOME)" /></li>
+</ol>
+
+<p class="notice--warning">Не вмикайте опцію “<strong>Стандартне шифрування</strong>”! Встановлені таким чином ігри не працюватимуть!</p>
+
+<p class="notice--warning">Після встановлення оновлень за допомогою tinfoil рекомендується зайти в DBI і вибрати “<strong>Cleanup Orphaned Files</strong>”! Цей пункт допоможе видалити сміттєві файли, які tinfoil залишив при встановленні оновлень.</p>
+
+<h2 id="можливі-проблеми-та-помилки">Можливі проблеми та помилки</h2>
+
+<details class="spoiler" id="spoiler-377da12a">
+  <summary>У Tinfoil зникли всі ігри</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong></p>
+<ul>
+  <li>Не змінюйте в tinfoil тему! Тема в програмі має починатися з префікса <code class="language-plaintext highlighter-rouge">hbg_</code></li>
+  <li>Переконайтеся, що на приставці встановлено правильну дату та час</li>
+  <li>Видаліть tinfoil, оновіть <span class="tooltip_container">
+  <a href="kefir" target="_blank">kefir</a>
+  <span class="tooltip">▼
+      <span class="bottom">
+          Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+      </span>
+  </span>
+</span>, встановіть tinfoil з папки games на карті пам’яті</li>
+</ul>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">У Tinfoil зникли всі ігри <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-4c348008">
+  <summary>Я випадково видалив тікети гри в tinfoil</summary>
+  <div class="spoiler-content">
+    <p><strong>В:</strong> Для перевстановлення тікетів запустіть <a href="/games" target="_blank">tinfoil</a>, перейдіть на вкладку “<strong>Тікети</strong>”, і для кожної гри виконайте наступне:</p>
+<ol>
+  <li>На грі натисніть <img src="/assets/images/switch/buttons/Y.png" alt="(Y)" /></li>
+  <li>Натисніть <img src="/assets/images/switch/buttons/R.png" alt="(R)" /></li>
+  <li>Увімкніть опцію “<strong>Встановити Ticket</strong>”</li>
+  <li>Натисніть “<strong>Почати встановлення</strong>”</li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Я випадково видалив тікети гри в tinfoil <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-ecaeb100">
+  <summary>SSL connection failed</summary>
+  <div class="spoiler-content">
+    <p>Вам потрібно виставити коректний час і дату на вашій приставці. Переконайтеся, що на приставці увімкнено інтернет, запустіть програму і натисніть (А). Якщо в приставці вимкнено синхронізацію часу в налаштуваннях, знадобиться перезавантаження програми. Після перезавантаження запустіть програму ще раз. Якщо після синхронізації час на приставці не збігається з вашим локальним, переконайтеся, що в налаштуваннях консолі вказано правильний часовий пояс.</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">SSL connection failed <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-76927b79">
+  <summary>Червоний екран, що говорить про те, що встановлено KOSMOS</summary>
+  <div class="spoiler-content">
+    <p>Перевстановіть кефір через скрипт</p>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Червоний екран, що говорить про те, що встановлено KOSMOS <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+:ET

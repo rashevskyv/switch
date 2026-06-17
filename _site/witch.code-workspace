@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\index"
+		},
+		{
+			"path": "..\\check"
+		}
+	],
+	"settings": {
+		"cSpell.language": ",ru",
+		"spellright.language": [
+			"en",
+			"ru"
+		],
+		"spellright.documentTypes": [
+			"markdown",
+			"latex",
+			"plaintext"
+		],
+		"files.associations": {
+			"*.json": "json",
+			"*.te": "c"
+		}
+	}
+}

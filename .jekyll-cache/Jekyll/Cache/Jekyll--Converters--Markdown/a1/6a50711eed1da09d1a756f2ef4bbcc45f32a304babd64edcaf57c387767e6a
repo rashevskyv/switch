@@ -1,0 +1,20 @@
+I"k
+<p>Оновіть <span class="tooltip_container">
+	<a href="kefir" target="_blank">kefir</a>
+	<span class="tooltip">▼
+		<span class="bottom">
+			Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+		</span>
+	</span>
+</span>. 
+Якщо оновлення <span class="tooltip_container">
+	<a href="kefir" target="_blank">kefir</a>
+	<span class="tooltip">▼
+		<span class="bottom">
+			Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
+		</span>
+	</span>
+</span> не допомогло, зверніть увагу на числа у другому рядку після <strong>Title:</strong>. Ці числа вказують на те, який тайтл викликав помилку і через який не завантажується приставка. Якщо номер тайтла <strong>не</strong> <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то перейдіть у папку <code class="language-plaintext highlighter-rouge">atmosphere/contents</code> (<code class="language-plaintext highlighter-rouge">atmosphere/titles</code> на атмосфері нижче ніж 0.10.0) і видаліть папку з номером, вказаним на екрані вашої приставки у другому рядку. Якщо номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то найімовірніше помилка викликана тим, що якесь хомбрю запущено в режимі аплету і йому не вистачає пам’яті. Якщо номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000001F</code>, то витягніть картридж із приставки. Тримайте emunand та sysnand на одній версії прошивки, щоб надалі не було таких проблем.</p>
+
+<p class="text-center notice--info"><img src="/assets/images/switch/screenshots/atmos_title_error2.png" alt="" /></p>
+:ET
