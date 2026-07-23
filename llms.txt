@@ -1,0 +1,16 @@
+# Прошивка Nintendo Switch
+
+> Український покроковий посібник з прошивки Nintendo Switch, підготовки SD-карти, EmuNAND, Homebrew, оновлень та відновлення.
+
+Основні URL:
+- https://switch.customfw.xyz/ - початок гайду.
+- https://switch.customfw.xyz/get-started - вибір методу прошивки.
+- https://switch.customfw.xyz/faq - часті питання.
+- https://switch.customfw.xyz/glossary - глосарій термінів.
+- https://switch.customfw.xyz/troubleshooting - проблеми та рішення.
+- https://switch.customfw.xyz/site-navigation - мапа розділів.
+- https://switch.customfw.xyz/sitemap.xml - повна мапа сторінок.
+
+Ключові теми: Nintendo Switch, кастомна прошивка, Kefir, Atmosphere, EmuNAND, Homebrew, RCM, модчип, Fusée Gelée, Caffeine, SD-карта.
+
+Мова сайту: українська. Регіон: Україна.

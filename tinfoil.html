@@ -13,21 +13,46 @@
 
 
 
-<title>Встановлення ігор за допомогою tinfoil - Взлом Switch</title>
 
 
 
 
-<meta name="description" content="Повне керівництво з прошивки Nintendo Switch">
 
 
 
 
+
+<title>Встановлення ігор за допомогою tinfoil - Прошивка Nintendo Switch</title>
+<meta name="description" content="Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="author" content="xHR">
 
+<link rel="canonical" href="https://switch.customfw.xyz/tinfoil">
+<link rel="alternate" hreflang="uk" href="https://switch.customfw.xyz/tinfoil">
+<link rel="alternate" hreflang="x-default" href="https://switch.customfw.xyz/tinfoil">
+
 <meta property="og:locale" content="uk_UA">
-<meta property="og:site_name" content="Взлом Switch">
+<meta property="og:site_name" content="Прошивка Nintendo Switch">
 <meta property="og:title" content="Встановлення ігор за допомогою tinfoil">
+<meta property="og:description" content="Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.">
+<meta property="og:url" content="https://switch.customfw.xyz/tinfoil">
+<meta property="og:type" content="website">
+
+
+  <meta property="og:image" content="https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg">
+  <meta property="og:image:alt" content="Встановлення ігор за допомогою tinfoil">
+
+
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Встановлення ігор за допомогою tinfoil">
+<meta name="twitter:description" content="Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.">
+<meta name="twitter:url" content="https://switch.customfw.xyz/tinfoil">
+
+  <meta name="twitter:image" content="https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg">
+  <meta name="twitter:image:alt" content="Встановлення ігор за допомогою tinfoil">
 
 
 
@@ -36,30 +61,80 @@
 
 
 
-  
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://switch.customfw.xyz#identity",
+  "name": "xHR",
+  "url": "https://switch.customfw.xyz",
+  "logo": "https://switch.customfw.xyz/assets/images/bio-photo.png",
+  "sameAs": ["https://github.com/rashevskyv","https://t.me/xhrxhrxhr","https://www.instagram.com/rashevsky.v"]
+}
+</script>
 
-  
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://switch.customfw.xyz#website",
+  "url": "https://switch.customfw.xyz",
+  "name": "Прошивка Nintendo Switch",
+  "description": "Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.",
+  "inLanguage": "uk-UA",
+  "publisher": {
+    "@id": "https://switch.customfw.xyz#identity"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://switch.customfw.xyz/tinfoil#webpage",
+  "url": "https://switch.customfw.xyz/tinfoil",
+  "name": "Встановлення ігор за допомогою tinfoil",
+  "description": "Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.",
+  "isPartOf": {
+    "@id": "https://switch.customfw.xyz#website"
+  },
+  "inLanguage": "uk",
+  "breadcrumb": {
+    "@id": "https://switch.customfw.xyz/tinfoil#breadcrumb"
+  },
+  "dateModified": "2026-07-23T10:08:51+03:00",
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg"
+  }
+}
+</script>
 
 
-
-
-
-
-
-
-
-
-
-
-  <script type="application/ld+json">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://switch.customfw.xyz/tinfoil#breadcrumb",
+  "itemListElement": [
     {
-      "@context" : "http://schema.org",
-      "@type" : "Person",
-      "name" : "xHR",
-      "url" : null,
-      "sameAs" : null
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Головна",
+      "item": "https://switch.customfw.xyz/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Встановлення ігор за допомогою tinfoil",
+      "item": "https://switch.customfw.xyz/tinfoil"
     }
-  </script>
+  ]
+}
+</script>
+
+
 
 
 
@@ -72,20 +147,21 @@
 <!-- end SEO -->
 
 
-<link href="/feed.xml"
-  type="application/atom+xml" rel="alternate" title="Взлом Switch Feed">
+<link href="https://switch.customfw.xyz/feed.xml"
+  type="application/atom+xml" rel="alternate" title="Прошивка Nintendo Switch Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#5e616c">
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://switch.customfw.xyz/assets/css/main.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -103,6 +179,7 @@
 <![endif]-->
 
 
+
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
   </head>
 
@@ -115,7 +192,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="/">Взлом Switch</a>
+        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch</a>
         <ul class="visible-links"><li class="masthead__menu-item">
             <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
           </li><li class="masthead__menu-item">
@@ -170,7 +247,7 @@
   
   <div class="author__avatar">
     
-    <center><img src="/assets/images/bio-photo.png" class="author__avatar" alt="xHR"
+    <center><img src="https://switch.customfw.xyz/assets/images/bio-photo.png" class="author__avatar" alt="xHR"
         itemprop="image"></center>
     
   </div>
@@ -408,7 +485,7 @@
 
 <h2 id="можливі-проблеми-та-помилки">Можливі проблеми та помилки</h2>
 
-<details class="spoiler" id="spoiler-b0bbf1b6">
+<details class="spoiler" id="spoiler-b5303909">
   <summary>У Tinfoil зникли всі ігри</summary>
   <div class="spoiler-content">
     <p><strong>В:</strong></p>
@@ -430,7 +507,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">У Tinfoil зникли всі ігри <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-52d09b70">
+<details class="spoiler" id="spoiler-1db8d202">
   <summary>Я випадково видалив тікети гри в tinfoil</summary>
   <div class="spoiler-content">
     <p><strong>В:</strong> Для перевстановлення тікетів запустіть <a href="/games" target="_blank">tinfoil</a>, перейдіть на вкладку “<strong>Тікети</strong>”, і для кожної гри виконайте наступне:</p>
@@ -446,7 +523,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Я випадково видалив тікети гри в tinfoil <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-37466240">
+<details class="spoiler" id="spoiler-a2c8e71b">
   <summary>SSL connection failed</summary>
   <div class="spoiler-content">
     <p>Вам потрібно виставити коректний час і дату на вашій приставці. Переконайтеся, що на приставці увімкнено інтернет, запустіть програму і натисніть (А). Якщо в приставці вимкнено синхронізацію часу в налаштуваннях, знадобиться перезавантаження програми. Після перезавантаження запустіть програму ще раз. Якщо після синхронізації час на приставці не збігається з вашим локальним, переконайтеся, що в налаштуваннях консолі вказано правильний часовий пояс.</p>
@@ -456,7 +533,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">SSL connection failed <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-f9558e61">
+<details class="spoiler" id="spoiler-a409dc6f">
   <summary>Червоний екран, що говорить про те, що встановлено KOSMOS</summary>
   <div class="spoiler-content">
     <p>Перевстановіть кефір через скрипт</p>
@@ -537,7 +614,7 @@
     
   
     
-    <script src="/assets/js/spoiler-anim.js"></script>
+    <script src="https://switch.customfw.xyz/assets/js/spoiler-anim.js"></script>
   
 
 

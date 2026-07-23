@@ -13,21 +13,46 @@
 
 
 
-<title>Резервне копіювання NAND - Взлом Switch</title>
 
 
 
 
-<meta name="description" content="Повне керівництво з прошивки Nintendo Switch">
 
 
 
 
+
+<title>Резервне копіювання NAND - Прошивка Nintendo Switch</title>
+<meta name="description" content="Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="author" content="xHR">
 
+<link rel="canonical" href="https://switch.customfw.xyz/backup-nand">
+<link rel="alternate" hreflang="uk" href="https://switch.customfw.xyz/backup-nand">
+<link rel="alternate" hreflang="x-default" href="https://switch.customfw.xyz/backup-nand">
+
 <meta property="og:locale" content="uk_UA">
-<meta property="og:site_name" content="Взлом Switch">
+<meta property="og:site_name" content="Прошивка Nintendo Switch">
 <meta property="og:title" content="Резервне копіювання NAND">
+<meta property="og:description" content="Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.">
+<meta property="og:url" content="https://switch.customfw.xyz/backup-nand">
+<meta property="og:type" content="website">
+
+
+  <meta property="og:image" content="https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg">
+  <meta property="og:image:alt" content="Резервне копіювання NAND">
+
+
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Резервне копіювання NAND">
+<meta name="twitter:description" content="Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.">
+<meta name="twitter:url" content="https://switch.customfw.xyz/backup-nand">
+
+  <meta name="twitter:image" content="https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg">
+  <meta name="twitter:image:alt" content="Резервне копіювання NAND">
 
 
 
@@ -36,30 +61,80 @@
 
 
 
-  
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://switch.customfw.xyz#identity",
+  "name": "xHR",
+  "url": "https://switch.customfw.xyz",
+  "logo": "https://switch.customfw.xyz/assets/images/bio-photo.png",
+  "sameAs": ["https://github.com/rashevskyv","https://t.me/xhrxhrxhr","https://www.instagram.com/rashevsky.v"]
+}
+</script>
 
-  
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://switch.customfw.xyz#website",
+  "url": "https://switch.customfw.xyz",
+  "name": "Прошивка Nintendo Switch",
+  "description": "Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.",
+  "inLanguage": "uk-UA",
+  "publisher": {
+    "@id": "https://switch.customfw.xyz#identity"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://switch.customfw.xyz/backup-nand#webpage",
+  "url": "https://switch.customfw.xyz/backup-nand",
+  "name": "Резервне копіювання NAND",
+  "description": "Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.",
+  "isPartOf": {
+    "@id": "https://switch.customfw.xyz#website"
+  },
+  "inLanguage": "uk",
+  "breadcrumb": {
+    "@id": "https://switch.customfw.xyz/backup-nand#breadcrumb"
+  },
+  "dateModified": "2026-07-23T10:08:51+03:00",
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg"
+  }
+}
+</script>
 
 
-
-
-
-
-
-
-
-
-
-
-  <script type="application/ld+json">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://switch.customfw.xyz/backup-nand#breadcrumb",
+  "itemListElement": [
     {
-      "@context" : "http://schema.org",
-      "@type" : "Person",
-      "name" : "xHR",
-      "url" : null,
-      "sameAs" : null
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Головна",
+      "item": "https://switch.customfw.xyz/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Резервне копіювання NAND",
+      "item": "https://switch.customfw.xyz/backup-nand"
     }
-  </script>
+  ]
+}
+</script>
+
+
 
 
 
@@ -72,20 +147,21 @@
 <!-- end SEO -->
 
 
-<link href="/feed.xml"
-  type="application/atom+xml" rel="alternate" title="Взлом Switch Feed">
+<link href="https://switch.customfw.xyz/feed.xml"
+  type="application/atom+xml" rel="alternate" title="Прошивка Nintendo Switch Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#5e616c">
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://switch.customfw.xyz/assets/css/main.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -103,6 +179,7 @@
 <![endif]-->
 
 
+
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
   </head>
 
@@ -115,7 +192,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="/">Взлом Switch</a>
+        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch</a>
         <ul class="visible-links"><li class="masthead__menu-item">
             <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
           </li><li class="masthead__menu-item">
@@ -170,7 +247,7 @@
   
   <div class="author__avatar">
     
-    <center><img src="/assets/images/bio-photo.png" class="author__avatar" alt="xHR"
+    <center><img src="https://switch.customfw.xyz/assets/images/bio-photo.png" class="author__avatar" alt="xHR"
         itemprop="image"></center>
     
   </div>
@@ -432,10 +509,10 @@
 
 <h3 id="частина-ii---резервне-копіювання-nand">Частина II - Резервне копіювання NAND</h3>
 
-<details class="spoiler" id="spoiler-011e270b">
+<details class="spoiler" id="spoiler-7058402f">
   <summary>Спосіб I - За допомогою hekate (рекомендовано)</summary>
   <div class="spoiler-content">
-    <details class="spoiler" id="spoiler-433c48c4">
+    <details class="spoiler" id="spoiler-1a07c17a">
   <summary>Частина I - робимо дамп внутрішньої пам'яті приставки (NAND)</summary>
   <div class="spoiler-content">
     <p class="notice--info">Цей спосіб вимагає карти пам’яті з не менш ніж 32-ма Гб вільного місця, якщо OLED - 64Гб. Якщо у вас немає такої, але є карта меншого розміру, бекап робитиметься частинами. Після заповнення поточного обсягу на карті на екрані буде виведена інформація про те, що вам необхідно перенести папку backup на ПК, потім повернути карту в консоль і продовжити створення резервної копії.</p>
@@ -487,7 +564,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Частина I - робимо дамп внутрішньої пам'яті приставки (NAND) <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-c9b65114">
+<details class="spoiler" id="spoiler-7a0c7fd4">
   <summary>Частина II - робимо дамп завантажувальних розділів (BOOT0/BOOT1)</summary>
   <div class="spoiler-content">
     <ol>
@@ -527,7 +604,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб I - За допомогою hekate (рекомендовано) <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-ee56ede8">
+<details class="spoiler" id="spoiler-c0051e08">
   <summary>Спосіб II - За допомогою ПК</summary>
   <div class="spoiler-content">
     <h3 id="дамп-nand">Дамп NAND</h3>
@@ -573,7 +650,7 @@
 
 <p><strong>Виберіть вашу операційну систему:</strong></p>
 
-<details class="spoiler" id="spoiler-82ab5c57">
+<details class="spoiler" id="spoiler-26b946ac">
   <summary>Windows</summary>
   <div class="spoiler-content">
     <ol>
@@ -599,7 +676,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Windows <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-17396172">
+<details class="spoiler" id="spoiler-b4dca0cf">
   <summary>macOS</summary>
   <div class="spoiler-content">
     <ol>
@@ -630,7 +707,7 @@
 
 <h3 id="частина-iii---копіювання-резервної-копії-на-пк">Частина III - Копіювання резервної копії на ПК</h3>
 
-<details class="spoiler" id="spoiler-d82a1a6a">
+<details class="spoiler" id="spoiler-43d7018b">
   <summary>Інструкція</summary>
   <div class="spoiler-content">
     <p class="notice--warning">Якщо ви збираєтеся робити EmuNAND, то саме копіюйте файли, а не переміщуйте, оскільки далі ми зможемо зробити з цього бекапу EmuNAND</p>
@@ -664,7 +741,7 @@
 
 <p class="notice--danger">Ніколи не відновлюйте чужий бекап на свою консоль! Відновивши чужий бекап, ви отримаєте брик. Якщо у вас при цьому немає власного бекапу, то брик буде невідновний простими способами.</p>
 
-<details class="spoiler" id="spoiler-e64a7305">
+<details class="spoiler" id="spoiler-6681cf6e">
   <summary>Спосіб I - Відновлення через hekate</summary>
   <div class="spoiler-content">
     <ol>
@@ -712,7 +789,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб I - Відновлення через hekate <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-7f822183">
+<details class="spoiler" id="spoiler-c6f83721">
   <summary>Спосіб II - Відновлення через ПК</summary>
   <div class="spoiler-content">
     <p class="notice--warning">Цей спосіб працює тільки на приставках першої ревізії - <span class="tooltip_container">
@@ -733,7 +810,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб II - Відновлення через ПК <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-bb56e7ed">
+<details class="spoiler" id="spoiler-d58663a4">
   <summary>Вирішення проблем</summary>
   <div class="spoiler-content">
     <ul>
@@ -839,7 +916,7 @@
     
   
     
-    <script src="/assets/js/spoiler-anim.js"></script>
+    <script src="https://switch.customfw.xyz/assets/js/spoiler-anim.js"></script>
   
 
 
