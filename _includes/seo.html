@@ -1,135 +1,228 @@
 <!-- begin SEO -->
-{% if site.url %}
-  {% assign seo_url = site.url | append: site.baseurl %}
+{% assign seo_url = site.url | append: site.baseurl %}
+{% assign canonical_url = page.url | absolute_url | replace: "/index.html", "/" %}
+
+{% assign raw_title = page.seo_title | default: page.title | default: site.title %}
+{% if page.url == "/" %}
+  {% assign seo_title = raw_title %}
+{% else %}
+  {% assign seo_title = raw_title | append: " " | append: site.title_separator | append: " " | append: site.title %}
 {% endif %}
-{% assign seo_url = seo_url | default: site.github.url %}
+{% assign seo_title = seo_title | markdownify | strip_html | strip_newlines | strip | escape_once %}
 
-{% if page.title %}
-  {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title %}
-{% endif %}
-
-{% if seo_title %}
-  {% assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once %}
-{% endif %}
-
-{% if site.url %}
-  {% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}
-{% endif %}
-
-<title>{{ seo_title | default: site.title }}{% if paginator %}{% unless paginator.page == 1 %} {{ site.title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title>
-
-{% assign seo_description = page.description | default: page.excerpt | default: site.description %}
-{% if seo_description %}
-  {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
+{% assign raw_description = page.description | default: page.excerpt | default: site.description %}
+{% assign seo_description = raw_description | markdownify | strip_html | strip_newlines | strip %}
+{% if seo_description == "" %}
+  {% assign seo_description = site.description | markdownify | strip_html | strip_newlines | strip %}
 {% endif %}
 
-<meta name="description" content="{{ seo_description }}">
-
-{% assign seo_author = page.author | default: page.author[0] | default: site.author.name %}
-{% if seo_author %}
-  {% if seo_author.twitter %}
-    {% assign seo_author_twitter = seo_author.twitter %}
-  {% else %}
-    {% if site.data.authors and site.data.authors[seo_author] %}
-      {% assign seo_author_twitter = site.data.authors[seo_author].twitter  %}
-    {% else %}
-      {% assign seo_author_twitter = seo_author  %}
-    {% endif %}
-  {% endif %}
-  {% assign seo_author_twitter = seo_author_twitter | replace: "@", "" %}
+{% assign seo_author = page.author | default: site.author.name | default: site.name %}
+{% assign seo_image = page.og_image | default: page.header.image | default: page.header.overlay_image | default: page.header.teaser | default: site.og_image | default: site.logo %}
+{% assign page_language = page.lang | default: site.locale | default: "uk-UA" %}
+{% assign page_language_short = page_language | slice: 0,2 %}
+{% assign robots_meta = page.robots | default: "index, follow, max-image-preview:large" %}
+{% if page.noindex or page.sitemap == false %}
+  {% assign robots_meta = "noindex, follow" %}
 {% endif %}
 
-<meta name="author" content="{{ seo_author }}">
+<title>{{ seo_title }}{% if paginator %}{% unless paginator.page == 1 %} {{ site.title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title>
+<meta name="description" content="{{ seo_description | escape_once }}">
+<meta name="robots" content="{{ robots_meta }}">
+<meta name="author" content="{{ seo_author | escape_once }}">
 
-<meta property="og:locale" content="{{ site.locale | replace: "-", "_" | default: "en_US" }}">
-<meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
+<link rel="canonical" href="{{ canonical_url }}">
+<link rel="alternate" hreflang="{{ page_language_short }}" href="{{ canonical_url }}">
+<link rel="alternate" hreflang="x-default" href="{{ canonical_url }}">
 
-{% if seo_url %}
-  <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
-  <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
-{% endif %}
+<meta property="og:locale" content="{{ site.locale | replace: "-", "_" | default: "uk_UA" }}">
+<meta property="og:site_name" content="{{ site.title | escape_once }}">
+<meta property="og:title" content="{{ raw_title | markdownify | strip_html | strip_newlines | strip | escape_once }}">
+<meta property="og:description" content="{{ seo_description | escape_once }}">
+<meta property="og:url" content="{{ canonical_url }}">
+<meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
 
-{% if page.excerpt %}
-  <meta property="og:description" content="{{ seo_description }}">
-{% endif %}
-
-{% if site.twitter.username %}
-  <meta name="twitter:site" content="@{{ site.twitter.username | replace: "@", "" }}">
-  <meta name="twitter:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
-  <meta name="twitter:description" content="{{ seo_description }}">
-  <meta name="twitter:url" content="{{ canonical_url }}">
-
-  {% if page.header.image %}
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | absolute_url }}{% endif %}">
-  {% else %}
-    <meta name="twitter:card" content="summary">
-    {% if page.header.teaser %}
-      <meta name="twitter:image" content="{% if page.header.teaser contains "://" %}{{ page.header.teaser }}{% else %}{{ page.header.teaser | absolute_url }}{% endif %}">
-    {% elsif site.og_image %}
-      <meta name="twitter:image" content="{{ site.og_image | absolute_url }}">
-    {% endif %}
-  {% endif %}
-
-  {% if seo_author_twitter %}
-    <meta name="twitter:creator" content="@{{ seo_author_twitter }}">
-  {% endif %}
-{% endif %}
-
-{% if site.facebook %}
-  {% if site.facebook.publisher %}
-    <meta property="article:publisher" content="{{ site.facebook.publisher }}">
-  {% endif %}
-
-  {% if site.facebook.app_id %}
-    <meta property="fb:app_id" content="{{ site.facebook.app_id }}">
-  {% endif %}
-{% endif %}
-
-{% if page.header.image %}
-  <meta property="og:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | absolute_url }}{% endif %}">
-{% elsif page.header.overlay_image %}
-  <meta property="og:image" content="{% if page.header.overlay_image contains "://" %}{{ page.header.overlay_image }}{% else %}{{ page.header.overlay_image | absolute_url }}{% endif %}">
-{% elsif page.header.teaser %}
-  <meta property="og:image" content="{% if page.header.teaser contains "://" %}{{ page.header.teaser }}{% else %}{{ page.header.teaser | absolute_url }}{% endif %}">
-{% elsif site.og_image %}
-  <meta property="og:image" content="{% if site.og_image contains "://" %}{{ site.og_image }}{% else %}{{ site.og_image | absolute_url }}{% endif %}">
+{% if seo_image %}
+  <meta property="og:image" content="{% if seo_image contains "://" %}{{ seo_image }}{% else %}{{ seo_image | absolute_url }}{% endif %}">
+  <meta property="og:image:alt" content="{{ raw_title | markdownify | strip_html | strip_newlines | strip | escape_once }}">
 {% endif %}
 
 {% if page.date %}
-  <meta property="og:type" content="article">
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{% endif %}
+{% if page.last_modified_at %}
+  <meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">
+{% endif %}
+
+<meta name="twitter:card" content="{% if seo_image %}summary_large_image{% else %}summary{% endif %}">
+<meta name="twitter:title" content="{{ raw_title | markdownify | strip_html | strip_newlines | strip | escape_once }}">
+<meta name="twitter:description" content="{{ seo_description | escape_once }}">
+<meta name="twitter:url" content="{{ canonical_url }}">
+{% if seo_image %}
+  <meta name="twitter:image" content="{% if seo_image contains "://" %}{{ seo_image }}{% else %}{{ seo_image | absolute_url }}{% endif %}">
+  <meta name="twitter:image:alt" content="{{ raw_title | markdownify | strip_html | strip_newlines | strip | escape_once }}">
+{% endif %}
+{% if site.twitter.username %}
+  <meta name="twitter:site" content="@{{ site.twitter.username | replace: "@", "" }}">
 {% endif %}
 
 {% if paginator.previous_page %}
-  <link rel="prev" href="{{ paginator.previous_page_path | prepend: seo_url }}">
+  <link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}">
 {% endif %}
 {% if paginator.next_page %}
-  <link rel="next" href="{{ paginator.next_page_path | prepend: seo_url }}">
+  <link rel="next" href="{{ paginator.next_page_path | absolute_url }}">
 {% endif %}
 
-{% if site.og_image %}
-  <script type="application/ld+json">
+{% assign identity_type = site.schema.type | default: site.social.type | default: "Person" %}
+{% assign identity_name = site.schema.name | default: site.social.name | default: site.name | default: site.title %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ identity_type }}",
+  "@id": {{ seo_url | append: "#identity" | jsonify }},
+  "name": {{ identity_name | jsonify }},
+  "url": {{ seo_url | jsonify }}{% if site.logo %},
+  "logo": {{ site.logo | absolute_url | jsonify }}{% endif %}{% if site.social.links %},
+  "sameAs": {{ site.social.links | jsonify }}{% endif %}{% if identity_type == "LocalBusiness" and site.author.phone %},
+  "telephone": {{ site.author.phone | jsonify }}{% endif %}{% if identity_type == "LocalBusiness" and site.author.email %},
+  "email": {{ site.author.email | jsonify }}{% endif %}{% if identity_type == "LocalBusiness" and site.author.location %},
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": {{ site.author.location | jsonify }},
+    "addressCountry": "UA"
+  }{% endif %}
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": {{ seo_url | append: "#website" | jsonify }},
+  "url": {{ seo_url | jsonify }},
+  "name": {{ site.title | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "inLanguage": {{ site.locale | jsonify }},
+  "publisher": {
+    "@id": {{ seo_url | append: "#identity" | jsonify }}
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": {{ canonical_url | append: "#webpage" | jsonify }},
+  "url": {{ canonical_url | jsonify }},
+  "name": {{ raw_title | markdownify | strip_html | strip_newlines | strip | jsonify }},
+  "description": {{ seo_description | jsonify }},
+  "isPartOf": {
+    "@id": {{ seo_url | append: "#website" | jsonify }}
+  },
+  "inLanguage": {{ page_language | jsonify }},
+  "breadcrumb": {
+    "@id": {{ canonical_url | append: "#breadcrumb" | jsonify }}
+  }{% if page.date %},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }}{% endif %}{% if page.last_modified_at %},
+  "dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }}{% elsif site.time %},
+  "dateModified": {{ site.time | date_to_xmlschema | jsonify }}{% endif %}{% if seo_image %},
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": {% if seo_image contains "://" %}{{ seo_image | jsonify }}{% else %}{{ seo_image | absolute_url | jsonify }}{% endif %}
+  }{% endif %}
+}
+</script>
+
+{% if page.url != "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": {{ canonical_url | append: "#breadcrumb" | jsonify }},
+  "itemListElement": [
     {
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "url": {{ seo_url | jsonify }},
-      "logo": {{ site.og_image | absolute_url | jsonify }}
+      "@type": "ListItem",
+      "position": 1,
+      "name": {{ site.data.ui-text[site.locale].breadcrumb_home_label | default: "Головна" | jsonify }},
+      "item": {{ "/" | absolute_url | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ raw_title | markdownify | strip_html | strip_newlines | strip | jsonify }},
+      "item": {{ canonical_url | jsonify }}
     }
-  </script>
+  ]
+}
+</script>
 {% endif %}
 
-{% if site.social %}
-  <script type="application/ld+json">
-    {
-      "@context" : "http://schema.org",
-      "@type" : "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
-      "name" : "{{ site.social.name | default: site.name }}",
-      "url" : {{ seo_url | jsonify }},
-      "sameAs" : {{ site.social.links | jsonify }}
-    }
-  </script>
+{% if page.layout == "shop" and page.price %}
+  {% assign price_text = page.price | replace: "грн", "" | replace: "ГРН", "" | replace: " ", "" | replace: "Від", "" | replace: "від", "" | strip %}
+  {% assign price_parts = price_text | split: "-" %}
+  {% assign low_price = price_parts[0] | strip %}
+  {% assign high_price = price_parts[1] | strip %}
+  {% assign offer_schema_type = "Offer" %}
+  {% if high_price and high_price != "" %}
+    {% assign offer_schema_type = "AggregateOffer" %}
+  {% endif %}
+  {% assign shop_schema_type = "Product" %}
+  {% if page.permalink == "chip" or page.permalink == "repair" %}
+    {% assign shop_schema_type = "Service" %}
+  {% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ shop_schema_type }}",
+  "@id": {{ canonical_url | append: "#offer" | jsonify }},
+  "name": {{ raw_title | markdownify | strip_html | strip_newlines | strip | jsonify }},
+  "description": {{ seo_description | jsonify }},
+  {% if shop_schema_type == "Product" %}
+  "brand": {
+    "@type": "Brand",
+    "name": "Nintendo"
+  },
+  "category": "Nintendo Switch",
+  {% else %}
+  "provider": {
+    "@id": {{ seo_url | append: "#identity" | jsonify }}
+  },
+  "areaServed": "Україна",
+  {% endif %}
+  "url": {{ canonical_url | jsonify }},
+  {% if page.carousels %}
+    {% for carousel in page.carousels limit:1 %}
+      {% if carousel.images %}
+  "image": [
+        {% for item in carousel.images %}
+    {{ item.image | absolute_url | jsonify }}{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+  ],
+      {% endif %}
+    {% endfor %}
+  {% elsif seo_image %}
+  "image": [
+    {% if seo_image contains "://" %}{{ seo_image | jsonify }}{% else %}{{ seo_image | absolute_url | jsonify }}{% endif %}
+  ],
+  {% endif %}
+  "offers": {
+    "@type": "{{ offer_schema_type }}",
+    "priceCurrency": "UAH",
+    "priceValidUntil": "{{ site.time | date: '%Y' | plus: 1 }}-12-31",
+    {% if offer_schema_type == "AggregateOffer" %}
+    "lowPrice": {{ low_price | jsonify }},
+    "highPrice": {{ high_price | jsonify }},
+    "offerCount": "1",
+    {% else %}
+    "price": {{ low_price | jsonify }},
+    {% endif %}
+    "availability": "https://schema.org/InStock",
+    "url": {{ canonical_url | jsonify }}{% if shop_schema_type == "Product" and page.title contains "вживана" or page.title contains "без комплекта" %},
+    "itemCondition": "https://schema.org/UsedCondition"{% elsif shop_schema_type == "Product" and page.title contains "нова" %},
+    "itemCondition": "https://schema.org/NewCondition"{% endif %}
+  }
+}
+</script>
 {% endif %}
 
 {% if site.google_site_verification %}

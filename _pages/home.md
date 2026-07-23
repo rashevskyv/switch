@@ -4,11 +4,13 @@ redirect_from:
   - /uk/
   - /ru/
 permalink: /
-title: "Switch Hack Guide"
+title: "Прошивка Nintendo Switch: повний гайд"
+description: "Покроковий український гайд з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення."
 author_profile: true
 header:	
   overlay_color: "#5e616c"
   overlay_image: assets/images/switch/home-page-feature.jpg
+  image_description: "Покроковий гайд з прошивки Nintendo Switch"
   overlay_filter: 0.5
   caption:
 ---

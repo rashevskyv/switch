@@ -1,0 +1,33 @@
+---
+layout: null
+permalink: /sitemap.xml
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{ "/" | absolute_url | xml_escape }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <priority>1.0</priority>
+  </url>
+  {% assign sitemap_pages = site.pages | sort: "url" %}
+  {% for node in sitemap_pages %}
+    {% assign node_url = node.url | replace: "/index.html", "/" %}
+    {% unless node.sitemap == false or node_url == "/" or node_url contains "/404" or node_url contains "/assets/" or node_url contains ".css" or node_url contains ".map" or node_url contains ".txt" or node_url contains ".json" or node.layout == "redirect" %}
+  <url>
+    <loc>{{ node_url | absolute_url | xml_escape }}</loc>
+    <lastmod>{{ node.last_modified_at | default: site.time | date_to_xmlschema }}</lastmod>
+    <priority>0.7</priority>
+  </url>
+    {% endunless %}
+  {% endfor %}
+  {% for post in site.posts %}
+    {% unless post.sitemap == false %}
+  <url>
+    <loc>{{ post.url | absolute_url | xml_escape }}</loc>
+    <lastmod>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</lastmod>
+    <priority>0.6</priority>
+  </url>
+    {% endunless %}
+  {% endfor %}
+</urlset>

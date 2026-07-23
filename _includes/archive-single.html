@@ -20,7 +20,9 @@
           {% else %}
             "{{ teaser | absolute_url }}"
           {% endif %}
-          alt="">
+          alt="{{ post.header.teaser_alt | default: title | markdownify | strip_html | strip_newlines | escape_once }}"
+          loading="lazy"
+          decoding="async">
       </div>
     {% endif %}
     <h2 class="archive__item-title" itemprop="headline">

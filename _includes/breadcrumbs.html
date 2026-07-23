@@ -12,23 +12,29 @@
   {% assign crumb_path = site.category_archive.path %}
 {% endif %}
 
+{% assign crumbs = page.url | split: '/' %}
+{% assign crumbs_count = crumbs | size %}
+{% if crumbs_count > 1 and page.url != "/" %}
 <nav class="breadcrumbs">
-  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
-    {% assign crumbs = page.url | split: '/' %}
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
     {% assign i = 1 %}
     {% for crumb in crumbs offset: 1 %}
       {% if forloop.first %}
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
           <a href="{{ site.url }}{{ site.baseurl }}/" itemprop="item"><span itemprop="name">{{ site.data.ui-text[site.locale].breadcrumb_home_label | default: "Home" }}</span></a>
           <meta itemprop="position" content="{{ i }}" />
         </li>
         <span class="sep">{{ site.data.ui-text[site.locale].breadcrumb_separator | default: "/" }}</span>
       {% endif %}
       {% if forloop.last %}
-        <li class="current">{{ page.title }}</li>
+        {% assign i = i | plus: 1 %}
+        <li class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="{{ page.url | absolute_url }}" itemprop="item"><span itemprop="name">{{ page.title }}</span></a>
+          <meta itemprop="position" content="{{ i }}" />
+        </li>
       {% else %}
         {% assign i = i | plus: 1 %}
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
           <a href="{{ crumb | downcase | replace: '%20', '-' | prepend: path_type | prepend: crumb_path | absolute_url }}" itemprop="item"><span itemprop="name">{{ crumb | replace: '-', ' ' | replace: '%20', ' ' | capitalize }}</span></a>
           <meta itemprop="position" content="{{ i }}" />
         </li>
@@ -37,3 +43,4 @@
     {% endfor %}
   </ol>
 </nav>
+{% endif %}

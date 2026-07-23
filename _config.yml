@@ -2,11 +2,11 @@ minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint"
 
 # Site Settings
 locale                   : "uk-UA"  # Змінено на українську як основну мову
-title                    : "Взлом Switch"
+title                    : "Прошивка Nintendo Switch"
 title_separator          : "-"
 name                     : "xHR"
-description              : "Повне керівництво з прошивки Nintendo Switch"  # Перекладено на українську
-url                      : "" # змінено на відносний URL
+description              : "Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення."  # Перекладено на українську
+url                      : "https://switch.customfw.xyz"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "rashevskyv/switch" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -58,13 +58,21 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "/assets/images/switch/home-page-feature.jpg" # Open Graph/Twitter default site image
+logo                     : "/assets/images/bio-photo.png"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : Person # Person or Organization (defaults to Person)
+  name                   : "xHR"
   links: # An array of links to social media profiles
+    - "https://github.com/rashevskyv"
+    - "https://t.me/xhrxhrxhr"
+    - "https://www.instagram.com/rashevsky.v"
+
+schema:
+  type                   : Person
+  name                   : "xHR"
 
 # Analytics
 analytics:
