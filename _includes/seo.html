@@ -119,10 +119,10 @@
   "isPartOf": {
     "@id": {{ seo_url | append: "#website" | jsonify }}
   },
-  "inLanguage": {{ page_language | jsonify }},
+  "inLanguage": {{ page_language | jsonify }}{% if page.url != "/" %},
   "breadcrumb": {
     "@id": {{ canonical_url | append: "#breadcrumb" | jsonify }}
-  }{% if page.date %},
+  }{% endif %}{% if page.date %},
   "datePublished": {{ page.date | date_to_xmlschema | jsonify }}{% endif %}{% if page.last_modified_at %},
   "dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }}{% elsif site.time %},
   "dateModified": {{ site.time | date_to_xmlschema | jsonify }}{% endif %}{% if seo_image %},
