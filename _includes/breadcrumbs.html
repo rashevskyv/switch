@@ -12,9 +12,10 @@
   {% assign crumb_path = site.category_archive.path %}
 {% endif %}
 
-{% assign crumbs = page.url | split: '/' %}
+{% assign clean_crumb_url = page.url | replace: "/index.html", "/" %}
+{% assign crumbs = clean_crumb_url | split: '/' %}
 {% assign crumbs_count = crumbs | size %}
-{% if crumbs_count > 1 and page.url != "/" %}
+{% if crumbs_count > 1 and clean_crumb_url != "/" and clean_crumb_url != "" %}
 <nav class="breadcrumbs">
   <ol itemscope itemtype="https://schema.org/BreadcrumbList">
     {% assign i = 1 %}

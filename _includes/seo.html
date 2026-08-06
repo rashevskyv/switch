@@ -119,7 +119,13 @@
   "isPartOf": {
     "@id": {{ seo_url | append: "#website" | jsonify }}
   },
-  "inLanguage": {{ page_language | jsonify }}{% if page.url != "/" %},
+{% assign clean_url = page.url | replace: "/index.html", "/" %}
+{% assign is_not_home = true %}
+{% if clean_url == "/" or clean_url == "" %}
+  {% assign is_not_home = false %}
+{% endif %}
+
+  "inLanguage": {{ page_language | jsonify }}{% if is_not_home %},
   "breadcrumb": {
     "@id": {{ canonical_url | append: "#breadcrumb" | jsonify }}
   }{% endif %}{% if page.date %},
@@ -133,7 +139,9 @@
 }
 </script>
 
-{% if page.url != "/" %}
+{% if is_not_home %}
+{% assign breadcrumb_item_title = raw_title | default: page.title | default: site.title | markdownify | strip_html | strip_newlines | strip %}
+{% if breadcrumb_item_title == "" %}{% assign breadcrumb_item_title = site.title | default: "Сторінка" %}{% endif %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -149,7 +157,7 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": {{ raw_title | markdownify | strip_html | strip_newlines | strip | jsonify }},
+      "name": {{ breadcrumb_item_title | jsonify }},
       "item": {{ canonical_url | jsonify }}
     }
   ]
