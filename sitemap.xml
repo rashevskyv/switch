@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://switch.customfw.xyz/</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>1.0</priority>
   </url>
   
@@ -17,7 +17,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/addons</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -38,7 +38,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/autorcm</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -47,7 +47,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/backup-nand</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -56,7 +56,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/backup-saves</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -65,7 +65,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/ban</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -74,7 +74,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/block-update</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -83,7 +83,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/buying-used</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -92,7 +92,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/caffeine</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -101,7 +101,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/cfw</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -110,7 +110,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/cheats</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -119,25 +119,43 @@
     
   <url>
     <loc>https://switch.customfw.xyz/chiaki</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
+    
+  
+    
+    
+  <url>
+    <loc>https://switch.customfw.xyz/donations</loc>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+    
+  
+    
     
   
     
     
   <url>
     <loc>https://switch.customfw.xyz/downgrade_fw</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
+    
+  
+    
+    
+  
+    
     
   
     
     
   <url>
     <loc>https://switch.customfw.xyz/downgrade_fw_old</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -145,8 +163,20 @@
     
     
   <url>
+    <loc>https://switch.customfw.xyz/emuiibo</loc>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+    
+  
+    
+    
+  
+    
+    
+  <url>
     <loc>https://switch.customfw.xyz/emunand</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -155,7 +185,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/faq</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -164,7 +194,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/ftp</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -173,7 +203,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/fusee-gelee</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -182,7 +212,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/games</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -191,7 +221,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/get-started</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -200,7 +230,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/glossary</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -209,7 +239,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/hbl</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -218,7 +248,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/kefir</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -227,9 +257,21 @@
     
   <url>
     <loc>https://switch.customfw.xyz/lanplay</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
     
   
     
@@ -242,7 +284,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/link-account</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -251,7 +293,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/longread</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -260,7 +302,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/migrate</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -269,7 +311,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/modchip</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -278,7 +320,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/preparation-caffeine</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -287,7 +329,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/preparation-fuse</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -296,7 +338,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/preparation-modchip</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -305,7 +347,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/preparation-white</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -314,9 +356,60 @@
     
   <url>
     <loc>https://switch.customfw.xyz/r4</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
+    
+  
+    
+    
+  <url>
+    <loc>https://switch.customfw.xyz/rcmloader</loc>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
     
   
     
@@ -716,7 +809,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/sd-macos</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -725,7 +818,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/site-navigation</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -737,7 +830,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/system-wipe</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -746,7 +839,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/tesla-menu</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -755,7 +848,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/tinfoil</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -764,9 +857,48 @@
     
   <url>
     <loc>https://switch.customfw.xyz/troubleshooting</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
     
   
     
@@ -1163,7 +1295,7 @@
     
   <url>
     <loc>https://switch.customfw.xyz/update-fw</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
@@ -1173,9 +1305,15 @@
   
     
     
+  
+    
+    
+  
+    
+    
   <url>
     <loc>https://switch.customfw.xyz/usage</loc>
-    <lastmod>2026-08-06T11:29:38+03:00</lastmod>
+    <lastmod>2026-08-20T13:27:03+03:00</lastmod>
     <priority>0.7</priority>
   </url>
     
