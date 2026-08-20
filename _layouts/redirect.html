@@ -2,29 +2,31 @@
 layout: null
 ---
 <!DOCTYPE html>
-<html>
-
+<html lang="uk">
 <head>
   <meta charset="utf-8">
-  <title>Redirecting...</title>
-  {% assign target = page.redirect_to | replace: '/ru/', '/' | replace: '/uk/', '/' %}
-  <link rel="canonical" href="{{ target }}">
-  <meta http-equiv="refresh" content="0; url={{ target }}">
+  <meta name="robots" content="noindex, follow">
+  <title>Перенаправлення...</title>
+  {% assign raw_target = page.redirect.to | default: page.redirect_to | default: page.redirect | default: page.target %}
+  {% assign target = raw_target | replace: '/ru/', '/' | replace: '/uk/', '/' %}
+  {% if target contains '://' %}
+    {% assign absolute_target = target %}
+  {% else %}
+    {% unless target contains '/' and target | slice: 0, 1 == '/' %}
+      {% assign target = '/' | append: target %}
+    {% endunless %}
+    {% assign absolute_target = site.url | append: target %}
+  {% endif %}
+  <link rel="canonical" href="{{ absolute_target }}">
+  <meta http-equiv="refresh" content="0; url={{ absolute_target }}">
 </head>
-
 <body>
-  <h1>Redirecting...</h1>
-  <p>Page has moved. If you are not redirected automatically,
-    <a href="{{ target }}">click here</a>.
+  <h1>Перенаправлення...</h1>
+  <p>Сторінка переїхала. Якщо ви не були перенаправлені автоматично, 
+    <a href="{{ absolute_target }}">натисніть тут</a>.
   </p>
   <script>
-    var path = window.location.pathname;
-    if (path.indexOf('/ru/') !== -1 || path.indexOf('/uk/') !== -1) {
-      window.location.replace(path.replace(/\/(ru|uk)\//, '/') + window.location.search + window.location.hash);
-    } else {
-      window.location.replace("{{ target }}");
-    }
+    window.location.replace("{{ absolute_target }}");
   </script>
 </body>
-
 </html>

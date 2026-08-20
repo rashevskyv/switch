@@ -9,11 +9,12 @@ redirect_from:
 lang: uk
 permalink: /update-to-latest
 title: Безпечне оновлення прошивки 
-author_profile: true
-redirect_to: /update-fw.html
+layout: redirect
+sitemap: false
+redirect_to: /update-fw
 ---
 
-Якщо вас не перенаправило автоматично, натисніть [сюди](/update-fw.html).
+Якщо вас не перенаправило автоматично, натисніть [сюди](/update-fw).
 
 
 

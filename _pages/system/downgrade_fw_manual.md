@@ -1,5 +1,9 @@
 ---
 redirect_from:
+  - /downgrade_fw_manual
+  - /downgrade_fw_manual.html
+  - /uk/downgrade_fw_manual
+  - /ru/downgrade_fw_manual
   - /uk/downgrade_fw_old.html
   - /ru/downgrade_fw_old.html
   - /ru/downgrade_fw_old

@@ -1,8 +1,10 @@
-```
 ---
 redirect_from:
   - /uk/emuiibo.html
   - /ru/emuiibo.html
+  - /uk/emuiibo
+  - /ru/emuiibo
+  - /emuiibo.html
 lang: uk
 permalink: /emuiibo
 title: Емуляція Amiibo за допомогою модуля emuiibo
@@ -53,7 +55,7 @@ https://github.com/XorTroll/emuiibo/
 * Дамп Amiibo має бути у форматі `.bin`, і важити 540 байт (може трохи більше)
 	* В архіві в Discord всі дампи коректні 
 * Дампи Amiibo мають зберігатися виключно в папці `emuiibo` в корені SD карти-->
-```
+
 
 
 

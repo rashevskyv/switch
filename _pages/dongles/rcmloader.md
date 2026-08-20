@@ -1,8 +1,10 @@
-```
 ---
 redirect_from:
   - /uk/rcmloader.html
   - /ru/rcmloader.html
+  - /uk/rcmloader
+  - /ru/rcmloader
+  - /rcmloader.html
 lang: uk
 permalink: /rcmloader
 title: Інструкція з прошивки донгла RCMLoader
@@ -62,9 +64,3 @@ ___
 
 ## [Запуск будь-якого пейлоада через донгл](/fusee-gelee#запуск-через-донгл)
 {: .notice--success}
-```
-
-
-
-
-

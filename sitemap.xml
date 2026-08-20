@@ -13,7 +13,7 @@ sitemap: false
   {% assign sitemap_pages = site.pages | sort: "url" %}
   {% for node in sitemap_pages %}
     {% assign node_url = node.url | replace: "/index.html", "/" %}
-    {% unless node.sitemap == false or node_url == "/" or node_url contains "/404" or node_url contains "/assets/" or node_url contains ".css" or node_url contains ".map" or node_url contains ".txt" or node_url contains ".json" or node.layout == "redirect" %}
+    {% unless node.sitemap == false or node_url == "/" or node_url contains "/404" or node_url contains "/assets/" or node_url contains ".css" or node_url contains ".map" or node_url contains ".txt" or node_url contains ".json" or node.layout == "redirect" or node.redirect_to != nil or node.redirect != nil or node.url contains "/redir/" %}
   <url>
     <loc>{{ node_url | absolute_url | xml_escape }}</loc>
     <lastmod>{{ node.last_modified_at | default: site.time | date_to_xmlschema }}</lastmod>

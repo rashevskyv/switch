@@ -6,6 +6,12 @@ redirect_from:
   - /ru/update-fw/
   - /uk/update-fw
   - /uk/update-fw/
+  - /update-to-latest
+  - /update-to-latest.html
+  - /uk/update-to-latest
+  - /uk/update-to-latest.html
+  - /ru/update-to-latest
+  - /ru/update-to-latest.html
 lang: uk
 permalink: /update-fw
 title: Безпечне оновлення прошивки 

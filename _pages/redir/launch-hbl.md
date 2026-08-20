@@ -9,11 +9,12 @@ redirect_from:
 lang: uk
 permalink: /launch-hbl
 title: Запуск Homebrew Launcher
-author_profile: true
-redirect_to: /hbl.html
+layout: redirect
+sitemap: false
+redirect_to: /hbl
 ---
 
-Якщо вас не перенаправило автоматично, натисніть [сюди](/hbl.html).
+Якщо вас не перенаправило автоматично, натисніть [сюди](/hbl).
 
 
 

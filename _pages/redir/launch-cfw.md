@@ -9,11 +9,12 @@ redirect_from:
 lang: uk
 permalink: /launch-cfw
 title: Кастомна прошивка
-author_profile: true
-redirect_to: /cfw.html
+layout: redirect
+sitemap: false
+redirect_to: /cfw
 ---
 
-Якщо вас не перенаправило автоматично, натисніть [сюди](/cfw.html).
+Якщо вас не перенаправило автоматично, натисніть [сюди](/cfw).
 
 
 
