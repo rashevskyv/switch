@@ -14,14 +14,18 @@ redirect_from:
   - /ru/launch-hbl.html
 lang: uk
 permalink: /hbl
-title: Запуск Homebrew Launcher
+title: HBMenu / Homebrew Launcher на Nintendo Switch
+seo_title: "HBMenu, Homebrew Launcher і Sphaira на прошитому Switch"
+description: "Як відкрити HBMenu (Homebrew Launcher, HBL) на Nintendo Switch у Kefir: Альбоми, утримання R на грі, Sphaira замість класичного hbmenu."
 author_profile: true
 ---
 
 {% include toc title="Розділи" %}
 {% include notices %}	
 
-Homebrew Launcher (hbl) - середовище для запуску саморобних додатків для Switch. Запуск здійснюється через змінений додаток "**Альбоми**" або через програму-форвардер. В сучасному кефірі замість класичного hbl використовується програма [sphaira](https://github.com/ITotalJustice/sphaira/releases/){:target="_blank"}, яка має додаткові функції, як-то файловий менеджер, магазин додатків і тем, можливість створення форвардерів для додатків, підтримку запусків ромів через емулятори, та інш.
+**HBMenu** (також **hbmenu**, **Homebrew Menu**) — це меню саморобних додатків на прошитому Nintendo Switch. Класичний **Homebrew Launcher (HBL)** у сучасному Kefir замінено на [Sphaira](https://github.com/ITotalJustice/sphaira/releases/){:target="_blank"}: ті самі `.nro` з папки `/switch/`, плюс файловий менеджер, теми й форвардери.
+
+Запуск: змінений додаток **Альбоми** або гра з утриманим {% include /inc/btn.txt btn="R" %} (режим тайтлу). Форвардер теж підходить.
 
 Існують два режими роботи Homebrew, запущених через Homebrew launcher (HBL): режим *апплету* та режим *тайтлу*. У першому випадку додатку доступно лише 400Мб з усієї пам'яті консолі, у другому - вся пам'ять (4Gb). Також додатки у режимі апплету можуть відкриватися паралельно з іграми, а додатки у режимі тайтлу запускаються як гра. 
 

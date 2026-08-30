@@ -7,17 +7,32 @@ redirect_from:
   - /uk/kefir
   - /uk/kefir/
 lang: uk
-title: Kefir
+title: Kefir — скачати збірку для Nintendo Switch
 permalink: /kefir
-seo_title: "Kefir — збірка Atmosphere для Nintendo Switch від xHR"
-description: "Що таке збірка Kefir для Nintendo Switch: склад, встановлення, відмінності від чистої Atmosphere. Автор xHR, гайд switch.customfw.xyz."
+seo_title: "Скачати Kefir для Nintendo Switch — збірка Atmosphere від xHR"
+description: "Скачати Kefir (кефір) на Nintendo Switch: остання версія збірки Atmosphere від xHR, Kefir Updater, встановлення та оновлення. GitHub rashevskyv/kefir."
 author_profile: true
+faqs:
+  - q: "Де скачати Kefir для Nintendo Switch?"
+    a: "Офіційні релізи лише на GitHub автора: github.com/rashevskyv/kefir/releases/latest. Актуальна версія збірки вказана на цій сторінці."
+  - q: "Що таке Kefir Updater?"
+    a: "Homebrew у складі збірки. На консолі з інтернетом відкриваєте HBL → Kefir Updater → Оновити Kefir. Окремо качати updater не потрібно, якщо вже стоїть Kefir 529+."
+  - q: "Kefir — це прошивка?"
+    a: "Ні. Це збірка: форк Atmosphere (Kefirosphere), hekate, DBI, скрипти встановлення. Автор — xHR, гайд — switch.customfw.xyz."
 ---
 
 {% include toc title="Розділи" %}
 {% include notices %}	
 
-## [KEFIR {% include /inc/kefir/version %}](https://github.com/rashevskyv/kefir/releases){:target="_blank"} - скачати останню версію
+<p class="notice--success" style="font-size:1.05rem;">
+<strong>Скачати Kefir {% include /inc/kefir/version %}</strong> — офіційний реліз автора xHR:<br />
+<a class="btn btn--primary" href="https://github.com/rashevskyv/kefir/releases/latest" target="_blank" rel="noopener">Завантажити з GitHub</a>
+<a class="btn btn--success" href="https://github.com/rashevskyv/kefir-updater" target="_blank" rel="noopener">Kefir Updater</a>
+</p>
+
+Оновлення вже встановленої збірки на приставці: [HBL](/hbl) → **Kefir Updater** → **Оновити Kefir** (потрібен інтернет). Повний гайд з прошивки: [головна](/). Магазин і чіпування: [shop.customfw.xyz](https://shop.customfw.xyz/).
+
+## [KEFIR {% include /inc/kefir/version %}](https://github.com/rashevskyv/kefir/releases/latest){:target="_blank"} — остання версія
 
 ![kefir](/assets/images/switch/kefir.png){: width="70%"}
 {: .text-center}
@@ -52,7 +67,7 @@ lang: ukдампимо-ключі){:target="_blank"}
   * [TegraExplorer](https://github.com/rashevskyv/TegraExplorer/){:target="_blank"} - файловий менеджер для Switch у вигляді пейлоада. Аналог GodMode9 для 3DS
 5. **Встановлене Homebrew**
   * [DBI](https://github.com/rashevskyv/dbi){:target="_blank"} - програма для [встановлення ігор](/games){:target="_blank"} по USB або з карти пам'яті
-  * [{% include /inc/tinfoil.txt %}](http://tinfoil.io){:target="_blank"} - програма, що дозволяє [качати ігри](/tinfoil){:target="_blank"} для приставки прямо з мережі
+  * Tinfoil — застарілий спосіб тягнути ігри з мережі; публічних магазинів більше немає, ставте ігри через [DBI](/games){:target="_blank"} ([архівна сторінка Tinfoil](/tinfoil))
   * [Kefir Updater](https://github.com/rashevskyv/kefir-updater){:target="_blank"} - програма для оновлення kefir через інтернет
   * [Sphaira](https://github.com/ITotalJustice/sphaira/releases/){:target="_blank"} - середовище для запуску homebrew, скачування тем та додатків на switch, файловий менеджер 
   * [Daybreak](https://github.com/Atmosphere-NX/Atmosphere/tree/0.14.1/troposphere/daybreak){:target="_blank"} - програма для [безпечного оновлення](/update-fw){:target="_blank"} версії системного ПЗ приставки
@@ -185,6 +200,8 @@ lang: ukдампимо-ключі){:target="_blank"}
 * [Корисні інструкції з використання приставки](/usage){:target="_blank"}
 * [FAQ](/faq){:target="_blank"}
 * [Проблеми та їх рішення](/troubleshooting){:target="_blank"}
+
+{% include faq-list.html %}
 
 ### Розгін
 Для зміни статуса розгону перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include /inc/btn.txt btn="L" %} + {% include /inc/btn.txt btn="DOWN" %} + {% include /inc/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Overlock status`. **On** - розгін включено, **Off** - вимкнено. 

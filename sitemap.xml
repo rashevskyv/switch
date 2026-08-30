@@ -14,7 +14,7 @@ sitemap: false
   {% assign sitemap_pages = site.pages | sort: "url" %}
   {% for node in sitemap_pages %}
     {% assign node_url = node.url | replace: "/index.html", "/" %}
-    {% unless node.sitemap == false or node_url == "/" or node_url contains "/404" or node_url contains "/assets/" or node_url contains ".css" or node_url contains ".map" or node_url contains ".txt" or node_url contains ".json" or node.layout == "redirect" or node.redirect_to != nil or node.redirect != nil or node.url contains "/redir/" %}
+    {% unless node.sitemap == false or node_url == "/" or node_url contains "/404" or node_url contains "/assets/" or node_url contains ".css" or node_url contains ".map" or node_url contains ".txt" or node_url contains ".json" or node_url contains "/llms" or node_url contains "/robots" or node_url contains "/plan" or node_url contains "/task" or node_url contains "/walkthrough" or node.layout == "redirect" or node.redirect_to != nil or node.redirect != nil or node.url contains "/redir/" %}
     {% assign path_priority = "0.7" %}
     {% assign path_changefreq = "monthly" %}
     {% if node_url contains "/get-started" or node_url contains "/faq" or node_url contains "/kefir" or node_url contains "/emunand" or node_url contains "/games" or node_url contains "/troubleshooting" %}
