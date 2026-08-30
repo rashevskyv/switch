@@ -9,6 +9,7 @@ redirect_from:
 lang: uk
 permalink: /games
 title: Встановлення ігор, DLC, оновлень
+description: "Як встановлювати ігри, DLC і оновлення на прошитий Nintendo Switch: DBI, USB, SD-карта. Інструкція з гайду CustomFW."
 author_profile: true
 ---
 

@@ -9,6 +9,8 @@ redirect_from:
 lang: uk
 permalink: /get-started
 title: Існуючі методи зламу
+seo_title: "Як прошити Nintendo Switch — вибір методу: модчип, Fusée Gelée, Caffeine"
+description: "Вибір методу прошивки Nintendo Switch: модчип для всіх ревізій, Fusée Gelée для вразливих V1, Caffeine. Український гайд CustomFW."
 author_profile: true
 ---
 

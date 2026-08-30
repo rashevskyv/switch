@@ -2,10 +2,10 @@ minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint"
 
 # Site Settings
 locale                   : "uk-UA"  # Змінено на українську як основну мову
-title                    : "Прошивка Nintendo Switch"
-title_separator          : "-"
-name                     : "xHR"
-description              : "Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення."  # Перекладено на українську
+title                    : "Прошивка Nintendo Switch — повний український гайд"
+title_separator          : "—"
+name                     : "Switch CustomFW (xHR)"
+description              : "Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: підготовка SD-карти, EmuNAND, Homebrew, модчип, оновлення, захист від бану та відновлення."
 url                      : "https://switch.customfw.xyz"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "rashevskyv/switch" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -63,16 +63,23 @@ logo                     : "/assets/images/bio-photo.png"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : Person # Person or Organization (defaults to Person)
-  name                   : "xHR"
-  links: # An array of links to social media profiles
+  type                   : Organization
+  name                   : "Switch CustomFW"
+  legal_name             : "Прошивка Nintendo Switch (customfw.xyz)"
+  founder                : "xHR (розробник Kefir)"
+  links:
+    - "https://switch.customfw.xyz"
+    - "https://customfw.xyz"
+    - "https://shop.customfw.xyz"
     - "https://github.com/rashevskyv"
+    - "https://t.me/kefir_ukr"
     - "https://t.me/xhrxhrxhr"
     - "https://www.instagram.com/rashevsky.v"
 
 schema:
-  type                   : Person
-  name                   : "xHR"
+  type                   : Organization
+  name                   : "Switch CustomFW"
+  alternateName          : "Гайд з прошивки Nintendo Switch"
 
 # Analytics
 analytics:
@@ -87,7 +94,7 @@ author:
   avatar_right     : "/assets/images/bio-photo_right.png"
   location         : "Івано-Франківськ"
   email            : "rashevsky.v@gmail.com"
-  uri              :
+  uri              : "https://switch.customfw.xyz"
   bitbucket        :
   codepen          :
   dribbble         :

@@ -9,6 +9,7 @@ redirect_from:
 lang: uk
 title: "Мапа сайту"
 permalink: /site-navigation
+description: "Навігація гайду з прошивки Nintendo Switch: усі розділи switch.customfw.xyz одним списком."
 author_profile: true
 ---
 

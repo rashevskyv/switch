@@ -3,7 +3,7 @@ main:
   - title: "<b>Купити<br>прошиту</b>"
     url: https://shop.customfw.xyz/
   - title: "<i>Інші гайди</i>"
-    url: http://customfw.xyz
+    url: https://customfw.xyz
   - title: "<b>Пожертви</b>"
     url: https://customfw.xyz/donations
   - title: "Методи<br>злому"
@@ -27,7 +27,7 @@ main:
   - title: "Навігація по сайту"
     url: /site-navigation
   - title: "Зв'язатися з нами"
-    url: http://customfw.xyz/contacts
+    url: https://customfw.xyz/contacts
 
 # Додатки
 addons:

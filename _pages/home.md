@@ -5,8 +5,18 @@ redirect_from:
   - /ru/
 permalink: /
 title: "Прошивка Nintendo Switch: повний гайд"
-description: "Покроковий український гайд з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення."
+seo_title: "Прошивка Nintendo Switch українською — Kefir, EmuNAND, модчип, Homebrew"
+description: "Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: вибір методу, бекап NAND, EmuNAND, Homebrew, оновлення та захист від бану."
 author_profile: true
+faqs:
+  - q: "Чи можна прошити будь-який Nintendo Switch?"
+    a: "Так, прошиваються всі актуальні ревізії (V1, V2, Lite, OLED). Метод залежить від заліза: Fusée Gelée, Caffeine або модчип. Вибір методу — на сторінці /get-started."
+  - q: "Що таке Kefir?"
+    a: "Kefir — збірка автора цього гайду (xHR) на базі Atmosphere з потрібними програмами та скриптами встановлення. Репозиторій: github.com/rashevskyv/kefir."
+  - q: "Де замовити чіпування, якщо не хочу прошивати сам?"
+    a: "У автора гайду: Telegram @xhrxhrxhr або магазин shop.customfw.xyz (чіпування Picofly, продаж готових консолей, ремонт)."
+  - q: "Як зменшити ризик бану?"
+    a: "Користуйтеся неліцензійним ПЗ лише в EmuNAND, тримайте чистий SysNAND для офіційного онлайну, не заходьте в офіційні сервіси Nintendo з кастомної системи. Гарантії 100% немає."
 header:	
   overlay_color: "#5e616c"
   overlay_image: assets/images/switch/home-page-feature.jpg
@@ -86,6 +96,8 @@ ___
 
 <center><a href="/get-started" style="margin:20px auto; text-align:center; display:block; width:200px;" class="btn btn--short">Почнемо!!</a></center>
 {: .notice--success}
+
+{% include faq-list.html %}
 
 
 

@@ -8,16 +8,24 @@ sitemap: false
   <url>
     <loc>{{ "/" | absolute_url | xml_escape }}</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   {% assign sitemap_pages = site.pages | sort: "url" %}
   {% for node in sitemap_pages %}
     {% assign node_url = node.url | replace: "/index.html", "/" %}
     {% unless node.sitemap == false or node_url == "/" or node_url contains "/404" or node_url contains "/assets/" or node_url contains ".css" or node_url contains ".map" or node_url contains ".txt" or node_url contains ".json" or node.layout == "redirect" or node.redirect_to != nil or node.redirect != nil or node.url contains "/redir/" %}
+    {% assign path_priority = "0.7" %}
+    {% assign path_changefreq = "monthly" %}
+    {% if node_url contains "/get-started" or node_url contains "/faq" or node_url contains "/kefir" or node_url contains "/emunand" or node_url contains "/games" or node_url contains "/troubleshooting" %}
+      {% assign path_priority = "0.9" %}
+      {% assign path_changefreq = "weekly" %}
+    {% endif %}
   <url>
     <loc>{{ node_url | absolute_url | xml_escape }}</loc>
     <lastmod>{{ node.last_modified_at | default: site.time | date_to_xmlschema }}</lastmod>
-    <priority>0.7</priority>
+    <changefreq>{{ path_changefreq }}</changefreq>
+    <priority>{{ path_priority }}</priority>
   </url>
     {% endunless %}
   {% endfor %}

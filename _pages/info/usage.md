@@ -9,6 +9,7 @@ redirect_from:
 lang: uk
 title: Інструкція з використання вже прошитої приставки
 permalink: /usage
+description: "Як користуватися вже прошитим Nintendo Switch: оновлення Kefir, встановлення ігор, Dual-Boot, безпека."
 author_profile: true
 ---
 

@@ -9,6 +9,7 @@ redirect_from:
 lang: uk
 permalink: /backup-nand
 title: Резервне копіювання NAND
+description: "Як зробити бекап NAND Nintendo Switch перед прошивкою: обов'язковий крок гайду CustomFW для відновлення консолі."
 author_profile: true
 ---
 

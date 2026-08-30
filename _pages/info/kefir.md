@@ -9,6 +9,8 @@ redirect_from:
 lang: uk
 title: Kefir
 permalink: /kefir
+seo_title: "Kefir — збірка Atmosphere для Nintendo Switch від xHR"
+description: "Що таке збірка Kefir для Nintendo Switch: склад, встановлення, відмінності від чистої Atmosphere. Автор xHR, гайд switch.customfw.xyz."
 author_profile: true
 ---
 

@@ -2,6 +2,7 @@
 lang: uk
 permalink: /ban
 title: Про бани. Розгорнуто, детально, зрозуміло
+description: "Що таке бан Nintendo Switch після прошивки, як працює EmuNAND, Incognito і чому немає стовідсоткової гарантії."
 author_profile: true
 redirect_from:
   - /ru/ban

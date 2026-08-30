@@ -9,6 +9,7 @@ redirect_from:
 lang: uk
 permalink: /glossary
 title: "Глосарій термінів"
+description: "Глосарій термінів кастомної прошивки Nintendo Switch: EmuNAND, RCM, Atmosphere, Kefir, модчип, Homebrew, Incognito."
 author_profile: true
 ---
 

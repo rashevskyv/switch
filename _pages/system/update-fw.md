@@ -14,7 +14,8 @@ redirect_from:
   - /ru/update-to-latest.html
 lang: uk
 permalink: /update-fw
-title: Безпечне оновлення прошивки 
+title: Безпечне оновлення прошивки
+description: "Як безпечно оновити системне ПЗ і збірку Kefir на прошитому Nintendo Switch без цегли та бану." 
 author_profile: true
 ---
 

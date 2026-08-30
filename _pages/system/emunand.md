@@ -9,6 +9,7 @@ redirect_from:
 lang: uk
 permalink: /emunand
 title: Встановлення EmuNAND
+description: "Як створити EmuNAND на Nintendo Switch у гайді CustomFW: ізоляція кастомної системи від SysNAND і зменшення ризику бану."
 author_profile: true
 ---
 

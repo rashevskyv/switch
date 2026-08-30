@@ -1,9 +1,15 @@
 <!-- begin SEO -->
 {% assign seo_url = site.url | append: site.baseurl %}
 {% assign canonical_url = page.url | absolute_url | replace: "/index.html", "/" %}
+{% assign home_url = "/" | absolute_url | replace: "/index.html", "/" %}
+{% assign clean_url = page.url | default: "/" | replace: "/index.html", "/" %}
+{% assign is_home = false %}
+{% if clean_url == "/" or clean_url == "" or canonical_url == home_url or page.permalink == "/" %}
+  {% assign is_home = true %}
+{% endif %}
 
 {% assign raw_title = page.seo_title | default: page.title | default: site.title %}
-{% if page.url == "/" %}
+{% if is_home %}
   {% assign seo_title = raw_title %}
 {% else %}
   {% assign seo_title = raw_title | append: " " | append: site.title_separator | append: " " | append: site.title %}
@@ -20,7 +26,7 @@
 {% assign seo_image = page.og_image | default: page.header.image | default: page.header.overlay_image | default: page.header.teaser | default: site.og_image | default: site.logo %}
 {% assign page_language = page.lang | default: site.locale | default: "uk-UA" %}
 {% assign page_language_short = page_language | slice: 0,2 %}
-{% assign robots_meta = page.robots | default: "index, follow, max-image-preview:large" %}
+{% assign robots_meta = page.robots | default: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" %}
 {% if page.noindex or page.sitemap == false %}
   {% assign robots_meta = "noindex, follow" %}
 {% endif %}
@@ -33,6 +39,8 @@
 <link rel="canonical" href="{{ canonical_url }}">
 <link rel="alternate" hreflang="{{ page_language_short }}" href="{{ canonical_url }}">
 <link rel="alternate" hreflang="x-default" href="{{ canonical_url }}">
+<link rel="alternate" type="text/plain" title="llms.txt" href="{{ '/llms.txt' | absolute_url }}">
+<link rel="alternate" type="text/plain" title="llms-full.txt" href="{{ '/llms-full.txt' | absolute_url }}">
 
 <meta property="og:locale" content="{{ site.locale | replace: "-", "_" | default: "uk_UA" }}">
 <meta property="og:site_name" content="{{ site.title | escape_once }}">
@@ -72,7 +80,7 @@
   <link rel="next" href="{{ paginator.next_page_path | absolute_url }}">
 {% endif %}
 
-{% assign identity_type = site.schema.type | default: site.social.type | default: "Person" %}
+{% assign identity_type = site.schema.type | default: site.social.type | default: "Organization" %}
 {% assign identity_name = site.schema.name | default: site.social.name | default: site.name | default: site.title %}
 <script type="application/ld+json">
 {
@@ -80,16 +88,36 @@
   "@type": "{{ identity_type }}",
   "@id": {{ seo_url | append: "#identity" | jsonify }},
   "name": {{ identity_name | jsonify }},
-  "url": {{ seo_url | jsonify }}{% if site.logo %},
+  "alternateName": {{ site.schema.alternateName | default: identity_name | jsonify }},
+  "url": {{ seo_url | jsonify }},
+  "description": {{ site.description | jsonify }}{% if site.logo %},
   "logo": {{ site.logo | absolute_url | jsonify }}{% endif %}{% if site.social.links %},
-  "sameAs": {{ site.social.links | jsonify }}{% endif %}{% if identity_type == "LocalBusiness" and site.author.phone %},
-  "telephone": {{ site.author.phone | jsonify }}{% endif %}{% if identity_type == "LocalBusiness" and site.author.email %},
-  "email": {{ site.author.email | jsonify }}{% endif %}{% if identity_type == "LocalBusiness" and site.author.location %},
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": {{ site.author.location | jsonify }},
-    "addressCountry": "UA"
-  }{% endif %}
+  "sameAs": {{ site.social.links | jsonify }}{% endif %},
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "CustomFW",
+    "url": "https://customfw.xyz"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "xHR",
+    "jobTitle": "Автор гайду Switch CustomFW і розробник збірки Kefir",
+    "url": "https://customfw.xyz",
+    "sameAs": [
+      "https://github.com/rashevskyv",
+      "https://t.me/xhrxhrxhr"
+    ]
+  },
+  "knowsAbout": [
+    "прошивка Nintendo Switch",
+    "Kefir",
+    "Atmosphere",
+    "EmuNAND",
+    "Picofly",
+    "Fusée Gelée",
+    "Homebrew",
+    "модчип"
+  ]
 }
 </script>
 
@@ -119,16 +147,10 @@
   "isPartOf": {
     "@id": {{ seo_url | append: "#website" | jsonify }}
   },
-{% assign clean_url = page.url | replace: "/index.html", "/" %}
-{% assign is_not_home = true %}
-{% if clean_url == "/" or clean_url == "" %}
-  {% assign is_not_home = false %}
-{% endif %}
-
-  "inLanguage": {{ page_language | jsonify }}{% if is_not_home %},
+  "inLanguage": {{ page_language | jsonify }}{% unless is_home %},
   "breadcrumb": {
     "@id": {{ canonical_url | append: "#breadcrumb" | jsonify }}
-  }{% endif %}{% if page.date %},
+  }{% endunless %}{% if page.date %},
   "datePublished": {{ page.date | date_to_xmlschema | jsonify }}{% endif %}{% if page.last_modified_at %},
   "dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }}{% elsif site.time %},
   "dateModified": {{ site.time | date_to_xmlschema | jsonify }}{% endif %}{% if seo_image %},
@@ -139,7 +161,7 @@
 }
 </script>
 
-{% if is_not_home %}
+{% unless is_home %}
 {% assign breadcrumb_item_title = raw_title | default: page.title | default: site.title | markdownify | strip_html | strip_newlines | strip %}
 {% if breadcrumb_item_title == "" %}{% assign breadcrumb_item_title = site.title | default: "Сторінка" %}{% endif %}
 <script type="application/ld+json">
@@ -163,7 +185,56 @@
   ]
 }
 </script>
+{% endunless %}
+
+{% if page.faqs %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": {{ canonical_url | append: "#faq" | jsonify }},
+  "mainEntity": [
+    {% for faq in page.faqs %}
+    {
+      "@type": "Question",
+      "name": {{ faq.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ faq.a | markdownify | strip_html | strip_newlines | strip | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
 {% endif %}
+
+{% if page.layout == "single" %}{% unless is_home %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": {{ canonical_url | append: "#article" | jsonify }},
+  "headline": {{ raw_title | markdownify | strip_html | strip_newlines | strip | jsonify }},
+  "description": {{ seo_description | jsonify }},
+  "inLanguage": {{ page_language | jsonify }},
+  "url": {{ canonical_url | jsonify }},
+  "mainEntityOfPage": {
+    "@id": {{ canonical_url | append: "#webpage" | jsonify }}
+  },
+  "author": {
+    "@type": "Person",
+    "name": "xHR",
+    "url": "https://customfw.xyz"
+  },
+  "publisher": {
+    "@id": {{ seo_url | append: "#identity" | jsonify }}
+  }{% if seo_image %},
+  "image": {% if seo_image contains "://" %}{{ seo_image | jsonify }}{% else %}{{ seo_image | absolute_url | jsonify }}{% endif %}{% endif %}{% if site.time %},
+  "dateModified": {{ site.time | date_to_xmlschema | jsonify }}{% endif %}
+}
+</script>
+{% endunless %}{% endif %}
 
 {% if page.layout == "shop" and page.price %}
   {% assign price_text = page.price | replace: "грн", "" | replace: "ГРН", "" | replace: " ", "" | replace: "Від", "" | replace: "від", "" | strip %}

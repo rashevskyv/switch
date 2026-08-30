@@ -9,6 +9,7 @@ redirect_from:
 lang: uk
 permalink: /troubleshooting
 title: Проблеми та їх рішення
+description: "Типові помилки після прошивки Nintendo Switch і як їх виправити: завантаження, SD-карта, Atmosphere, Kefir, ігри."
 author_profile: true
 ---
 В цьому розділі тільки найчастіші проблеми та їх рішення. Розділ, у якому зібрані відповіді на найчастіші запитання знаходиться тут - [FAQ](/faq){:target="_blank"}

@@ -2,6 +2,7 @@
 lang: uk
 permalink: /buying-used
 title: Як правильно купити вживану Nintendo Switch - повний гід з перевірки
+description: "Як перевірити вживану Nintendo Switch перед покупкою: ревізія, акумулятор, стіки, чип, бани. Гайд CustomFW."
 author_profile: true
 redirect_from:
   - /ru/buying-used
