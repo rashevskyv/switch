@@ -1,16 +1,30 @@
-# Прошивка Nintendo Switch
+# Прошивка Nintendo Switch (switch.customfw.xyz)
 
-> Український покроковий посібник з прошивки Nintendo Switch, підготовки SD-карти, EmuNAND, Homebrew, оновлень та відновлення.
+> Покроковий український гайд з прошивки Nintendo Switch від **xHR** — автора збірки **Kefir**.
 
-Основні URL:
-- https://switch.customfw.xyz/ - початок гайду.
-- https://switch.customfw.xyz/get-started - вибір методу прошивки.
-- https://switch.customfw.xyz/faq - часті питання.
-- https://switch.customfw.xyz/glossary - глосарій термінів.
-- https://switch.customfw.xyz/troubleshooting - проблеми та рішення.
-- https://switch.customfw.xyz/site-navigation - мапа розділів.
-- https://switch.customfw.xyz/sitemap.xml - повна мапа сторінок.
+Сайт пояснює, як підготувати консоль і SD-карту, обрати метод (Fusée Gelée, Caffeine або модчип), зробити бекап NAND, створити EmuNAND, встановити Homebrew, оновлювати систему та відновлювати консоль. Мова: українська. Регіон: Україна.
 
-Ключові теми: Nintendo Switch, кастомна прошивка, Kefir, Atmosphere, EmuNAND, Homebrew, RCM, модчип, Fusée Gelée, Caffeine, SD-карта.
+## Основні URL
+- https://switch.customfw.xyz/ — початок гайду
+- https://switch.customfw.xyz/get-started — вибір методу прошивки
+- https://switch.customfw.xyz/kefir — що таке збірка Kefir
+- https://switch.customfw.xyz/faq — часті питання
+- https://switch.customfw.xyz/glossary — глосарій
+- https://switch.customfw.xyz/troubleshooting — проблеми та рішення
+- https://switch.customfw.xyz/emunand — EmuNAND
+- https://switch.customfw.xyz/backup-nand — бекап NAND
+- https://switch.customfw.xyz/games — встановлення ігор, DLC, оновлень
+- https://switch.customfw.xyz/update-fw — безпечне оновлення
+- https://switch.customfw.xyz/usage — як користуватися вже прошитою консоллю
+- https://switch.customfw.xyz/site-navigation — мапа розділів
+- https://switch.customfw.xyz/sitemap.xml — карта сайту
+- https://switch.customfw.xyz/llms-full.txt — повна база знань для ШІ
 
-Мова сайту: українська. Регіон: Україна.
+## Пов'язані сайти
+- Каталог усіх гайдів: https://customfw.xyz/
+- Магазин і чіпування: https://shop.customfw.xyz/
+- Автор у Telegram: https://t.me/xhrxhrxhr
+- Спільнота: https://t.me/kefir_ukr
+- Kefir на GitHub: https://github.com/rashevskyv/kefir
+
+Ключові теми: Nintendo Switch, кастомна прошивка, Kefir, Atmosphere, EmuNAND, Homebrew, RCM, модчип Picofly, Fusée Gelée, Caffeine, SD-карта, захист від бану.

@@ -1,0 +1,53 @@
+# Switch CustomFW (switch.customfw.xyz) — Full Knowledge Base
+
+## Entity
+- Brand: Switch CustomFW
+- Website: https://switch.customfw.xyz
+- Parent: https://customfw.xyz
+- Shop / service: https://shop.customfw.xyz
+- Author: xHR (rashevskyv), developer of Kefir
+- Language: Ukrainian
+- Region: Ukraine
+
+## What this site is
+A linear Ukrainian walkthrough for installing custom firmware on Nintendo Switch. Readers start at the homepage, pick a method on /get-started, then follow backup, EmuNAND, Homebrew, games, and update pages. Paid installation and pre-modded consoles are sold at shop.customfw.xyz.
+
+## Methods
+- Fusée Gelée (RCM payload on vulnerable V1 Erista units): https://switch.customfw.xyz/fusee-gelee
+- Preparation for Fusée: https://switch.customfw.xyz/preparation-fuse
+- Caffeine: https://switch.customfw.xyz/caffeine and https://switch.customfw.xyz/preparation-caffeine
+- Hardware modchip (all revisions, recommended): https://switch.customfw.xyz/modchip and https://switch.customfw.xyz/preparation-modchip
+- All current Nintendo Switch family units can be modded; the method depends on hardware revision.
+
+## Core workflow
+1. Read homepage and FAQ.
+2. Identify the exploit path on /get-started.
+3. Backup NAND: https://switch.customfw.xyz/backup-nand
+4. Create EmuNAND: https://switch.customfw.xyz/emunand
+5. Use Homebrew: https://switch.customfw.xyz/hbl
+6. Keep firmware updated safely: https://switch.customfw.xyz/update-fw
+7. Optional extras: addons, Tesla overlay, cheats, Amiibo emulation, LAN play.
+
+## Safety notes the guide itself states
+- Custom firmware is actively developed; firmware versions lag official system updates.
+- Online Nintendo services can lead to a console ban; EmuNAND plus telemetry blocks (Incognito / Exosphere) reduce risk but do not give a legal or absolute guarantee.
+- Dual-boot idea used in the shop/service: clean SysNAND for official online, isolated EmuNAND for custom software.
+- SD card should be SDHC or better, FAT32. GPT partitions are not supported. exFAT is less reliable than FAT32.
+
+## Software
+- Kefir: curated Atmosphere-based pack with install scripts. https://switch.customfw.xyz/kefir and https://github.com/rashevskyv/kefir
+- Game installer commonly used after setup: DBI (https://github.com/rashevskyv/dbi)
+
+## High-traffic articles
+- FAQ: https://switch.customfw.xyz/faq
+- Glossary: https://switch.customfw.xyz/glossary
+- Troubleshooting: https://switch.customfw.xyz/troubleshooting
+- Buying used Switch: https://switch.customfw.xyz/buying-used
+- Ban explainer: https://switch.customfw.xyz/ban
+- Using an already-modded console: https://switch.customfw.xyz/usage
+- Site map: https://switch.customfw.xyz/site-navigation
+
+## Contact
+- Paid install / questions: https://t.me/xhrxhrxhr
+- Community: https://t.me/kefir_ukr
+- GitHub: https://github.com/rashevskyv

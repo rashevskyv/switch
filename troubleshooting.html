@@ -22,19 +22,25 @@
 
 
 
-<title>Проблеми та їх рішення - Прошивка Nintendo Switch</title>
-<meta name="description" content="Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.">
-<meta name="robots" content="index, follow, max-image-preview:large">
+
+
+
+
+<title>Проблеми та їх рішення — Прошивка Nintendo Switch — повний український гайд</title>
+<meta name="description" content="Типові помилки після прошивки Nintendo Switch і як їх виправити: завантаження, SD-карта, Atmosphere, Kefir, ігри.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="xHR">
 
 <link rel="canonical" href="https://switch.customfw.xyz/troubleshooting">
 <link rel="alternate" hreflang="uk" href="https://switch.customfw.xyz/troubleshooting">
 <link rel="alternate" hreflang="x-default" href="https://switch.customfw.xyz/troubleshooting">
+<link rel="alternate" type="text/plain" title="llms.txt" href="https://switch.customfw.xyz/llms.txt">
+<link rel="alternate" type="text/plain" title="llms-full.txt" href="https://switch.customfw.xyz/llms-full.txt">
 
 <meta property="og:locale" content="uk_UA">
-<meta property="og:site_name" content="Прошивка Nintendo Switch">
+<meta property="og:site_name" content="Прошивка Nintendo Switch — повний український гайд">
 <meta property="og:title" content="Проблеми та їх рішення">
-<meta property="og:description" content="Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.">
+<meta property="og:description" content="Типові помилки після прошивки Nintendo Switch і як їх виправити: завантаження, SD-карта, Atmosphere, Kefir, ігри.">
 <meta property="og:url" content="https://switch.customfw.xyz/troubleshooting">
 <meta property="og:type" content="website">
 
@@ -48,7 +54,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Проблеми та їх рішення">
-<meta name="twitter:description" content="Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.">
+<meta name="twitter:description" content="Типові помилки після прошивки Nintendo Switch і як їх виправити: завантаження, SD-карта, Atmosphere, Kefir, ігри.">
 <meta name="twitter:url" content="https://switch.customfw.xyz/troubleshooting">
 
   <meta name="twitter:image" content="https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg">
@@ -64,12 +70,39 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
+  "@type": "Organization",
   "@id": "https://switch.customfw.xyz#identity",
-  "name": "xHR",
+  "name": "Switch CustomFW",
+  "alternateName": "Гайд з прошивки Nintendo Switch",
   "url": "https://switch.customfw.xyz",
+  "description": "Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: підготовка SD-карти, EmuNAND, Homebrew, модчип, оновлення, захист від бану та відновлення.",
   "logo": "https://switch.customfw.xyz/assets/images/bio-photo.png",
-  "sameAs": ["https://github.com/rashevskyv","https://t.me/xhrxhrxhr","https://www.instagram.com/rashevsky.v"]
+  "sameAs": ["https://switch.customfw.xyz","https://customfw.xyz","https://shop.customfw.xyz","https://github.com/rashevskyv","https://t.me/kefir_ukr","https://t.me/xhrxhrxhr","https://www.instagram.com/rashevsky.v"],
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "CustomFW",
+    "url": "https://customfw.xyz"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "xHR",
+    "jobTitle": "Автор гайду Switch CustomFW і розробник збірки Kefir",
+    "url": "https://customfw.xyz",
+    "sameAs": [
+      "https://github.com/rashevskyv",
+      "https://t.me/xhrxhrxhr"
+    ]
+  },
+  "knowsAbout": [
+    "прошивка Nintendo Switch",
+    "Kefir",
+    "Atmosphere",
+    "EmuNAND",
+    "Picofly",
+    "Fusée Gelée",
+    "Homebrew",
+    "модчип"
+  ]
 }
 </script>
 
@@ -79,8 +112,8 @@
   "@type": "WebSite",
   "@id": "https://switch.customfw.xyz#website",
   "url": "https://switch.customfw.xyz",
-  "name": "Прошивка Nintendo Switch",
-  "description": "Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.",
+  "name": "Прошивка Nintendo Switch — повний український гайд",
+  "description": "Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: підготовка SD-карти, EmuNAND, Homebrew, модчип, оновлення, захист від бану та відновлення.",
   "inLanguage": "uk-UA",
   "publisher": {
     "@id": "https://switch.customfw.xyz#identity"
@@ -95,19 +128,15 @@
   "@id": "https://switch.customfw.xyz/troubleshooting#webpage",
   "url": "https://switch.customfw.xyz/troubleshooting",
   "name": "Проблеми та їх рішення",
-  "description": "Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.",
+  "description": "Типові помилки після прошивки Nintendo Switch і як їх виправити: завантаження, SD-карта, Atmosphere, Kefir, ігри.",
   "isPartOf": {
     "@id": "https://switch.customfw.xyz#website"
   },
-
-
-
-
   "inLanguage": "uk",
   "breadcrumb": {
     "@id": "https://switch.customfw.xyz/troubleshooting#breadcrumb"
   },
-  "dateModified": "2026-08-20T19:43:56+03:00",
+  "dateModified": "2026-08-30T11:28:27+03:00",
   "primaryImageOfPage": {
     "@type": "ImageObject",
     "url": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg"
@@ -144,6 +173,35 @@
 
 
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://switch.customfw.xyz/troubleshooting#article",
+  "headline": "Проблеми та їх рішення",
+  "description": "Типові помилки після прошивки Nintendo Switch і як їх виправити: завантаження, SD-карта, Atmosphere, Kefir, ігри.",
+  "inLanguage": "uk",
+  "url": "https://switch.customfw.xyz/troubleshooting",
+  "mainEntityOfPage": {
+    "@id": "https://switch.customfw.xyz/troubleshooting#webpage"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "xHR",
+    "url": "https://customfw.xyz"
+  },
+  "publisher": {
+    "@id": "https://switch.customfw.xyz#identity"
+  },
+  "image": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg",
+  "dateModified": "2026-08-30T11:28:27+03:00"
+}
+</script>
+
+
+
+
+
   <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
 
 
@@ -154,7 +212,7 @@
 
 
 <link href="https://switch.customfw.xyz/feed.xml"
-  type="application/atom+xml" rel="alternate" title="Прошивка Nintendo Switch Feed">
+  type="application/atom+xml" rel="alternate" title="Прошивка Nintendo Switch — повний український гайд Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -198,11 +256,11 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch</a>
+        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch — повний український гайд</a>
         <ul class="visible-links"><li class="masthead__menu-item">
             <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
           </li><li class="masthead__menu-item">
-            <a href="http://customfw.xyz" ><i>Інші гайди</i></a>
+            <a href="https://customfw.xyz" ><i>Інші гайди</i></a>
           </li><li class="masthead__menu-item">
             <a href="https://customfw.xyz/donations" ><b>Пожертви</b></a>
           </li><li class="masthead__menu-item">
@@ -226,7 +284,7 @@
           </li><li class="masthead__menu-item">
             <a href="/site-navigation" >Навігація по сайту</a>
           </li><li class="masthead__menu-item">
-            <a href="http://customfw.xyz/contacts" >Зв'язатися з нами</a>
+            <a href="https://customfw.xyz/contacts" >Зв'язатися з нами</a>
           </li></ul>
 
         <button class="greedy-nav__toggle hidden" type="button">
@@ -304,6 +362,12 @@
 </li>
 
 
+      
+      <li>
+        <a href="https://switch.customfw.xyz" target="_blank" itemprop="url">
+          <i class="fa fa-fw fa-chain" aria-hidden="true"></i> Website
+        </a>
+      </li>
       
 
       
@@ -425,7 +489,7 @@
 
 <h3 id="проблеми-з-запуском-прошивки">Проблеми з запуском прошивки</h3>
 
-<details class="spoiler" id="spoiler-76975f55">
+<details class="spoiler" id="spoiler-7a00c971">
   <summary>Приставка зависає на логотипі Switch</summary>
   <div class="spoiler-content">
     <p>Можливі шляхи вирішення проблеми:</p>
@@ -500,7 +564,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Приставка зависає на логотипі Switch <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-68015c7c">
+<details class="spoiler" id="spoiler-1bda3eb9">
   <summary>При запуску приставки нічого не відбувається / Не можу ввімкнути приставку</summary>
   <div class="spoiler-content">
     <p>Можливі шляхи вирішення проблеми:</p>
@@ -523,7 +587,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">При запуску приставки нічого не відбувається / Не можу ввімкнути приставку <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-524bd519">
+<details class="spoiler" id="spoiler-76efa665">
   <summary>Після прокидання пейлоада та появи сплешскрінів, консоль висить у чорному екрані / на логотипі Atmosphere / на логотипі Nintendo.</summary>
   <div class="spoiler-content">
     <ol>
@@ -587,7 +651,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Після прокидання пейлоада та появи сплешскрінів, консоль висить у чорному екрані / на логотипі Atmosphere / на логотипі Nintendo. <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-7bbeb91e">
+<details class="spoiler" id="spoiler-4eeb67bc">
   <summary>При запуску Emunand помилка "Failed to match warmboot with fuses"</summary>
   <div class="spoiler-content">
     <p>Просто завантажтеся в Full Stock (<strong>hekate</strong> -&gt; “<strong>More Configs</strong>” -&gt; “<strong>Full Stock</strong>”), перезавантажтеся і помилка зникне.</p>
@@ -597,7 +661,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">При запуску Emunand помилка "Failed to match warmboot with fuses" <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-794c3931">
+<details class="spoiler" id="spoiler-158e0250">
   <summary>Страшна помилка з білими літерами на чорному екрані після оновлення прошивки через інтернет</summary>
   <div class="spoiler-content">
     <p class="text-center notice--info"><img src="/assets/images/switch/screenshots/exfat_failed.png" alt="" /></p>
@@ -618,7 +682,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Страшна помилка з білими літерами на чорному екрані після оновлення прошивки через інтернет <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-cef52650">
+<details class="spoiler" id="spoiler-04e6a9a4">
   <summary>Після запуску приставки помилка на фіолетовому фоні з написом **Error Code** та номером помилки</summary>
   <div class="spoiler-content">
     <p>Зверніть увагу на числа у другому рядку після <strong>Title:</strong>. Ці числа вказують на те, який тайтл викликав помилку і через який не завантажується приставка. Якщо номер тайтла <strong>не</strong> <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то перейдіть у папку <code class="language-plaintext highlighter-rouge">atmosphere/contents</code> (<code class="language-plaintext highlighter-rouge">atmosphere/titles</code> на атмосфері нижче ніж 0.10.0) і видаліть папку з номером, вказаним на екрані вашої приставки у другому рядку. Якщо номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то найімовірніше помилка викликана тим, що якесь хомбрю запущено в режимі аплету і йому не вистачає пам’яті.</p>
@@ -630,7 +694,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Після запуску приставки помилка на фіолетовому фоні з написом **Error Code** та номером помилки <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-00d8cb7e">
+<details class="spoiler" id="spoiler-bd0091bf">
   <summary>При запуску прошивки отримую помилку "Fatal Error: [NXBOOT]"</summary>
   <div class="spoiler-content">
     <p>Оновіть <span class="tooltip_container">
@@ -649,7 +713,7 @@
 
 <h3 id="проблеми-з-запуском-ігор">Проблеми з запуском ігор</h3>
 
-<details class="spoiler" id="spoiler-eb3dad01">
+<details class="spoiler" id="spoiler-6f4591d7">
   <summary>При запуску ігор в emunand вилізає настирливе вікно про хмарні збереження</summary>
   <div class="spoiler-content">
     <p>Якщо ви пропустили цей пункт і у вас були увімкнені хмарні збереження, то в емунанді при запуску ігор буде вилітати помилка, щоб її усунути, в <strong>емунанді</strong> через DBI видаліть акаунт на якому з’являється помилка через <strong>Tools &gt; Delete account</strong>, після чого створіть новий з тим самим ім’ям.</p>
@@ -659,7 +723,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">При запуску ігор в emunand вилізає настирливе вікно про хмарні збереження <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-b1dd37ee">
+<details class="spoiler" id="spoiler-9420cc3b">
   <summary>Не можу використовувати картриджі в EmuNAND, хоча в SysNAND все працює</summary>
   <div class="spoiler-content">
     <p>Для коректної роботи картриджів SysNAND та EmuNAND повинні знаходитися на одній версії прошивки. Якщо це не так, <a href="/update-fw">оновіть EmuNAND</a>. Якщо це не допомогло, переконайтеся, що в hekate у вас відключено <strong>NoGC</strong> (<strong>Options</strong> -&gt; <strong>Auto NoGC</strong> -&gt; <strong>OFF</strong>)</p>
@@ -669,7 +733,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Не можу використовувати картриджі в EmuNAND, хоча в SysNAND все працює <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-e30cb56a">
+<details class="spoiler" id="spoiler-199cfbe5">
   <summary>Після запуску приставки помилка на чорному фоні з написом "**Panic occurred while running Atmosphere**".</summary>
   <div class="spoiler-content">
     <p>Оновіть <span class="tooltip_container">
@@ -696,7 +760,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Після запуску приставки помилка на чорному фоні з написом "**Panic occurred while running Atmosphere**". <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-fa6a27a2">
+<details class="spoiler" id="spoiler-3db21472">
   <summary>Хотів встановити гру, але встановлення зависло, гра в меню не з'явилася, але місце займає. Як видалити?</summary>
   <div class="spoiler-content">
     <p>Запустіть <strong>DBI</strong> і виберіть “<strong>Clean Orphaned Files</strong>” - всі файли, на які немає посилань у системній базі даних, будуть видалені. <strong>Важливо:</strong> запускайте DBI тільки <a href="/hbl" target="_blank">в режимі аплету</a>, кефір має бути свіжим. Інакше магія не спрацює.</p>
@@ -706,7 +770,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Хотів встановити гру, але встановлення зависло, гра в меню не з'явилася, але місце займає. Як видалити? <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-0c462f58">
+<details class="spoiler" id="spoiler-aadadfec">
   <summary>Не можу встановити ігри в NAND</summary>
   <div class="spoiler-content">
     <p>Судячи з усього ви використовуєте EmuNAND і старий <span class="tooltip_container">
@@ -723,7 +787,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Не можу встановити ігри в NAND <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-c6c31b88">
+<details class="spoiler" id="spoiler-c32354c5">
   <summary>В Tinfoil зникли всі ігри</summary>
   <div class="spoiler-content">
     <ul>
@@ -751,7 +815,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">В Tinfoil зникли всі ігри <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-d06bdd89">
+<details class="spoiler" id="spoiler-0f93d438">
   <summary>Деякі ігри не запускаються з помилкою "Програма закрита, тому що сталася помилка"</summary>
   <div class="spoiler-content">
     <p>Можливо, встановлений ReverseNX. Видаліть його. Також спробуйте вимкнути приставку, запустіть <span class="tooltip_container">
@@ -768,7 +832,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Деякі ігри не запускаються з помилкою "Програма закрита, тому що сталася помилка" <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-bdd73ea3">
+<details class="spoiler" id="spoiler-6fcc0f4d">
   <summary>Не запускається жодна гра. При запуску йде перевірка, потім помилка</summary>
   <div class="spoiler-content">
     <p>Можливо, ви видалили тікети всіх ігор. Для перевстановлення тікетів, запустіть <a href="/games" target="_blank">tinfoil</a>, перейдіть на вкладку “<strong>Тікети</strong>”, і для кожної гри виконайте наступне:</p>
@@ -784,7 +848,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Не запускається жодна гра. При запуску йде перевірка, потім помилка <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-857b9d9c">
+<details class="spoiler" id="spoiler-f15b1d86">
   <summary>Я випадково видалив тікети ігор у tinfoil</summary>
   <div class="spoiler-content">
     <p>Для перевстановлення тікетів, запустіть <a href="/games" target="_blank">tinfoil</a>, перейдіть на вкладку “<strong>Тікети</strong>”, і для кожної гри виконайте наступне:</p>
@@ -800,7 +864,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Я випадково видалив тікети ігор у tinfoil <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-2b3355f3">
+<details class="spoiler" id="spoiler-97278f6f">
   <summary>Після оновлення прошивки, деякі ігри перестали запускатися</summary>
   <div class="spoiler-content">
     <p>Найімовірніше, у вас перестали запускатися ігри, сконвертовані з xci через стару версію n4xci (ви могли завантажити вже сконвертований образ з будь-якого джерела; рідко коли джерело вказує, що гра - конвертка). Для вирішення цієї проблеми, скачайте свіжу версію <a href="https://github.com/The-4n/4NXCI/releases/tag/v4.03" target="_blank">n4xci</a> (завантажуйте 4nxci-vX.XX<strong>_GUI</strong>.zip). Зробіть <a href="backup-nand#частина-iii---дампимо-ключі" target="_blank">дамп ключів на вашій актуальній прошивці</a> і покладіть їх в одну папку з програмою. Не забудьте вказати шлях до них у полі <strong>Keyset File</strong>. Сконвертований образ NSP має почати працювати.</p>
@@ -812,7 +876,7 @@
 
 <h3 id="проблеми-з-файлами--картою-памяті">Проблеми з файлами / картою пам’яті</h3>
 
-<details class="spoiler" id="spoiler-7af71813">
+<details class="spoiler" id="spoiler-e6ab6b05">
   <summary>Не можу закинути на карту гру більше 4х Гб, що робити?</summary>
   <div class="spoiler-content">
     <p>Немає жодної причини закидати ігри на карту пам’яті. Відразу <a href="/games" target="_blank">встановлюйте їх</a> рекомендованим способом по MTP через DBI!</p>
@@ -822,7 +886,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Не можу закинути на карту гру більше 4х Гб, що робити? <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-66d3d533">
+<details class="spoiler" id="spoiler-dfa80142">
   <summary>Після встановлення модифікації або перекладу на гру, модифікація або переклад не працює</summary>
   <div class="spoiler-content">
     <p>Перезавантажте приставку. Якщо це не допомогло, виправте атрибути</p>
@@ -841,7 +905,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Після встановлення модифікації або перекладу на гру, модифікація або переклад не працює <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-79dcab93">
+<details class="spoiler" id="spoiler-09bc7aa7">
   <summary>На MacOS скинув файли на карту пам'яті, але DBI \ tinfoil \ GoldLeaf їх не бачить</summary>
   <div class="spoiler-content">
     <p>Потрібно виправити атрибути.</p>
@@ -860,7 +924,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">На MacOS скинув файли на карту пам'яті, але DBI \ tinfoil \ GoldLeaf їх не бачить <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-cd3cb0fe">
+<details class="spoiler" id="spoiler-3bb775a4">
   <summary>Приставка не бачить карту у форматі exFAT і просить оновити прошивку</summary>
   <div class="spoiler-content">
     <p>Вам потрібно встановити драйвер exFAT. Для цього виконайте <a href="/update-fw" target="_blank">безпечне оновлення прошивки</a>. Його потрібно робити навіть у тому випадку, якщо у вас і так стоїть остання версія прошивки, що зламується! Повторне оновлення просто встановить відсутній драйвер. А взагалі, <a href="http://format.customfw.xyz" target="_blank">переходьте на FAT32</a>!</p>
@@ -870,7 +934,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Приставка не бачить карту у форматі exFAT і просить оновити прошивку <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-b85def15">
+<details class="spoiler" id="spoiler-08899667">
   <summary>Постійні помилки, ігри вилітають під час роботи</summary>
   <div class="spoiler-content">
     <p><a href="https://customfw.xyz/test_sd" target="_blank">Перевірте свою SD-карту на помилки</a>, а потім встановіть кефір через скрипт.</p>
@@ -880,7 +944,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Постійні помилки, ігри вилітають під час роботи <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-2bcf41f4">
+<details class="spoiler" id="spoiler-d8980bf5">
   <summary>Проблеми після копіювання файлів на карту на маку/В Homebrew Menu/Tinfoil порожньо, хоча на карті все є</summary>
   <div class="spoiler-content">
     <ul>
@@ -906,7 +970,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Проблеми після копіювання файлів на карту на маку/В Homebrew Menu/Tinfoil порожньо, хоча на карті все є <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-b42c1c18">
+<details class="spoiler" id="spoiler-71b1f5ae">
   <summary>Виправлення архівних атрибутів</summary>
   <div class="spoiler-content">
     <ol>
@@ -924,7 +988,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Виправлення архівних атрибутів <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-5ef17751">
+<details class="spoiler" id="spoiler-de172253">
   <summary>Виникають помилки при встановленні NSP-файлів</summary>
   <div class="spoiler-content">
     <ul>
@@ -948,7 +1012,7 @@
 
 <h3 id="проблеми-з-homebrew-або-батьківським-контролем">Проблеми з Homebrew або батьківським контролем</h3>
 
-<details class="spoiler" id="spoiler-4f7d5d4d">
+<details class="spoiler" id="spoiler-9cf1f255">
   <summary>Перед прошивкою забув прибрати батьківський контроль, а тепер не можу! При вході в меню батьківського контролю вилітає атмосфера, що робити?</summary>
   <div class="spoiler-content">
     <p><a href="https://github.com/ITotalJustice/Reset-Parental-Controls-NX/releases" target="_blank">Видалити батьківський контроль</a></p>
@@ -958,7 +1022,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Перед прошивкою забув прибрати батьківський контроль, а тепер не можу! При вході в меню батьківського контролю вилітає атмосфера, що робити? <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-50047ee4">
+<details class="spoiler" id="spoiler-9ca3ffa9">
   <summary>Після запуску хомбрю помилка на фіолетовому фоні з написом Error Code та номером помилки</summary>
   <div class="spoiler-content">
     <p>Ви запускаєте програму з режиму аплету (Applet mode), тобто з Альбомів, тоді як робити це потрібно в режимі тайла (Tile mode), тобто через гру або форвардер. Як правильно запускати HBL описано в <a href="/hbl" target="_blank">інструкції</a>. Режим аплету не дає програмі, що запускається, повного доступу до всього обсягу оперативної пам’яті в приставці, від чого і трапляються помилки. Якщо номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000000D</code>, то найімовірніше помилка викликана тим, що якесь хомбрю запущено в режимі аплету і йому не вистачає пам’яті. Якщо номер тайтла - <code class="language-plaintext highlighter-rouge">010000000000001F</code>, то витягніть картридж із приставки. Тримайте emunand та sysnand на одній версії прошивки, щоб надалі не було таких проблем. Також виправте атрибути (як шукайте на цій же сторінці)</p>
@@ -968,7 +1032,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Після запуску хомбрю помилка на фіолетовому фоні з написом Error Code та номером помилки <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-dd761742">
+<details class="spoiler" id="spoiler-9a735dff">
   <summary>Помилка при запуску хомбрю з головного меню приставки через форвардер</summary>
   <div class="spoiler-content">
     <p>Вам потрібно оновити форвардер</p>
@@ -980,7 +1044,7 @@
 
 <h3 id="проблеми-з-залізом">Проблеми з залізом</h3>
 
-<details class="spoiler" id="spoiler-a153ec87">
+<details class="spoiler" id="spoiler-a31e6e1c">
   <summary>Джойкони в емунанді не працюють окремо від консолі, хоча в стоку сиснанда працюють</summary>
   <div class="spoiler-content">
     <ol>
@@ -998,7 +1062,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Джойкони в емунанді не працюють окремо від консолі, хоча в стоку сиснанда працюють <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-61aafcc3">
+<details class="spoiler" id="spoiler-e65ad7e1">
   <summary>Батарея відображає невірний заряд \ калібрування батареї</summary>
   <div class="spoiler-content">
     <p><strong>В:</strong> <a href="https://4pda.to/forum/index.php?showtopic=900987&amp;st=14880#entry87254644" target="_blank">Вичерпна стаття</a></p>
@@ -1010,7 +1074,7 @@
 
 <h3 id="проблеми-з-системою">Проблеми з системою</h3>
 
-<details class="spoiler" id="spoiler-04cd5567">
+<details class="spoiler" id="spoiler-310a0dbb">
   <summary>У мене завантажилася прошивка, як її видалити не оновлюючись?</summary>
   <div class="spoiler-content">
     <p>Запустіть <strong>DBI</strong> і виберіть “<strong>Clean Orphaned Files</strong>” - всі файли, на які немає посилань у системній базі даних, будуть видалені. <strong>Важливо:</strong> запускайте DBI тільки <a href="/hbl" target="_blank">в режимі аплету</a>, кефір має бути свіжим. Інакше магія не спрацює.</p>
@@ -1020,7 +1084,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">У мене завантажилася прошивка, як її видалити не оновлюючись? <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-99661ccc">
+<details class="spoiler" id="spoiler-2d854bd4">
   <summary>У мене остання прошивка, але при запуску деяких ігор я бачу, що "*доступне оновлення системи*". Чому так відбувається?</summary>
   <div class="spoiler-content">
     <p>Мається на увазі оновлення гри. Скачайте його та встановіть як звичайну гру. Також скинути перевірку версії можна через DBI. Запустіть програму, виберіть <strong>Browse installed applications</strong>, натисніть <img src="/assets/images/switch/buttons/Y.png" alt="(Y)" />, щоб виділити всі пункти, натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" />, а потім виберіть <strong>Reset required version</strong>. DBI має бути <a href="/hbl" target="_blank">запущений з режиму аплету</a>, кефір має бути свіжим. Інакше магія не спрацює.</p>
@@ -1030,7 +1094,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">У мене остання прошивка, але при запуску деяких ігор я бачу, що "*доступне оновлення системи*". Чому так відбувається? <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-d209f460">
+<details class="spoiler" id="spoiler-d20e0576">
   <summary>Не можу видалити користувача</summary>
   <div class="spoiler-content">
     <p><strong>DBI &gt; Tools &gt; Delete account</strong></p>
@@ -1040,7 +1104,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Не можу видалити користувача <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-1f8ff300">
+<details class="spoiler" id="spoiler-f5078d26">
   <summary>Не синхронізується час</summary>
   <div class="spoiler-content">
     <p>Автоматична синхронізація часу вимкнена в кефірі, починаючи з версії 660 для економії батареї в режимі сну. Для синхронізації використовуйте <strong>DBI &gt; Tools &gt; Sync Time with NTP</strong></p>
@@ -1117,7 +1181,7 @@
     
 </div>
 
-<div class="page__footer-copyright">&copy; 2026 xHR. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2026 Switch CustomFW (xHR). Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

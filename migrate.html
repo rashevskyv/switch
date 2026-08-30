@@ -22,19 +22,25 @@
 
 
 
-<title>Перехід з SXOS на Atmosphere - Прошивка Nintendo Switch</title>
-<meta name="description" content="Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.">
-<meta name="robots" content="index, follow, max-image-preview:large">
+
+
+
+
+<title>Перехід з SXOS на Atmosphere — Прошивка Nintendo Switch — повний український гайд</title>
+<meta name="description" content="Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: підготовка SD-карти, EmuNAND, Homebrew, модчип, оновлення, захист від бану та відновлення.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="xHR">
 
 <link rel="canonical" href="https://switch.customfw.xyz/migrate">
 <link rel="alternate" hreflang="uk" href="https://switch.customfw.xyz/migrate">
 <link rel="alternate" hreflang="x-default" href="https://switch.customfw.xyz/migrate">
+<link rel="alternate" type="text/plain" title="llms.txt" href="https://switch.customfw.xyz/llms.txt">
+<link rel="alternate" type="text/plain" title="llms-full.txt" href="https://switch.customfw.xyz/llms-full.txt">
 
 <meta property="og:locale" content="uk_UA">
-<meta property="og:site_name" content="Прошивка Nintendo Switch">
+<meta property="og:site_name" content="Прошивка Nintendo Switch — повний український гайд">
 <meta property="og:title" content="Перехід з SXOS на Atmosphere">
-<meta property="og:description" content="Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.">
+<meta property="og:description" content="Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: підготовка SD-карти, EmuNAND, Homebrew, модчип, оновлення, захист від бану та відновлення.">
 <meta property="og:url" content="https://switch.customfw.xyz/migrate">
 <meta property="og:type" content="website">
 
@@ -48,7 +54,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Перехід з SXOS на Atmosphere">
-<meta name="twitter:description" content="Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.">
+<meta name="twitter:description" content="Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: підготовка SD-карти, EmuNAND, Homebrew, модчип, оновлення, захист від бану та відновлення.">
 <meta name="twitter:url" content="https://switch.customfw.xyz/migrate">
 
   <meta name="twitter:image" content="https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg">
@@ -64,12 +70,39 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
+  "@type": "Organization",
   "@id": "https://switch.customfw.xyz#identity",
-  "name": "xHR",
+  "name": "Switch CustomFW",
+  "alternateName": "Гайд з прошивки Nintendo Switch",
   "url": "https://switch.customfw.xyz",
+  "description": "Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: підготовка SD-карти, EmuNAND, Homebrew, модчип, оновлення, захист від бану та відновлення.",
   "logo": "https://switch.customfw.xyz/assets/images/bio-photo.png",
-  "sameAs": ["https://github.com/rashevskyv","https://t.me/xhrxhrxhr","https://www.instagram.com/rashevsky.v"]
+  "sameAs": ["https://switch.customfw.xyz","https://customfw.xyz","https://shop.customfw.xyz","https://github.com/rashevskyv","https://t.me/kefir_ukr","https://t.me/xhrxhrxhr","https://www.instagram.com/rashevsky.v"],
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "CustomFW",
+    "url": "https://customfw.xyz"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "xHR",
+    "jobTitle": "Автор гайду Switch CustomFW і розробник збірки Kefir",
+    "url": "https://customfw.xyz",
+    "sameAs": [
+      "https://github.com/rashevskyv",
+      "https://t.me/xhrxhrxhr"
+    ]
+  },
+  "knowsAbout": [
+    "прошивка Nintendo Switch",
+    "Kefir",
+    "Atmosphere",
+    "EmuNAND",
+    "Picofly",
+    "Fusée Gelée",
+    "Homebrew",
+    "модчип"
+  ]
 }
 </script>
 
@@ -79,8 +112,8 @@
   "@type": "WebSite",
   "@id": "https://switch.customfw.xyz#website",
   "url": "https://switch.customfw.xyz",
-  "name": "Прошивка Nintendo Switch",
-  "description": "Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.",
+  "name": "Прошивка Nintendo Switch — повний український гайд",
+  "description": "Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: підготовка SD-карти, EmuNAND, Homebrew, модчип, оновлення, захист від бану та відновлення.",
   "inLanguage": "uk-UA",
   "publisher": {
     "@id": "https://switch.customfw.xyz#identity"
@@ -95,19 +128,15 @@
   "@id": "https://switch.customfw.xyz/migrate#webpage",
   "url": "https://switch.customfw.xyz/migrate",
   "name": "Перехід з SXOS на Atmosphere",
-  "description": "Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.",
+  "description": "Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: підготовка SD-карти, EmuNAND, Homebrew, модчип, оновлення, захист від бану та відновлення.",
   "isPartOf": {
     "@id": "https://switch.customfw.xyz#website"
   },
-
-
-
-
   "inLanguage": "uk",
   "breadcrumb": {
     "@id": "https://switch.customfw.xyz/migrate#breadcrumb"
   },
-  "dateModified": "2026-08-20T19:43:56+03:00",
+  "dateModified": "2026-08-30T11:28:27+03:00",
   "primaryImageOfPage": {
     "@type": "ImageObject",
     "url": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg"
@@ -144,6 +173,35 @@
 
 
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://switch.customfw.xyz/migrate#article",
+  "headline": "Перехід з SXOS на Atmosphere",
+  "description": "Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: підготовка SD-карти, EmuNAND, Homebrew, модчип, оновлення, захист від бану та відновлення.",
+  "inLanguage": "uk",
+  "url": "https://switch.customfw.xyz/migrate",
+  "mainEntityOfPage": {
+    "@id": "https://switch.customfw.xyz/migrate#webpage"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "xHR",
+    "url": "https://customfw.xyz"
+  },
+  "publisher": {
+    "@id": "https://switch.customfw.xyz#identity"
+  },
+  "image": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg",
+  "dateModified": "2026-08-30T11:28:27+03:00"
+}
+</script>
+
+
+
+
+
   <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
 
 
@@ -154,7 +212,7 @@
 
 
 <link href="https://switch.customfw.xyz/feed.xml"
-  type="application/atom+xml" rel="alternate" title="Прошивка Nintendo Switch Feed">
+  type="application/atom+xml" rel="alternate" title="Прошивка Nintendo Switch — повний український гайд Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -198,11 +256,11 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch</a>
+        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch — повний український гайд</a>
         <ul class="visible-links"><li class="masthead__menu-item">
             <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
           </li><li class="masthead__menu-item">
-            <a href="http://customfw.xyz" ><i>Інші гайди</i></a>
+            <a href="https://customfw.xyz" ><i>Інші гайди</i></a>
           </li><li class="masthead__menu-item">
             <a href="https://customfw.xyz/donations" ><b>Пожертви</b></a>
           </li><li class="masthead__menu-item">
@@ -226,7 +284,7 @@
           </li><li class="masthead__menu-item">
             <a href="/site-navigation" >Навігація по сайту</a>
           </li><li class="masthead__menu-item">
-            <a href="http://customfw.xyz/contacts" >Зв'язатися з нами</a>
+            <a href="https://customfw.xyz/contacts" >Зв'язатися з нами</a>
           </li></ul>
 
         <button class="greedy-nav__toggle hidden" type="button">
@@ -304,6 +362,12 @@
 </li>
 
 
+      
+      <li>
+        <a href="https://switch.customfw.xyz" target="_blank" itemprop="url">
+          <i class="fa fa-fw fa-chain" aria-hidden="true"></i> Website
+        </a>
+      </li>
       
 
       
@@ -424,7 +488,7 @@
   </nav>
 </aside>
 
-<details class="spoiler" id="spoiler-d01cedbf">
+<details class="spoiler" id="spoiler-f3104b17">
   <summary>Навіщо переходити на Atmosphere?</summary>
   <div class="spoiler-content">
     <p>У жовтні 2020 року <a href="https://www.theverge.com/2020/10/2/21499297/team-xecuter-selling-nintendo-hacks-arrested-charged-fraud" target="_blank">були заарештовані два лідери Xecuter Team</a> - компанії, що займалася розробкою та підтримкою SXOS, а також виробництвом чіпів для модифікації приставок із закритою вразливістю.</p>
@@ -446,7 +510,7 @@
 
 <h2 id="перехід-з-sx-на-atmosphere">Перехід з SX на Atmosphere</h2>
 
-<details class="spoiler" id="spoiler-f46eb547">
+<details class="spoiler" id="spoiler-7d423064">
   <summary>Відеоінструкція</summary>
   <div class="spoiler-content">
     <p class="notice--warning">УВАГА!!! Ми не рекомендуємо сліпо слідувати відео-інструкції! Використовуйте її тільки як допоміжну! Справа в тому, що текстовий гайд постійно оновлюється. Неможливо стежити за всіма оновленнями в гайді і кожен раз змінювати відео-інструкцію слідом за ним! Тому текстовий гайд завжди буде більш точним і більш актуальним, ніж відео!</p>
@@ -554,7 +618,7 @@
 
 <h2 id="проблеми-та-їх-вирішення">Проблеми та їх вирішення</h2>
 
-<details class="spoiler" id="spoiler-ec09b163">
+<details class="spoiler" id="spoiler-8167108a">
   <summary>Чорний екран при запуску SysNAND</summary>
   <div class="spoiler-content">
     <ol>
@@ -581,7 +645,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чорний екран при запуску SysNAND <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-eda6ed71">
+<details class="spoiler" id="spoiler-9fabe1b2">
   <summary>Відновлення BOOT / Чорний екран при запуску EmuNAND / Помилки при запуску EmuNAND, пов'язані з boot</summary>
   <div class="spoiler-content">
     <p class="notice--warning">Спершу спробуйте запустити SysNAND і виконуйте нижченаведену інструкцію тільки якщо SysNAND запускається! Якщо ні, спершу вирішіть цю проблему, а потім поверніться до виконання цієї інструкції!</p>
@@ -600,7 +664,7 @@
 
 <h4 id="якщо-не-допомогло-або-версії-sysnand-та-emunand-різні">Якщо не допомогло або версії SysNAND та EmuNAND різні:</h4>
 
-<details class="spoiler" id="spoiler-da668baa">
+<details class="spoiler" id="spoiler-25cc92f1">
   <summary>Як дізнатися версію свого emunand:</summary>
   <div class="spoiler-content">
     <ol>
@@ -666,7 +730,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Відновлення BOOT / Чорний екран при запуску EmuNAND / Помилки при запуску EmuNAND, пов'язані з boot <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-8fb4e75f">
+<details class="spoiler" id="spoiler-26ddacd7">
   <summary>Помилка "Pkg1 decryption failed! Is BEK Missing?"</summary>
   <div class="spoiler-content">
     <p>Вимкніть і ввімкніть приставку. Перезавантаження не допоможе. Необхідне саме повне вимкнення.</p>
@@ -676,7 +740,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Помилка "Pkg1 decryption failed! Is BEK Missing?" <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-b40a8de2">
+<details class="spoiler" id="spoiler-2ff98a33">
   <summary>У мене інша помилка</summary>
   <div class="spoiler-content">
     <p>Розкажіть про це в <a href="http://tg.customfw.xyz">групі</a>. <strong>Обов’язково</strong> додайте скріншот помилки, версію своєї приставки (якщо не знаєте яка - серійник), як запускається прошивка (чіп (якщо так, то який), донгл (якщо так, то який), ще якось), версію системного ПЗ, наявність EmuNAND, що саме видає помилку - EmuNAND чи SysNAND, версію кефіру, після чого виникає помилка. 
@@ -687,7 +751,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">У мене інша помилка <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-24d75700">
+<details class="spoiler" id="spoiler-8c71ccdf">
   <summary>Не можу запустити HBL</summary>
   <div class="spoiler-content">
     <p>В Atmosphere HBL запускається, утримуючи <img src="/assets/images/switch/buttons/R.png" alt="(R)" /> при запуску альбомів. Детальніше - <a href="/hbl" target="_blank">Homebrew Launcher</a></p>
@@ -760,7 +824,7 @@
     
 </div>
 
-<div class="page__footer-copyright">&copy; 2026 xHR. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2026 Switch CustomFW (xHR). Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

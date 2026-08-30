@@ -22,19 +22,25 @@
 
 
 
-<title>Запуск пейлоадера через Fusée Gelée - Прошивка Nintendo Switch</title>
-<meta name="description" content="Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.">
-<meta name="robots" content="index, follow, max-image-preview:large">
+
+
+
+
+<title>Запуск пейлоадера через Fusée Gelée — Прошивка Nintendo Switch — повний український гайд</title>
+<meta name="description" content="Запуск пейлоада через вразливість Fusée Gelée (RCM) на Nintendo Switch V1. Крок гайду switch.customfw.xyz.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="xHR">
 
 <link rel="canonical" href="https://switch.customfw.xyz/fusee-gelee">
 <link rel="alternate" hreflang="uk" href="https://switch.customfw.xyz/fusee-gelee">
 <link rel="alternate" hreflang="x-default" href="https://switch.customfw.xyz/fusee-gelee">
+<link rel="alternate" type="text/plain" title="llms.txt" href="https://switch.customfw.xyz/llms.txt">
+<link rel="alternate" type="text/plain" title="llms-full.txt" href="https://switch.customfw.xyz/llms-full.txt">
 
 <meta property="og:locale" content="uk_UA">
-<meta property="og:site_name" content="Прошивка Nintendo Switch">
+<meta property="og:site_name" content="Прошивка Nintendo Switch — повний український гайд">
 <meta property="og:title" content="Запуск пейлоадера через Fusée Gelée">
-<meta property="og:description" content="Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.">
+<meta property="og:description" content="Запуск пейлоада через вразливість Fusée Gelée (RCM) на Nintendo Switch V1. Крок гайду switch.customfw.xyz.">
 <meta property="og:url" content="https://switch.customfw.xyz/fusee-gelee">
 <meta property="og:type" content="website">
 
@@ -48,7 +54,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Запуск пейлоадера через Fusée Gelée">
-<meta name="twitter:description" content="Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.">
+<meta name="twitter:description" content="Запуск пейлоада через вразливість Fusée Gelée (RCM) на Nintendo Switch V1. Крок гайду switch.customfw.xyz.">
 <meta name="twitter:url" content="https://switch.customfw.xyz/fusee-gelee">
 
   <meta name="twitter:image" content="https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg">
@@ -64,12 +70,39 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
+  "@type": "Organization",
   "@id": "https://switch.customfw.xyz#identity",
-  "name": "xHR",
+  "name": "Switch CustomFW",
+  "alternateName": "Гайд з прошивки Nintendo Switch",
   "url": "https://switch.customfw.xyz",
+  "description": "Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: підготовка SD-карти, EmuNAND, Homebrew, модчип, оновлення, захист від бану та відновлення.",
   "logo": "https://switch.customfw.xyz/assets/images/bio-photo.png",
-  "sameAs": ["https://github.com/rashevskyv","https://t.me/xhrxhrxhr","https://www.instagram.com/rashevsky.v"]
+  "sameAs": ["https://switch.customfw.xyz","https://customfw.xyz","https://shop.customfw.xyz","https://github.com/rashevskyv","https://t.me/kefir_ukr","https://t.me/xhrxhrxhr","https://www.instagram.com/rashevsky.v"],
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "CustomFW",
+    "url": "https://customfw.xyz"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "xHR",
+    "jobTitle": "Автор гайду Switch CustomFW і розробник збірки Kefir",
+    "url": "https://customfw.xyz",
+    "sameAs": [
+      "https://github.com/rashevskyv",
+      "https://t.me/xhrxhrxhr"
+    ]
+  },
+  "knowsAbout": [
+    "прошивка Nintendo Switch",
+    "Kefir",
+    "Atmosphere",
+    "EmuNAND",
+    "Picofly",
+    "Fusée Gelée",
+    "Homebrew",
+    "модчип"
+  ]
 }
 </script>
 
@@ -79,8 +112,8 @@
   "@type": "WebSite",
   "@id": "https://switch.customfw.xyz#website",
   "url": "https://switch.customfw.xyz",
-  "name": "Прошивка Nintendo Switch",
-  "description": "Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.",
+  "name": "Прошивка Nintendo Switch — повний український гайд",
+  "description": "Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: підготовка SD-карти, EmuNAND, Homebrew, модчип, оновлення, захист від бану та відновлення.",
   "inLanguage": "uk-UA",
   "publisher": {
     "@id": "https://switch.customfw.xyz#identity"
@@ -95,19 +128,15 @@
   "@id": "https://switch.customfw.xyz/fusee-gelee#webpage",
   "url": "https://switch.customfw.xyz/fusee-gelee",
   "name": "Запуск пейлоадера через Fusée Gelée",
-  "description": "Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.",
+  "description": "Запуск пейлоада через вразливість Fusée Gelée (RCM) на Nintendo Switch V1. Крок гайду switch.customfw.xyz.",
   "isPartOf": {
     "@id": "https://switch.customfw.xyz#website"
   },
-
-
-
-
   "inLanguage": "uk",
   "breadcrumb": {
     "@id": "https://switch.customfw.xyz/fusee-gelee#breadcrumb"
   },
-  "dateModified": "2026-08-20T19:43:56+03:00",
+  "dateModified": "2026-08-30T11:28:27+03:00",
   "primaryImageOfPage": {
     "@type": "ImageObject",
     "url": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg"
@@ -144,6 +173,35 @@
 
 
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://switch.customfw.xyz/fusee-gelee#article",
+  "headline": "Запуск пейлоадера через Fusée Gelée",
+  "description": "Запуск пейлоада через вразливість Fusée Gelée (RCM) на Nintendo Switch V1. Крок гайду switch.customfw.xyz.",
+  "inLanguage": "uk",
+  "url": "https://switch.customfw.xyz/fusee-gelee",
+  "mainEntityOfPage": {
+    "@id": "https://switch.customfw.xyz/fusee-gelee#webpage"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "xHR",
+    "url": "https://customfw.xyz"
+  },
+  "publisher": {
+    "@id": "https://switch.customfw.xyz#identity"
+  },
+  "image": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg",
+  "dateModified": "2026-08-30T11:28:27+03:00"
+}
+</script>
+
+
+
+
+
   <meta name="google-site-verification" content="bXQ2KTFgfxyvvQx2cGGgbQ59jCOMNMbdSyuHmLPhSwE" />
 
 
@@ -154,7 +212,7 @@
 
 
 <link href="https://switch.customfw.xyz/feed.xml"
-  type="application/atom+xml" rel="alternate" title="Прошивка Nintendo Switch Feed">
+  type="application/atom+xml" rel="alternate" title="Прошивка Nintendo Switch — повний український гайд Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -198,11 +256,11 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch</a>
+        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch — повний український гайд</a>
         <ul class="visible-links"><li class="masthead__menu-item">
             <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
           </li><li class="masthead__menu-item">
-            <a href="http://customfw.xyz" ><i>Інші гайди</i></a>
+            <a href="https://customfw.xyz" ><i>Інші гайди</i></a>
           </li><li class="masthead__menu-item">
             <a href="https://customfw.xyz/donations" ><b>Пожертви</b></a>
           </li><li class="masthead__menu-item">
@@ -226,7 +284,7 @@
           </li><li class="masthead__menu-item">
             <a href="/site-navigation" >Навігація по сайту</a>
           </li><li class="masthead__menu-item">
-            <a href="http://customfw.xyz/contacts" >Зв'язатися з нами</a>
+            <a href="https://customfw.xyz/contacts" >Зв'язатися з нами</a>
           </li></ul>
 
         <button class="greedy-nav__toggle hidden" type="button">
@@ -304,6 +362,12 @@
 </li>
 
 
+      
+      <li>
+        <a href="https://switch.customfw.xyz" target="_blank" itemprop="url">
+          <i class="fa fa-fw fa-chain" aria-hidden="true"></i> Website
+        </a>
+      </li>
       
 
       
@@ -444,7 +508,7 @@
 
 <hr />
 
-<details class="spoiler" id="spoiler-8fd17783">
+<details class="spoiler" id="spoiler-2aeed226">
   <summary>Відеоінструкція</summary>
   <div class="spoiler-content">
     <p class="notice--warning">УВАГА!!! Ми не рекомендуємо сліпо слідувати відео-інструкції! Використовуйте її тільки як допоміжну! Справа в тому, що текстовий гайд постійно оновлюється. Неможливо стежити за всіма оновленнями в гайді і кожен раз змінювати відео-інструкцію слідом за ним! Тому текстовий гайд завжди буде більш точним і більш актуальним, ніж відео!</p>
@@ -549,7 +613,7 @@
 
 <h3 id="частина-i---вхід-в-rcm">Частина I - Вхід в RCM</h3>
 
-<details class="spoiler" id="spoiler-7cd6d793">
+<details class="spoiler" id="spoiler-695c3e14">
   <summary>Відеоінструкція</summary>
   <div class="spoiler-content">
     <p class="notice--warning">УВАГА!!! Ми не рекомендуємо сліпо слідувати відео-інструкції! Використовуйте її тільки як допоміжну! Справа в тому, що текстовий гайд постійно оновлюється. Неможливо стежити за всіма оновленнями в гайді і кожен раз змінювати відео-інструкцію слідом за ним! Тому текстовий гайд завжди буде більш точним і більш актуальним, ніж відео!</p>
@@ -594,7 +658,7 @@
 
 <p>Залежно від ситуації, пробрасуваний пейлоад може бути різним. Ми навмисно не вказуємо на цій сторінці, який пейлоад потрібно пробросити. У явному вигляді це буде сказано на відповідних сторінках. Найчастіше ви будете пробрасувати гекату, яка знаходиться в складі кефіру у вигляді <code class="language-plaintext highlighter-rouge">payload.bin</code></p>
 
-<details class="spoiler" id="spoiler-208346f0">
+<details class="spoiler" id="spoiler-66a7118d">
   <summary>Запуск через донгл</summary>
   <div class="spoiler-content">
     <p>Донгл - це автономний пристрій, який створений виключно для зручного запуску зламу.</p>
@@ -740,7 +804,7 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a></li>
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Запуск через донгл <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-77402ba6">
+<details class="spoiler" id="spoiler-bdeecd57">
   <summary>Запуск на Windows</summary>
   <div class="spoiler-content">
     <h2 id="що-знадобиться">Що знадобиться</h2>
@@ -798,7 +862,7 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a> до ПК</li>
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Запуск на Windows <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-95cc0064">
+<details class="spoiler" id="spoiler-32f1720e">
   <summary>Запуск на macOS</summary>
   <div class="spoiler-content">
     <h2 id="що-знадобиться">Що знадобиться</h2>
@@ -879,7 +943,7 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a></p>
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Запуск на macOS <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-5bcb644d">
+<details class="spoiler" id="spoiler-3f247daf">
   <summary>Запуск на Android</summary>
   <div class="spoiler-content">
     <h2 id="що-знадобиться">Що знадобиться</h2>
@@ -916,7 +980,7 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a></li>
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Запуск на Android <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-3c57ccdf">
+<details class="spoiler" id="spoiler-8faa15d7">
   <summary>Запуск на будь-якій платформі, на якій є браузер</summary>
   <div class="spoiler-content">
     <h2 id="що-знадобиться">Що знадобиться</h2>
@@ -1033,7 +1097,7 @@ lang: ukвхід-в-rcm" target="_blank">режимі RCM</a>!</p>
     
 </div>
 
-<div class="page__footer-copyright">&copy; 2026 xHR. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2026 Switch CustomFW (xHR). Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

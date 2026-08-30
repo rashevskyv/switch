@@ -22,37 +22,43 @@
 
 
 
-<title>Kefir - Прошивка Nintendo Switch</title>
-<meta name="description" content="Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.">
-<meta name="robots" content="index, follow, max-image-preview:large">
+
+
+
+
+<title>Kefir — збірка Atmosphere для Nintendo Switch від xHR — Прошивка Nintendo Switch — повний український гайд</title>
+<meta name="description" content="Що таке збірка Kefir для Nintendo Switch: склад, встановлення, відмінності від чистої Atmosphere. Автор xHR, гайд switch.customfw.xyz.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="xHR">
 
 <link rel="canonical" href="https://switch.customfw.xyz/kefir">
 <link rel="alternate" hreflang="uk" href="https://switch.customfw.xyz/kefir">
 <link rel="alternate" hreflang="x-default" href="https://switch.customfw.xyz/kefir">
+<link rel="alternate" type="text/plain" title="llms.txt" href="https://switch.customfw.xyz/llms.txt">
+<link rel="alternate" type="text/plain" title="llms-full.txt" href="https://switch.customfw.xyz/llms-full.txt">
 
 <meta property="og:locale" content="uk_UA">
-<meta property="og:site_name" content="Прошивка Nintendo Switch">
-<meta property="og:title" content="Kefir">
-<meta property="og:description" content="Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.">
+<meta property="og:site_name" content="Прошивка Nintendo Switch — повний український гайд">
+<meta property="og:title" content="Kefir — збірка Atmosphere для Nintendo Switch від xHR">
+<meta property="og:description" content="Що таке збірка Kefir для Nintendo Switch: склад, встановлення, відмінності від чистої Atmosphere. Автор xHR, гайд switch.customfw.xyz.">
 <meta property="og:url" content="https://switch.customfw.xyz/kefir">
 <meta property="og:type" content="website">
 
 
   <meta property="og:image" content="https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg">
-  <meta property="og:image:alt" content="Kefir">
+  <meta property="og:image:alt" content="Kefir — збірка Atmosphere для Nintendo Switch від xHR">
 
 
 
 
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Kefir">
-<meta name="twitter:description" content="Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.">
+<meta name="twitter:title" content="Kefir — збірка Atmosphere для Nintendo Switch від xHR">
+<meta name="twitter:description" content="Що таке збірка Kefir для Nintendo Switch: склад, встановлення, відмінності від чистої Atmosphere. Автор xHR, гайд switch.customfw.xyz.">
 <meta name="twitter:url" content="https://switch.customfw.xyz/kefir">
 
   <meta name="twitter:image" content="https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg">
-  <meta name="twitter:image:alt" content="Kefir">
+  <meta name="twitter:image:alt" content="Kefir — збірка Atmosphere для Nintendo Switch від xHR">
 
 
 
@@ -64,12 +70,39 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
+  "@type": "Organization",
   "@id": "https://switch.customfw.xyz#identity",
-  "name": "xHR",
+  "name": "Switch CustomFW",
+  "alternateName": "Гайд з прошивки Nintendo Switch",
   "url": "https://switch.customfw.xyz",
+  "description": "Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: підготовка SD-карти, EmuNAND, Homebrew, модчип, оновлення, захист від бану та відновлення.",
   "logo": "https://switch.customfw.xyz/assets/images/bio-photo.png",
-  "sameAs": ["https://github.com/rashevskyv","https://t.me/xhrxhrxhr","https://www.instagram.com/rashevsky.v"]
+  "sameAs": ["https://switch.customfw.xyz","https://customfw.xyz","https://shop.customfw.xyz","https://github.com/rashevskyv","https://t.me/kefir_ukr","https://t.me/xhrxhrxhr","https://www.instagram.com/rashevsky.v"],
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "CustomFW",
+    "url": "https://customfw.xyz"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "xHR",
+    "jobTitle": "Автор гайду Switch CustomFW і розробник збірки Kefir",
+    "url": "https://customfw.xyz",
+    "sameAs": [
+      "https://github.com/rashevskyv",
+      "https://t.me/xhrxhrxhr"
+    ]
+  },
+  "knowsAbout": [
+    "прошивка Nintendo Switch",
+    "Kefir",
+    "Atmosphere",
+    "EmuNAND",
+    "Picofly",
+    "Fusée Gelée",
+    "Homebrew",
+    "модчип"
+  ]
 }
 </script>
 
@@ -79,8 +112,8 @@
   "@type": "WebSite",
   "@id": "https://switch.customfw.xyz#website",
   "url": "https://switch.customfw.xyz",
-  "name": "Прошивка Nintendo Switch",
-  "description": "Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.",
+  "name": "Прошивка Nintendo Switch — повний український гайд",
+  "description": "Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: підготовка SD-карти, EmuNAND, Homebrew, модчип, оновлення, захист від бану та відновлення.",
   "inLanguage": "uk-UA",
   "publisher": {
     "@id": "https://switch.customfw.xyz#identity"
@@ -94,20 +127,16 @@
   "@type": "WebPage",
   "@id": "https://switch.customfw.xyz/kefir#webpage",
   "url": "https://switch.customfw.xyz/kefir",
-  "name": "Kefir",
-  "description": "Український покроковий посібник з прошивки Nintendo Switch: підготовка, EmuNAND, Homebrew, оновлення, безпека та відновлення.",
+  "name": "Kefir — збірка Atmosphere для Nintendo Switch від xHR",
+  "description": "Що таке збірка Kefir для Nintendo Switch: склад, встановлення, відмінності від чистої Atmosphere. Автор xHR, гайд switch.customfw.xyz.",
   "isPartOf": {
     "@id": "https://switch.customfw.xyz#website"
   },
-
-
-
-
   "inLanguage": "uk",
   "breadcrumb": {
     "@id": "https://switch.customfw.xyz/kefir#breadcrumb"
   },
-  "dateModified": "2026-08-20T19:43:56+03:00",
+  "dateModified": "2026-08-30T11:28:27+03:00",
   "primaryImageOfPage": {
     "@type": "ImageObject",
     "url": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg"
@@ -133,10 +162,39 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Kefir",
+      "name": "Kefir — збірка Atmosphere для Nintendo Switch від xHR",
       "item": "https://switch.customfw.xyz/kefir"
     }
   ]
+}
+</script>
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://switch.customfw.xyz/kefir#article",
+  "headline": "Kefir — збірка Atmosphere для Nintendo Switch від xHR",
+  "description": "Що таке збірка Kefir для Nintendo Switch: склад, встановлення, відмінності від чистої Atmosphere. Автор xHR, гайд switch.customfw.xyz.",
+  "inLanguage": "uk",
+  "url": "https://switch.customfw.xyz/kefir",
+  "mainEntityOfPage": {
+    "@id": "https://switch.customfw.xyz/kefir#webpage"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "xHR",
+    "url": "https://customfw.xyz"
+  },
+  "publisher": {
+    "@id": "https://switch.customfw.xyz#identity"
+  },
+  "image": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg",
+  "dateModified": "2026-08-30T11:28:27+03:00"
 }
 </script>
 
@@ -154,7 +212,7 @@
 
 
 <link href="https://switch.customfw.xyz/feed.xml"
-  type="application/atom+xml" rel="alternate" title="Прошивка Nintendo Switch Feed">
+  type="application/atom+xml" rel="alternate" title="Прошивка Nintendo Switch — повний український гайд Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -198,11 +256,11 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch</a>
+        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch — повний український гайд</a>
         <ul class="visible-links"><li class="masthead__menu-item">
             <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
           </li><li class="masthead__menu-item">
-            <a href="http://customfw.xyz" ><i>Інші гайди</i></a>
+            <a href="https://customfw.xyz" ><i>Інші гайди</i></a>
           </li><li class="masthead__menu-item">
             <a href="https://customfw.xyz/donations" ><b>Пожертви</b></a>
           </li><li class="masthead__menu-item">
@@ -226,7 +284,7 @@
           </li><li class="masthead__menu-item">
             <a href="/site-navigation" >Навігація по сайту</a>
           </li><li class="masthead__menu-item">
-            <a href="http://customfw.xyz/contacts" >Зв'язатися з нами</a>
+            <a href="https://customfw.xyz/contacts" >Зв'язатися з нами</a>
           </li></ul>
 
         <button class="greedy-nav__toggle hidden" type="button">
@@ -304,6 +362,12 @@
 </li>
 
 
+      
+      <li>
+        <a href="https://switch.customfw.xyz" target="_blank" itemprop="url">
+          <i class="fa fa-fw fa-chain" aria-hidden="true"></i> Website
+        </a>
+      </li>
       
 
       
@@ -465,7 +529,7 @@
 
 <p><strong>Кефір</strong> - <strong>не прошивка</strong>! Це збірка, що складається з прошивки Atmosphere і необхідного мінімуму рекомендованих програм, плагінів, модулів та іншого софту. Детальніше про склад кефіру нижче. Працює на прошивці <strong>22.5.0</strong> і нижче</p>
 
-<details class="spoiler" id="spoiler-30dec78e">
+<details class="spoiler" id="spoiler-410ad230">
   <summary>Навіщо потрібен кефір?</summary>
   <div class="spoiler-content">
     <p>У першу чергу, кефір потрібен для того, щоб спростити життя користувача. Тобто, якщо у користувача стоїть рекомендована версія системного ПЗ і остання версія кефіру, то все повинно у нього працювати. Можна сказати, що користувач знаходиться в контрольованих умовах. Достатньо назвати версію системного ПЗ і кефіру, і відразу стає зрозуміло, що приблизно встановлено в системі.</p>
@@ -475,7 +539,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Навіщо потрібен кефір? <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-5c0fc401">
+<details class="spoiler" id="spoiler-8f6dc49f">
   <summary>Склад кефіру</summary>
   <div class="spoiler-content">
     <ol>
@@ -547,7 +611,7 @@ lang: ukдампимо-ключі" target="_blank">дампу ключів пр�
 
 <h3 id="інструкція-з-встановленняоновлення-kefir">Інструкція з встановлення/оновлення kefir</h3>
 
-<details class="spoiler" id="spoiler-5932bef9">
+<details class="spoiler" id="spoiler-888253ca">
   <summary>Перше встановлення або встановлення на чисту карту пам'яті</summary>
   <div class="spoiler-content">
     <ol>
@@ -568,10 +632,10 @@ lang: ukдампимо-ключі" target="_blank">дампу ключів пр�
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Перше встановлення або встановлення на чисту карту пам'яті <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-f44b6454">
+<details class="spoiler" id="spoiler-b2770850">
   <summary>Оновлення kefir або перехід з іншої збірки</summary>
   <div class="spoiler-content">
-    <details class="spoiler" id="spoiler-35ee59f3">
+    <details class="spoiler" id="spoiler-3a2165cf">
   <summary>Інструкція з встановлення вручну (всі ОС)</summary>
   <div class="spoiler-content">
     <h3 id="підключення-карти-памяті-приставки-до-пк">Підключення карти пам’яті приставки до ПК</h3>
@@ -610,7 +674,7 @@ lang: ukдампимо-ключі" target="_blank">дампу ключів пр�
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Інструкція з встановлення вручну (всі ОС) <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-48da8993">
+<details class="spoiler" id="spoiler-da601a95">
   <summary>Оновлення кефіру прямо на приставці (версія кефіру 529 або вище)</summary>
   <div class="spoiler-content">
     <ol>
@@ -637,7 +701,7 @@ lang: ukдампимо-ключі" target="_blank">дампу ключів пр�
 
 <h3 id="вирішення-проблем">Вирішення проблем</h3>
 
-<details class="spoiler" id="spoiler-4f1a08e7">
+<details class="spoiler" id="spoiler-0d18e584">
   <summary>Чисте встановлення кефіру (рекомендується при виникненні помилок)</summary>
   <div class="spoiler-content">
     <ol>
@@ -650,7 +714,7 @@ lang: ukдампимо-ключі" target="_blank">дампу ключів пр�
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чисте встановлення кефіру (рекомендується при виникненні помилок) <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-41668564">
+<details class="spoiler" id="spoiler-c48919fc">
   <summary>Налагоджувальне встановлення кефіру (рекомендується, якщо просто чисте не допомогло)</summary>
   <div class="spoiler-content">
     <ol>
@@ -819,7 +883,7 @@ hekate
 
 <h3 id="зміни-від-минулої-версії">Зміни від минулої версії</h3>
 
-<details class="spoiler" id="spoiler-d33ac8f3">
+<details class="spoiler" id="spoiler-07d6e7d0">
   <summary>Спойлер</summary>
   <div class="spoiler-content">
     <h2 id="changelog">Changelog</h2>
@@ -1019,7 +1083,7 @@ The old forwarder HBMenu will also launch with an error. Reinstall it from ‘ga
     
 </div>
 
-<div class="page__footer-copyright">&copy; 2026 xHR. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2026 Switch CustomFW (xHR). Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
