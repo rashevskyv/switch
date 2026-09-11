@@ -1,11 +1,17 @@
 {% if page.faqs %}
 <section class="page__faq" id="faq" style="margin-top: 2.5rem;">
   <h2>Часті запитання</h2>
-  {% for faq in page.faqs %}
+  {% if include.style == "plain" %}
+    {% for faq in page.faqs %}
+  <p style="margin: 0 0 1.1rem;"><strong>{{ faq.q }}</strong><br>{{ faq.a }}</p>
+    {% endfor %}
+  {% else %}
+    {% for faq in page.faqs %}
   <details style="background: #ffffff; border: 1px solid #e1e8ed; border-radius: 6px; padding: 1rem 1.25rem; margin-bottom: 0.75rem;">
     <summary style="font-weight: 600; cursor: pointer;">{{ faq.q }}</summary>
     <div style="margin-top: 0.75rem;">{{ faq.a | markdownify }}</div>
   </details>
-  {% endfor %}
+    {% endfor %}
+  {% endif %}
 </section>
 {% endif %}

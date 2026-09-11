@@ -12,9 +12,10 @@ layout: null
   {% if target contains '://' %}
     {% assign absolute_target = target %}
   {% else %}
-    {% unless target contains '/' and target | slice: 0, 1 == '/' %}
+    {% assign target_prefix = target | slice: 0, 1 %}
+    {% if target_prefix != '/' %}
       {% assign target = '/' | append: target %}
-    {% endunless %}
+    {% endif %}
     {% assign absolute_target = site.url | append: target %}
   {% endif %}
   <link rel="canonical" href="{{ absolute_target }}">

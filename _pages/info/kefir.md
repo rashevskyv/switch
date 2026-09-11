@@ -7,7 +7,7 @@ redirect_from:
   - /uk/kefir
   - /uk/kefir/
 lang: uk
-title: Kefir — скачати збірку для Nintendo Switch
+title: Kefir
 permalink: /kefir
 seo_title: "Скачати Kefir для Nintendo Switch — збірка Atmosphere від xHR"
 description: "Скачати Kefir (кефір) на Nintendo Switch: остання версія збірки Atmosphere від xHR, Kefir Updater, встановлення та оновлення. GitHub rashevskyv/kefir."
@@ -24,17 +24,12 @@ faqs:
 {% include toc title="Розділи" %}
 {% include notices %}	
 
-<p class="notice--success" style="font-size:1.05rem;">
-<strong>Скачати Kefir {% include /inc/kefir/version %}</strong> — офіційний реліз автора xHR:<br />
-<a class="btn btn--primary" href="https://github.com/rashevskyv/kefir/releases/latest" target="_blank" rel="noopener">Завантажити з GitHub</a>
-<a class="btn btn--success" href="https://github.com/rashevskyv/kefir-updater" target="_blank" rel="noopener">Kefir Updater</a>
-</p>
+## [KEFIR {% include /inc/kefir/version %}](https://github.com/rashevskyv/kefir/releases/latest){:target="_blank"}
 
-Оновлення вже встановленої збірки на приставці: [HBL](/hbl) → **Kefir Updater** → **Оновити Kefir** (потрібен інтернет). Повний гайд з прошивки: [головна](/). Магазин і чіпування: [shop.customfw.xyz](https://shop.customfw.xyz/).
+[![Сплеш-екран збірки Kefir](/assets/images/switch/kefir.png)](https://github.com/rashevskyv/kefir/releases/latest){:target="_blank"}
+{: .text-center}
 
-## [KEFIR {% include /inc/kefir/version %}](https://github.com/rashevskyv/kefir/releases/latest){:target="_blank"} — остання версія
-
-![kefir](/assets/images/switch/kefir.png){: width="70%"}
+Остання збірка — з [GitHub](https://github.com/rashevskyv/kefir/releases/latest){:target="_blank"}. На вже прошитій консолі достатньо [HBL](/hbl) → **Kefir Updater** → **Оновити Kefir** (потрібен інтернет). Гайд з прошивки — [з головної](/), чіпування — [shop.customfw.xyz](https://shop.customfw.xyz/).
 {: .text-center}
 
 ### Що таке кефір
@@ -73,6 +68,7 @@ lang: ukдампимо-ключі){:target="_blank"}
   * [Daybreak](https://github.com/Atmosphere-NX/Atmosphere/tree/0.14.1/troposphere/daybreak){:target="_blank"} - програма для [безпечного оновлення](/update-fw){:target="_blank"} версії системного ПЗ приставки
   * [NXThemes Installer](https://github.com/exelix11/SwitchThemeInjector){:target="_blank"} - менеджер кастомних тем
   * [Linkalho](https://github.com/rdmrocha/linkalho){:target="_blank"} - програма [прив'язки облікового запису](/link-account){:target="_blank"}
+  * [NX-Activity-Log](https://github.com/aoihera/NX-Activity-Log/releases/tag/1.5.8.a){:target="_blank"} — журнал ігрової активності: час у іграх, графіки, іконки з Atmosphere (`1.5.8.a`)
 6. **Встановлені модулі**. Модулі - це додаткові компоненти, що працюють всередині Atmosphere і дозволяють робити різні круті штуки, наприклад, використання xbox-сумісних контролерів, емуляцію amiibo, розгін тощо. На жаль, SX OS модулі не підтримує
   * [sys-con](https://github.com/o0Zz/sys-con){:target="_blank"} - модуль, що дозволяє підключати до консолі по USB практично будь-які геймпади
   * [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} - модуль, що дозволяє підключати до консолі по bluetooth практично будь-які геймпади
@@ -201,7 +197,7 @@ lang: ukдампимо-ключі){:target="_blank"}
 * [FAQ](/faq){:target="_blank"}
 * [Проблеми та їх рішення](/troubleshooting){:target="_blank"}
 
-{% include faq-list.html %}
+{% include faq-list.html style="plain" %}
 
 ### Розгін
 Для зміни статуса розгону перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include /inc/btn.txt btn="L" %} + {% include /inc/btn.txt btn="DOWN" %} + {% include /inc/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Overlock status`. **On** - розгін включено, **Off** - вимкнено. 
