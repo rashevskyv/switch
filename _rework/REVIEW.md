@@ -25,15 +25,15 @@ All 58 links to docs pages and anchors were checked against the docs build.
   - Data: `navigation.yml`, `llms*.txt`.
 - **Archived.** `tinfoil` is now a stub pointing to /games. `inc/hbgshop.txt` and `inc/tinfoil.txt` were deleted (unused).
 
-## Decisions taken as defaults (change if wrong)
-1. Kefir Hub is the main path everywhere.
-2. DBI stays only for what Hub lacks: "Reset required version" and "Clean orphaned files" (worded "також можна через DBI").
-3. Cheats are switched on inside a game through Tesla → EdiZon, as before.
-4. Tinfoil is archived. Daybreak is removed from `update-fw`.
-5. MTP is the recommended install method. NSPsplitty is dropped. DBI "delete after install" has no equivalent and was dropped.
-6. Ultrahand everywhere (Uberhand was the old name).
-7. `kefir.md` still lists Daybreak, NXThemes Installer and NX-Activity-Log because we could not confirm whether they stay in Kefir.
-8. Zadig: it is not confirmed whether Hub USB install needs a driver. `inc/zadig.txt` is a short notice with a TODO.
+## Decisions (confirmed by the owner 2026-10-02)
+1. Kefir Hub is the main path everywhere. The docs URL `hub.customfw.xyz` stays.
+2. DBI stays in Kefir. It is mentioned for what Hub lacks (Reset required version, Clean orphaned files).
+3. Kefir loses only Daybreak and Linkalho. Kefir Updater, NXThemes Installer and NX-Activity-Log stay.
+4. Cheats are switched on inside a game through Tesla → EdiZon.
+5. Offline account link carries a ban risk. Use it only on emuMMC isolated from Nintendo servers.
+6. The install-enable switch will be removed (kefir-hub plan D.2), and so will the "turn installing on" step.
+7. Zadig: the driver will ship with DBI Backend Qt (plan D.1). Until then `inc/zadig.txt` is a short notice.
+8. Tinfoil is archived. MTP is the recommended install method.
 
 ## Before merging
 - Kefir intentionally ships Sphaira as `/hbmenu.nro` for now. Kefir Hub goes into Kefir only after the docs, the site and the videos are ready, and this branch is merged together with that release.
