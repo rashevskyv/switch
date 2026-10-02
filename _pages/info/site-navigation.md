@@ -62,6 +62,8 @@ author_profile: true
 * [Часті питання](/faq){:target="_blank"}
 * [Проблеми та їх вирішення](/troubleshooting){:target="_blank"}
 * [Kefir](/kefir){:target="_blank"}
+* [Kefir Hub — головний застосунок Kefir](/hbl){:target="_blank"}
+* [Документація Kefir Hub]({{ site.kefir_hub_docs }}/uk/){:target="_blank"}
 * [Лонгрід про роботу Атмосфери, Кефір, сток та семі-сток](/longread){:target="_blank"}
 * [Про бани. Розгорнуто, детально, зрозуміло](/ban){:target="_blank"}
 * [Як правильно купити вживану Nintendo Switch - повний гід з перевірки](/buying-used){:target="_blank"}
@@ -75,20 +77,19 @@ author_profile: true
 * [Перехід з SXOS на Atmosphere](/migrate){:target="_blank"}
 * [Перехід на EmuNAND для вже прошитих](/preparation-white){:target="_blank"}
 * [Встановлення EmuNAND](/emunand){:target="_blank"}
-* [Запуск Homebrew Launcher](/hbl){:target="_blank"}
+* [Kefir Hub: запуск, головний екран, homebrew](/hbl){:target="_blank"}
 * [Резервне копіювання та відновлення збережень](/backup-saves){:target="_blank"}
 * [Даунгрейд та відновлення прошивки у разі, якщо приставка вийшла з ладу](/downgrade_fw){:target="_blank"}
 * [Прив'язка облікового запису консолі до акаунту Nintendo](/link-account){:target="_blank"}
 * [AutoRCM](/autorcm){:target="_blank"}
 * [Блокування оновлень та доступу до серверів Nintendo через Incognito (тільки для Caffeine)](/block-update){:target="_blank"}
-* [Використання FTP](/ftp){:target="_blank"}
+* [Доступ до файлів з ПК (MTP, FTP, браузер)](/ftp){:target="_blank"}
 
 ## Ігри
 
 * [Встановлення ігор, DLC, оновлень](/games){:target="_blank"}
-* [Встановлення ігор за допомогою tinfoil](/tinfoil){:target="_blank"}
 * [Емуляція Amiibo за допомогою модуля emuiibo](/emuiibo){:target="_blank"}
-* [Використання читів в EdiZon](/cheats){:target="_blank"}
+* [Використання читів](/cheats){:target="_blank"}
 * [Мультиплеєр на прошитій консолі (LAN Play)](/lanplay){:target="_blank"}
 
 ## Донгли

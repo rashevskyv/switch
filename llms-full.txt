@@ -24,7 +24,7 @@ A linear Ukrainian walkthrough for installing custom firmware on Nintendo Switch
 2. Identify the exploit path on /get-started.
 3. Backup NAND: https://switch.customfw.xyz/backup-nand
 4. Create EmuNAND: https://switch.customfw.xyz/emunand
-5. Use Homebrew: https://switch.customfw.xyz/hbl
+5. Use Kefir Hub (homebrew, games, saves, cheats, themes, updates): https://switch.customfw.xyz/hbl and https://switch.customfw.xyz/usage
 6. Keep firmware updated safely: https://switch.customfw.xyz/update-fw
 7. Optional extras: addons, Tesla overlay, cheats, Amiibo emulation, LAN play.
 
@@ -36,7 +36,8 @@ A linear Ukrainian walkthrough for installing custom firmware on Nintendo Switch
 
 ## Software
 - Kefir: curated Atmosphere-based pack with install scripts. https://switch.customfw.xyz/kefir and https://github.com/rashevskyv/kefir
-- Game installer commonly used after setup: DBI (https://github.com/rashevskyv/dbi)
+- Kefir Hub: the main homebrew app shipped with Kefir. Launches homebrew, installs games (microSD, PC over USB, MTP, network), backs up and restores saves, downloads cheats and themes, manages user profiles, updates Kefir and firmware, shares the memory card with a PC (MTP, FTP, browser). Replaces Sphaira and Kefir Updater. https://switch.customfw.xyz/hbl, docs: https://hub.customfw.xyz/uk/ (English: https://hub.customfw.xyz/)
+- DBI: optional, only for features Kefir Hub lacks (for example resetting the required game version or cleaning orphaned files); Kefir Hub can download it.
 
 ## High-traffic articles
 - FAQ: https://switch.customfw.xyz/faq
@@ -45,6 +46,7 @@ A linear Ukrainian walkthrough for installing custom firmware on Nintendo Switch
 - Buying used Switch: https://switch.customfw.xyz/buying-used
 - Ban explainer: https://switch.customfw.xyz/ban
 - Using an already-modded console: https://switch.customfw.xyz/usage
+- Accessing the memory card from a PC: https://switch.customfw.xyz/ftp
 - Site map: https://switch.customfw.xyz/site-navigation
 
 ## Contact

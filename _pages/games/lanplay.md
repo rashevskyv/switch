@@ -25,7 +25,7 @@ author_profile: true
 
 * Свіжа версія {% include abbr/kefir_addr.txt %}
 * Свіжа версія [ldn_mitm](https://github.com/spacemeowx2/ldn_mitm/releases/latest){:target="_blank"} (ldn_mitm_vx.x.x.zip)
-	* Рекомендується завантажувати з [hb appstore](https://apps.fortheusers.org/switch/ldn_mitm){:target="_blank"} (розділ tools)
+	* Рекомендується встановлювати прямо на приставці через [Kefir Hub](/hbl){:target="_blank"}: **Інструменти** → **Додаткові програми** → **Homebrew App Store**, знайдіть **ldn_mitm** ([детальніше]({{ site.kefir_hub_docs }}/uk/software/#homebrew-app-store){:target="_blank"})
 * Свіжа версія програми [Lan-Play-Server-Manager](https://github.com/Urferu/Lan-Play-Server-Manager/releases/latest){:target="_blank"}
 	* Користувачі MacOS та Linux можуть скористатися програмою [switch-lan-play](https://github.com/spacemeowx2/switch-lan-play){:target="_blank"}
 * Драйвери [WinPCap](https://www.winpcap.org/install/bin/WinPcap_4_1_3.exe){:target="_blank"}

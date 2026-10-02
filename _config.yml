@@ -289,6 +289,9 @@ defaults:
       lang: ru
       permalink: /ru/:year/:month/:day/:title/
 
+# Kefir Hub user docs (built from kefir-hub repo docs/site). TODO: final URL before merge.
+kefir_hub_docs: "https://hub.customfw.xyz"
+
 # Custom Scripts
 footer_scripts:
   - /assets/js/spoiler-anim.js

@@ -48,12 +48,12 @@ redirect_from:
 
 ## Крок 2: Встановлення Chiaki на Switch
 
-1.  Завантажте останню версію `Chiaki` для Switch (файл `.nro`) з [офіційного GitHub](https://git.sr.ht/~thestr4ng3r/chiaki){:target="_blank"} або через **HB App Store**.
-2.  Підключіть карту пам'яті Switch до ПК (або використайте MTP через DBI/FTP).
+1.  Завантажте останню версію `Chiaki` для Switch (файл `.nro`) з [офіційного GitHub](https://git.sr.ht/~thestr4ng3r/chiaki){:target="_blank"} або встановіть прямо на приставці через **Homebrew App Store** у [Kefir Hub](/hbl){:target="_blank"} (**Інструменти** → **Додаткові програми** → **Homebrew App Store**) і пропустіть кроки 2–4 ([детальніше]({{ site.kefir_hub_docs }}/uk/software/#homebrew-app-store){:target="_blank"}).
+2.  Підключіть карту пам'яті Switch до ПК (або відкрийте її з ПК через [Kefir Hub]({{ site.kefir_hub_docs }}/uk/sharing/){:target="_blank"}: MTP, FTP або браузер).
 3.  Створіть папку `Chiaki` за шляхом: `/switch/Chiaki/`.
 4.  Скопіюйте файл `chiaki.nro` у цю папку.
 
-> **Порада:** Рекомендується запускати Chiaki через **Title Override** (утримуючи кнопку `R` при запуску будь-якої встановленої гри), щоб програма отримала доступ до всієї оперативної пам'яті консолі. Запуск через "Альбом" (Applet Mode) може призвести до вильотів.
+> **Порада:** Рекомендується запускати Chiaki через **Title Override**: утримуючи кнопку `R` при запуску будь-якої встановленої гри, відкрийте Homebrew Menu або [Kefir Hub](/hbl){:target="_blank"} і вже звідти запустіть Chiaki, щоб програма отримала доступ до всієї оперативної пам'яті консолі. Запуск через "Альбом" (Applet Mode) може призвести до вильотів.
 {: .notice--info}
 
 ---

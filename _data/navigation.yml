@@ -10,6 +10,8 @@ main:
     url: /get-started
   - title: "Kefir"
     url: /kefir
+  - title: "Kefir Hub"
+    url: /hbl
   - title: "Резервне<br>копіювання"
     url: /backup-nand
   - title: "EmuNAND"
@@ -47,10 +49,12 @@ addons:
     url: /link-account
   - title: "Використання EmuNAND для тих, хто вже прошився раніше"
     url: /preparation-white
-  - title: "Використання читів в EdiZon"
+  - title: "Використання читів"
     url: /cheats
   - title: "Резервне копіювання та відновлення збережень"
     url: /backup-saves
+  - title: "Доступ до файлів з ПК (MTP, FTP, браузер)"
+    url: /ftp
   - title: "Онлайн для прошитих і забанених"
     url: /lanplay
   - title: "Безпечне оновлення прошивки"
@@ -59,5 +63,5 @@ addons:
     url: /backup-nand
   - title: "Запуск пейлоадера через Fusée Gelée"
     url: /fusee-gelee
-  - title: "Повна інструкція з використання DBI"
-    url: "https://github.com/rashevskyv/dbi"
+  - title: "Документація Kefir Hub"
+    url: "https://hub.customfw.xyz/uk/"

@@ -1,20 +1,3 @@
-Необхідно зробити лише раз для коректної роботи встановлення по USB
-{: .notice--warning}
-
-Ці драйвери відрізняються від тих, що використовуються для передачі пейлоаду на switch! Якщо ви жодного разу не встановлювали ігри цим методом, ставити драйвери потрібно обов'язково!
-{: .notice--warning}
-
-1.  Підключіть Switch до ПК кабелем
-2.  **На приставці** запустіть **DBI** через [Homebrew Launcher](hbl){:target="_blank"}
-3.  Виберіть пункт "**Install title from USB**"
-4.  На ПК запустіть [`Zadig.exe`](https://zadig.akeo.ie/){:target="_blank"} від імені Адміністратора
-
-    ![](/assets/images/switch/screenshots/zadig.jpg)
-    {: .text-center}
-    {: .notice--info}
-
-5.  Переконайтеся, що в полі, позначеному зеленим, стоїть "**libnx USB comms**"
-    *   Якщо в полі порожньо, спробуйте увімкнути відображення всіх пристроїв, натиснувши "**Options**" -> "**List all devices**"
-6.  У полі "**Driver**" виберіть `libusbK (v3.0.7.0)` або новіше
-7.  Натисніть "**Install Driver**" (або **Replace Driver**, якщо драйвер уже встановлено)
-8.  Після успішного встановлення драйвера натисніть "**Close**" і закрийте програму
+{% comment %}TODO: Hub docs (install/usb.md#requirements) do not confirm whether Windows needs a USB driver (libusbK via Zadig) for DBI Backend / ns-usbloader / Fluffy with Kefir Hub. Restore the Zadig steps here once verified.{% endcomment %}
+Якщо програма на ПК не бачить консоль, перевірте кабель і що на консолі відкрито екран **Очікування ПК**. Чи потрібен у Windows окремий USB-драйвер, ще уточнюється — дивіться інструкцію вашої програми для ПК
+{: .notice--info}

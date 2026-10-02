@@ -26,8 +26,8 @@ redirect_from:
 - Перегляд температури та частот вашого обладнання (потрібен [Status-Monitor-Overlay](https://github.com/masagrator/Status-Monitor-Overlay), що не входить в склад кефіру)
 - Зміна конфігурацій системних модулів "на льоту" (якщо підтримується)
 - Зміна налаштувань Homebrew-додатків під час гри
-- Зручне керування [читами](cheats){:target="_blank"}
-- Увімкнення та вимкнення системних модулів
+- Зручне вмикання та вимикання [читів](cheats){:target="_blank"} просто в грі
+- Увімкнення та вимкнення системних модулів (поза грою це зручніше робити в [Kefir Hub]({{ site.kefir_hub_docs }}/uk/system-tools/#module-manager){:target="_blank"}: **Керування модулями**)
 
 ## Як відкрити Tesla-Menu
 За замовчуванням Tesla-Menu відкривається комбінацією клавіш {% include inc/btn.txt btn="L" %} + {% include inc/btn.txt btn="R3" %} + {% include inc/btn.txt btn="DOWN" %}
@@ -52,7 +52,7 @@ redirect_from:
 ## Популярні оверлеї для Tesla-Menu
 - [EdiZon overlay](https://github.com/proferabg/EdiZon-Overlay) — керування читами (наявний в кефірі)
 - [Status-Monitor-Overlay](https://github.com/masagrator/Status-Monitor-Overlay) — моніторинг ресурсів системи
-- [QuickNTP](https://github.com/nedex/QuickNTP) — синхронізація часу через інтернет
+- [QuickNTP](https://github.com/nedex/QuickNTP) — синхронізація часу через інтернет (Kefir Hub і так звіряє годинник у фоні, якщо увімкнено **Синхронізація годинника** в його [налаштуваннях]({{ site.kefir_hub_docs }}/uk/settings/#general){:target="_blank"})
 - [Emuiibo](https://github.com/XorTroll/emuiibo) — емуляція Amiibo (потребує встановленого системного модуля Emuiibo)
 - [TriPlayer](https://github.com/DefenderOfHyrule/TriPlayer) — музичний плеєр (потребує встановленого системного модуля TriPlayer)
 - [ldn_mitm](https://github.com/DefenderOfHyrule/ldn_mitm) — гра в мережі (потребує встановленого системного модуля ldn_mitm)

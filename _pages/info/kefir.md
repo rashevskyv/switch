@@ -10,26 +10,26 @@ lang: uk
 title: Kefir
 permalink: /kefir
 seo_title: "Скачати Kefir для Nintendo Switch — збірка Atmosphere від xHR"
-description: "Скачати Kefir (кефір) на Nintendo Switch: остання версія збірки Atmosphere від xHR, Kefir Updater, встановлення та оновлення. GitHub rashevskyv/kefir."
+description: "Скачати Kefir (кефір) на Nintendo Switch: остання версія збірки Atmosphere від xHR, Kefir Hub, встановлення та оновлення. GitHub rashevskyv/kefir."
 author_profile: true
 faqs:
   - q: "Де скачати Kefir для Nintendo Switch?"
     a: "Офіційні релізи лише на GitHub автора: github.com/rashevskyv/kefir/releases/latest. Актуальна версія збірки вказана на цій сторінці."
-  - q: "Що таке Kefir Updater?"
-    a: "Homebrew у складі збірки. На консолі з інтернетом відкриваєте HBL → Kefir Updater → Оновити Kefir. Окремо качати updater не потрібно, якщо вже стоїть Kefir 529+."
+  - q: "Як оновити Kefir прямо на консолі?"
+    a: "Через Kefir Hub — головний застосунок збірки. На консолі з інтернетом відкрийте Kefir Hub → Інструменти → Оновлювач і виберіть нову версію в розділі KEFIR. Окремий Kefir Updater більше не потрібен."
   - q: "Kefir — це прошивка?"
-    a: "Ні. Це збірка: форк Atmosphere (Kefirosphere), hekate, DBI, скрипти встановлення. Автор — xHR, гайд — switch.customfw.xyz."
+    a: "Ні. Це збірка: форк Atmosphere (Kefirosphere), hekate, Kefir Hub, скрипти встановлення. Автор — xHR, гайд — switch.customfw.xyz."
 ---
 
 {% include toc title="Розділи" %}
-{% include notices %}	
+{% include notices %}
 
 ## [KEFIR {% include /inc/kefir/version %}](https://github.com/rashevskyv/kefir/releases/latest){:target="_blank"}
 
 [![Сплеш-екран збірки Kefir](/assets/images/switch/kefir.png)](https://github.com/rashevskyv/kefir/releases/latest){:target="_blank"}
 {: .text-center}
 
-Остання збірка — з [GitHub](https://github.com/rashevskyv/kefir/releases/latest){:target="_blank"}. На вже прошитій консолі достатньо [HBL](/hbl) → **Kefir Updater** → **Оновити Kefir** (потрібен інтернет). Гайд з прошивки — [з головної](/), чіпування — [shop.customfw.xyz](https://shop.customfw.xyz/).
+Остання збірка — з [GitHub](https://github.com/rashevskyv/kefir/releases/latest){:target="_blank"}. На вже прошитій консолі достатньо [Kefir Hub](/hbl) → **Інструменти** → **Оновлювач** (потрібен інтернет). Гайд з прошивки — [з головної](/), чіпування — [shop.customfw.xyz](https://shop.customfw.xyz/).
 {: .text-center}
 
 ### Що таке кефір
@@ -57,22 +57,17 @@ faqs:
 2. **Сігпатчі**. Завдяки ним на Atmosphere можна запускати непідписані (читай: *піратські*) програми та ігри.
 3. **Завантажувач [hekate](https://github.com/CTCaer/hekate){:target="_blank"}**. Завдяки завантажувачу ви можете запускати прошивку та інші {% include abbr/payload.txt abbr="пейлоади" %} через зручне меню, створювати та відновлювати резервну копію NAND, робити EmuNAND, отримувати інформацію про стан системи, монтувати карту пам'яті до ПК без витягування її зі свічу, робити перерозмітку карти пам'яті для встановлення інших ОС і багато іншого
 4. **Встановлені {% include abbr/payload.txt abbr="пейлоади" %}**:
-  * [Lockpick_RCM] - програма для [дампу ключів приставки](backup-nand#частина-iii---
-lang: ukдампимо-ключі){:target="_blank"}
+  * Lockpick_RCM - програма для [дампу ключів приставки](/backup-nand#частина-i---дампимо-ключі){:target="_blank"}
   * [TegraExplorer](https://github.com/rashevskyv/TegraExplorer/){:target="_blank"} - файловий менеджер для Switch у вигляді пейлоада. Аналог GodMode9 для 3DS
 5. **Встановлене Homebrew**
-  * [DBI](https://github.com/rashevskyv/dbi){:target="_blank"} - програма для [встановлення ігор](/games){:target="_blank"} по USB або з карти пам'яті
-  * Tinfoil — застарілий спосіб тягнути ігри з мережі; публічних магазинів більше немає, ставте ігри через [DBI](/games){:target="_blank"} ([архівна сторінка Tinfoil](/tinfoil))
-  * [Kefir Updater](https://github.com/rashevskyv/kefir-updater){:target="_blank"} - програма для оновлення kefir через інтернет
-  * [Sphaira](https://github.com/ITotalJustice/sphaira/releases/){:target="_blank"} - середовище для запуску homebrew, скачування тем та додатків на switch, файловий менеджер 
+  * **[Kefir Hub](/hbl){:target="_blank"}** - головний застосунок збірки: запуск homebrew, [встановлення ігор](/games){:target="_blank"} (з карти пам'яті, по USB, MTP і мережі), [резервне копіювання збережень](/backup-saves){:target="_blank"}, [чити](/cheats){:target="_blank"}, теми, профілі користувачів і [прив'язка облікового запису](/link-account){:target="_blank"}, [оновлення kefir і прошивки](/update-fw){:target="_blank"}, файловий менеджер, [доступ до карти пам'яті з ПК](/ftp){:target="_blank"}. Замінив Sphaira і Kefir Updater. [Документація]({{ site.kefir_hub_docs }}/uk/){:target="_blank"}
   * [Daybreak](https://github.com/Atmosphere-NX/Atmosphere/tree/0.14.1/troposphere/daybreak){:target="_blank"} - програма для [безпечного оновлення](/update-fw){:target="_blank"} версії системного ПЗ приставки
-  * [NXThemes Installer](https://github.com/exelix11/SwitchThemeInjector){:target="_blank"} - менеджер кастомних тем
-  * [Linkalho](https://github.com/rdmrocha/linkalho){:target="_blank"} - програма [прив'язки облікового запису](/link-account){:target="_blank"}
+  * [NXThemes Installer](https://github.com/exelix11/SwitchThemeInjector){:target="_blank"} - менеджер кастомних тем (теми завантажуються через Kefir Hub, а застосовуються тут)
   * [NX-Activity-Log](https://github.com/aoihera/NX-Activity-Log/releases/tag/1.5.8.a){:target="_blank"} — журнал ігрової активності: час у іграх, графіки, іконки з Atmosphere (`1.5.8.a`)
 6. **Встановлені модулі**. Модулі - це додаткові компоненти, що працюють всередині Atmosphere і дозволяють робити різні круті штуки, наприклад, використання xbox-сумісних контролерів, емуляцію amiibo, розгін тощо. На жаль, SX OS модулі не підтримує
   * [sys-con](https://github.com/o0Zz/sys-con){:target="_blank"} - модуль, що дозволяє підключати до консолі по USB практично будь-які геймпади
   * [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} - модуль, що дозволяє підключати до консолі по bluetooth практично будь-які геймпади
-  * [Ultrahand](https://github.com/rashevskyv/Ultrahand-Overlay){:target="_blank"} - спеціальне оверлей-меню для взаємодії з системою p підтримкою користувацьких скриптів і модулів
+  * [Ultrahand](https://github.com/rashevskyv/Ultrahand-Overlay){:target="_blank"} - спеціальне оверлей-меню для взаємодії з системою з підтримкою користувацьких скриптів і модулів
     - Скрипти:
       * **DBI** - зміна локалізації та оновлення програми
       * **Translate Interface** - додаткові переклади інтерфейсу на вибір
@@ -81,7 +76,10 @@ lang: ukдампимо-ключі){:target="_blank"}
     - Модулі:
       - [nx-ovlloader](https://github.com/ppkantorski/nx-ovlloader){:target="_blank"} - процес для роботи з nro через Tesla Menu
       - [ovlEdiZon.ovl](https://github.com/proferabg/EdiZon-Overlay/releases){:target="_blank"} - Модуль для [використання читів](/cheats){:target="_blank"}
-      - [ovlSysmodules.ovl](https://github.com/WerWolv/ovl-sysmodules/){:target="_blank"} - Модуль для вмикання та вимикання встановлених системних модулів (наприклад, розгін, emuuibo тощо)
+      - [ovlSysmodules.ovl](https://github.com/WerWolv/ovl-sysmodules/){:target="_blank"} - Модуль для вмикання та вимикання встановлених системних модулів (наприклад, розгін, emuuibo тощо). Те саме можна зробити в Kefir Hub: **Інструменти** → **Інструменти** → **Керування модулями**
+
+Ігри встановлює Kefir Hub. DBI знадобиться лише для функцій, яких у Kefir Hub немає; завантажити його можна через сам Kefir Hub: **Інструменти** → **Додаткові програми** → **DBI**. Tinfoil застарів ([архівна сторінка](/tinfoil)).
+{: .notice--info}
 
 {% endspoiler %}
 
@@ -125,14 +123,18 @@ lang: ukдампимо-ключі){:target="_blank"}
 
 {% endspoiler %}
 
-{% spoiler Оновлення кефіру прямо на приставці (версія кефіру 529 або вище) %}
+{% spoiler Оновлення кефіру прямо на приставці через Kefir Hub %}
 
-1. Запустіть [HBL](/hbl){:target="_blank"}
-1. Виберіть **Kefir Updater**
+{% comment %}shot: updater-main{% endcomment %}
+
+1. Запустіть [Kefir Hub](/hbl){:target="_blank"}
     * Потрібне підключення до інтернету!
-1. Натисніть "**Оновити Kefir**", натисніть на "**Kefir {% include /inc/kefir/version %}**", виберіть "**Завантажити**"
-1. Дочекайтеся закінчення закачування та розпакування, потім натисніть "**Продовжити**". Приставка перезавантажиться в пейлоад, після чого почнеться процес встановлення кефіру
-1. Після закінчення встановлення, натисніть будь-яку кнопку для завантаження приставки в прошивку
+1. Натисніть {% include /inc/btn.txt btn="R" %}, щоб перейти на вкладку **Інструменти**, і виберіть **Оновлювач**
+1. У розділі **KEFIR** виберіть "**Kefir {% include /inc/kefir/version %}**" (нова версія позначена **UPDATE**) і натисніть {% include /inc/btn.txt btn="A" %}
+1. Відкриється список змін. Прокрутіть його до кінця кнопкою {% include /inc/btn.txt btn="DOWN" %} — лише тоді стане доступною кнопка "**Встановлення**". Виберіть її і натисніть {% include /inc/btn.txt btn="A" %}
+1. Дочекайтеся закінчення завантаження та розпакування. На запит "**Пакет Kefir встановлено. Перезавантажити зараз?**" виберіть "**Перезавантажити**"
+
+Детальніше — [документація Kefir Hub]({{ site.kefir_hub_docs }}/uk/updater/#update-kefir){:target="_blank"}
 
 {% endspoiler %}
 
@@ -179,20 +181,20 @@ lang: ukдампимо-ключі){:target="_blank"}
 ### **Важлива інформація!**
 
   * Перезавантаження в hekate відбувається прямо з прошивки, через звичайне меню перезавантаження. Просто затисніть (VOL-) під час сплешскріна кефіру
-  * Ви можете отримати доступ до своєї карти пам'яті, не виймаючи її з приставки по MTP (**DBI** -> **Run MTP Responder**), або через hekate ({% include /inc/sd_hekate.md %}) (не у всіх працює коректно, **неможливо оновити kefir по MTP**)
+  * Ви можете отримати доступ до своєї карти пам'яті, не виймаючи її з приставки, по MTP (запустіть [Kefir Hub](/hbl){:target="_blank"} і підключіть консоль до ПК кабелем, детальніше — [Доступ до файлів з ПК](/ftp){:target="_blank"}), або через hekate ({% include /inc/sd_hekate.md %}) (не у всіх працює коректно, **неможливо оновити kefir по MTP**)
   * Встановлення та оновлення kefir проводяться однаково!
   * При виникненні помилки "**Is BEK missing**" вимкніть приставку й увімкніть заново.
 
 ## Додаткова інформація
-* Для роботи з модулями ([sys-con](https://github.com/cathery/sys-con/releases/latest){:target="_blank"}, [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} та ін.) у кефірі встановлений [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} - спеціальне оверлей-меню для взаємодії з системою. Для його активації натисніть {% include /inc/btn.txt btn="L" %} + {% include /inc/btn.txt btn="DOWN" %} + {% include /inc/btn.txt btn="R3" %}
+* Для роботи з модулями ([sys-con](https://github.com/cathery/sys-con/releases/latest){:target="_blank"}, [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} та ін.) у кефірі встановлений [Ultrahand](https://github.com/rashevskyv/Ultrahand-Overlay){:target="_blank"} - спеціальне оверлей-меню для взаємодії з системою. Для його активації натисніть {% include /inc/btn.txt btn="L" %} + {% include /inc/btn.txt btn="DOWN" %} + {% include /inc/btn.txt btn="R3" %}
 * Для переходу в semi-stock
-  * **З самої прошивки (рекомендовано)**: перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include /inc/btn.txt btn="L" %} + {% include /inc/btn.txt btn="DOWN" %} + {% include /inc/btn.txt btn="R3" %}), натисніть вправо > `Semi-stock`
+  * **З самої прошивки (рекомендовано)**: перейдіть в [Ultrahand](https://github.com/rashevskyv/Ultrahand-Overlay){:target="_blank"} ({% include /inc/btn.txt btn="L" %} + {% include /inc/btn.txt btn="DOWN" %} + {% include /inc/btn.txt btn="R3" %}), натисніть вправо > `Semi-stock`
   * **При запуску консолі (не рекомендується)**:
     {% include /inc/launch-hekate.txt %}
     1. Виберіть `More-configs` > `Semi-stock`
   * **Зверніть увагу**, що при запуску з прошивки, встановлена тема буде вимкнена, що дозволить уникнути помилок, якщо на консолі різні версії системного ПЗ та емунанду
   * **Зверніть увагу**, що при запуску через `More-configs` > `Semi-stock` тема, що встановлена в emunand буде відображатися і Semi-stock. У випадку, якщо в semi-stock та emunand встановлені різні версії системного ПЗ, це приведе до помилки і перезагрузки приставки!
-* Оновити кефір можна за допомогою утиліти **Kefir Updater**
+* Оновити кефір можна прямо на приставці через [Kefir Hub](/hbl){:target="_blank"}: **Інструменти** → **Оновлювач**
 * [Корисні інструкції з використання приставки](/usage){:target="_blank"}
 * [FAQ](/faq){:target="_blank"}
 * [Проблеми та їх рішення](/troubleshooting){:target="_blank"}
@@ -200,21 +202,25 @@ lang: ukдампимо-ключі){:target="_blank"}
 {% include faq-list.html style="plain" %}
 
 ### Розгін
-Для зміни статуса розгону перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include /inc/btn.txt btn="L" %} + {% include /inc/btn.txt btn="DOWN" %} + {% include /inc/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Overlock status`. **On** - розгін включено, **Off** - вимкнено. 
+Для зміни статусу розгону запустіть [Kefir Hub](/hbl){:target="_blank"}, перейдіть в **Інструменти** → **Налаштування кефіру** → **Статус розгону** і утримуйте {% include /inc/btn.txt btn="A" %} для підтвердження. Консоль перезавантажиться.
 
-Якщо розгін включено, `Overlock status` буде в положенні `On`
+Також це можна зробити в [Ultrahand](https://github.com/rashevskyv/Ultrahand-Overlay){:target="_blank"} ({% include /inc/btn.txt btn="L" %} + {% include /inc/btn.txt btn="DOWN" %} + {% include /inc/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Overclock status`. **On** - розгін включено, **Off** - вимкнено.
+
+Якщо розгін включено, `Overclock status` буде в положенні `On`
 {: .notice--info}
 
 ### Режим підтримки 8Гб пам'яті
 
-УВАГА! Якщо ви не робитли модифікацію своєї консолі і не встановлювали в неї 8GB пам'яті, то нее вмикайте цю опцію!
+УВАГА! Якщо ви не робили модифікацію своєї консолі і не встановлювали в неї 8GB пам'яті, то не вмикайте цю опцію!
 {: .notice--danger}
 
 * **Увімкнення**
-  * Для вмикання перейдіть в [Uberhand](https://github.com/efosamark/Uberhand-Overlay){:target="_blank"} ({% include /inc/btn.txt btn="L" %} + {% include /inc/btn.txt btn="DOWN" %} + {% include /inc/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Advance` > `Enable 8GB support`
-    * Опція навмисно захована за 3 вкладених мменю, щоб запобігти випадкове включання
+  * Для вмикання запустіть [Kefir Hub](/hbl){:target="_blank"}, перейдіть в **Інструменти** → **Налаштування кефіру** → **Статус 8 ГБ оперативної пам'яті** і утримуйте {% include /inc/btn.txt btn="A" %} три секунди. Консоль перезавантажиться в TegraExplorer, який застосує налаштування
+  * Також можна перейти в [Ultrahand](https://github.com/rashevskyv/Ultrahand-Overlay){:target="_blank"} ({% include /inc/btn.txt btn="L" %} + {% include /inc/btn.txt btn="DOWN" %} + {% include /inc/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `8GB DRAM status`
+    * Утримання кнопки потрібне, щоб запобігти випадковому вмиканню
 * **Вимкнення**
-  * Для вимкнення перевстановіть кефір зручними способом
+  * Для вимкнення виберіть той самий пункт у Kefir Hub ще раз, або перевстановіть кефір зручним способом
+  * Якщо після вмикання консоль не завантажується: у hekate відкрийте **Payloads** → **TegraExplorer** і запустіть `Remove_8GB-RAM_config.te`
 
 ____
 
