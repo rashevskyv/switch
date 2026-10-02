@@ -32,7 +32,7 @@ All 58 links to docs pages and anchors were checked against the docs build.
 4. Cheats are switched on inside a game through Tesla → EdiZon.
 5. Offline account link carries a ban risk. Use it only on emuMMC isolated from Nintendo servers.
 6. The install-enable switch will be removed (kefir-hub plan D.2), and so will the "turn installing on" step.
-7. Zadig: the driver will ship with DBI Backend Qt (plan D.1). Until then `inc/zadig.txt` is a short notice.
+7. Zadig: DBI Backend Qt 2.9.0 installs the WinUSB driver itself (plan D.1); `inc/zadig.txt` says so. ns-usbloader/Fluffy still use Zadig.
 8. Tinfoil is archived. MTP is the recommended install method.
 
 ## Before merging
