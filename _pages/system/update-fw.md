@@ -35,6 +35,10 @@ author_profile: true
 Під час кожного встановлення прошивки (і оновлення, і даунгрейду) власні системні теми й переклади системного інтерфейсу **видаляються**. Після оновлення встановіть їх знову.
 {: .notice--info}
 
+Якщо Kefir Hub повідомить, що теми й переклади **не вдалося** видалити (так зазвичай не буває), не запускайте нову прошивку, бо можлива помилка 2162-0002. Запустіть {% include abbr/hekate.txt abbr="hekate" %} -> **Payloads** -> `TegraExplorer.bin` і виберіть **Kefir Helper**: він прибере їх на нижчому рівні. Після Kefir Helper обов'язково **перевстановіть Kefir**, бо він вимикає багато складових Kefir, щоб запобігти помилкам. Якщо і Kefir Helper не допоміг, перевірте карту пам'яті на помилки.
+{: .notice--warning}
+{% comment %}TODO: exact place of Kefir Helper in the TegraExplorer menu; link a page on checking the card for errors{% endcomment %}
+
 ## Теоретична частина
 
 Якщо ви хочете отримати підтримку {% include abbr/exfat.txt %} або {% include abbr/sdhc.txt %}, повністю дотримуйтесь цього посібника, навіть якщо у вас і так вже остання прошивка. Дії для активації {% include abbr/exfat.txt %}, {% include abbr/sdhc.txt %} і для підняття прошивки ідентичний! Так, потрібно робити, навіть якщо у вас вже й так {% include /vars/update_version.txt %}
