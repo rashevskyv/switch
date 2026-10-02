@@ -36,7 +36,7 @@ All 58 links to docs pages and anchors were checked against the docs build.
 8. Zadig: it is not confirmed whether Hub USB install needs a driver. `inc/zadig.txt` is a short notice with a TODO.
 
 ## Before merging
-- Kefir 921 still ships Sphaira as `/hbmenu.nro` and no Kefir Hub. The site already describes Hub; merge together with the Kefir release that ships it.
+- Kefir intentionally ships Sphaira as `/hbmenu.nro` for now. Kefir Hub goes into Kefir only after the docs, the site and the videos are ready, and this branch is merged together with that release.
 - Screenshots: `{% comment %}shot: <id>{% endcomment %}` marks a picture to add. The ids are the same as in the
   Hub docs (`python docs/site/shotlist.py` in kefir-hub).
 - Videos: `{% comment %}TODO: new video ...{% endcomment %}` marks where to embed. Scripts are in kefir-hub `docs/video/`.
