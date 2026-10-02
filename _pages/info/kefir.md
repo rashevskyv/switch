@@ -16,9 +16,9 @@ faqs:
   - q: "Де скачати Kefir для Nintendo Switch?"
     a: "Офіційні релізи лише на GitHub автора: github.com/rashevskyv/kefir/releases/latest. Актуальна версія збірки вказана на цій сторінці."
   - q: "Як оновити Kefir прямо на консолі?"
-    a: "Через Kefir Hub — головний застосунок збірки. На консолі з інтернетом відкрийте Kefir Hub → Інструменти → Оновлювач і виберіть нову версію в розділі KEFIR. Окремий Kefir Updater більше не потрібен."
+    a: "Через Kefir Hub — головний застосунок збірки. На консолі з інтернетом відкрийте Kefir Hub → Інструменти → Оновлювач і виберіть нову версію в розділі KEFIR. Kefir Updater теж лишається у складі збірки."
   - q: "Kefir — це прошивка?"
-    a: "Ні. Це збірка: форк Atmosphere (Kefirosphere), hekate, Kefir Hub, скрипти встановлення. Автор — xHR, гайд — switch.customfw.xyz."
+    a: "Ні. Це збірка: форк Atmosphere (Kefirosphere), hekate, Kefir Hub, DBI, скрипти встановлення. Автор — xHR, гайд — switch.customfw.xyz."
 ---
 
 {% include toc title="Розділи" %}
@@ -60,8 +60,9 @@ faqs:
   * Lockpick_RCM - програма для [дампу ключів приставки](/backup-nand#частина-i---дампимо-ключі){:target="_blank"}
   * [TegraExplorer](https://github.com/rashevskyv/TegraExplorer/){:target="_blank"} - файловий менеджер для Switch у вигляді пейлоада. Аналог GodMode9 для 3DS
 5. **Встановлене Homebrew**
-  * **[Kefir Hub](/hbl){:target="_blank"}** - головний застосунок збірки: запуск homebrew, [встановлення ігор](/games){:target="_blank"} (з карти пам'яті, по USB, MTP і мережі), [резервне копіювання збережень](/backup-saves){:target="_blank"}, [чити](/cheats){:target="_blank"}, теми, профілі користувачів і [прив'язка облікового запису](/link-account){:target="_blank"}, [оновлення kefir і прошивки](/update-fw){:target="_blank"}, файловий менеджер, [доступ до карти пам'яті з ПК](/ftp){:target="_blank"}. Замінив Sphaira і Kefir Updater. [Документація]({{ site.kefir_hub_docs }}/uk/){:target="_blank"}
-  * [Daybreak](https://github.com/Atmosphere-NX/Atmosphere/tree/0.14.1/troposphere/daybreak){:target="_blank"} - програма для [безпечного оновлення](/update-fw){:target="_blank"} версії системного ПЗ приставки
+  * **[Kefir Hub](/hbl){:target="_blank"}** - головний застосунок збірки: запуск homebrew, [встановлення ігор](/games){:target="_blank"} (з карти пам'яті, по USB, MTP і мережі), [резервне копіювання збережень](/backup-saves){:target="_blank"}, [чити](/cheats){:target="_blank"}, теми, профілі користувачів і [прив'язка облікового запису](/link-account){:target="_blank"}, [оновлення kefir і прошивки](/update-fw){:target="_blank"}, файловий менеджер, [доступ до карти пам'яті з ПК](/ftp){:target="_blank"}. Замінив Sphaira, Daybreak і Linkalho. [Документація]({{ site.kefir_hub_docs }}/uk/){:target="_blank"}
+  * [DBI](https://github.com/rashevskyv/dbi){:target="_blank"} - програма для [встановлення ігор](/games){:target="_blank"} по USB або з карти пам'яті
+  * [Kefir Updater](https://github.com/rashevskyv/kefir-updater){:target="_blank"} - програма для оновлення kefir через інтернет
   * [NXThemes Installer](https://github.com/exelix11/SwitchThemeInjector){:target="_blank"} - менеджер кастомних тем (теми завантажуються через Kefir Hub, а застосовуються тут)
   * [NX-Activity-Log](https://github.com/aoihera/NX-Activity-Log/releases/tag/1.5.8.a){:target="_blank"} — журнал ігрової активності: час у іграх, графіки, іконки з Atmosphere (`1.5.8.a`)
 6. **Встановлені модулі**. Модулі - це додаткові компоненти, що працюють всередині Atmosphere і дозволяють робити різні круті штуки, наприклад, використання xbox-сумісних контролерів, емуляцію amiibo, розгін тощо. На жаль, SX OS модулі не підтримує
@@ -78,7 +79,7 @@ faqs:
       - [ovlEdiZon.ovl](https://github.com/proferabg/EdiZon-Overlay/releases){:target="_blank"} - Модуль для [використання читів](/cheats){:target="_blank"}
       - [ovlSysmodules.ovl](https://github.com/WerWolv/ovl-sysmodules/){:target="_blank"} - Модуль для вмикання та вимикання встановлених системних модулів (наприклад, розгін, emuuibo тощо). Те саме можна зробити в Kefir Hub: **Інструменти** → **Інструменти** → **Керування модулями**
 
-Ігри встановлює Kefir Hub. DBI знадобиться лише для функцій, яких у Kefir Hub немає; завантажити його можна через сам Kefir Hub: **Інструменти** → **Додаткові програми** → **DBI**. Tinfoil застарів ([архівна сторінка](/tinfoil)).
+Ігри встановлює Kefir Hub. DBI теж є у складі збірки і знадобиться лише для функцій, яких у Kefir Hub немає. Tinfoil застарів ([архівна сторінка](/tinfoil)).
 {: .notice--info}
 
 {% endspoiler %}
@@ -131,7 +132,7 @@ faqs:
     * Потрібне підключення до інтернету!
 1. Натисніть {% include /inc/btn.txt btn="R" %}, щоб перейти на вкладку **Інструменти**, і виберіть **Оновлювач**
 1. У розділі **KEFIR** виберіть "**Kefir {% include /inc/kefir/version %}**" (нова версія позначена **UPDATE**) і натисніть {% include /inc/btn.txt btn="A" %}
-1. Відкриється список змін. Прокрутіть його до кінця кнопкою {% include /inc/btn.txt btn="DOWN" %} — лише тоді стане доступною кнопка "**Встановлення**". Виберіть її і натисніть {% include /inc/btn.txt btn="A" %}
+1. Відкриється список змін. Прокрутіть його до кінця кнопкою {% include /inc/btn.txt btn="DOWN" %} — лише тоді стане доступною кнопка "**Встановити**". Виберіть її і натисніть {% include /inc/btn.txt btn="A" %}
 1. Дочекайтеся закінчення завантаження та розпакування. На запит "**Пакет Kefir встановлено. Перезавантажити зараз?**" виберіть "**Перезавантажити**"
 
 Детальніше — [документація Kefir Hub]({{ site.kefir_hub_docs }}/uk/updater/#update-kefir){:target="_blank"}
@@ -202,7 +203,11 @@ faqs:
 {% include faq-list.html style="plain" %}
 
 ### Розгін
-Для зміни статусу розгону запустіть [Kefir Hub](/hbl){:target="_blank"}, перейдіть в **Інструменти** → **Налаштування кефіру** → **Статус розгону** і утримуйте {% include /inc/btn.txt btn="A" %} для підтвердження. Консоль перезавантажиться.
+
+Усі перемикачі в **Налаштування Kefir** за замовчуванням вимкнені (**Off**).
+{: .notice--info}
+
+Для зміни статусу розгону запустіть [Kefir Hub](/hbl){:target="_blank"}, перейдіть в **Інструменти** → **Налаштування Kefir** → **Статус розгону** і утримуйте {% include /inc/btn.txt btn="A" %} для підтвердження. Консоль перезавантажиться.
 
 Також це можна зробити в [Ultrahand](https://github.com/rashevskyv/Ultrahand-Overlay){:target="_blank"} ({% include /inc/btn.txt btn="L" %} + {% include /inc/btn.txt btn="DOWN" %} + {% include /inc/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `Overclock status`. **On** - розгін включено, **Off** - вимкнено.
 
@@ -215,12 +220,15 @@ faqs:
 {: .notice--danger}
 
 * **Увімкнення**
-  * Для вмикання запустіть [Kefir Hub](/hbl){:target="_blank"}, перейдіть в **Інструменти** → **Налаштування кефіру** → **Статус 8 ГБ оперативної пам'яті** і утримуйте {% include /inc/btn.txt btn="A" %} три секунди. Консоль перезавантажиться в TegraExplorer, який застосує налаштування
+  * Для вмикання запустіть [Kefir Hub](/hbl){:target="_blank"}, перейдіть в **Інструменти** → **Налаштування Kefir** → **Статус 8 ГБ оперативної пам'яті** і утримуйте {% include /inc/btn.txt btn="A" %} три секунди. Консоль перезавантажиться в TegraExplorer, який застосує налаштування
   * Також можна перейти в [Ultrahand](https://github.com/rashevskyv/Ultrahand-Overlay){:target="_blank"} ({% include /inc/btn.txt btn="L" %} + {% include /inc/btn.txt btn="DOWN" %} + {% include /inc/btn.txt btn="R3" %}), натисніть вправо > `Settings` > `8GB DRAM status`
     * Утримання кнопки потрібне, щоб запобігти випадковому вмиканню
 * **Вимкнення**
   * Для вимкнення виберіть той самий пункт у Kefir Hub ще раз, або перевстановіть кефір зручним способом
   * Якщо після вмикання консоль не завантажується: у hekate відкрийте **Payloads** → **TegraExplorer** і запустіть `Remove_8GB-RAM_config.te`
+
+Опція лише для консолей з фізично впаяними 8 ГБ пам'яті. Якщо консоль завантажилась з увімкненою опцією, 8 ГБ є і працюють. На консолі без 8 ГБ увімкнена опція не дасть консолі завантажитися, тож статус **On** ви побачите лише на консолі з реальними 8 ГБ
+{: .notice--info}
 
 ____
 
