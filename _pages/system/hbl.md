@@ -67,7 +67,7 @@ Homebrew можна запустити у двох режимах:
 
 ## Головний екран
 
-{% comment %}shot: index-main-screen{% endcomment %}
+{% include inc/hub-shot.html id="index-main-screen" %}
 
 У Kefir Hub дві вкладки:
 
@@ -88,7 +88,7 @@ Homebrew можна запустити у двох режимах:
 
 ## Що де
 
-{% comment %}shot: index-tools-tab{% endcomment %}
+{% include inc/hub-shot.html id="index-tools-tab" %}
 
 | Що потрібно зробити | Де в Kefir Hub | Інструкція |
 |---|---|---|
@@ -111,7 +111,7 @@ Homebrew можна запустити у двох режимах:
 
 На вкладці **Homebrew** видно всі `.nro` з папки `/switch/` на карті пам'яті (і з її підпапок на один рівень нижче). Наведіть курсор на додаток і натисніть {% include /inc/btn.txt btn="A" %} — Kefir Hub закриється й запустить його. Сортування, вигляд списку, обране й видалення — у панелі {% include /inc/btn.txt btn="+" %}.
 
-{% comment %}shot: homebrew-grid{% endcomment %}
+{% include inc/hub-shot.html id="homebrew-grid" %}
 
 ### Встановлення додатків
 
@@ -178,7 +178,7 @@ database=Nintendo - Game Boy|Nintendo - Game Boy Color|Nintendo - Game Boy Advan
 
 ## Теми
 
-{% comment %}shot: themes-list{% endcomment %}
+{% include inc/hub-shot.html id="themes-list" %}
 
 1. Відкрийте **Інструменти** → **Теми**
 1. Виберіть готовий набір або **Themezer** (каталог тем із themezer.net) і завантажте тему

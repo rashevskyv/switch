@@ -34,7 +34,7 @@ author_profile: true
 	* "**Завантажити чити 60FPS/GFX**" — набір читів на частоту кадрів, роздільність і графіку. Встановлюється так само
 	* "**Завантажити точні чити**" — чити для однієї гри під її поточну версію (див. нижче)
 
-{% comment %}shot: cheats-menu{% endcomment %}
+{% include inc/hub-shot.html id="cheats-menu" %}
 
 Повні набори перезаписують наявні файли читів з такими самими назвами
 {: .notice--warning}
@@ -51,7 +51,7 @@ author_profile: true
 	* {% include /inc/btn.txt btn="R" %} — переглянути код чита
 1. Натисніть {% include /inc/btn.txt btn="Y" %} та підтвердіть завантаження
 
-{% comment %}shot: cheats-select{% endcomment %}
+{% include inc/hub-shot.html id="cheats-select" %}
 
 Якщо з'явилося "**Читів не знайдено**", у базі немає читів для цієї гри або для її версії.
 
@@ -65,7 +65,7 @@ author_profile: true
 1. Наведіть курсор на гру та натисніть {% include /inc/btn.txt btn="A" %}
 1. Наведіть курсор на файл читів та натисніть {% include /inc/btn.txt btn="Y" %} ("**Виправити BID**"), потім підтвердіть
 
-{% comment %}shot: cheats-files{% endcomment %}
+{% include inc/hub-shot.html id="cheats-files" %}
 
 Файл лише перейменовується під нову версію, коди всередині не змінюються, тож старі чити на новій версії можуть не працювати або працювати неправильно. Краще завантажити чити для нової версії знову
 {: .notice--warning}

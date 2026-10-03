@@ -78,7 +78,7 @@ author_profile: true
    {% comment %}TODO: plan D.2 removes the install switch{% endcomment %}
 1. Прочитайте попередження про бан і виберіть **Увімкнути**
 
-{% comment %}shot: install-index-enable-warning{% endcomment %}
+{% include inc/hub-shot.html id="install-index-enable-warning" %}
 
 Куди ставити гру (карта пам'яті чи внутрішня пам'ять), Kefir Hub типово вибирає сам (**Ставити в** → **Автоматично**). Змінити це можна там само, в **Інструменти** → **Налаштування** → **Встановити**. Усі параметри описані в [документації Kefir Hub]({{ site.kefir_hub_docs }}/uk/install/#install-options){:target="_blank"}
 {: .notice--info}
@@ -147,7 +147,7 @@ Kefir Hub працює з програмами для ПК **DBI Backend** (зо
 1. На вкладці **Інструменти** натисніть {% include /inc/btn.txt btn="+" %} (**Встановлення та обмін**) і виберіть **Встановлення з ПК (USB)**
    * Консоль покаже **Очікування ПК**
 
-   {% comment %}shot: install-usb-waiting{% endcomment %}
+   {% include inc/hub-shot.html id="install-usb-waiting" %}
 
 1. Підключіть консоль до ПК USB-кабелем і запустіть програму на ПК
 1. У програмі на ПК додайте файли й почніть передавання
@@ -168,7 +168,7 @@ Kefir Hub працює з програмами для ПК **DBI Backend** (зо
 1. На вкладці **Інструменти** натисніть {% include /inc/btn.txt btn="+" %} (**Встановлення та обмін**) і виберіть **Вебсервер**
 1. Відскануйте QR-код телефоном або введіть показану адресу в браузері на ПК
 
-   {% comment %}shot: network-web-server-qr{% endcomment %}
+   {% include inc/hub-shot.html id="network-web-server-qr" %}
 
 1. На сторінці **Kefir Hub Files** натисніть **Add to Upload** і виберіть файли ігор
 1. Натисніть **Queue**: у файлів ігор має стояти позначка **Install directly**
@@ -193,7 +193,7 @@ Kefir Hub працює з програмами для ПК **DBI Backend** (зо
 
 Якщо у вас є власний сервер бібліотеки ігор Ownfoil на ПК чи NAS, Kefir Hub показує його каталог і ставить ігри, оновлення й DLC звідти: **Інструменти** → {% include /inc/btn.txt btn="+" %} → **Встановлення та обмін** → **Ownfoil**. Також можна ставити з мережевої папки (SMB, NFS, WebDAV, FTP, HTTP), відкритої у файловому браузері Kefir Hub.
 
-{% comment %}shot: network-ownfoil-catalog{% endcomment %}
+{% include inc/hub-shot.html id="network-ownfoil-catalog" %}
 
 Покроково, з налаштуванням серверів: [Встановлення через мережу]({{ site.kefir_hub_docs }}/uk/install/network/){:target="_blank"}
 
@@ -228,7 +228,7 @@ Kefir Hub працює з програмами для ПК **DBI Backend** (зо
    * Один файл можна поставити просто кнопкою {% include /inc/btn.txt btn="A" %}
    * Щоб поставити все з папки та її підпапок, виділіть папку, натисніть {% include /inc/btn.txt btn="+" %} і виберіть **Встановити рекурсивно**
 
-   {% comment %}shot: install-sd-card-browser-options{% endcomment %}
+   {% include inc/hub-shot.html id="install-sd-card-browser-options" %}
 
 1. Відкриється [черга встановлення](#черга-встановлення). Натисніть {% include /inc/btn.txt btn="A" %} (**Встановити вибране**)
 
@@ -238,7 +238,7 @@ Kefir Hub працює з програмами для ПК **DBI Backend** (зо
 
 Способи II, IV і V спершу відкривають **Черга встановлення**: кожен пакет перевіряється, і видно, скільки місця він займе і куди піде. Нічого не встановлюється, доки ви не натиснете {% include /inc/btn.txt btn="A" %}.
 
-{% comment %}shot: install-sd-card-queue-review{% endcomment %}
+{% include inc/hub-shot.html id="install-sd-card-queue-review" %}
 
 * {% include /inc/btn.txt btn="A" %} — **Встановити вибране** (якщо нічого не вибрано — пакет під курсором)
 * {% include /inc/btn.txt btn="X" %} / {% include /inc/btn.txt btn="Y" %} — вибрати пакет / інвертувати вибір
@@ -254,7 +254,7 @@ Kefir Hub працює з програмами для ПК **DBI Backend** (зо
 
 Вставлений картридж видно вгорі списку **Інструменти** → **Ігрові інструменти** → **Ігри** з позначкою GC. Встановити вміст картриджа на консоль через Kefir Hub не можна: картридж просто грається зі слота. Про дамп картриджа: [Картриджі]({{ site.kefir_hub_docs }}/uk/install/gamecard/){:target="_blank"}
 
-{% comment %}shot: install-gamecard-games-row{% endcomment %}
+{% include inc/hub-shot.html id="install-gamecard-games-row" %}
 
 ### Використання перекладів і модифікацій
 

@@ -126,7 +126,7 @@ faqs:
 
 {% spoiler Оновлення кефіру прямо на приставці через Kefir Hub %}
 
-{% comment %}shot: updater-main{% endcomment %}
+{% include inc/hub-shot.html id="updater-main" %}
 
 1. Запустіть [Kefir Hub](/hbl){:target="_blank"}
     * Потрібне підключення до інтернету!

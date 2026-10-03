@@ -39,8 +39,8 @@ Kefir Hub створює прив'язку без інтернету, викор
 1. Підтвердіть кнопкою "**Прив’язати й перезавантажити**"
 	* Консоль перезавантажиться, після чого профілі матимуть стан "**Прив'язаний**"
 
-{% comment %}shot: users-list{% endcomment %}
-{% comment %}shot: users-link-confirm{% endcomment %}
+{% include inc/hub-shot.html id="users-list" %}
+{% include inc/hub-shot.html id="users-link-confirm" %}
 
 Зняти прив'язку можна там само, пунктом "**Відв’язати Nintendo Account**". Зверніть увагу: так знімається будь-яка прив'язка, зокрема й справжнього облікового запису Nintendo ([докладніше]({{ site.kefir_hub_docs }}/uk/users/#remove-a-nintendo-account-link){:target="_blank"}). Якщо ви зняли прив'язку справжнього облікового запису на емунанді, прив'яжіть профіль знову через Kefir Hub ("**Прив’язати Nintendo Account**"), а не через системні налаштування
 {: .notice--warning}
