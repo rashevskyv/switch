@@ -98,10 +98,20 @@ header:
 
 ___
 
-<center><a href="/get-started" style="margin:20px auto 8px; text-align:center; display:block; width:480px; max-width:100%;" class="btn btn--short">Моя консоль ще не прошита</a></center>
-<center>Почнемо з вибору методу зламу і пройдемо весь шлях до прошитої консолі</center>
-<center><a href="/usage" style="margin:24px auto 8px; text-align:center; display:block; width:480px; max-width:100%;" class="btn btn--short">Моя консоль уже прошита або чипована</a></center>
-<center>Встановимо кефір і покроково навчимося користуватися консоллю</center>
+## З чого почати
+
+<div class="start-paths">
+  <a class="start-path" href="/get-started">
+    <span class="start-path__title">Моя консоль ще не прошита</span>
+    <span class="start-path__text">Виберемо метод зламу і крок за кроком прошиємо консоль: бекап, EmuNAND, кефір.</span>
+    <span class="start-path__go">Почати з нуля →</span>
+  </a>
+  <a class="start-path" href="/usage">
+    <span class="start-path__title">Моя консоль уже прошита або чипована</span>
+    <span class="start-path__text">Встановимо кефір і навчимося користуватися консоллю: ігри, збереження, оновлення.</span>
+    <span class="start-path__go">До інструкції →</span>
+  </a>
+</div>
 
 {% include faq-list.html %}
 
