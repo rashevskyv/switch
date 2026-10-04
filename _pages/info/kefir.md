@@ -16,7 +16,7 @@ faqs:
   - q: "Де скачати Kefir для Nintendo Switch?"
     a: "Офіційні релізи лише на GitHub автора: github.com/rashevskyv/kefir/releases/latest. Актуальна версія збірки вказана на цій сторінці."
   - q: "Як оновити Kefir прямо на консолі?"
-    a: "Через Kefir Hub — головний застосунок збірки. На консолі з інтернетом відкрийте Kefir Hub → Інструменти → Оновлювач і виберіть нову версію в розділі KEFIR. Kefir Updater теж лишається у складі збірки."
+    a: "Через Kefir Hub — головний застосунок збірки. На консолі з інтернетом відкрийте Kefir Hub → Інструменти → Оновлювач і виберіть нову версію в розділі KEFIR."
   - q: "Kefir — це прошивка?"
     a: "Ні. Це збірка: форк Atmosphere (Kefirosphere), hekate, Kefir Hub, DBI, скрипти встановлення. Автор — xHR, гайд — switch.customfw.xyz."
 ---
@@ -62,7 +62,6 @@ faqs:
 5. **Встановлене Homebrew**
   * **[Kefir Hub](/hbl){:target="_blank"}** - головний застосунок збірки: запуск homebrew, [встановлення ігор](/games){:target="_blank"} (з карти пам'яті, по USB, MTP і мережі), [резервне копіювання збережень](/backup-saves){:target="_blank"}, [чити](/cheats){:target="_blank"}, теми, профілі користувачів і [прив'язка облікового запису](/link-account){:target="_blank"}, [оновлення kefir і прошивки](/update-fw){:target="_blank"}, файловий менеджер, [доступ до карти пам'яті з ПК](/ftp){:target="_blank"}. Замінив Sphaira, Daybreak і Linkalho. [Документація]({{ site.kefir_hub_docs }}/uk/){:target="_blank"}
   * [DBI](https://github.com/rashevskyv/dbi){:target="_blank"} - програма для [встановлення ігор](/games){:target="_blank"} по USB або з карти пам'яті
-  * [Kefir Updater](https://github.com/rashevskyv/kefir-updater){:target="_blank"} - програма для оновлення kefir через інтернет
   * [NXThemes Installer](https://github.com/exelix11/SwitchThemeInjector){:target="_blank"} - менеджер кастомних тем (теми завантажуються через Kefir Hub, а застосовуються тут)
   * [NX-Activity-Log](https://github.com/aoihera/NX-Activity-Log/releases/tag/1.5.8.a){:target="_blank"} — журнал ігрової активності: час у іграх, графіки, іконки з Atmosphere (`1.5.8.a`)
 6. **Встановлені модулі**. Модулі - це додаткові компоненти, що працюють всередині Atmosphere і дозволяють робити різні круті штуки, наприклад, використання xbox-сумісних контролерів, емуляцію amiibo, розгін тощо. На жаль, SX OS модулі не підтримує
@@ -158,7 +157,7 @@ faqs:
 
 {% endspoiler %}
 
-* При виникненні помилки [NOFAT] або при будь-якій іншій проблемі з оновленням через скрипт `kefir-updater`, скористайтеся встановленням кефіру через `install.bat`:
+* При виникненні помилки [NOFAT] або при будь-якій іншій проблемі з оновленням через скрипт оновлення, скористайтеся встановленням кефіру через `install.bat`:
   1. Розпакуйте `kefir.zip` в будь-яке зручне місце **на ПК**, *окрім картки пам'яті приставки*
   1. **Вставте в ПК** карту пам'яті приставки
   1. Запустіть `install.bat` з папки, в яку ви розпакували `kefir.zip` і вкажіть букву вашої карти пам'яті
