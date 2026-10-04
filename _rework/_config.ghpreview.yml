@@ -1,7 +1,7 @@
 # Online preview (rashevskyv/kefir-hub .github/workflows/docs-preview.yml): the reworked guide under
-# https://customfw.xyz/kefir-hub/guide/, its links into the Kefir Hub docs on the same preview.
-url: "https://customfw.xyz"
-baseurl: "/kefir-hub/guide"
-kefir_hub_docs: "https://customfw.xyz/kefir-hub"
+# https://hub.customfw.xyz/guide/ (noindex), its links into the Kefir Hub docs on the same site.
+url: "https://hub.customfw.xyz"
+baseurl: "/guide"
+kefir_hub_docs: "https://hub.customfw.xyz"
 preview_noindex: true
 preview_edit_base: "https://github.com/rashevskyv/switch/edit/kefir-hub/"
