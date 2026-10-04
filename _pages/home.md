@@ -4,19 +4,11 @@ redirect_from:
   - /uk/
   - /ru/
 permalink: /
-title: "Прошивка Nintendo Switch українською — повний гайд Kefir"
+title: "Прошивка Nintendo Switch"
+excerpt: "Повний український гайд від автора збірки Kefir"
 seo_title: "Прошивка Nintendo Switch українською — гайд Kefir від автора"
 description: "Прошивка Nintendo Switch і нінтендо світч українською: покроковий гайд від автора збірки Kefir (xHR). Вибір методу, бекап NAND, EmuNAND, Homebrew, оновлення."
 author_profile: true
-faqs:
-  - q: "Чи можна прошити будь-який Nintendo Switch?"
-    a: "Так, прошиваються всі актуальні ревізії (V1, V2, Lite, OLED). Метод залежить від заліза: Fusée Gelée, Caffeine або модчип. Вибір методу — на сторінці /get-started."
-  - q: "Що таке Kefir?"
-    a: "Kefir — збірка автора цього гайду (xHR) на базі Atmosphere з потрібними програмами та скриптами встановлення. Репозиторій: github.com/rashevskyv/kefir."
-  - q: "Де замовити чіпування, якщо не хочу прошивати сам?"
-    a: "У автора гайду: Telegram @xhrxhrxhr або магазин shop.customfw.xyz (чіпування Picofly, продаж готових консолей, ремонт)."
-  - q: "Як зменшити ризик бану?"
-    a: "Користуйтеся неліцензійним ПЗ лише в EmuNAND, тримайте чистий SysNAND для офіційного онлайну, не заходьте в офіційні сервіси Nintendo з кастомної системи. Гарантії 100% немає."
 header:	
   overlay_color: "#5e616c"
   overlay_image: assets/images/switch/home-page-feature.jpg
@@ -26,7 +18,20 @@ header:
 ---
 
 {% include toc title="Розділи" %}
-{% include notices %}	
+<p class="home-shop">Не хочете прошивати самі? <a href="https://shop.customfw.xyz/" target="_blank">Чіпування і готові консолі</a> · <a href="https://t.me/xhrxhrxhr" target="_blank">Telegram автора</a> · <a href="https://t.me/kefir_ukr" target="_blank">група Kefir</a> · <a href="https://customfw.xyz/donations" target="_blank">підтримати kefir</a></p>
+
+<div class="start-paths">
+  <a class="start-path" href="/get-started">
+    <span class="start-path__title">Моя консоль ще не прошита</span>
+    <span class="start-path__text">Виберемо метод зламу і крок за кроком прошиємо консоль: бекап, EmuNAND, кефір.</span>
+    <span class="start-path__go">Почати з нуля →</span>
+  </a>
+  <a class="start-path" href="/usage">
+    <span class="start-path__title">Моя консоль уже прошита або чипована</span>
+    <span class="start-path__text">Встановимо кефір і навчимося користуватися консоллю: ігри, збереження, оновлення.</span>
+    <span class="start-path__go">До інструкції →</span>
+  </a>
+</div>	
 
 ## Прошивка Nintendo Switch
 
@@ -112,8 +117,3 @@ ___
     <span class="start-path__go">До інструкції →</span>
   </a>
 </div>
-
-{% include faq-list.html %}
-
-
-

@@ -415,3 +415,11 @@ li > p:first-child {
   &[open] summary { margin-bottom: .5rem; }
 }
 .faq-item__answer > p:last-child { margin-bottom: 0; }
+
+/* home: one line instead of the site-wide notices */
+.home-shop {
+  font-size: .85em;
+  color: $gray;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: .75rem;
+}
