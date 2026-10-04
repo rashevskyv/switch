@@ -64,9 +64,10 @@ author_profile: true
 
 {% endspoiler %}
 
-{% spoiler При запуску Emunand помилка "Failed to match warmboot with fuses" %}
+{% spoiler Помилка "Failed to match warmboot with fuses" %}
 
-Просто завантажтеся в Full Stock (**hekate** -> "**More Configs**" -> "**Full Stock**"), перезавантажтеся і помилка зникне. 
+* Якщо помилка з'являється при запуску {% include abbr/emunand.md abbr="EmuNAND" %}, [перевстановіть кефір](/kefir){:target="_blank"}
+* Якщо при запуску офіційної прошивки — теж спробуйте [перевстановити кефір](/kefir){:target="_blank"}. Якщо не допомогло, натисніть кнопку **Power** і користуйтеся консоллю далі. Помилку виправить оновлення кефіру з повною підтримкою вашої версії прошивки
 
 {% endspoiler %}
 
