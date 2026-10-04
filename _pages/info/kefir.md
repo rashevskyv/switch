@@ -69,8 +69,6 @@ faqs:
   * [Mission Control](https://github.com/ndeadly/MissionControl){:target="_blank"} - модуль, що дозволяє підключати до консолі по bluetooth практично будь-які геймпади
   * [Ultrahand](https://github.com/rashevskyv/Ultrahand-Overlay){:target="_blank"} - спеціальне оверлей-меню для взаємодії з системою з підтримкою користувацьких скриптів і модулів
     - Скрипти:
-      * **DBI** - зміна локалізації та оновлення програми
-      * **Translate Interface** - додаткові переклади інтерфейсу на вибір
       * **Semi-stock** - завантаження в семісток з меню
       * **Reboot і Shutdown** - перезавантаження та вимкнення консолі з меню
     - Модулі:
