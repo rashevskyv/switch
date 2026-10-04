@@ -19,7 +19,7 @@ faqs:
   - q: "Чи працює док і телевізор після прошивки?"
     a: "Так. Локальний мультиплеєр також працює."
   - q: "Де взяти допомогу, якщо застряг у гайді?"
-    a: "Чат спільноти t.me/kefir_ukr або особисто автор t.me/xhrxhrxhr. Платне чіпування — shop.customfw.xyz."
+    a: "Чат спільноти t.me/kefir_ukr або особисто автор t.me/xhrxhrxhr. Платне чіпування і ремонт — [shop.customfw.xyz](https://shop.customfw.xyz/)."
 author_profile: true
 ---
 

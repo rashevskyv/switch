@@ -1,2 +1,3 @@
 {%- comment -%}Kefir Hub screenshot, placed by kefir-hub tools/docs/sync_site_shots.py. Usage: {% include inc/hub-shot.html id="saves-list" %}{%- endcomment -%}
-<img src="/assets/images/switch/hub/{{ include.id }}.png" alt="{{ include.alt | default: include.id }}" width="1280" height="720" loading="lazy" style="max-width:100%;height:auto">
+{%- assign shot_alt = include.id | replace: "-", " " | prepend: "Kefir Hub: " -%}
+<img src="/assets/images/switch/hub/{{ include.id }}.png" alt="{{ include.alt | default: shot_alt }}" width="1280" height="720" loading="lazy" style="max-width:100%;height:auto">

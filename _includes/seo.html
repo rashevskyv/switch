@@ -98,6 +98,13 @@
     "name": "CustomFW",
     "url": "https://customfw.xyz"
   },
+  "subOrganization": {
+    "@type": "Store",
+    "@id": "https://shop.customfw.xyz#identity",
+    "name": "Shop CustomFW",
+    "url": "https://shop.customfw.xyz",
+    "description": "Чіпування, продаж прошитих консолей Nintendo Switch і ремонт в Україні від автора гайду"
+  },
   "founder": {
     "@type": "Person",
     "name": "xHR",
@@ -152,7 +159,8 @@
     "@id": {{ canonical_url | append: "#breadcrumb" | jsonify }}
   }{% endunless %}{% if page.date %},
   "datePublished": {{ page.date | date_to_xmlschema | jsonify }}{% endif %}{% if page.last_modified_at %},
-  "dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }}{% elsif site.time %},
+  "dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }}{% elsif page.seo_modified %},
+  "dateModified": {{ page.seo_modified | date_to_xmlschema | jsonify }}{% elsif site.time %},
   "dateModified": {{ site.time | date_to_xmlschema | jsonify }}{% endif %}{% if seo_image %},
   "primaryImageOfPage": {
     "@type": "ImageObject",
@@ -232,7 +240,7 @@
     "@id": {{ seo_url | append: "#identity" | jsonify }}
   }{% if seo_image %},
   "image": {% if seo_image contains "://" %}{{ seo_image | jsonify }}{% else %}{{ seo_image | absolute_url | jsonify }}{% endif %}{% endif %}{% if site.time %},
-  "dateModified": {{ site.time | date_to_xmlschema | jsonify }}{% endif %}
+  "dateModified": {{ page.seo_modified | default: site.time | date_to_xmlschema | jsonify }}{% endif %}
 }
 </script>
 {% endunless %}{% endif %}
