@@ -14,7 +14,7 @@ description: "Скачати Kefir (кефір) на Nintendo Switch: остан
 author_profile: true
 faqs:
   - q: "Де скачати Kefir для Nintendo Switch?"
-    a: "Офіційні релізи лише на GitHub автора: github.com/rashevskyv/kefir/releases/latest. Актуальна версія збірки вказана на цій сторінці."
+    a: "Офіційні релізи лише на GitHub автора: [завантажити останню версію](KEFIR_ZIP_URL). Актуальна версія збірки вказана на цій сторінці."
   - q: "Як оновити Kefir прямо на консолі?"
     a: "Через Kefir Hub — головний застосунок збірки. На консолі з інтернетом відкрийте Kefir Hub → Інструменти → Оновлювач і виберіть нову версію в розділі KEFIR."
   - q: "Kefir — це прошивка?"
@@ -24,7 +24,7 @@ faqs:
 {% include toc title="Розділи" %}
 {% include notices %}
 
-## [KEFIR {% include /inc/kefir/version %}](https://github.com/rashevskyv/kefir/releases/latest){:target="_blank"}
+## [KEFIR {% include /inc/kefir/version %}]({% include inc/kefir/zip_url %}){:target="_blank"}
 
 [![Сплеш-екран збірки Kefir](/assets/images/switch/kefir.png)](https://github.com/rashevskyv/kefir/releases/latest){:target="_blank"}
 {: .text-center}

@@ -188,6 +188,7 @@
 {% endunless %}
 
 {% if page.faqs %}
+{%- capture kefir_zip -%}{% include inc/kefir/zip_url %}{%- endcapture -%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -200,7 +201,7 @@
       "name": {{ faq.q | jsonify }},
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": {{ faq.a | markdownify | strip_html | strip_newlines | strip | jsonify }}
+        "text": {{ faq.a | replace: "KEFIR_ZIP_URL", kefir_zip | markdownify | strip_html | strip_newlines | strip | jsonify }}
       }
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
