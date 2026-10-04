@@ -36,6 +36,7 @@ layout: default
         </header>
       {% endunless %}
 	  
+        {% if site.preview_edit_base and page.path %}<p class="page__meta"><a href="{{ site.preview_edit_base }}{{ page.path }}" target="_blank">✏️ Редагувати цю сторінку</a></p>{% endif %}
         {{ content | include_links }}
 				
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}

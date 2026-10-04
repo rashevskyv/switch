@@ -1,0 +1,18 @@
+# Branch kefir-hub (the guide reworked for Kefir Hub): every push asks rashevskyv/kefir-hub to rebuild the online
+# preview https://customfw.xyz/kefir-hub/guide/ (its workflow docs-preview.yml builds the guide from this branch).
+# Secret HUB_PREVIEW_TOKEN: fine-grained token, repository rashevskyv/kefir-hub, permission Contents: read and write.
+# The live site (gh-pages) is not touched.
+name: hub-preview
+on:
+  push:
+    branches: [kefir-hub]
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Rebuild the preview
+        env:
+          GH_TOKEN: ${{ secrets.HUB_PREVIEW_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then echo "::warning::secret HUB_PREVIEW_TOKEN is not set"; exit 0; fi
+          gh api repos/rashevskyv/kefir-hub/dispatches -f event_type=guide-updated
