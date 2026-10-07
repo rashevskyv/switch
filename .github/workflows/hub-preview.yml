@@ -1,5 +1,8 @@
 # Branch kefir-hub (the guide reworked for Kefir Hub): every push asks rashevskyv/kefir-hub to rebuild the online
-# preview https://customfw.xyz/kefir-hub/guide/ (its workflow docs-preview.yml builds the guide from this branch).
+# preview https://hub.customfw.xyz/guide/ (its workflow docs-preview.yml builds the guide from this branch).
+# The request is a commit: this writes the guide commit into docs/site/guide.ref on branch guide-sync there.
+# GitHub Pages ignores a deployment whose commit was deployed before (actions/deploy-pages#383), so a plain
+# repository_dispatch rebuilds the site but changes nothing online.
 # Secret HUB_PREVIEW_TOKEN: fine-grained token, repository rashevskyv/kefir-hub, permission Contents: read and write.
 # The live site (gh-pages) is not touched.
 name: hub-preview
@@ -7,12 +10,15 @@ on:
   push:
     branches: [kefir-hub]
 jobs:
-  dispatch:
+  sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Rebuild the preview
+      - name: Record the guide commit in kefir-hub
         env:
           GH_TOKEN: ${{ secrets.HUB_PREVIEW_TOKEN }}
+          FILE: repos/rashevskyv/kefir-hub/contents/docs/site/guide.ref
         run: |
           if [ -z "$GH_TOKEN" ]; then echo "::warning::secret HUB_PREVIEW_TOKEN is not set"; exit 0; fi
-          gh api repos/rashevskyv/kefir-hub/dispatches -f event_type=guide-updated
+          old=$(gh api "$FILE?ref=guide-sync" --jq .sha 2>/dev/null || true)
+          gh api -X PUT "$FILE" -f branch=guide-sync -f message="chore: guide at $GITHUB_SHA" \
+            -f content="$(printf '%s\n' "$GITHUB_SHA" | base64 -w0)" ${old:+-f sha="$old"} --jq .commit.sha
