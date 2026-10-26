@@ -292,6 +292,10 @@ Kefir Hub працює з програмами для ПК **DBI Backend** (зо
 
 ## Корисні посилання
 
+{% comment %}
+draft: Kefir Hub automatically resets the base game's stored launch-required version to zero after a game update is registered, on HOS 6.0.0 or later. The reset runs after the package's content records, so later DLC or base records cannot undo it. An already registered update also gets a best-effort reset when a later record fails or is cancelled; that original error remains visible. No extra option or manual step. Skipped updates do not trigger this. Package versions remain unchanged. This does not block Nintendo's later online checks or remove DLC, save or firmware requirements. Verify the HOME launch on a real console. See the Hub installation documentation.
+{% endcomment %}
+
 * [Документація Kefir Hub: встановлення ігор]({{ site.kefir_hub_docs }}/uk/install/){:target="_blank"}
 * [Українізатори ігор та список ігор українською](https://t.me/nintendo_Ukrainizator){:target="_blank"}
 * [Емуляція Amiibo за допомогою модуля emuiibo](/emuiibo){:target="_blank"}
