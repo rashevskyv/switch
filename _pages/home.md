@@ -18,24 +18,13 @@ header:
 ---
 
 {% include toc title="Розділи" %}
-<p class="home-shop">Не хочете прошивати самі? <a href="https://shop.customfw.xyz/" target="_blank">Чіпування і готові консолі</a> · <a href="https://t.me/xhrxhrxhr" target="_blank">Telegram автора</a> · <a href="https://t.me/kefir_ukr" target="_blank">група Kefir</a> · <a href="https://customfw.xyz/donations" target="_blank">підтримати kefir</a></p>
 
-<div class="start-paths">
-  <a class="start-path" href="/get-started">
-    <span class="start-path__title">Моя консоль ще не прошита</span>
-    <span class="start-path__text">Виберемо метод зламу і крок за кроком прошиємо консоль: бекап, EmuNAND, кефір.</span>
-    <span class="start-path__go">Почати з нуля →</span>
-  </a>
-  <a class="start-path" href="/usage">
-    <span class="start-path__title">Моя консоль уже прошита або чипована</span>
-    <span class="start-path__text">Встановимо кефір і навчимося користуватися консоллю: ігри, збереження, оновлення.</span>
-    <span class="start-path__go">До інструкції →</span>
-  </a>
-</div>	
+**Не хочете прошивати самі?** [Чіпування і готові консолі](https://shop.customfw.xyz/){:target="_blank"} · [Telegram автора](https://t.me/xhrxhrxhr){:target="_blank"} · [група Kefir](https://t.me/kefir_ukr){:target="_blank"} · [підтримати Kefir](https://customfw.xyz/donations){:target="_blank"}
+{: .notice--info}
 
 ## Прошивка Nintendo Switch
 
-Цей сайт — український посібник з **прошивки Nintendo Switch** (прошивка нінтендо світч) від **xHR**, автора збірки **[Kefir](/kefir)**. Тут є вибір методу зламу, бекап NAND, EmuNAND, Homebrew і безпечне оновлення. Якщо консоль ще не прошита, починайте з [вибору методу](/get-started); якщо вже прошита або чипована — з [інструкції з використання](/usage). [Скачати Kefir](https://github.com/rashevskyv/kefir/releases/latest){:target="_blank"}. Якщо не хочете прошивати самі — [магазин і чіпування](https://shop.customfw.xyz/){:target="_blank"}.
+Цей сайт — український посібник з **прошивки Nintendo Switch** (прошивка нінтендо світч) від **xHR**, автора збірки **[Kefir](/kefir)**. Тут є вибір методу зламу, бекап NAND, EmuNAND, Homebrew і безпечне оновлення. [Скачати Kefir](https://github.com/rashevskyv/kefir/releases/latest){:target="_blank"}. Якщо не хочете прошивати самі — [магазин і чіпування](https://shop.customfw.xyz/){:target="_blank"}.
 
 ## Як читати цей посібник
 
