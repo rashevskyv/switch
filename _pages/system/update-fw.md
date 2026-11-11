@@ -221,6 +221,9 @@ author_profile: true
 Коли все оновлено, архів чи папку з прошивкою можна видалити з карти пам'яті. Детальніше — в [документації Kefir Hub]({{ site.kefir_hub_docs }}/uk/updater/#install-a-firmware-from-the-memory-card){:target="_blank"}.
 {: .notice--info}
 
+Daybreak більше не входить до складу kefir: прошивку встановлює Kefir Hub. Якщо у вас не kefir, прошивку можна встановити через Daybreak зі складу [Atmosphere](https://github.com/Atmosphere-NX/Atmosphere/releases/latest){:target="_blank"}.
+{: .notice--info}
+
 {% endspoiler %}
 
 ## Важливо знати

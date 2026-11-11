@@ -50,7 +50,7 @@ author_profile: true
 {% endspoiler %}
 
 {% spoiler Daybreak (рассвет) %}
-Хоумбрю, за допомогою якого можна здійснити безпечну (без спалювання запобіжників) установку офіційної прошивки (OFW) потрібної версії. Раніше для цього використовувався менш розвинений ChoiDujourNX. У кефірі прошивку зручніше завантажувати й встановлювати через **Оновлювач** у [Kefir Hub](/hbl){:target="_blank"} — див. [Безпечне оновлення прошивки](/update-fw){:target="_blank"}.
+Хоумбрю, за допомогою якого можна здійснити безпечну (без спалювання запобіжників) установку офіційної прошивки (OFW) потрібної версії. Раніше для цього використовувався менш розвинений ChoiDujourNX. Daybreak більше не входить до складу kefir: прошивку завантажує й встановлює **Оновлювач** у [Kefir Hub](/hbl){:target="_blank"} — див. [Безпечне оновлення прошивки](/update-fw){:target="_blank"}. Daybreak лишається запасним способом, якщо у вас не kefir: він входить до складу [Atmosphere](https://github.com/Atmosphere-NX/Atmosphere/releases/latest){:target="_blank"}.
 {% endspoiler %}
 
 {% spoiler Caffeine/Nereba %}
@@ -90,7 +90,7 @@ author_profile: true
 {% endspoiler %}
 
 {% spoiler Kefir Hub %}
-Головний homebrew-застосунок збірки kefir. Через нього запускаються інші homebrew-додатки, встановлюються ігри, робляться резервні копії збережень, завантажуються чити й теми, оновлюються kefir і прошивка, а карта пам'яті відкривається на ПК через MTP, FTP або браузер. Замінив Sphaira і Kefir Updater. Детальніше — [Kefir Hub](/hbl){:target="_blank"} і [документація Kefir Hub]({{ site.kefir_hub_docs }}/uk/){:target="_blank"}.
+Головний homebrew-застосунок збірки kefir. Через нього запускаються інші homebrew-додатки, встановлюються ігри, робляться резервні копії збережень, завантажуються чити й теми, оновлюються kefir і прошивка, а карта пам'яті відкривається на ПК через MTP, FTP або браузер. Замінив Sphaira, Kefir Updater, Daybreak і Linkalho. Детальніше — [Kefir Hub](/hbl){:target="_blank"} і [документація Kefir Hub]({{ site.kefir_hub_docs }}/uk/){:target="_blank"}.
 {% endspoiler %}
 
 {% spoiler Кастомна прошивка (CFW, кастом) %}

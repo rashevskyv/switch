@@ -251,7 +251,12 @@ author_profile: true
 
 {% spoiler Батарея відображає невірний заряд \ калібрування батареї %}
 
-**В:** [Вичерпна стаття](https://4pda.to/forum/index.php?showtopic=900987&st=14880#entry87254644){:target="_blank"}
+**В:** У Kefir Hub є майстер калібрування: **Інструменти** → **Інструменти** → **Обслуговування** → **Калібрування батареї**. Детальніше — в [документації Kefir Hub]({{ site.kefir_hub_docs }}/uk/battery-calibration/){:target="_blank"}.
+
+**Експериментально!** Калібрування батареї — експериментальна функція. Ви запускаєте її на свій страх і ризик.
+{: .notice--danger}
+
+[Вичерпна стаття](https://4pda.to/forum/index.php?showtopic=900987&st=14880#entry87254644){:target="_blank"} про калібрування вручну.
 
 {% endspoiler %}
 

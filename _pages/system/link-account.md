@@ -47,6 +47,19 @@ Kefir Hub створює прив'язку без інтернету, викор
 
 Докладний опис прив'язки — у [документації Kefir Hub]({{ site.kefir_hub_docs }}/uk/users/#link-profiles-to-a-nintendo-account-offline){:target="_blank"}
 
+### Запасний спосіб: Linkalho
+
+Основний спосіб прив'язки вбудовано в kefir, його виконує Kefir Hub. Linkalho більше не входить до складу kefir. Скористайтеся ним, якщо у вас не kefir або прив'язка через Kefir Hub вам не підходить.
+{: .notice--info}
+
+1. Завантажте `linkalho.nro` з [репозиторію Linkalho](https://github.com/rdmrocha/linkalho/releases/latest){:target="_blank"} і покладіть його в папку `switch` на карті пам'яті
+1. Виконайте кроки 2–4 з інструкції вище
+1. Запустіть [Homebrew Launcher](/hbl){:target="_blank"}
+1. Запустіть **Linkalho**
+1. Виберіть пункт **"Link selected accounts"**
+1. Виберіть **"Continue"**
+1. Виберіть **"Reboot"** для перезавантаження
+
 ___
 
 [Закрити сторінку](javascript:window.close();)

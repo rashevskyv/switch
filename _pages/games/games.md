@@ -136,9 +136,12 @@ author_profile: true
 
 {% spoiler Спосіб II - Встановлення з ПК через USB-програму %}
 
-Підходить, якщо ви звикли до DBI Backend чи ns-usbloader. Перед встановленням консоль перевіряє кожен пакет і показує чергу, де видно розміри й місце встановлення.
+Основна програма для ПК — **[DBI Backend Qt](https://github.com/rashevskyv/dbibackend-qt/releases/latest){:target="_blank"}** (Windows, Linux, macOS). Використовуйте її замість звичайного DBI Backend. Перед встановленням консоль перевіряє кожен пакет і показує чергу, де видно розміри й місце встановлення.
 
-Kefir Hub працює з програмами для ПК **DBI Backend** (зокрема DBI Backend Qt), **ns-usbloader** (режим Awoo/Tinfoil або GoldLeaf) і **Fluffy**. Потоковий режим (stream mode) у програмі має бути **вимкнений**
+DBI Backend Qt ставить не лише ігри, оновлення й DLC. Він також добре ставить homebrew, переклади, моди й рекомпи (порти). Якщо в папці на ПК є такі файли, програма покаже вікно **Choose what to install**, де можна вибрати мову перекладу чи варіант порту. Детальніше — в [документації Kefir Hub]({{ site.kefir_hub_docs }}/uk/install/usb/#releases){:target="_blank"}
+{: .notice--info}
+
+Kefir Hub також працює зі звичайним **DBI Backend**, з **ns-usbloader** (режим Awoo/Tinfoil або GoldLeaf) і з **Fluffy**, але вони ставлять лише ігри. Потоковий режим (stream mode) у програмі має бути **вимкнений**
 {: .notice--warning}
 
 {% include /inc/zadig.txt %}
