@@ -4,7 +4,8 @@ minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint"
 locale                   : "uk-UA"  # Змінено на українську як основну мову
 title                    : "Прошивка Nintendo Switch — повний український гайд"
 title_separator          : "—"
-name                     : "Switch CustomFW (xHR)"
+masthead_title           : "Прошивка Nintendo Switch" # short title for the header bar; the long title stays in <title> for SEO
+name                    : "Switch CustomFW (xHR)"
 description              : "Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: підготовка SD-карти, EmuNAND, Homebrew, модчип, оновлення, захист від бану та відновлення."
 url                      : "https://switch.customfw.xyz"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
