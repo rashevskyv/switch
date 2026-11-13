@@ -60,12 +60,10 @@ author_profile: true
 ### Підтримувані ігри
 
 {% assign nx = site.data.nextendo_games %}
-Список береться із сайту [Nextendo Network](https://nextendo.network){:target="_blank"} під час кожного оновлення цього посібника{% if nx %} (останні зміни: {{ nx.updated }}){% endif %}. **Готово** означає, що онлайн цієї гри працює повністю. Відсоток показує, яка частина онлайну працює зараз. Найновіший стан та кількість гравців онлайн дивіться на [сайті Nextendo](https://nextendo.network){:target="_blank"}.
+Список береться із сайту [Nextendo Network](https://nextendo.network){:target="_blank"} під час кожного оновлення цього посібника, а також автоматично раз на добу. **Готово** означає, що онлайн цієї гри працює повністю. Відсоток показує, яка частина онлайну працює зараз. Найновіший стан та кількість гравців онлайн дивіться на [сайті Nextendo](https://nextendo.network){:target="_blank"}.
 
 {% if nx %}
-Зараз у списку ігор: {{ nx.games.size }}.
-
-{% spoiler Список ігор Nextendo %}
+{% spoiler Список ігор Nextendo: {{ nx.games.size }}, станом на {{ nx.updated | date: "%d.%m.%Y" }} %}
 | Гра | Стан | Що працює (англійською) |
 |---|---|---|
 {% for g in nx.games %}| {{ g.name | replace: "|", "\|" }} | {% if g.pct == nil %}Перевіряється{% elsif g.pct >= 100 %}**Готово**{% else %}{{ g.pct }}%{% endif %} | {{ g.detail | replace: "|", "\|" }} |
