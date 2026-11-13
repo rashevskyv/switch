@@ -90,7 +90,7 @@ author_profile: true
 * [Встановлення ігор, DLC, оновлень](/games){:target="_blank"}
 * [Емуляція Amiibo за допомогою модуля emuiibo](/emuiibo){:target="_blank"}
 * [Використання читів](/cheats){:target="_blank"}
-* [Мультиплеєр на прошитій консолі (LAN Play)](/lanplay){:target="_blank"}
+* [Онлайн на прошитій консолі (Nextendo, LAN Play)](/lanplay){:target="_blank"}
 
 ## Донгли
 

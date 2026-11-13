@@ -242,7 +242,7 @@ NAND шифрується унікальним для кожної консол�
 {% endspoiler %}
 
 {% spoiler Чи можна грати онлайн?  %}
-Так, якщо налаштувати приставку особливим чином і зробити на ній [EmuNAND](/emunand){:target="_blank"}? db pvj;tnt грати онлайн в офіційній прошивці, або на піратці через [ланплей](lanplay){:target="_blank"}
+Так. Якщо зробити на приставці [EmuNAND](/emunand){:target="_blank"}, ви зможете грати онлайн в офіційній прошивці. В EmuNAND підтримувані ігри можуть грати онлайн через [Nextendo Network](/lanplay#nextendo-network){:target="_blank"}: Kefir Hub вмикає його одним перемикачем. Ще один спосіб — [LAN Play](/lanplay#lan-play){:target="_blank"}.
 
 {% endspoiler %}
 
