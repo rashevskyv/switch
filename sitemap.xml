@@ -23,7 +23,7 @@ sitemap: false
     {% endif %}
   <url>
     <loc>{{ node_url | absolute_url | xml_escape }}</loc>
-    <lastmod>{{ node.last_modified_at | default: site.time | date_to_xmlschema }}</lastmod>
+    <lastmod>{{ node.seo_modified | default: site.time | date_to_xmlschema }}</lastmod>
     <changefreq>{{ path_changefreq }}</changefreq>
     <priority>{{ path_priority }}</priority>
   </url>

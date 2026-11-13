@@ -1,0 +1,1 @@
+{%- capture kefir_v -%}{%- include inc/kefir/version -%}{%- endcapture -%}{%- assign kefir_v = kefir_v | strip -%}https://github.com/rashevskyv/kefir/releases/download/{{ kefir_v }}/kefir{{ kefir_v }}.zip

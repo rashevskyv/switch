@@ -1,0 +1,58 @@
+# Once a day: rebuild the online page of the live site (lanplay.html) with a fresh Nextendo game list
+# (_plugins/nextendo_games.rb downloads it at build time) and put only that file on gh-pages.
+# It builds the last release commit of master (message "kefirNNN", made by D:\git\scripts\build_kefir.ps1), so
+# unreleased guide changes never go online; the rest of the live site stays the release build.
+# A schedule runs only from the default branch (master). Test it by hand: Actions -> nextendo-daily -> Run workflow.
+# The release script pushes gh-pages after this job's commits, so it must pull gh-pages first.
+name: nextendo-daily
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nextendo-daily
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # _plugins/git_lastmod.rb reads the history
+
+      - name: Check out the last release
+        id: rel
+        run: |
+          sha=$(git log -1 --format=%H -E --grep='^kefir[0-9]+$' origin/master)
+          if [ -z "$sha" ] || ! git cat-file -e "$sha:_plugins/nextendo_games.rb" 2>/dev/null; then
+            echo "::notice::the last release has no Nextendo list plugin yet"; echo "skip=1" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          git checkout -q "$sha"
+
+      # Jekyll 4.2 / Liquid 4.0.3 break on Ruby 3.2+ (String#tainted? removed).
+      - uses: ruby/setup-ruby@v1
+        if: steps.rel.outputs.skip != '1'
+        with:
+          ruby-version: "3.1"
+
+      - name: Build and publish lanplay.html
+        if: steps.rel.outputs.skip != '1'
+        run: |
+          bundle lock --add-platform x86_64-linux
+          bundle install
+          bundle exec jekyll build
+          # the title carries the download day; no today's date = the download failed and the cached list was used
+          if ! grep -q "станом на $(date -u +%d.%m.%Y)" _site/lanplay.html; then
+            echo "::warning::no fresh list from nextendo.network, the live page stays as it is"; exit 0
+          fi
+          git worktree add -q -B gh-pages ../pages origin/gh-pages
+          cp _site/lanplay.html ../pages/lanplay.html
+          cd ../pages
+          if git diff --quiet; then echo "no change"; exit 0; fi
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -q -am "nextendo: game list $(date -u +%F)"
+          git push -q origin gh-pages

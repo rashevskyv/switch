@@ -1,0 +1,383 @@
+{
+  "updated": "2026-11-13",
+  "games": [
+    {
+      "name": "Kirby's Dream Buffet",
+      "tid": "0100a8e016236000",
+      "pct": 100,
+      "detail": "Online multiplayer, password matchmaking, Random Match and Free Rolling"
+    },
+    {
+      "name": "Stardew Valley",
+      "tid": "0100e65002bb8000",
+      "pct": 100,
+      "detail": "Fully online: co-op farm hosting, joining and multiplayer"
+    },
+    {
+      "name": "Zombie Army 4: Dead War",
+      "tid": "01000bf0152fa000",
+      "pct": 100,
+      "detail": "Online hosting and lobby joining available"
+    },
+    {
+      "name": "PAC-MAN 99",
+      "tid": "0100ad9012510000",
+      "pct": 100,
+      "detail": "Full 99-player matches"
+    },
+    {
+      "name": "Tetris 99",
+      "tid": "010040600c5ce000",
+      "pct": 100,
+      "detail": "Full 99-player matches"
+    },
+    {
+      "name": "Just Shapes & Beats",
+      "tid": "0100830008426000",
+      "pct": 100,
+      "detail": "Public matchmaking and online multiplayer"
+    },
+    {
+      "name": "Super Mario Bros. 35",
+      "tid": "0100277011f1a000",
+      "pct": 100,
+      "detail": "Full 35-player matches"
+    },
+    {
+      "name": "Luigi's Mansion 3",
+      "tid": "0100dca0064a6000",
+      "pct": 100,
+      "detail": "Fully online, friend lobbies included"
+    },
+    {
+      "name": "ARMS",
+      "tid": "01009b500007c000",
+      "pct": 100,
+      "detail": "Fully online"
+    },
+    {
+      "name": "Clubhouse Games: 51 Worldwide Classics",
+      "tid": "010047700d540000",
+      "pct": 100,
+      "detail": "Online matches, friend rooms and multiplayer"
+    },
+    {
+      "name": "Monster Hunter Generations Ultimate",
+      "tid": "0100770008dd8000",
+      "pct": 100,
+      "detail": "Online hunts, lobbies and full multiplayer"
+    },
+    {
+      "name": "METAL GEAR SOLID: Peace Walker",
+      "tid": "0100c6f01c4f8000",
+      "pct": 100,
+      "detail": "Co-op, Versus Ops fully done"
+    },
+    {
+      "name": "Monster Hunter Rise",
+      "tid": "0100b04011742000",
+      "pct": 100,
+      "detail": "Online lobbies and co-op quests"
+    },
+    {
+      "name": "Mario Party Superstars",
+      "tid": "01006fe013472000",
+      "pct": 100,
+      "detail": "Room ID & Matchmaking finalized"
+    },
+    {
+      "name": "Overcooked! 2",
+      "tid": "01006fd0080b2000",
+      "pct": 100,
+      "detail": "Friend Lobbies by Search & Matchmaking"
+    },
+    {
+      "name": "Crash Team Racing Nitro-Fueled",
+      "tid": "0100f9f00c696000",
+      "pct": 100,
+      "detail": "Pit Stop, Wumpa Challenges & Economy finished"
+    },
+    {
+      "name": "Super Mario 3D World + Bowser's Fury",
+      "tid": "010028600ebda000",
+      "pct": 100,
+      "detail": "Online co-op with password rooms"
+    },
+    {
+      "name": "Super Mario Odyssey",
+      "tid": "0100000000010000",
+      "pct": 100,
+      "detail": "Luigi's Balloon World: hide and find balloons online"
+    },
+    {
+      "name": "Miitopia",
+      "tid": "01003da010e8a000",
+      "pct": 100,
+      "detail": "Share your Miis with an access code and download other players' Miis"
+    },
+    {
+      "name": "Game Builder Garage",
+      "tid": "0100fa5010788000",
+      "pct": 100,
+      "detail": "Share and download games online"
+    },
+    {
+      "name": "Saints Row: The Third - The Full Package",
+      "tid": "0100de600beee000",
+      "pct": 100,
+      "detail": "Online co-op campaign, matchmaking and Whored Mode"
+    },
+    {
+      "name": "Guilty Gear -Strive-",
+      "tid": "0100ab401f136000",
+      "pct": 100,
+      "detail": "Fully online: park lobbies, Player Match rooms, Ranked matches, rankings and replays"
+    },
+    {
+      "name": "Kirby Fighters 2",
+      "tid": "0100227010460000",
+      "pct": 100,
+      "detail": "Online battles, Random Match and Friend Match"
+    },
+    {
+      "name": "Super Kirby Clash",
+      "tid": "01003fb00c5a8000",
+      "pct": 100,
+      "detail": "Online teams, co-op quests, Adventurer Bell and password rewards"
+    },
+    {
+      "name": "Mario Kart 8 Deluxe",
+      "tid": "0100152000022000",
+      "pct": 100,
+      "detail": "Fully online: races, rooms, friends, tournaments and time trial ghosts"
+    },
+    {
+      "name": "Pokémon Sword and Shield",
+      "tid": "0100abf008968000",
+      "pct": 100,
+      "detail": "Online trades, battles and raids"
+    },
+    {
+      "name": "Super Monkey Ball Banana Mania",
+      "tid": "010001701248c000",
+      "pct": 100,
+      "detail": "Fully online: leaderboards, friend rankings and ghosts"
+    },
+    {
+      "name": "Super Mario Bros. Wonder",
+      "tid": "010015100b514000",
+      "pct": 100,
+      "detail": "Fully online, friend rooms included"
+    },
+    {
+      "name": "Animal Crossing: New Horizons",
+      "tid": "01006f8002326000",
+      "pct": 100,
+      "detail": "Island visits and sharing designs online"
+    },
+    {
+      "name": "Mario & Sonic at the Olympic Games Tokyo 2020",
+      "tid": "010086000e148000",
+      "pct": 100,
+      "detail": "Online matches and rankings"
+    },
+    {
+      "name": "Minecraft: Nintendo Switch Edition",
+      "tid": "01006bd001e06000",
+      "pct": 100,
+      "detail": "Fully playable online"
+    },
+    {
+      "name": "Portal 2",
+      "tid": "0100abd01785c000",
+      "pct": 100,
+      "detail": "Online co-op with friends and Challenge Mode leaderboards"
+    },
+    {
+      "name": "Super Mario Party Jamboree",
+      "tid": "0100965017338000",
+      "pct": 100,
+      "detail": "All online modes, matchmaking and friend rooms"
+    },
+    {
+      "name": "Terraria",
+      "tid": "0100e46006708000",
+      "pct": 100,
+      "detail": "Online multiplayer, world hosting, friend joining and lobby discovery"
+    },
+    {
+      "name": "Goat Simulator 3",
+      "tid": "01001cc01b2d4000",
+      "pct": 100,
+      "detail": "Co-op multiplayer, cross-client invitations and matchmaking sessions"
+    },
+    {
+      "name": "qLaunch (Switch Menu)",
+      "tid": "0100000000001000",
+      "pct": 95,
+      "detail": "Friends, Presence, Network linking & NSO icons"
+    },
+    {
+      "name": "Mario Tennis Aces",
+      "tid": "0100bde00862a000",
+      "pct": 95,
+      "detail": "Online matches, rooms and friends"
+    },
+    {
+      "name": "Mario Strikers: Battle League",
+      "tid": "010019401051c000",
+      "pct": 95,
+      "detail": "Online matches, friend rooms and Strikers Club"
+    },
+    {
+      "name": "Nintendo 64 - Nintendo Classics",
+      "tid": "0100c9a00ece6000",
+      "pct": 95,
+      "detail": "Online play and friend rooms"
+    },
+    {
+      "name": "Pokémon Scarlet and Violet",
+      "tid": "0100a3d008c5c000",
+      "pct": 95,
+      "detail": "All online play; competition results in progress"
+    },
+    {
+      "name": "NES - Nintendo Classics",
+      "tid": "0100d870045b6000",
+      "pct": 95,
+      "detail": "Online play and friend rooms"
+    },
+    {
+      "name": "SNES - Nintendo Classics",
+      "tid": "01008d300c50c000",
+      "pct": 95,
+      "detail": "Online play and friend rooms"
+    },
+    {
+      "name": "Game Boy - Nintendo Classics",
+      "tid": "0100c62011050000",
+      "pct": 95,
+      "detail": "Online play and friend rooms"
+    },
+    {
+      "name": "Game Boy Advance - Nintendo Classics",
+      "tid": "010012f017576000",
+      "pct": 95,
+      "detail": "Online play for up to four players"
+    },
+    {
+      "name": "SEGA Genesis - Nintendo Classics",
+      "tid": "0100b3c014bda000",
+      "pct": 95,
+      "detail": "Online play and friend rooms"
+    },
+    {
+      "name": "Just Dance 2022",
+      "tid": "0100ea6014bb8000",
+      "pct": 90,
+      "detail": "Dance online in World Dance Floor"
+    },
+    {
+      "name": "Dying Light: Platinum Edition",
+      "tid": "01008c8012920000",
+      "pct": 90,
+      "detail": "Online co-op"
+    },
+    {
+      "name": "Diablo III: Eternal Collection",
+      "tid": "01001b300b9be000",
+      "pct": 90,
+      "detail": "Quickmatch, Emulator friend lobbies"
+    },
+    {
+      "name": "Pokkén Tournament DX",
+      "tid": "0100b3f000be2000",
+      "pct": 90,
+      "detail": "Ranked and friendly battles"
+    },
+    {
+      "name": "Friday the 13th: The Game",
+      "tid": "010092a00c4b6000",
+      "pct": 90,
+      "detail": "Quick Play and private matches"
+    },
+    {
+      "name": "Ultimate Chicken Horse",
+      "tid": "0100fcf002a58000",
+      "pct": 90,
+      "detail": "Online play, friend rooms and custom levels"
+    },
+    {
+      "name": "Splatoon 2",
+      "tid": "0100f8f0000a2000",
+      "pct": 87,
+      "detail": "8-player Turf War, friends and Salmon Run"
+    },
+    {
+      "name": "Dragon Ball FighterZ",
+      "tid": "0100a250097f0000",
+      "pct": 85,
+      "detail": "Online matchmaking and Ring Matches"
+    },
+    {
+      "name": "Pokémon Legends: Z-A",
+      "tid": "0100f43008c44000",
+      "pct": 85,
+      "detail": "Link Trades and private battles, but Ranked Battles are not tested yet"
+    },
+    {
+      "name": "Mario Golf: Super Rush",
+      "tid": "0100c9c00e25c000",
+      "pct": 80,
+      "detail": "Online play"
+    },
+    {
+      "name": "Among Us",
+      "tid": "0100b0c013912000",
+      "pct": 80,
+      "detail": "Online matches with room codes"
+    },
+    {
+      "name": "Splatoon 3",
+      "tid": "0100c2500fc20000",
+      "pct": 78,
+      "detail": "Online battles, private rooms, Salmon Run and Splatfests"
+    },
+    {
+      "name": "SpeedRunners 2: King of Speed",
+      "tid": "01004cc023582000",
+      "pct": 70,
+      "detail": "Online races"
+    },
+    {
+      "name": "Super Mario Maker 2",
+      "tid": "01009b90006dc000",
+      "pct": 70,
+      "detail": "Course World, uploads, world records and comments"
+    },
+    {
+      "name": "UNO",
+      "tid": "0100b6e012ebe000",
+      "pct": 70,
+      "detail": "Online matches and public rooms"
+    },
+    {
+      "name": "Super Smash Bros. Ultimate",
+      "tid": "01006a800016e000",
+      "pct": 68,
+      "detail": "Arenas, Quick Play, Spectate and Shared Content"
+    },
+    {
+      "name": "Minecraft Dungeons II",
+      "tid": "0100a7c01b792000",
+      "pct": 65,
+      "detail": "Sign-in, heroes, inventory and online parties"
+    },
+    {
+      "name": "Crypt of the NecroDancer",
+      "tid": "0100cea007d08000",
+      "pct": null,
+      "detail": "Online rooms being tested"
+    }
+  ]
+}

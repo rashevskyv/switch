@@ -1,7 +1,7 @@
 * [Часто задавані питання](faq){: target="blank_"}
 * [Проблеми та їх вирішення](troubleshooting)
-* [Використання читів в EdiZon](cheats){: target="blank_"}
+* [Використання читів](cheats){: target="blank_"}
 * [Резервне копіювання та відновлення збережень ](backup-saves){: target="blank_"}
 * [Онлайн для прошитих та забанених](lanplay){: target="blank_"}
-* [Запуск Homebrew Launcher](hbl){: target="blank_"}
+* [Kefir Hub — головний застосунок Kefir](hbl){: target="blank_"}
 * [Емуляція Amiibo за допомогою модуля emuiibo](emuiibo){: target="blank_"}
