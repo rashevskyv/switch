@@ -27,7 +27,7 @@
 
 
 <title>Встановлення ігор, DLC, оновлень — Прошивка Nintendo Switch — повний український гайд</title>
-<meta name="description" content="Як встановлювати ігри, DLC і оновлення на прошитий Nintendo Switch: DBI, USB, SD-карта. Інструкція з гайду CustomFW.">
+<meta name="description" content="Як встановлювати ігри, DLC і оновлення на прошитий Nintendo Switch через Kefir Hub: з ПК по MTP і USB, по мережі, з флешки або карти пам’яті. Інструкція з гайду CustomFW.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="xHR">
 
@@ -40,7 +40,7 @@
 <meta property="og:locale" content="uk_UA">
 <meta property="og:site_name" content="Прошивка Nintendo Switch — повний український гайд">
 <meta property="og:title" content="Встановлення ігор, DLC, оновлень">
-<meta property="og:description" content="Як встановлювати ігри, DLC і оновлення на прошитий Nintendo Switch: DBI, USB, SD-карта. Інструкція з гайду CustomFW.">
+<meta property="og:description" content="Як встановлювати ігри, DLC і оновлення на прошитий Nintendo Switch через Kefir Hub: з ПК по MTP і USB, по мережі, з флешки або карти пам’яті. Інструкція з гайду CustomFW.">
 <meta property="og:url" content="https://switch.customfw.xyz/games">
 <meta property="og:type" content="website">
 
@@ -54,7 +54,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Встановлення ігор, DLC, оновлень">
-<meta name="twitter:description" content="Як встановлювати ігри, DLC і оновлення на прошитий Nintendo Switch: DBI, USB, SD-карта. Інструкція з гайду CustomFW.">
+<meta name="twitter:description" content="Як встановлювати ігри, DLC і оновлення на прошитий Nintendo Switch через Kefir Hub: з ПК по MTP і USB, по мережі, з флешки або карти пам’яті. Інструкція з гайду CustomFW.">
 <meta name="twitter:url" content="https://switch.customfw.xyz/games">
 
   <meta name="twitter:image" content="https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg">
@@ -82,6 +82,13 @@
     "@type": "Organization",
     "name": "CustomFW",
     "url": "https://customfw.xyz"
+  },
+  "subOrganization": {
+    "@type": "Store",
+    "@id": "https://shop.customfw.xyz#identity",
+    "name": "Shop CustomFW",
+    "url": "https://shop.customfw.xyz",
+    "description": "Чіпування, продаж прошитих консолей Nintendo Switch і ремонт в Україні від автора гайду"
   },
   "founder": {
     "@type": "Person",
@@ -128,7 +135,7 @@
   "@id": "https://switch.customfw.xyz/games#webpage",
   "url": "https://switch.customfw.xyz/games",
   "name": "Встановлення ігор, DLC, оновлень",
-  "description": "Як встановлювати ігри, DLC і оновлення на прошитий Nintendo Switch: DBI, USB, SD-карта. Інструкція з гайду CustomFW.",
+  "description": "Як встановлювати ігри, DLC і оновлення на прошитий Nintendo Switch через Kefir Hub: з ПК по MTP і USB, по мережі, з флешки або карти пам’яті. Інструкція з гайду CustomFW.",
   "isPartOf": {
     "@id": "https://switch.customfw.xyz#website"
   },
@@ -136,7 +143,7 @@
   "breadcrumb": {
     "@id": "https://switch.customfw.xyz/games#breadcrumb"
   },
-  "dateModified": "2026-11-13T19:44:41+02:00",
+  "dateModified": "2026-11-14T00:06:06+02:00",
   "primaryImageOfPage": {
     "@type": "ImageObject",
     "url": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg"
@@ -179,7 +186,7 @@
   "@type": "TechArticle",
   "@id": "https://switch.customfw.xyz/games#article",
   "headline": "Встановлення ігор, DLC, оновлень",
-  "description": "Як встановлювати ігри, DLC і оновлення на прошитий Nintendo Switch: DBI, USB, SD-карта. Інструкція з гайду CustomFW.",
+  "description": "Як встановлювати ігри, DLC і оновлення на прошитий Nintendo Switch через Kefir Hub: з ПК по MTP і USB, по мережі, з флешки або карти пам’яті. Інструкція з гайду CustomFW.",
   "inLanguage": "uk",
   "url": "https://switch.customfw.xyz/games",
   "mainEntityOfPage": {
@@ -194,7 +201,7 @@
     "@id": "https://switch.customfw.xyz#identity"
   },
   "image": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg",
-  "dateModified": "2026-11-13T19:44:41+02:00"
+  "dateModified": "2026-11-14T00:06:06+02:00"
 }
 </script>
 
@@ -245,6 +252,7 @@
 
 
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
   </head>
 
   <body class="layout--single">
@@ -256,7 +264,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch — повний український гайд</a>
+        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch</a>
         <ul class="visible-links"><li class="masthead__menu-item">
             <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
           </li><li class="masthead__menu-item">
@@ -267,6 +275,8 @@
             <a href="/get-started" >Методи<br>злому</a>
           </li><li class="masthead__menu-item">
             <a href="/kefir" >Kefir</a>
+          </li><li class="masthead__menu-item">
+            <a href="/hbl" >Kefir Hub</a>
           </li><li class="masthead__menu-item">
             <a href="/backup-nand" >Резервне<br>копіювання</a>
           </li><li class="masthead__menu-item">
@@ -483,10 +493,18 @@
   </li>
   <li><a href="#встановлення-ігор" id="markdown-toc-встановлення-ігор">Встановлення ігор</a>    <ul>
       <li><a href="#що-знадобиться" id="markdown-toc-що-знадобиться">Що знадобиться</a></li>
+      <li><a href="#підготовка-kefir-hub" id="markdown-toc-підготовка-kefir-hub">Підготовка Kefir Hub</a></li>
       <li><a href="#виберіть-один-із-методів-встановлення" id="markdown-toc-виберіть-один-із-методів-встановлення">Виберіть один із методів встановлення</a></li>
-      <li><a href="#використання-перекладів-і-модифікацій" id="markdown-toc-використання-перекладів-і-модифікацій">Використання перекладів і модифікацій</a></li>
+      <li><a href="#черга-встановлення" id="markdown-toc-черга-встановлення">Черга встановлення</a></li>
+      <li><a href="#картриджі" id="markdown-toc-картриджі">Картриджі</a></li>
+      <li><a href="#використання-перекладів-і-модифікацій" id="markdown-toc-використання-перекладів-і-модифікацій">Використання перекладів і модифікацій</a>        <ul>
+          <li><a href="#через-dbi-backend-qt-найпростіше" id="markdown-toc-через-dbi-backend-qt-найпростіше">Через DBI Backend Qt (найпростіше)</a></li>
+          <li><a href="#вручну" id="markdown-toc-вручну">Вручну</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
+  <li><a href="#керування-встановленими-іграми" id="markdown-toc-керування-встановленими-іграми">Керування встановленими іграми</a></li>
   <li><a href="#корисні-посилання" id="markdown-toc-корисні-посилання">Корисні посилання</a></li>
 </ul>
 
@@ -507,33 +525,18 @@
 
 <hr />
 
-<details class="spoiler" id="spoiler-0dbd10ce">
-  <summary>Відеоінструкція</summary>
-  <div class="spoiler-content">
-    <p class="notice--warning">УВАГА!!! Ми не рекомендуємо сліпо слідувати відео-інструкції! Використовуйте її тільки як допоміжну! Справа в тому, що текстовий гайд постійно оновлюється. Неможливо стежити за всіма оновленнями в гайді і кожен раз змінювати відео-інструкцію слідом за ним! Тому текстовий гайд завжди буде більш точним і більш актуальним, ніж відео!</p>
-
-<div style="margin:0 auto;" class="text-center notice--info">
-  <div class="ytcontainer">
-    <iframe width="1667" height="946" class="yt" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/6sGFscphvGA?start="></iframe>
-  </div>
-</div>
-
-    
-  </div>
-  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Відеоінструкція <span class="close-icon" aria-hidden="true"></span></div>
-</details>
-
 <h2 id="важлива-інформація">Важлива інформація</h2>
 
 <ul>
   <li>Ігри, DLC і оновлення ставляться однаково і <strong>в будь-якому порядку</strong></li>
+  <li>Ігри встановлюються через <strong><a href="/hbl" target="_blank">Kefir Hub</a></strong> — головну програму Kefir. Окремі встановлювачі не потрібні</li>
   <li>У вас не вийде вийти онлайн на Atmosphere. Доступ до серверів Nintendo спеціально заблокований. Для доступу до онлайн-функцій консолі, використовуйте <strong>Full Stock</strong>
     <ul>
       <li>Не запускайте Full Stock якщо не маєте <a href="/emunand" target="_blank">емунанда</a>, через це ви отримаєте бан!</li>
-      <li>Ви можете використовувати спеціальний метод для <a href="/lanplay" target="_blank">мережевої гри</a> в піратські ігри</li>
+      <li>Для онлайн-гри в EmuNAND увімкніть <a href="/lanplay#nextendo-network" target="_blank">Nextendo Network</a> у Kefir Hub: незалежні сервери для підтримуваних ігор. Також є <a href="/lanplay#lan-play" target="_blank">LAN Play</a></li>
     </ul>
   </li>
-  <li><strong>Не використовуйте Tinfoil.</strong> Публічних магазинів немає, програма для типової установки ігор не працює. Ставте NSP/XCI через <strong>DBI</strong> (нижче). Архів: <a href="/tinfoil">сторінка Tinfoil</a>.</li>
+  <li><strong>Tinfoil не потрібен.</strong> Публічних магазинів немає, а NSP/XCI ставляться через Kefir Hub (нижче)</li>
 </ul>
 
 <h3 id="в-якому-порядку-встановлювати-ігри-і-трохи-про-умовні-позначення">В якому порядку встановлювати ігри і трохи про умовні позначення</h3>
@@ -545,9 +548,11 @@
 <ul>
   <li><strong>NSP</strong> - дампи ігор з eShop.</li>
   <li><strong>NSZ</strong> - дампи ігор з eShop, але пожаті спеціальним чином (заархівовані)</li>
-  <li><strong>XCI</strong> - побітові дампи картриджа. Аналогічним чином раніше робилися образи дисків для ПК. Для використання з Atmosphere, встановлюйте за допомогою <a href="https://github.com/rashevskyv/dbi" target="_blank">DBI</a> (дивіться нижче)</li>
+  <li><strong>XCI</strong> - побітові дампи картриджа. Аналогічним чином раніше робилися образи дисків для ПК. Kefir Hub встановлює їх так само, як NSP</li>
   <li><strong>XCZ</strong> - пожата XCI</li>
 </ul>
+
+<p class="notice--info">Пожаті NSZ і XCZ розпаковуються під час встановлення, тому потребують більше пам’яті. Ставте їх, запустивши Kefir Hub у режимі тайтлу (дивіться нижче)</p>
 
 <p>Зараз ігри іменуються за таким негласним правилом - <code class="language-plaintext highlighter-rouge">назва_гри</code>[<code class="language-plaintext highlighter-rouge">titleid_гри</code>][<code class="language-plaintext highlighter-rouge">версія_гри</code>].<code class="language-plaintext highlighter-rouge">розширення </code></p>
 
@@ -555,7 +560,7 @@
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">FINAL FANTASY X X-2 HD Remaster</code> - назва гри</li>
-  <li><code class="language-plaintext highlighter-rouge">0100BC300CB48000</code> - Title ID (потрібно знати для <a href="/#використання-перекладів-і-модифікацій" target="_blank">використання модифікацій через <span class="tooltip_container">
+  <li><code class="language-plaintext highlighter-rouge">0100BC300CB48000</code> - Title ID (потрібно знати для <a href="#використання-перекладів-і-модифікацій">використання модифікацій через <span class="tooltip_container">
   LayeredFS
   <span class="tooltip">▼
       <span class="bottom">
@@ -566,7 +571,7 @@
   <li><code class="language-plaintext highlighter-rouge">v0</code> - версія гри. <code class="language-plaintext highlighter-rouge">v0</code> завжди означає саму гру. <code class="language-plaintext highlighter-rouge">vXXXXXX</code> завжди патч. Чим вище число версії, тим новіший патч.</li>
 </ul>
 
-<p>Також зустрічаються конструкції виду <code class="language-plaintext highlighter-rouge">Touhou Kobuto V Burst Battle [010010F004022000] + (v196608 UPD) + (2 DLC).xci</code>. Ви можете встановлювати такі ігри за допомогою DBI (дивіться нижче)</p>
+<p>Також зустрічаються конструкції виду <code class="language-plaintext highlighter-rouge">Touhou Kobuto V Burst Battle [010010F004022000] + (v196608 UPD) + (2 DLC).xci</code>. Такі файли теж ставляться через Kefir Hub</p>
 
 <h3 id="де-брати-ігри-та-оновлення">Де брати ігри та оновлення</h3>
 
@@ -594,14 +599,32 @@
   <li>Ігри</li>
 </ul>
 
+<h3 id="підготовка-kefir-hub">Підготовка Kefir Hub</h3>
+
+<p>Це робиться один раз.</p>
+
+<ol class="notice--info">
+  <li>Запустіть <a href="/hbl" target="_blank">Kefir Hub</a> <strong>у режимі тайтлу</strong>: запустіть будь-яку гру, утримуючи <img src="/assets/images/switch/buttons/R.png" alt="(R)" />, доки не відкриється Homebrew Menu, і виберіть Kefir Hub, або скористайтеся іконкою Kefir Hub на головному екрані
+    <ul>
+      <li>У режимі апплету (запуск з Альбому) програмі доступно мало пам’яті, і NSZ, швидше за все, не встановляться</li>
+      <li>Щоб додати іконку на головний екран, на вкладці <strong>Інструменти</strong> натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> і виберіть <strong>Встановити форвардер Title Mode</strong>
+Окремо вмикати встановлення не потрібно: Kefir Hub ставить ігри одразу. На sysMMC (без емунанду) перед кожним встановленням Kefir Hub попереджає про бан</li>
+    </ul>
+  </li>
+</ol>
+
+<p class="notice--info">Куди ставити гру (карта пам’яті чи внутрішня пам’ять), Kefir Hub типово вибирає сам (<strong>Ставити в</strong> → <strong>Автоматично</strong>). Змінити це можна там само, в <strong>Інструменти</strong> → <strong>Налаштування</strong> → <strong>Встановити</strong>. Усі параметри описані в <a href="https://hub.customfw.xyz/uk/install/#install-options" target="_blank">документації Kefir Hub</a></p>
+
+<p class="notice--warning">Не натискайте <img src="/assets/images/switch/buttons/HOME.png" alt="(HOME)" /> під час встановлення: поки ви на головному екрані, консоль призупиняє Kefir Hub, а з ним і передавання. Щоб користуватися Kefir Hub під час встановлення, згорніть вікно кнопкою <img src="/assets/images/switch/buttons/L3.png" alt="(L3)" /></p>
+
 <h3 id="виберіть-один-із-методів-встановлення">Виберіть один із методів встановлення</h3>
 
-<details class="spoiler" id="spoiler-e9886c9e">
-  <summary>Спосіб I - Встановлення по USB (рекомендований)</summary>
+<details class="spoiler" id="spoiler-58949634">
+  <summary>Спосіб I - Встановлення з ПК по MTP (рекомендований)</summary>
   <div class="spoiler-content">
-    <h3 id="встановлення-ігор">Встановлення ігор</h3>
+    <p>Консоль з’являється в провіднику ПК, як телефон. Гра встановлюється просто під час копіювання і на карті пам’яті не зберігається.</p>
 
-<details class="spoiler" id="spoiler-35197ce7">
+<details class="spoiler" id="spoiler-f536f062">
   <summary>Підготовчі роботи в MacOS</summary>
   <div class="spoiler-content">
     <ol>
@@ -627,113 +650,239 @@
 </details>
 
 <ol>
-  <li>Підключіть консоль до ПК USB-кабелем (type-c)</li>
-  <li><strong>На приставці</strong> запустіть <strong>DBI</strong> через <a href="/hbl" target="_blank">Homebrew Launcher</a></li>
-  <li>Натисніть “<strong>Run MTP Responder</strong>”
+  <li><strong>На приставці</strong> запустіть Kefir Hub</li>
+  <li>Підключіть консоль до ПК USB-кабелем (type-c) у портативному режимі (не в доці)
     <ul>
-      <li>До вашого ПК примонтується новий MTP-пристрій</li>
+      <li>Приблизно за дві секунди з’явиться <strong>Комп’ютер підключено — MTP запущено</strong></li>
+      <li>Якщо MTP не запустився сам (наприклад, до консолі підключено флешку), на вкладці <strong>Інструменти</strong> натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> і виберіть <strong>Змонтувати MTP</strong></li>
     </ul>
   </li>
-  <li>Відкрийте пристрій “<strong>Switch</strong>”, що з’явився в ПК</li>
-  <li>Скопіюйте ігри, які хочете встановити в папку “<strong>MicroSD install</strong>” або “<strong>NAND install</strong>”, залежно від того, куди ви хочете встановити гру
+  <li>Відкрийте консоль у провіднику ПК, а в ній — диск <code class="language-plaintext highlighter-rouge">Install (NSP, XCI, NSZ, XCZ)</code>
     <ul>
+      <li>Куди встановиться гра, вирішує параметр <strong>Ставити в</strong> (<strong>Інструменти</strong> → <strong>Налаштування</strong> → <strong>Встановити</strong>)</li>
+    </ul>
+  </li>
+  <li>Скопіюйте на цей диск файли ігор, оновлень і DLC (NSP, NSZ, XCI, XCZ)
+    <ul>
+      <li>Кілька файлів встановлюються один за одним</li>
+      <li>Хід встановлення дивіться у вікні копіювання на ПК: консоль не знає розміру файлу, тому відсотків не показує</li>
+      <li>Вікно копіювання на ПК закривається приблизно тоді, коли встановлення завершується</li>
       <li>Не забувайте, що ігри у форматі NSZ після встановлення займають більше місця, ніж важить сам NSZ-файл</li>
     </ul>
   </li>
-  <li>По закінченню встановлення, натисніть <img src="/assets/images/switch/buttons/X.png" alt="(X)" />, щоб зупинити MTP-сервер і відмонтувати MTP-пристрій</li>
-  <li>Натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" />, щоб закрити DBI</li>
+  <li>Приблизно за три секунди після останнього файлу відкриється <strong>Підсумок сеансу</strong>. Натисніть <img src="/assets/images/switch/buttons/B.png" alt="(B)" />, щоб закрити його</li>
 </ol>
 
-<p class="notice--info">Як альтернатива, в MacOS можна використовувати DBIbackend.py для встановлення по USB. Зверніться до <a href="https://4pda.to/forum/index.php?showtopic=939714&amp;st=5140#entry98421804" target="_blank">цієї інструкції</a> для подробиць</p>
+<p class="notice--info">На диску <code class="language-plaintext highlighter-rouge">Games</code> видно і встановлені ігри. Видаліть гру там, щоб видалити її з консолі (збереження залишаються)</p>
+
+<p class="notice--info">Хочете вибирати місце для кожної гри? Увімкніть <strong>Папки встановлення в Games</strong> (<strong>Інструменти</strong> → <strong>Налаштування</strong> → <strong>Мережа</strong> → <strong>Сховища MTP</strong>). Тоді на диску <code class="language-plaintext highlighter-rouge">Games</code> з’являться папки <code class="language-plaintext highlighter-rouge">Встановити на SD</code> і <code class="language-plaintext highlighter-rouge">Встановити на NAND</code>: гра ставиться туди, куди веде папка. Диск <code class="language-plaintext highlighter-rouge">Install (NSP, XCI, NSZ, XCZ)</code> при цьому ховається</p>
+
+<p class="notice--info">Файл гри, скопійований у корінь диска <code class="language-plaintext highlighter-rouge">microSD card</code>, теж встановиться. Куди саме, вирішує параметр <strong>Ставити в</strong> (<strong>Інструменти</strong> → <strong>Налаштування</strong> → <strong>Встановити</strong>)</p>
+
+<p class="notice--info">Якщо скасувати встановлення на консолі, Windows не покаже помилки: вікно копіювання просто закриється</p>
+
+<p class="notice--info">Повідомлення “<strong>Спершу відкрийте меню встановлення через MTP</strong>” може на мить з’явитися лише одразу після запуску MTP. Зачекайте кілька секунд або вимкніть і знову увімкніть MTP, а тоді скопіюйте файли ще раз</p>
+
+<p>Подробиці та вирішення проблем: <a href="https://hub.customfw.xyz/uk/install/mtp/" target="_blank">Встановлення через MTP</a></p>
 
     
   </div>
-  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб I - Встановлення по USB (рекомендований) <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб I - Встановлення з ПК по MTP (рекомендований) <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-d9d1e151">
-  <summary>Спосіб II - Встановлення з USB-носія</summary>
+<details class="spoiler" id="spoiler-899609e8">
+  <summary>Спосіб II - Встановлення з ПК через USB-програму</summary>
   <div class="spoiler-content">
-    <p class="notice--warning">Ви маєте скинути ігри у форматі <code class="language-plaintext highlighter-rouge">.nsp</code> / <code class="language-plaintext highlighter-rouge">.nsz</code> / <code class="language-plaintext highlighter-rouge">.xci</code> / <code class="language-plaintext highlighter-rouge">.xcz</code>,  підключити носій до консолі через OTG-кабель, або в док-станцію, і встановлювати ігри безпосередньо з носія. Носій повинен бути відформатований у файлову систему <strong>exFAT</strong></p>
+    <p>Основна програма для ПК — <strong><a href="https://github.com/rashevskyv/dbibackend-qt/releases/latest" target="_blank">DBI Backend Qt</a></strong> (Windows, Linux, macOS). Використовуйте її замість звичайного DBI Backend. Перед встановленням консоль перевіряє кожен пакет і показує чергу, де видно розміри й місце встановлення.</p>
+
+<p class="notice--info">DBI Backend Qt ставить не лише ігри, оновлення й DLC. Він також добре ставить homebrew, переклади, моди й рекомпи (порти). Якщо в папці на ПК є такі файли, програма покаже вікно <strong>Choose what to install</strong>, де можна вибрати мову перекладу чи варіант порту. Як це робити — в розділі <a href="#використання-перекладів-і-модифікацій">Використання перекладів і модифікацій</a></p>
+
+<p class="notice--warning">Kefir Hub також працює зі звичайним <strong>DBI Backend</strong>, з <strong>ns-usbloader</strong> (режим Awoo/Tinfoil або GoldLeaf) і з <strong>Fluffy</strong>, але вони ставлять лише ігри. Потоковий режим (stream mode) у програмі має бути <strong>вимкнений</strong></p>
+
+<p class="notice--info">У Windows програмі на ПК потрібен USB-драйвер для консолі. <strong>DBI Backend Qt</strong> 2.9.0 і новіші встановлюють драйвер WinUSB самі: коли програма вперше бачить консоль без драйвера, вона пропонує його встановити, а Windows один раз запитує дозвіл адміністратора (вручну — меню <strong>Help → Install USB Driver</strong>). Для ns-usbloader і Fluffy встановіть драйвер libusbK через Zadig, як сказано в їхніх інструкціях. Якщо програма на ПК не бачить консоль, перевірте кабель і що на консолі відкрито екран <strong>Очікування ПК</strong>. Деталі — у <a href="https://hub.customfw.xyz/uk/install/usb/#requirements">документації Kefir Hub</a></p>
 
 <ol>
-  <li>Підключіть USB-носій з іграми до приставки
+  <li><strong>На приставці</strong> запустіть Kefir Hub</li>
+  <li>На вкладці <strong>Інструменти</strong> натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> (<strong>Встановлення та обмін</strong>) і виберіть <strong>Встановлення з ПК (USB)</strong>
     <ul>
-      <li>Можна підключити безпосередньо до приставки за допомогою OTG-кабелю, або вставити носій в док, коли приставка знаходиться в ньому</li>
+      <li>Консоль покаже <strong>Очікування ПК</strong></li>
     </ul>
+
+    <p><img src="/assets/images/switch/hub/install-usb-waiting.png" alt="Kefir Hub: install usb waiting" width="1280" height="720" loading="lazy" style="max-width:100%;height:auto" /></p>
   </li>
-  <li>Запустіть “<strong>DBI</strong>” через <a href="/hbl" target="_blank">Homebrew Launcher</a></li>
-  <li>Виберіть “<strong>Browse USB0 Drive</strong>”</li>
-  <li>Перейдіть в папку, в якій знаходяться ігри, що ви перекинули
-    <ul>
-      <li>У посібнику рекомендується використовувати папку <code class="language-plaintext highlighter-rouge">games</code> для порядку. Однак, папка може бути будь-яка</li>
-    </ul>
-  </li>
-  <li>Виберіть ігри, які ви хочете встановити, кнопкою <img src="/assets/images/switch/buttons/X.png" alt="(X)" />
-    <ul>
-      <li>Натисніть <img src="/assets/images/switch/buttons/Y.png" alt="(Y)" />, якщо потрібно вибрати всі або інвертувати вибір</li>
-    </ul>
-  </li>
-  <li>Натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" />, щоб почати встановлення</li>
-  <li>Виберіть необхідні опції в “<strong>Install options</strong>”
-    <ul>
-      <li><strong>Install target</strong> - місце встановлення. NAND або SDcard відповідають внутрішній пам’яті і карті пам’яті</li>
-      <li><strong>Delete after install</strong> - значення <strong>Yes</strong> дозволить програмі автоматично видаляти файли після того, як вони будуть встановлені</li>
-    </ul>
-  </li>
-  <li>Виберіть <strong>Start install</strong> для початку встановлення</li>
-  <li>Натисніть <img src="/assets/images/switch/buttons/B.png" alt="(B)" /> для виходу з установника в папку</li>
-  <li>Натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> для закриття програми</li>
+  <li>Підключіть консоль до ПК USB-кабелем і запустіть програму на ПК</li>
+  <li>У програмі на ПК додайте файли й почніть передавання</li>
+  <li>Консоль перевірить пакети й відкриє <a href="#черга-встановлення">чергу встановлення</a>. Натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" /> (<strong>Встановити вибране</strong>)</li>
+  <li>Дочекайтеся вікна <strong>Підсумок сеансу</strong></li>
 </ol>
+
+<p>Поки відкрито встановлення з ПК через USB, MTP вимкнений. Подробиці та вирішення проблем: <a href="https://hub.customfw.xyz/uk/install/usb/" target="_blank">Встановлення з ПК через USB</a></p>
 
     
   </div>
-  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб II - Встановлення з USB-носія <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб II - Встановлення з ПК через USB-програму <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-79dd50e7">
-  <summary>Спосіб III - Встановлення з карти пам'яті (устарілий)</summary>
+<details class="spoiler" id="spoiler-cd72442b">
+  <summary>Спосіб III - Встановлення по мережі (браузер, FTP, Ownfoil)</summary>
   <div class="spoiler-content">
-    <p class="notice--warning"><strong>Спосіб не є рекомендованим</strong>, оскільки ваша картка має бути в форматі FAT32, що означає неможливість записати на картку файли більші за 4Гб напряму. Більш того, часто виймати і вставляти карту в приставку може бути небезпечно для слота картки пам’яті консолі і може пошкодити його! За необхідністю ви можете переміщати файли на карту пам’яті, використовуючи вбудований в DBI MTP-сервер, однак встановлювати таким чином ігри немає жодного сенсу.</p>
+    <p class="notice--info">Консоль і ПК (або телефон) мають бути в одній мережі. Гостьова Wi-Fi зазвичай ізолює пристрої, тож через неї не вийде.</p>
+
+<p><strong>З браузера на ПК чи телефоні</strong></p>
 
 <ol>
+  <li>На вкладці <strong>Інструменти</strong> натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> (<strong>Встановлення та обмін</strong>) і виберіть <strong>Вебсервер</strong></li>
   <li>
-    <p>Скопіюйте ігри, які хочете встановити, в папку <code class="language-plaintext highlighter-rouge">games</code> на вашій карті пам’яті</p>
+    <p>Відскануйте QR-код телефоном або введіть показану адресу в браузері на ПК</p>
 
-    <p class="notice--warning">На карту пам’яті у форматі FAT32, а саме цей формат рекомендується використовувати в цьому посібнику, неможливо записати файли розміром більше за 4Гб. Для копіювання ігор, перевищуючих цей розмір, гру доведеться розрізати спеціальним чином за допомогою програми <a href="https://gbatemp.net/threads/nspsplitty-gui-form-nsp-split-tool.551454/" target="_blank">NSPsplitty</a></p>
+    <p><img src="/assets/images/switch/hub/network-web-server-qr.png" alt="Kefir Hub: network web server qr" width="1280" height="720" loading="lazy" style="max-width:100%;height:auto" /></p>
   </li>
-  <li>Запустіть “<strong>DBI</strong>” через <a href="/hbl" target="_blank">Homebrew Launcher</a></li>
-  <li>Виберіть “<strong>Browse SD Card</strong>”</li>
-  <li>Перейдіть в папку, в якій знаходяться ігри у форматі <code class="language-plaintext highlighter-rouge">.nsp</code>, <code class="language-plaintext highlighter-rouge">.nsz</code> або <code class="language-plaintext highlighter-rouge">.xci</code>
+  <li>На сторінці <strong>Kefir Hub Files</strong> натисніть <strong>Add to Upload</strong> і виберіть файли ігор</li>
+  <li>Натисніть <strong>Queue</strong>: у файлів ігор має стояти позначка <strong>Install directly</strong></li>
+  <li>Натисніть <strong>Start transfers</strong>. Консоль покаже хід встановлення з відсотками</li>
+  <li>Коли закінчите, натисніть <img src="/assets/images/switch/buttons/B.png" alt="(B)" /> у вікні сервера, щоб зупинити його</li>
+</ol>
+
+<p><strong>Через FTP-програму</strong> (FileZilla, WinSCP тощо)</p>
+
+<ol>
+  <li>Увімкніть <strong>Інструменти</strong> → <strong>Налаштування</strong> → <strong>Мережа</strong> → <strong>FTP</strong></li>
+  <li>У FTP-програмі підключіться до IP-адреси консолі (видно вгорі екрана) на порт <code class="language-plaintext highlighter-rouge">5000</code>
     <ul>
-      <li>У посібнику рекомендується використовувати папку <code class="language-plaintext highlighter-rouge">games</code> для порядку. Однак, папка може бути будь-яка</li>
+      <li>З типовими налаштуваннями підходить будь-яке ім’я користувача й пароль</li>
     </ul>
   </li>
-  <li>Виберіть ігри, які ви хочете встановити, кнопкою <img src="/assets/images/switch/buttons/X.png" alt="(X)" />
+  <li>Скопіюйте файли ігор у папку <code class="language-plaintext highlighter-rouge">install</code>. Вони встановлюються по черзі під час копіювання
     <ul>
-      <li>Натисніть <img src="/assets/images/switch/buttons/Y.png" alt="(Y)" />, якщо потрібно вибрати всі або інвертувати вибір</li>
-    </ul>
-  </li>
-  <li>Натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" />, щоб почати встановлення</li>
-  <li>Виберіть необхідні опції в “<strong>Install options</strong>”
-    <ul>
-      <li><strong>Install target</strong> - місце встановлення. NAND або SDcard відповідають внутрішній пам’яті і карті пам’яті</li>
-      <li><strong>Delete after install</strong> - значення <strong>Yes</strong> дозволить програмі автоматично видаляти файли після того, як вони будуть встановлені</li>
-    </ul>
-  </li>
-  <li>Виберіть <strong>Start install</strong> для початку встановлення
-    <ul>
-      <li>Після того, як встановлення закінчиться, можете закрити програму кнопкою <img src="/assets/images/switch/buttons/HOME.png" alt="(HOME)" /></li>
+      <li>Щоб скасувати встановлення, натисніть на консолі <img src="/assets/images/switch/buttons/X.png" alt="(X)" /> → “<strong>Скасувати встановлення</strong>” і підтвердіть. Кнопка <img src="/assets/images/switch/buttons/B.png" alt="(B)" /> під час такого встановлення нічого не робить</li>
+      <li>Файли, що лишилися в черзі FTP-програми, продовжать надходити, тож зупиніть чергу і в самій FTP-програмі</li>
     </ul>
   </li>
 </ol>
 
+<p class="notice--warning">Вебсторінка не має пароля, а FTP з типовими налаштуваннями пускає будь-кого. Користуйтеся ними лише в домашній мережі. Як задати вхід для FTP — у <a href="https://hub.customfw.xyz/uk/sharing/#ftp-settings" target="_blank">документації Kefir Hub</a></p>
+
+<p><strong>Зі свого сервера Ownfoil або мережевої папки</strong></p>
+
+<p>Якщо у вас є власний сервер бібліотеки ігор Ownfoil на ПК чи NAS, Kefir Hub показує його каталог і ставить ігри, оновлення й DLC звідти: <strong>Інструменти</strong> → <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> → <strong>Встановлення та обмін</strong> → <strong>Ownfoil</strong>. Також можна ставити з мережевої папки (SMB, NFS, WebDAV, FTP, HTTP), відкритої у файловому браузері Kefir Hub.</p>
+
+<p><img src="/assets/images/switch/hub/network-ownfoil-catalog.png" alt="Kefir Hub: network ownfoil catalog" width="1280" height="720" loading="lazy" style="max-width:100%;height:auto" /></p>
+
+<p>Покроково, з налаштуванням серверів: <a href="https://hub.customfw.xyz/uk/install/network/" target="_blank">Встановлення через мережу</a></p>
+
     
   </div>
-  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб III - Встановлення з карти пам'яті (устарілий) <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб III - Встановлення по мережі (браузер, FTP, Ownfoil) <span class="close-icon" aria-hidden="true"></span></div>
 </details>
+
+<details class="spoiler" id="spoiler-f6924c06">
+  <summary>Спосіб IV - Встановлення з USB-носія</summary>
+  <div class="spoiler-content">
+    <p class="notice--info">Скиньте ігри у форматі <code class="language-plaintext highlighter-rouge">.nsp</code> / <code class="language-plaintext highlighter-rouge">.nsz</code> / <code class="language-plaintext highlighter-rouge">.xci</code> / <code class="language-plaintext highlighter-rouge">.xcz</code> на флешку чи диск (FAT32, exFAT або NTFS) і підключіть його до консолі через OTG-кабель або в док-станцію.</p>
+
+<ol>
+  <li>Підключіть USB-носій з іграми до приставки</li>
+  <li>Запустіть Kefir Hub і відкрийте <strong>Інструменти</strong> → <strong>Файловий браузер</strong></li>
+  <li>Натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" />, виберіть <strong>Джерела</strong>, потім <strong>Змонтувати USB-накопичувач</strong>
+    <ul>
+      <li>Якщо працює MTP, Kefir Hub його зупинить: вони використовують той самий USB-порт</li>
+    </ul>
+  </li>
+  <li>Перейдіть в папку з іграми</li>
+  <li>Виберіть ігри кнопкою <img src="/assets/images/switch/buttons/X.png" alt="(X)" /> (<img src="/assets/images/switch/buttons/Y.png" alt="(Y)" /> — інвертувати вибір), натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> і виберіть <strong>Встановити</strong>
+    <ul>
+      <li>Щоб поставити все з папки та її підпапок, виділіть папку, натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> і виберіть <strong>Встановити рекурсивно</strong></li>
+    </ul>
+  </li>
+  <li>Відкриється <a href="#черга-встановлення">черга встановлення</a>. Натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" /> (<strong>Встановити вибране</strong>)</li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб IV - Встановлення з USB-носія <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<details class="spoiler" id="spoiler-c5f9bbc1">
+  <summary>Спосіб V - Встановлення з карти пам'яті</summary>
+  <div class="spoiler-content">
+    <p class="notice--warning"><strong>Спосіб не є рекомендованим</strong>: на карту у форматі FAT32 неможливо записати файли більші за 4 Гб, тож великі ігри ставте способами I–IV. Крім того, часто виймати і вставляти карту в приставку може бути небезпечно для слота картки пам’яті консолі і може пошкодити його! Скопіювати файли на карту без виймання можна по MTP (диск <code class="language-plaintext highlighter-rouge">microSD card</code>) або по мережі.</p>
+
+<ol>
+  <li>Скопіюйте ігри, які хочете встановити, в папку <code class="language-plaintext highlighter-rouge">games</code> на вашій карті пам’яті
+    <ul>
+      <li>Папка може бути будь-яка, <code class="language-plaintext highlighter-rouge">games</code> — для порядку</li>
+    </ul>
+  </li>
+  <li>Запустіть Kefir Hub і відкрийте <strong>Інструменти</strong> → <strong>Файловий браузер</strong></li>
+  <li>Перейдіть в папку <code class="language-plaintext highlighter-rouge">games</code></li>
+  <li>Виберіть ігри кнопкою <img src="/assets/images/switch/buttons/X.png" alt="(X)" /> (<img src="/assets/images/switch/buttons/Y.png" alt="(Y)" /> — інвертувати вибір), натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> і виберіть <strong>Встановити</strong>
+    <ul>
+      <li>Один файл можна поставити просто кнопкою <img src="/assets/images/switch/buttons/A.png" alt="(A)" /></li>
+      <li>Щоб поставити все з папки та її підпапок, виділіть папку, натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> і виберіть <strong>Встановити рекурсивно</strong></li>
+    </ul>
+
+    <p><img src="/assets/images/switch/hub/install-sd-card-browser-options.png" alt="Kefir Hub: install sd card browser options" width="1280" height="720" loading="lazy" style="max-width:100%;height:auto" /></p>
+  </li>
+  <li>Відкриється <a href="#черга-встановлення">черга встановлення</a>. Натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" /> (<strong>Встановити вибране</strong>)</li>
+</ol>
+
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Спосіб V - Встановлення з карти пам'яті <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
+<h3 id="черга-встановлення">Черга встановлення</h3>
+
+<p>Способи II, IV і V спершу відкривають <strong>Черга встановлення</strong>: кожен пакет перевіряється, і видно, скільки місця він займе і куди піде. Нічого не встановлюється, доки ви не натиснете <img src="/assets/images/switch/buttons/A.png" alt="(A)" />.</p>
+
+<p><img src="/assets/images/switch/hub/install-sd-card-queue-review.png" alt="Kefir Hub: install sd card queue review" width="1280" height="720" loading="lazy" style="max-width:100%;height:auto" /></p>
+
+<ul>
+  <li><img src="/assets/images/switch/buttons/A.png" alt="(A)" /> — <strong>Встановити вибране</strong> (якщо нічого не вибрано — пакет під курсором)</li>
+  <li><img src="/assets/images/switch/buttons/X.png" alt="(X)" /> / <img src="/assets/images/switch/buttons/Y.png" alt="(Y)" /> — вибрати пакет / інвертувати вибір</li>
+  <li><img src="/assets/images/switch/buttons/L3.png" alt="(L3)" /> — <strong>Сховище пакета</strong>: куди поставити саме цей пакет (авто, карта пам’яті чи внутрішня пам’ять)</li>
+  <li><img src="/assets/images/switch/buttons/R3.png" alt="(R3)" /> — <strong>Згорнути</strong>: встановлення триває, а ви можете користуватися Kefir Hub</li>
+  <li><img src="/assets/images/switch/buttons/-.png" alt="(-)" /> — <strong>Вимкнути екран</strong> на час довгого встановлення</li>
+  <li><img src="/assets/images/switch/buttons/B.png" alt="(B)" /> — <strong>Скасувати сеанс</strong>, нічого не встановлюючи</li>
+</ul>
+
+<p class="notice--info">Пакет, позначений червоним, не вдалося прочитати: файл пошкоджений або недокачаний. Помилки встановлення записуються у <code class="language-plaintext highlighter-rouge">/config/kefir/errors.txt</code> на карті пам’яті. Решта кнопок і параметрів черги — у <a href="https://hub.customfw.xyz/uk/install/sd-card/#queue" target="_blank">документації Kefir Hub</a></p>
+
+<h3 id="картриджі">Картриджі</h3>
+
+<p>Вставлений картридж видно вгорі списку <strong>Інструменти</strong> → <strong>Ігрові інструменти</strong> → <strong>Ігри</strong> з позначкою GC. Встановити вміст картриджа на консоль через Kefir Hub не можна: картридж просто грається зі слота. Про дамп картриджа: <a href="https://hub.customfw.xyz/uk/install/gamecard/" target="_blank">Картриджі</a></p>
+
+<p><img src="/assets/images/switch/hub/install-gamecard-games-row.png" alt="Kefir Hub: install gamecard games row" width="1280" height="720" loading="lazy" style="max-width:100%;height:auto" /></p>
 
 <h3 id="використання-перекладів-і-модифікацій">Використання перекладів і модифікацій</h3>
+
+<h4 id="через-dbi-backend-qt-найпростіше">Через DBI Backend Qt (найпростіше)</h4>
+
+<p><a href="https://github.com/rashevskyv/dbibackend-qt/releases/latest" target="_blank">DBI Backend Qt</a> версії 2.9.10 або новішої ставить переклади, моди й порти так само, як ігри: по USB, через <a href="#виберіть-один-із-методів-встановлення">спосіб II</a>. Копіювати файли в <code class="language-plaintext highlighter-rouge">atmosphere/contents</code> вручну не потрібно</p>
+
+<ol>
+  <li><strong>На приставці</strong> запустіть Kefir Hub. На вкладці <strong>Інструменти</strong> натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> і виберіть <strong>Встановлення з ПК (USB)</strong></li>
+  <li>Підключіть консоль до ПК USB-кабелем і запустіть DBI Backend Qt</li>
+  <li>Додайте в програму папку з роздачею: гра, оновлення, переклад або мод можуть лежати разом
+    <ul>
+      <li>Архіви (zip, 7z, rar) розпаковувати не треба: консоль розпакує їх сама</li>
+    </ul>
+  </li>
+  <li>Програма відкриє вікно <strong>Choose what to install</strong>. У ньому один блок на кожну гру і позначка на кожен варіант
+    <ul>
+      <li>Типово позначено мову ПК, потім англійську. Залиште позначку лише на потрібній мові перекладу</li>
+      <li>Мод позначено, лише коли він у гри один. Якщо модів кілька, позначте потрібний</li>
+    </ul>
+  </li>
+  <li>Почніть передавання. Кожен позначений варіант стає окремим рядком черги після пакетів гри</li>
+  <li>На консолі натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" /> (<strong>Встановити вибране</strong>) у <a href="#черга-встановлення">черзі встановлення</a></li>
+</ol>
+
+<p class="notice--info">Змінити вибір можна в DBI Backend Qt, поки гра ще не почала встановлюватися: пункт <strong>Choose What to Install…</strong> у меню рядка черги</p>
+
+<p class="notice--info">Kefir Hub пише файли перекладу чи мода лише на карту пам’яті. Він ніколи не чіпає папки <code class="language-plaintext highlighter-rouge">Nintendo</code>, <code class="language-plaintext highlighter-rouge">emuMMC</code> і <code class="language-plaintext highlighter-rouge">bootloader</code>, а збереження, що вже є на консолі, залишаються. Деякі моди (наприклад, офлайн-мод Just Dance) також записують кеш гри і збереження; для збереження Kefir Hub один раз запитає, в який профіль його записати. Докладніше: <a href="https://hub.customfw.xyz/uk/install/usb/#releases" target="_blank">документація Kefir Hub</a></p>
+
+<h4 id="вручну">Вручну</h4>
 
 <p class="notice--info">Для встановлення перекладу дотримуйтесь інструкції, яка поставляється з кожним перекладом.</p>
 
@@ -744,19 +893,21 @@
 			Патч, який дозволяє змінювати дані гри в оперативній пам’яті на дані, що знаходяться на карті пам’яті. За допомогою цього патчу працюють переклади та моди.
 		</span>
 	</span>
-</span>. Цей модуль активований за замовчуванням. В Atmosphere файли для LFS потрібно класти в папку <code class="language-plaintext highlighter-rouge">atmosphere/contents/</code>.</p>
+</span>. Цей модуль активований за замовчуванням. В Atmosphere файли для LFS потрібно класти в папку <code class="language-plaintext highlighter-rouge">atmosphere/contents/&lt;Title ID гри&gt;/</code> на карті пам’яті.</p>
 
-<p>Так само ви можете використовувати DBI для встановлення модифікацій:</p>
+<p>Скопіювати мод можна без виймання карти, через MTP:</p>
 <ol>
-  <li>Підключіть приставку в режимі MTP по DBI</li>
-  <li>Перейдіть в <strong>Installed Games</strong>, в папку з назвою вашої гри</li>
-  <li>Перейдіть в папку <strong>Mods &amp; Cheats</strong></li>
-  <li>Помістіть в папку <strong>Mods &amp; Cheats</strong> ваш мод
+  <li>Підключіть консоль до ПК, як у способі I (дивіться <a href="#виберіть-один-із-методів-встановлення">методи встановлення</a>)</li>
+  <li>Відкрийте диск <code class="language-plaintext highlighter-rouge">microSD card</code>, а на ньому папку <code class="language-plaintext highlighter-rouge">atmosphere/contents</code></li>
+  <li>Скопіюйте туди папку з TitleID гри з архіву мода
     <ul>
-      <li><strong>Будьте уважні</strong>, вам потрібно класти не саму папку з titleID гри, а її вміст! Наприклад, ви скачали переклад для гри Cadence of Hyrule, у вигляді архіву <code class="language-plaintext highlighter-rouge">Cadence of Hyrule.rar</code>. Всередині цього архіву ви бачите папку з TitleID гри - <code class="language-plaintext highlighter-rouge">01000B900D8B0000</code>. Вам потрібно розпакувати архів, перейти в папку <code class="language-plaintext highlighter-rouge">01000B900D8B0000</code> і скопіювати весь вміст папки в <strong>Mods &amp; Cheats</strong>! Не саму папку <code class="language-plaintext highlighter-rouge">01000B900D8B0000</code>, а все те, що в ній знаходиться! В даному прикладі, папку <code class="language-plaintext highlighter-rouge">romfs</code></li>
+      <li><strong>Будьте уважні</strong> зі структурою папок! Наприклад, ви скачали переклад для гри Cadence of Hyrule у вигляді архіву <code class="language-plaintext highlighter-rouge">Cadence of Hyrule.rar</code>. Всередині архіву ви бачите папку з TitleID гри — <code class="language-plaintext highlighter-rouge">01000B900D8B0000</code>, а в ній папку <code class="language-plaintext highlighter-rouge">romfs</code>. Скопіюйте папку <code class="language-plaintext highlighter-rouge">01000B900D8B0000</code> цілком в <code class="language-plaintext highlighter-rouge">atmosphere/contents</code>, щоб вийшло <code class="language-plaintext highlighter-rouge">atmosphere/contents/01000B900D8B0000/romfs</code></li>
+      <li>Якщо в архіві вже є папка <code class="language-plaintext highlighter-rouge">atmosphere</code>, копіюйте її в корінь диска <code class="language-plaintext highlighter-rouge">microSD card</code></li>
     </ul>
   </li>
 </ol>
+
+<p class="notice--info">Перевірити мод можна на консолі: <strong>Інструменти</strong> → <strong>Ігрові інструменти</strong> → <strong>Ігри</strong>, відкрийте гру кнопкою <img src="/assets/images/switch/buttons/A.png" alt="(A)" />. Рядок <strong>Папка модів</strong> показує <strong>Є</strong>, якщо файли на місці, а у списку ігор біля гри з’являється позначка LayeredFS. На цьому ж екрані <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> → <strong>Відкрити папку модів</strong> (або <strong>Створити папку модів</strong>) відкриває папку у файловому браузері Kefir Hub, щоб скопіювати чи розпакувати туди мод прямо на консолі. Докладніше: <a href="https://hub.customfw.xyz/uk/games/#mods-folder" target="_blank">Папка модів</a></p>
 
 <p>Після встановлення перекладу <strong>обов’язково</strong> виправте атрибути в скопійованих файлах:</p>
 
@@ -770,9 +921,24 @@
   <li>Виберіть “<strong>Home</strong>” -&gt; “<strong>Launch</strong>” -&gt; “<strong>Atmosphere</strong>”, щоб завантажитися назад у прошивку</li>
 </ol>
 
+<h2 id="керування-встановленими-іграми">Керування встановленими іграми</h2>
+
+<p>Встановлені ігри — в <strong>Інструменти</strong> → <strong>Ігрові інструменти</strong> → <strong>Ігри</strong>. Позначте ігри кнопкою <img src="/assets/images/switch/buttons/X.png" alt="(X)" /> (або наведіть на одну) і натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" />:</p>
+
+<ul>
+  <li><strong>Видалити</strong> — видаляє гру, оновлення й DLC. Збереження залишаються</li>
+  <li><strong>Перенести на SD</strong> / <strong>Перенести на NAND</strong> — переносить гру між внутрішньою пам’яттю і картою пам’яті</li>
+  <li><strong>Дамп</strong> — зберігає гру у файли NSP</li>
+</ul>
+
+<p class="notice--info">Перенести встановлені ігри на іншу консоль через <strong>Передача між консолями</strong> не вийде: вона передає лише файли. На новій консолі встановіть ігри зі своїх файлів.</p>
+
+<p>Подробиці: <a href="https://hub.customfw.xyz/uk/games/" target="_blank">Ігри в документації Kefir Hub</a></p>
+
 <h2 id="корисні-посилання">Корисні посилання</h2>
 
 <ul>
+  <li><a href="https://hub.customfw.xyz/uk/install/" target="_blank">Документація Kefir Hub: встановлення ігор</a></li>
   <li><a href="https://t.me/nintendo_Ukrainizator" target="_blank">Українізатори ігор та список ігор українською</a></li>
   <li><a href="/emuiibo" target="_blank">Емуляція Amiibo за допомогою модуля emuiibo</a></li>
   <li><a href="/link-account" target="_blank">Прив’язка облікового запису консолі до облікового запису Nintendo</a></li>
@@ -781,7 +947,6 @@
 <hr />
 
 <p class="notice--success"><a href="javascript:window.close();">Закрити сторінку</a></p>
-
 
 				
         

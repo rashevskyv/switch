@@ -27,7 +27,7 @@
 
 
 <title>Інструкція з використання вже прошитої приставки — Прошивка Nintendo Switch — повний український гайд</title>
-<meta name="description" content="Як користуватися вже прошитим Nintendo Switch: оновлення Kefir, встановлення ігор, Dual-Boot, безпека.">
+<meta name="description" content="Як користуватися вже прошитим Nintendo Switch: запуск Kefir Hub, встановлення ігор, збереження, чити, теми, оновлення Kefir і прошивки, доступ до файлів з ПК.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="xHR">
 
@@ -40,7 +40,7 @@
 <meta property="og:locale" content="uk_UA">
 <meta property="og:site_name" content="Прошивка Nintendo Switch — повний український гайд">
 <meta property="og:title" content="Інструкція з використання вже прошитої приставки">
-<meta property="og:description" content="Як користуватися вже прошитим Nintendo Switch: оновлення Kefir, встановлення ігор, Dual-Boot, безпека.">
+<meta property="og:description" content="Як користуватися вже прошитим Nintendo Switch: запуск Kefir Hub, встановлення ігор, збереження, чити, теми, оновлення Kefir і прошивки, доступ до файлів з ПК.">
 <meta property="og:url" content="https://switch.customfw.xyz/usage">
 <meta property="og:type" content="website">
 
@@ -54,7 +54,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Інструкція з використання вже прошитої приставки">
-<meta name="twitter:description" content="Як користуватися вже прошитим Nintendo Switch: оновлення Kefir, встановлення ігор, Dual-Boot, безпека.">
+<meta name="twitter:description" content="Як користуватися вже прошитим Nintendo Switch: запуск Kefir Hub, встановлення ігор, збереження, чити, теми, оновлення Kefir і прошивки, доступ до файлів з ПК.">
 <meta name="twitter:url" content="https://switch.customfw.xyz/usage">
 
   <meta name="twitter:image" content="https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg">
@@ -82,6 +82,13 @@
     "@type": "Organization",
     "name": "CustomFW",
     "url": "https://customfw.xyz"
+  },
+  "subOrganization": {
+    "@type": "Store",
+    "@id": "https://shop.customfw.xyz#identity",
+    "name": "Shop CustomFW",
+    "url": "https://shop.customfw.xyz",
+    "description": "Чіпування, продаж прошитих консолей Nintendo Switch і ремонт в Україні від автора гайду"
   },
   "founder": {
     "@type": "Person",
@@ -128,7 +135,7 @@
   "@id": "https://switch.customfw.xyz/usage#webpage",
   "url": "https://switch.customfw.xyz/usage",
   "name": "Інструкція з використання вже прошитої приставки",
-  "description": "Як користуватися вже прошитим Nintendo Switch: оновлення Kefir, встановлення ігор, Dual-Boot, безпека.",
+  "description": "Як користуватися вже прошитим Nintendo Switch: запуск Kefir Hub, встановлення ігор, збереження, чити, теми, оновлення Kefir і прошивки, доступ до файлів з ПК.",
   "isPartOf": {
     "@id": "https://switch.customfw.xyz#website"
   },
@@ -136,7 +143,7 @@
   "breadcrumb": {
     "@id": "https://switch.customfw.xyz/usage#breadcrumb"
   },
-  "dateModified": "2026-11-13T19:44:41+02:00",
+  "dateModified": "2026-11-13T17:02:54+02:00",
   "primaryImageOfPage": {
     "@type": "ImageObject",
     "url": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg"
@@ -179,7 +186,7 @@
   "@type": "TechArticle",
   "@id": "https://switch.customfw.xyz/usage#article",
   "headline": "Інструкція з використання вже прошитої приставки",
-  "description": "Як користуватися вже прошитим Nintendo Switch: оновлення Kefir, встановлення ігор, Dual-Boot, безпека.",
+  "description": "Як користуватися вже прошитим Nintendo Switch: запуск Kefir Hub, встановлення ігор, збереження, чити, теми, оновлення Kefir і прошивки, доступ до файлів з ПК.",
   "inLanguage": "uk",
   "url": "https://switch.customfw.xyz/usage",
   "mainEntityOfPage": {
@@ -194,7 +201,7 @@
     "@id": "https://switch.customfw.xyz#identity"
   },
   "image": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg",
-  "dateModified": "2026-11-13T19:44:41+02:00"
+  "dateModified": "2026-11-13T17:02:54+02:00"
 }
 </script>
 
@@ -245,6 +252,7 @@
 
 
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
   </head>
 
   <body class="layout--single">
@@ -256,7 +264,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch — повний український гайд</a>
+        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch</a>
         <ul class="visible-links"><li class="masthead__menu-item">
             <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
           </li><li class="masthead__menu-item">
@@ -267,6 +275,8 @@
             <a href="/get-started" >Методи<br>злому</a>
           </li><li class="masthead__menu-item">
             <a href="/kefir" >Kefir</a>
+          </li><li class="masthead__menu-item">
+            <a href="/hbl" >Kefir Hub</a>
           </li><li class="masthead__menu-item">
             <a href="/backup-nand" >Резервне<br>копіювання</a>
           </li><li class="masthead__menu-item">
@@ -475,19 +485,25 @@
 <nav class="toc">
     <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Розділи</h4></header>
 <ul class="toc__menu" id="markdown-toc">
+  <li><a href="#встановлення-кефіру" id="markdown-toc-встановлення-кефіру">Встановлення кефіру</a></li>
   <li><a href="#запуск-прошивки" id="markdown-toc-запуск-прошивки">Запуск Прошивки</a>    <ul>
       <li><a href="#за-допомогою-fusée-gelée" id="markdown-toc-за-допомогою-fusée-gelée">За допомогою Fusée Gelée</a></li>
       <li><a href="#чипована-приставка" id="markdown-toc-чипована-приставка">Чипована приставка</a></li>
       <li><a href="#за-допомогою-caffeine" id="markdown-toc-за-допомогою-caffeine">За допомогою Caffeine</a></li>
     </ul>
   </li>
-  <li><a href="#запуск-hbl" id="markdown-toc-запуск-hbl">Запуск HBL</a></li>
+  <li><a href="#запуск-kefir-hub" id="markdown-toc-запуск-kefir-hub">Запуск Kefir Hub</a></li>
   <li><a href="#встановлення-ігор" id="markdown-toc-встановлення-ігор">Встановлення ігор</a></li>
+  <li><a href="#збереження" id="markdown-toc-збереження">Збереження</a></li>
+  <li><a href="#чити" id="markdown-toc-чити">Чити</a></li>
+  <li><a href="#теми" id="markdown-toc-теми">Теми</a></li>
   <li><a href="#оновлення" id="markdown-toc-оновлення">Оновлення</a>    <ul>
-      <li><a href="#оновлення-прошивки-та-системного-пз" id="markdown-toc-оновлення-прошивки-та-системного-пз">Оновлення прошивки та системного ПЗ</a></li>
+      <li><a href="#оновлення-kefir" id="markdown-toc-оновлення-kefir">Оновлення Kefir</a></li>
       <li><a href="#оновлення-системного-пз" id="markdown-toc-оновлення-системного-пз">Оновлення системного ПЗ</a></li>
+      <li><a href="#оновлення-kefir-hub" id="markdown-toc-оновлення-kefir-hub">Оновлення Kefir Hub</a></li>
     </ul>
   </li>
+  <li><a href="#доступ-до-файлів-з-пк" id="markdown-toc-доступ-до-файлів-з-пк">Доступ до файлів з ПК</a></li>
   <li><a href="#інші-корисні-інструкції" id="markdown-toc-інші-корисні-інструкції">Інші корисні інструкції</a></li>
 </ul>
 
@@ -508,7 +524,11 @@
 
 <hr />
 
-<p class="notice--danger">Мається на увазі, що ваша приставка прошита за цим посібником, або куплена <a href="http://shop.customfw.xyz" target="blank_">в автора цього гайду</a>, в іншому випадку немає жодної гарантії, що все працюватиме правильно!</p>
+<p class="notice--danger">Мається на увазі, що ваша приставка прошита за цим посібником, або куплена <a href="https://shop.customfw.xyz/" target="_blank">в автора цього гайду</a>, в іншому випадку немає жодної гарантії, що все працюватиме правильно!</p>
+
+<h2 id="встановлення-кефіру">Встановлення кефіру</h2>
+
+<p>Якщо на карті пам’яті ще немає кефіру, або ви не знаєте, яка там версія, встановіть останню версію за <a href="/kefir#інструкція-з-встановленняоновлення-kefir" target="_blank">інструкцією з встановлення</a>. Далі кефір оновлюється прямо на консолі через <a href="#оновлення">Kefir Hub</a>.</p>
 
 <h2 id="запуск-прошивки">Запуск Прошивки</h2>
 
@@ -525,7 +545,7 @@
 </ol>
 
 <h3 id="за-допомогою-caffeine">За допомогою Caffeine</h3>
-<details class="spoiler" id="spoiler-3177ec33">
+<details class="spoiler" id="spoiler-f679889d">
   <summary>Інструкція</summary>
   <div class="spoiler-content">
     <h4 id="частина-i---запуск-pegaswitch">Частина I - Запуск PegaSwitch</h4>
@@ -563,47 +583,83 @@
 
 <p><a href="/troubleshooting" target="blank_">Можливі проблеми та їх вирішення</a></p>
 
-<h2 id="запуск-hbl">Запуск HBL</h2>
+<h2 id="запуск-kefir-hub">Запуск Kefir Hub</h2>
 
-<p class="notice--info"><strong>HBL</strong> - програма для запуску самописних додатків. Як правило, це системні утиліти та емулятори. Рідше - ігри. Такі додатки розповсюджуються у форматі <code class="language-plaintext highlighter-rouge">.nro</code>. Для встановлення, помістіть <code class="language-plaintext highlighter-rouge">.nro</code>-додаток у папку <code class="language-plaintext highlighter-rouge">switch</code>. У цьому посібнику ж, усі додатки, про які йде мова, вже включені до складу кефіру.</p>
+<p class="notice--info"><strong>Kefir Hub</strong> — головний застосунок збірки: через нього запускаються homebrew-додатки, встановлюються ігри, робляться резервні копії збережень, завантажуються чити й теми, оновлюються Kefir і прошивка. Сам Kefir Hub — homebrew-додаток (<code class="language-plaintext highlighter-rouge">/switch/kefir-hub.nro</code>), тому запускається через Homebrew Menu, як і будь-яке хомбрю.</p>
 
 <ul>
+  <li><strong>Режим тайтлу (рекомендовано)</strong>: запустіть будь-яку гру, утримуючи клавішу <img src="/assets/images/switch/buttons/R.png" alt="(R)" />, до тих пір, поки не відкриється Homebrew Menu (або одразу Kefir Hub), або скористайтесь встановленим форвардером</li>
   <li>
-    <p>Для запуску в режимі апплету, запустіть “<strong>Альбоми</strong>” кнопкою <img src="/assets/images/switch/buttons/A.png" alt="(A)" />, утримуючи клавішу <img src="/assets/images/switch/buttons/R.png" alt="(R)" />, до тих пір, поки меню не запуститься</p>
+    <p><strong>Режим аплету</strong>: запустіть “<strong>Альбом</strong>” кнопкою <img src="/assets/images/switch/buttons/A.png" alt="(A)" />, утримуючи клавішу <img src="/assets/images/switch/buttons/R.png" alt="(R)" />, до тих пір, поки меню не запуститься</p>
 
     <p class="text-center notice--info"><img src="/assets/images/switch/screenshots/gallery.jpg" alt="" /></p>
   </li>
-  <li>Для запуску в режимі тайтлу, запустіть будь-яку гру, утримуючи клавішу <img src="/assets/images/switch/buttons/R.png" alt="(R)" />, до тих пір, поки меню не запуститься, або скористайтесь встановленим форвардером</li>
-  <li>Ви можете встановити форвардер для запуску hbmenu в режимі тайтлу з головного меню приставки. Він лежить у папці <code class="language-plaintext highlighter-rouge">games</code> і <a href="/games" target="_blank">встановлюється як звичайна гра</a></li>
+  <li>Щоб Kefir Hub завжди запускався в режимі тайтлу прямо з головного меню приставки, встановіть його форвардер: у Kefir Hub перейдіть на вкладку <strong>Інструменти</strong>, натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> і виберіть <strong>Встановити форвардер Title Mode</strong>. Коли встановлення завершиться, поверніться на головний екран і запустіть нову іконку
+    <ul>
+      <li>Форвардер для запуску Homebrew Menu в режимі тайтлу також лежить у папці <code class="language-plaintext highlighter-rouge">games</code> збірки і <a href="/games" target="_blank">встановлюється як звичайна гра</a></li>
+    </ul>
+  </li>
 </ul>
 
-<p class="notice--info">Ви, як і раніше, можете використовувати й альбоми, однак рекомендується запускати програми через гру. Так додатки зможуть мати доступ до всього обсягу пам’яті консолі.</p>
+<p class="notice--info">Якщо відкрилося класичне Homebrew Menu, виберіть у ньому <strong>Kefir Hub</strong>. Ви, як і раніше, можете використовувати й Альбом, однак рекомендується запускати Kefir Hub через гру або форвардер: так йому доступна вся пам’ять консолі, і великі ігри встановлюватимуться без проблем.</p>
 
-<p><a href="/hbl" target="_blank">Подробніше про HBL</a></p>
+<p>На головному екрані Kefir Hub дві вкладки: <strong>Homebrew</strong> (ваші додатки) та <strong>Інструменти</strong> (усе інше). Перемикаються вони кнопками <img src="/assets/images/switch/buttons/L.png" alt="(L)" /> / <img src="/assets/images/switch/buttons/R.png" alt="(R)" />.</p>
+
+<p><a href="/hbl" target="_blank">Детальніше про Kefir Hub</a></p>
 
 <h2 id="встановлення-ігор">Встановлення ігор</h2>
 
-<p>Усі існуючі методи встановлення ігор, а також місця, де ігри брати, знаходяться тут - <a href="/games" target="blank_">Встановлення ігор</a>.
-Для видалення ігор скористайтеся стандартним способом, передбаченим у вашій прошивці.</p>
+<p>Усі способи встановлення ігор (з карти пам’яті, з ПК по USB, через MTP, по мережі), а також місця, де ігри брати, знаходяться тут — <a href="/games" target="_blank">Встановлення ігор</a>.</p>
+
+<ul>
+  <li><strong>Видалення ігор</strong>: <strong>Інструменти</strong> → <strong>Ігрові інструменти</strong> → <strong>Ігри</strong>, наведіть курсор на гру, натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> → <strong>Видалити</strong>. Збереження при цьому залишаються</li>
+</ul>
+
+<h2 id="збереження">Збереження</h2>
+
+<p>Резервні копії збережень робляться в <strong>Інструменти</strong> → <strong>Ігрові інструменти</strong> → <strong>Збереження</strong>: наведіть курсор на гру, натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" /> → <strong>Створити резервну копію</strong>. Там само їх і відновлюють. Kefir Hub бачить і копії, зроблені в DBI, JKSV та Checkpoint.</p>
+
+<p>Детальніше — <a href="/backup-saves" target="_blank">Резервне копіювання та відновлення збережень</a></p>
+
+<h2 id="чити">Чити</h2>
+
+<p>Чити завантажуються в <strong>Інструменти</strong> → <strong>Ігрові інструменти</strong> → <strong>Чити</strong>: повний набір (<strong>Завантажити чити Kefir</strong>) або чити для конкретної гри (<strong>Завантажити точні чити</strong>). Вмикаються чити вже в самій грі, через оверлей EdiZon у Tesla-меню.</p>
+
+<p>Детальніше — <a href="/cheats" target="_blank">Використання читів</a></p>
+
+<h2 id="теми">Теми</h2>
+
+<p>Теми для головного меню консолі завантажуються в <strong>Інструменти</strong> → <strong>Теми</strong> (готові набори або каталог <strong>Themezer</strong>), а застосовуються через NXThemes Installer, який Kefir Hub відкриває сам.</p>
+
+<p>Детальніше — <a href="/hbl#теми" target="_blank">Kefir Hub: теми</a></p>
 
 <h2 id="оновлення">Оновлення</h2>
 
-<h3 id="оновлення-прошивки-та-системного-пз">Оновлення прошивки та системного ПЗ</h3>
+<h3 id="оновлення-kefir">Оновлення Kefir</h3>
 
-<p>Оновіть <span class="tooltip_container">
-	<a href="kefir" target="_blank">kefir</a>
-	<span class="tooltip">▼
-		<span class="bottom">
-			Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
-		</span>
-	</span>
-</span>, дотримуючись інструкції. Процес оновлення аналогічний процесу встановлення.</p>
+<p>Найпростіше — прямо на приставці: <strong>Інструменти</strong> → <strong>Оновлювач</strong>, вкладка <strong>Kefir</strong> (потрібен інтернет). Інші способи — <a href="/kefir#інструкція-з-встановленняоновлення-kefir" target="_blank">інструкція з оновлення kefir</a>.</p>
 
 <h3 id="оновлення-системного-пз">Оновлення системного ПЗ</h3>
 
-<p>Оновлювати системне ПЗ можна <strong>тільки</strong> після оновлення kefir, інакше прошивка може не запуститися!</p>
+<p class="notice--warning">Оновлювати системне ПЗ можна <strong>тільки</strong> після оновлення kefir, інакше прошивка може не запуститися! Kefir Hub сам запропонує спершу оновити Kefir, якщо вибрана версія прошивки ним ще не підтримується.</p>
 
-<p>Детальна інструкція з оновлення знаходиться тут - <a href="/update-fw" target="blank_">Безпечне оновлення прошивки</a></p>
+<p>Детальна інструкція з оновлення знаходиться тут - <a href="/update-fw" target="_blank">Безпечне оновлення прошивки</a></p>
+
+<h3 id="оновлення-kefir-hub">Оновлення Kefir Hub</h3>
+
+<p>Kefir Hub перевіряє наявність власної нової версії під час запуску і за замовчуванням завантажує її у фоні. Налаштовується це в <strong>Інструменти</strong> → <strong>Налаштування</strong> → <strong>Загальний</strong>. Детальніше — <a href="https://hub.customfw.xyz/uk/updater/#update-kefir-hub" target="_blank">документація</a>.</p>
+
+<h2 id="доступ-до-файлів-з-пк">Доступ до файлів з ПК</h2>
+
+<p>Щоб скопіювати файли на карту пам’яті чи з неї, не виймаючи її з приставки, у Kefir Hub є три способи:</p>
+
+<ul>
+  <li><strong>MTP</strong> — підключіть консоль до ПК USB-кабелем; карта пам’яті з’явиться в Провіднику, як телефон</li>
+  <li><strong>FTP</strong> — по Wi-Fi, через FTP-програму на ПК</li>
+  <li><strong>Браузер</strong> — по Wi-Fi, через вебсторінку, яку відкриває Kefir Hub</li>
+</ul>
+
+<p>Детальніше — <a href="/ftp" target="_blank">Доступ до файлів з ПК</a></p>
 
 <h2 id="інші-корисні-інструкції">Інші корисні інструкції</h2>
 
@@ -706,7 +762,7 @@
           
           
 
-          <a href="https://switch.customfw.xyz/cheats"><span class="nav__sub-title">Використання читів в EdiZon</span></a>
+          <a href="https://switch.customfw.xyz/cheats"><span class="nav__sub-title">Використання читів</span></a>
         
 
         
@@ -718,6 +774,17 @@
           
 
           <a href="https://switch.customfw.xyz/backup-saves"><span class="nav__sub-title">Резервне копіювання та відновлення збережень</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://switch.customfw.xyz/ftp"><span class="nav__sub-title">Доступ до файлів з ПК (MTP, FTP, браузер)</span></a>
         
 
         
@@ -772,7 +839,7 @@
           
           
 
-          <a href="https://github.com/rashevskyv/dbi"><span class="nav__sub-title">Повна інструкція з використання DBI</span></a>
+          <a href="https://hub.customfw.xyz/uk/"><span class="nav__sub-title">Документація Kefir Hub</span></a>
         
 
         

@@ -83,6 +83,13 @@
     "name": "CustomFW",
     "url": "https://customfw.xyz"
   },
+  "subOrganization": {
+    "@type": "Store",
+    "@id": "https://shop.customfw.xyz#identity",
+    "name": "Shop CustomFW",
+    "url": "https://shop.customfw.xyz",
+    "description": "Чіпування, продаж прошитих консолей Nintendo Switch і ремонт в Україні від автора гайду"
+  },
   "founder": {
     "@type": "Person",
     "name": "xHR",
@@ -136,7 +143,7 @@
   "breadcrumb": {
     "@id": "https://switch.customfw.xyz/migrate#breadcrumb"
   },
-  "dateModified": "2026-11-13T19:44:41+02:00",
+  "dateModified": "2026-10-02T10:46:38+03:00",
   "primaryImageOfPage": {
     "@type": "ImageObject",
     "url": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg"
@@ -194,7 +201,7 @@
     "@id": "https://switch.customfw.xyz#identity"
   },
   "image": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg",
-  "dateModified": "2026-11-13T19:44:41+02:00"
+  "dateModified": "2026-10-02T10:46:38+03:00"
 }
 </script>
 
@@ -245,6 +252,7 @@
 
 
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
   </head>
 
   <body class="layout--single">
@@ -256,7 +264,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch — повний український гайд</a>
+        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch</a>
         <ul class="visible-links"><li class="masthead__menu-item">
             <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
           </li><li class="masthead__menu-item">
@@ -267,6 +275,8 @@
             <a href="/get-started" >Методи<br>злому</a>
           </li><li class="masthead__menu-item">
             <a href="/kefir" >Kefir</a>
+          </li><li class="masthead__menu-item">
+            <a href="/hbl" >Kefir Hub</a>
           </li><li class="masthead__menu-item">
             <a href="/backup-nand" >Резервне<br>копіювання</a>
           </li><li class="masthead__menu-item">
@@ -488,7 +498,7 @@
   </nav>
 </aside>
 
-<details class="spoiler" id="spoiler-031f3f41">
+<details class="spoiler" id="spoiler-cf87f438">
   <summary>Навіщо переходити на Atmosphere?</summary>
   <div class="spoiler-content">
     <p>У жовтні 2020 року <a href="https://www.theverge.com/2020/10/2/21499297/team-xecuter-selling-nintendo-hacks-arrested-charged-fraud" target="_blank">були заарештовані два лідери Xecuter Team</a> - компанії, що займалася розробкою та підтримкою SXOS, а також виробництвом чіпів для модифікації приставок із закритою вразливістю.</p>
@@ -510,7 +520,7 @@
 
 <h2 id="перехід-з-sx-на-atmosphere">Перехід з SX на Atmosphere</h2>
 
-<details class="spoiler" id="spoiler-f656e796">
+<details class="spoiler" id="spoiler-386cdafb">
   <summary>Відеоінструкція</summary>
   <div class="spoiler-content">
     <p class="notice--warning">УВАГА!!! Ми не рекомендуємо сліпо слідувати відео-інструкції! Використовуйте її тільки як допоміжну! Справа в тому, що текстовий гайд постійно оновлюється. Неможливо стежити за всіма оновленнями в гайді і кожен раз змінювати відео-інструкцію слідом за ним! Тому текстовий гайд завжди буде більш точним і більш актуальним, ніж відео!</p>
@@ -531,7 +541,7 @@
 <p class="notice--warning">Якщо ваша приставка не запускається, наприклад, після оновлення sysnand через налаштування, то відразу переходьте до <strong>частини II</strong></p>
 
 <ol>
-  <li>Виконайте резервне копіювання збережень за <a href="/backup-saves.html" target="_blank">цією інструкцією</a>
+  <li>Виконайте резервне копіювання збережень через Kefir Hub за <a href="/backup-saves" target="_blank">цією інструкцією</a>
     <ul>
       <li>Якщо вам не потрібні збереження, можете пропустити. Якщо потрібні, робити <strong>обов’язково</strong></li>
     </ul>
@@ -618,7 +628,7 @@
 
 <h2 id="проблеми-та-їх-вирішення">Проблеми та їх вирішення</h2>
 
-<details class="spoiler" id="spoiler-49330521">
+<details class="spoiler" id="spoiler-94471d8c">
   <summary>Чорний екран при запуску SysNAND</summary>
   <div class="spoiler-content">
     <ol>
@@ -645,7 +655,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Чорний екран при запуску SysNAND <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-422064a4">
+<details class="spoiler" id="spoiler-c623cfc2">
   <summary>Відновлення BOOT / Чорний екран при запуску EmuNAND / Помилки при запуску EmuNAND, пов'язані з boot</summary>
   <div class="spoiler-content">
     <p class="notice--warning">Спершу спробуйте запустити SysNAND і виконуйте нижченаведену інструкцію тільки якщо SysNAND запускається! Якщо ні, спершу вирішіть цю проблему, а потім поверніться до виконання цієї інструкції!</p>
@@ -664,7 +674,7 @@
 
 <h4 id="якщо-не-допомогло-або-версії-sysnand-та-emunand-різні">Якщо не допомогло або версії SysNAND та EmuNAND різні:</h4>
 
-<details class="spoiler" id="spoiler-44e0d69a">
+<details class="spoiler" id="spoiler-8722efd7">
   <summary>Як дізнатися версію свого emunand:</summary>
   <div class="spoiler-content">
     <ol>
@@ -730,7 +740,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Відновлення BOOT / Чорний екран при запуску EmuNAND / Помилки при запуску EmuNAND, пов'язані з boot <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-44870c47">
+<details class="spoiler" id="spoiler-ffcbf80f">
   <summary>Помилка "Pkg1 decryption failed! Is BEK Missing?"</summary>
   <div class="spoiler-content">
     <p>Вимкніть і ввімкніть приставку. Перезавантаження не допоможе. Необхідне саме повне вимкнення.</p>
@@ -740,7 +750,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Помилка "Pkg1 decryption failed! Is BEK Missing?" <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-2ce61241">
+<details class="spoiler" id="spoiler-20005dd1">
   <summary>У мене інша помилка</summary>
   <div class="spoiler-content">
     <p>Розкажіть про це в <a href="http://tg.customfw.xyz">групі</a>. <strong>Обов’язково</strong> додайте скріншот помилки, версію своєї приставки (якщо не знаєте яка - серійник), як запускається прошивка (чіп (якщо так, то який), донгл (якщо так, то який), ще якось), версію системного ПЗ, наявність EmuNAND, що саме видає помилку - EmuNAND чи SysNAND, версію кефіру, після чого виникає помилка. 
@@ -751,14 +761,14 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">У мене інша помилка <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-84547201">
-  <summary>Не можу запустити HBL</summary>
+<details class="spoiler" id="spoiler-ac62379a">
+  <summary>Не можу запустити HBL або Kefir Hub</summary>
   <div class="spoiler-content">
-    <p>В Atmosphere HBL запускається, утримуючи <img src="/assets/images/switch/buttons/R.png" alt="(R)" /> при запуску альбомів. Детальніше - <a href="/hbl" target="_blank">Homebrew Launcher</a></p>
+    <p>В Atmosphere Homebrew Menu відкривається з Альбому або якщо утримувати <img src="/assets/images/switch/buttons/R.png" alt="(R)" /> при запуску будь-якої встановленої гри. Звідти запускається Kefir Hub. Детальніше - <a href="/hbl" target="_blank">Kefir Hub</a></p>
 
     
   </div>
-  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Не можу запустити HBL <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Не можу запустити HBL або Kefir Hub <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
 

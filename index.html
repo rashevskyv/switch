@@ -83,6 +83,13 @@
     "name": "CustomFW",
     "url": "https://customfw.xyz"
   },
+  "subOrganization": {
+    "@type": "Store",
+    "@id": "https://shop.customfw.xyz#identity",
+    "name": "Shop CustomFW",
+    "url": "https://shop.customfw.xyz",
+    "description": "Чіпування, продаж прошитих консолей Nintendo Switch і ремонт в Україні від автора гайду"
+  },
   "founder": {
     "@type": "Person",
     "name": "xHR",
@@ -133,7 +140,7 @@
     "@id": "https://switch.customfw.xyz#website"
   },
   "inLanguage": "uk-UA",
-  "dateModified": "2026-11-13T19:44:41+02:00",
+  "dateModified": "2026-10-27T22:09:01+02:00",
   "primaryImageOfPage": {
     "@type": "ImageObject",
     "url": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg"
@@ -143,53 +150,6 @@
 
 
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "@id": "https://switch.customfw.xyz/#faq",
-  "mainEntity": [
-    
-    {
-      "@type": "Question",
-      "name": "Чи можна прошити будь-який Nintendo Switch?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Так, прошиваються всі актуальні ревізії (V1, V2, Lite, OLED). Метод залежить від заліза: Fusée Gelée, Caffeine або модчип. Вибір методу — на сторінці /get-started."
-      }
-    },
-    
-    {
-      "@type": "Question",
-      "name": "Що таке Kefir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Kefir — збірка автора цього гайду (xHR) на базі Atmosphere з потрібними програмами та скриптами встановлення. Репозиторій: github.com/rashevskyv/kefir."
-      }
-    },
-    
-    {
-      "@type": "Question",
-      "name": "Де замовити чіпування, якщо не хочу прошивати сам?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "У автора гайду: Telegram @xhrxhrxhr або магазин shop.customfw.xyz (чіпування Picofly, продаж готових консолей, ремонт)."
-      }
-    },
-    
-    {
-      "@type": "Question",
-      "name": "Як зменшити ризик бану?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Користуйтеся неліцензійним ПЗ лише в EmuNAND, тримайте чистий SysNAND для офіційного онлайну, не заходьте в офіційні сервіси Nintendo з кастомної системи. Гарантії 100% немає."
-      }
-    }
-    
-  ]
-}
-</script>
 
 
 
@@ -240,6 +200,7 @@
 
 
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
   </head>
 
   <body class="layout--single">
@@ -251,7 +212,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch — повний український гайд</a>
+        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch</a>
         <ul class="visible-links"><li class="masthead__menu-item">
             <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
           </li><li class="masthead__menu-item">
@@ -262,6 +223,8 @@
             <a href="/get-started" >Методи<br>злому</a>
           </li><li class="masthead__menu-item">
             <a href="/kefir" >Kefir</a>
+          </li><li class="masthead__menu-item">
+            <a href="/hbl" >Kefir Hub</a>
           </li><li class="masthead__menu-item">
             <a href="/backup-nand" >Резервне<br>копіювання</a>
           </li><li class="masthead__menu-item">
@@ -312,10 +275,13 @@
     <div class="wrapper">
       <h1 class="page__title" itemprop="headline">
         
-          Прошивка Nintendo Switch українською — повний гайд Kefir
+          Прошивка Nintendo Switch
 
         
       </h1>
+      
+        <p class="page__lead">Повний український гайд від автора збірки Kefir
+</p>
       
       
       
@@ -480,8 +446,8 @@
  
   
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Прошивка Nintendo Switch українською — повний гайд Kefir">
-    
+    <meta itemprop="headline" content="Прошивка Nintendo Switch">
+    <meta itemprop="description" content="Повний український гайд від автора збірки Kefir">
     
     
     <div class="page__inner-wrap">
@@ -503,28 +469,17 @@
   </li>
   <li><a href="#що-встановлюється-в-цьому-посібнику" id="markdown-toc-що-встановлюється-в-цьому-посібнику">Що встановлюється в цьому посібнику?</a></li>
   <li><a href="#що-потрібно-знати-перед-тим-як-почати" id="markdown-toc-що-потрібно-знати-перед-тим-як-почати">Що потрібно знати перед тим, як почати?</a></li>
+  <li><a href="#з-чого-почати" id="markdown-toc-з-чого-почати">З чого почати</a></li>
 </ul>
 
   </nav>
 </aside>
 
-<hr />
-
-<div class="notice--success"><h2>Ви можете прошити, або придбати вже прошитий світч в мене</h2><ul><li><a href="https://t.me/kefir_ukr" target="_blank">Група в телеграмі для українців, там є відгуки та приклади робіт</a></li><li><a href="https://t.me/xhrxhrxhr" target="_blank"><b>Мій особистий телеграм</b> (звертайтеся за чипуванням або купівлею)</a></li><li><a href="https://customfw.xyz/donations" target="_blank">Задонатити на розвиток kefir</a></li></ul></div>
-
-<div class="notice--warning">Якщо ви потрапили в цей посібник вперше і не знаєте, як прошивається Switch, рекомендуємо почати знайомство з ним з <a href="/" target="_blank">першої сторінки</a></div>
-
-<div class="notice--warning">Якщо ви користувач MacOS, скористайтеся <a href="/sd-macos" target="_blank">цими рекомендаціями</a>, щоб уникнути проблем з картою пам'яті</div>
-
-<div class="notice">Робіть <a href="/backup-saves" target="_blank">бекапи збережень</a> якомога частіше!</div>
-
-<div class="notice--warning"><strong>Якщо приставка зависла або не подає ознак життя, вимкніть її утриманням кнопки (POWER) 30 секунд, потім увімкніть і пробросьте пейлоад!</strong></div>
-
-<hr />
+<p class="notice--info"><strong>Не хочете прошивати самі?</strong> <a href="https://shop.customfw.xyz/" target="_blank">Чіпування і готові консолі</a> · <a href="https://t.me/xhrxhrxhr" target="_blank">Telegram автора</a> · <a href="https://t.me/kefir_ukr" target="_blank">група Kefir</a> · <a href="https://customfw.xyz/donations" target="_blank">підтримати Kefir</a></p>
 
 <h2 id="прошивка-nintendo-switch">Прошивка Nintendo Switch</h2>
 
-<p>Цей сайт — український посібник з <strong>прошивки Nintendo Switch</strong> (прошивка нінтендо світч) від <strong>xHR</strong>, автора збірки <strong><a href="/kefir">Kefir</a></strong>. Тут є вибір методу зламу, бекап NAND, EmuNAND, Homebrew і безпечне оновлення. Починайте з <a href="/get-started">вибору методу</a>. <a href="https://github.com/rashevskyv/kefir/releases/latest" target="_blank">Скачати Kefir</a>. Якщо не хочете прошивати самі — <a href="https://shop.customfw.xyz/" target="_blank">магазин і чіпування</a>.</p>
+<p>Цей сайт — український посібник з <strong>прошивки Nintendo Switch</strong> (прошивка нінтендо світч) від <strong>xHR</strong>, автора збірки <strong><a href="/kefir">Kefir</a></strong>. Тут є вибір методу зламу, бекап NAND, EmuNAND, Homebrew і безпечне оновлення. <a href="https://github.com/rashevskyv/kefir/releases/latest" target="_blank">Скачати Kefir</a>. Якщо не хочете прошивати самі — <a href="https://shop.customfw.xyz/" target="_blank">магазин і чіпування</a>.</p>
 
 <h2 id="як-читати-цей-посібник">Як читати цей посібник</h2>
 
@@ -601,39 +556,20 @@
 
 <hr />
 
-<center class="notice--success"><a href="/get-started" style="margin:20px auto; text-align:center; display:block; width:200px;" class="btn btn--short">Почнемо!!</a></center>
+<h2 id="з-чого-почати">З чого почати</h2>
 
-<section class="page__faq" id="faq" style="margin-top: 2.5rem;">
-  <h2>Часті запитання</h2>
-  
-    
-  <details style="background: #ffffff; border: 1px solid #e1e8ed; border-radius: 6px; padding: 1rem 1.25rem; margin-bottom: 0.75rem;">
-    <summary style="font-weight: 600; cursor: pointer;">Чи можна прошити будь-який Nintendo Switch?</summary>
-    <div style="margin-top: 0.75rem;"><p>Так, прошиваються всі актуальні ревізії (V1, V2, Lite, OLED). Метод залежить від заліза: Fusée Gelée, Caffeine або модчип. Вибір методу — на сторінці /get-started.</p>
+<div class="start-paths">
+  <a class="start-path" href="/get-started">
+    <span class="start-path__title">Моя консоль ще не прошита</span>
+    <span class="start-path__text">Виберемо метод зламу і крок за кроком прошиємо консоль: бекап, EmuNAND, кефір.</span>
+    <span class="start-path__go">Почати з нуля →</span>
+  </a>
+  <a class="start-path" href="/usage">
+    <span class="start-path__title">Моя консоль уже прошита або чипована</span>
+    <span class="start-path__text">Встановимо кефір і навчимося користуватися консоллю: ігри, збереження, оновлення.</span>
+    <span class="start-path__go">До інструкції →</span>
+  </a>
 </div>
-  </details>
-    
-  <details style="background: #ffffff; border: 1px solid #e1e8ed; border-radius: 6px; padding: 1rem 1.25rem; margin-bottom: 0.75rem;">
-    <summary style="font-weight: 600; cursor: pointer;">Що таке Kefir?</summary>
-    <div style="margin-top: 0.75rem;"><p>Kefir — збірка автора цього гайду (xHR) на базі Atmosphere з потрібними програмами та скриптами встановлення. Репозиторій: github.com/rashevskyv/kefir.</p>
-</div>
-  </details>
-    
-  <details style="background: #ffffff; border: 1px solid #e1e8ed; border-radius: 6px; padding: 1rem 1.25rem; margin-bottom: 0.75rem;">
-    <summary style="font-weight: 600; cursor: pointer;">Де замовити чіпування, якщо не хочу прошивати сам?</summary>
-    <div style="margin-top: 0.75rem;"><p>У автора гайду: Telegram @xhrxhrxhr або магазин shop.customfw.xyz (чіпування Picofly, продаж готових консолей, ремонт).</p>
-</div>
-  </details>
-    
-  <details style="background: #ffffff; border: 1px solid #e1e8ed; border-radius: 6px; padding: 1rem 1.25rem; margin-bottom: 0.75rem;">
-    <summary style="font-weight: 600; cursor: pointer;">Як зменшити ризик бану?</summary>
-    <div style="margin-top: 0.75rem;"><p>Користуйтеся неліцензійним ПЗ лише в EmuNAND, тримайте чистий SysNAND для офіційного онлайну, не заходьте в офіційні сервіси Nintendo з кастомної системи. Гарантії 100% немає.</p>
-</div>
-  </details>
-    
-  
-</section>
-
 
 				
         

@@ -2,12 +2,13 @@
 
 > Покроковий український гайд з прошивки Nintendo Switch від **xHR** — автора збірки **Kefir**.
 
-Сайт пояснює, як підготувати консоль і SD-карту, обрати метод (Fusée Gelée, Caffeine або модчип), зробити бекап NAND, створити EmuNAND, встановити Homebrew, оновлювати систему та відновлювати консоль. Мова: українська. Регіон: Україна.
+Сайт пояснює, як підготувати консоль і SD-карту, обрати метод (Fusée Gelée, Caffeine або модчип), зробити бекап NAND, створити EmuNAND, користуватися Kefir Hub (головний застосунок збірки: homebrew, ігри, збереження, чити, теми, оновлення), оновлювати систему та відновлювати консоль. Мова: українська. Регіон: Україна.
 
 ## Основні URL
 - https://switch.customfw.xyz/ — початок гайду
 - https://switch.customfw.xyz/get-started — вибір методу прошивки
 - https://switch.customfw.xyz/kefir — що таке збірка Kefir
+- https://switch.customfw.xyz/hbl — Kefir Hub: запуск, головний екран, що де
 - https://switch.customfw.xyz/faq — часті питання
 - https://switch.customfw.xyz/glossary — глосарій
 - https://switch.customfw.xyz/troubleshooting — проблеми та рішення
@@ -26,5 +27,6 @@
 - Автор у Telegram: https://t.me/xhrxhrxhr
 - Спільнота: https://t.me/kefir_ukr
 - Kefir на GitHub: https://github.com/rashevskyv/kefir
+- Документація Kefir Hub: https://hub.customfw.xyz/uk/
 
-Ключові теми: Nintendo Switch, кастомна прошивка, Kefir, Atmosphere, EmuNAND, Homebrew, RCM, модчип Picofly, Fusée Gelée, Caffeine, SD-карта, захист від бану.
+Ключові теми: Nintendo Switch, кастомна прошивка, Kefir, Kefir Hub, Atmosphere, EmuNAND, Homebrew, RCM, модчип Picofly, Fusée Gelée, Caffeine, SD-карта, захист від бану.

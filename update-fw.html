@@ -27,7 +27,7 @@
 
 
 <title>Безпечне оновлення прошивки — Прошивка Nintendo Switch — повний український гайд</title>
-<meta name="description" content="Як безпечно оновити системне ПЗ і збірку Kefir на прошитому Nintendo Switch без цегли та бану.">
+<meta name="description" content="Як безпечно оновити системне ПЗ і збірку Kefir на прошитому Nintendo Switch через Kefir Hub без цегли та бану.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="xHR">
 
@@ -40,7 +40,7 @@
 <meta property="og:locale" content="uk_UA">
 <meta property="og:site_name" content="Прошивка Nintendo Switch — повний український гайд">
 <meta property="og:title" content="Безпечне оновлення прошивки">
-<meta property="og:description" content="Як безпечно оновити системне ПЗ і збірку Kefir на прошитому Nintendo Switch без цегли та бану.">
+<meta property="og:description" content="Як безпечно оновити системне ПЗ і збірку Kefir на прошитому Nintendo Switch через Kefir Hub без цегли та бану.">
 <meta property="og:url" content="https://switch.customfw.xyz/update-fw">
 <meta property="og:type" content="website">
 
@@ -54,7 +54,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Безпечне оновлення прошивки">
-<meta name="twitter:description" content="Як безпечно оновити системне ПЗ і збірку Kefir на прошитому Nintendo Switch без цегли та бану.">
+<meta name="twitter:description" content="Як безпечно оновити системне ПЗ і збірку Kefir на прошитому Nintendo Switch через Kefir Hub без цегли та бану.">
 <meta name="twitter:url" content="https://switch.customfw.xyz/update-fw">
 
   <meta name="twitter:image" content="https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg">
@@ -82,6 +82,13 @@
     "@type": "Organization",
     "name": "CustomFW",
     "url": "https://customfw.xyz"
+  },
+  "subOrganization": {
+    "@type": "Store",
+    "@id": "https://shop.customfw.xyz#identity",
+    "name": "Shop CustomFW",
+    "url": "https://shop.customfw.xyz",
+    "description": "Чіпування, продаж прошитих консолей Nintendo Switch і ремонт в Україні від автора гайду"
   },
   "founder": {
     "@type": "Person",
@@ -128,7 +135,7 @@
   "@id": "https://switch.customfw.xyz/update-fw#webpage",
   "url": "https://switch.customfw.xyz/update-fw",
   "name": "Безпечне оновлення прошивки",
-  "description": "Як безпечно оновити системне ПЗ і збірку Kefir на прошитому Nintendo Switch без цегли та бану.",
+  "description": "Як безпечно оновити системне ПЗ і збірку Kefir на прошитому Nintendo Switch через Kefir Hub без цегли та бану.",
   "isPartOf": {
     "@id": "https://switch.customfw.xyz#website"
   },
@@ -136,7 +143,7 @@
   "breadcrumb": {
     "@id": "https://switch.customfw.xyz/update-fw#breadcrumb"
   },
-  "dateModified": "2026-11-13T19:44:41+02:00",
+  "dateModified": "2026-11-13T17:51:41+02:00",
   "primaryImageOfPage": {
     "@type": "ImageObject",
     "url": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg"
@@ -179,7 +186,7 @@
   "@type": "TechArticle",
   "@id": "https://switch.customfw.xyz/update-fw#article",
   "headline": "Безпечне оновлення прошивки",
-  "description": "Як безпечно оновити системне ПЗ і збірку Kefir на прошитому Nintendo Switch без цегли та бану.",
+  "description": "Як безпечно оновити системне ПЗ і збірку Kefir на прошитому Nintendo Switch через Kefir Hub без цегли та бану.",
   "inLanguage": "uk",
   "url": "https://switch.customfw.xyz/update-fw",
   "mainEntityOfPage": {
@@ -194,7 +201,7 @@
     "@id": "https://switch.customfw.xyz#identity"
   },
   "image": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg",
-  "dateModified": "2026-11-13T19:44:41+02:00"
+  "dateModified": "2026-11-13T17:51:41+02:00"
 }
 </script>
 
@@ -245,6 +252,7 @@
 
 
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
   </head>
 
   <body class="layout--single">
@@ -256,7 +264,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch — повний український гайд</a>
+        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch</a>
         <ul class="visible-links"><li class="masthead__menu-item">
             <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
           </li><li class="masthead__menu-item">
@@ -267,6 +275,8 @@
             <a href="/get-started" >Методи<br>злому</a>
           </li><li class="masthead__menu-item">
             <a href="/kefir" >Kefir</a>
+          </li><li class="masthead__menu-item">
+            <a href="/hbl" >Kefir Hub</a>
           </li><li class="masthead__menu-item">
             <a href="/backup-nand" >Резервне<br>копіювання</a>
           </li><li class="masthead__menu-item">
@@ -483,6 +493,7 @@
     </ul>
   </li>
   <li><a href="#важливо-знати" id="markdown-toc-важливо-знати">Важливо знати</a></li>
+  <li><a href="#maintenance-mode" id="markdown-toc-maintenance-mode">Якщо прошивка не завантажується після даунгрейду</a></li>
 </ul>
 
   </nav>
@@ -517,13 +528,31 @@
 			Повна копія NAND, розташована на карті пам’яті. Застосовується для того, щоб залишити офіційну прошивку в максимально незайманому вигляді. Наприклад, ви можете грати в EmuNAND в піратку, а в стоці (так називають оригінальну прошивку, розташовану у внутрішній пам’яті консолі) користуватися онлайном і купленими іграми. Таким чином буде мінімізовано шанс отримати бан.
 		</span>
 	</span>
-</span>. Якщо вам потрібно оновити системне ПЗ в офіційній прошивці, ви можете зробити це через Semi-Stock, за допомогою Daybreak, методом, описаним нижче, або через налаштування офіційним способом. Це безпечно.</p>
+</span>. Якщо вам потрібно оновити системне ПЗ в офіційній прошивці, ви можете зробити це через Semi-Stock методом, описаним нижче, або через налаштування офіційним способом. Це безпечно.</p>
 
 <h2 id="важлива-інформація">Важлива інформація</h2>
 
-<p>Цей посібник підходить і для пониження прошивки. Пам’ятайте, що в разі пониження прошивки є шанс, що понижена прошивка не запуститься. У такому випадку вам буде необхідно <a href="/downgrade_fw">відновлювати прошивку вручну</a>. <strong>Обов’язково</strong> <a href="/backup-nand" target="_blank">робіть бекап</a>, перш ніж понижувати прошивку!.</p>
+<p>Цей посібник підходить і для пониження прошивки. Пам’ятайте, що в разі пониження прошивки є шанс, що понижена прошивка не запуститься. У такому випадку вам буде необхідно <a href="/downgrade_fw">відновлювати прошивку вручну</a>. <strong>Обов’язково</strong> <a href="/backup-nand" target="_blank">робіть бекап</a>, перш ніж понижувати прошивку! Що показує Kefir Hub під час даунгрейду і що робити, якщо консоль після нього не завантажується, описано <a href="#maintenance-mode">нижче</a> і в <a href="https://hub.customfw.xyz/uk/updater/#downgrade-the-firmware" target="_blank">документації Kefir Hub</a>.</p>
 
-<p class="notice--warning">Дотримуйтесь інструкції саме в тому порядку, в якому вона написана: спочатку оновлення кефіру, потім оновлення системного ПЗ! Інакше, приставка просто не запуститься. Якщо з якоїсь безглуздої причини, ви оновили системне ПЗ, але не оновили кефір, оновіть кефір!</p>
+<p class="notice--warning">Дотримуйтесь інструкції саме в тому порядку, в якому вона написана: спочатку оновлення кефіру, потім оновлення системного ПЗ! Інакше, приставка просто не запуститься. Якщо версію прошивки встановлений кефір не підтримує, Kefir Hub позначить її <strong>Unsupported</strong> і сам запропонує спершу оновити кефір. Якщо з якоїсь безглуздої причини, ви оновили системне ПЗ, але не оновили кефір, оновіть кефір!</p>
+
+<p class="notice--info">Під час кожного встановлення прошивки (і оновлення, і даунгрейду) власні системні теми й переклади системного інтерфейсу <strong>видаляються</strong>. Після оновлення встановіть їх знову.</p>
+
+<p class="notice--warning">Якщо Kefir Hub повідомить, що теми й переклади <strong>не вдалося</strong> видалити (так зазвичай не буває), не запускайте нову прошивку звичайним способом, бо можлива помилка 2162-0002. Спершу завантажтеся в <a href="/troubleshooting#безпечний-режим-kefir" target="_blank">безпечному режимі</a> (<span class="tooltip_container">
+	hekate
+	<span class="tooltip">▼
+		<span class="bottom">
+			Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+		</span>
+	</span>
+</span> -&gt; <strong>Launch</strong> -&gt; <strong>Safe Mode</strong>): теми й переклади в ньому не діють. Якщо безпечний режим не допоміг, запустіть <span class="tooltip_container">
+	hekate
+	<span class="tooltip">▼
+		<span class="bottom">
+			Кастомний бутлоадер для Nintendo Switch. З його допомогою ми робимо резервне копіювання, запускаємо кастом, запускаємо різні пейлоади. Один з найважливіших інструментів з тих, що ми будемо використовувати.
+		</span>
+	</span>
+</span> -&gt; <strong>Payloads</strong> -&gt; <code class="language-plaintext highlighter-rouge">TegraExplorer.bin</code> і виберіть <strong>Kefir Helper</strong>: він прибере їх на нижчому рівні. Після Kefir Helper обов’язково <strong>перевстановіть Kefir</strong>, бо він вимикає багато складових Kefir, щоб запобігти помилкам. Якщо і Kefir Helper не допоміг, перевірте карту пам’яті на помилки.</p>
 
 <h2 id="теоретична-частина">Теоретична частина</h2>
 
@@ -573,9 +602,13 @@
           Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
       </span>
   </span>
-</span></li>
-  <li><a href="https://github.com/THZoria/NX_Firmware/releases/" target="_blank">Прошивка <strong>23.5.0</strong></a></li>
-  <li>Карта пам’яті</li>
+</span> з <a href="/hbl" target="_blank">Kefir Hub</a></li>
+  <li>Підключення консолі до інтернету
+    <ul>
+      <li>Або <a href="https://github.com/THZoria/NX_Firmware/releases/" target="_blank">прошивка <strong>23.5.0</strong></a>, якщо оновлюєтесь за допомогою ПК</li>
+    </ul>
+  </li>
+  <li>Карта пам’яті, на якій окрім архіву з прошивкою вільно щонайменше 300 МБ</li>
 </ul>
 
 <h3 id="частина-i---резервне-копіювання-nand">Частина I - Резервне копіювання NAND</h3>
@@ -621,7 +654,7 @@
 <!--В даний момент останньою прошивкою є 23.5.0, однак, оскільки вона тільки вийшла і недостатньо оттестована, а так само тому що ще немає ігор, що вимагають її, не рекомендується поки на неї оновлюватися. Якщо ж ви вже на ній встановіть рекомендовану прошивку за інструкцією нижче!
 {: .notice--warning}-->
 
-<!-- <details class="spoiler" id="spoiler-3c453af3">
+<!-- <details class="spoiler" id="spoiler-a413149b">
   <summary>Відеоінструкція</summary>
   <div class="spoiler-content">
     <p class="notice--warning">УВАГА!!! Ми не рекомендуємо сліпо слідувати відео-інструкції! Використовуйте її тільки як допоміжну! Справа в тому, що текстовий гайд постійно оновлюється. Неможливо стежити за всіма оновленнями в гайді і кожен раз змінювати відео-інструкцію слідом за ним! Тому текстовий гайд завжди буде більш точним і більш актуальним, ніж відео!</p>
@@ -639,8 +672,8 @@
 -->
 </div>
 
-<details class="spoiler" id="spoiler-b1a1d027">
-  <summary>Оновлення прошивки за допомогою Kefir Updater</summary>
+<details class="spoiler" id="spoiler-76c78811">
+  <summary>Оновлення прошивки за допомогою Kefir Hub</summary>
   <div class="spoiler-content">
     <div class="hideble button2 hide">
 <!-- Caffeine -->
@@ -656,6 +689,16 @@
 </div>
 
 <ol>
+  <li>Запустіть приставку в середовище, яке хочете оновити. Для оновлення EmuNAND, запускайте його, для оновлення офіційної прошивки, запустіть semi-stock</li>
+  <li>Переконайтеся що консоль під’єднана до інтернету. Якщо ні, під’єднайтесь. Це безпечно і вас за це не забанять</li>
+  <li>Поставте консоль на зарядку або переконайтеся, що батарея добре заряджена</li>
+  <li>Запустіть <a href="/hbl" target="_blank">Kefir Hub</a>, натисніть <img src="/assets/images/switch/buttons/R.png" alt="(R)" />, щоб перейти на вкладку <strong>Інструменти</strong>, і відкрийте <strong>Оновлювач</strong>
+    <ul>
+      <li>«Оновлювач» має вкладки <strong>Kefir</strong>, <strong>Прошивка</strong> і <strong>Програми</strong>. Перемикайте їх кнопками <img src="/assets/images/switch/buttons/L.png" alt="(L)" /> і <img src="/assets/images/switch/buttons/R.png" alt="(R)" /> або дотиком. На вкладці <strong>Kefir</strong> видно доступну й установлену версію кефіру</li>
+    </ul>
+
+    <p><img src="/assets/images/switch/hub/updater-main.png" alt="Kefir Hub: updater main" width="1280" height="720" loading="lazy" style="max-width:100%;height:auto" /></p>
+  </li>
   <li>Оновіть <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip">▼
@@ -665,6 +708,9 @@
  </span>
 </span>. Кефір обов’язково має бути останньої версії
     <ul>
+      <li>На вкладці <strong>Kefir</strong> прогорніть список змін до кінця кнопкою <img src="/assets/images/switch/buttons/DOWN.png" alt="(DOWN)" /> або пальцем</li>
+      <li>У самому кінці тексту стоїть кнопка <strong>Оновити</strong>. Натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" /></li>
+      <li>Коли з’явиться повідомлення «<strong>Пакет Kefir встановлено. Перезавантажити зараз?</strong>», виберіть <strong>Перезавантажити</strong>. Після перезавантаження знову відкрийте <strong>Оновлювач</strong> у Kefir Hub</li>
       <li>Якщо версія вашого системного ПЗ 1.0.0, видаліть папки <code class="language-plaintext highlighter-rouge">\atmosphere\exefs_patches</code> і <code class="language-plaintext highlighter-rouge">\atmosphere\kip_patches\fs_patches</code>
         <ul>
           <li>Після того, як ви вдало оновите системне ПЗ, обов’язково <strong>ще раз встановіть <span class="tooltip_container">
@@ -679,28 +725,35 @@
       </li>
     </ul>
   </li>
-  <li>Запустіть приставку в середовище, яке хочете оновити. Для оновлення EmuNAND, запускайте його, для оновлення офіційної прошивки, запустіть semi-stock</li>
-  <li>Переконайтеся що консоль під’єднана до інтернету. Якщо ні, під’єднайтесь. Це безпечно і вас за це не забанять</li>
-  <li>Відкрийте <a href="/hbl" target="_blank">Homebrew Launcher</a></li>
-  <li>Запустіть <strong>Kefir Updater</strong> і виберіть <strong>Скачати прошивку</strong></li>
-  <li>Оберіть найновішу прошивку та натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" />, натисніть “<strong>Продовжити</strong>”</li>
-  <li>Дочекайтеся закінчення загрузки і розпаковки прошивки</li>
-  <li>Дочекайтеся закінчення обробки прошивки і натисніть “<strong>Install</strong>”, щоб почати встановлення</li>
-  <li>Після закінчення встановлення натисніть “<strong>Reboot</strong>” для перезавантаження, або “<strong>Shutdown</strong>”, щоб вимкнути приставку</li>
+  <li>Кнопкою <img src="/assets/images/switch/buttons/R.png" alt="(R)" /> перейдіть на вкладку <strong>Прошивка</strong>, виберіть потрібну версію прошивки і натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" />
+    <ul>
+      <li>Якщо версія позначена <strong>Unsupported</strong>, Kefir Hub спершу запропонує <strong>Оновити Kefir</strong>. Погодьтеся: після встановлення кефіру завантаження прошивки продовжиться</li>
+      <li>Якщо версія нижча за вашу (позначка <strong>DOWNGRADE</strong>), відкриється <strong>Попередження про пониження прошивки</strong>. Уважно прочитайте його. Кнопка підтвердження в ньому вже вибрана, тож щоб скасувати, натисніть <img src="/assets/images/switch/buttons/B.png" alt="(B)" /></li>
+      <li>Після даунгрейду, коли консоль перезавантажиться, з’явиться екран TegraExplorer: він сам виконає виправлення і поверне вас у прошивку. Якщо прошивка все одно не завантажується, див. <a href="#maintenance-mode">Якщо прошивка не завантажується після даунгрейду</a></li>
+    </ul>
+  </li>
+  <li>Підтвердьте <strong>Завантажити</strong>. Дочекайтеся, поки прошивка завантажиться, розпакується і пройде перевірку</li>
+  <li>
+    <p>У запиті на встановлення перевірте версію і ціль: <strong>sysMMC</strong> (SysNAND) або <strong>emuMMC</strong> (EmuNAND). Виберіть <strong>Встановити</strong></p>
+
+    <p><img src="/assets/images/switch/hub/updater-firmware-confirm.png" alt="Kefir Hub: updater firmware confirm" width="1280" height="720" loading="lazy" style="max-width:100%;height:auto" /></p>
+  </li>
+  <li>Дочекайтеся закінчення встановлення. Не вимикайте консоль!</li>
+  <li>Наприкінці з’явиться повідомлення, що власні теми й переклади видалено. Виберіть <strong>Перезавантажити</strong></li>
 </ol>
 
-<p class="notice--warning">Зауважте, що оновивши поточне середовище, оновиться лише воно. Наприклад, якщо ви оновили емунанд, це не вплине на версію системного ПЗ сіснанд або інших емунандах, та навпаки. То ж за потреби перезагрузіться в інше середовище та оновіть його. Скачувати наново прошивку при цьому не буде потрібно, запустіть <strong>Daybreak</strong> замість <strong>Kefir Updater</strong>, оберіть папку <code class="language-plaintext highlighter-rouge">firmware</code> і виконайте вже знайомі дії.</p>
+<p class="notice--warning">Зауважте, що оновивши поточне середовище, оновиться лише воно. Наприклад, якщо ви оновили емунанд, це не вплине на версію системного ПЗ сіснанд або інших емунандах, та навпаки. То ж за потреби перезагрузіться в інше середовище та оновіть його так само. Завантажена прошивка після вдалого встановлення видаляється з карти, тож <strong>Оновлювач</strong> завантажить її знову.</p>
 
 <p class="notice--danger">В деяких випадках після оновлення сіснанд, приставка перезагрузиться в офіційну прошивку. Просто перезагрузіть консоль ще раз і вона має загрузитися в емунанд. Якщо це не так, зверніться до майстра.</p>
 
-<p class="notice--info">Ви можете видалити папку <code class="language-plaintext highlighter-rouge">firmware</code> з прошивкою з карти пам’яті. Вона нам більше не потрібна</p>
+<p class="notice--info">Не тримайте власних файлів у папці <code class="language-plaintext highlighter-rouge">firmware</code> на карті пам’яті: завантажена прошивка замінює цю папку, а після встановлення папка видаляється. Детальніше про <strong>Оновлювач</strong> — в <a href="https://hub.customfw.xyz/uk/updater/#update-the-firmware" target="_blank">документації Kefir Hub</a>.</p>
 
     
   </div>
-  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Оновлення прошивки за допомогою Kefir Updater <span class="close-icon" aria-hidden="true"></span></div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Оновлення прошивки за допомогою Kefir Hub <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-b26c02b8">
+<details class="spoiler" id="spoiler-bfc8f744">
   <summary>Оновлення за допомогою ПК</summary>
   <div class="spoiler-content">
     <h3 id="частина-i---підготовка-до-оновлення">Частина I - Підготовка до оновлення</h3>
@@ -730,10 +783,10 @@
       </li>
     </ul>
   </li>
-  <li>Розпакуйте архів <code class="language-plaintext highlighter-rouge">23.5.0.zip</code> в папку <code class="language-plaintext highlighter-rouge">firmware</code>на карті пам’яті вашої приставки (якщо її немає, створіть)
+  <li>Скопіюйте на карту пам’яті вашої приставки архів <code class="language-plaintext highlighter-rouge">23.5.0.zip</code>, наприклад, у корінь карти. Розпаковувати його не обов’язково
     <ul>
-      <li>Уважно: саме архів <strong>з прошивкою</strong>. Не архів з кефіром! Архів з прошивкою розташований в частині <a href="/#що-знадобиться">Що знадобиться</a>. Потрібно скопіювати не сам архів, а саме його <strong>вміст</strong></li>
-      <li>Замість цього ви можете скачати архів зі свіжою версією системного ПЗ через додаток <strong>Kefir Updater</strong> прямо на вашій приставці. Для цього запустіть <a href="/hbl" target="_blank">HBL</a> через гру, виберіть додаток <strong>Kefir Updater</strong>, перейдіть в меню “<strong>Скачати прошивку</strong>” і виберіть необхідну версію. Натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" />, натисніть “<strong>Продовжити</strong>”, щоб почати закачування прошивки. Програма сама скачає обрану версію системного ПЗ і розпакує її в папку <code class="language-plaintext highlighter-rouge">firmware</code>.</li>
+      <li>Уважно: саме архів <strong>з прошивкою</strong>. Не архів з кефіром! Архів з прошивкою розташований в частині <a href="#що-знадобиться">Що знадобиться</a></li>
+      <li>Якщо прошивка у вас уже розпакована, скопіюйте на карту папку з її файлами. Не називайте її <code class="language-plaintext highlighter-rouge">firmware</code>: цю папку Kefir Hub використовує для завантажень і видаляє після встановлення</li>
     </ul>
   </li>
   <li>Вставте карту пам’яті назад у приставку</li>
@@ -768,22 +821,40 @@
       <li>Якщо після логотипу Nintendo ви спостерігаєте чорний екран з помилкою, значить у вас не встановлені драйвера exFAT і ви проігнорували <a href="https://format.customfw.xyz" target="_blank">форматування карти пам’яті в FAT32</a>, яке потрібно було зробити вище. Перенесіть всі дані на ПК, відформатуйте картку за інструкцією, поверніть дані та продовжуйте виконання інструкції</li>
     </ul>
   </li>
-  <li>Відкрийте <a href="/hbl" target="_blank">Homebrew Launcher</a></li>
-  <li>Запустіть <strong>Daybreak</strong> і виберіть <strong>Install</strong></li>
-  <li>Перейдіть в папку <code class="language-plaintext highlighter-rouge">firmware</code>, в ній знаходиться прошивка 23.5.0, скопійована раніше, і натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" />
+  <li>Запустіть <a href="/hbl" target="_blank">Kefir Hub</a>, натисніть <img src="/assets/images/switch/buttons/R.png" alt="(R)" />, щоб перейти на вкладку <strong>Інструменти</strong>, і відкрийте <strong>Оновлювач</strong></li>
+  <li>На вкладці <strong>Прошивка</strong> виберіть <strong>Встановити вручну</strong> і натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" />. Відкриється файловий менеджер із заголовком <strong>Оберіть папку з прошивкою</strong></li>
+  <li>Виберіть прошивку:
     <ul>
-      <li>Якщо ви не можете перейти в папку (папка відображається як файл), значить ваша папка має неправильні <em>атрибути</em>. Як їх виправити описано в <a href="/faq" target="_blank">FAQ</a> або в розділі <a href="/troubleshooting" target="_blank">проблеми та їх рішення</a></li>
+      <li><strong>Архів <code class="language-plaintext highlighter-rouge">.zip</code></strong>: виберіть архів і натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" /></li>
+      <li><strong>Папка</strong>: відкрийте папку з файлами прошивки й виберіть верхній рядок <strong>Обрати поточну папку</strong></li>
+    </ul>
+
+    <p><img src="/assets/images/switch/hub/updater-manual-picker.png" alt="Kefir Hub: updater manual picker" width="1280" height="720" loading="lazy" style="max-width:100%;height:auto" /></p>
+  </li>
+  <li>Підтвердьте кнопкою <strong>Вибрати</strong></li>
+  <li>Дочекайтеся, поки Kefir Hub перевірить файли прошивки
+    <ul>
+      <li>Якщо з’явилось «<strong>Помилка перевірки прошивки</strong>», прошивка неповна або не підходить цій консолі. Скачайте її ще раз</li>
+      <li>Якщо версія нижча за вашу, перед встановленням відкриється <strong>Попередження про пониження прошивки</strong>. Уважно прочитайте його. Кнопка підтвердження в ньому вже вибрана, тож щоб скасувати, натисніть <img src="/assets/images/switch/buttons/B.png" alt="(B)" />. Що буде після даунгрейду, описано <a href="#maintenance-mode">нижче</a></li>
     </ul>
   </li>
-  <li>Дочекайтеся закінчення обробки прошивки і натисніть “<strong>Install</strong>”, щоб почати встановлення</li>
-  <li>Після закінчення встановлення натисніть “<strong>Reboot</strong>” для перезавантаження, або “<strong>Shutdown</strong>”, щоб вимкнути приставку</li>
+  <li>У запиті на встановлення перевірте версію і ціль: <strong>sysMMC</strong> (SysNAND) або <strong>emuMMC</strong> (EmuNAND). Виберіть <strong>Встановити</strong></li>
+  <li>Дочекайтеся закінчення встановлення. Не вимикайте консоль!</li>
+  <li>Наприкінці з’явиться повідомлення, що власні теми й переклади видалено. Виберіть <strong>Перезавантажити</strong>
+    <ul>
+      <li>Перед запитом перезавантаження Kefir Hub запропонує видалити вибрану папку або вихідний архів. За замовчуванням вибрано <strong>Залишити</strong>. Цей варіант або кнопка <strong>B</strong> зберігає файли. <strong>Видалити</strong> видаляє лише використану папку або архів, без сусідніх файлів і батьківських папок.</li>
+      <li>Після помилки або скасування встановлення вихідна папка зберігається. Якщо видалення не вдалося, закрийте повідомлення про помилку. Встановлення залишається успішним; далі можна перезавантажити консоль.</li>
+    </ul>
+  </li>
 </ol>
 
-<p class="notice--warning">Зауважте, що оновивши поточне середовище, оновиться лише воно. Наприклад, якщо ви оновили емунанд, це не вплине на версію системного ПЗ сіснанд і навпаки. То ж за потреби перезагрузіться в інше середовище та оновіть його. Скачувати наново прошивку при цьому не буде потрібно, запустіть <strong>Daybreak</strong> замість <strong>Kefir Updater</strong>, оберіть папку <code class="language-plaintext highlighter-rouge">firmware</code> і виконайте вже знайомі дії.</p>
+<p class="notice--warning">Зауважте, що оновивши поточне середовище, оновиться лише воно. Наприклад, якщо ви оновили емунанд, це не вплине на версію системного ПЗ сіснанд і навпаки. То ж за потреби перезагрузіться в інше середовище та оновіть його. Копіювати прошивку наново при цьому не потрібно: ваш архів чи папка залишаються на карті, якщо ви їх не видалили.</p>
 
 <p class="notice--danger">В деяких випадках після оновлення сіснанд, приставка перезагрузиться в офіційну прошивку. Просто перезагрузіть консоль ще раз і вона має загрузитися в емунанд. Якщо це не так, зверніться до майстра.</p>
 
-<p class="notice--info">Ви можете видалити папку <code class="language-plaintext highlighter-rouge">firmware</code> з прошивкою з карти пам’яті. Вона нам більше не потрібна</p>
+<p class="notice--info">Коли все оновлено, архів чи папку з прошивкою можна видалити з карти пам’яті. Детальніше — в <a href="https://hub.customfw.xyz/uk/updater/#install-a-firmware-from-the-memory-card" target="_blank">документації Kefir Hub</a>.</p>
+
+<p class="notice--info">Daybreak більше не входить до складу kefir: прошивку встановлює Kefir Hub. Якщо у вас не kefir, прошивку можна встановити через Daybreak зі складу <a href="https://github.com/Atmosphere-NX/Atmosphere/releases/latest" target="_blank">Atmosphere</a>.</p>
 
     
   </div>
@@ -809,6 +880,20 @@
   <li>Якщо приставка не завантажується після прошивки (падає з помилкою, наприклад), <a href="/backup-nand#%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%D0%BD%D0%BE%D0%B9-%D0%BA%D0%BE%D0%BF%D0%B8%D0%B8" target="_blank">відновіть бекап</a> або <a href="/downgrade_fw" target="_blank">відновлюйте прошивку вручну</a></li>
   <li>Якщо при запуску Emunand помилка “Failed to match warmboot with fuses”, зробіть щоб емунанд та сіснанд мали однакову версію системного ПЗ</li>
 </ul>
+
+<h2 id="maintenance-mode">Якщо прошивка не завантажується після даунгрейду</h2>
+
+<p>Після даунгрейду через <strong>Оновлювач</strong> консоль перезавантажується і з’являється екран TegraExplorer. Він сам виконує виправлення і повертає вас у прошивку, нічого натискати не потрібно. Проте це не гарантовано.</p>
+
+<p class="notice--danger">Якщо прошивка все одно не завантажується, єдиний вихід — режим обслуговування (Maintenance Mode). <strong>Усі ігри буде видалено</strong>, їх доведеться встановити заново. Профілі, більшість налаштувань і всі збереження залишаться</p>
+
+<ol>
+  <li>Увімкніть консоль</li>
+  <li>Після логотипу кефіру з’явиться тризуб. Щойно він з’явився, затисніть <strong>обидві</strong> кнопки гучності (<strong>VOL+</strong> і <strong>VOL-</strong>) і не відпускайте</li>
+  <li>Тримайте кнопки, поки один за одним з’являються логотип Atmosphère (синьо-жовтий), логотип з лінивцем і, нарешті, меню режиму обслуговування (Maintenance Mode)</li>
+  <li>Виберіть “<strong>Initialize Console Without Deleting Save Data</strong>”. Назва пункту залежить від мови системи: українською — “<strong>Скинути консоль без видалення збережень</strong>”</li>
+  <li>Після скидання встановіть ігри заново</li>
+</ol>
 
 <hr />
 

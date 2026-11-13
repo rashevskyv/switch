@@ -83,6 +83,13 @@
     "name": "CustomFW",
     "url": "https://customfw.xyz"
   },
+  "subOrganization": {
+    "@type": "Store",
+    "@id": "https://shop.customfw.xyz#identity",
+    "name": "Shop CustomFW",
+    "url": "https://shop.customfw.xyz",
+    "description": "Чіпування, продаж прошитих консолей Nintendo Switch і ремонт в Україні від автора гайду"
+  },
   "founder": {
     "@type": "Person",
     "name": "xHR",
@@ -136,7 +143,7 @@
   "breadcrumb": {
     "@id": "https://switch.customfw.xyz/link-account#breadcrumb"
   },
-  "dateModified": "2026-11-13T19:44:41+02:00",
+  "dateModified": "2026-11-13T17:01:28+02:00",
   "primaryImageOfPage": {
     "@type": "ImageObject",
     "url": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg"
@@ -194,7 +201,7 @@
     "@id": "https://switch.customfw.xyz#identity"
   },
   "image": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg",
-  "dateModified": "2026-11-13T19:44:41+02:00"
+  "dateModified": "2026-11-13T17:01:28+02:00"
 }
 </script>
 
@@ -245,6 +252,7 @@
 
 
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
   </head>
 
   <body class="layout--single">
@@ -256,7 +264,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch — повний український гайд</a>
+        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch</a>
         <ul class="visible-links"><li class="masthead__menu-item">
             <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
           </li><li class="masthead__menu-item">
@@ -267,6 +275,8 @@
             <a href="/get-started" >Методи<br>злому</a>
           </li><li class="masthead__menu-item">
             <a href="/kefir" >Kefir</a>
+          </li><li class="masthead__menu-item">
+            <a href="/hbl" >Kefir Hub</a>
           </li><li class="masthead__menu-item">
             <a href="/backup-nand" >Резервне<br>копіювання</a>
           </li><li class="masthead__menu-item">
@@ -470,7 +480,21 @@
         </header>
       
 	  
-        <hr />
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Розділи</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#автоматична-привязка" id="markdown-toc-автоматична-привязка">Автоматична прив’язка</a></li>
+  <li><a href="#привязка-вручну" id="markdown-toc-привязка-вручну">Прив’язка вручну</a></li>
+  <li><a href="#зняти-привязку" id="markdown-toc-зняти-привязку">Зняти прив’язку</a></li>
+  <li><a href="#запасний-спосіб-linkalho" id="markdown-toc-запасний-спосіб-linkalho">Запасний спосіб: Linkalho</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<hr />
 
 <div class="notice--success"><h2>Ви можете прошити, або придбати вже прошитий світч в мене</h2><ul><li><a href="https://t.me/kefir_ukr" target="_blank">Група в телеграмі для українців, там є відгуки та приклади робіт</a></li><li><a href="https://t.me/xhrxhrxhr" target="_blank"><b>Мій особистий телеграм</b> (звертайтеся за чипуванням або купівлею)</a></li><li><a href="https://customfw.xyz/donations" target="_blank">Задонатити на розвиток kefir</a></li></ul></div>
 
@@ -490,6 +514,14 @@
 
 <p class="notice--danger"><strong>УВАГА!!</strong> Не ігноруйте необхідність <a href="/backup-nand" target="_blank">створення бекапу</a>! Завжди є ймовірність, що щось може піти не так і ваша приставка перестане завантажуватися! Також <strong>ОБОВ’ЯЗКОВО</strong> зробіть <a href="/backup-saves" target="_blank">резервні копії збережень</a> з усіх ваших облікових записів!</p>
 
+<p class="notice--danger"><strong>УВАГА!!</strong> Прив’язка через Kefir Hub несе ризик бану. Вона працює лише тому, що консоль ізольована від серверів Nintendo. Користуйтеся нею <strong>ТІЛЬКИ</strong> на емунанді (emuMMC), ізольованому від серверів Nintendo!</p>
+
+<p class="notice--info">Kefir Hub створює прив’язку без інтернету, використовуючи вбудовані в нього облікові записи. Це не ваш власний обліковий запис Nintendo. Кожен неприв’язаний профіль на консолі отримує прив’язку, вже прив’язані профілі не змінюються. Ігрові збереження не видаляються і не змінюються</p>
+
+<h2 id="автоматична-привязка">Автоматична прив’язка</h2>
+
+<p>Kefir Hub перевіряє профілі під час кожного запуску. Якщо хоча б один профіль не прив’язаний, Kefir Hub одразу пропонує прив’язати всі такі профілі. Шукати щось у меню не потрібно</p>
+
 <ol>
   <li>Оновіть <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
@@ -498,10 +530,66 @@
          Збірник, що складається з обраного кастому, необхідних програм та скриптів, які все це встановлять правильним чином. Склад кефіру та інструкцію зі встановлення можна подивитися в його репозиторії
      </span>
  </span>
-</span> за інструкцією з репозиторію, якщо не робили цього раніше</li>
+</span>, якщо не робили цього раніше: у Kefir Hub — “<strong>Інструменти</strong>” → “<strong>Оновлювач</strong>” (<a href="https://hub.customfw.xyz/uk/updater/#update-kefir" target="_blank">докладніше</a>), або за інструкцією з репозиторію, якщо Kefir Hub у вас ще немає</li>
   <li>Створіть <a href="/backup-nand" target="_blank">резервну копію NAND</a> консолі і помістіть її в надійне місце, якщо ще не маєте її</li>
   <li>Запустіть прошивку</li>
   <li>Зробіть <a href="/backup-saves" target="_blank">резервні копії збережень</a> з усіх ваших облікових записів</li>
+  <li>Запустіть <a href="/hbl" target="_blank">Kefir Hub</a>. З’явиться повідомлення “<strong>Деякі профілі користувачів не прив’язані до Nintendo Account</strong>”</li>
+  <li>Виберіть “<strong>Прив’язати й перезавантажити</strong>”
+    <ul>
+      <li>Консоль перезавантажиться, після чого всі профілі будуть прив’язані</li>
+    </ul>
+  </li>
+</ol>
+
+<p><img src="/assets/images/switch/hub/users-launch-reminder.png" alt="Kefir Hub: users launch reminder" width="1280" height="720" loading="lazy" style="max-width:100%;height:auto" /></p>
+
+<ul>
+  <li>“<strong>Пізніше</strong>” закриває повідомлення. Воно з’явиться знову під час наступного запуску Kefir Hub</li>
+  <li>“<strong>Більше не нагадувати</strong>” вимикає повідомлення назавжди. Прив’язати профілі тоді можна вручну, як описано нижче</li>
+</ul>
+
+<p class="notice--info">На sysMMC (без емунанду) Kefir Hub ніколи не пропонує прив’язку під час запуску</p>
+
+<h2 id="привязка-вручну">Прив’язка вручну</h2>
+
+<p>Якщо ви закрили повідомлення або додали новий профіль пізніше, прив’яжіть профілі вручну</p>
+
+<ol>
+  <li>Запустіть <a href="/hbl" target="_blank">Kefir Hub</a></li>
+  <li>Натисніть <img src="/assets/images/switch/buttons/R.png" alt="(R)" />, щоб перейти на вкладку “<strong>Інструменти</strong>”, і відкрийте “<strong>Інструменти</strong>” → “<strong>Користувачі</strong>”
+    <ul>
+      <li>Неприв’язані профілі позначені червоним “<strong>Не прив’язано</strong>”</li>
+    </ul>
+  </li>
+  <li>Натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" /> та оберіть “<strong>Прив’язати Nintendo Account</strong>”</li>
+  <li>Підтвердіть кнопкою “<strong>Прив’язати й перезавантажити</strong>”
+    <ul>
+      <li>Консоль перезавантажиться, після чого профілі матимуть стан “<strong>Прив’язаний</strong>”</li>
+    </ul>
+  </li>
+</ol>
+
+<p><img src="/assets/images/switch/hub/users-list.png" alt="Kefir Hub: users list" width="1280" height="720" loading="lazy" style="max-width:100%;height:auto" /></p>
+
+<p><img src="/assets/images/switch/hub/users-link-confirm.png" alt="Kefir Hub: users link confirm" width="1280" height="720" loading="lazy" style="max-width:100%;height:auto" /></p>
+
+<h2 id="зняти-привязку">Зняти прив’язку</h2>
+
+<p class="notice--warning">Зняти прив’язку можна там само, пунктом “<strong>Відв’язати Nintendo Account</strong>”. Зверніть увагу: так знімається будь-яка прив’язка, зокрема й справжнього облікового запису Nintendo (<a href="https://hub.customfw.xyz/uk/users/#remove-a-nintendo-account-link" target="_blank">докладніше</a>). Якщо ви зняли прив’язку справжнього облікового запису на емунанді, прив’яжіть профіль знову через Kefir Hub (“<strong>Прив’язати Nintendo Account</strong>”), а не через системні налаштування</p>
+
+<p>Докладний опис прив’язки — у <a href="https://hub.customfw.xyz/uk/users/#link-profiles-to-a-nintendo-account-offline" target="_blank">документації Kefir Hub</a></p>
+
+<h2 id="запасний-спосіб-linkalho">Запасний спосіб: Linkalho</h2>
+
+<details class="spoiler" id="spoiler-8b194fec">
+  <summary>Інструкція для Linkalho</summary>
+  <div class="spoiler-content">
+    <p class="notice--info">Основний спосіб прив’язки вбудовано в kefir, його виконує Kefir Hub. Linkalho більше не входить до складу kefir. Скористайтеся ним, якщо у вас не kefir або прив’язка через Kefir Hub вам не підходить.</p>
+
+<ol>
+  <li>Завантажте <code class="language-plaintext highlighter-rouge">linkalho.nro</code> з <a href="https://github.com/rdmrocha/linkalho/releases/latest" target="_blank">репозиторію Linkalho</a> і покладіть його в папку <code class="language-plaintext highlighter-rouge">switch</code> на карті пам’яті</li>
+  <li>Виконайте кроки 2–4 з розділу «Автоматична прив’язка»</li>
   <li>Запустіть <a href="/hbl" target="_blank">Homebrew Launcher</a></li>
   <li>Запустіть <strong>Linkalho</strong></li>
   <li>Виберіть пункт <strong>“Link selected accounts”</strong></li>
@@ -509,10 +597,14 @@
   <li>Виберіть <strong>“Reboot”</strong> для перезавантаження</li>
 </ol>
 
+    
+  </div>
+  <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Інструкція для Linkalho <span class="close-icon" aria-hidden="true"></span></div>
+</details>
+
 <hr />
 
 <p class="notice--success"><a href="javascript:window.close();">Закрити сторінку</a></p>
-
 
 				
         

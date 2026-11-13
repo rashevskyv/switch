@@ -83,6 +83,13 @@
     "name": "CustomFW",
     "url": "https://customfw.xyz"
   },
+  "subOrganization": {
+    "@type": "Store",
+    "@id": "https://shop.customfw.xyz#identity",
+    "name": "Shop CustomFW",
+    "url": "https://shop.customfw.xyz",
+    "description": "Чіпування, продаж прошитих консолей Nintendo Switch і ремонт в Україні від автора гайду"
+  },
   "founder": {
     "@type": "Person",
     "name": "xHR",
@@ -136,7 +143,7 @@
   "breadcrumb": {
     "@id": "https://switch.customfw.xyz/preparation-modchip#breadcrumb"
   },
-  "dateModified": "2026-11-13T19:44:41+02:00",
+  "dateModified": "2026-10-02T10:46:38+03:00",
   "primaryImageOfPage": {
     "@type": "ImageObject",
     "url": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg"
@@ -194,7 +201,7 @@
     "@id": "https://switch.customfw.xyz#identity"
   },
   "image": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg",
-  "dateModified": "2026-11-13T19:44:41+02:00"
+  "dateModified": "2026-10-02T10:46:38+03:00"
 }
 </script>
 
@@ -245,6 +252,7 @@
 
 
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
   </head>
 
   <body class="layout--single">
@@ -256,7 +264,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch — повний український гайд</a>
+        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch</a>
         <ul class="visible-links"><li class="masthead__menu-item">
             <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
           </li><li class="masthead__menu-item">
@@ -267,6 +275,8 @@
             <a href="/get-started" >Методи<br>злому</a>
           </li><li class="masthead__menu-item">
             <a href="/kefir" >Kefir</a>
+          </li><li class="masthead__menu-item">
+            <a href="/hbl" >Kefir Hub</a>
           </li><li class="masthead__menu-item">
             <a href="/backup-nand" >Резервне<br>копіювання</a>
           </li><li class="masthead__menu-item">
@@ -502,7 +512,7 @@
 
 <p>Між тим, на вашій консолі можуть стояти і чипи, що були розповсюджені раніше - <strong>SX Core, SX Lite, HWFLY або  InstinctNX</strong>. Всі ці чипи побудовані на однаковій елементній базі і більше не продаються, оскільки у всьому гірші за RP2040</p>
 
-<details class="spoiler" id="spoiler-9b0e9f32">
+<details class="spoiler" id="spoiler-54ff2076">
   <summary>Зовнішній вигляд чипів RP2040</summary>
   <div class="spoiler-content">
     <ul>
@@ -546,7 +556,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Зовнішній вигляд чипів RP2040 <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-95a36150">
+<details class="spoiler" id="spoiler-ff9ec976">
   <summary>Зовнішній вигляд чипів HWFLY</summary>
   <div class="spoiler-content">
     <ul>
@@ -585,7 +595,7 @@
 		</span>
 	</span>
 </span>, пропустіть частину з прошивкою чипа.
-<details class="spoiler" id="spoiler-5a2704f5">
+<details class="spoiler" id="spoiler-57015111">
   <summary>Прошивка чипа</summary>
   <div class="spoiler-content">
     <ol>
@@ -624,10 +634,10 @@
   </li>
 </ol>
 
-<details class="spoiler" id="spoiler-d3e17749">
+<details class="spoiler" id="spoiler-af8b7f08">
   <summary>Можливі помилки</summary>
   <div class="spoiler-content">
-    <details class="spoiler" id="spoiler-f7c45587">
+    <details class="spoiler" id="spoiler-bf0a1084">
   <summary>Скрипт завис, нічого не відбувається</summary>
   <div class="spoiler-content">
     <p class="text-center notice--info"><img src="/assets/images/switch/modchips/freeze.png" alt="" /></p>
@@ -639,7 +649,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Скрипт завис, нічого не відбувається <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-5c502ebe">
+<details class="spoiler" id="spoiler-7ca3a013">
   <summary>DFU not found!</summary>
   <div class="spoiler-content">
     <p class="text-center notice--info"><img src="/assets/images/switch/modchips/DFU.png" alt="" /></p>
@@ -651,7 +661,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">DFU not found! <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-1e4449c5">
+<details class="spoiler" id="spoiler-8ebdf303">
   <summary>Failed to read! 6</summary>
   <div class="spoiler-content">
     <p class="text-center notice--info"><img src="/assets/images/switch/modchips/error6.png" alt="" /></p>
@@ -710,8 +720,8 @@
   <li><a href="/kefir" target="blank_">Встановлення та запуск Kefir</a></li>
   <li><a href="/backup-nand" target="blank_">Резервне копіювання NAND</a></li>
   <li><a href="/emunand" target="blank_">Створення EmuNAND</a></li>
-  <li><a href="/link-account" target="blank_">Прив’язка акаунту</a> - останній штрих. Прив’язки акаунту для роботи вимагають деякі ігри</li>
-  <li><a href="/games" target="blank_">Запуск ігор</a> - фінальна частина, заради якої все й робилося</li>
+  <li><a href="/link-account" target="blank_">Прив’язка акаунту через Kefir Hub</a> - останній штрих. Прив’язки акаунту для роботи вимагають деякі ігри</li>
+  <li><a href="/games" target="blank_">Встановлення ігор через Kefir Hub</a> - фінальна частина, заради якої все й робилося</li>
   <li><a href="/usage">Використання вже прошитої приставки</a></li>
 </ol>
 
@@ -757,16 +767,16 @@
 
 <hr />
 
-<details class="spoiler" id="spoiler-00bc3193">
+<details class="spoiler" id="spoiler-72cfc664">
   <summary>Матеріали для самостійного вивчення</summary>
   <div class="spoiler-content">
     <ul>
   <li><a href="faq" target="blank_">Часто задавані питання</a></li>
   <li><a href="troubleshooting">Проблеми та їх вирішення</a></li>
-  <li><a href="cheats" target="blank_">Використання читів в EdiZon</a></li>
+  <li><a href="cheats" target="blank_">Використання читів</a></li>
   <li><a href="backup-saves" target="blank_">Резервне копіювання та відновлення збережень </a></li>
   <li><a href="lanplay" target="blank_">Онлайн для прошитих та забанених</a></li>
-  <li><a href="hbl" target="blank_">Запуск Homebrew Launcher</a></li>
+  <li><a href="hbl" target="blank_">Kefir Hub — головний застосунок Kefir</a></li>
   <li><a href="emuiibo" target="blank_">Емуляція Amiibo за допомогою модуля emuiibo</a></li>
 </ul>
 
@@ -783,7 +793,7 @@
 
 <p class="notice--warning">Не забудьте подякувати авторам посібника за реквізитами, вказаними нижче</p>
 
-<details class="spoiler" id="spoiler-ede2a493">
+<details class="spoiler" id="spoiler-b675e38c">
   <summary>Реквізити для збору пожертв</summary>
   <div class="spoiler-content">
     <h2 id="банка-monobank">Банка monobank</h2>

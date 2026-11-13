@@ -83,6 +83,13 @@
     "name": "CustomFW",
     "url": "https://customfw.xyz"
   },
+  "subOrganization": {
+    "@type": "Store",
+    "@id": "https://shop.customfw.xyz#identity",
+    "name": "Shop CustomFW",
+    "url": "https://shop.customfw.xyz",
+    "description": "Чіпування, продаж прошитих консолей Nintendo Switch і ремонт в Україні від автора гайду"
+  },
   "founder": {
     "@type": "Person",
     "name": "xHR",
@@ -136,7 +143,7 @@
   "breadcrumb": {
     "@id": "https://switch.customfw.xyz/emunand#breadcrumb"
   },
-  "dateModified": "2026-11-13T19:44:41+02:00",
+  "dateModified": "2026-10-02T10:46:38+03:00",
   "primaryImageOfPage": {
     "@type": "ImageObject",
     "url": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg"
@@ -194,7 +201,7 @@
     "@id": "https://switch.customfw.xyz#identity"
   },
   "image": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg",
-  "dateModified": "2026-11-13T19:44:41+02:00"
+  "dateModified": "2026-10-02T10:46:38+03:00"
 }
 </script>
 
@@ -245,6 +252,7 @@
 
 
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
   </head>
 
   <body class="layout--single">
@@ -256,7 +264,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch — повний український гайд</a>
+        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch</a>
         <ul class="visible-links"><li class="masthead__menu-item">
             <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
           </li><li class="masthead__menu-item">
@@ -267,6 +275,8 @@
             <a href="/get-started" >Методи<br>злому</a>
           </li><li class="masthead__menu-item">
             <a href="/kefir" >Kefir</a>
+          </li><li class="masthead__menu-item">
+            <a href="/hbl" >Kefir Hub</a>
           </li><li class="masthead__menu-item">
             <a href="/backup-nand" >Резервне<br>копіювання</a>
           </li><li class="masthead__menu-item">
@@ -600,7 +610,7 @@
 
 <h2 id="створення-emunand">Створення EmuNAND</h2>
 
-<details class="spoiler" id="spoiler-afb573d5">
+<details class="spoiler" id="spoiler-6868f4f2">
   <summary>Підготовчі роботи</summary>
   <div class="spoiler-content">
     <div class="notice--info">
@@ -613,7 +623,7 @@
 <ol>
   <li>Завантажтеся в офіційну прошивку і вимкніть в налаштуваннях приставки хмарні збереження (<strong>налаштування</strong> -&gt; <strong>управління даними</strong> -&gt; <strong>хмарне сховище</strong> -&gt; <strong>налаштування</strong>), якщо вони увімкнені. Якщо не увімкнені, то пропустіть цей пункт
     <ul>
-      <li>Якщо ви пропустили цей пункт і у вас були увімкнені хмарні збереження, то в емунанді при запуску ігор вилітатиме помилка, щоб її усунути, в <strong>емунанді</strong> через DBI видаліть обліковий запис, на якому з’являється помилка через <strong>Tools &gt; Delete account</strong>, після чого створіть новий з тим же ім’ям.</li>
+      <li>Якщо ви пропустили цей пункт і у вас були увімкнені хмарні збереження, то в емунанді при запуску ігор вилітатиме помилка, щоб її усунути, в <strong>емунанді</strong> видаліть обліковий запис, на якому з’являється помилка, через <a href="/hbl" target="_blank">Kefir Hub</a> (<strong>Інструменти</strong> → <strong>Інструменти</strong> → <strong>Користувачі</strong>, виберіть профіль, <img src="/assets/images/switch/buttons/A.png" alt="(A)" /> → <strong>Видалити користувача</strong>), після чого створіть новий з тим же ім’ям (там само: <img src="/assets/images/switch/buttons/A.png" alt="(A)" /> → <strong>Створити користувача</strong>). Ігрові збереження профілю видаляються разом з ним, тож коли Kefir Hub запропонує їх зберегти, погодьтеся.</li>
     </ul>
   </li>
   <li>Якщо ви маєте важливі дані на карті пам’яті, перенесіть їх на ПК
@@ -635,10 +645,10 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Підготовчі роботи <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-bb3174c0">
+<details class="spoiler" id="spoiler-624955bd">
   <summary>Створення EmuNAND</summary>
   <div class="spoiler-content">
-    <details class="spoiler" id="spoiler-32a5a030">
+    <details class="spoiler" id="spoiler-929374f2">
   <summary>Якщо ви тільки що зробили бекап і не видалили його з карти пам'яті</summary>
   <div class="spoiler-content">
     <ol>
@@ -662,7 +672,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Якщо ви тільки що зробили бекап і не видалили його з карти пам'яті <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-85c6e254">
+<details class="spoiler" id="spoiler-e3ce77d7">
   <summary>Якщо ви не робили тільки що бекап, або видалили його з карти пам'яті</summary>
   <div class="spoiler-content">
     <ol>
@@ -702,7 +712,7 @@
 
 <h3 id="запуск-прошивки">Запуск прошивки</h3>
 
-<details class="spoiler" id="spoiler-24685c8e">
+<details class="spoiler" id="spoiler-f5825742">
   <summary>Запуск EmuNAND</summary>
   <div class="spoiler-content">
     <p>За замовчуванням кефір налаштований таким чином, що при пробросі <code class="language-plaintext highlighter-rouge">payload.bin</code> зі складу <span class="tooltip_container">
@@ -730,7 +740,7 @@
   <div class="spoiler-close-footer" role="button" aria-label="Згорнути спойлер" tabindex="0">Запуск EmuNAND <span class="close-icon" aria-hidden="true"></span></div>
 </details>
 
-<details class="spoiler" id="spoiler-70d07fc8">
+<details class="spoiler" id="spoiler-99f7e1e7">
   <summary>Робота зі стоковою прошивкою</summary>
   <div class="spoiler-content">
     <p>При виборі <strong>Semi-stock</strong>, буде запущено сток, з патчами атмосфери, крім тих, що відповідають за запуск неліцензійного ПЗ. Це означає, що ви зможете користуватися перекладами та модами для ігор навіть у ліцензії. <strong>Пам’ятайте, що використання модів або читів в онлайн-іграх неминуче призведе вас до бану</strong>. Використання модів в офлайн іграх допускається.</p>
@@ -787,13 +797,13 @@
 <h3 id="запуск-semi-stock">Запуск semi-stock</h3>
 
 <ol>
-  <li>Запустіть <strong>Uberhand</strong> (<img src="/assets/images/switch/buttons/L.png" alt="(L)" /> + <img src="/assets/images/switch/buttons/R3.png" alt="(R3)" /> + <img src="/assets/images/switch/buttons/DOWN.png" alt="(DOWN)" />), перейдіть в меню <strong>Packages</strong>, натиснувши вправо і виберіть <strong>Semi-stock</strong></li>
+  <li>Запустіть <strong>Ultrahand</strong> (<img src="/assets/images/switch/buttons/L.png" alt="(L)" /> + <img src="/assets/images/switch/buttons/R3.png" alt="(R3)" /> + <img src="/assets/images/switch/buttons/DOWN.png" alt="(DOWN)" />), перейдіть в меню <strong>Packages</strong>, натиснувши вправо і виберіть <strong>Semi-stock</strong></li>
 </ol>
 
 <h3 id="запуск-emunand-зі-стоку">Запуск EmuNAND зі стоку</h3>
 
 <ul>
-  <li>Якщо ви знаходитеся в <strong>Semi-Stock</strong>, запустіть <strong>Uberhand</strong> (<img src="/assets/images/switch/buttons/L.png" alt="(L)" /> + <img src="/assets/images/switch/buttons/R3.png" alt="(R3)" /> + <img src="/assets/images/switch/buttons/DOWN.png" alt="(DOWN)" />), перейдіть в меню <strong>Packages</strong>, натиснувши вправо і виберіть <strong>Emunand</strong></li>
+  <li>Якщо ви знаходитеся в <strong>Semi-Stock</strong>, запустіть <strong>Ultrahand</strong> (<img src="/assets/images/switch/buttons/L.png" alt="(L)" /> + <img src="/assets/images/switch/buttons/R3.png" alt="(R3)" /> + <img src="/assets/images/switch/buttons/DOWN.png" alt="(DOWN)" />), перейдіть в меню <strong>Packages</strong>, натиснувши вправо і виберіть <strong>Emunand</strong></li>
   <li>Якщо ви знаходитеся в <strong>Full Stock</strong> і ваша приставка чипована, просто перезавантажте приставку</li>
   <li>Якщо ви знаходитеся в <strong>Full Stock</strong> в приставці, без чипа:
     <ol>

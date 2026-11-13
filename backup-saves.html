@@ -27,7 +27,7 @@
 
 
 <title>Резервне копіювання та відновлення збережень — Прошивка Nintendo Switch — повний український гайд</title>
-<meta name="description" content="Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: підготовка SD-карти, EmuNAND, Homebrew, модчип, оновлення, захист від бану та відновлення.">
+<meta name="description" content="Як зробити бекап сейвів на прошитій Nintendo Switch і відновити їх у Kefir Hub: копії DBI, JKSV і Checkpoint, сейви видалених ігор, WebDAV, доступ з ПК.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="xHR">
 
@@ -40,7 +40,7 @@
 <meta property="og:locale" content="uk_UA">
 <meta property="og:site_name" content="Прошивка Nintendo Switch — повний український гайд">
 <meta property="og:title" content="Резервне копіювання та відновлення збережень">
-<meta property="og:description" content="Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: підготовка SD-карти, EmuNAND, Homebrew, модчип, оновлення, захист від бану та відновлення.">
+<meta property="og:description" content="Як зробити бекап сейвів на прошитій Nintendo Switch і відновити їх у Kefir Hub: копії DBI, JKSV і Checkpoint, сейви видалених ігор, WebDAV, доступ з ПК.">
 <meta property="og:url" content="https://switch.customfw.xyz/backup-saves">
 <meta property="og:type" content="website">
 
@@ -54,7 +54,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Резервне копіювання та відновлення збережень">
-<meta name="twitter:description" content="Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: підготовка SD-карти, EmuNAND, Homebrew, модчип, оновлення, захист від бану та відновлення.">
+<meta name="twitter:description" content="Як зробити бекап сейвів на прошитій Nintendo Switch і відновити їх у Kefir Hub: копії DBI, JKSV і Checkpoint, сейви видалених ігор, WebDAV, доступ з ПК.">
 <meta name="twitter:url" content="https://switch.customfw.xyz/backup-saves">
 
   <meta name="twitter:image" content="https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg">
@@ -82,6 +82,13 @@
     "@type": "Organization",
     "name": "CustomFW",
     "url": "https://customfw.xyz"
+  },
+  "subOrganization": {
+    "@type": "Store",
+    "@id": "https://shop.customfw.xyz#identity",
+    "name": "Shop CustomFW",
+    "url": "https://shop.customfw.xyz",
+    "description": "Чіпування, продаж прошитих консолей Nintendo Switch і ремонт в Україні від автора гайду"
   },
   "founder": {
     "@type": "Person",
@@ -128,7 +135,7 @@
   "@id": "https://switch.customfw.xyz/backup-saves#webpage",
   "url": "https://switch.customfw.xyz/backup-saves",
   "name": "Резервне копіювання та відновлення збережень",
-  "description": "Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: підготовка SD-карти, EmuNAND, Homebrew, модчип, оновлення, захист від бану та відновлення.",
+  "description": "Як зробити бекап сейвів на прошитій Nintendo Switch і відновити їх у Kefir Hub: копії DBI, JKSV і Checkpoint, сейви видалених ігор, WebDAV, доступ з ПК.",
   "isPartOf": {
     "@id": "https://switch.customfw.xyz#website"
   },
@@ -136,7 +143,7 @@
   "breadcrumb": {
     "@id": "https://switch.customfw.xyz/backup-saves#breadcrumb"
   },
-  "dateModified": "2026-11-13T19:44:41+02:00",
+  "dateModified": "2026-10-05T16:41:39+03:00",
   "primaryImageOfPage": {
     "@type": "ImageObject",
     "url": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg"
@@ -179,7 +186,7 @@
   "@type": "TechArticle",
   "@id": "https://switch.customfw.xyz/backup-saves#article",
   "headline": "Резервне копіювання та відновлення збережень",
-  "description": "Покроковий український гайд з прошивки Nintendo Switch від автора Kefir: підготовка SD-карти, EmuNAND, Homebrew, модчип, оновлення, захист від бану та відновлення.",
+  "description": "Як зробити бекап сейвів на прошитій Nintendo Switch і відновити їх у Kefir Hub: копії DBI, JKSV і Checkpoint, сейви видалених ігор, WebDAV, доступ з ПК.",
   "inLanguage": "uk",
   "url": "https://switch.customfw.xyz/backup-saves",
   "mainEntityOfPage": {
@@ -194,7 +201,7 @@
     "@id": "https://switch.customfw.xyz#identity"
   },
   "image": "https://switch.customfw.xyz/assets/images/switch/home-page-feature.jpg",
-  "dateModified": "2026-11-13T19:44:41+02:00"
+  "dateModified": "2026-10-05T16:41:39+03:00"
 }
 </script>
 
@@ -245,6 +252,7 @@
 
 
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
   </head>
 
   <body class="layout--single">
@@ -256,7 +264,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch — повний український гайд</a>
+        <a class="site-title" href="https://switch.customfw.xyz/">Прошивка Nintendo Switch</a>
         <ul class="visible-links"><li class="masthead__menu-item">
             <a href="https://shop.customfw.xyz/" ><b>Купити<br>прошиту</b></a>
           </li><li class="masthead__menu-item">
@@ -267,6 +275,8 @@
             <a href="/get-started" >Методи<br>злому</a>
           </li><li class="masthead__menu-item">
             <a href="/kefir" >Kefir</a>
+          </li><li class="masthead__menu-item">
+            <a href="/hbl" >Kefir Hub</a>
           </li><li class="masthead__menu-item">
             <a href="/backup-nand" >Резервне<br>копіювання</a>
           </li><li class="masthead__menu-item">
@@ -477,7 +487,10 @@
 <ul class="toc__menu" id="markdown-toc">
   <li><a href="#створення-резервних-копій" id="markdown-toc-створення-резервних-копій">Створення резервних копій</a></li>
   <li><a href="#відновлення-резервних-копій" id="markdown-toc-відновлення-резервних-копій">Відновлення резервних копій</a></li>
-  <li><a href="#доступ-до-збережень-за-допомогою-mtp" id="markdown-toc-доступ-до-збережень-за-допомогою-mtp">Доступ до збережень за допомогою MTP</a></li>
+  <li><a href="#сейви-видалених-ігор" id="markdown-toc-сейви-видалених-ігор">Сейви видалених ігор</a></li>
+  <li><a href="#бекапи-з-dbi-jksv-і-checkpoint" id="markdown-toc-бекапи-з-dbi-jksv-і-checkpoint">Бекапи з DBI, JKSV і Checkpoint</a></li>
+  <li><a href="#синхронізація-з-webdav" id="markdown-toc-синхронізація-з-webdav">Синхронізація з WebDAV</a></li>
+  <li><a href="#доступ-до-збережень-з-пк" id="markdown-toc-доступ-до-збережень-з-пк">Доступ до збережень з ПК</a></li>
 </ul>
 
   </nav>
@@ -497,77 +510,163 @@
 
 <hr />
 
-<p>Створення та відновлення сейвів відбуваються програмою DBI. Сейви бувають трьох типів - <strong>персональний</strong>, що унікальний для кожного користувача, а також <strong>BCAT</strong> і <strong>Device</strong>, що унікальні для кожної консолі, однак спільні для всіх користувачів.</p>
+<p>Створення та відновлення сейвів відбуваються в програмі <strong>Kefir Hub</strong>: “<strong>Інструменти</strong>” → “<strong>Ігрові інструменти</strong>” → “<strong>Збереження</strong>”. Сейви бувають трьох типів - <strong>персональний</strong>, що унікальний для кожного користувача, а також <strong>BCAT</strong> і <strong>Device</strong>, що унікальні для кожної консолі, однак спільні для всіх користувачів.</p>
 
 <p class="notice--danger">Будьте обережні при переносі <strong>Device</strong> та <strong>BCAT</strong> між консолями, особливо коли робите це на офіційній прошивці. Деякі ігри відстежують унікальні дані консолей і ви можете отримати бан при переносі сейвів онлайн-ігор між різними консолями</p>
+
+<p class="notice--info">Докладний опис усіх можливостей екрана збережень є в <a href="https://hub.customfw.xyz/uk/saves/" target="_blank">документації Kefir Hub</a></p>
 
 <h2 id="створення-резервних-копій">Створення резервних копій</h2>
 
 <ol>
-  <li><strong>На приставці</strong> запустіть <strong>DBI</strong> через <a href="/hbl" target="_blank">Homebrew Launcher</a></li>
-  <li>Перейдіть в пункт “<strong>Browse saves</strong>”
+  <li><strong>На приставці</strong> запустіть <a href="/hbl" target="_blank">Kefir Hub</a></li>
+  <li>Натисніть <img src="/assets/images/switch/buttons/R.png" alt="(R)" />, щоб перейти на вкладку “<strong>Інструменти</strong>”, і відкрийте “<strong>Ігрові інструменти</strong>” → “<strong>Збереження</strong>”
     <ul>
-      <li>Для бекапу сейвів встановлених ігор залишайтесь на вкладці “<strong>Installed</strong>”</li>
-      <li>Для бекапу сейвів видалених ігор перейдіть на вкладку “<strong>Uninstalled</strong>” за допомогою кнопки <img src="/assets/images/switch/buttons/R.png" alt="(R)" /></li>
-      <li>Для зміни порядку сортування, натисніть <img src="/assets/images/switch/buttons/R3.png" alt="(R3)" /></li>
+      <li>Для бекапу сейвів встановлених ігор залишайтесь на вкладці “<strong>Встановлені ігри</strong>”</li>
+      <li>Для бекапу сейвів видалених ігор перейдіть на вкладку “<strong>Видалені ігри</strong>” кнопкою <img src="/assets/images/switch/buttons/R.png" alt="(R)" /></li>
+      <li>Кожна гра представлена однією плиткою з повним пакетом збережень (персональні, Device, BCAT, Cache). Щоб змінити фільтр користувачів чи типів даних, натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" /></li>
+      <li>Кольорові плашки на плитці показують усі наявні типи збережень. Наприклад, Animal Crossing має Device і BCAT. Однаковий тип для кількох користувачів показується один раз</li>
     </ul>
   </li>
-  <li>Виділіть ігри, для яких хочете створити бекап кнопкою <img src="/assets/images/switch/buttons/X.png" alt="(X)" />
+  <li>Виділіть ігри, для яких хочете створити бекап, кнопкою <img src="/assets/images/switch/buttons/X.png" alt="(X)" />
     <ul>
-      <li>Щоб виділити всі ігри, або інвертувати виділене, нажміть <img src="/assets/images/switch/buttons/Y.png" alt="(Y)" /></li>
+      <li>Щоб інвертувати виділене, натисніть <img src="/assets/images/switch/buttons/Y.png" alt="(Y)" /></li>
+      <li>Для однієї гри достатньо просто навести на неї курсор</li>
     </ul>
   </li>
-  <li>Натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> щоб потрапити в контекстне меню</li>
-  <li>Оберіть пункт “<strong>Backup</strong>” щоб створити бекап обраних сейвів</li>
+  <li>Натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" /> і оберіть “<strong>Створити резервну копію</strong>”</li>
+  <li>У вікні “<strong>Параметри резервного копіювання</strong>” перевірте “<strong>Розташування</strong>” (за замовчанням <code class="language-plaintext highlighter-rouge">sd://dumps</code>), за потреби оберіть користувачів (“<strong>ОБЛІКОВІ ЗАПИСИ</strong>”). Пакет гри включає всі доступні типи збережень</li>
+  <li>Оберіть “<strong>Почати резервне копіювання</strong>” та дочекайтеся повідомлення “<strong>Резервну копію створено!</strong>”</li>
 </ol>
 
-<p class="notice--info">Створені резервні копії за замовчанням лежатимуть в папці <code class="language-plaintext highlighter-rouge">/switch/dbi/saves</code> і будуть відображатися на вкладці “<strong>Backups</strong>”</p>
+<p><img src="/assets/images/switch/hub/saves-list.png" alt="Kefir Hub: saves list" width="1280" height="720" loading="lazy" style="max-width:100%;height:auto" /></p>
+
+<p><img src="/assets/images/switch/hub/saves-backup-options.png" alt="Kefir Hub: saves backup options" width="1280" height="720" loading="lazy" style="max-width:100%;height:auto" /></p>
+
+<p class="notice--info">Створені резервні копії за замовчанням лежатимуть в папці <code class="language-plaintext highlighter-rouge">/dumps</code> на карті пам’яті і будуть відображатися на вкладці “<strong>Бекапи</strong>”. Це ZIP-архіви того ж формату, що й у DBI</p>
+
+<p>Kefir Hub автоматично пропускає збереження, які не змінилися від останньої власної копії у вибраному розташуванні. Дати копій інших програм на це не впливають (<a href="https://hub.customfw.xyz/uk/saves/#back-up-a-save" target="_blank">докладніше</a>)</p>
 
 <h2 id="відновлення-резервних-копій">Відновлення резервних копій</h2>
 
-<ol>
-  <li><strong>На приставці</strong> запустіть <strong>DBI</strong> через <a href="/hbl" target="_blank">Homebrew Launcher</a></li>
-  <li>Перейдіть в пункт “<strong>Browse saves</strong>” &gt; “<strong>Backups</strong>”
-    <ul>
-      <li>Переміщення між вкладками відбувається кнопками <img src="/assets/images/switch/buttons/L.png" alt="(L)" /> / <img src="/assets/images/switch/buttons/R.png" alt="(R)" /></li>
-    </ul>
-  </li>
-  <li>Виділіть збереження кнопкою <img src="/assets/images/switch/buttons/X.png" alt="(X)" />
-    <ul>
-      <li>Щоб виділити всі ігри, або інвертувати виділене, нажміть <img src="/assets/images/switch/buttons/Y.png" alt="(Y)" /></li>
-    </ul>
-  </li>
-  <li>Натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> щоб потрапити в контекстне меню</li>
-  <li>Оберіть пункт “<strong>Restore</strong>” щоб створити бекап обраних сейвів</li>
-  <li>Якщо імена учотних записів не співпадають, виберіть ім’я запису в який буде відновлено сейв</li>
-</ol>
-
-<h2 id="доступ-до-збережень-за-допомогою-mtp">Доступ до збережень за допомогою MTP</h2>
-
-<p class="notice--warning">Цим способом дуже зручно робити заміну файлів в сейвах і всілякі модифікації. Не забувайте перед цим бекапити сам сейв.</p>
+<p class="notice--warning">Перед відновленням закрийте гру. Якщо працює MTP (доступ до консолі з ПК через USB), спершу вимкніть його, інакше відновлення не запуститься</p>
 
 <ol>
-  <li>Підключіть консоль до ПК USB-кабелем (type-c)</li>
-  <li><strong>На приставці</strong> запустіть <strong>DBI</strong> через <a href="/hbl" target="_blank">Homebrew Launcher</a></li>
-  <li>Натисніть “<strong>Run MTP Responder</strong>”
+  <li><strong>На приставці</strong> запустіть <a href="/hbl" target="_blank">Kefir Hub</a> і відкрийте “<strong>Інструменти</strong>” → “<strong>Ігрові інструменти</strong>” → “<strong>Збереження</strong>”</li>
+  <li>На вкладці “<strong>Встановлені ігри</strong>” наведіть курсор на гру (або виділіть кілька кнопкою <img src="/assets/images/switch/buttons/X.png" alt="(X)" />)</li>
+  <li>Натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" /> і оберіть “<strong>Відновити</strong>”</li>
+  <li>У вікні “<strong>Параметри відновлення</strong>” виберіть “<strong>Розташування</strong>” копій. Перевірте “<strong>Джерело копії</strong>”: Kefir Hub вибрано, якщо його копії доступні. Для копій іншої програми явно виберіть її джерело. Потім оберіть “<strong>Почати відновлення</strong>”
     <ul>
-      <li>До вашого ПК примонтується нове MTP-пристрій</li>
+      <li>Копії шукаються у вибраній папці. Типове розташування також використовує налаштовану бібліотеку копій</li>
     </ul>
   </li>
-  <li>Відкрийте пристрій, що з’явився в комп’ютері “<strong>Switch</strong>” (в “цьому комп’ютері” на Windows)</li>
-  <li>Перейдіть на диск “<strong>Saves</strong>”
+  <li>У вікні “<strong>Відновити для користувача</strong>” оберіть користувача, якому відновити сейв
     <ul>
-      <li>В деці <code class="language-plaintext highlighter-rouge">Installed games</code> знаходитимуться сейви встановлених на даний момент сейвів</li>
-      <li>В деці <code class="language-plaintext highlighter-rouge">Uninstalled games</code> сейви ігор, що видалені</li>
-      <li>Якщо ви шукаєте сейви для певного користувача, перейдіть в папку з назвою гри і ви побачите бекапи для всіх наявних користувачів на консолі</li>
+      <li>Сейв одного користувача можна відновити іншому</li>
+    </ul>
+  </li>
+  <li>Якщо у гри кілька слотів, оберіть потрібний у вікні “<strong>Виберіть цільовий слот для відновлення</strong>”</li>
+  <li>Якщо бекапів кілька, оберіть потрібний у вікні “<strong>Виберіть бекап</strong>” (найновіші вгорі)</li>
+  <li>Підтвердіть відновлення кнопкою “<strong>Так</strong>” та дочекайтеся повідомлення “<strong>Успішно відновлено!</strong>”</li>
+</ol>
+
+<p><img src="/assets/images/switch/hub/saves-select-backup.png" alt="Kefir Hub: saves select backup" width="1280" height="720" loading="lazy" style="max-width:100%;height:auto" /></p>
+
+<p><img src="/assets/images/switch/hub/saves-restore-confirm.png" alt="Kefir Hub: saves restore confirm" width="1280" height="720" loading="lazy" style="max-width:100%;height:auto" /></p>
+
+<p class="notice--info">Перед перезаписом Kefir Hub зберігає поточний сейв у папку <code class="language-plaintext highlighter-rouge">/dumps/recovery/</code>, тож старий стан не втрачається. Щоб скасувати відновлення, відкрийте “<strong>Інструменти</strong>” → “<strong>Ігрові інструменти</strong>” → “<strong>Збереження</strong>” → вкладка “<strong>Бекапи</strong>”: у групі “<strong>Kefir Hub</strong>” цієї гри страхувальна копія показується ще одним архівом. Відновіть її звідти. Дата цієї копії — час, коли сейв востаннє записувався перед відновленням, а не час самого відновлення, тож вона може бути не вгорі списку</p>
+
+<p>Відновлювати можна також з вкладки “<strong>Бекапи</strong>”: кожна гра має плитку для кожного джерела копій із повним пакетом збережень цього джерела. Наведіть курсор на плитку гри, натисніть <img src="/assets/images/switch/buttons/A.png" alt="(A)" /> та оберіть “<strong>Відновити</strong>” (для повного пакета) або “<strong>Окремі збереження…</strong>” для вибору конкретного слота чи користувача.</p>
+
+<p><img src="/assets/images/switch/hub/saves-backup-group.png" alt="Kefir Hub: saves backup group" width="1280" height="720" loading="lazy" style="max-width:100%;height:auto" /></p>
+
+<p class="notice--warning">Якщо у користувача ще немає сейву цієї гри, Kefir Hub створить його сам, але лише для встановленої гри і лише для персонального сейву. Сейви <strong>Device</strong> і <strong>BCAT</strong> автоматично не створюються: спершу один раз запустіть гру, а потім відновлюйте (<a href="https://hub.customfw.xyz/uk/saves/#restore-when-the-game-has-no-save-yet" target="_blank">докладніше</a>)</p>
+
+<h2 id="сейви-видалених-ігор">Сейви видалених ігор</h2>
+
+<p>Після видалення гри її сейви залишаються на консолі і показуються на вкладці “<strong>Видалені ігри</strong>”. Звідти їх можна забекапити так само, як і сейви встановлених ігор.</p>
+
+<p>Щоб відновити сейв видаленої гри з бекапу, або залиште її сейв на консолі (тоді відновлюйте на вкладці “<strong>Видалені ігри</strong>”), або спершу встановіть гру знову.</p>
+
+<h2 id="бекапи-з-dbi-jksv-і-checkpoint">Бекапи з DBI, JKSV і Checkpoint</h2>
+
+<p>Kefir Hub сам знаходить на карті пам’яті бекапи, зроблені іншими програмами, показує їх на вкладці “<strong>Бекапи</strong>” і відновлює так само, як власні:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Програма</th>
+      <th>Папки</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kefir Hub</td>
+      <td><code class="language-plaintext highlighter-rouge">/dumps</code></td>
+    </tr>
+    <tr>
+      <td>DBI</td>
+      <td><code class="language-plaintext highlighter-rouge">/switch/DBI/saves</code>, <code class="language-plaintext highlighter-rouge">/DBISaves</code></td>
+    </tr>
+    <tr>
+      <td>JKSV</td>
+      <td><code class="language-plaintext highlighter-rouge">/JKSV</code>, <code class="language-plaintext highlighter-rouge">/switch/JKSV</code></td>
+    </tr>
+    <tr>
+      <td>Checkpoint</td>
+      <td><code class="language-plaintext highlighter-rouge">/switch/Checkpoint/saves</code>, <code class="language-plaintext highlighter-rouge">/Checkpoint/saves</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Якщо бекапи лежать в іншій папці на карті пам’яті, додайте її: “<strong>Інструменти</strong>” → “<strong>Налаштування</strong>” → “<strong>Збереження</strong>” → “<strong>Шляхи пошуку резервних копій</strong>” → “<strong>Додати папку</strong>”.</p>
+
+<p class="notice--info">Бекапи Kefir Hub мають той самий формат, що й у DBI, тож за потреби їх також можна відновити через DBI</p>
+
+<h2 id="синхронізація-з-webdav">Синхронізація з WebDAV</h2>
+
+<p>Бекапи можна зберігати ще й на власному сервері WebDAV (наприклад, на NAS).</p>
+
+<ol>
+  <li>Додайте сервер: “<strong>Інструменти</strong>” → “<strong>Налаштування</strong>” → “<strong>Збереження</strong>” → “<strong>Розташування синхронізації збережень</strong>” → “<strong>+ Додати мережеве джерело</strong>”</li>
+  <li>Відкрийте “<strong>Збереження</strong>” і виділіть ігри кнопкою <img src="/assets/images/switch/buttons/X.png" alt="(X)" /></li>
+  <li>Натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> та оберіть “<strong>Синхронізувати з хмарою</strong>”
+    <ul>
+      <li>Бекапи, яких немає на сервері, вивантажуються туди, а яких немає на карті пам’яті — завантажуються на неї. Файли з однаковою назвою не перезаписуються</li>
+      <li>Завантажені бекапи самі не застосовуються — потім <a href="#відновлення-резервних-копій">відновіть</a> потрібний</li>
     </ul>
   </li>
 </ol>
+
+<p>Коли сервер додано, кожен новий бекап за замовчанням одразу вивантажується на нього (параметр “<strong>Автосинк після бекапу</strong>”). Докладніше — у <a href="https://hub.customfw.xyz/uk/saves/#sync-backups-with-webdav" target="_blank">документації Kefir Hub</a>.</p>
+
+<h2 id="доступ-до-збережень-з-пк">Доступ до збережень з ПК</h2>
+
+<p class="notice--warning">Через MTP сейви можна скопіювати на комп’ютер. Не забувайте перед будь-якими змінами бекапити сам сейв.</p>
+
+<ol>
+  <li><strong>На приставці</strong> запустіть <a href="/hbl" target="_blank">Kefir Hub</a></li>
+  <li>Відкрийте “<strong>Інструменти</strong>” → “<strong>Налаштування</strong>” → “<strong>Мережа</strong>” → “<strong>Сховища MTP</strong>” та увімкніть “<strong>Показувати Saves (лише читання)</strong>”</li>
+  <li>Підключіть консоль до ПК USB-кабелем (type-c)
+    <ul>
+      <li>У портативному режимі MTP запуститься сам, консоль покаже “<strong>Комп’ютер підключено — MTP запущено</strong>”</li>
+      <li>Інакше перейдіть на вкладку “<strong>Інструменти</strong>”, натисніть <img src="/assets/images/switch/buttons/+.png" alt="(+)" /> та оберіть “<strong>Змонтувати MTP</strong>”</li>
+    </ul>
+  </li>
+  <li>Відкрийте пристрій консолі, що з’явився в комп’ютері (“Цей комп’ютер” на Windows), і перейдіть на диск <code class="language-plaintext highlighter-rouge">Saves</code>
+    <ul>
+      <li>Тут сейви в розпакованому вигляді, лише для читання: копіюйте їх на ПК</li>
+    </ul>
+  </li>
+</ol>
+
+<p class="notice--danger">Для прямої заміни файлів є диск <code class="language-plaintext highlighter-rouge">NAND Saves (USER:/save)</code> (параметр “<strong>Показувати NAND сейви (USER:/save)</strong>”): там сирі файли сейвів у системній пам’яті з можливістю запису. Неправильний файл, скопійований туди, може зіпсувати сейв гри або систему, тож вмикайте цей диск лише за потреби і лише після бекапу (<a href="https://hub.customfw.xyz/uk/sharing/#mtp-drives" target="_blank">докладніше</a>)</p>
+
+<p>Про інші способи доступу до карти пам’яті з ПК читайте на сторінці <a href="/ftp" target="_blank">Доступ до файлів консолі з ПК</a></p>
 
 <hr />
 
 <p class="notice--success"><a href="javascript:window.close();">Закрити сторінку</a></p>
-
 
 				
         
