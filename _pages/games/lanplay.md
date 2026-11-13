@@ -24,15 +24,16 @@ author_profile: true
 
 [Nextendo Network](https://nextendo.network){:target="_blank"} — незалежні сервери, які замінюють онлайн-сервіси Nintendo для підтримуваних ігор. Kefir Hub має вбудовані налаштування з проєкту [Prelude-Nextendo](https://git.nextendo.network/NextendoNetwork/Prelude-Nextendo){:target="_blank"}. Окремий застосунок Prelude не потрібен.
 
-* Обліковий запис Nintendo і підписка Nintendo Switch Online не потрібні
+* Замість облікового запису Nintendo використовується обліковий запис Nextendo. Він безкоштовний. Підписка Nintendo Switch Online не потрібна
 * Консоль не з'єднується з серверами Nintendo
-* Ви граєте лише з іншими гравцями Nextendo, а не з усіма гравцями Nintendo
+* Ви граєте з іншими гравцями Nextendo: на прошитих Switch і в емуляторах Ryujinx та Citron
 
 ### Що знадобиться
 
 * Свіжа версія {% include abbr/kefir_addr.txt %} з Kefir Hub
 * {% include abbr/emunand.md abbr="EmuNAND" %}. Nextendo працює в EmuNAND
 * Інтернет у EmuNAND: Wi-Fi або LAN підключено, режим польоту вимкнено
+* Обліковий запис Nextendo. Створіть його на [сайті Nextendo](https://nextendo.network/register.html){:target="_blank"}
 * Гра зі [списку підтримуваних](#підтримувані-ігри). Деяким іграм потрібна певна версія
 
 ### Увімкніть Nextendo
@@ -42,6 +43,7 @@ author_profile: true
 1. Виберіть **Nextendo на emuMMC** і натисніть {% include /inc/btn.txt btn="A" %}
 1. Утримуйте {% include /inc/btn.txt btn="A" %}, доки смуга не заповниться
 	* Kefir Hub налаштує Nextendo. Якщо він змінив файли, консоль перезавантажиться
+1. Прив'яжіть консоль до свого облікового запису Nextendo. Як це зробити, описано в [посібнику Nextendo в Discord](https://discord.gg/XPfeCMwnzQ){:target="_blank"}
 1. Запустіть підтримувану гру і виберіть онлайн-гру в її меню, як зазвичай
 
 Щоб вимкнути Nextendo, вимкніть той самий перемикач **Nextendo на emuMMC**.
@@ -57,27 +59,19 @@ author_profile: true
 
 ### Підтримувані ігри
 
-Список з опису Prelude-Nextendo. Актуальний список — на сайті [Nextendo Network](https://nextendo.network){:target="_blank"}.
+{% assign nx = site.data.nextendo_games %}
+Список береться із сайту [Nextendo Network](https://nextendo.network){:target="_blank"} під час кожного оновлення цього посібника{% if nx %} (останні зміни: {{ nx.updated }}){% endif %}. **Готово** означає, що онлайн цієї гри працює повністю. Відсоток показує, яка частина онлайну працює зараз. Найновіший стан та кількість гравців онлайн дивіться на [сайті Nextendo](https://nextendo.network){:target="_blank"}.
 
-* Mario Kart 8 Deluxe
-* Super Smash Bros. Ultimate
-* Splatoon 2 та Splatoon 3
-* Super Mario Bros. 35 та Super Mario Bros. Wonder
-* Pokémon Sword / Shield
-* Monster Hunter Rise
-* Among Us
-* Stardew Valley
-* Terraria
-* Minecraft Dungeons II
-* Crash Team Racing Nitro-Fueled
-* Diablo III: Eternal Collection
-* Dragon Ball FighterZ
-* Guilty Gear -Strive-
-* Metal Gear Solid: Peace Walker
-* Friday the 13th: The Game
-* World War Z
-* Sonic Racing: CrossWorlds (потрібен обліковий запис Nextendo)
-* Класичні ігри Nintendo Switch Online (NES, SNES, Game Boy, Game Boy Advance, Genesis, Nintendo 64). Онлайн працює лише в тих іграх, для яких Nextendo вже має сервери
+{% if nx %}
+Зараз у списку ігор: {{ nx.games.size }}.
+
+{% spoiler Список ігор Nextendo %}
+| Гра | Стан | Що працює (англійською) |
+|---|---|---|
+{% for g in nx.games %}| {{ g.name | replace: "|", "\|" }} | {% if g.pct == nil %}Перевіряється{% elsif g.pct >= 100 %}**Готово**{% else %}{{ g.pct }}%{% endif %} | {{ g.detail | replace: "|", "\|" }} |
+{% endfor %}
+{% endspoiler %}
+{% endif %}
 
 ### Nextendo на SysNAND (Semi-stock)
 
